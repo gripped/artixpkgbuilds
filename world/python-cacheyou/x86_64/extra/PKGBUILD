@@ -3,7 +3,7 @@
 _name=cacheyou
 pkgname=python-cacheyou
 pkgver=23.3
-pkgrel=1
+pkgrel=2
 pkgdesc="The httplib2 caching algorithms packaged up for use with requests"
 arch=(any)
 url="https://github.com/frostming/cacheyou"
@@ -33,6 +33,11 @@ optdepends=(
 source=(https://files.pythonhosted.org/packages/source/${_name::1}/$_name/$_name-$pkgver.tar.gz)
 sha256sums=('7e408f15f4978fea2247734b308621f75f7fe169b461679519c72e8a85d61d5d')
 b2sums=('38cb6bf514f531bb13a30dd4ac415b602976d4c16761de551576ed4f1935fcb7a5c95041e3a7719a7113d7ac394afc907bc8645ad15c19458fe5245b6b17b179')
+
+prepare() {
+  # remove script conflicting with python-cachecontrol: https://github.com/frostming/cacheyou/issues/12
+  sed -e '/doesitcache/d' -i $_name-$pkgver/pyproject.toml
+}
 
 build() {
   cd $_name-$pkgver
