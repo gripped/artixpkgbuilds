@@ -1,0 +1,34 @@
+# Maintainer: Nathan <ndowens@artixlinux.org>
+# Contributor: Christian Rebischke <chris.rebischke@archlinux.org>
+# Contributor: Robin Candau <antiz@archlinux.org>
+# Contributor: Sébastien Luttringer <seblu@archlinux.org>
+# Contributor: Bartłomiej Piotrowski <bpiotrowski@archlinux.org>
+# Contributor: Francois Boulogne <fboulogne at april dot org>
+
+pkgname=glances
+pkgver=3.4.0.2
+pkgrel=1
+pkgdesc='CLI curses-based monitoring tool'
+arch=('any')
+url='https://nicolargo.github.io/glances/'
+license=('LGPL')
+makedepends=('python-setuptools')
+depends=('python' 'python-psutil' 'python-future' 'python-defusedxml' 'python-ujson')
+optdepends=('hddtemp: HDD temperature monitoring support'
+            'python-bottle: web server support'
+            'python-docker: for the Docker monitoring support'
+            'python-matplotlib: for graphical/chart support'
+            'python-netifaces: for the IP plugin'
+            'python-zeroconf: for the autodiscover mode'
+            'python-pystache: templating engine'
+            'python-prometheus_client: for the Prometheus export module')
+source=("${pkgname}-${pkgver}-${pkgrel}.tar.gz::https://github.com/nicolargo/glances/archive/v${pkgver}.tar.gz")
+sha512sums=('92ec204f646a7fadcc38585fc23394a271b3cc64b1cefc4668e3d5cfc42765dd4d1e02d2baf7521b2115cc7400dbedb36a9070a99dd1dd8a547dcabf665df974')
+b2sums=('d0647cf2d389c595b0c96b8518af59d9581252dd5179ca8234c2dd3ab782b004c03f1c2b4570c165a1c85c6adb50eb12e7d9b5a0988c316d4df5cb34a258a20a')
+
+package() {
+  cd "glances-${pkgver}"
+  python setup.py install --prefix=/usr --root="${pkgdir}" --optimize=1
+}
+
+# vim:set ts=2 sw=2 et:

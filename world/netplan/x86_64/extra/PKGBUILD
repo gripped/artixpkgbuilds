@@ -1,0 +1,52 @@
+# Maintainer: Nathan <ndowens@artixlinux.org>
+# Contributor:  Conrad Hoffmann <ch@bitfehler.net>
+
+pkgname=netplan
+pkgver=0.106
+pkgrel=1
+pkgdesc="Network configuration abstraction renderer"
+arch=('x86_64')
+url="https://github.com/CanonicalLtd/netplan"
+license=('GPL3')
+depends=(
+  'glib2'
+  'python-yaml'
+  'python-netifaces'
+  'iproute2'
+  'elogind'
+)
+makedepends=(
+  'python'
+  'pkgconf'
+  'pandoc'
+)
+source=(
+  "${pkgname}-${pkgver}.tar.gz::https://github.com/CanonicalLtd/${pkgname}/archive/${pkgver}.tar.gz"
+  "0001-no-systemd.patch"
+)
+sha256sums=('09ca8c191f4cc387edb816c48aa77bcaffb712ba54a188fd27ce961eea02aa53'
+            '85b404c4f0a0090a4f42f55624089f57da5f539410bc2e477a86a9c70d411ba0')
+
+prepare() {
+  cd "${pkgname}-${pkgver}"
+  patch -Np1 -i ../0001-no-systemd.patch
+}
+
+build() {
+  cd "${pkgname}-${pkgver}"
+
+  # Drop -Werror to avoid the following error:
+  # /usr/include/glib-2.0/glib/glib-autocleanups.h:28:3: error: 'ip_str' may be used uninitialized in this function [-Werror=maybe-uninitialized]
+  sed -e "s/-Werror//g" -i Makefile
+
+  env
+  make
+}
+
+package() {
+  cd "${pkgname}-${pkgver}"
+  make DESTDIR="${pkgdir}" ROOTPREFIX=/usr SBINDIR=/usr/bin install
+
+  # Remove stray file ( Artix )
+  rm "$pkgdir"/netplan
+}
