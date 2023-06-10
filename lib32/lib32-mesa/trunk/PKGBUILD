@@ -76,7 +76,7 @@ validpgpkeys=('8703B6700E7EE06D7A39B8D6EDAE37B02CEB490D'  # Emil Velikov <emil.l
 
 prepare() {
   cd mesa-$pkgver
-  #patch -Np1 -i ../0001-llvm.patch
+  patch -Np1 -i ../0001-llvm.patch
 }
 
 _libdir=usr/lib32
@@ -84,7 +84,6 @@ _libdir=usr/lib32
 build() {
   local meson_options=(
     --libdir=/$_libdir
-    -D cmake_prefix_path=/usr/lib32
     -D android-libbacktrace=disabled
     -D b_ndebug=true
     -D dri3=enabled
@@ -116,6 +115,8 @@ build() {
     -D video-codecs=vc1dec,h264dec,h264enc,h265dec,h265enc
     -D vulkan-drivers=amd,intel,intel_hasvk,swrast,virtio-experimental
     -D vulkan-layers=device-select,intel-nullhw,overlay
+    -D c_link_args="-L/usr/lib32"
+    -D cpp_link_args="-L/usr/lib32"
   )
 
   # Build only minimal debug info to reduce size
