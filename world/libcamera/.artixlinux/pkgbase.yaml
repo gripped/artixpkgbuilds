@@ -1,0 +1,62 @@
+---
+pkgbase:
+  name: libcamera
+  version: 0.1.0-1
+  arch:
+    - x86_64
+  pkgname:
+    - libcamera
+    - libcamera-docs
+    - libcamera-ipa
+    - libcamera-tools
+    - gst-plugin-libcamera
+actions:
+  addRepo: world
+  removeRepo: null
+  triggersBuild: true
+  triggersRebuild: false
+  triggersRepoAdd: true
+  triggersRepoRemove: false
+  triggersNoCheck: false
+repos:
+  system-goblins:
+    version: null
+    packages: []
+  system-gremlins:
+    version: null
+    packages: []
+  system:
+    version: null
+    packages: []
+  world-goblins:
+    version: null
+    packages: []
+  world-gremlins:
+    version: null
+    packages: []
+  world:
+    version: 0.1.0-1
+    packages:
+      - libcamera-0.1.0-1-x86_64.pkg.tar.zst
+      - libcamera-docs-0.1.0-1-x86_64.pkg.tar.zst
+      - libcamera-ipa-0.1.0-1-x86_64.pkg.tar.zst
+      - libcamera-tools-0.1.0-1-x86_64.pkg.tar.zst
+      - gst-plugin-libcamera-0.1.0-1-x86_64.pkg.tar.zst
+  lib32-goblins:
+    version: null
+    packages: []
+  lib32-gremlins:
+    version: null
+    packages: []
+  lib32:
+    version: null
+    packages: []
+  galaxy-goblins:
+    version: null
+    packages: []
+  galaxy-gremlins:
+    version: null
+    packages: []
+  galaxy:
+    version: null
+    packages: []
