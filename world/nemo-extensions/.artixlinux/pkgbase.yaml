@@ -1,0 +1,72 @@
+---
+pkgbase:
+  name: nemo-audio-tab
+  version: 5.8.0-1
+  arch:
+    - x86_64
+  pkgname:
+    - nemo-audio-tab
+    - nemo-emblems
+    - nemo-fileroller
+    - nemo-image-converter
+    - nemo-pastebin
+    - nemo-preview
+    - nemo-python
+    - nemo-seahorse
+    - nemo-share
+    - nemo-terminal
+actions:
+  addRepo: null
+  removeRepo: null
+  triggersBuild: false
+  triggersRebuild: false
+  triggersRepoAdd: false
+  triggersRepoRemove: false
+  triggersNoCheck: false
+repos:
+  system-goblins:
+    version: null
+    packages: []
+  system-gremlins:
+    version: null
+    packages: []
+  system:
+    version: null
+    packages: []
+  world-goblins:
+    version: null
+    packages: []
+  world-gremlins:
+    version: null
+    packages: []
+  world:
+    version: 5.8.0-1
+    packages:
+      - nemo-audio-tab-5.8.0-1-x86_64.pkg.tar.zst
+      - nemo-emblems-5.8.0-1-x86_64.pkg.tar.zst
+      - nemo-fileroller-5.8.0-1-x86_64.pkg.tar.zst
+      - nemo-image-converter-5.8.0-1-x86_64.pkg.tar.zst
+      - nemo-pastebin-5.8.0-1-x86_64.pkg.tar.zst
+      - nemo-preview-5.8.0-1-x86_64.pkg.tar.zst
+      - nemo-python-5.8.0-1-x86_64.pkg.tar.zst
+      - nemo-seahorse-5.8.0-1-x86_64.pkg.tar.zst
+      - nemo-share-5.8.0-1-x86_64.pkg.tar.zst
+      - nemo-terminal-5.8.0-1-x86_64.pkg.tar.zst
+  lib32-goblins:
+    version: null
+    packages: []
+  lib32-gremlins:
+    version: null
+    packages: []
+  lib32:
+    version: null
+    packages: []
+  galaxy-goblins:
+    version: null
+    packages: []
+  galaxy-gremlins:
+    version: null
+    packages: []
+  galaxy:
+    version: null
+    packages: []
