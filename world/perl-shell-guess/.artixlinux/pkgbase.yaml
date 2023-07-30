@@ -1,0 +1,55 @@
+---
+pkgbase:
+  name: perl-shell-guess
+  version: 0.09-6
+  arch:
+    - any
+  pkgname:
+    - perl-shell-guess
+actions:
+  addRepo: world-goblins
+  removeRepo: null
+  triggersBuild: true
+  triggersRebuild: false
+  triggersRepoAdd: true
+  triggersRepoRemove: false
+  triggersNoCheck: false
+repos:
+  system-goblins:
+    version: null
+    packages: []
+  system-gremlins:
+    version: null
+    packages: []
+  system:
+    version: null
+    packages: []
+  world-goblins:
+    version: 0.09-6
+    packages:
+      - perl-shell-guess-0.09-6-any.pkg.tar.zst
+  world-gremlins:
+    version: null
+    packages: []
+  world:
+    version: 0.09-5
+    packages:
+      - perl-shell-guess-0.09-5-any.pkg.tar.zst
+  lib32-goblins:
+    version: null
+    packages: []
+  lib32-gremlins:
+    version: null
+    packages: []
+  lib32:
+    version: null
+    packages: []
+  galaxy-goblins:
+    version: null
+    packages: []
+  galaxy-gremlins:
+    version: null
+    packages: []
+  galaxy:
+    version: null
+    packages: []
