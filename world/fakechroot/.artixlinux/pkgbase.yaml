@@ -1,0 +1,55 @@
+---
+pkgbase:
+  name: fakechroot
+  version: 2.20.1-3
+  arch:
+    - x86_64
+  pkgname:
+    - fakechroot
+actions:
+  addRepo: world-gremlins
+  removeRepo: null
+  triggersBuild: true
+  triggersRebuild: false
+  triggersRepoAdd: true
+  triggersRepoRemove: false
+  triggersNoCheck: false
+repos:
+  system-goblins:
+    version: null
+    packages: []
+  system-gremlins:
+    version: null
+    packages: []
+  system:
+    version: null
+    packages: []
+  world-goblins:
+    version: null
+    packages: []
+  world-gremlins:
+    version: 2.20.1-3
+    packages:
+      - fakechroot-2.20.1-3-x86_64.pkg.tar.zst
+  world:
+    version: 2.20.1-2.2
+    packages:
+      - fakechroot-2.20.1-2.2-x86_64.pkg.tar.zst
+  lib32-goblins:
+    version: null
+    packages: []
+  lib32-gremlins:
+    version: null
+    packages: []
+  lib32:
+    version: null
+    packages: []
+  galaxy-goblins:
+    version: null
+    packages: []
+  galaxy-gremlins:
+    version: null
+    packages: []
+  galaxy:
+    version: null
+    packages: []
