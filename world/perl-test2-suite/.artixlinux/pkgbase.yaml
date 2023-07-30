@@ -7,7 +7,7 @@ pkgbase:
   pkgname:
     - perl-test2-suite
 actions:
-  addRepo: world-goblins
+  addRepo: world-gremlins
   removeRepo: null
   triggersBuild: true
   triggersRebuild: false
@@ -29,8 +29,9 @@ repos:
     packages:
       - perl-test2-suite-0.000155-2-any.pkg.tar.zst
   world-gremlins:
-    version: null
-    packages: []
+    version: 0.000155-2
+    packages:
+      - perl-test2-suite-0.000155-2-any.pkg.tar.zst
   world:
     version: 0.000155-1
     packages:
