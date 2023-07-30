@@ -1,0 +1,55 @@
+---
+pkgbase:
+  name: python-mysql-connector
+  version: 8.1.0-1
+  arch:
+    - any
+  pkgname:
+    - python-mysql-connector
+actions:
+  addRepo: world-gremlins
+  removeRepo: world-goblins
+  triggersBuild: false
+  triggersRebuild: false
+  triggersRepoAdd: true
+  triggersRepoRemove: true
+  triggersNoCheck: false
+repos:
+  system-goblins:
+    version: null
+    packages: []
+  system-gremlins:
+    version: null
+    packages: []
+  system:
+    version: null
+    packages: []
+  world-goblins:
+    version: null
+    packages: []
+  world-gremlins:
+    version: 8.1.0-1
+    packages:
+      - python-mysql-connector-8.1.0-1-any.pkg.tar.zst
+  world:
+    version: 8.0.33-2
+    packages:
+      - python-mysql-connector-8.0.33-2-any.pkg.tar.zst
+  lib32-goblins:
+    version: null
+    packages: []
+  lib32-gremlins:
+    version: null
+    packages: []
+  lib32:
+    version: null
+    packages: []
+  galaxy-goblins:
+    version: null
+    packages: []
+  galaxy-gremlins:
+    version: null
+    packages: []
+  galaxy:
+    version: null
+    packages: []
