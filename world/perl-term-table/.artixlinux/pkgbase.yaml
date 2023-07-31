@@ -1,7 +1,7 @@
 ---
 pkgbase:
   name: perl-term-table
-  version: 0.016-4.1
+  version: 0.016-4
   arch:
     - any
   pkgname:
@@ -25,9 +25,9 @@ repos:
     version: null
     packages: []
   world-goblins:
-    version: 0.016-4.1
+    version: 0.016-4
     packages:
-      - perl-term-table-0.016-4.1-any.pkg.tar.zst
+      - perl-term-table-0.016-4-any.pkg.tar.zst
   world-gremlins:
     version: 0.016-4
     packages:
