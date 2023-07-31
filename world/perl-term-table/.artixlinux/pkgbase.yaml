@@ -1,13 +1,13 @@
 ---
 pkgbase:
   name: perl-term-table
-  version: 0.016-4
+  version: 0.016-4.1
   arch:
     - any
   pkgname:
     - perl-term-table
 actions:
-  addRepo: world-gremlins
+  addRepo: world-goblins
   removeRepo: null
   triggersBuild: true
   triggersRebuild: false
@@ -25,9 +25,9 @@ repos:
     version: null
     packages: []
   world-goblins:
-    version: 0.016-4
+    version: 0.016-4.1
     packages:
-      - perl-term-table-0.016-4-any.pkg.tar.zst
+      - perl-term-table-0.016-4.1-any.pkg.tar.zst
   world-gremlins:
     version: 0.016-4
     packages:
