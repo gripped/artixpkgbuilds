@@ -1,14 +1,14 @@
 ---
 pkgbase:
   name: perl-mail-box
-  version: 3.009-1
+  version: 3.009-1.1
   arch:
     - any
   pkgname:
     - perl-mail-box
 actions:
-  addRepo: world-gremlins
-  removeRepo: world-goblins
+  addRepo: world
+  removeRepo: world-gremlins
   triggersBuild: false
   triggersRebuild: false
   triggersRepoAdd: true
@@ -28,13 +28,12 @@ repos:
     version: null
     packages: []
   world-gremlins:
-    version: 3.009-1
-    packages:
-      - perl-mail-box-3.009-1-any.pkg.tar.zst
+    version: null
+    packages: []
   world:
-    version: 3.009-1
+    version: 3.009-1.1
     packages:
-      - perl-mail-box-3.009-1-any.pkg.tar.zst
+      - perl-mail-box-3.009-1.1-any.pkg.tar.zst
   lib32-goblins:
     version: null
     packages: []
