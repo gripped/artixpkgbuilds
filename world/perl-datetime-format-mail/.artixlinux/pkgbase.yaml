@@ -1,14 +1,14 @@
 ---
 pkgbase:
   name: perl-datetime-format-mail
-  version: 0.403-4
+  version: 0.403-4.1
   arch:
     - x86_64
   pkgname:
     - perl-datetime-format-mail
 actions:
-  addRepo: world-gremlins
-  removeRepo: world-goblins
+  addRepo: world
+  removeRepo: world-gremlins
   triggersBuild: false
   triggersRebuild: false
   triggersRepoAdd: true
@@ -28,13 +28,12 @@ repos:
     version: null
     packages: []
   world-gremlins:
-    version: 0.403-4
-    packages:
-      - perl-datetime-format-mail-0.403-4-x86_64.pkg.tar.zst
+    version: null
+    packages: []
   world:
-    version: 0.403-4
+    version: 0.403-4.1
     packages:
-      - perl-datetime-format-mail-0.403-4-x86_64.pkg.tar.zst
+      - perl-datetime-format-mail-0.403-4.1-x86_64.pkg.tar.zst
   lib32-goblins:
     version: null
     packages: []
