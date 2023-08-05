@@ -1,9 +1,9 @@
-# Maintainer: Nathan <ndowens@artixlinux.org>
+# Maintainer: Maxime Gauduin <alucryd@archlinux.org>
 # Contributor: TingPing <tingping@tingping.se>
 
 pkgname=hexchat
 pkgver=2.16.1
-pkgrel=4
+pkgrel=5
 pkgdesc='A popular and easy to use graphical IRC (chat) client'
 arch=('x86_64')
 url='https://hexchat.github.io/'
