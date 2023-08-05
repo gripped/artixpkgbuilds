@@ -8,11 +8,11 @@ pkgbase:
     - python-jupyterlab_server
 actions:
   addRepo: null
-  removeRepo: null
+  removeRepo: world
   triggersBuild: false
   triggersRebuild: false
   triggersRepoAdd: false
-  triggersRepoRemove: false
+  triggersRepoRemove: true
   triggersNoCheck: false
 repos:
   system-goblins:
@@ -31,9 +31,8 @@ repos:
     version: null
     packages: []
   world:
-    version: 2.23.0-1
-    packages:
-      - python-jupyterlab_server-2.23.0-1-any.pkg.tar.zst
+    version: null
+    packages: []
   lib32-goblins:
     version: null
     packages: []
