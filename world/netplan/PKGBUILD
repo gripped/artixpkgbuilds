@@ -13,20 +13,21 @@ depends=(
   'python-yaml'
   'python-netifaces'
   'iproute2'
-  'elogind'
+  'libelogind'
 )
 makedepends=(
   'python'
   'pkgconf'
   'pandoc'
+  'elogind'
 )
 source=(
   "0001-no-systemd.patch"
   "https://github.com/CanonicalLtd/${pkgname}/archive/${pkgver}.tar.gz"
 )
-sha512sums=('3006bae9aaf7cecbfd8b5e487a7085b8d64c9edcfd8c36e9d41dda5a62da3a46cfb6f2e6ebacd79da7158a1edf11f216f6839c4755925e3a27159db4205ad691'
+sha512sums=('02a9145ef718e2360ca3f9b995863eee2ac8a57d759b6344d6468ce8dd2240292f625524e2ef3122155e47249421a30b08e518e6a31e652ffb94bf0eb1cd24ce'
             '0592079888dc6be8802f5d5b01b62e1a570ac1fa340628bab9d7a4a38e796a1cde8c22ec98448e29a83569381035e9d7b06a92418a82547d0b1030151d94a9e2')
-b2sums=('ab81314ded7af9960b150b189a63de7eb67ca34a7e99a1ab176d240f49611588597da197ee79abc9a6c198b88c9864224ea3fceb7e22672eb2fc9f520d02d82a'
+b2sums=('552dd7505e15fa48f77a7a9693d67eebb2d8876816d6f164185ad9bceac1b1f077794393d7605ab6a881795cf134a2cd9c1c5b10eabae8775b5afbda3e2b293e'
         '3c77c8193269b372f79366bf31160a53fc59a5fff8f18fb12bcba89073da053e174349acd9ccd05c128023dd4e56d379d380a91ed309e651686dbbecfa5c7fb6')
 
 prepare() {
