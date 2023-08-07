@@ -1,8 +1,8 @@
-# Maintainer: Nathan <ndowens@artixlinux.org>
+# Maintainer: Christian Rebischke <chris.rebischke@archlinux.org>
 # Contributor:  Conrad Hoffmann <ch@bitfehler.net>
 
 pkgname=netplan
-pkgver=0.106
+pkgver=0.106.1
 pkgrel=1
 pkgdesc="Network configuration abstraction renderer"
 arch=('x86_64')
@@ -21,11 +21,13 @@ makedepends=(
   'pandoc'
 )
 source=(
-  "${pkgname}-${pkgver}.tar.gz::https://github.com/CanonicalLtd/${pkgname}/archive/${pkgver}.tar.gz"
   "0001-no-systemd.patch"
+  "https://github.com/CanonicalLtd/${pkgname}/archive/${pkgver}.tar.gz"
 )
-sha256sums=('09ca8c191f4cc387edb816c48aa77bcaffb712ba54a188fd27ce961eea02aa53'
-            '85b404c4f0a0090a4f42f55624089f57da5f539410bc2e477a86a9c70d411ba0')
+sha512sums=('3006bae9aaf7cecbfd8b5e487a7085b8d64c9edcfd8c36e9d41dda5a62da3a46cfb6f2e6ebacd79da7158a1edf11f216f6839c4755925e3a27159db4205ad691'
+            '0592079888dc6be8802f5d5b01b62e1a570ac1fa340628bab9d7a4a38e796a1cde8c22ec98448e29a83569381035e9d7b06a92418a82547d0b1030151d94a9e2')
+b2sums=('ab81314ded7af9960b150b189a63de7eb67ca34a7e99a1ab176d240f49611588597da197ee79abc9a6c198b88c9864224ea3fceb7e22672eb2fc9f520d02d82a'
+        '3c77c8193269b372f79366bf31160a53fc59a5fff8f18fb12bcba89073da053e174349acd9ccd05c128023dd4e56d379d380a91ed309e651686dbbecfa5c7fb6')
 
 prepare() {
   cd "${pkgname}-${pkgver}"
