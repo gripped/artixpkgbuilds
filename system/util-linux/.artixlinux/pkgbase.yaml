@@ -1,19 +1,19 @@
 ---
 pkgbase:
   name: util-linux
-  version: 2.39.1-1
+  version: 2.39.2-1
   arch:
     - x86_64
   pkgname:
     - util-linux
     - util-linux-libs
 actions:
-  addRepo: null
-  removeRepo: null
+  addRepo: system
+  removeRepo: system-gremlins
   triggersBuild: false
   triggersRebuild: false
-  triggersRepoAdd: false
-  triggersRepoRemove: false
+  triggersRepoAdd: true
+  triggersRepoRemove: true
   triggersNoCheck: false
 repos:
   system-goblins:
@@ -23,10 +23,10 @@ repos:
     version: null
     packages: []
   system:
-    version: 2.39.1-1
+    version: 2.39.2-1
     packages:
-      - util-linux-2.39.1-1-x86_64.pkg.tar.zst
-      - util-linux-libs-2.39.1-1-x86_64.pkg.tar.zst
+      - util-linux-2.39.2-1-x86_64.pkg.tar.zst
+      - util-linux-libs-2.39.2-1-x86_64.pkg.tar.zst
   world-goblins:
     version: null
     packages: []
