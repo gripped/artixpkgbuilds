@@ -1,7 +1,7 @@
 ---
 pkgbase:
   name: mpfr
-  version: 4.2.0.p12-3
+  version: 4.2.1-1
   arch:
     - x86_64
   pkgname:
@@ -22,9 +22,9 @@ repos:
     version: null
     packages: []
   system:
-    version: 4.2.0.p12-3
+    version: 4.2.1-1
     packages:
-      - mpfr-4.2.0.p12-3-x86_64.pkg.tar.zst
+      - mpfr-4.2.1-1-x86_64.pkg.tar.zst
   world-goblins:
     version: null
     packages: []
