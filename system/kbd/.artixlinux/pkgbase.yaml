@@ -1,18 +1,18 @@
 ---
 pkgbase:
   name: kbd
-  version: 2.6.1-1
+  version: 2.6.2-1
   arch:
     - x86_64
   pkgname:
     - kbd
 actions:
-  addRepo: null
-  removeRepo: null
+  addRepo: system
+  removeRepo: system-gremlins
   triggersBuild: false
   triggersRebuild: false
-  triggersRepoAdd: false
-  triggersRepoRemove: false
+  triggersRepoAdd: true
+  triggersRepoRemove: true
   triggersNoCheck: false
 repos:
   system-goblins:
@@ -22,9 +22,9 @@ repos:
     version: null
     packages: []
   system:
-    version: 2.6.1-1
+    version: 2.6.2-1
     packages:
-      - kbd-2.6.1-1-x86_64.pkg.tar.zst
+      - kbd-2.6.2-1-x86_64.pkg.tar.zst
   world-goblins:
     version: null
     packages: []
