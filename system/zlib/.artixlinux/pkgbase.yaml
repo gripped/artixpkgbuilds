@@ -1,19 +1,19 @@
 ---
 pkgbase:
   name: zlib
-  version: 1:1.2.13-3
+  version: 1:1.3-1
   arch:
     - x86_64
   pkgname:
     - zlib
     - minizip
 actions:
-  addRepo: null
-  removeRepo: null
+  addRepo: system
+  removeRepo: system-gremlins
   triggersBuild: false
   triggersRebuild: false
-  triggersRepoAdd: false
-  triggersRepoRemove: false
+  triggersRepoAdd: true
+  triggersRepoRemove: true
   triggersNoCheck: false
 repos:
   system-goblins:
@@ -23,10 +23,10 @@ repos:
     version: null
     packages: []
   system:
-    version: 1:1.2.13-3
+    version: 1:1.3-1
     packages:
-      - zlib-1:1.2.13-3-x86_64.pkg.tar.zst
-      - minizip-1:1.2.13-3-x86_64.pkg.tar.zst
+      - zlib-1:1.3-1-x86_64.pkg.tar.zst
+      - minizip-1:1.3-1-x86_64.pkg.tar.zst
   world-goblins:
     version: null
     packages: []
