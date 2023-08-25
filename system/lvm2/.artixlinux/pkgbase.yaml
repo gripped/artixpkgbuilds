@@ -1,7 +1,7 @@
 ---
 pkgbase:
   name: lvm2
-  version: 2.03.22-1
+  version: 2.03.22-2
   arch:
     - x86_64
   pkgname:
@@ -23,10 +23,10 @@ repos:
     version: null
     packages: []
   system:
-    version: 2.03.22-1
+    version: 2.03.22-2
     packages:
-      - lvm2-2.03.22-1-x86_64.pkg.tar.zst
-      - device-mapper-2.03.22-1-x86_64.pkg.tar.zst
+      - lvm2-2.03.22-2-x86_64.pkg.tar.zst
+      - device-mapper-2.03.22-2-x86_64.pkg.tar.zst
   world-goblins:
     version: null
     packages: []
