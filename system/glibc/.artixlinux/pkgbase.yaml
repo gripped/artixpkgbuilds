@@ -1,7 +1,7 @@
 ---
 pkgbase:
   name: glibc
-  version: 2.38-2
+  version: 2.38-3
   arch:
     - x86_64
   pkgname:
@@ -9,7 +9,7 @@ pkgbase:
     - lib32-glibc
 actions:
   addRepo: system
-  removeRepo: system-goblins
+  removeRepo: system-gremlins
   triggersBuild: false
   triggersRebuild: false
   triggersRepoAdd: true
@@ -23,10 +23,10 @@ repos:
     version: null
     packages: []
   system:
-    version: 2.38-2
+    version: 2.38-3
     packages:
-      - glibc-2.38-2-x86_64.pkg.tar.zst
-      - lib32-glibc-2.38-2-x86_64.pkg.tar.zst
+      - glibc-2.38-3-x86_64.pkg.tar.zst
+      - lib32-glibc-2.38-3-x86_64.pkg.tar.zst
   world-goblins:
     version: null
     packages: []
