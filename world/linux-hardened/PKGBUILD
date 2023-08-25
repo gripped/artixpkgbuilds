@@ -4,7 +4,7 @@
 # Contributor: Thomas Baechler <thomas@archlinux.org>
 
 pkgbase=linux-hardened
-pkgver=6.4.9.hardened1
+pkgver=6.4.11.hardened1
 pkgrel=1
 pkgdesc='Security-Hardened Linux'
 url='https://github.com/anthraxx/linux-hardened'
@@ -18,14 +18,9 @@ makedepends=(
   libelf
   pahole
   perl
+  python
   tar
   xz
-
-  # htmldocs
-  graphviz
-  imagemagick
-  python-sphinx
-  texlive-latexextra
 )
 options=('!strip')
 _srcname=linux-${pkgver%.*}
@@ -40,11 +35,11 @@ validpgpkeys=(
   647F28654894E3BD457199BE38DBBDC86092693E  # Greg Kroah-Hartman
   E240B57E2C4630BA768E2F26FC1B547C8D8172C8  # Levente Polyak
 )
-b2sums=('87a05cae7d5dca89921801f69467ec01a871941f5dd1bd956bc9f13c4786b35a141811808b36e45471ee3bbe15d669d7114257759f3e5893d17ca38e40ebdc4b'
+b2sums=('dfb97f2c9905a150c0890b9c3d464bc13986bec7bcd038c333f4dce443e0a1988a9075554219f9f419ef71af98827c05fad4a62aba1e58aa7f2ef8249f140175'
         'SKIP'
-        '14c6b8b16294aa9ed401f8aab2b9e219ba6071b35a57abdd45b20dce983b8dd40b90900b096d774ee44b63d77168f5087beb0c1f1ca6ce1400e1c891f80e2173'
+        '4bc804672d602119cb99fe8dae9c5c2006186e81cd7265cf04afdb94ae83f5e6cd1df5a11e3203ce6a59d950b4ef5c8377610bbbaf547d0f7442a9f51881abb0'
         'SKIP'
-        '5c222450f912263c241f865858109e38f29554145e48850c3eb24ee998d23c533e18572dbe88d937b54d0e6fd41fc3896e4399b1a43cd9dd20d07428c83807bf')
+        'af81842e547c40a55cd8ad575b5028aa393901e2d42a589f4e9db507986043d2d9f9e1c255d23fcaed2e95ab3b6f7f406f9ad4248f509296f23bec3e3fe651d9')
 
 export KBUILD_BUILD_HOST=artixlinux
 export KBUILD_BUILD_USER=$pkgbase
@@ -77,12 +72,7 @@ prepare() {
 
 build() {
   cd $_srcname
-
-  make htmldocs &
-  local pid_docs=$!
-
   make all
-  wait "${pid_docs}"
 }
 
 _package() {
