@@ -1,18 +1,18 @@
 ---
 pkgbase:
   name: lib32-udev
-  version: 253.6-1
+  version: 254.1-1
   arch:
     - x86_64
   pkgname:
     - lib32-udev
 actions:
-  addRepo: null
-  removeRepo: null
+  addRepo: lib32
+  removeRepo: lib32-gremlins
   triggersBuild: false
   triggersRebuild: false
-  triggersRepoAdd: false
-  triggersRepoRemove: false
+  triggersRepoAdd: true
+  triggersRepoRemove: true
   triggersNoCheck: false
 repos:
   system-goblins:
@@ -37,13 +37,12 @@ repos:
     version: null
     packages: []
   lib32-gremlins:
-    version: 253.6-1
-    packages:
-      - lib32-udev-253.6-1-x86_64.pkg.tar.zst
+    version: null
+    packages: []
   lib32:
-    version: 253.5-1
+    version: 254.1-1
     packages:
-      - lib32-udev-253.5-1-x86_64.pkg.tar.zst
+      - lib32-udev-254.1-1-x86_64.pkg.tar.zst
   galaxy-goblins:
     version: null
     packages: []
