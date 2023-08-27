@@ -1,7 +1,7 @@
 ---
 pkgbase:
-  name: shiboken2
-  version: 5.15.10-1.1
+  name: pyside2
+  version: 5.15.10-2
   arch:
     - x86_64
   pkgname:
@@ -10,12 +10,12 @@ pkgbase:
     - pyside2
     - pyside2-tools
 actions:
-  addRepo: world
-  removeRepo: world-gremlins
-  triggersBuild: false
+  addRepo: world-gremlins
+  removeRepo: null
+  triggersBuild: true
   triggersRebuild: false
   triggersRepoAdd: true
-  triggersRepoRemove: true
+  triggersRepoRemove: false
   triggersNoCheck: false
 repos:
   system-goblins:
@@ -31,8 +31,12 @@ repos:
     version: null
     packages: []
   world-gremlins:
-    version: null
-    packages: []
+    version: 5.15.10-2
+    packages:
+      - shiboken2-5.15.10-2-x86_64.pkg.tar.zst
+      - python-shiboken2-5.15.10-2-x86_64.pkg.tar.zst
+      - pyside2-5.15.10-2-x86_64.pkg.tar.zst
+      - pyside2-tools-5.15.10-2-x86_64.pkg.tar.zst
   world:
     version: 5.15.10-1.1
     packages:
