@@ -1,13 +1,13 @@
 ---
 pkgbase:
   name: julia
-  version: 2:1.9.2-3
+  version: 2:1.9.3-1
   arch:
     - x86_64
   pkgname:
     - julia
 actions:
-  addRepo: world-goblins
+  addRepo: world-gremlins
   removeRepo: null
   triggersBuild: true
   triggersRebuild: false
@@ -25,12 +25,12 @@ repos:
     version: null
     packages: []
   world-goblins:
-    version: 2:1.9.2-3
-    packages:
-      - julia-2:1.9.2-3-x86_64.pkg.tar.zst
-  world-gremlins:
     version: null
     packages: []
+  world-gremlins:
+    version: 2:1.9.3-1
+    packages:
+      - julia-2:1.9.3-1-x86_64.pkg.tar.zst
   world:
     version: 2:1.9.2-2
     packages:
