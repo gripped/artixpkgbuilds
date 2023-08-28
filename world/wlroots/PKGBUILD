@@ -1,10 +1,10 @@
-# Maintainer: Nathan <ndowens@artixlinux.org>
+# Maintainer: Brett Cornwall <ainola@archlinux.org>
 # Maintainer: Maxim Baz <$pkgname at maximbaz dot com>
 # Contributor: Omar Pakker
 
 pkgname=wlroots
 pkgver=0.16.2
-pkgrel=1
+pkgrel=2
 license=('MIT')
 pkgdesc='Modular Wayland compositor library'
 url='https://gitlab.freedesktop.org/wlroots/wlroots'
@@ -46,10 +46,12 @@ source=(
     "$pkgname-$pkgver.tar.gz::https://gitlab.freedesktop.org/wlroots/wlroots/-/releases/$pkgver/downloads/wlroots-$pkgver.tar.gz"
     "https://gitlab.freedesktop.org/wlroots/wlroots/-/releases/$pkgver/downloads/wlroots-$pkgver.tar.gz.sig"
     "0001-find-libseat.patch"
+    "Revert-layer-shell-error-on-0-dimension-without-anch.patch"
 )
 sha256sums=('83e9a11605f23d4bf781ab1947089483d9ec3f7e9ba65398e0609593b77d44aa'
             'SKIP'
-            'ea5499b3663682d22301f62498b92929c96d2ec4290916e91a95d2ca3af9956d')
+            'ea5499b3663682d22301f62498b92929c96d2ec4290916e91a95d2ca3af9956d'
+            'd53a62f49334fe15583a951c9e38e7f9f74b19210bdb7f80f16ec0398c3d7b3e')
 validpgpkeys=(
     '34FF9526CFEF0E97A340E2E40FDE7BE0E88F5E48' # Simon Ser
     '9DDA3B9FA5D58DD5392C78E652CB6609B22DA89A' # Drew DeVault
@@ -57,8 +59,11 @@ validpgpkeys=(
 )
 
 prepare() {
-    cd "$pkgname-$pkgver"
     patch -Np1 -i ../0001-find-libseat.patch
+    cd "${pkgname}-${pkgver}"
+    # Allow a minor protocol violation until phosh is fixed without this patch
+    # phosh crashes on launch.
+    patch -Np1 -i "${srcdir}/Revert-layer-shell-error-on-0-dimension-without-anch.patch"
 }
 
 build() {
