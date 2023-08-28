@@ -59,8 +59,8 @@ validpgpkeys=(
 )
 
 prepare() {
-    patch -Np1 -i ../0001-find-libseat.patch
     cd "${pkgname}-${pkgver}"
+    patch -Np1 -i ../0001-find-libseat.patch
     # Allow a minor protocol violation until phosh is fixed without this patch
     # phosh crashes on launch.
     patch -Np1 -i "${srcdir}/Revert-layer-shell-error-on-0-dimension-without-anch.patch"
