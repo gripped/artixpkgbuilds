@@ -1,18 +1,18 @@
 ---
 pkgbase:
   name: kdevelop
-  version: 23.08.0-2
+  version: 23.08.0-2.1
   arch:
     - x86_64
   pkgname:
     - kdevelop
 actions:
   addRepo: world
-  removeRepo: world-gremlins
-  triggersBuild: false
+  removeRepo: null
+  triggersBuild: true
   triggersRebuild: false
   triggersRepoAdd: true
-  triggersRepoRemove: true
+  triggersRepoRemove: false
   triggersNoCheck: false
 repos:
   system-goblins:
@@ -25,16 +25,16 @@ repos:
     version: null
     packages: []
   world-goblins:
-    version: 23.04.3-2
-    packages:
-      - kdevelop-23.04.3-2-x86_64.pkg.tar.zst
-  world-gremlins:
     version: null
     packages: []
-  world:
-    version: 23.08.0-2
+  world-gremlins:
+    version: 23.08.0-2.2
     packages:
-      - kdevelop-23.08.0-2-x86_64.pkg.tar.zst
+      - kdevelop-23.08.0-2.2-x86_64.pkg.tar.zst
+  world:
+    version: 23.08.0-2.1
+    packages:
+      - kdevelop-23.08.0-2.1-x86_64.pkg.tar.zst
   lib32-goblins:
     version: null
     packages: []
