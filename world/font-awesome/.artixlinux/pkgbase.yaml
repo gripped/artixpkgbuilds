@@ -1,18 +1,18 @@
 ---
 pkgbase:
-  name: ttf-font-awesome
-  version: 6.4.0-1
+  name: font-awesome
+  version: 6.4.2-1
   arch:
     - any
   pkgname:
     - ttf-font-awesome
     - otf-font-awesome
 actions:
-  addRepo: null
+  addRepo: world-gremlins
   removeRepo: null
-  triggersBuild: false
+  triggersBuild: true
   triggersRebuild: false
-  triggersRepoAdd: false
+  triggersRepoAdd: true
   triggersRepoRemove: false
   triggersNoCheck: false
 repos:
@@ -29,8 +29,10 @@ repos:
     version: null
     packages: []
   world-gremlins:
-    version: null
-    packages: []
+    version: 6.4.2-1
+    packages:
+      - ttf-font-awesome-6.4.2-1-any.pkg.tar.zst
+      - otf-font-awesome-6.4.2-1-any.pkg.tar.zst
   world:
     version: 6.4.0-1
     packages:
