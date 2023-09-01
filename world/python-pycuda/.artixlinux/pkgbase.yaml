@@ -1,18 +1,18 @@
 ---
 pkgbase:
   name: python-pycuda
-  version: 2022.2.2-3
+  version: 2022.2.2-4
   arch:
     - x86_64
   pkgname:
     - python-pycuda
 actions:
-  addRepo: null
-  removeRepo: null
+  addRepo: world-gremlins
+  removeRepo: world-goblins
   triggersBuild: false
   triggersRebuild: false
-  triggersRepoAdd: false
-  triggersRepoRemove: false
+  triggersRepoAdd: true
+  triggersRepoRemove: true
   triggersNoCheck: false
 repos:
   system-goblins:
@@ -28,8 +28,9 @@ repos:
     version: null
     packages: []
   world-gremlins:
-    version: null
-    packages: []
+    version: 2022.2.2-4
+    packages:
+      - python-pycuda-2022.2.2-4-x86_64.pkg.tar.zst
   world:
     version: 2022.2.2-3
     packages:
