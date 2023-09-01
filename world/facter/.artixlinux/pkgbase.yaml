@@ -1,18 +1,18 @@
 ---
 pkgbase:
   name: facter
-  version: 3.14.24-5
+  version: 3.14.24-6
   arch:
     - x86_64
   pkgname:
     - facter
 actions:
-  addRepo: null
-  removeRepo: null
+  addRepo: world-gremlins
+  removeRepo: world-goblins
   triggersBuild: false
   triggersRebuild: false
-  triggersRepoAdd: false
-  triggersRepoRemove: false
+  triggersRepoAdd: true
+  triggersRepoRemove: true
   triggersNoCheck: false
 repos:
   system-goblins:
@@ -28,8 +28,9 @@ repos:
     version: null
     packages: []
   world-gremlins:
-    version: null
-    packages: []
+    version: 3.14.24-6
+    packages:
+      - facter-3.14.24-6-x86_64.pkg.tar.zst
   world:
     version: 3.14.24-5
     packages:
