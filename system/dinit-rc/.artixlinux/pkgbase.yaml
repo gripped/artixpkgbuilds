@@ -1,23 +1,24 @@
 ---
 pkgbase:
   name: dinit-rc
-  version: 0.0.32-1
+  version: 0.0.33-1
   arch:
     - x86_64
   pkgname:
     - dinit-rc
 actions:
-  addRepo: null
-  removeRepo: null
+  addRepo: system-goblins
+  removeRepo: system-gremlins
   triggersBuild: false
   triggersRebuild: false
-  triggersRepoAdd: false
-  triggersRepoRemove: false
+  triggersRepoAdd: true
+  triggersRepoRemove: true
   triggersNoCheck: false
 repos:
   system-goblins:
-    version: null
-    packages: []
+    version: 0.0.33-1
+    packages:
+      - dinit-rc-0.0.33-1-x86_64.pkg.tar.zst
   system-gremlins:
     version: null
     packages: []
