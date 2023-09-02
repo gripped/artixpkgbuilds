@@ -1,0 +1,12 @@
+# Maintainer: artoo <artoo@artixlinux.org>
+
+pkgname=lib32-artix-archlinux-support
+pkgver=1
+pkgrel=1
+arch=('any')
+pkgdesc='Add arch linux multilib repo support'
+license=('GPL')
+url='https://gitea.artixlinux.org/artix'
+provides=('lib32-systemd')
+conflicts=('lib32-systemd')
+depends=('artix-archlinux-support' 'lib32-elogind')
