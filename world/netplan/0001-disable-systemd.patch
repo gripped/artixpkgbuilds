@@ -1,0 +1,84 @@
+From 148c0d1bf2f38ab77de5c59848c29023804cc4c0 Mon Sep 17 00:00:00 2001
+From: nathan <ndowens@artixlinux.org>
+Date: Wed, 6 Sep 2023 03:24:32 -0500
+Subject: [PATCH] disable systemd
+
+---
+ dbus/meson.build | 5 +++--
+ meson.build      | 4 ----
+ src/dbus.c       | 4 ++--
+ src/meson.build  | 3 +--
+ 4 files changed, 6 insertions(+), 10 deletions(-)
+
+diff --git a/dbus/meson.build b/dbus/meson.build
+index fc34e2c..90c33c6 100644
+--- a/dbus/meson.build
++++ b/dbus/meson.build
+@@ -12,14 +12,15 @@ executable(
+     '../src/dbus.c',
+     features_h,
+     include_directories: inc,
++    link_args:'-lelogind',
+     link_with: libnetplan,
+-    dependencies: [libsystemd, glib, gio, yaml, uuid],
++    dependencies: [glib, gio, yaml, uuid],
+     install_dir: join_paths(get_option('libexecdir'), 'netplan'),
+     install: true)
+ 
+ install_data(
+     'io.netplan.Netplan.conf',
+-    install_dir: join_paths(get_option('datadir'), 'dbus-1', 'system.d'))
++    install_dir: join_paths(get_option('datadir'), 'dbus-1'))
+ 
+ conf_data = configuration_data()
+ conf_data.set('ROOTLIBEXECDIR', join_paths(get_option('prefix'), get_option('libexecdir')))
+diff --git a/meson.build b/meson.build
+index 4ad1d8a..baf497b 100644
+--- a/meson.build
++++ b/meson.build
+@@ -13,13 +13,9 @@ glib = dependency('glib-2.0')
+ gio  = dependency('gio-2.0')
+ yaml = dependency('yaml-0.1')
+ uuid = dependency('uuid')
+-libsystemd = dependency('libsystemd')
+ 
+ meson_make_symlink = meson.current_source_dir() + '/tools/meson-make-symlink.sh'
+-
+-systemd = dependency('systemd')
+ completions = dependency('bash-completion')
+-systemd_generator_dir = systemd.get_variable(pkgconfig: 'systemdsystemgeneratordir')
+ bash_completions_dir = completions.get_variable(pkgconfig: 'completionsdir', default_value: '/etc/bash_completion.d')
+ 
+ # Order: Fedora/Mageia/openSUSE || Debian/Ubuntu
+diff --git a/src/dbus.c b/src/dbus.c
+index 3eb88a6..2b35463 100644
+--- a/src/dbus.c
++++ b/src/dbus.c
+@@ -11,8 +11,8 @@
+ #include <glib.h>
+ #include <glib/gstdio.h>
+ #include <gio/gio.h>
+-#include <systemd/sd-bus.h>
+-#include <systemd/sd-event.h>
++#include <elogind/sd-bus.h>
++#include <elogind/sd-event.h>
+ 
+ #include "_features.h"
+ #include "util-internal.h"
+diff --git a/src/meson.build b/src/meson.build
+index 1636fbc..a4bc0f4 100644
+--- a/src/meson.build
++++ b/src/meson.build
+@@ -35,8 +35,7 @@ executable(
+     install_dir: libexec_netplan,
+     install: true)
+ meson.add_install_script(meson_make_symlink,
+-    join_paths(get_option('prefix'), libexec_netplan, 'generate'),
+-    join_paths(systemd_generator_dir, 'netplan'))
++    join_paths(get_option('prefix'), libexec_netplan, 'generate'))
+ # FIXME: Drop legacy symlink after 0.107 is released:
+ # It's only around for legacy reasons, see netplan/cli/utils.py: get_generator_path()
+ meson.add_install_script(meson_make_symlink,
+-- 
+2.42.0
+
