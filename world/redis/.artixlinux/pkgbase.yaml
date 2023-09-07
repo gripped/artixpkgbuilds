@@ -1,13 +1,13 @@
 ---
 pkgbase:
   name: redis
-  version: 7.2.0-1
+  version: 7.2.1-1
   arch:
     - x86_64
   pkgname:
     - redis
 actions:
-  addRepo: world-gremlins
+  addRepo: world
   removeRepo: null
   triggersBuild: true
   triggersRebuild: false
@@ -28,13 +28,12 @@ repos:
     version: null
     packages: []
   world-gremlins:
-    version: 7.2.0-1
-    packages:
-      - redis-7.2.0-1-x86_64.pkg.tar.zst
+    version: null
+    packages: []
   world:
-    version: 7.0.12-1
+    version: 7.2.1-1
     packages:
-      - redis-7.0.12-1-x86_64.pkg.tar.zst
+      - redis-7.2.1-1-x86_64.pkg.tar.zst
   lib32-goblins:
     version: null
     packages: []
