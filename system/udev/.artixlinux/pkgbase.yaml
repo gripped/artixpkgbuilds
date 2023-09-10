@@ -1,7 +1,7 @@
 ---
 pkgbase:
   name: udev
-  version: 254.2-1
+  version: 254.3-1
   arch:
     - x86_64
   pkgname:
@@ -22,19 +22,19 @@ repos:
     version: null
     packages: []
   system-gremlins:
+    version: 254.3-1
+    packages:
+      - udev-254.3-1-x86_64.pkg.tar.zst
+      - libudev-254.3-1-x86_64.pkg.tar.zst
+      - esysusers-254.3-1-x86_64.pkg.tar.zst
+      - etmpfiles-254.3-1-x86_64.pkg.tar.zst
+  system:
     version: 254.2-1
     packages:
       - udev-254.2-1-x86_64.pkg.tar.zst
       - libudev-254.2-1-x86_64.pkg.tar.zst
       - esysusers-254.2-1-x86_64.pkg.tar.zst
       - etmpfiles-254.2-1-x86_64.pkg.tar.zst
-  system:
-    version: 254.1-2
-    packages:
-      - udev-254.1-2-x86_64.pkg.tar.zst
-      - libudev-254.1-2-x86_64.pkg.tar.zst
-      - esysusers-254.1-2-x86_64.pkg.tar.zst
-      - etmpfiles-254.1-2-x86_64.pkg.tar.zst
   world-goblins:
     version: null
     packages: []
