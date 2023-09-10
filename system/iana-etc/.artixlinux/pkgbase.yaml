@@ -1,7 +1,7 @@
 ---
 pkgbase:
   name: iana-etc
-  version: 20230803-1
+  version: 20230907-1
   arch:
     - any
   pkgname:
@@ -22,9 +22,9 @@ repos:
     version: null
     packages: []
   system:
-    version: 20230803-1
+    version: 20230907-1
     packages:
-      - iana-etc-20230803-1-any.pkg.tar.zst
+      - iana-etc-20230907-1-any.pkg.tar.zst
   world-goblins:
     version: null
     packages: []
