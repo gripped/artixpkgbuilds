@@ -1,7 +1,7 @@
 ---
 pkgbase:
   name: ruby-bake-modernize
-  version: 0.17.7-1
+  version: 0.17.8-1
   arch:
     - any
   pkgname:
@@ -31,9 +31,9 @@ repos:
     version: null
     packages: []
   world:
-    version: 0.17.7-1
+    version: 0.17.8-1
     packages:
-      - ruby-bake-modernize-0.17.7-1-any.pkg.tar.zst
+      - ruby-bake-modernize-0.17.8-1-any.pkg.tar.zst
   lib32-goblins:
     version: null
     packages: []
