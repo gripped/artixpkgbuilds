@@ -1,13 +1,13 @@
 ---
 pkgbase:
   name: npm
-  version: 10.0.0-1
+  version: 10.1.0-1
   arch:
     - any
   pkgname:
     - npm
 actions:
-  addRepo: world-gremlins
+  addRepo: world
   removeRepo: null
   triggersBuild: true
   triggersRebuild: false
@@ -28,13 +28,12 @@ repos:
     version: null
     packages: []
   world-gremlins:
-    version: 10.0.0-1
-    packages:
-      - npm-10.0.0-1-any.pkg.tar.zst
+    version: null
+    packages: []
   world:
-    version: 9.8.1-1
+    version: 10.1.0-1
     packages:
-      - npm-9.8.1-1-any.pkg.tar.zst
+      - npm-10.1.0-1-any.pkg.tar.zst
   lib32-goblins:
     version: null
     packages: []
