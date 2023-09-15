@@ -1,18 +1,18 @@
 ---
 pkgbase:
   name: squid-dinit
-  version: 20211102-2
+  version: 20211102-3
   arch:
     - any
   pkgname:
     - squid-dinit
 actions:
-  addRepo: null
-  removeRepo: null
+  addRepo: world-gremlins
+  removeRepo: world-goblins
   triggersBuild: false
   triggersRebuild: false
-  triggersRepoAdd: false
-  triggersRepoRemove: false
+  triggersRepoAdd: true
+  triggersRepoRemove: true
   triggersNoCheck: false
 repos:
   system-goblins:
@@ -28,8 +28,9 @@ repos:
     version: null
     packages: []
   world-gremlins:
-    version: null
-    packages: []
+    version: 20211102-3
+    packages:
+      - squid-dinit-20211102-3-any.pkg.tar.zst
   world:
     version: 20211102-2
     packages:
