@@ -1,27 +1,27 @@
 ---
 pkgbase:
   name: dbus-dinit
-  version: 20230906-1
+  version: 20230906-2
   arch:
     - any
   pkgname:
     - dbus-dinit
 actions:
-  addRepo: null
-  removeRepo: system-gremlins
+  addRepo: system-gremlins
+  removeRepo: system-goblins
   triggersBuild: false
   triggersRebuild: false
-  triggersRepoAdd: false
+  triggersRepoAdd: true
   triggersRepoRemove: true
   triggersNoCheck: false
 repos:
   system-goblins:
-    version: 20230906-1
-    packages:
-      - dbus-dinit-20230906-1-any.pkg.tar.zst
-  system-gremlins:
     version: null
     packages: []
+  system-gremlins:
+    version: 20230906-2
+    packages:
+      - dbus-dinit-20230906-2-any.pkg.tar.zst
   system:
     version: 20211104-1
     packages:
