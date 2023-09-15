@@ -1,26 +1,27 @@
 ---
 pkgbase:
   name: openssh-dinit
-  version: 20211026-2
+  version: 20230906-1
   arch:
     - any
   pkgname:
     - openssh-dinit
 actions:
-  addRepo: null
-  removeRepo: null
+  addRepo: system-gremlins
+  removeRepo: system-goblins
   triggersBuild: false
   triggersRebuild: false
-  triggersRepoAdd: false
-  triggersRepoRemove: false
+  triggersRepoAdd: true
+  triggersRepoRemove: true
   triggersNoCheck: false
 repos:
   system-goblins:
     version: null
     packages: []
   system-gremlins:
-    version: null
-    packages: []
+    version: 20230906-1
+    packages:
+      - openssh-dinit-20230906-1-any.pkg.tar.zst
   system:
     version: 20211026-2
     packages:
