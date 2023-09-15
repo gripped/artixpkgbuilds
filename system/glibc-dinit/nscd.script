@@ -1,3 +1,0 @@
-#!/bin/sh
-mkdir -p /run/nscd /var/db/nscd
-exec nscd -F 2>&1

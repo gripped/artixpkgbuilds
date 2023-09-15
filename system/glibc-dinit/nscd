@@ -1,5 +1,6 @@
 type            = process
-command         = /etc/dinit.d/scripts/nscd
+command         = /usr/bin/nscd -F
 smooth-recovery = true
 logfile         = /var/log/dinit/nscd.log
-waits-for       = pseudofs
+after           = loginready
+depends-on      = nscd-pre
