@@ -1,26 +1,27 @@
 ---
 pkgbase:
   name: gpm-dinit
-  version: 20211029-1
+  version: 20211029-2
   arch:
     - any
   pkgname:
     - gpm-dinit
 actions:
-  addRepo: null
-  removeRepo: null
+  addRepo: system-gremlins
+  removeRepo: system-goblins
   triggersBuild: false
   triggersRebuild: false
-  triggersRepoAdd: false
-  triggersRepoRemove: false
+  triggersRepoAdd: true
+  triggersRepoRemove: true
   triggersNoCheck: false
 repos:
   system-goblins:
     version: null
     packages: []
   system-gremlins:
-    version: null
-    packages: []
+    version: 20211029-2
+    packages:
+      - gpm-dinit-20211029-2-any.pkg.tar.zst
   system:
     version: 20211029-1
     packages:
