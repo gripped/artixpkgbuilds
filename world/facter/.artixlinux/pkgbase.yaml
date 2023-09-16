@@ -1,7 +1,7 @@
 ---
 pkgbase:
   name: facter
-  version: 3.14.24-6
+  version: 3.14.24-7
   arch:
     - x86_64
   pkgname:
@@ -31,9 +31,9 @@ repos:
     version: null
     packages: []
   world:
-    version: 3.14.24-6
+    version: 3.14.24-7
     packages:
-      - facter-3.14.24-6-x86_64.pkg.tar.zst
+      - facter-3.14.24-7-x86_64.pkg.tar.zst
   lib32-goblins:
     version: null
     packages: []
