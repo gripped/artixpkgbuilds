@@ -28,18 +28,10 @@ makedepends=(
   'gtk-doc'
 )
 backup=('etc/udisks2/udisks2.conf')
-source=("https://github.com/storaged-project/udisks/releases/download/udisks-$pkgver/udisks-$pkgver.tar.bz2"
-        '0001-disable-systemd.patch')
-sha512sums=('9cdaeca4306a970c85f88d406dbe5d2dad23d72f47d9ab1c021b8c2888d4c790f680eb94388d86f9255024283b4a36e98b8aee4408d193a7d4aad1e74463356a'
-            '1ec74f2f31e2e6197fd1f6be75c6907f705ddffc08fcbb58e196567119a9dcaccefc226caba1ba84867bc047e41514a2b98ff5c1563597ea2019acb109b0c178')
-b2sums=('41282e4dbbd93e6bda2a10a6ff2f2fb82bfc83b3ccbed9450cca7888c634cde9300fcd0b7d055e0d8e4c8fc0b431a75d5612a24132ea9b2677d194529732178d'
-        '99f823f0205c6cd968539ab3c840f1ae59bcf9f9d59202661db6d248d0b57f74d7d574bcb1aa515ac9d9b50b23b18e145d663ca4990eb7465dc55224f2d3c34b')
+source=("https://github.com/storaged-project/udisks/releases/download/udisks-$pkgver/udisks-$pkgver.tar.bz2")
+sha512sums=('9cdaeca4306a970c85f88d406dbe5d2dad23d72f47d9ab1c021b8c2888d4c790f680eb94388d86f9255024283b4a36e98b8aee4408d193a7d4aad1e74463356a')
+b2sums=('41282e4dbbd93e6bda2a10a6ff2f2fb82bfc83b3ccbed9450cca7888c634cde9300fcd0b7d055e0d8e4c8fc0b431a75d5612a24132ea9b2677d194529732178d')
 
-prepare() {
-  cd udisks-$pkgver
-  patch -Np1 -i ../0001-disable-systemd.patch
-
-}
 build() {
   local configure_options=(
     --disable-static
@@ -49,6 +41,7 @@ build() {
     --prefix=/usr
     --sbindir=/usr/bin
     --sysconfdir=/etc
+    --disable-systemd
   )
 
   cd udisks-$pkgver
