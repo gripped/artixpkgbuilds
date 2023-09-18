@@ -25,16 +25,15 @@ repos:
     version: null
     packages: []
   world-goblins:
-    version: 7.0.0-2
-    packages:
-      - python-inflect-7.0.0-2-any.pkg.tar.zst
+    version: null
+    packages: []
   world-gremlins:
     version: null
     packages: []
   world:
-    version: 7.0.0-1
+    version: 7.0.0-2
     packages:
-      - python-inflect-7.0.0-1-any.pkg.tar.zst
+      - python-inflect-7.0.0-2-any.pkg.tar.zst
   lib32-goblins:
     version: null
     packages: []
