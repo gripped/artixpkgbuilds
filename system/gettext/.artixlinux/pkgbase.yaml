@@ -1,18 +1,18 @@
 ---
 pkgbase:
   name: gettext
-  version: 0.22-1
+  version: 0.22.2-1
   arch:
     - x86_64
   pkgname:
     - gettext
 actions:
-  addRepo: null
-  removeRepo: null
+  addRepo: system
+  removeRepo: system-gremlins
   triggersBuild: false
   triggersRebuild: false
-  triggersRepoAdd: false
-  triggersRepoRemove: false
+  triggersRepoAdd: true
+  triggersRepoRemove: true
   triggersNoCheck: false
 repos:
   system-goblins:
@@ -22,9 +22,9 @@ repos:
     version: null
     packages: []
   system:
-    version: 0.22-1
+    version: 0.22.2-1
     packages:
-      - gettext-0.22-1-x86_64.pkg.tar.zst
+      - gettext-0.22.2-1-x86_64.pkg.tar.zst
   world-goblins:
     version: null
     packages: []
