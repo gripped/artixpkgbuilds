@@ -1,7 +1,7 @@
 ---
 pkgbase:
   name: ungoogled-chromium
-  version: 117.0.5938.88-1
+  version: 117.0.5938.92-1
   arch:
     - x86_64
   pkgname:
@@ -49,6 +49,6 @@ repos:
     version: null
     packages: []
   galaxy:
-    version: 117.0.5938.88-1
+    version: 117.0.5938.92-1
     packages:
-      - ungoogled-chromium-117.0.5938.88-1-x86_64.pkg.tar.zst
+      - ungoogled-chromium-117.0.5938.92-1-x86_64.pkg.tar.zst
