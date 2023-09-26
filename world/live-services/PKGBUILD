@@ -1,4 +1,4 @@
-# Mainta5;16miner: artoo <artoo@artixlinux.org>
+# Maintainer: artoo <artoo@artixlinux.org>
 # Contributor: nous <nous@artixlinux.org>
 # Contributor: dudemanguy <dudemanguy@artixlinux.org>
 
@@ -8,7 +8,7 @@ pkgname=('artix-live-base'
         'artix-live-runit'
         'artix-live-s6'
         'artix-live-dinit')
-pkgver=0.13.8
+pkgver=0.13.9
 pkgrel=1
 pkgdesc='Artix live session'
 arch=('any')
@@ -19,7 +19,7 @@ makedepends=('git')
 #_commit=91b23a52650c592c2f2596e9a2fb350d8a5c4aa6 # 0.11.1
 #source=("git+$url.git#commit=$_commit")
 source=("${pkgbase}-${pkgver}.tar.gz::$url/archive/${pkgver}.tar.gz")
-sha256sums=('222e8c25e60e1b8c49b1b66c47b08ff2c0faba9b0652948a5c51252918f47fd5')
+sha256sums=('23951637265ff97353059f2ade3cc60c874f5bcec01e9e2d052d2a2f736b474c')
 
 build() {
     make -C "${pkgbase}"
