@@ -1,18 +1,18 @@
 ---
 pkgbase:
   name: earlyoom-dinit
-  version: 20211101-2
+  version: 20211101-3
   arch:
     - any
   pkgname:
     - earlyoom-dinit
 actions:
-  addRepo: null
-  removeRepo: null
+  addRepo: world
+  removeRepo: world-gremlins
   triggersBuild: false
   triggersRebuild: false
-  triggersRepoAdd: false
-  triggersRepoRemove: false
+  triggersRepoAdd: true
+  triggersRepoRemove: true
   triggersNoCheck: false
 repos:
   system-goblins:
@@ -31,9 +31,9 @@ repos:
     version: null
     packages: []
   world:
-    version: 20211101-2
+    version: 20211101-3
     packages:
-      - earlyoom-dinit-20211101-2-any.pkg.tar.zst
+      - earlyoom-dinit-20211101-3-any.pkg.tar.zst
   lib32-goblins:
     version: null
     packages: []
