@@ -1,14 +1,14 @@
 ---
 pkgbase:
   name: dhcp-dinit
-  version: 20230906-1
+  version: 20230906-2
   arch:
     - any
   pkgname:
     - dhcp-dinit
 actions:
-  addRepo: world-gremlins
-  removeRepo: world-goblins
+  addRepo: world
+  removeRepo: world-gremlins
   triggersBuild: false
   triggersRebuild: false
   triggersRepoAdd: true
@@ -28,13 +28,12 @@ repos:
     version: null
     packages: []
   world-gremlins:
-    version: 20230906-1
-    packages:
-      - dhcp-dinit-20230906-1-any.pkg.tar.zst
+    version: null
+    packages: []
   world:
-    version: 20211030-3
+    version: 20230906-2
     packages:
-      - dhcp-dinit-20211030-3-any.pkg.tar.zst
+      - dhcp-dinit-20230906-2-any.pkg.tar.zst
   lib32-goblins:
     version: null
     packages: []
