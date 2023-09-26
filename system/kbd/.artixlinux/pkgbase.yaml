@@ -1,7 +1,7 @@
 ---
 pkgbase:
   name: kbd
-  version: 2.6.2-1
+  version: 2.6.3-1
   arch:
     - x86_64
   pkgname:
@@ -22,9 +22,9 @@ repos:
     version: null
     packages: []
   system:
-    version: 2.6.2-1
+    version: 2.6.3-1
     packages:
-      - kbd-2.6.2-1-x86_64.pkg.tar.zst
+      - kbd-2.6.3-1-x86_64.pkg.tar.zst
   world-goblins:
     version: null
     packages: []
