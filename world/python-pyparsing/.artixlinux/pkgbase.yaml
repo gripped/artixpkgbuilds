@@ -1,18 +1,18 @@
 ---
 pkgbase:
   name: python-pyparsing
-  version: 3.1.0-1
+  version: 3.1.1-1
   arch:
     - any
   pkgname:
     - python-pyparsing
 actions:
-  addRepo: world-gremlins
-  removeRepo: null
-  triggersBuild: true
+  addRepo: null
+  removeRepo: world-gremlins
+  triggersBuild: false
   triggersRebuild: false
-  triggersRepoAdd: true
-  triggersRepoRemove: false
+  triggersRepoAdd: false
+  triggersRepoRemove: true
   triggersNoCheck: false
 repos:
   system-goblins:
@@ -28,13 +28,12 @@ repos:
     version: null
     packages: []
   world-gremlins:
-    version: 3.1.0-1
-    packages:
-      - python-pyparsing-3.1.0-1-any.pkg.tar.zst
+    version: null
+    packages: []
   world:
-    version: 3.0.9-3
+    version: 3.1.1-1
     packages:
-      - python-pyparsing-3.0.9-3-any.pkg.tar.zst
+      - python-pyparsing-3.1.1-1-any.pkg.tar.zst
   lib32-goblins:
     version: null
     packages: []
