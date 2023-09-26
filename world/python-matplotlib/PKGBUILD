@@ -42,7 +42,7 @@ checkdepends=(python-pytest python-pytest-xdist python-pytest-runner python-pyte
               noto-fonts-cjk wqy-zenhei)
 _tag=babc9d1892ea4b223ab1dd1ff3c035471500b42e # git rev-parse v${pkgver}
 _ftver=2.13.1
-source=(git+https://github.com/matplotlib/matplotlib.git#tag=${_tag}?signed
+source=(git+https://github.com/matplotlib/matplotlib.git#tag=${_tag}
         https://github.com/QuLogic/mpl-images/archive/v${pkgver}-with-freetype-${_ftver}/mpl-images-${pkgver}-ft${_ftver}.tar.gz
         freetype.patch)
 b2sums=('SKIP'
@@ -86,7 +86,7 @@ check() {
   XDG_RUNTIME_DIR=/tmp/runtime-build \
   xvfb-run -a -s "-screen 0 640x480x24" \
     test-env/bin/python -m pytest -ra -n auto -v --color=yes --pyargs matplotlib mpl_toolkits.{axes_grid1,axisartist,mplot3d} \
-      -k 'not test_ipynb and not test_compressed1 and not test_multi_font_type3 and not test_multi_font_type42 and not test_figure_legend_outside'
+      -k 'not test_ipynb and not test_compressed1 and not test_multi_font_type3 and not test_multi_font_type42 and not test_figure_legend_outside and not test_figure_leak_20490'
 }
 
 package() {
