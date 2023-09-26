@@ -1,7 +1,7 @@
 ---
 pkgbase:
   name: linux-lts
-  version: 6.1.51-1
+  version: 6.1.54-1
   arch:
     - x86_64
   pkgname:
@@ -24,11 +24,11 @@ repos:
     version: null
     packages: []
   system:
-    version: 6.1.51-1
+    version: 6.1.54-1
     packages:
-      - linux-lts-6.1.51-1-x86_64.pkg.tar.zst
-      - linux-lts-headers-6.1.51-1-x86_64.pkg.tar.zst
-      - linux-lts-docs-6.1.51-1-x86_64.pkg.tar.zst
+      - linux-lts-6.1.54-1-x86_64.pkg.tar.zst
+      - linux-lts-headers-6.1.54-1-x86_64.pkg.tar.zst
+      - linux-lts-docs-6.1.54-1-x86_64.pkg.tar.zst
   world-goblins:
     version: null
     packages: []
