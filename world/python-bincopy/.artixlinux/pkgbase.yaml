@@ -1,17 +1,17 @@
 ---
 pkgbase:
   name: python-bincopy
-  version: 17.14.5-2
+  version: 19.0.0-1
   arch:
     - any
   pkgname:
     - python-bincopy
 actions:
-  addRepo: null
+  addRepo: world-gremlins
   removeRepo: null
-  triggersBuild: false
+  triggersBuild: true
   triggersRebuild: false
-  triggersRepoAdd: false
+  triggersRepoAdd: true
   triggersRepoRemove: false
   triggersNoCheck: false
 repos:
@@ -28,8 +28,9 @@ repos:
     version: null
     packages: []
   world-gremlins:
-    version: null
-    packages: []
+    version: 19.0.0-1
+    packages:
+      - python-bincopy-19.0.0-1-any.pkg.tar.zst
   world:
     version: 17.14.5-2
     packages:
