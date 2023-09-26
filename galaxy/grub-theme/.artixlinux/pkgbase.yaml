@@ -1,18 +1,18 @@
 ---
 pkgbase:
-  name: artix-grub-theme
-  version: 2022.05-3
+  name: grub-theme
+  version: 2023.09-1
   arch:
     - any
   pkgname:
     - artix-grub-theme
     - artix-grub-live
 actions:
-  addRepo: null
+  addRepo: galaxy
   removeRepo: null
-  triggersBuild: false
+  triggersBuild: true
   triggersRebuild: false
-  triggersRepoAdd: false
+  triggersRepoAdd: true
   triggersRepoRemove: false
   triggersNoCheck: false
 repos:
@@ -50,7 +50,7 @@ repos:
     version: null
     packages: []
   galaxy:
-    version: 2022.05-3
+    version: 2023.09-1
     packages:
-      - artix-grub-theme-2022.05-3-any.pkg.tar.zst
-      - artix-grub-live-2022.05-3-any.pkg.tar.zst
+      - artix-grub-theme-2023.09-1-any.pkg.tar.zst
+      - artix-grub-live-2023.09-1-any.pkg.tar.zst

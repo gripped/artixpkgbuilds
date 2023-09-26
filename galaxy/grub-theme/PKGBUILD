@@ -3,8 +3,8 @@
 
 pkgbase=grub-theme
 pkgname=('artix-grub-theme' 'artix-grub-live')
-pkgver=2022.05
-pkgrel=3
+pkgver=2023.09
+pkgrel=1
 pkgdesc='Artix grub theme'
 arch=('any')
 url="https://gitea.artixlinux.org/artix/grub-theme"
