@@ -1,31 +1,30 @@
 ---
 pkgbase:
   name: shadow
-  version: 4.14.0-2
+  version: 4.14.0-4
   arch:
     - x86_64
   pkgname:
     - shadow
 actions:
-  addRepo: system-gremlins
-  removeRepo: null
-  triggersBuild: true
+  addRepo: system
+  removeRepo: system-gremlins
+  triggersBuild: false
   triggersRebuild: false
   triggersRepoAdd: true
-  triggersRepoRemove: false
+  triggersRepoRemove: true
   triggersNoCheck: false
 repos:
   system-goblins:
     version: null
     packages: []
   system-gremlins:
-    version: 4.14.0-2
-    packages:
-      - shadow-4.14.0-2-x86_64.pkg.tar.zst
+    version: null
+    packages: []
   system:
-    version: 4.13-3
+    version: 4.14.0-4
     packages:
-      - shadow-4.13-3-x86_64.pkg.tar.zst
+      - shadow-4.14.0-4-x86_64.pkg.tar.zst
   world-goblins:
     version: null
     packages: []
