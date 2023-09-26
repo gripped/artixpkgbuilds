@@ -1,7 +1,7 @@
 ---
 pkgbase:
   name: lib32-nvidia-utils
-  version: 535.104.05-1
+  version: 535.113.01-1
   arch:
     - x86_64
   pkgname:
@@ -41,10 +41,10 @@ repos:
     version: null
     packages: []
   lib32:
-    version: 535.104.05-1
+    version: 535.113.01-1
     packages:
-      - lib32-nvidia-utils-535.104.05-1-x86_64.pkg.tar.zst
-      - lib32-opencl-nvidia-535.104.05-1-x86_64.pkg.tar.zst
+      - lib32-nvidia-utils-535.113.01-1-x86_64.pkg.tar.zst
+      - lib32-opencl-nvidia-535.113.01-1-x86_64.pkg.tar.zst
   galaxy-goblins:
     version: null
     packages: []
