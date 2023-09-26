@@ -1,7 +1,7 @@
 ---
 pkgbase:
   name: lib32-faudio
-  version: 23.07-1
+  version: 23.09-1
   arch:
     - x86_64
   pkgname:
@@ -40,9 +40,9 @@ repos:
     version: null
     packages: []
   lib32:
-    version: 23.07-1
+    version: 23.09-1
     packages:
-      - lib32-faudio-23.07-1-x86_64.pkg.tar.zst
+      - lib32-faudio-23.09-1-x86_64.pkg.tar.zst
   galaxy-goblins:
     version: null
     packages: []
