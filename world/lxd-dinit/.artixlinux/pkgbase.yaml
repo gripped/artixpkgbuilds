@@ -1,18 +1,18 @@
 ---
 pkgbase:
   name: lxd-dinit
-  version: 20211121-2
+  version: 20211121-3
   arch:
     - any
   pkgname:
     - lxd-dinit
 actions:
-  addRepo: null
-  removeRepo: null
+  addRepo: world
+  removeRepo: world-gremlins
   triggersBuild: false
   triggersRebuild: false
-  triggersRepoAdd: false
-  triggersRepoRemove: false
+  triggersRepoAdd: true
+  triggersRepoRemove: true
   triggersNoCheck: false
 repos:
   system-goblins:
@@ -31,9 +31,9 @@ repos:
     version: null
     packages: []
   world:
-    version: 20211121-2
+    version: 20211121-3
     packages:
-      - lxd-dinit-20211121-2-any.pkg.tar.zst
+      - lxd-dinit-20211121-3-any.pkg.tar.zst
   lib32-goblins:
     version: null
     packages: []
