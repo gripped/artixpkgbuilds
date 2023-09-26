@@ -1,18 +1,18 @@
 ---
 pkgbase:
   name: fuse-dinit
-  version: 20211030-1
+  version: 20211030-2
   arch:
     - any
   pkgname:
     - fuse-dinit
 actions:
-  addRepo: null
-  removeRepo: null
+  addRepo: world
+  removeRepo: world-gremlins
   triggersBuild: false
   triggersRebuild: false
-  triggersRepoAdd: false
-  triggersRepoRemove: false
+  triggersRepoAdd: true
+  triggersRepoRemove: true
   triggersNoCheck: false
 repos:
   system-goblins:
@@ -31,9 +31,9 @@ repos:
     version: null
     packages: []
   world:
-    version: 20211030-1
+    version: 20211030-2
     packages:
-      - fuse-dinit-20211030-1-any.pkg.tar.zst
+      - fuse-dinit-20211030-2-any.pkg.tar.zst
   lib32-goblins:
     version: null
     packages: []
