@@ -1,17 +1,17 @@
 ---
 pkgbase:
   name: calamares-branding
-  version: 1.1-1
+  version: 1.1-2
   arch:
     - any
   pkgname:
     - calamares-branding
 actions:
-  addRepo: null
+  addRepo: galaxy
   removeRepo: null
-  triggersBuild: false
+  triggersBuild: true
   triggersRebuild: false
-  triggersRepoAdd: false
+  triggersRepoAdd: true
   triggersRepoRemove: false
   triggersNoCheck: false
 repos:
@@ -49,6 +49,6 @@ repos:
     version: null
     packages: []
   galaxy:
-    version: 1.1-1
+    version: 1.1-2
     packages:
-      - calamares-branding-1.1-1-any.pkg.tar.zst
+      - calamares-branding-1.1-2-any.pkg.tar.zst

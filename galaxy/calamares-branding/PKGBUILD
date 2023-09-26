@@ -4,7 +4,7 @@
 
 pkgname=calamares-branding
 pkgver=1.1
-pkgrel=1
+pkgrel=2
 pkgdesc='Distribution-independent installer framework artix branding'
 arch=('any')
 license=(GPL)
