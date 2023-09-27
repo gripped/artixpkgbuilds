@@ -1,0 +1,58 @@
+# Maintainer: Levente Polyak <anthraxx[at]archlinux[dot]org>
+
+pkgname=libplacebo5
+pkgver=5.264.1
+pkgrel=1
+pkgdesc='Reusable library for GPU-accelerated video/image rendering primitives'
+url='https://github.com/haasn/libplacebo'
+arch=('x86_64')
+license=('LGPL2.1')
+depends=('vulkan-icd-loader' 'libvulkan.so' 'glslang' 'lcms2' 'liblcms2.so' 'shaderc' 'libshaderc_shared.so'
+         'glibc' 'gcc-libs' 'libunwind' 'libdovi.so')
+makedepends=(
+  'meson' 'ninja' 'vulkan-headers' 'glad' 'nuklear'
+  'python' 'python-setuptools' 'python-mako' 'python-markupsafe' 'python-jinja'
+)
+provides=('libplacebo.so')
+source=(https://code.videolan.org/videolan/libplacebo/-/archive/v${pkgver}/libplacebo-v${pkgver}.tar.gz)
+sha512sums=('305f43b71f078f4113def43c444df667dfbdd2a6a34d3b457b15da0b3499ca97ec9a8acbd151d58c8e1a593ace3d8aa61067b32556c6bae451efbb217d60a731')
+b2sums=('421de50ef5e2270e3ba32dd85d92d816a374257442b535face6cb8501d565652aae530b86a7d717c9352c6a82ca665ff7d91c2d9768365780cbbe4f48d1d3276')
+
+build() {
+  cd libplacebo-v${pkgver}
+  CXXFLAGS+=" -I/usr/include/glslang"
+  artix-meson build \
+    -D includedir=/usr/include/libplacebo5 \
+    -D libdir=/usr/lib/libplacebo5 \
+    -D tests=true \
+    -D vulkan=enabled \
+    -D glslang=enabled \
+    -D shaderc=enabled \
+    -D lcms=enabled \
+    -D d3d11=disabled \
+    -D libdovi=enabled \
+    -D demos=false
+  meson compile -C build
+}
+
+check() {
+  cd libplacebo-v${pkgver}
+  meson test -C build
+}
+
+package() {
+  cd libplacebo-v${pkgver}
+  DESTDIR="${pkgdir}" meson install -C build
+
+  # Move libs to /usr/lib, except the .so symlinks
+  local f
+  for f in "${pkgdir}"/usr/lib/libplacebo5/*; do
+    if [[ $f == *.so ]]; then
+      ln -srf -- ${pkgdir}/usr/lib/"$(readlink "$f")" "$f"
+    elif [[ ! -d $f ]]; then
+      mv "$f" "${pkgdir}"/usr/lib
+    fi
+  done
+}
+
+# vim: ts=2 sw=2 et:
