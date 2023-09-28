@@ -1,18 +1,18 @@
 ---
 pkgbase:
   name: qt6-base
-  version: 6.5.2-1
+  version: 6.5.3-1
   arch:
     - x86_64
   pkgname:
     - qt6-base
 actions:
-  addRepo: null
-  removeRepo: null
+  addRepo: world-gremlins
+  removeRepo: world-goblins
   triggersBuild: false
   triggersRebuild: false
-  triggersRepoAdd: false
-  triggersRepoRemove: false
+  triggersRepoAdd: true
+  triggersRepoRemove: true
   triggersNoCheck: false
 repos:
   system-goblins:
@@ -25,12 +25,12 @@ repos:
     version: null
     packages: []
   world-goblins:
-    version: 6.5.1-5
-    packages:
-      - qt6-base-6.5.1-5-x86_64.pkg.tar.zst
-  world-gremlins:
     version: null
     packages: []
+  world-gremlins:
+    version: 6.5.3-1
+    packages:
+      - qt6-base-6.5.3-1-x86_64.pkg.tar.zst
   world:
     version: 6.5.2-1
     packages:
