@@ -1,7 +1,7 @@
 ---
 pkgbase:
   name: dbus-dinit-user
-  version: 20230929-1
+  version: 20230929-2
   arch:
     - any
   pkgname:
@@ -9,8 +9,8 @@ pkgbase:
 actions:
   addRepo: galaxy
   removeRepo: null
-  triggersBuild: false
-  triggersRebuild: true
+  triggersBuild: true
+  triggersRebuild: false
   triggersRepoAdd: true
   triggersRepoRemove: false
   triggersNoCheck: false
@@ -49,6 +49,6 @@ repos:
     version: null
     packages: []
   galaxy:
-    version: 20230929-1
+    version: 20230929-2
     packages:
-      - dbus-dinit-user-20230929-1-any.pkg.tar.zst
+      - dbus-dinit-user-20230929-2-any.pkg.tar.zst

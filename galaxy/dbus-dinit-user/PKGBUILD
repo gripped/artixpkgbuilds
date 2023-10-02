@@ -3,12 +3,12 @@
 
 pkgname=dbus-dinit-user
 pkgver=20230929
-pkgrel=1
+pkgrel=2
 pkgdesc="dinit service scripts for dbus"
 arch=('any')
 url="https://artixlinux.org"
 license=('BSD')
-depends=('dbus' 'dinit')
+depends=('dbus' 'dinit-base')
 groups=('turnstile-experimental')
 source=("dbus.user" "dbus.script")
 sha256sums=('bfbca3e14eb60a046baadecd6dff0ee372427a863482b9d4100d57f46cbb6e1a'
