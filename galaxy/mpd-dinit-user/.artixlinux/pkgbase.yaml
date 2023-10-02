@@ -1,7 +1,7 @@
 ---
 pkgbase:
   name: mpd-dinit-user
-  version: 20230929-1
+  version: 20230929-2
   arch:
     - any
   pkgname:
@@ -49,6 +49,6 @@ repos:
     version: null
     packages: []
   galaxy:
-    version: 20230929-1
+    version: 20230929-2
     packages:
-      - mpd-dinit-user-20230929-1-any.pkg.tar.zst
+      - mpd-dinit-user-20230929-2-any.pkg.tar.zst
