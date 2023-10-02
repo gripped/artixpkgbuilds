@@ -1,18 +1,18 @@
 ---
 pkgbase:
   name: r8168
-  version: 8.051.02-71
+  version: 8.052.01-1
   arch:
     - x86_64
   pkgname:
     - r8168
 actions:
   addRepo: world
-  removeRepo: world-gremlins
-  triggersBuild: false
+  removeRepo: null
+  triggersBuild: true
   triggersRebuild: false
   triggersRepoAdd: true
-  triggersRepoRemove: true
+  triggersRepoRemove: false
   triggersNoCheck: false
 repos:
   system-goblins:
@@ -31,9 +31,9 @@ repos:
     version: null
     packages: []
   world:
-    version: 8.051.02-71
+    version: 8.052.01-1
     packages:
-      - r8168-8.051.02-71-x86_64.pkg.tar.zst
+      - r8168-8.052.01-1-x86_64.pkg.tar.zst
   lib32-goblins:
     version: null
     packages: []
