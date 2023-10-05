@@ -1,14 +1,14 @@
 ---
 pkgbase:
   name: kitinerary
-  version: 23.08.1-1
+  version: 23.08.1-2
   arch:
     - x86_64
   pkgname:
     - kitinerary
 actions:
-  addRepo: world
-  removeRepo: world-gremlins
+  addRepo: world-gremlins
+  removeRepo: world-goblins
   triggersBuild: false
   triggersRebuild: false
   triggersRepoAdd: true
@@ -28,8 +28,9 @@ repos:
     version: null
     packages: []
   world-gremlins:
-    version: null
-    packages: []
+    version: 23.08.1-2
+    packages:
+      - kitinerary-23.08.1-2-x86_64.pkg.tar.zst
   world:
     version: 23.08.1-1
     packages:
