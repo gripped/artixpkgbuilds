@@ -1,7 +1,7 @@
 ---
 pkgbase:
   name: qt5-doc
-  version: 5.15.11-1
+  version: 5.15.11-2
   arch:
     - any
   pkgname:
@@ -29,10 +29,10 @@ repos:
     version: null
     packages: []
   world-gremlins:
-    version: 5.15.11-1
+    version: 5.15.11-2
     packages:
-      - qt5-doc-5.15.11-1-any.pkg.tar.zst
-      - qt5-examples-5.15.11-1-any.pkg.tar.zst
+      - qt5-doc-5.15.11-2-any.pkg.tar.zst
+      - qt5-examples-5.15.11-2-any.pkg.tar.zst
   world:
     version: 5.15.10-1
     packages:
