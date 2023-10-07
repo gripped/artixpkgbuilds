@@ -188,7 +188,6 @@ package_pipewire() {
     _pick audio usr/lib/pipewire-$_ver/libpipewire-module-rtp-{sap,sink,source}.so
     _pick audio usr/lib/pipewire-$_ver/libpipewire-module-vban-{recv,send}.so
     _pick audio usr/lib/spa-0.2/{aec,alsa,audio*,avb,bluez5}
-    _pick audio usr/lib/systemd/user/filter-chain.service
     _pick audio usr/share/alsa
     _pick audio usr/share/man/man1/pw-{cat,mididump}.1
     _pick audio usr/share/pipewire/filter-chain*
@@ -210,7 +209,6 @@ package_pipewire() {
     _pick pulse usr/bin/pipewire-pulse
     _pick pulse usr/lib/pipewire-$_ver/libpipewire-module-protocol-pulse.so
     _pick pulse usr/lib/pipewire-$_ver/libpipewire-module-pulse-tunnel.so
-    _pick pulse usr/lib/systemd/user/pipewire-pulse.*
     _pick pulse usr/share/man/man1/pipewire-pulse.1
     _pick pulse usr/share/pipewire/pipewire-pulse.conf
 
