@@ -1,7 +1,7 @@
 ---
 pkgbase:
-  name: caja-extensions-common
-  version: 1.27.0-1
+  name: caja-extensions
+  version: 1.26.1-2
   arch:
     - x86_64
   pkgname:
@@ -12,13 +12,12 @@ pkgbase:
     - caja-share
     - caja-wallpaper
     - caja-xattr-tags
-    - caja-audio-video-properties
 actions:
-  addRepo: null
+  addRepo: world-gremlins
   removeRepo: null
-  triggersBuild: false
+  triggersBuild: true
   triggersRebuild: false
-  triggersRepoAdd: false
+  triggersRepoAdd: true
   triggersRepoRemove: false
   triggersNoCheck: false
 repos:
@@ -35,8 +34,15 @@ repos:
     version: null
     packages: []
   world-gremlins:
-    version: null
-    packages: []
+    version: 1.26.1-2
+    packages:
+      - caja-extensions-common-1.26.1-2-x86_64.pkg.tar.zst
+      - caja-image-converter-1.26.1-2-x86_64.pkg.tar.zst
+      - caja-open-terminal-1.26.1-2-x86_64.pkg.tar.zst
+      - caja-sendto-1.26.1-2-x86_64.pkg.tar.zst
+      - caja-share-1.26.1-2-x86_64.pkg.tar.zst
+      - caja-wallpaper-1.26.1-2-x86_64.pkg.tar.zst
+      - caja-xattr-tags-1.26.1-2-x86_64.pkg.tar.zst
   world:
     version: null
     packages: []
@@ -56,13 +62,5 @@ repos:
     version: null
     packages: []
   galaxy:
-    version: 1.27.0-1
-    packages:
-      - caja-extensions-common-1.27.0-1-x86_64.pkg.tar.zst
-      - caja-image-converter-1.27.0-1-x86_64.pkg.tar.zst
-      - caja-open-terminal-1.27.0-1-x86_64.pkg.tar.zst
-      - caja-sendto-1.27.0-1-x86_64.pkg.tar.zst
-      - caja-share-1.27.0-1-x86_64.pkg.tar.zst
-      - caja-wallpaper-1.27.0-1-x86_64.pkg.tar.zst
-      - caja-xattr-tags-1.27.0-1-x86_64.pkg.tar.zst
-      - caja-audio-video-properties-1.27.0-1-x86_64.pkg.tar.zst
+    version: null
+    packages: []
