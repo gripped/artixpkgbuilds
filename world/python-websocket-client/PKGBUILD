@@ -6,7 +6,7 @@
 # Contributor: Florian Bruhin <archlinux.org@the-compiler.org>
 
 pkgname=python-websocket-client
-pkgver=1.6.2
+pkgver=1.6.4
 pkgrel=1
 pkgdesc="WebSocket client library for Python"
 arch=('any')
@@ -16,7 +16,7 @@ depends=('python')
 makedepends=('python-setuptools')
 checkdepends=('python-pytest')
 source=("https://pypi.io/packages/source/w/websocket-client/websocket-client-$pkgver.tar.gz")
-sha512sums=('51ba53a916c7716c3c017606c108a434a97042658b829518dbe2307a0f0b568a79d68a8b382a3e8530972f51a418f109546773cbc8872c05fa099fcbfb00d261')
+sha512sums=('d5a44c78bf5f6d4b5a1344bf6d5c94435e529dd85ee5d7fe5552478bbf2e57229ca7573b28a93fa28d1e5cf72fd721b4456bb5e154db578ec652cbc82316413b')
 
 build() {
   cd websocket-client-$pkgver
