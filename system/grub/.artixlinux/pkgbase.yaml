@@ -1,7 +1,7 @@
 ---
 pkgbase:
   name: grub
-  version: 2:2.12rc1-4
+  version: 2:2.12rc1-5
   arch:
     - x86_64
   pkgname:
@@ -19,13 +19,13 @@ repos:
     version: null
     packages: []
   system-gremlins:
+    version: 2:2.12rc1-5
+    packages:
+      - grub-2:2.12rc1-5-x86_64.pkg.tar.zst
+  system:
     version: 2:2.12rc1-4
     packages:
       - grub-2:2.12rc1-4-x86_64.pkg.tar.zst
-  system:
-    version: 2:2.12rc1-3
-    packages:
-      - grub-2:2.12rc1-3-x86_64.pkg.tar.zst
   world-goblins:
     version: null
     packages: []
