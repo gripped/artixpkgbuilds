@@ -1,17 +1,17 @@
 ---
 pkgbase:
   name: python-typed-ast
-  version: 1.5.4-2
+  version: 1.5.5-1
   arch:
     - x86_64
   pkgname:
     - python-typed-ast
 actions:
-  addRepo: null
+  addRepo: world
   removeRepo: null
-  triggersBuild: false
+  triggersBuild: true
   triggersRebuild: false
-  triggersRepoAdd: false
+  triggersRepoAdd: true
   triggersRepoRemove: false
   triggersNoCheck: false
 repos:
@@ -31,9 +31,9 @@ repos:
     version: null
     packages: []
   world:
-    version: 1.5.4-2
+    version: 1.5.5-1
     packages:
-      - python-typed-ast-1.5.4-2-x86_64.pkg.tar.zst
+      - python-typed-ast-1.5.5-1-x86_64.pkg.tar.zst
   lib32-goblins:
     version: null
     packages: []
