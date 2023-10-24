@@ -2,9 +2,9 @@
 # Maintainer:Antonio Rojas <arojas@archlinux.org>
 
 pkgname=drkonqi
-pkgver=5.27.8
+pkgver=5.27.9
 _dirver=$(echo $pkgver | cut -d. -f1-3)
-pkgrel=2
+pkgrel=1
 pkgdesc='The KDE crash handler'
 arch=(x86_64)
 url='https://kde.org/plasma-desktop/'
@@ -14,7 +14,7 @@ makedepends=(extra-cmake-modules)
 groups=(plasma)
 source=(https://download.kde.org/stable/plasma/$_dirver/$pkgname-$pkgver.tar.xz{,.sig}
 		no-systemd.patch)
-sha256sums=('8b8fcc506de14eccd1b57aa96541fdfea885db875e7a42feec702acd14d1db2c'
+sha256sums=('55c397f8758b998cb3fd1da9f105d5d956714cb032045382618d95ff260fdd12'
             'SKIP'
             'b529848e4d4d41675578748e6c8a87bfd875a8ac9af53c988ea5bebcea3de1b5')
 validpgpkeys=('E0A3EB202F8E57528E13E72FD7574483BB57B18D'  # Jonathan Esk-Riddell <jr@jriddell.org>
