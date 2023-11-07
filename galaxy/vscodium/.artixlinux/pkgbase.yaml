@@ -1,7 +1,7 @@
 ---
 pkgbase:
   name: vscodium
-  version: 1.83.0.23277-1
+  version: 1.84.1.23311-1
   arch:
     - x86_64
     - aarch64
@@ -33,8 +33,9 @@ repos:
     version: null
     packages: []
   world:
-    version: null
-    packages: []
+    version: 1.84.1.23311-1
+    packages:
+      - vscodium-1.84.1.23311-1-x86_64.pkg.tar.zst
   lib32-goblins:
     version: null
     packages: []
@@ -51,6 +52,6 @@ repos:
     version: null
     packages: []
   galaxy:
-    version: 1.83.0.23277-1
+    version: 1.84.1.23311-1
     packages:
-      - vscodium-1.83.0.23277-1-x86_64.pkg.tar.zst
+      - vscodium-1.84.1.23311-1-x86_64.pkg.tar.zst
