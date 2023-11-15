@@ -9,12 +9,12 @@
 # Contributor: Daniel J Griffiths <ghost1227@archlinux.us>
 
 pkgname=ungoogled-chromium
-pkgver=119.0.6045.105
+pkgver=119.0.6045.123
 pkgrel=1
 _launcher_ver=8
 # ungoogled chromium variables
 _uc_usr=ungoogled-software
-_uc_ver=119.0.6045.105-1
+_uc_ver=119.0.6045.123-1
 pkgdesc="A lightweight approach to removing Google web service dependency"
 arch=('x86_64')
 url="https://github.com/ungoogled-software/ungoogled-chromium"
@@ -39,14 +39,16 @@ source=(https://commondatastorage.googleapis.com/chromium-browser-official/chrom
         https://gitlab.com/Matt.Jolly/chromium-patches/-/archive/${pkgver%%.*}/chromium-patches-${pkgver%%.*}.tar.bz2
         chromium-drirc-disable-10bpc-color-configs.conf
         use-oauth2-client-switches-as-default.patch
-        REVERT-disable-autoupgrading-debug-info.patch)
-sha256sums=('73cb8c39e928f8c627d747d37a3b020f08913ef5508f893758d70bdbd545dbcf'
-            'e5d74a46cd79b79a3f2f8f8fadce8329ad50f4a4facd76365d28e0761173aa26'
+        REVERT-disable-autoupgrading-debug-info.patch
+        chromium.wrapper)
+sha256sums=('6b61b87d0a201113b9c4e3d0ce48df52ecf869179c207e34b71add957fb7b48f'
+            'e20df54944837fc5097369b3c52b6d6922c1a32a57f25769c5bbff8a4db8bebe'
             '213e50f48b67feb4441078d50b0fd431df34323be15be97c55302d3fdac4483a'
             '09ecf142254525ddb9c2dbbb2c71775e68722412923a5a9bba5cc2e46af8d087'
             'babda4f5c1179825797496898d77334ac067149cac03d797ab27ac69671a7feb'
             'e393174d7695d0bafed69e868c5fbfecf07aa6969f3b64596d0bae8b067e1711'
-            '1b782b0f6d4f645e4e0daa8a4852d63f0c972aa0473319216ff04613a0592a69')
+            '1b782b0f6d4f645e4e0daa8a4852d63f0c972aa0473319216ff04613a0592a69'
+            'b5385cbd87d3d21d30885010bd2a857967575dc81fdb820172547f935494246e')
 
 # Possible replacements are listed in build/linux/unbundle/replace_gn_files.py
 # Keys are the names in the above script; values are the dependencies in Arch
@@ -143,6 +145,10 @@ prepare() {
 
   ./build/linux/unbundle/replace_gn_files.py \
     --system-libraries "${!_system_libs[@]}"
+
+echo hiero doen we een error om te stoppen
+error
+
 }
 
 build() {
@@ -237,6 +243,9 @@ package() {
   make PREFIX=/usr DESTDIR="$pkgdir" install
   install -Dm644 LICENSE \
     "$pkgdir/usr/share/licenses/chromium/LICENSE.launcher"
+
+  mv "$pkgdir/usr/bin/chromium" "$pkgdir/usr/bin/chromium-bin"
+  install -Dm755 "$srcdir/chromium.wrapper" "$pkgdir/usr/bin/chromium"
 
   cd "$srcdir/chromium-$pkgver"
 
