@@ -1,7 +1,7 @@
 ---
 pkgbase:
-  name: nemo-audio-tab
-  version: 5.8.0-1
+  name: nemo-extensions
+  version: 6.0.0-1
   arch:
     - x86_64
   pkgname:
@@ -16,11 +16,11 @@ pkgbase:
     - nemo-share
     - nemo-terminal
 actions:
-  addRepo: null
+  addRepo: world-gremlins
   removeRepo: null
-  triggersBuild: false
+  triggersBuild: true
   triggersRebuild: false
-  triggersRepoAdd: false
+  triggersRepoAdd: true
   triggersRepoRemove: false
   triggersNoCheck: false
 repos:
@@ -37,8 +37,18 @@ repos:
     version: null
     packages: []
   world-gremlins:
-    version: null
-    packages: []
+    version: 6.0.0-1
+    packages:
+      - nemo-audio-tab-6.0.0-1-x86_64.pkg.tar.zst
+      - nemo-emblems-6.0.0-1-x86_64.pkg.tar.zst
+      - nemo-fileroller-6.0.0-1-x86_64.pkg.tar.zst
+      - nemo-image-converter-6.0.0-1-x86_64.pkg.tar.zst
+      - nemo-pastebin-6.0.0-1-x86_64.pkg.tar.zst
+      - nemo-preview-6.0.0-1-x86_64.pkg.tar.zst
+      - nemo-python-6.0.0-1-x86_64.pkg.tar.zst
+      - nemo-seahorse-6.0.0-1-x86_64.pkg.tar.zst
+      - nemo-share-6.0.0-1-x86_64.pkg.tar.zst
+      - nemo-terminal-6.0.0-1-x86_64.pkg.tar.zst
   world:
     version: 5.8.0-1
     packages:
