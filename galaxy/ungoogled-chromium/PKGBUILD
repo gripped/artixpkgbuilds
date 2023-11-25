@@ -1,3 +1,5 @@
+# Maintainer: artist from Artix Linux
+
 # Maintainer: Ungoogled Software Contributors
 # Maintainer: networkException <git@nwex.de>
 
@@ -9,12 +11,16 @@
 # Contributor: Daniel J Griffiths <ghost1227@archlinux.us>
 
 pkgname=ungoogled-chromium
-pkgver=119.0.6045.123
-pkgrel=1
+pkgver=119.0.6045.159
+pkgrel=4
 _launcher_ver=8
 # ungoogled chromium variables
 _uc_usr=ungoogled-software
-_uc_ver=119.0.6045.123-1
+_uc_ver=119.0.6045.159-1
+_cews_name=chromium-extension-web-store
+_cews_ver=1.5.4.1
+_cews_id=ocaahdebbfolfmndjeplogmgcagdmblk
+_cews_url="https://github.com/NeverDecaf/chromium-web-store"
 pkgdesc="A lightweight approach to removing Google web service dependency"
 arch=('x86_64')
 url="https://github.com/ungoogled-software/ungoogled-chromium"
@@ -23,7 +29,7 @@ depends=('gtk3' 'nss' 'alsa-lib' 'xdg-utils' 'libxss' 'libcups' 'libgcrypt'
          'ttf-liberation' 'udev' 'dbus' 'libpulse' 'pciutils' 'libva'
          'libffi' 'desktop-file-utils' 'hicolor-icon-theme')
 makedepends=('python' 'gn' 'ninja' 'clang' 'lld' 'gperf' 'nodejs' 'pipewire'
-             'qt5-base' 'java-runtime-headless' 'git')
+             'qt5-base' 'java-runtime-headless' 'git' 'wget')
 optdepends=('pipewire: WebRTC desktop sharing under Wayland'
             'kdialog: support for native dialogs in Plasma'
             'qt5-base: enable Qt5 with --enable-features=AllowQt'
@@ -40,15 +46,23 @@ source=(https://commondatastorage.googleapis.com/chromium-browser-official/chrom
         chromium-drirc-disable-10bpc-color-configs.conf
         use-oauth2-client-switches-as-default.patch
         REVERT-disable-autoupgrading-debug-info.patch
-        chromium.wrapper)
-sha256sums=('6b61b87d0a201113b9c4e3d0ce48df52ecf869179c207e34b71add957fb7b48f'
-            'e20df54944837fc5097369b3c52b6d6922c1a32a57f25769c5bbff8a4db8bebe'
+        chromium.wrapper
+        ${_cews_name}-${_cews_ver}.crx::${_cews_url}/releases/download/v${_cews_ver}/Chromium.Web.Store.crx
+        extension_management.patch
+        ungoogled_first_run.patch)
+sha256sums=('d0d842712805ac81582dc0fecd4396fbf4380713df2fb50ceeb853dd38d1538f'
+            '165f2de59bc20691b096036e8ee5ff9e0e80818f656abb9733204bfdba690398'
             '213e50f48b67feb4441078d50b0fd431df34323be15be97c55302d3fdac4483a'
             '09ecf142254525ddb9c2dbbb2c71775e68722412923a5a9bba5cc2e46af8d087'
             'babda4f5c1179825797496898d77334ac067149cac03d797ab27ac69671a7feb'
             'e393174d7695d0bafed69e868c5fbfecf07aa6969f3b64596d0bae8b067e1711'
             '1b782b0f6d4f645e4e0daa8a4852d63f0c972aa0473319216ff04613a0592a69'
-            'b5385cbd87d3d21d30885010bd2a857967575dc81fdb820172547f935494246e')
+            'b5385cbd87d3d21d30885010bd2a857967575dc81fdb820172547f935494246e'
+            '3136dfe3c344e8e751fca76c223243deb9168f531a9ad2dc601fa500e460f855'
+            '2f93752b962f40b3a59a23ec9b90e5dcd8057dfe6d315c5a86e9d599e8dac090'
+            'ce94e04f05cc2d8da9143855bc54263d15a049e3d1575cfa12046134d2c5edbc')
+
+noextract=("${_cews_name}-${_cews_ver}.crx")
 
 # Possible replacements are listed in build/linux/unbundle/replace_gn_files.py
 # Keys are the names in the above script; values are the dependencies in Arch
@@ -83,6 +97,16 @@ _unwanted_bundled_libs=(
 depends+=(${_system_libs[@]})
 
 prepare() {
+
+  cd "$srcdir"
+  # Create json file for chromium-extension-web-store extension :
+  cat << EOF > "${_cews_id}".json
+{
+  "external_crx": "/usr/lib/${_cews_name}/${_cews_name}-${_cews_ver}.crx",
+  "external_version": "${_cews_ver}"
+}
+EOF
+
   cd "$srcdir/chromium-$pkgver"
 
   # Allow building against system libraries in official builds
@@ -129,6 +153,9 @@ prepare() {
   msg2 'Applying domain substitution'
   python "$_utils/domain_substitution.py" apply -r "$_ungoogled_repo/domain_regex.list" \
     -f "$_ungoogled_repo/domain_substitution.list" -c domainsubcache.tar.gz ./
+  
+  patch -Np1 -i "$srcdir/extension_management.patch"
+  patch -Np1 -i "$srcdir/ungoogled_first_run.patch"
 
   # Remove bundled libraries for which we will use the system copies; this
   # *should* do what the remove_bundled_libraries.py script does, with the
@@ -145,10 +172,6 @@ prepare() {
 
   ./build/linux/unbundle/replace_gn_files.py \
     --system-libraries "${!_system_libs[@]}"
-
-echo hiero doen we een error om te stoppen
-error
-
 }
 
 build() {
@@ -239,6 +262,9 @@ build() {
 }
 
 package() {
+  install -Dm644 -t "${pkgdir}/usr/share/chromium/extensions/" "${srcdir}/${_cews_id}.json"
+  install -Dm644 -t "${pkgdir}/usr/lib/${_cews_name}/" "${srcdir}/${_cews_name}-${_cews_ver}.crx"
+
   cd chromium-launcher-$_launcher_ver
   make PREFIX=/usr DESTDIR="$pkgdir" install
   install -Dm644 LICENSE \

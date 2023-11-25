@@ -1,0 +1,26 @@
+--- a/chrome/browser/ui/webui/ungoogled_first_run.h	2023-11-18 18:27:35.122553280 +0100
++++ b/chrome/browser/ui/webui/ungoogled_first_run.h	2023-11-25 17:27:34.689269241 +0100
+@@ -56,7 +56,13 @@
+ <section>
+  <h2>How-To</h2>
+  <details><summary><b>Install and update extensions</b></summary><br>
+-  <a href="https://github.com/NeverDecaf">NeverDecaf</a> has created an extension to make this process easy:
++  <a href="https://github.com/NeverDecaf">NeverDecaf</a> has created an extension to make this process easy:<br>
++  <br>
++  NOTE for Artix users: The ungoogled-chromium package from the Artix Galaxy repository has the Chromium Web Store
++  extension included. For any new Chromium profile it shows as installed and enabled by default, and it can be disable
++  or removed on a per profile basis. The value <code>Default</code> of flag
++  <a href="chrome://flags/#extension-mime-request-handling">chrome://flags/#extension-mime-request-handling</a> is
++  interpreted as <code>Always prompt for install</code>. So the following two actions can be skipped.
+   <ol>
+    <li>Set <a href="chrome://flags/#extension-mime-request-handling">chrome://flags/#extension-mime-request-handling</a>
+     to <code>Always prompt for install</code> and relaunch.</li>
+@@ -65,7 +71,7 @@
+   </ol>
+   Please check out the <a href="https://github.com/NeverDecaf/chromium-web-store">chromium-web-store</a>
+   repo for further details and alternate installation methods for the extension.<br><br>
+-  If you do not wish to install this extension, there is still a way to install other extensions albeit
++  If you do not wish to use this extension, there is still a way to install other extensions albeit
+   without the ability to easily update them. In this case, please refer to the entry on the wiki for
+   <a href="https://ungoogled-software.github.io/ungoogled-chromium-wiki/faq#downloading-the-crx-file">
+    installing extensions manually</a>.</details>

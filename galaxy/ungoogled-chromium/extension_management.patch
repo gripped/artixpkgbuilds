@@ -1,0 +1,14 @@
+--- a/chrome/browser/extensions/extension_management.cc	2023-11-15 18:37:47.232270319 +0100
++++ b/chrome/browser/extensions/extension_management.cc	2023-11-15 18:37:55.179100222 +0100
+@@ -261,6 +261,11 @@
+       "always-prompt-for-install") {
+     return true;
+   }
++
++  // artist - 13-Nov-2023 - simple
++  if (!command_line.HasSwitch("extension-mime-request-handling"))
++    return true;
++
+   // No allowed install sites specified, disallow by default.
+   if (!global_settings_->install_sources.has_value())
+     return false;
