@@ -1,19 +1,19 @@
 ---
 pkgbase:
   name: elogind
-  version: 252.9-2
+  version: 252.9-3
   arch:
     - x86_64
   pkgname:
     - elogind
     - libelogind
 actions:
-  addRepo: null
-  removeRepo: null
+  addRepo: system
+  removeRepo: system-gremlins
   triggersBuild: false
   triggersRebuild: false
-  triggersRepoAdd: false
-  triggersRepoRemove: false
+  triggersRepoAdd: true
+  triggersRepoRemove: true
   triggersNoCheck: false
 repos:
   system-goblins:
@@ -23,10 +23,10 @@ repos:
     version: null
     packages: []
   system:
-    version: 252.9-2
+    version: 252.9-3
     packages:
-      - elogind-252.9-2-x86_64.pkg.tar.zst
-      - libelogind-252.9-2-x86_64.pkg.tar.zst
+      - elogind-252.9-3-x86_64.pkg.tar.zst
+      - libelogind-252.9-3-x86_64.pkg.tar.zst
   world-goblins:
     version: null
     packages: []
