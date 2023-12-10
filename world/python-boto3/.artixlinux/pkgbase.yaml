@@ -1,7 +1,7 @@
 ---
 pkgbase:
   name: python-boto3
-  version: 1.28.64-1
+  version: 1.33.1-2
   arch:
     - any
   pkgname:
@@ -28,13 +28,13 @@ repos:
     version: null
     packages: []
   world-gremlins:
-    version: 1.28.64-1
+    version: 1.33.1-2
     packages:
-      - python-boto3-1.28.64-1-any.pkg.tar.zst
+      - python-boto3-1.33.1-2-any.pkg.tar.zst
   world:
-    version: 1.28.25-1
+    version: 1.33.1-2
     packages:
-      - python-boto3-1.28.25-1-any.pkg.tar.zst
+      - python-boto3-1.33.1-2-any.pkg.tar.zst
   lib32-goblins:
     version: null
     packages: []
