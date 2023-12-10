@@ -1,7 +1,7 @@
 ---
 pkgbase:
   name: python-s3transfer
-  version: 0.7.0-1
+  version: 0.8.0-1
   arch:
     - any
   pkgname:
@@ -28,13 +28,13 @@ repos:
     version: null
     packages: []
   world-gremlins:
+    version: 0.8.0-1
+    packages:
+      - python-s3transfer-0.8.0-1-any.pkg.tar.zst
+  world:
     version: 0.7.0-1
     packages:
       - python-s3transfer-0.7.0-1-any.pkg.tar.zst
-  world:
-    version: 0.6.2-1
-    packages:
-      - python-s3transfer-0.6.2-1-any.pkg.tar.zst
   lib32-goblins:
     version: null
     packages: []
