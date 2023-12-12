@@ -2,7 +2,7 @@
 
 pkgname=tracker3-miners
 pkgver=3.6.2
-pkgrel=1
+pkgrel=2
 pkgdesc="Filesystem indexer and metadata extractor"
 url="https://tracker.gnome.org/"
 arch=(x86_64)
@@ -56,8 +56,8 @@ prepare() {
 
 build() {
   local meson_options=(
-    -D tests_tap_protocol=true
     -D systemd_user_services=false
+    -D tests_tap_protocol=true
   )
 
   artix-meson tracker-miners build "${meson_options[@]}"
