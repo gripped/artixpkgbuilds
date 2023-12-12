@@ -1,7 +1,7 @@
 ---
 pkgbase:
   name: vscodium
-  version: 1.84.1.23311-1
+  version: 1.84.2.23319-1
   arch:
     - x86_64
     - aarch64
@@ -52,6 +52,6 @@ repos:
     version: null
     packages: []
   galaxy:
-    version: 1.84.1.23311-1
+    version: 1.84.2.23319-1
     packages:
-      - vscodium-1.84.1.23311-1-x86_64.pkg.tar.zst
+      - vscodium-1.84.2.23319-1-x86_64.pkg.tar.zst
