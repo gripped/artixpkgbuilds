@@ -1,13 +1,13 @@
 ---
 pkgbase:
   name: wine-staging
-  version: 8.20-1
+  version: 8.21-1
   arch:
     - x86_64
   pkgname:
     - wine-staging
 actions:
-  addRepo: lib32
+  addRepo: lib32-gremlins
   removeRepo: null
   triggersBuild: true
   triggersRebuild: false
@@ -37,12 +37,13 @@ repos:
     version: null
     packages: []
   lib32-gremlins:
-    version: null
-    packages: []
-  lib32:
-    version: 8.20-1
+    version: 8.21-1
     packages:
-      - wine-staging-8.20-1-x86_64.pkg.tar.zst
+      - wine-staging-8.21-1-x86_64.pkg.tar.zst
+  lib32:
+    version: 8.21-1
+    packages:
+      - wine-staging-8.21-1-x86_64.pkg.tar.zst
   galaxy-goblins:
     version: null
     packages: []
