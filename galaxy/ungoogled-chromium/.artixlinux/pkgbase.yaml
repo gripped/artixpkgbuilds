@@ -1,7 +1,7 @@
 ---
 pkgbase:
   name: ungoogled-chromium
-  version: 119.0.6045.159-4
+  version: 120.0.6099.71-3
   arch:
     - x86_64
   pkgname:
@@ -43,12 +43,13 @@ repos:
     version: null
     packages: []
   galaxy-goblins:
-    version: 119.0.6045.159-4
+    version: 120.0.6099.71-3
     packages:
-      - ungoogled-chromium-119.0.6045.159-4-x86_64.pkg.tar.zst
+      - ungoogled-chromium-120.0.6099.71-3-x86_64.pkg.tar.zst
   galaxy-gremlins:
-    version: null
-    packages: []
+    version: 120.0.6099.71-2
+    packages:
+      - ungoogled-chromium-120.0.6099.71-2-x86_64.pkg.tar.zst
   galaxy:
     version: 119.0.6045.123-1
     packages:
