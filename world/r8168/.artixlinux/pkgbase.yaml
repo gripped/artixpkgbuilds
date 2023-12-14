@@ -1,7 +1,7 @@
 ---
 pkgbase:
   name: r8168
-  version: 8.052.01-14
+  version: 8.052.01-15
   arch:
     - x86_64
   pkgname:
@@ -28,9 +28,9 @@ repos:
     version: null
     packages: []
   world-gremlins:
-    version: 8.052.01-14
+    version: 8.052.01-15
     packages:
-      - r8168-8.052.01-14-x86_64.pkg.tar.zst
+      - r8168-8.052.01-15-x86_64.pkg.tar.zst
   world:
     version: 8.052.01-12
     packages:
