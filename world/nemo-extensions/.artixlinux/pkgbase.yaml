@@ -1,7 +1,7 @@
 ---
 pkgbase:
   name: nemo-extensions
-  version: 6.0.0-1
+  version: 6.0.1-1
   arch:
     - x86_64
   pkgname:
@@ -17,11 +17,11 @@ pkgbase:
     - nemo-terminal
 actions:
   addRepo: world
-  removeRepo: world-gremlins
-  triggersBuild: false
+  removeRepo: null
+  triggersBuild: true
   triggersRebuild: false
   triggersRepoAdd: true
-  triggersRepoRemove: true
+  triggersRepoRemove: false
   triggersNoCheck: false
 repos:
   system-goblins:
@@ -40,18 +40,18 @@ repos:
     version: null
     packages: []
   world:
-    version: 6.0.0-1
+    version: 6.0.1-1
     packages:
-      - nemo-audio-tab-6.0.0-1-x86_64.pkg.tar.zst
-      - nemo-emblems-6.0.0-1-x86_64.pkg.tar.zst
-      - nemo-fileroller-6.0.0-1-x86_64.pkg.tar.zst
-      - nemo-image-converter-6.0.0-1-x86_64.pkg.tar.zst
-      - nemo-pastebin-6.0.0-1-x86_64.pkg.tar.zst
-      - nemo-preview-6.0.0-1-x86_64.pkg.tar.zst
-      - nemo-python-6.0.0-1-x86_64.pkg.tar.zst
-      - nemo-seahorse-6.0.0-1-x86_64.pkg.tar.zst
-      - nemo-share-6.0.0-1-x86_64.pkg.tar.zst
-      - nemo-terminal-6.0.0-1-x86_64.pkg.tar.zst
+      - nemo-audio-tab-6.0.1-1-x86_64.pkg.tar.zst
+      - nemo-emblems-6.0.1-1-x86_64.pkg.tar.zst
+      - nemo-fileroller-6.0.1-1-x86_64.pkg.tar.zst
+      - nemo-image-converter-6.0.1-1-x86_64.pkg.tar.zst
+      - nemo-pastebin-6.0.1-1-x86_64.pkg.tar.zst
+      - nemo-preview-6.0.1-1-x86_64.pkg.tar.zst
+      - nemo-python-6.0.1-1-x86_64.pkg.tar.zst
+      - nemo-seahorse-6.0.1-1-x86_64.pkg.tar.zst
+      - nemo-share-6.0.1-1-x86_64.pkg.tar.zst
+      - nemo-terminal-6.0.1-1-x86_64.pkg.tar.zst
   lib32-goblins:
     version: null
     packages: []
