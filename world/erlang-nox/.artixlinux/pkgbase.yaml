@@ -1,13 +1,13 @@
 ---
 pkgbase:
   name: erlang-nox
-  version: 26.1.2-2
+  version: 26.2-1
   arch:
     - x86_64
   pkgname:
     - erlang-nox
 actions:
-  addRepo: world
+  addRepo: world-gremlins
   removeRepo: null
   triggersBuild: true
   triggersRebuild: false
@@ -28,8 +28,9 @@ repos:
     version: null
     packages: []
   world-gremlins:
-    version: null
-    packages: []
+    version: 26.2-1
+    packages:
+      - erlang-nox-26.2-1-x86_64.pkg.tar.zst
   world:
     version: 26.1.2-2
     packages:
