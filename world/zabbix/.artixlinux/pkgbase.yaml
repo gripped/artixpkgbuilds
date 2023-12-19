@@ -1,0 +1,64 @@
+---
+pkgbase:
+  name: zabbix
+  version: 6.4.8-2
+  arch:
+    - x86_64
+  pkgname:
+    - zabbix-server
+    - zabbix-agent
+    - zabbix-agent2
+    - zabbix-proxy
+    - zabbix-frontend-php
+    - zabbix-web-service
+actions:
+  addRepo: world
+  removeRepo: world-gremlins
+  triggersBuild: false
+  triggersRebuild: false
+  triggersRepoAdd: true
+  triggersRepoRemove: true
+  triggersNoCheck: false
+repos:
+  system-goblins:
+    version: null
+    packages: []
+  system-gremlins:
+    version: null
+    packages: []
+  system:
+    version: null
+    packages: []
+  world-goblins:
+    version: null
+    packages: []
+  world-gremlins:
+    version: null
+    packages: []
+  world:
+    version: 6.4.8-2
+    packages:
+      - zabbix-server-6.4.8-2-x86_64.pkg.tar.zst
+      - zabbix-agent-6.4.8-2-x86_64.pkg.tar.zst
+      - zabbix-agent2-6.4.8-2-x86_64.pkg.tar.zst
+      - zabbix-proxy-6.4.8-2-x86_64.pkg.tar.zst
+      - zabbix-frontend-php-6.4.8-2-x86_64.pkg.tar.zst
+      - zabbix-web-service-6.4.8-2-x86_64.pkg.tar.zst
+  lib32-goblins:
+    version: null
+    packages: []
+  lib32-gremlins:
+    version: null
+    packages: []
+  lib32:
+    version: null
+    packages: []
+  galaxy-goblins:
+    version: null
+    packages: []
+  galaxy-gremlins:
+    version: null
+    packages: []
+  galaxy:
+    version: null
+    packages: []
