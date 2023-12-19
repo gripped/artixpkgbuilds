@@ -1,17 +1,17 @@
 ---
 pkgbase:
   name: mkinitcpio-openswap
-  version: 0.1.0-3
+  version: 0.1.0-4
   arch:
     - any
   pkgname:
     - mkinitcpio-openswap
 actions:
-  addRepo: null
+  addRepo: world
   removeRepo: null
-  triggersBuild: false
+  triggersBuild: true
   triggersRebuild: false
-  triggersRepoAdd: false
+  triggersRepoAdd: true
   triggersRepoRemove: false
   triggersNoCheck: false
 repos:
@@ -31,8 +31,9 @@ repos:
     version: null
     packages: []
   world:
-    version: null
-    packages: []
+    version: 0.1.0-4
+    packages:
+      - mkinitcpio-openswap-0.1.0-4-any.pkg.tar.zst
   lib32-goblins:
     version: null
     packages: []
@@ -49,6 +50,5 @@ repos:
     version: null
     packages: []
   galaxy:
-    version: 0.1.0-3
-    packages:
-      - mkinitcpio-openswap-0.1.0-3-any.pkg.tar.zst
+    version: null
+    packages: []
