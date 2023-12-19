@@ -1,0 +1,54 @@
+---
+pkgbase:
+  name: 0ad-data
+  version: a26-1
+  arch:
+    - any
+  pkgname:
+    - 0ad-data
+actions:
+  addRepo: galaxy
+  removeRepo: world
+  triggersBuild: false
+  triggersRebuild: false
+  triggersRepoAdd: true
+  triggersRepoRemove: true
+  triggersNoCheck: false
+repos:
+  system-goblins:
+    version: null
+    packages: []
+  system-gremlins:
+    version: null
+    packages: []
+  system:
+    version: null
+    packages: []
+  world-goblins:
+    version: null
+    packages: []
+  world-gremlins:
+    version: null
+    packages: []
+  world:
+    version: null
+    packages: []
+  lib32-goblins:
+    version: null
+    packages: []
+  lib32-gremlins:
+    version: null
+    packages: []
+  lib32:
+    version: null
+    packages: []
+  galaxy-goblins:
+    version: null
+    packages: []
+  galaxy-gremlins:
+    version: null
+    packages: []
+  galaxy:
+    version: a26-1
+    packages:
+      - 0ad-data-a26-1-any.pkg.tar.zst
