@@ -1,12 +1,12 @@
 # Maintainer: artist for Artix Linux
 
 pkgname=ungoogled-chromium
-pkgver=120.0.6099.109
-pkgrel=3
+pkgver=120.0.6099.129
+pkgrel=1
 _launcher_ver=8
 # ungoogled chromium variables
 _uc_usr=ungoogled-software
-_uc_ver=120.0.6099.109-1
+_uc_ver=120.0.6099.129-1
 _cews_name=chromium-extension-web-store
 _cews_ver=1.5.4.1
 _cews_id=ocaahdebbfolfmndjeplogmgcagdmblk
@@ -43,12 +43,12 @@ source=(https://commondatastorage.googleapis.com/chromium-browser-official/chrom
         drop-flags-unsupported-by-clang16.patch
         icu-74.patch)
 noextract=("${_cews_name}-${_cews_ver}.crx")
-sha256sums=('87c00c525ee07c2233b78dbece1496b697f686244a67fac2c71e4a30bd96849b'
-            '8a54932b0f2098dcd334e79e4f680614f57dc192037bc495d2099e28dbc507c8'
+sha256sums=('be36d5abecfafdc68d9b27b0bee65136316610a295e844b99483a7520b245f85'
+            '632265238aea25b1c0076e99b4de2f5e53bbafccbb89356d4586c4415dae6ff9'
             '213e50f48b67feb4441078d50b0fd431df34323be15be97c55302d3fdac4483a'
             'ffee1082fbe3d0c9e79dacb8405d5a0e1aa94d6745089a30b093f647354894d2'
             '3136dfe3c344e8e751fca76c223243deb9168f531a9ad2dc601fa500e460f855'
-            '1575a61e00863385bd04339eb36e073d6fec0ac0cc85850a1ad7d8fbeaec5b5c'
+            'ad6b55d98102b128b568dd195cbc86092539539a72274078712c9bb585f0bd97'
             '2f93752b962f40b3a59a23ec9b90e5dcd8057dfe6d315c5a86e9d599e8dac090'
             'ce94e04f05cc2d8da9143855bc54263d15a049e3d1575cfa12046134d2c5edbc'
             'babda4f5c1179825797496898d77334ac067149cac03d797ab27ac69671a7feb'
