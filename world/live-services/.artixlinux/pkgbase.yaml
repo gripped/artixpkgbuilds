@@ -1,7 +1,7 @@
 ---
 pkgbase:
   name: live-services
-  version: 0.13.9-1
+  version: 0.13.9-2
   arch:
     - any
   pkgname:
@@ -11,12 +11,12 @@ pkgbase:
     - artix-live-s6
     - artix-live-dinit
 actions:
-  addRepo: world
-  removeRepo: world-gremlins
-  triggersBuild: false
+  addRepo: world-gremlins
+  removeRepo: null
+  triggersBuild: true
   triggersRebuild: false
   triggersRepoAdd: true
-  triggersRepoRemove: true
+  triggersRepoRemove: false
   triggersNoCheck: false
 repos:
   system-goblins:
@@ -32,8 +32,13 @@ repos:
     version: null
     packages: []
   world-gremlins:
-    version: null
-    packages: []
+    version: 0.13.9-2
+    packages:
+      - artix-live-base-0.13.9-2-any.pkg.tar.zst
+      - artix-live-openrc-0.13.9-2-any.pkg.tar.zst
+      - artix-live-runit-0.13.9-2-any.pkg.tar.zst
+      - artix-live-s6-0.13.9-2-any.pkg.tar.zst
+      - artix-live-dinit-0.13.9-2-any.pkg.tar.zst
   world:
     version: 0.13.9-1
     packages:
