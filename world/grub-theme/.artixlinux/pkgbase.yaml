@@ -1,7 +1,7 @@
 ---
 pkgbase:
   name: grub-theme
-  version: 2023.12-2
+  version: 2023.12-3
   arch:
     - any
   pkgname:
@@ -32,10 +32,10 @@ repos:
     version: null
     packages: []
   world:
-    version: 2023.12-2
+    version: 2023.12-3
     packages:
-      - artix-grub-theme-2023.12-2-any.pkg.tar.zst
-      - artix-grub-live-2023.12-2-any.pkg.tar.zst
+      - artix-grub-theme-2023.12-3-any.pkg.tar.zst
+      - artix-grub-live-2023.12-3-any.pkg.tar.zst
   lib32-goblins:
     version: null
     packages: []
