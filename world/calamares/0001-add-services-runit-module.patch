@@ -1,7 +1,7 @@
-From 1eb51f4ec5f4f3c601d0100bba01b836b67e649d Mon Sep 17 00:00:00 2001
+From 6a1a706f91a0c0e14f7dfc05f3814467d0253f3c Mon Sep 17 00:00:00 2001
 From: artoo <artoo@artixlinux.org>
-Date: Wed, 9 Dec 2020 00:16:52 +0100
-Subject: [PATCH] add services-runit
+Date: Thu, 21 Dec 2023 17:49:38 +0100
+Subject: [PATCH 1/1] add services-runit module
 
 ---
  src/modules/services-runit/main.py            | 144 ++++++++++++++++++
@@ -224,5 +224,5 @@ index 000000000..04476b107
 +services: []
 +disable: []
 -- 
-2.29.2
+2.43.0
 
