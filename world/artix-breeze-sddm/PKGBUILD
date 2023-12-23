@@ -1,0 +1,22 @@
+# Maintainer: nous <nous@artixlinux.org>
+# Maintainer: artoo <artoo@artixlinux.org>
+
+_repo=sddm-theme-artix
+
+pkgname=artix-breeze-sddm
+pkgver=20231223
+pkgrel=1
+pkgdesc='Artix breeze sddm theme'
+arch=('any')
+url="https://gitea.artixlinux.org/artix/sddm-theme-artix"
+license=('GPL')
+makedepends=('git')
+depends=('plasma-workspace')
+groups=('artix-branding')
+source=("git+$url.git")
+sha256sums=('SKIP')
+
+package() {
+    install -d "$pkgdir"/usr/share/sddm/themes
+    cp -vr "$_repo"/breeze "$pkgdir"/usr/share/sddm/themes/
+}
