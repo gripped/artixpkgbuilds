@@ -1,14 +1,14 @@
 ---
 pkgbase:
   name: artix-artwork
-  version: 0.9-2
+  version: 0.9-3
   arch:
     - any
   pkgname:
     - artix-icons
     - artix-backgrounds
 actions:
-  addRepo: galaxy
+  addRepo: world
   removeRepo: null
   triggersBuild: true
   triggersRebuild: false
@@ -32,8 +32,10 @@ repos:
     version: null
     packages: []
   world:
-    version: null
-    packages: []
+    version: 0.9-3
+    packages:
+      - artix-icons-0.9-3-any.pkg.tar.zst
+      - artix-backgrounds-0.9-3-any.pkg.tar.zst
   lib32-goblins:
     version: null
     packages: []
@@ -50,7 +52,5 @@ repos:
     version: null
     packages: []
   galaxy:
-    version: 0.9-2
-    packages:
-      - artix-icons-0.9-2-any.pkg.tar.zst
-      - artix-backgrounds-0.9-2-any.pkg.tar.zst
+    version: null
+    packages: []
