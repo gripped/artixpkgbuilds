@@ -5,14 +5,14 @@ _commit=f323f9fa04b9307cc5246c79b7b48a353aa4031a
 
 pkgname=artix-wallpapers
 pkgver=1
-pkgrel=1
+pkgrel=2
 pkgdesc='Artix wallpapers'
 arch=('any')
 url="https://gitea.artixlinux.org/artix/artwork"
 license=('GPL')
 makedepends=('git')
 source=("git+https://gitea.artixlinux.org/artix/artwork.git#commit=$_commit")
-groups=('artix-branding')
+groups=('artix-style')
 sha256sums=('SKIP')
 
 package(){
