@@ -5,14 +5,14 @@ _repo=sddm-theme-artix
 
 pkgname=artix-breeze-sddm
 pkgver=20231223
-pkgrel=1
+pkgrel=2
 pkgdesc='Artix breeze sddm theme'
 arch=('any')
 url="https://gitea.artixlinux.org/artix/sddm-theme-artix"
 license=('GPL')
 makedepends=('git')
 depends=('plasma-workspace')
-groups=('artix-branding')
+groups=('artix-style')
 source=("git+$url.git")
 sha256sums=('SKIP')
 
