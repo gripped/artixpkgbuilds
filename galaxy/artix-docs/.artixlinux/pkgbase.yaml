@@ -1,13 +1,13 @@
 ---
 pkgbase:
   name: artix-docs
-  version: 20230924-1
+  version: 20230924-2
   arch:
     - any
   pkgname:
     - artix-docs
 actions:
-  addRepo: galaxy
+  addRepo: world
   removeRepo: null
   triggersBuild: true
   triggersRebuild: false
@@ -31,8 +31,9 @@ repos:
     version: null
     packages: []
   world:
-    version: null
-    packages: []
+    version: 20230924-2
+    packages:
+      - artix-docs-20230924-2-any.pkg.tar.zst
   lib32-goblins:
     version: null
     packages: []
@@ -49,6 +50,5 @@ repos:
     version: null
     packages: []
   galaxy:
-    version: 20230924-1
-    packages:
-      - artix-docs-20230924-1-any.pkg.tar.zst
+    version: null
+    packages: []
