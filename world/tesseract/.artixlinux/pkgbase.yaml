@@ -8,7 +8,7 @@ pkgbase:
     - tesseract
 actions:
   addRepo: world
-  removeRepo: world-gremlins
+  removeRepo: galaxy
   triggersBuild: false
   triggersRebuild: false
   triggersRepoAdd: true
