@@ -4,7 +4,7 @@
 
 pkgname=calamares-branding
 pkgver=1.2
-pkgrel=2
+pkgrel=4
 pkgdesc='Distribution-independent installer framework artix branding'
 arch=('any')
 license=(GPL)
@@ -12,7 +12,7 @@ url="https://gitea.artixlinux.org/artix/calamares-branding"
 license=('LGPL')
 depends=('calamares')
 makedepends=('git')
-_commit=50c133e11e3490c5eeed48c46aae9dba99ec909b
+_commit=4c30712ed220a40625b34557110fd53ac77217a1
 source=("git+${url}.git#commit=${_commit}")
 sha256sums=('SKIP')
 
