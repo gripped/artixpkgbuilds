@@ -1,16 +1,16 @@
 ---
 pkgbase:
   name: python-anyio
-  version: 4.0.0-1
+  version: 4.2.0-1
   arch:
     - any
   pkgname:
     - python-anyio
 actions:
-  addRepo: world-goblins
+  addRepo: world-gremlins
   removeRepo: null
-  triggersBuild: false
-  triggersRebuild: true
+  triggersBuild: true
+  triggersRebuild: false
   triggersRepoAdd: true
   triggersRepoRemove: false
   triggersNoCheck: false
@@ -25,12 +25,12 @@ repos:
     version: null
     packages: []
   world-goblins:
-    version: 4.0.0-1
-    packages:
-      - python-anyio-4.0.0-1-any.pkg.tar.zst
-  world-gremlins:
     version: null
     packages: []
+  world-gremlins:
+    version: 4.2.0-1
+    packages:
+      - python-anyio-4.2.0-1-any.pkg.tar.zst
   world:
     version: 3.7.1-1
     packages:
