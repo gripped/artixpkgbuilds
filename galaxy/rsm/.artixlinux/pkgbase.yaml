@@ -1,17 +1,17 @@
 ---
 pkgbase:
   name: rsm
-  version: 1.4.6-2
+  version: 1.4.8-1
   arch:
     - any
   pkgname:
     - rsm
 actions:
-  addRepo: null
+  addRepo: world
   removeRepo: null
-  triggersBuild: false
+  triggersBuild: true
   triggersRebuild: false
-  triggersRepoAdd: false
+  triggersRepoAdd: true
   triggersRepoRemove: false
   triggersNoCheck: false
 repos:
@@ -31,8 +31,9 @@ repos:
     version: null
     packages: []
   world:
-    version: null
-    packages: []
+    version: 1.4.8-1
+    packages:
+      - rsm-1.4.8-1-any.pkg.tar.zst
   lib32-goblins:
     version: null
     packages: []
@@ -49,6 +50,5 @@ repos:
     version: null
     packages: []
   galaxy:
-    version: 1.4.6-2
-    packages:
-      - rsm-1.4.6-2-any.pkg.tar.zst
+    version: null
+    packages: []
