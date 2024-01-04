@@ -1,17 +1,17 @@
 ---
 pkgbase:
   name: libexttextcat
-  version: 3.4.6-1
+  version: 3.4.7-1
   arch:
     - x86_64
   pkgname:
     - libexttextcat
 actions:
-  addRepo: null
+  addRepo: galaxy
   removeRepo: null
-  triggersBuild: false
+  triggersBuild: true
   triggersRebuild: false
-  triggersRepoAdd: false
+  triggersRepoAdd: true
   triggersRepoRemove: false
   triggersNoCheck: false
 repos:
@@ -31,9 +31,8 @@ repos:
     version: null
     packages: []
   world:
-    version: 3.4.6-1
-    packages:
-      - libexttextcat-3.4.6-1-x86_64.pkg.tar.zst
+    version: null
+    packages: []
   lib32-goblins:
     version: null
     packages: []
@@ -50,5 +49,6 @@ repos:
     version: null
     packages: []
   galaxy:
-    version: null
-    packages: []
+    version: 3.4.7-1
+    packages:
+      - libexttextcat-3.4.7-1-x86_64.pkg.tar.zst
