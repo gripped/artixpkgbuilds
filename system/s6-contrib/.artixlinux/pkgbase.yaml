@@ -1,18 +1,18 @@
 ---
 pkgbase:
   name: s6-contrib
-  version: 1.0-1
+  version: 1.0-2
   arch:
     - any
   pkgname:
     - s6-contrib
 actions:
-  addRepo: null
-  removeRepo: null
+  addRepo: system
+  removeRepo: system-gremlins
   triggersBuild: false
   triggersRebuild: false
-  triggersRepoAdd: false
-  triggersRepoRemove: false
+  triggersRepoAdd: true
+  triggersRepoRemove: true
   triggersNoCheck: false
 repos:
   system-goblins:
@@ -22,9 +22,9 @@ repos:
     version: null
     packages: []
   system:
-    version: 1.0-1
+    version: 1.0-2
     packages:
-      - s6-contrib-1.0-1-any.pkg.tar.zst
+      - s6-contrib-1.0-2-any.pkg.tar.zst
   world-goblins:
     version: null
     packages: []
