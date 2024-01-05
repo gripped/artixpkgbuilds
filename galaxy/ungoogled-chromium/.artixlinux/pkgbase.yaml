@@ -1,18 +1,18 @@
 ---
 pkgbase:
   name: ungoogled-chromium
-  version: 120.0.6099.129-1
+  version: 120.0.6099.199-1
   arch:
     - x86_64
   pkgname:
     - ungoogled-chromium
 actions:
-  addRepo: galaxy
-  removeRepo: galaxy-gremlins
-  triggersBuild: false
+  addRepo: galaxy-gremlins
+  removeRepo: null
+  triggersBuild: true
   triggersRebuild: false
   triggersRepoAdd: true
-  triggersRepoRemove: true
+  triggersRepoRemove: false
   triggersNoCheck: false
 repos:
   system-goblins:
@@ -47,8 +47,9 @@ repos:
     packages:
       - ungoogled-chromium-120.0.6099.71-3-x86_64.pkg.tar.zst
   galaxy-gremlins:
-    version: null
-    packages: []
+    version: 120.0.6099.199-1
+    packages:
+      - ungoogled-chromium-120.0.6099.199-1-x86_64.pkg.tar.zst
   galaxy:
     version: 120.0.6099.129-1
     packages:
