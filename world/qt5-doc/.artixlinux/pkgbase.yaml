@@ -1,19 +1,19 @@
 ---
 pkgbase:
   name: qt5-doc
-  version: 5.15.11-2
+  version: 5.15.12-1
   arch:
     - any
   pkgname:
     - qt5-doc
     - qt5-examples
 actions:
-  addRepo: world
-  removeRepo: world-gremlins
-  triggersBuild: false
+  addRepo: world-gremlins
+  removeRepo: null
+  triggersBuild: true
   triggersRebuild: false
   triggersRepoAdd: true
-  triggersRepoRemove: true
+  triggersRepoRemove: false
   triggersNoCheck: false
 repos:
   system-goblins:
@@ -29,8 +29,10 @@ repos:
     version: null
     packages: []
   world-gremlins:
-    version: null
-    packages: []
+    version: 5.15.12-1
+    packages:
+      - qt5-doc-5.15.12-1-any.pkg.tar.zst
+      - qt5-examples-5.15.12-1-any.pkg.tar.zst
   world:
     version: 5.15.11-2
     packages:
