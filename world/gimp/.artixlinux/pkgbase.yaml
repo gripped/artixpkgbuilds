@@ -1,7 +1,7 @@
 ---
 pkgbase:
   name: gimp
-  version: 2.10.36-2
+  version: 2.10.36-4
   arch:
     - x86_64
   pkgname:
@@ -25,12 +25,13 @@ repos:
     version: null
     packages: []
   world-goblins:
-    version: 2.10.36-2
+    version: 2.10.36-4
     packages:
-      - gimp-2.10.36-2-x86_64.pkg.tar.zst
+      - gimp-2.10.36-4-x86_64.pkg.tar.zst
   world-gremlins:
-    version: null
-    packages: []
+    version: 2.10.36-3
+    packages:
+      - gimp-2.10.36-3-x86_64.pkg.tar.zst
   world:
     version: 2.10.36-1
     packages:
