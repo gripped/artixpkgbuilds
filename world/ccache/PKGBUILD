@@ -3,7 +3,7 @@
 # Contributor: Tom Newsom <Jeepster@gmx.co.uk>
 
 pkgname=ccache
-pkgver=4.8.2
+pkgver=4.9
 pkgrel=1
 pkgdesc='Compiler cache that speeds up recompilation by caching previous compilations'
 url='https://ccache.dev/'
@@ -13,9 +13,9 @@ depends=('glibc' 'gcc-libs' 'hiredis' 'zstd' 'libzstd.so')
 makedepends=('cmake' 'asciidoctor' 'perl')
 source=(https://github.com/ccache/ccache/releases/download/v${pkgver}/ccache-${pkgver}.tar.xz{,.asc})
 validpgpkeys=('5A939A71A46792CF57866A51996DDA075594ADB8') # Joel Rosdahl <joel@rosdahl.net>
-sha512sums=('2edf8da79a9286eb4ed5b6dc2063b55fb97e22a40d1c501c6f17b2f0ce32dfc02e99754afbabbd24fed8312e13e5b8bfc20687d0b5c0cf19fbf64e3adc7bb25b'
+sha512sums=('04200e5ceab56fc119f4376189f45fe811409a8022f08e82cd3089e252f350d604d777a237a57651fcd0c20f8ba0f27e4f3cc330a5970d455a696a977408d563'
             'SKIP')
-b2sums=('ca907c16b353fabfb8e6479a076aa5cf791e6150f2b16eabf1817d4955d9b5f0200d4b12527ba0493ad9b2d7567adaaf8416bbff858a66fff5a5687328ab7395'
+b2sums=('682b491d061452d77d988d7e9e661ed4ce729a40a58370af55e1f24c5e973e4808d7211b4f8b8ab7f9328ecc651c032fa2efd37675566308197c22fd9a776675'
         'SKIP')
 
 build() {
