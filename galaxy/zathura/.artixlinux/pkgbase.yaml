@@ -7,8 +7,8 @@ pkgbase:
   pkgname:
     - zathura
 actions:
-  addRepo: world
-  removeRepo: world-gremlins
+  addRepo: galaxy
+  removeRepo: galaxy-gremlins
   triggersBuild: false
   triggersRebuild: false
   triggersRepoAdd: true
@@ -31,9 +31,8 @@ repos:
     version: null
     packages: []
   world:
-    version: 0.5.3-1
-    packages:
-      - zathura-0.5.3-1-x86_64.pkg.tar.zst
+    version: null
+    packages: []
   lib32-goblins:
     version: null
     packages: []
@@ -47,10 +46,9 @@ repos:
     version: null
     packages: []
   galaxy-gremlins:
+    version: null
+    packages: []
+  galaxy:
     version: 0.5.4-2
     packages:
       - zathura-0.5.4-2-x86_64.pkg.tar.zst
-  galaxy:
-    version: 0.5.4-1
-    packages:
-      - zathura-0.5.4-1-x86_64.pkg.tar.zst
