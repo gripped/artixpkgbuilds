@@ -124,7 +124,7 @@ build() {
 		--with-gstreamer \
 		"${_wine32opts[@]}"
 
-	make
+	make CC="gcc -m32" CXX="g++ -m32"
 }
 
 package() {
