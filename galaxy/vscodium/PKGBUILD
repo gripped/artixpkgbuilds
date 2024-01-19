@@ -3,7 +3,7 @@
 
 pkgname=vscodium
 # Make sure the pkgver matches the git tags in vscodium and vscode git repo's!
-pkgver=1.84.2.23319
+pkgver=1.85.2.24019
 pkgrel=1
 pkgdesc="Free/Libre Open Source Software Binaries of VSCode (git build from latest release)."
 arch=('x86_64' 'aarch64' 'armv7h')
@@ -45,7 +45,7 @@ source=(
 )
 sha256sums=('63eccd0977b9dc783a11ff401940f48bbabd0d098b9563b7ef26402495dc9b88'
             'fd3dc7cbea2b3eb74dc205f8faa28e913108d11aba41fcffe19a4e5222be33fd'
-            'a9d0a302834a529fb2fc6213f6d2c9cc7069ada7bb29688622447b0ee670f9c2')
+            '2cc43e5d6feb3fe198403df4aec9dc94168bf769bfe06c330134b891adc39cb9')
 provides=(
     'codium'
     'vscodium'
@@ -78,6 +78,9 @@ case "$CARCH" in
 esac
 
 build() {
+
+    ulimit -n 4096
+
     # Deactivate any pre-loaded nvm, and make sure we use our own in the current source directory
     command -v nvm >/dev/null && nvm deactivate && nvm unload
     export NVM_DIR="${srcdir}/.nvm"
