@@ -1,19 +1,19 @@
 ---
 pkgbase:
   name: step-cli
-  version: 0.25.1-1
+  version: 0.25.2-2
   arch:
     - x86_64
   pkgname:
     - step-cli
 actions:
-  triggersBuild: false
+  triggersBuild: true
   triggersRebuild: false
   triggersRepoAdd: true
-  triggersRepoRemove: true
+  triggersRepoRemove: false
   triggersNoCheck: false
-  addRepo: world
-  removeRepo: world-gremlins
+  addRepo: world-gremlins
+  removeRepo: null
 repos:
   system-goblins:
     version: null
@@ -28,8 +28,9 @@ repos:
     version: null
     packages: []
   world-gremlins:
-    version: null
-    packages: []
+    version: 0.25.2-2
+    packages:
+      - step-cli-0.25.2-2-x86_64.pkg.tar.zst
   world:
     version: 0.25.1-1
     packages:
