@@ -79,7 +79,7 @@ esac
 
 build() {
 
-    ulimit -n 4096
+    ulimit -n 8192
 
     # Deactivate any pre-loaded nvm, and make sure we use our own in the current source directory
     command -v nvm >/dev/null && nvm deactivate && nvm unload
