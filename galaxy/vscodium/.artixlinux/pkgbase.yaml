@@ -9,12 +9,12 @@ pkgbase:
   pkgname:
     - vscodium
 actions:
-  addRepo: galaxy
-  removeRepo: null
-  triggersBuild: true
+  addRepo: null
+  removeRepo: galaxy-gremlins
+  triggersBuild: false
   triggersRebuild: false
-  triggersRepoAdd: true
-  triggersRepoRemove: false
+  triggersRepoAdd: false
+  triggersRepoRemove: true
   triggersNoCheck: false
 repos:
   system-goblins:
@@ -33,9 +33,8 @@ repos:
     version: null
     packages: []
   world:
-    version: 1.84.1.23311-1
-    packages:
-      - vscodium-1.84.1.23311-1-x86_64.pkg.tar.zst
+    version: null
+    packages: []
   lib32-goblins:
     version: null
     packages: []
@@ -52,6 +51,5 @@ repos:
     version: null
     packages: []
   galaxy:
-    version: 1.85.2.24019-1
-    packages:
-      - vscodium-1.85.2.24019-1-x86_64.pkg.tar.zst
+    version: null
+    packages: []
