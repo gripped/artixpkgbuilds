@@ -1,7 +1,7 @@
 ---
 pkgbase:
   name: licenses
-  version: 20240201-1
+  version: 20240206-1
   arch:
     - any
   pkgname:
@@ -22,9 +22,9 @@ repos:
     version: null
     packages: []
   system:
-    version: 20240201-1
+    version: 20240206-1
     packages:
-      - licenses-20240201-1-any.pkg.tar.zst
+      - licenses-20240206-1-any.pkg.tar.zst
   world-goblins:
     version: null
     packages: []
