@@ -17,7 +17,6 @@ depends=(gcc-libs
          qt5-base
          qt5-declarative
          sh
-         systemd-libs
          ttf-font
          xorg-server
          xorg-xauth)
