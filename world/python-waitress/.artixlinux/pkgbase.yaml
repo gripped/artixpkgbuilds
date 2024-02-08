@@ -1,17 +1,17 @@
 ---
 pkgbase:
   name: python-waitress
-  version: 2.1.2-2
+  version: 3.0.0-1
   arch:
     - any
   pkgname:
     - python-waitress
 actions:
-  addRepo: null
+  addRepo: world
   removeRepo: null
-  triggersBuild: false
+  triggersBuild: true
   triggersRebuild: false
-  triggersRepoAdd: false
+  triggersRepoAdd: true
   triggersRepoRemove: false
   triggersNoCheck: false
 repos:
@@ -31,9 +31,9 @@ repos:
     version: null
     packages: []
   world:
-    version: 2.1.2-2
+    version: 3.0.0-1
     packages:
-      - python-waitress-2.1.2-2-any.pkg.tar.zst
+      - python-waitress-3.0.0-1-any.pkg.tar.zst
   lib32-goblins:
     version: null
     packages: []
