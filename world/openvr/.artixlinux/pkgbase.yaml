@@ -8,11 +8,11 @@ pkgbase:
     - openvr
 actions:
   addRepo: world-gremlins
-  removeRepo: world-goblins
+  removeRepo: null
   triggersBuild: false
-  triggersRebuild: false
+  triggersRebuild: true
   triggersRepoAdd: true
-  triggersRepoRemove: true
+  triggersRepoRemove: false
   triggersNoCheck: false
 repos:
   system-goblins:
