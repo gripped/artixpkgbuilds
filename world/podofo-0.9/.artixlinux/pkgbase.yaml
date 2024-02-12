@@ -8,11 +8,11 @@ pkgbase:
     - podofo-0.9
 actions:
   addRepo: null
-  removeRepo: null
+  removeRepo: world
   triggersBuild: false
   triggersRebuild: false
   triggersRepoAdd: false
-  triggersRepoRemove: false
+  triggersRepoRemove: true
   triggersNoCheck: false
 repos:
   system-goblins:
@@ -31,9 +31,8 @@ repos:
     version: null
     packages: []
   world:
-    version: 0.9.8-5
-    packages:
-      - podofo-0.9-0.9.8-5-x86_64.pkg.tar.zst
+    version: null
+    packages: []
   lib32-goblins:
     version: null
     packages: []
