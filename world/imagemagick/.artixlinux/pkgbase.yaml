@@ -1,18 +1,18 @@
 ---
 pkgbase:
   name: imagemagick
-  version: 7.1.1.28-2
+  version: 7.1.1.28-1
   arch:
     - x86_64
   pkgname:
     - imagemagick
 actions:
-  addRepo: world-gremlins
-  removeRepo: world-goblins
-  triggersBuild: false
+  addRepo: world
+  removeRepo: null
+  triggersBuild: true
   triggersRebuild: false
   triggersRepoAdd: true
-  triggersRepoRemove: true
+  triggersRepoRemove: false
   triggersNoCheck: false
 repos:
   system-goblins:
@@ -28,9 +28,8 @@ repos:
     version: null
     packages: []
   world-gremlins:
-    version: 7.1.1.28-2
-    packages:
-      - imagemagick-7.1.1.28-2-x86_64.pkg.tar.zst
+    version: null
+    packages: []
   world:
     version: 7.1.1.28-1
     packages:
