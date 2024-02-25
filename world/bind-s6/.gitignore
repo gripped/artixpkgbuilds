@@ -13,6 +13,3 @@
 pkg/
 src/
 
-*.service
-*.timer
-*.socket
