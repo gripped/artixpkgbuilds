@@ -1,7 +1,7 @@
 ---
 pkgbase:
   name: libsecret
-  version: 0.21.4-1
+  version: 0.21.3-1
   arch:
     - x86_64
   pkgname:
@@ -20,15 +20,15 @@ repos:
     version: null
     packages: []
   system-gremlins:
-    version: 0.21.4-1
-    packages:
-      - libsecret-0.21.4-1-x86_64.pkg.tar.zst
-      - libsecret-docs-0.21.4-1-x86_64.pkg.tar.zst
-  system:
     version: 0.21.3-1
     packages:
       - libsecret-0.21.3-1-x86_64.pkg.tar.zst
       - libsecret-docs-0.21.3-1-x86_64.pkg.tar.zst
+  system:
+    version: 0.21.2-1
+    packages:
+      - libsecret-0.21.2-1-x86_64.pkg.tar.zst
+      - libsecret-docs-0.21.2-1-x86_64.pkg.tar.zst
   world-goblins:
     version: null
     packages: []
