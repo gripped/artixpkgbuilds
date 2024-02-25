@@ -1,18 +1,18 @@
 ---
 pkgbase:
   name: opencascade
-  version: 1:7.7.2-5
+  version: 1:7.7.2-4
   arch:
     - x86_64
   pkgname:
     - opencascade
 actions:
-  addRepo: world-gremlins
-  removeRepo: null
-  triggersBuild: true
+  addRepo: world
+  removeRepo: world-goblins
+  triggersBuild: false
   triggersRebuild: false
   triggersRepoAdd: true
-  triggersRepoRemove: false
+  triggersRepoRemove: true
   triggersNoCheck: false
 repos:
   system-goblins:
@@ -28,9 +28,8 @@ repos:
     version: null
     packages: []
   world-gremlins:
-    version: 1:7.7.2-5
-    packages:
-      - opencascade-1:7.7.2-5-x86_64.pkg.tar.zst
+    version: null
+    packages: []
   world:
     version: 1:7.7.2-4
     packages:
