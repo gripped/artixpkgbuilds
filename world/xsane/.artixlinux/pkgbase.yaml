@@ -1,19 +1,19 @@
 ---
 pkgbase:
   name: xsane
-  version: 0.999-6.2
+  version: 0.999-6
   arch:
     - x86_64
   pkgname:
     - xsane
     - xsane-gimp
 actions:
-  addRepo: null
-  removeRepo: galaxy
-  triggersBuild: false
+  addRepo: world
+  removeRepo: null
+  triggersBuild: true
   triggersRebuild: false
-  triggersRepoAdd: false
-  triggersRepoRemove: true
+  triggersRepoAdd: true
+  triggersRepoRemove: false
   triggersNoCheck: false
 repos:
   system-goblins:
