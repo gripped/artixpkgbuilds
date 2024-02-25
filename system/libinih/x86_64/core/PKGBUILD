@@ -1,8 +1,8 @@
-# Maintainer: Maxime Gauduin <alucryd@archlinux.org>
+# Maintainer: artoo <artoo@artixlinux.org>
 # Contributor: Alberto Oporto Ames <otreblain@gmail.com>
 
 pkgname=libinih
-pkgver=58
+pkgver=56
 pkgrel=1
 pkgdesc='A simple .INI file parser written in C'
 arch=(x86_64)
@@ -20,7 +20,7 @@ provides=(
   libinih.so
   libINIReader.so
 )
-_tag=5cc5e2c24642513aaa5b19126aad42d0e4e0923e
+_tag=5e1d9e2625842dddb3f9c086a50f22e4f45dfc2b
 source=(git+https://github.com/benhoyt/inih.git#tag=${_tag})
 b2sums=(SKIP)
 
