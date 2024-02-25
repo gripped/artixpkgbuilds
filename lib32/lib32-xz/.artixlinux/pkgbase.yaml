@@ -1,18 +1,18 @@
 ---
 pkgbase:
   name: lib32-xz
-  version: 5.6.0-1
+  version: 5.4.6-1
   arch:
     - x86_64
   pkgname:
     - lib32-xz
 actions:
-  addRepo: lib32-gremlins
-  removeRepo: null
-  triggersBuild: true
+  addRepo: lib32
+  removeRepo: lib32-gremlins
+  triggersBuild: false
   triggersRebuild: false
   triggersRepoAdd: true
-  triggersRepoRemove: false
+  triggersRepoRemove: true
   triggersNoCheck: false
 repos:
   system-goblins:
@@ -37,9 +37,8 @@ repos:
     version: null
     packages: []
   lib32-gremlins:
-    version: 5.6.0-1
-    packages:
-      - lib32-xz-5.6.0-1-x86_64.pkg.tar.zst
+    version: null
+    packages: []
   lib32:
     version: 5.4.6-1
     packages:
@@ -51,14 +50,5 @@ repos:
     version: null
     packages: []
   galaxy:
-    version: null
-    packages: []
-  asteroids-goblins:
-    version: null
-    packages: []
-  asteroids-gremlins:
-    version: null
-    packages: []
-  asteroids:
     version: null
     packages: []
