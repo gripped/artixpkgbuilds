@@ -7,24 +7,25 @@ pkgbase:
   pkgname:
     - dhcpcd-dinit
 actions:
-  addRepo: system
-  removeRepo: system-gremlins
-  triggersBuild: false
+  addRepo: system-goblins
+  removeRepo: null
+  triggersBuild: true
   triggersRebuild: false
   triggersRepoAdd: true
-  triggersRepoRemove: true
+  triggersRepoRemove: false
   triggersNoCheck: false
 repos:
   system-goblins:
-    version: null
-    packages: []
+    version: 20230205-2
+    packages:
+      - dhcpcd-dinit-20230205-2-any.pkg.tar.zst
   system-gremlins:
     version: null
     packages: []
   system:
-    version: 20230205-2
+    version: 20230205-1
     packages:
-      - dhcpcd-dinit-20230205-2-any.pkg.tar.zst
+      - dhcpcd-dinit-20230205-1-any.pkg.tar.zst
   world-goblins:
     version: null
     packages: []
