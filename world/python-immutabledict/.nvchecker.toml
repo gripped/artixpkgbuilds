@@ -1,5 +1,0 @@
-[python-immutabledict]
-source = "github"
-github = "corenting/immutabledict"
-prefix = "v"
-use_latest_tag = true
