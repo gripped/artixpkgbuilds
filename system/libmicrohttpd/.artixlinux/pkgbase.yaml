@@ -1,7 +1,7 @@
 ---
 pkgbase:
   name: libmicrohttpd
-  version: 1.0.1-1
+  version: 1.0.0-1
   arch:
     - x86_64
   pkgname:
@@ -19,13 +19,13 @@ repos:
     version: null
     packages: []
   system-gremlins:
-    version: 1.0.1-1
-    packages:
-      - libmicrohttpd-1.0.1-1-x86_64.pkg.tar.zst
-  system:
     version: 1.0.0-1
     packages:
       - libmicrohttpd-1.0.0-1-x86_64.pkg.tar.zst
+  system:
+    version: 0.9.77-1
+    packages:
+      - libmicrohttpd-0.9.77-1-x86_64.pkg.tar.zst
   world-goblins:
     version: null
     packages: []
