@@ -7,12 +7,12 @@ pkgbase:
   pkgname:
     - easytag
 actions:
-  addRepo: world
-  removeRepo: world-gremlins
-  triggersBuild: false
+  addRepo: world-goblins
+  removeRepo: null
+  triggersBuild: true
   triggersRebuild: false
   triggersRepoAdd: true
-  triggersRepoRemove: true
+  triggersRepoRemove: false
   triggersNoCheck: false
 repos:
   system-goblins:
@@ -25,15 +25,16 @@ repos:
     version: null
     packages: []
   world-goblins:
-    version: null
-    packages: []
+    version: 2.4.3-8
+    packages:
+      - easytag-2.4.3-8-x86_64.pkg.tar.zst
   world-gremlins:
     version: null
     packages: []
   world:
-    version: 2.4.3-8
+    version: 2.4.3-7
     packages:
-      - easytag-2.4.3-8-x86_64.pkg.tar.zst
+      - easytag-2.4.3-7-x86_64.pkg.tar.zst
   lib32-goblins:
     version: null
     packages: []
