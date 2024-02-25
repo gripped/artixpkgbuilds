@@ -1,7 +1,7 @@
 ---
 pkgbase:
   name: gdal
-  version: 3.8.4-1
+  version: 3.8.3-2
   arch:
     - x86_64
   pkgname:
@@ -9,11 +9,11 @@ pkgbase:
     - python-gdal
 actions:
   addRepo: world-gremlins
-  removeRepo: world-goblins
-  triggersBuild: false
+  removeRepo: null
+  triggersBuild: true
   triggersRebuild: false
   triggersRepoAdd: true
-  triggersRepoRemove: true
+  triggersRepoRemove: false
   triggersNoCheck: false
 repos:
   system-goblins:
@@ -29,15 +29,15 @@ repos:
     version: null
     packages: []
   world-gremlins:
-    version: 3.8.4-1
-    packages:
-      - gdal-3.8.4-1-x86_64.pkg.tar.zst
-      - python-gdal-3.8.4-1-x86_64.pkg.tar.zst
-  world:
     version: 3.8.3-2
     packages:
       - gdal-3.8.3-2-x86_64.pkg.tar.zst
       - python-gdal-3.8.3-2-x86_64.pkg.tar.zst
+  world:
+    version: 3.8.2-2
+    packages:
+      - gdal-3.8.2-2-x86_64.pkg.tar.zst
+      - python-gdal-3.8.2-2-x86_64.pkg.tar.zst
   lib32-goblins:
     version: null
     packages: []
