@@ -7,24 +7,25 @@ pkgbase:
   pkgname:
     - rpcbind-dinit
 actions:
-  addRepo: system
-  removeRepo: system-gremlins
-  triggersBuild: false
+  addRepo: system-goblins
+  removeRepo: null
+  triggersBuild: true
   triggersRebuild: false
   triggersRepoAdd: true
-  triggersRepoRemove: true
+  triggersRepoRemove: false
   triggersNoCheck: false
 repos:
   system-goblins:
-    version: null
-    packages: []
+    version: 20211029-4
+    packages:
+      - rpcbind-dinit-20211029-4-any.pkg.tar.zst
   system-gremlins:
     version: null
     packages: []
   system:
-    version: 20211029-4
+    version: 20211029-3
     packages:
-      - rpcbind-dinit-20211029-4-any.pkg.tar.zst
+      - rpcbind-dinit-20211029-3-any.pkg.tar.zst
   world-goblins:
     version: null
     packages: []
