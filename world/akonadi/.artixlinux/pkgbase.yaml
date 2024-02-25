@@ -8,12 +8,12 @@ pkgbase:
     - akonadi
     - libakonadi
 actions:
-  addRepo: world
-  removeRepo: world-gremlins
-  triggersBuild: false
+  addRepo: world-gremlins
+  removeRepo: null
+  triggersBuild: true
   triggersRebuild: false
   triggersRepoAdd: true
-  triggersRepoRemove: true
+  triggersRepoRemove: false
   triggersNoCheck: false
 repos:
   system-goblins:
@@ -29,13 +29,15 @@ repos:
     version: null
     packages: []
   world-gremlins:
-    version: null
-    packages: []
-  world:
     version: 23.08.5-1
     packages:
       - akonadi-23.08.5-1-x86_64.pkg.tar.zst
       - libakonadi-23.08.5-1-x86_64.pkg.tar.zst
+  world:
+    version: 23.08.4-1
+    packages:
+      - akonadi-23.08.4-1-x86_64.pkg.tar.zst
+      - libakonadi-23.08.4-1-x86_64.pkg.tar.zst
   lib32-goblins:
     version: null
     packages: []
