@@ -1,6 +1,6 @@
 type            = process
-command         = /usr/lib/dinit/slapd
+command         = /usr/bin/slapd -u ldap -g ldap -d 0 2>&1
 smooth-recovery = true
 logfile         = /var/log/dinit/slapd.log
-waits-for       = network
-depends-on      = pseudofs
+depends-on      = net-lo
+depends-on      = slapd-pre
