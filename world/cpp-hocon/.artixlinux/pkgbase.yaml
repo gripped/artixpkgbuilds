@@ -7,12 +7,12 @@ pkgbase:
   pkgname:
     - cpp-hocon
 actions:
-  addRepo: world
-  removeRepo: world-gremlins
-  triggersBuild: false
+  addRepo: world-goblins
+  removeRepo: null
+  triggersBuild: true
   triggersRebuild: false
   triggersRepoAdd: true
-  triggersRepoRemove: true
+  triggersRepoRemove: false
   triggersNoCheck: false
 repos:
   system-goblins:
@@ -25,15 +25,16 @@ repos:
     version: null
     packages: []
   world-goblins:
-    version: null
-    packages: []
+    version: 0.3.0-15
+    packages:
+      - cpp-hocon-0.3.0-15-x86_64.pkg.tar.zst
   world-gremlins:
     version: null
     packages: []
   world:
-    version: 0.3.0-15
+    version: 0.3.0-14
     packages:
-      - cpp-hocon-0.3.0-15-x86_64.pkg.tar.zst
+      - cpp-hocon-0.3.0-14-x86_64.pkg.tar.zst
   lib32-goblins:
     version: null
     packages: []
