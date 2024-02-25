@@ -1,18 +1,18 @@
 ---
 pkgbase:
   name: gimp
-  version: 2.10.36-5
+  version: 2.10.36-4
   arch:
     - x86_64
   pkgname:
     - gimp
 actions:
-  addRepo: world-gremlins
-  removeRepo: world-goblins
-  triggersBuild: false
+  addRepo: world-goblins
+  removeRepo: null
+  triggersBuild: true
   triggersRebuild: false
   triggersRepoAdd: true
-  triggersRepoRemove: true
+  triggersRepoRemove: false
   triggersNoCheck: false
 repos:
   system-goblins:
@@ -25,16 +25,17 @@ repos:
     version: null
     packages: []
   world-goblins:
-    version: null
-    packages: []
-  world-gremlins:
-    version: 2.10.36-5
-    packages:
-      - gimp-2.10.36-5-x86_64.pkg.tar.zst
-  world:
     version: 2.10.36-4
     packages:
       - gimp-2.10.36-4-x86_64.pkg.tar.zst
+  world-gremlins:
+    version: 2.10.36-3
+    packages:
+      - gimp-2.10.36-3-x86_64.pkg.tar.zst
+  world:
+    version: 2.10.36-1
+    packages:
+      - gimp-2.10.36-1-x86_64.pkg.tar.zst
   lib32-goblins:
     version: null
     packages: []
