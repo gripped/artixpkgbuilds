@@ -1,7 +1,7 @@
 ---
 pkgbase:
   name: archlinux-keyring
-  version: 20240208-1
+  version: 20231222-1
   arch:
     - any
   pkgname:
@@ -49,6 +49,6 @@ repos:
     version: null
     packages: []
   galaxy:
-    version: 20240208-1
+    version: 20231222-1
     packages:
-      - archlinux-keyring-20240208-1-any.pkg.tar.zst
+      - archlinux-keyring-20231222-1-any.pkg.tar.zst
