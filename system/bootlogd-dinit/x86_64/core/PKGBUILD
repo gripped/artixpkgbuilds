@@ -2,15 +2,15 @@
 
 pkgname=bootlogd-dinit
 pkgver=20211110
-pkgrel=1
+pkgrel=2
 pkgdesc="dinit service scripts for bootlogd"
 arch=('any')
 url="https://artixlinux.org"
 license=('BSD')
 groups=('dinit-system')
 depends=('bootlogd' 'dinit')
-provides=('init-bootlogd' 'init-cron')
-conflicts=('init-bootlogd' 'init-cron')
+provides=('init-bootlogd')
+conflicts=('init-bootlogd')
 source=("bootlogd")
 sha256sums=('1594114e3a5e029f4a2cbd63fd215f09bbdb4edc3d7803f6b4fe67e8aec282fe')
 
