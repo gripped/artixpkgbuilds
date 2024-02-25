@@ -1,13 +1,13 @@
 ---
 pkgbase:
   name: sway
-  version: 1:1.9-1
+  version: 1:1.8.1-5
   arch:
     - x86_64
   pkgname:
     - sway
 actions:
-  addRepo: world-gremlins
+  addRepo: world
   removeRepo: null
   triggersBuild: true
   triggersRebuild: false
@@ -28,9 +28,8 @@ repos:
     version: null
     packages: []
   world-gremlins:
-    version: 1:1.9-1
-    packages:
-      - sway-1:1.9-1-x86_64.pkg.tar.zst
+    version: null
+    packages: []
   world:
     version: 1:1.8.1-5
     packages:
