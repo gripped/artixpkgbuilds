@@ -7,24 +7,25 @@ pkgbase:
   pkgname:
     - efivar
 actions:
-  addRepo: system
-  removeRepo: system-gremlins
-  triggersBuild: false
+  addRepo: system-gremlins
+  removeRepo: null
+  triggersBuild: true
   triggersRebuild: false
   triggersRepoAdd: true
-  triggersRepoRemove: true
+  triggersRepoRemove: false
   triggersNoCheck: false
 repos:
   system-goblins:
     version: null
     packages: []
   system-gremlins:
-    version: null
-    packages: []
-  system:
     version: 39-1
     packages:
       - efivar-39-1-x86_64.pkg.tar.zst
+  system:
+    version: 38-3
+    packages:
+      - efivar-38-3-x86_64.pkg.tar.zst
   world-goblins:
     version: null
     packages: []
