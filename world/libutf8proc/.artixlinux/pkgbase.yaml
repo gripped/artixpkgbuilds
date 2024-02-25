@@ -7,12 +7,12 @@ pkgbase:
   pkgname:
     - libutf8proc
 actions:
-  addRepo: world
-  removeRepo: world-goblins
+  addRepo: world-goblins
+  removeRepo: null
   triggersBuild: false
-  triggersRebuild: false
+  triggersRebuild: true
   triggersRepoAdd: true
-  triggersRepoRemove: true
+  triggersRepoRemove: false
   triggersNoCheck: false
 repos:
   system-goblins:
@@ -25,15 +25,16 @@ repos:
     version: null
     packages: []
   world-goblins:
-    version: null
-    packages: []
+    version: 2.9.0-1
+    packages:
+      - libutf8proc-2.9.0-1-x86_64.pkg.tar.zst
   world-gremlins:
     version: null
     packages: []
   world:
-    version: 2.9.0-1
+    version: 2.8.0-1
     packages:
-      - libutf8proc-2.9.0-1-x86_64.pkg.tar.zst
+      - libutf8proc-2.8.0-1-x86_64.pkg.tar.zst
   lib32-goblins:
     version: null
     packages: []
