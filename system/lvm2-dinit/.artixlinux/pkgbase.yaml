@@ -7,24 +7,25 @@ pkgbase:
   pkgname:
     - lvm2-dinit
 actions:
-  addRepo: system
-  removeRepo: system-gremlins
-  triggersBuild: false
+  addRepo: system-goblins
+  removeRepo: null
+  triggersBuild: true
   triggersRebuild: false
   triggersRepoAdd: true
-  triggersRepoRemove: true
+  triggersRepoRemove: false
   triggersNoCheck: false
 repos:
   system-goblins:
-    version: null
-    packages: []
+    version: 20230907-1
+    packages:
+      - lvm2-dinit-20230907-1-any.pkg.tar.zst
   system-gremlins:
     version: null
     packages: []
   system:
-    version: 20230907-1
+    version: 20211029-1
     packages:
-      - lvm2-dinit-20230907-1-any.pkg.tar.zst
+      - lvm2-dinit-20211029-1-any.pkg.tar.zst
   world-goblins:
     version: null
     packages: []
