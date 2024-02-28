@@ -1,7 +1,7 @@
 ---
 pkgbase:
   name: zathura-pdf-mupdf
-  version: 0.4.1-15
+  version: 0.4.1-16
   arch:
     - x86_64
   pkgname:
@@ -49,6 +49,6 @@ repos:
     version: null
     packages: []
   galaxy:
-    version: 0.4.1-15
+    version: 0.4.1-16
     packages:
-      - zathura-pdf-mupdf-0.4.1-15-x86_64.pkg.tar.zst
+      - zathura-pdf-mupdf-0.4.1-16-x86_64.pkg.tar.zst
