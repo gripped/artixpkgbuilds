@@ -1,7 +1,7 @@
 ---
 pkgbase:
   name: thin-provisioning-tools
-  version: 1.0.11-1
+  version: 1.0.12-1
   arch:
     - x86_64
   pkgname:
@@ -22,9 +22,9 @@ repos:
     version: null
     packages: []
   system:
-    version: 1.0.11-1
+    version: 1.0.12-1
     packages:
-      - thin-provisioning-tools-1.0.11-1-x86_64.pkg.tar.zst
+      - thin-provisioning-tools-1.0.12-1-x86_64.pkg.tar.zst
   world-goblins:
     version: null
     packages: []
