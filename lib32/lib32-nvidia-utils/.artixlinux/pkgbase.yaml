@@ -1,7 +1,7 @@
 ---
 pkgbase:
   name: lib32-nvidia-utils
-  version: 545.29.06-1
+  version: 550.54.14-1
   arch:
     - x86_64
   pkgname:
@@ -9,11 +9,11 @@ pkgbase:
     - lib32-opencl-nvidia
 actions:
   addRepo: lib32
-  removeRepo: null
-  triggersBuild: true
+  removeRepo: lib32-gremlins
+  triggersBuild: false
   triggersRebuild: false
   triggersRepoAdd: true
-  triggersRepoRemove: false
+  triggersRepoRemove: true
   triggersNoCheck: false
 repos:
   system-goblins:
@@ -41,10 +41,10 @@ repos:
     version: null
     packages: []
   lib32:
-    version: 545.29.06-1
+    version: 550.54.14-1
     packages:
-      - lib32-nvidia-utils-545.29.06-1-x86_64.pkg.tar.zst
-      - lib32-opencl-nvidia-545.29.06-1-x86_64.pkg.tar.zst
+      - lib32-nvidia-utils-550.54.14-1-x86_64.pkg.tar.zst
+      - lib32-opencl-nvidia-550.54.14-1-x86_64.pkg.tar.zst
   galaxy-goblins:
     version: null
     packages: []
@@ -52,5 +52,14 @@ repos:
     version: null
     packages: []
   galaxy:
+    version: null
+    packages: []
+  asteroids-goblins:
+    version: null
+    packages: []
+  asteroids-gremlins:
+    version: null
+    packages: []
+  asteroids:
     version: null
     packages: []
