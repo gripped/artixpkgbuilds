@@ -1,7 +1,7 @@
 ---
 pkgbase:
   name: nvidia-utils
-  version: 545.29.06-4
+  version: 550.54.14-1
   arch:
     - x86_64
   pkgname:
@@ -33,11 +33,11 @@ repos:
     version: null
     packages: []
   world:
-    version: 545.29.06-4
+    version: 550.54.14-1
     packages:
-      - nvidia-utils-545.29.06-4-x86_64.pkg.tar.zst
-      - opencl-nvidia-545.29.06-4-x86_64.pkg.tar.zst
-      - nvidia-dkms-545.29.06-4-x86_64.pkg.tar.zst
+      - nvidia-utils-550.54.14-1-x86_64.pkg.tar.zst
+      - opencl-nvidia-550.54.14-1-x86_64.pkg.tar.zst
+      - nvidia-dkms-550.54.14-1-x86_64.pkg.tar.zst
   lib32-goblins:
     version: null
     packages: []
