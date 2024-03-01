@@ -1,7 +1,7 @@
 ---
 pkgbase:
   name: udev
-  version: 255.3-1
+  version: 255.4-1
   arch:
     - x86_64
   pkgname:
@@ -25,12 +25,12 @@ repos:
     version: null
     packages: []
   system:
-    version: 255.3-1
+    version: 255.4-1
     packages:
-      - udev-255.3-1-x86_64.pkg.tar.zst
-      - libudev-255.3-1-x86_64.pkg.tar.zst
-      - esysusers-255.3-1-x86_64.pkg.tar.zst
-      - etmpfiles-255.3-1-x86_64.pkg.tar.zst
+      - udev-255.4-1-x86_64.pkg.tar.zst
+      - libudev-255.4-1-x86_64.pkg.tar.zst
+      - esysusers-255.4-1-x86_64.pkg.tar.zst
+      - etmpfiles-255.4-1-x86_64.pkg.tar.zst
   world-goblins:
     version: null
     packages: []
