@@ -1,7 +1,7 @@
 ---
 pkgbase:
   name: r8168
-  version: 8.052.01-28
+  version: 8.052.01-29
   arch:
     - x86_64
   pkgname:
@@ -31,9 +31,9 @@ repos:
     version: null
     packages: []
   world:
-    version: 8.052.01-28
+    version: 8.052.01-29
     packages:
-      - r8168-8.052.01-28-x86_64.pkg.tar.zst
+      - r8168-8.052.01-29-x86_64.pkg.tar.zst
   lib32-goblins:
     version: null
     packages: []
