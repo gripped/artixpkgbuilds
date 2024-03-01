@@ -1,7 +1,7 @@
 ---
 pkgbase:
   name: android-tools
-  version: 34.0.4-3
+  version: 34.0.4-4
   arch:
     - x86_64
   pkgname:
@@ -31,9 +31,9 @@ repos:
     version: null
     packages: []
   world:
-    version: 34.0.4-3
+    version: 34.0.4-4
     packages:
-      - android-tools-34.0.4-3-x86_64.pkg.tar.zst
+      - android-tools-34.0.4-4-x86_64.pkg.tar.zst
   lib32-goblins:
     version: null
     packages: []
