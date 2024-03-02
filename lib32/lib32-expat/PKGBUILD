@@ -1,11 +1,11 @@
-# Maintainer: Nathan <ndowens@artixlinux.org>
+# Maintainer: Maxime Gauduin <alucryd@archlinux.org>
 # Maintainer: David Runge <dvzrv@archlinux.org>
 # Contributor: Felix Yan <felixonmars@archlinux.org>
 
 _name=expat
 pkgname=lib32-expat
-pkgver=2.5.0
-pkgrel=2
+pkgver=2.6.1
+pkgrel=1
 pkgdesc='An XML Parser library'
 arch=(x86_64)
 url=https://libexpat.github.io/
@@ -16,34 +16,37 @@ depends=(
 )
 makedepends=(cmake)
 provides=(libexpat.so)
-options=(debug)
 source=(https://github.com/libexpat/libexpat/releases/download/R_${pkgver//./_}/$_name-$pkgver.tar.bz2{,.asc})
-sha512sums=('22fd904d75aab7506a85c03519b9cf79e44898c8e1ba6abf6cb7f95de71b8e63a7e2d5cf4395e3627d46035ea29342b3e631a8809fef8aad3f59976dc075ad17'
+sha512sums=('11029a25cc88e5428c04c1ee9d3e8833f3d1c0a957350b0038eadb786821d2dd4c57c34fe67b45389c43d558ee53d4b95dcf1e5116aaf9ca16b12c1af6fbb7f0'
             'SKIP')
-b2sums=('15a5dcd3af17995fb4299301710b38d609c1fe7a8d6a6284581fedd96e89e0c16526d0342fb55773ac9d678cd65dc5cdb1532c764eeb3a20ccdf1e168b96e337'
+b2sums=('b10658e793cd080c90f4be48c5c3c877d6463aa226bd77e48622d4ccc8e27367d4abf2f07a43dc4507494e9ce1d449a1c3a9d8a2b5c85e45e6c0e0062ea21bde'
         'SKIP')
 validpgpkeys=(3176EF7DB2367F1FCA4F306B1F9B0E909AF37285) # Sebastian Pipping
 
 build() {
+  local cmake_options=(
+    -B build
+    -D CMAKE_BUILD_TYPE=None
+    -D CMAKE_INSTALL_LIBDIR=lib32
+    -D CMAKE_INSTALL_PREFIX=/usr
+    -S $_name-$pkgver
+    -W no-dev
+  )
+
   export CC='gcc -m32'
   export CXX='c++ -m32'
   export PKG_CONFIG=i686-pc-linux-gnu-pkg-config
 
-  cmake -DCMAKE_INSTALL_PREFIX=/usr \
-        -DCMAKE_INSTALL_LIBDIR=lib32 \
-        -DCMAKE_BUILD_TYPE=None \
-        -W no-dev \
-        -B build \
-        -S "${_name}-$pkgver"
-  make VERBOSE=1 -C build
+  cmake "${cmake_options[@]}"
+  cmake --build build --verbose
 }
 
 check() {
-  make VERBOSE=1 -C build test
+  ctest --test-dir build --output-on-failure
 }
 
 package() {
-  make VERBOSE=1 DESTDIR="$pkgdir" -C build install
+  DESTDIR="$pkgdir" cmake --install build
   install -vDm 644 $_name-$pkgver/COPYING -t "$pkgdir/usr/share/licenses/$pkgname/"
   rm -rf "$pkgdir"/usr/{bin,include,share/man,share/doc}
 }
