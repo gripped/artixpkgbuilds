@@ -1,4 +1,0 @@
-type            = process
-command         = /usr/bin/cgmanager -q -m name=systemd
-smooth-recovery = true
-depends-on      = dbus
