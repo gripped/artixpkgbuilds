@@ -1,7 +1,7 @@
 ---
 pkgbase:
   name: linux-zen
-  version: 6.7.6.zen1-2
+  version: 6.7.8.zen1-1
   arch:
     - x86_64
   pkgname:
@@ -10,7 +10,7 @@ pkgbase:
     - linux-zen-docs
 actions:
   addRepo: galaxy
-  removeRepo: world
+  removeRepo: galaxy-gremlins
   triggersBuild: false
   triggersRebuild: false
   triggersRepoAdd: true
@@ -51,8 +51,8 @@ repos:
     version: null
     packages: []
   galaxy:
-    version: 6.7.6.zen1-2
+    version: 6.7.8.zen1-1
     packages:
-      - linux-zen-6.7.6.zen1-2-x86_64.pkg.tar.zst
-      - linux-zen-headers-6.7.6.zen1-2-x86_64.pkg.tar.zst
-      - linux-zen-docs-6.7.6.zen1-2-x86_64.pkg.tar.zst
+      - linux-zen-6.7.8.zen1-1-x86_64.pkg.tar.zst
+      - linux-zen-headers-6.7.8.zen1-1-x86_64.pkg.tar.zst
+      - linux-zen-docs-6.7.8.zen1-1-x86_64.pkg.tar.zst
