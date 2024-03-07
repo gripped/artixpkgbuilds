@@ -1,18 +1,18 @@
 ---
 pkgbase:
   name: alpm-octopi-utils
-  version: 1.0.2-8
+  version: 1.0.2-10
   arch:
     - x86_64
   pkgname:
     - alpm-octopi-utils
 actions:
   addRepo: galaxy
-  removeRepo: null
-  triggersBuild: true
+  removeRepo: galaxy-gremlins
+  triggersBuild: false
   triggersRebuild: false
   triggersRepoAdd: true
-  triggersRepoRemove: false
+  triggersRepoRemove: true
   triggersNoCheck: false
 repos:
   system-goblins:
@@ -49,6 +49,6 @@ repos:
     version: null
     packages: []
   galaxy:
-    version: 1.0.2-8
+    version: 1.0.2-10
     packages:
-      - alpm-octopi-utils-1.0.2-8-x86_64.pkg.tar.zst
+      - alpm-octopi-utils-1.0.2-10-x86_64.pkg.tar.zst
