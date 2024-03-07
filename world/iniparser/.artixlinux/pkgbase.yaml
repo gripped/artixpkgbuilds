@@ -1,18 +1,18 @@
 ---
 pkgbase:
   name: iniparser
-  version: 4.1-4
+  version: 4.1-5
   arch:
     - x86_64
   pkgname:
     - iniparser
 actions:
-  addRepo: null
-  removeRepo: null
+  addRepo: world
+  removeRepo: world-gremlins
   triggersBuild: false
   triggersRebuild: false
-  triggersRepoAdd: false
-  triggersRepoRemove: false
+  triggersRepoAdd: true
+  triggersRepoRemove: true
   triggersNoCheck: false
 repos:
   system-goblins:
@@ -31,9 +31,9 @@ repos:
     version: null
     packages: []
   world:
-    version: 4.1-4
+    version: 4.1-5
     packages:
-      - iniparser-4.1-4-x86_64.pkg.tar.zst
+      - iniparser-4.1-5-x86_64.pkg.tar.zst
   lib32-goblins:
     version: null
     packages: []
