@@ -1,18 +1,18 @@
 ---
 pkgbase:
   name: signon-plugin-oauth2
-  version: 0.25-1
+  version: 0.25-3
   arch:
     - x86_64
   pkgname:
     - signon-plugin-oauth2
 actions:
-  addRepo: null
-  removeRepo: null
+  addRepo: world
+  removeRepo: world-gremlins
   triggersBuild: false
   triggersRebuild: false
-  triggersRepoAdd: false
-  triggersRepoRemove: false
+  triggersRepoAdd: true
+  triggersRepoRemove: true
   triggersNoCheck: false
 repos:
   system-goblins:
@@ -31,9 +31,9 @@ repos:
     version: null
     packages: []
   world:
-    version: 0.25-1
+    version: 0.25-3
     packages:
-      - signon-plugin-oauth2-0.25-1-x86_64.pkg.tar.zst
+      - signon-plugin-oauth2-0.25-3-x86_64.pkg.tar.zst
   lib32-goblins:
     version: null
     packages: []
