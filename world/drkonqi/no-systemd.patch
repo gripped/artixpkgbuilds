@@ -1,15 +1,18 @@
---- a/CMakeLists.txt	2022-06-16 00:17:50.871250289 +0200
-+++ b/CMakeLists.txt	2022-06-16 00:18:29.480729537 +0200
-@@ -62,19 +62,19 @@
-     KF 5.92
+--- a/CMakeLists.txt	2024-02-28 21:19:01.294160486 +0100
++++ b/CMakeLists.txt	2024-02-21 16:39:46.000000000 +0100
+@@ -73,25 +73,6 @@
+     KF 5.240
  )
 
--find_package(Systemd)
--set_package_properties(Systemd PROPERTIES TYPE RECOMMENDED PURPOSE "Coredumpd integration.")
-+#find_package(Systemd)
-+#set_package_properties(Systemd PROPERTIES TYPE RECOMMENDED PURPOSE "Coredumpd integration.")
-
+-if(CMAKE_SYSTEM_NAME MATCHES Linux)
+-    find_package(Systemd 249)
+-    set_package_properties(Systemd PROPERTIES TYPE REQUIRED PURPOSE "Coredumpd integration.")
+-endif()
+-
 -if(Systemd_FOUND)
+-    find_package(PolkitQt6-1) # This is only used when extracting crashes from coredumpd
+-    set_package_properties(PolkitQt6-1 PROPERTIES TYPE REQUIRED PURPOSE "Reading kwin_wayland crashes")
+-
 -    find_package(coredumpctl)
 -    set_package_properties(
 -        coredumpctl
@@ -19,16 +22,7 @@
 -        PURPOSE "Required for coredumpd support to work at runtime!"
 -    )
 -endif()
-+#if(Systemd_FOUND)
-+    #find_package(coredumpctl)
-+    #set_package_properties(
-+        #coredumpctl
-+        #PROPERTIES
-+        #TYPE RUNTIME
-+        #DESCRIPTION "coredumpd CLI. part of systemd"
-+        #PURPOSE "Required for coredumpd support to work at runtime!"
-+    #)
-+#endif()
-
+-
  if(MINGW)
      find_package(ZLIB REQUIRED)
+     find_library(INTL_LIBRARY NAMES intl)

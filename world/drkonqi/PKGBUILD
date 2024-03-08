@@ -1,22 +1,46 @@
-# Maintainer: nikolar <nikolar@artixlinux.org>
-# Maintainer: Antonio Rojas <arojas@archlinux.org>
+# Maintainer:Antonio Rojas <arojas@archlinux.org>
 
 pkgname=drkonqi
-pkgver=5.27.10
+pkgver=6.0.1
 _dirver=$(echo $pkgver | cut -d. -f1-3)
 pkgrel=1
 pkgdesc='The KDE crash handler'
 arch=(x86_64)
 url='https://kde.org/plasma-desktop/'
-license=(GPL2)
-depends=(kidletime5 syntax-highlighting5 kirigami2 kitemmodels5 kuserfeedback5 kio5 gdb python-distro python-psutil qt5-tools)
+license=(GPL-2.0-or-later)
+depends=(gcc-libs
+         gdb
+         glibc
+         kcmutils
+         kconfig
+         kcoreaddons
+         kcrash
+         ki18n
+         kidletime
+         kio
+         kirigami
+         kitemmodels
+         knotifications
+         kservice
+         kstatusnotifieritem
+         kwallet
+         kwidgetsaddons
+         kwindowsystem
+         polkit-qt6
+         python
+         python-psutil
+         python-pygdbmi
+         python-sentry_sdk
+         qt6-base
+         qt6-declarative
+         syntax-highlighting)
 makedepends=(extra-cmake-modules)
 groups=(plasma)
 source=(https://download.kde.org/stable/plasma/$_dirver/$pkgname-$pkgver.tar.xz{,.sig}
-		no-systemd.patch)
-sha256sums=('a3ea4794ca1d8e31cacfe78301884419cfd9daaf939c5d843718372b65657fd0'
+        no-systemd.patch)
+sha256sums=('5f660543c30a79effb48900d1ebad9f9e5620514daabde9bdabc2b5f01b2026d'
             'SKIP'
-            'b529848e4d4d41675578748e6c8a87bfd875a8ac9af53c988ea5bebcea3de1b5')
+            'e25815f79a85ac28c46a426fc68839e6988f091ce0877e93e27031f3853f123b')
 validpgpkeys=('E0A3EB202F8E57528E13E72FD7574483BB57B18D'  # Jonathan Esk-Riddell <jr@jriddell.org>
               '0AAC775BB6437A8D9AF7A3ACFE0784117FBCE11D'  # Bhushan Shah <bshah@kde.org>
               'D07BD8662C56CB291B316EB2F5675605C74E02CF'  # David Edmundson <davidedmundson@kde.org>
@@ -28,13 +52,16 @@ prepare() {
 }
 
 build() {
-  cmake -B build -S $pkgname-$pkgver \
+  cmake -B build  -S $pkgname-$pkgver \
     -DCMAKE_INSTALL_LIBEXECDIR=lib \
     -DBUILD_TESTING=OFF \
-    -DWITH_GDB12=ON
+    -DWITH_GDB12=ON \
+    -DWITH_PYTHON_VENDORING=OFF
   cmake --build build
 }
 
 package() {
   DESTDIR="$pkgdir" cmake --install build
+
+  rm -fr "$pkgdir"/usr/lib/systemd
 }
