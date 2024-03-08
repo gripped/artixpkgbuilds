@@ -1,10 +1,11 @@
 ---
 pkgbase:
   name: libkcddb
-  version: 23.08.5-1
+  version: 24.02.0-1
   arch:
     - x86_64
   pkgname:
+    - libkcddb
     - libkcddb5
 actions:
   addRepo: world
@@ -31,9 +32,10 @@ repos:
     version: null
     packages: []
   world:
-    version: 23.08.5-1
+    version: 24.02.0-1
     packages:
-      - libkcddb5-23.08.5-1-x86_64.pkg.tar.zst
+      - libkcddb-24.02.0-1-x86_64.pkg.tar.zst
+      - libkcddb5-24.02.0-1-x86_64.pkg.tar.zst
   lib32-goblins:
     version: null
     packages: []
