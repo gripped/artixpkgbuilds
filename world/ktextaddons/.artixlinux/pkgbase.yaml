@@ -1,18 +1,19 @@
 ---
 pkgbase:
   name: ktextaddons
-  version: 1.5.3-1
+  version: 1.5.3-4
   arch:
     - x86_64
   pkgname:
     - ktextaddons
+    - ktextaddons5
 actions:
   addRepo: world
-  removeRepo: null
-  triggersBuild: true
+  removeRepo: world-gremlins
+  triggersBuild: false
   triggersRebuild: false
   triggersRepoAdd: true
-  triggersRepoRemove: false
+  triggersRepoRemove: true
   triggersNoCheck: false
 repos:
   system-goblins:
@@ -31,9 +32,10 @@ repos:
     version: null
     packages: []
   world:
-    version: 1.5.3-1
+    version: 1.5.3-4
     packages:
-      - ktextaddons-1.5.3-1-x86_64.pkg.tar.zst
+      - ktextaddons-1.5.3-4-x86_64.pkg.tar.zst
+      - ktextaddons5-1.5.3-4-x86_64.pkg.tar.zst
   lib32-goblins:
     version: null
     packages: []
