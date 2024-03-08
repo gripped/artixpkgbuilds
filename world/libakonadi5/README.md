@@ -1,0 +1,2 @@
+# libakonadi5
+
