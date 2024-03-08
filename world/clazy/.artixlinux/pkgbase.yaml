@@ -1,7 +1,7 @@
 ---
 pkgbase:
   name: clazy
-  version: 1.11-4
+  version: 1.11-5
   arch:
     - x86_64
   pkgname:
@@ -31,9 +31,9 @@ repos:
     version: null
     packages: []
   world:
-    version: 1.11-4
+    version: 1.11-5
     packages:
-      - clazy-1.11-4-x86_64.pkg.tar.zst
+      - clazy-1.11-5-x86_64.pkg.tar.zst
   lib32-goblins:
     version: null
     packages: []
