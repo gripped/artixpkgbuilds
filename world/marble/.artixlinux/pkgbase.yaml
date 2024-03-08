@@ -1,14 +1,14 @@
 ---
 pkgbase:
   name: marble
-  version: 23.08.5-1
+  version: 24.02.0-2
   arch:
     - x86_64
   pkgname:
-    - marble-common
-    - marble-qt
-    - marble-maps
     - marble
+    - marble-common
+    - marble-maps
+    - marble-qt
 actions:
   addRepo: world
   removeRepo: world-gremlins
@@ -34,12 +34,12 @@ repos:
     version: null
     packages: []
   world:
-    version: 23.08.5-1
+    version: 24.02.0-2
     packages:
-      - marble-common-23.08.5-1-x86_64.pkg.tar.zst
-      - marble-qt-23.08.5-1-x86_64.pkg.tar.zst
-      - marble-maps-23.08.5-1-x86_64.pkg.tar.zst
-      - marble-23.08.5-1-x86_64.pkg.tar.zst
+      - marble-24.02.0-2-x86_64.pkg.tar.zst
+      - marble-common-24.02.0-2-x86_64.pkg.tar.zst
+      - marble-maps-24.02.0-2-x86_64.pkg.tar.zst
+      - marble-qt-24.02.0-2-x86_64.pkg.tar.zst
   lib32-goblins:
     version: null
     packages: []
