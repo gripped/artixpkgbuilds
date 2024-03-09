@@ -1,14 +1,14 @@
 ---
 pkgbase:
   name: zathura-pdf-poppler
-  version: 0.3.2-2.1
+  version: 0.3.2-3
   arch:
     - x86_64
   pkgname:
     - zathura-pdf-poppler
 actions:
   addRepo: galaxy
-  removeRepo: world
+  removeRepo: galaxy-goblins
   triggersBuild: false
   triggersRebuild: false
   triggersRepoAdd: true
@@ -49,6 +49,6 @@ repos:
     version: null
     packages: []
   galaxy:
-    version: 0.3.2-2.1
+    version: 0.3.2-3
     packages:
-      - zathura-pdf-poppler-0.3.2-2.1-x86_64.pkg.tar.zst
+      - zathura-pdf-poppler-0.3.2-3-x86_64.pkg.tar.zst
