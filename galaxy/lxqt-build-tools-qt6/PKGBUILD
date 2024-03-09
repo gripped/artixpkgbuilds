@@ -1,0 +1,36 @@
+# Maintainer: Chih-Hsuan Yen <yan12125@archlinux.org>
+# Contributor: Jerome Leclanche <jerome@leclan.ch>
+
+_pkgname=lxqt-build-tools
+
+pkgname=lxqt-build-tools-qt6
+pkgver=0.13.0
+pkgrel=1
+pkgdesc="Various packaging tools and scripts for LXQt applications"
+arch=("any")
+url="https://github.com/lxqt/$pkgname"
+license=("BSD-3-Clause")
+depends=('sh')
+makedepends=('cmake' 'git' 'qt6-tools')
+_commit=86c3fb6d9ef87046bd8a450dd74bfd253c05a32e
+source=(
+# 	"https://github.com/lxqt/$pkgname/releases/download/$pkgver/$pkgname-$pkgver.tar.xz"
+# 	"https://github.com/lxqt/$pkgname/releases/download/$pkgver/$pkgname-$pkgver.tar.xz.asc"
+    git+https://github.com/lxqt/lxqt-build-tools.git#commit=$_commit
+)
+sha256sums=('SKIP')
+validpgpkeys=(
+	"19DFDF3A579BD509DBB572D8BE793007AD22DF7E"  # https://github.com/tsujan.gpg
+)
+
+build() {
+    cmake -S "$_pkgname" -B build \
+    -DCMAKE_INSTALL_PREFIX=/usr \
+    -DCMAKE_BUILD_TYPE=release
+    cmake --build build
+}
+
+package() {
+    DESTDIR=${pkgdir} cmake --install build
+    install -Dm644 "$_pkgname"/BSD-3-Clause -t "$pkgdir/usr/share/licenses/$pkgname"
+}
