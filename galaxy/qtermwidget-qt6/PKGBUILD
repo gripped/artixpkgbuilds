@@ -1,0 +1,51 @@
+# Maintainer: Jerome Leclanche <jerome@leclan.ch>
+# Maintainer: Chih-Hsuan Yen <yan12125@archlinux.org>
+
+_pkgname=qtermwidget
+_commit=8be34ffa31717f7ee08542de9ba87622f5eca8e2
+
+pkgname=qtermwidget-qt6
+pkgver=1.4.0
+pkgrel=1
+pkgdesc="Terminal emulator widget for Qt 6."
+arch=("x86_64")
+url="https://github.com/lxqt/qtermwidget"
+license=('LGPL-2.1-or-later' 'BSD-3-Clause')
+depends=(
+    'gcc-libs'
+    'glibc'
+    'qt6-base'
+    'qt6-5compat'
+)
+makedepends=(
+    'cmake'
+    'lxqt-build-tools-qt6'
+    'qt6-tools'
+    'git'
+)
+source=(
+    # "https://github.com/lxde/qtermwidget/releases/download/${pkgver}/${pkgname}-${pkgver}.tar.xz"
+    "git+https://github.com/lxqt/qtermwidget.git#commit=$_commit"
+    qtermwidget-qt6.patch::https://github.com/lxqt/qtermwidget/pull/532.patch
+)
+sha256sums=('SKIP'
+            '4bda12d2865a94cafc6ae62f4c78d1ebc482e5ca1d0368b23f1b91ee2f5cf91b')
+
+prepare() {
+    patch -d "${_pkgname}" -Np 1 -i ../qtermwidget-qt6.patch
+}
+
+build() {
+    cmake -B build -S ${_pkgname} \
+        -DCMAKE_INSTALL_PREFIX=/usr/ \
+        -DCMAKE_BUILD_TYPE=release \
+        -DCMAKE_INSTALL_LIBDIR=lib \
+        -DUSE_QT6=ON
+    cmake --build build
+}
+
+package() {
+    DESTDIR=${pkgdir} cmake --install build
+    install -Dm644 "$_pkgname"/LICENSE.BSD-3-clause -t "$pkgdir/usr/share/licenses/$pkgname"
+    install -Dm644 "$_pkgname"/LICENSE.LGPL2+ -t "$pkgdir/usr/share/licenses/$pkgname"
+}
