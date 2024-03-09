@@ -1,7 +1,7 @@
 ---
 pkgbase:
   name: octopi
-  version: 0.15.0-5
+  version: 0.15.0-10
   arch:
     - x86_64
   pkgname:
@@ -9,11 +9,11 @@ pkgbase:
     - octopi-notifier-frameworks
 actions:
   addRepo: galaxy
-  removeRepo: null
-  triggersBuild: true
+  removeRepo: galaxy-gremlins
+  triggersBuild: false
   triggersRebuild: false
   triggersRepoAdd: true
-  triggersRepoRemove: false
+  triggersRepoRemove: true
   triggersNoCheck: false
 repos:
   system-goblins:
@@ -50,7 +50,7 @@ repos:
     version: null
     packages: []
   galaxy:
-    version: 0.15.0-5
+    version: 0.15.0-10
     packages:
-      - octopi-0.15.0-5-x86_64.pkg.tar.zst
-      - octopi-notifier-frameworks-0.15.0-5-x86_64.pkg.tar.zst
+      - octopi-0.15.0-10-x86_64.pkg.tar.zst
+      - octopi-notifier-frameworks-0.15.0-10-x86_64.pkg.tar.zst
