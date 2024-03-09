@@ -1,14 +1,14 @@
 ---
 pkgbase:
   name: zathura-djvu
-  version: 0.2.9-4.1
+  version: 0.2.9-5
   arch:
     - x86_64
   pkgname:
     - zathura-djvu
 actions:
   addRepo: galaxy
-  removeRepo: world
+  removeRepo: galaxy-goblins
   triggersBuild: false
   triggersRebuild: false
   triggersRepoAdd: true
@@ -49,6 +49,6 @@ repos:
     version: null
     packages: []
   galaxy:
-    version: 0.2.9-4.1
+    version: 0.2.9-5
     packages:
-      - zathura-djvu-0.2.9-4.1-x86_64.pkg.tar.zst
+      - zathura-djvu-0.2.9-5-x86_64.pkg.tar.zst
