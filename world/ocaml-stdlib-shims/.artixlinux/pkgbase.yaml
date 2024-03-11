@@ -1,18 +1,18 @@
 ---
 pkgbase:
   name: ocaml-stdlib-shims
-  version: 0.3.0-7
+  version: 0.3.0-8
   arch:
     - x86_64
   pkgname:
     - ocaml-stdlib-shims
 actions:
   addRepo: world
-  removeRepo: null
-  triggersBuild: true
+  removeRepo: world-gremlins
+  triggersBuild: false
   triggersRebuild: false
   triggersRepoAdd: true
-  triggersRepoRemove: false
+  triggersRepoRemove: true
   triggersNoCheck: false
 repos:
   system-goblins:
@@ -31,9 +31,9 @@ repos:
     version: null
     packages: []
   world:
-    version: 0.3.0-7
+    version: 0.3.0-8
     packages:
-      - ocaml-stdlib-shims-0.3.0-7-x86_64.pkg.tar.zst
+      - ocaml-stdlib-shims-0.3.0-8-x86_64.pkg.tar.zst
   lib32-goblins:
     version: null
     packages: []
