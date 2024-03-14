@@ -8,11 +8,11 @@
 
 pkgbase=erlang
 pkgname=(erlang erlang-unixodbc)
-pkgver=26.2.1
+pkgver=26.2.3
 pkgrel=1
 _docver=26.1
 # https://github.com/erlang/otp/tags
-_commit=ca8b893f9d5bdd0957b78514ba523032e762c644 # OTP-26.2.1
+_commit=928d03e6da416208fce7b9a7dbbfbb4f25d26c37 # OTP-26.2.3
 arch=(x86_64)
 url='https://erlang.org'
 license=(Apache)
@@ -41,8 +41,8 @@ build() {
     --enable-ssl=dynamic-ssl-lib \
     --prefix=/usr \
     --with-odbc
-  make DOC_TARGETS=chunks all
-  make DOC_TARGETS=chunks docs
+  DOC_TARGETS=chunks make all
+  DOC_TARGETS=chunks make docs
 }
 
 package_erlang() {
@@ -80,5 +80,3 @@ package_erlang-unixodbc() {
   install -Dm644 otp/LICENSE.txt \
     "$pkgdir/usr/share/licenses/$pkgname/LICENCE.txt"
 }
-
-# getver: raw.githubusercontent.com/erlang/otp/maint/OTP_VERSION
