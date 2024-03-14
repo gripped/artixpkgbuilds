@@ -1,7 +1,7 @@
 ---
 pkgbase:
   name: python-pyparsing
-  version: 3.1.1-1
+  version: 3.1.2-1
   arch:
     - any
   pkgname:
@@ -28,13 +28,12 @@ repos:
     version: null
     packages: []
   world-gremlins:
-    version: 3.1.0-1
-    packages:
-      - python-pyparsing-3.1.0-1-any.pkg.tar.zst
+    version: null
+    packages: []
   world:
-    version: 3.1.1-1
+    version: 3.1.2-1
     packages:
-      - python-pyparsing-3.1.1-1-any.pkg.tar.zst
+      - python-pyparsing-3.1.2-1-any.pkg.tar.zst
   lib32-goblins:
     version: null
     packages: []
