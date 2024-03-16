@@ -1,18 +1,18 @@
 ---
 pkgbase:
   name: pcre2
-  version: 10.42-2
+  version: 10.43-1
   arch:
     - x86_64
   pkgname:
     - pcre2
 actions:
-  addRepo: null
-  removeRepo: null
+  addRepo: system
+  removeRepo: system-gremlins
   triggersBuild: false
   triggersRebuild: false
-  triggersRepoAdd: false
-  triggersRepoRemove: false
+  triggersRepoAdd: true
+  triggersRepoRemove: true
   triggersNoCheck: false
 repos:
   system-goblins:
@@ -22,9 +22,9 @@ repos:
     version: null
     packages: []
   system:
-    version: 10.42-2
+    version: 10.43-1
     packages:
-      - pcre2-10.42-2-x86_64.pkg.tar.zst
+      - pcre2-10.43-1-x86_64.pkg.tar.zst
   world-goblins:
     version: null
     packages: []
