@@ -1,7 +1,7 @@
 ---
 pkgbase:
   name: pacman
-  version: 6.0.2-9
+  version: 6.1.0-3
   arch:
     - x86_64
   pkgname:
@@ -22,9 +22,9 @@ repos:
     version: null
     packages: []
   system:
-    version: 6.0.2-9
+    version: 6.1.0-3
     packages:
-      - pacman-6.0.2-9-x86_64.pkg.tar.zst
+      - pacman-6.1.0-3-x86_64.pkg.tar.zst
   world-goblins:
     version: null
     packages: []
