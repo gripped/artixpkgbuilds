@@ -1,14 +1,14 @@
 ---
 pkgbase:
   name: skanlite
-  version: 24.02.0-1
+  version: 24.02.0-2
   arch:
     - x86_64
   pkgname:
     - skanlite
 actions:
   addRepo: world
-  removeRepo: world-gremlins
+  removeRepo: world-goblins
   triggersBuild: false
   triggersRebuild: false
   triggersRepoAdd: true
@@ -31,9 +31,9 @@ repos:
     version: null
     packages: []
   world:
-    version: 24.02.0-1
+    version: 24.02.0-2
     packages:
-      - skanlite-24.02.0-1-x86_64.pkg.tar.zst
+      - skanlite-24.02.0-2-x86_64.pkg.tar.zst
   lib32-goblins:
     version: null
     packages: []
