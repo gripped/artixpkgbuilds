@@ -1,18 +1,18 @@
 ---
 pkgbase:
   name: rpcbind
-  version: 1.2.6-3
+  version: 1.2.6-4
   arch:
     - x86_64
   pkgname:
     - rpcbind
 actions:
-  addRepo: null
-  removeRepo: null
+  addRepo: system
+  removeRepo: system-gremlins
   triggersBuild: false
   triggersRebuild: false
-  triggersRepoAdd: false
-  triggersRepoRemove: false
+  triggersRepoAdd: true
+  triggersRepoRemove: true
   triggersNoCheck: false
 repos:
   system-goblins:
@@ -22,9 +22,9 @@ repos:
     version: null
     packages: []
   system:
-    version: 1.2.6-3
+    version: 1.2.6-4
     packages:
-      - rpcbind-1.2.6-3-x86_64.pkg.tar.zst
+      - rpcbind-1.2.6-4-x86_64.pkg.tar.zst
   world-goblins:
     version: null
     packages: []
