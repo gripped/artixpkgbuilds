@@ -1,18 +1,18 @@
 ---
 pkgbase:
   name: ding-libs
-  version: 0.6.2-1
+  version: 0.6.2-2
   arch:
     - x86_64
   pkgname:
     - ding-libs
 actions:
-  addRepo: null
-  removeRepo: null
+  addRepo: system
+  removeRepo: system-gremlins
   triggersBuild: false
   triggersRebuild: false
-  triggersRepoAdd: false
-  triggersRepoRemove: false
+  triggersRepoAdd: true
+  triggersRepoRemove: true
   triggersNoCheck: false
 repos:
   system-goblins:
@@ -22,9 +22,9 @@ repos:
     version: null
     packages: []
   system:
-    version: 0.6.2-1
+    version: 0.6.2-2
     packages:
-      - ding-libs-0.6.2-1-x86_64.pkg.tar.zst
+      - ding-libs-0.6.2-2-x86_64.pkg.tar.zst
   world-goblins:
     version: null
     packages: []
