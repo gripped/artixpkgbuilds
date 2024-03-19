@@ -1,18 +1,18 @@
 ---
 pkgbase:
   name: firefox
-  version: 123.0.1-1
+  version: 124.0-1
   arch:
     - x86_64
   pkgname:
     - firefox
 actions:
   addRepo: galaxy
-  removeRepo: null
-  triggersBuild: true
+  removeRepo: galaxy-gremlins
+  triggersBuild: false
   triggersRebuild: false
   triggersRepoAdd: true
-  triggersRepoRemove: false
+  triggersRepoRemove: true
   triggersNoCheck: false
 repos:
   system-goblins:
@@ -49,6 +49,6 @@ repos:
     version: null
     packages: []
   galaxy:
-    version: 123.0.1-1
+    version: 124.0-1
     packages:
-      - firefox-123.0.1-1-x86_64.pkg.tar.zst
+      - firefox-124.0-1-x86_64.pkg.tar.zst
