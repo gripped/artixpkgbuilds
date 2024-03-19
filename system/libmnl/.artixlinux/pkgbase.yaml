@@ -1,18 +1,18 @@
 ---
 pkgbase:
   name: libmnl
-  version: 1.0.5-1
+  version: 1.0.5-2
   arch:
     - x86_64
   pkgname:
     - libmnl
 actions:
-  addRepo: null
-  removeRepo: null
+  addRepo: system
+  removeRepo: system-gremlins
   triggersBuild: false
   triggersRebuild: false
-  triggersRepoAdd: false
-  triggersRepoRemove: false
+  triggersRepoAdd: true
+  triggersRepoRemove: true
   triggersNoCheck: false
 repos:
   system-goblins:
@@ -22,9 +22,9 @@ repos:
     version: null
     packages: []
   system:
-    version: 1.0.5-1
+    version: 1.0.5-2
     packages:
-      - libmnl-1.0.5-1-x86_64.pkg.tar.zst
+      - libmnl-1.0.5-2-x86_64.pkg.tar.zst
   world-goblins:
     version: null
     packages: []
