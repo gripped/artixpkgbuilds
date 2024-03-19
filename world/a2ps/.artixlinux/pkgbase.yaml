@@ -1,18 +1,18 @@
 ---
 pkgbase:
   name: a2ps
-  version: 4.15.5-1
+  version: 4.15.6-1
   arch:
     - x86_64
   pkgname:
     - a2ps
 actions:
-  addRepo: null
-  removeRepo: null
+  addRepo: world
+  removeRepo: world-gremlins
   triggersBuild: false
   triggersRebuild: false
-  triggersRepoAdd: false
-  triggersRepoRemove: false
+  triggersRepoAdd: true
+  triggersRepoRemove: true
   triggersNoCheck: false
 repos:
   system-goblins:
@@ -31,9 +31,9 @@ repos:
     version: null
     packages: []
   world:
-    version: 4.15.5-1
+    version: 4.15.6-1
     packages:
-      - a2ps-4.15.5-1-x86_64.pkg.tar.zst
+      - a2ps-4.15.6-1-x86_64.pkg.tar.zst
   lib32-goblins:
     version: null
     packages: []
