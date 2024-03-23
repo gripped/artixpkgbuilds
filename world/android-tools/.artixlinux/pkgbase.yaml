@@ -1,18 +1,18 @@
 ---
 pkgbase:
   name: android-tools
-  version: 34.0.5-1
+  version: 34.0.5-1.1
   arch:
     - x86_64
   pkgname:
     - android-tools
 actions:
   addRepo: world
-  removeRepo: null
-  triggersBuild: true
+  removeRepo: world-gremlins
+  triggersBuild: false
   triggersRebuild: false
   triggersRepoAdd: true
-  triggersRepoRemove: false
+  triggersRepoRemove: true
   triggersNoCheck: false
 repos:
   system-goblins:
@@ -28,13 +28,12 @@ repos:
     version: null
     packages: []
   world-gremlins:
-    version: 34.0.4-5
-    packages:
-      - android-tools-34.0.4-5-x86_64.pkg.tar.zst
+    version: null
+    packages: []
   world:
-    version: 34.0.5-1
+    version: 34.0.5-1.1
     packages:
-      - android-tools-34.0.5-1-x86_64.pkg.tar.zst
+      - android-tools-34.0.5-1.1-x86_64.pkg.tar.zst
   lib32-goblins:
     version: null
     packages: []
