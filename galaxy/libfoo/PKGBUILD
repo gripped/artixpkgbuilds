@@ -1,0 +1,10 @@
+# Maintainer: artoo <artoo@artixlinux.org>
+
+pkgname=libfoo
+pkgver=1.0.0
+pkgrel=4
+pkgdesc="libfoo package, do not install"
+arch=(x86_64)
+url="https://gitea.artixlinux.org/devel/libfoo"
+license=('GPL')
+depends=(bash)
