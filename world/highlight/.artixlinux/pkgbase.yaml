@@ -1,7 +1,7 @@
 ---
 pkgbase:
   name: highlight
-  version: 4.10-1
+  version: 4.11-1
   arch:
     - x86_64
   pkgname:
@@ -9,11 +9,11 @@ pkgbase:
     - highlight-gui
 actions:
   addRepo: world
-  removeRepo: null
-  triggersBuild: true
+  removeRepo: world-gremlins
+  triggersBuild: false
   triggersRebuild: false
   triggersRepoAdd: true
-  triggersRepoRemove: false
+  triggersRepoRemove: true
   triggersNoCheck: false
 repos:
   system-goblins:
@@ -32,10 +32,10 @@ repos:
     version: null
     packages: []
   world:
-    version: 4.10-1
+    version: 4.11-1
     packages:
-      - highlight-4.10-1-x86_64.pkg.tar.zst
-      - highlight-gui-4.10-1-x86_64.pkg.tar.zst
+      - highlight-4.11-1-x86_64.pkg.tar.zst
+      - highlight-gui-4.11-1-x86_64.pkg.tar.zst
   lib32-goblins:
     version: null
     packages: []
@@ -54,3 +54,4 @@ repos:
   galaxy:
     version: null
     packages: []
+team: world
