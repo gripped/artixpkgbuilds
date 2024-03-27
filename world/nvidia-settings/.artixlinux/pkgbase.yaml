@@ -1,7 +1,7 @@
 ---
 pkgbase:
   name: nvidia-settings
-  version: 550.54.14-1
+  version: 550.67-1
   arch:
     - x86_64
   pkgname:
@@ -32,10 +32,10 @@ repos:
     version: null
     packages: []
   world:
-    version: 550.54.14-1
+    version: 550.67-1
     packages:
-      - nvidia-settings-550.54.14-1-x86_64.pkg.tar.zst
-      - libxnvctrl-550.54.14-1-x86_64.pkg.tar.zst
+      - nvidia-settings-550.67-1-x86_64.pkg.tar.zst
+      - libxnvctrl-550.67-1-x86_64.pkg.tar.zst
   lib32-goblins:
     version: null
     packages: []
@@ -54,3 +54,4 @@ repos:
   galaxy:
     version: null
     packages: []
+team: world
