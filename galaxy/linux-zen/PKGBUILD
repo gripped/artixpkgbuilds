@@ -1,7 +1,7 @@
 # Maintainer: Jan Alexander Steffens (heftig) <heftig@archlinux.org>
 
 pkgbase=linux-zen
-pkgver=6.8.1.zen1
+pkgver=6.8.2.zen1
 pkgrel=1
 pkgdesc='Linux ZEN'
 url='https://github.com/zen-kernel/zen-kernel'
@@ -42,16 +42,16 @@ validpgpkeys=(
   83BC8889351B5DEBBB68416EB8AC08600F108CDF  # Jan Alexander Steffens (heftig)
 )
 # https://www.kernel.org/pub/linux/kernel/v6.x/sha256sums.asc
-sha256sums=('8d0c8936e3140a0fbdf511ad7a9f21121598f3656743898f47bb9052d37cff68'
+sha256sums=('9ac322d85bcf98a04667d929f5c2666b15bd58c6c2d68dd512c72acbced07d04'
             'SKIP'
-            '1f86318ff6d2c14eed7c01cb83407df2d8c52b21c6ee887869e3bef748d6a790'
+            '3bbca1b9aff12fa0e9f871c2dbce12e81a63b2642c46eaa23908f49868e01a52'
             'SKIP'
-            'e8dab7385624bf0cbc5fbe1e7386124660e52f852a0550f6507b127926f4d3fe')
-b2sums=('2b518f8f39b4dcea1c580cb0664d59c165db989422fd6fd6b65d3dd1e4548bc6e0cedfc95c2584ae56f69ac1a1d3de6552ee61e77b08799a5275934a453ab929'
+            'a91bbee0a32af18079ac4774b6899ca573e7494524c9475837c2f83310570ea3')
+b2sums=('f057c2512040600fbf0df67cf9c7200aee0c06b82b3cf749be8c5685844d2662a585ce17685c7af880c0d9dbbbd81302e5a1fa41c3dbd39869123121a0e82dc2'
         'SKIP'
-        'b6385116bb5b71bcb19b65ea0ea390b3361a896db5ed3a345337e51bd95fb11a149e28a07e79547ae9f5ee435c5a93a4d154a3c999270790a4d05285695faeee'
+        '5835f6b1952a68b169a87bca9e82ac42dd674fe39ca67bb9a11fbc6a0fa0028e96dc9f88fcbff93f0b2311b3ca61369fb8dff651a37c90fce2427bbe229b68bf'
         'SKIP'
-        '243781d0cdf31f4373c46098fa136d8e6d2c4a43db7f218d66d876db7c75a7ab7ec32aa471b660864df01db3006dc5501619501a535d699c7020b9fe4e6ca87d')
+        '68a86187620686be8d31784dcf839ec8b7eb49d858b8900fbd33abe04bbfa8f07f7059c1282ef8b92d61123bb0c76685fa737659e99951315a2ade0b7d9699d2')
 
 export KBUILD_BUILD_HOST=artixlinux
 export KBUILD_BUILD_USER=$pkgbase
