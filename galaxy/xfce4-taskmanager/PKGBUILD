@@ -1,0 +1,37 @@
+# Maintainer: Cory Sanin <corysanin@artixlinux.org>
+# Contributor: Evangelos Foutras <evangelos@foutrelis.com>
+
+pkgname=xfce4-taskmanager
+pkgver=1.5.7
+pkgrel=1
+pkgdesc="Easy to use task manager"
+arch=('x86_64')
+url="https://docs.xfce.org/apps/xfce4-taskmanager"
+license=('GPL2')
+depends=('libxfce4ui' 'xfconf' 'libxmu' 'libwnck3')
+makedepends=('intltool')
+groups=('xfce4-goodies')
+source=(https://archive.xfce.org/src/apps/$pkgname/${pkgver%.*}/$pkgname-$pkgver.tar.bz2)
+sha256sums=('6736832f5a64533e536f4994280bd907da19666cda8d2f465c8a53bb581f68bb')
+
+prepare() {
+  cd $pkgname-$pkgver
+}
+
+build() {
+  cd $pkgname-$pkgver
+
+  ./configure \
+    --prefix=/usr \
+    --sysconfdir=/etc \
+    --localstatedir=/var \
+    --disable-debug
+  make
+}
+
+package() {
+  cd $pkgname-$pkgver
+  make DESTDIR="$pkgdir" install
+}
+
+# vim:set ts=2 sw=2 et:
