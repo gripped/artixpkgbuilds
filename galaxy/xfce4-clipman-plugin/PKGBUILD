@@ -1,0 +1,35 @@
+# Maintainer: Cory Sanin <corysanin@artixlinux.org>
+# Contributor: Evangelos Foutras <evangelos@foutrelis.com>
+# Contributor: tobias <tobias at archlinux.org>
+# Contributor: Aurelien Foret <orelien@chez.com>
+
+pkgname=xfce4-clipman-plugin
+pkgver=1.6.6
+pkgrel=1
+pkgdesc="A clipboard plugin for the Xfce4 panel"
+arch=('x86_64')
+license=('GPL2')
+url="https://docs.xfce.org/panel-plugins/xfce4-clipman-plugin"
+groups=('xfce4-goodies')
+depends=('xfce4-panel' 'libxtst' 'qrencode')
+makedepends=('intltool')
+source=(https://archive.xfce.org/src/panel-plugins/$pkgname/${pkgver%.*}/$pkgname-$pkgver.tar.bz2)
+sha256sums=('08ad475b006f878df5dd20d83c98edc33ed21e69b414d0e5ff6d4accd64d7120')
+
+build() {
+  cd $pkgname-$pkgver
+
+  ./configure \
+    --prefix=/usr \
+    --sysconfdir=/etc \
+    --localstatedir=/var \
+    --disable-debug
+  make
+}
+
+package() {
+  cd $pkgname-$pkgver
+  make DESTDIR="$pkgdir" install
+}
+
+# vim:set ts=2 sw=2 et:
