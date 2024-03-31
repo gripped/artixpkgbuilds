@@ -1,6 +1,6 @@
 # Maintainer: Torr <torr@artixlinux.org>
 pkgname=step-cli
-pkgver=0.25.2
+pkgver=0.26.0
 pkgrel=2
 pkgdesc="Zero trust swiss army knife for working with X509, OAuth, JWT, OATH OTP, etc."
 arch=("x86_64")
@@ -14,7 +14,7 @@ source=(
 	"https://github.com/smallstep/cli/archive/refs/tags/v$pkgver.tar.gz"
 )
 sha256sums=(
-	"088bcd694bcfb16fd3482ba369f984a2423ef8410564e377e12284d91c3a7cb1"
+	"43af34674d0bfec127f07712f7500cb15978f445c7cb439bf7f5f2040472746d"
 )
 
 
