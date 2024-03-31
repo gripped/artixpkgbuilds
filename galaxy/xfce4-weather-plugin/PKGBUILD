@@ -1,0 +1,35 @@
+# Maintainer: Cory Sanin <corysanin@artixlinux.org>
+# Contributor: Evangelos Foutras <evangelos@foutrelis.com>
+# Contributor: Suzy Williams <suzanne.williams3@verizon.net>
+
+pkgname=xfce4-weather-plugin
+pkgver=0.11.2
+pkgrel=1
+pkgdesc="A weather plugin for the Xfce4 panel"
+arch=('x86_64')
+url="https://docs.xfce.org/panel-plugins/xfce4-weather-plugin"
+license=('GPL2')
+groups=('xfce4-goodies')
+depends=('xfce4-panel' 'libxml2' 'libsoup' 'hicolor-icon-theme')
+makedepends=('intltool')
+source=(https://archive.xfce.org/src/panel-plugins/$pkgname/${pkgver%.*}/$pkgname-$pkgver.tar.bz2)
+sha256sums=('65d40aff7863550858a9f9d2b6054f27c69a3e7e712991785987f9a73bba876b')
+
+build() {
+  cd $pkgname-$pkgver
+
+  ./configure \
+    --prefix=/usr \
+    --sysconfdir=/etc \
+    --localstatedir=/var \
+    --disable-debug \
+    --disable-upower
+  make
+}
+
+package() {
+  cd $pkgname-$pkgver
+  make DESTDIR="$pkgdir" install
+}
+
+# vim:set ts=2 sw=2 et:
