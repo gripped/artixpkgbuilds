@@ -1,0 +1,37 @@
+# Maintainer: Cory Sanin <corysanin@artixlinux.org>
+# Contributor: Evangelos Foutras <evangelos@foutrelis.com>
+# Contributor: Tobias Kieslich <tobias funnychar archlinux.org>
+
+pkgname=xfce4-power-manager
+pkgver=4.18.3
+pkgrel=1
+pkgdesc="Power Manager for Xfce"
+arch=('x86_64')
+url="https://docs.xfce.org/xfce/xfce4-power-manager/start"
+license=('GPL2')
+groups=('xfce4')
+depends=('libxfce4ui' 'upower' 'libnotify' 'xfce4-notifyd' 'hicolor-icon-theme')
+makedepends=('intltool' 'xfce4-panel')
+source=(https://archive.xfce.org/src/xfce/$pkgname/${pkgver%.*}/$pkgname-$pkgver.tar.bz2)
+sha256sums=('0d79dd0f68b90d07b384366be4d2291a6d7815410eb0c20d3d8e8590c62e84f0')
+
+build() {
+  cd $pkgname-$pkgver
+
+  ./configure \
+    --prefix=/usr \
+    --sysconfdir=/etc \
+    --sbindir=/usr/bin \
+    --localstatedir=/var \
+    --disable-network-manager \
+    --enable-polkit \
+    --disable-debug
+  make
+}
+
+package() {
+  cd $pkgname-$pkgver
+  make DESTDIR="$pkgdir" install
+}
+
+# vim:set ts=2 sw=2 et:
