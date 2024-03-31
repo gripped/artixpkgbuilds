@@ -1,0 +1,36 @@
+# Maintainer: Cory Sanin <corysanin@artixlinux.org>
+# Contributor: Evangelos Foutras <evangelos@foutrelis.com>
+# Contributor: AndyRTR <andyrtr@archlinux.org>
+# Contributor: Aurelien Foret <orelien@chez.com>
+
+pkgname=xfce4-cpugraph-plugin
+pkgver=1.2.10
+pkgrel=1
+pkgdesc="Graphical representation of the CPU load"
+arch=('x86_64')
+license=('GPL' 'custom')
+url="https://docs.xfce.org/panel-plugins/xfce4-cpugraph-plugin"
+groups=('xfce4-goodies')
+depends=('xfce4-panel' 'xfconf')
+makedepends=('intltool')
+source=(https://archive.xfce.org/src/panel-plugins/$pkgname/${pkgver%.*}/$pkgname-$pkgver.tar.bz2)
+sha256sums=('37792dd052691712195658169b95fb6583f924485ce7a467b33d01e08775d915')
+
+build() {
+  cd $pkgname-$pkgver
+
+  ./configure \
+    --prefix=/usr \
+    --sysconfdir=/etc \
+    --localstatedir=/var \
+    --disable-debug
+  make
+}
+
+package() {
+  cd $pkgname-$pkgver
+  make DESTDIR="$pkgdir" install
+  install -Dm644 COPYING "$pkgdir/usr/share/licenses/$pkgname/COPYING"
+}
+
+# vim:set ts=2 sw=2 et:
