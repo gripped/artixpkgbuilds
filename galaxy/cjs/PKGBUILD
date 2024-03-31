@@ -1,0 +1,43 @@
+# Maintainer: Eli Schwartz <eschwartz@archlinux.org>
+# Contributor: Alexandre Filgueira <alexfilgueira@cinnarch.com>
+# Contributor: Ionut Biru <ibiru@archlinux.org>
+
+pkgname=cjs
+pkgver=6.0.0
+pkgrel=1
+pkgdesc="Javascript Bindings for Cinnamon"
+arch=('x86_64')
+url="https://github.com/linuxmint/${pkgname}"
+license=('GPL')
+depends=('gtk3' 'gobject-introspection-runtime' 'js102')
+makedepends=('meson' 'samurai' 'gobject-introspection')
+checkdepends=('xorg-server-xvfb')
+source=("${pkgname}-${pkgver}.tar.gz::${url}/archive/${pkgver}.tar.gz")
+sha512sums=('4cb359bf817d22a727683fd451ad6bde19aff4409e9033a97ef9cb204b3bd4c5e86421d7c01a267c3b4d42feb9b3bc5effb6fd970b3baf733242868c09536d95')
+b2sums=('4290f0801f715aab1387da2ce0724376912db8ff3ad16fa8ad7eff03538dfc53ecbff2b7df0e70e52d16295b23ce51024da735d0e618b995fd3d3dfe297f9e26')
+
+build() {
+    mkdir -p ${pkgname}-${pkgver}/builddir
+    cd ${pkgname}-${pkgver}/builddir
+
+    meson --prefix=/usr \
+          --libexecdir=/usr/lib \
+          --buildtype=plain \
+          -Dinstalled_tests=false \
+          ..
+
+    samu
+}
+
+check() {
+    cd ${pkgname}-${pkgver}/builddir
+
+    # Needs a display
+    xvfb-run meson test --print-errorlogs
+}
+
+package() {
+    cd ${pkgname}-${pkgver}/builddir
+
+    DESTDIR="${pkgdir}" samu install
+}
