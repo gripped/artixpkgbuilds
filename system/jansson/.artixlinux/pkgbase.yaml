@@ -1,18 +1,18 @@
 ---
 pkgbase:
   name: jansson
-  version: 2.14-2
+  version: 2.14-3
   arch:
     - x86_64
   pkgname:
     - jansson
 actions:
-  addRepo: null
-  removeRepo: null
+  addRepo: system
+  removeRepo: system-gremlins
   triggersBuild: false
   triggersRebuild: false
-  triggersRepoAdd: false
-  triggersRepoRemove: false
+  triggersRepoAdd: true
+  triggersRepoRemove: true
   triggersNoCheck: false
 repos:
   system-goblins:
@@ -22,9 +22,9 @@ repos:
     version: null
     packages: []
   system:
-    version: 2.14-2
+    version: 2.14-3
     packages:
-      - jansson-2.14-2-x86_64.pkg.tar.zst
+      - jansson-2.14-3-x86_64.pkg.tar.zst
   world-goblins:
     version: null
     packages: []
@@ -52,3 +52,4 @@ repos:
   galaxy:
     version: null
     packages: []
+team: system
