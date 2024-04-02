@@ -2,7 +2,7 @@
 
 pkgname=libfoo
 pkgver=1.0.0
-pkgrel=10
+pkgrel=12
 pkgdesc="libfoo package, do not install"
 arch=(x86_64)
 url="https://gitea.artixlinux.org/devel/libfoo"
