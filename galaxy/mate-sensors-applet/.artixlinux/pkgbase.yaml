@@ -1,14 +1,14 @@
 ---
 pkgbase:
   name: mate-sensors-applet
-  version: 1.26.0-2.1
+  version: 1.28.0-1
   arch:
     - x86_64
   pkgname:
     - mate-sensors-applet
 actions:
   addRepo: galaxy
-  removeRepo: world
+  removeRepo: galaxy-gremlins
   triggersBuild: false
   triggersRebuild: false
   triggersRepoAdd: true
@@ -49,6 +49,7 @@ repos:
     version: null
     packages: []
   galaxy:
-    version: 1.26.0-2.1
+    version: 1.28.0-1
     packages:
-      - mate-sensors-applet-1.26.0-2.1-x86_64.pkg.tar.zst
+      - mate-sensors-applet-1.28.0-1-x86_64.pkg.tar.zst
+team: galaxy
