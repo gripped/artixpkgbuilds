@@ -1,14 +1,14 @@
 ---
 pkgbase:
   name: mate-polkit
-  version: 1.26.1-1.1
+  version: 1.28.1-1
   arch:
     - x86_64
   pkgname:
     - mate-polkit
 actions:
   addRepo: galaxy
-  removeRepo: world
+  removeRepo: galaxy-gremlins
   triggersBuild: false
   triggersRebuild: false
   triggersRepoAdd: true
@@ -49,6 +49,7 @@ repos:
     version: null
     packages: []
   galaxy:
-    version: 1.26.1-1.1
+    version: 1.28.1-1
     packages:
-      - mate-polkit-1.26.1-1.1-x86_64.pkg.tar.zst
+      - mate-polkit-1.28.1-1-x86_64.pkg.tar.zst
+team: galaxy
