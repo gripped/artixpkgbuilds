@@ -1,14 +1,14 @@
 ---
 pkgbase:
   name: mate-user-guide
-  version: 1.26.2-1.1
+  version: 1.28.0-1
   arch:
     - any
   pkgname:
     - mate-user-guide
 actions:
   addRepo: galaxy
-  removeRepo: world
+  removeRepo: galaxy-gremlins
   triggersBuild: false
   triggersRebuild: false
   triggersRepoAdd: true
@@ -49,6 +49,7 @@ repos:
     version: null
     packages: []
   galaxy:
-    version: 1.26.2-1.1
+    version: 1.28.0-1
     packages:
-      - mate-user-guide-1.26.2-1.1-any.pkg.tar.zst
+      - mate-user-guide-1.28.0-1-any.pkg.tar.zst
+team: galaxy
