@@ -1,14 +1,14 @@
 ---
 pkgbase:
   name: libmatekbd
-  version: 1.26.0-1.1
+  version: 1.28.0-1
   arch:
     - x86_64
   pkgname:
     - libmatekbd
 actions:
   addRepo: galaxy
-  removeRepo: world
+  removeRepo: galaxy-gremlins
   triggersBuild: false
   triggersRebuild: false
   triggersRepoAdd: true
@@ -49,7 +49,7 @@ repos:
     version: null
     packages: []
   galaxy:
-    version: 1.26.0-1.1
+    version: 1.28.0-1
     packages:
-      - libmatekbd-1.26.0-1.1-x86_64.pkg.tar.zst
+      - libmatekbd-1.28.0-1-x86_64.pkg.tar.zst
 team: galaxy
