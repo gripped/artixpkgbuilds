@@ -1,6 +1,6 @@
 ##
 ## Artix Linux repository mirrorlist
-## Generated on 2024-03-07
+## Generated on 2024-04-02
 ##
 
 # Artix mirrors
@@ -18,7 +18,7 @@ Server = http://ftp.ntua.gr/pub/linux/artix-linux/$repo/os/$arch
 Server = https://ftp.sh.cvut.cz/artix-linux/$repo/os/$arch
 # Denmark
 Server = https://mirrors.dotsrc.org/artix-linux/repos/$repo/os/$arch
-Server = https://mirror.one.com/artix/$repo/os/$arch
+Server = https://mirror.group.one/artix/$repo/os/$arch
 # France
 Server = https://artix.cccp.io/$repo/os/$arch
 Server = https://ftp.crifo.org/artix/repos/$repo/os/$arch
@@ -60,12 +60,11 @@ Server = https://mirrors.rit.edu/artixlinux/$repo/os/$arch
 Server = https://mirrors.ocf.berkeley.edu/artix-linux/$repo/os/$arch
 Server = http://www.nylxs.com/mirror/repos/$repo/os/$arch
 Server = https://us-mirror.artixlinux.org/$repo/os/$arch
+Server = https://gnlug.org/pub/artix-linux/$repo/os/$arch
 # Canada
 Server = https://mirror.csclub.uwaterloo.ca/artixlinux/$repo/os/$arch
 
 ## South America
-# Brazil
-Server = https://gnlug.org/pub/artix-linux/$repo/os/$arch
 # Chile
 Server = https://mirror1.cl.netactuate.com/artix/repos/$repo/os/$arch
 
