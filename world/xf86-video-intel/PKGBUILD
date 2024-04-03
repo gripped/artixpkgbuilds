@@ -6,7 +6,7 @@ pkgname=xf86-video-intel
 # https://gitlab.freedesktop.org/xorg/driver/xf86-video-intel/commits/master
 _commit=b74b67f0f321875492968f7097b9d6e82a66d7df # master 2023-02-01
 pkgver=2.99.917+923+gb74b67f0
-pkgrel=2
+pkgrel=2.2
 epoch=1
 arch=(x86_64)
 url="https://01.org/linuxgraphics"
