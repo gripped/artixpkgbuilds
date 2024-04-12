@@ -1,7 +1,7 @@
 ---
 pkgbase:
   name: kio5-extras
-  version: 24.02.0-1
+  version: 24.02.2-1
   arch:
     - x86_64
   pkgname:
@@ -31,9 +31,9 @@ repos:
     version: null
     packages: []
   world:
-    version: 24.02.0-1
+    version: 24.02.2-1
     packages:
-      - kio5-extras-24.02.0-1-x86_64.pkg.tar.zst
+      - kio5-extras-24.02.2-1-x86_64.pkg.tar.zst
   lib32-goblins:
     version: null
     packages: []
@@ -52,3 +52,4 @@ repos:
   galaxy:
     version: null
     packages: []
+team: world
