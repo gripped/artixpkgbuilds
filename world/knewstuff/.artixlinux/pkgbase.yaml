@@ -1,18 +1,18 @@
 ---
 pkgbase:
   name: knewstuff
-  version: 6.0.0-5
+  version: 6.1.0-1
   arch:
     - x86_64
   pkgname:
     - knewstuff
 actions:
   addRepo: world
-  removeRepo: null
-  triggersBuild: true
+  removeRepo: world-gremlins
+  triggersBuild: false
   triggersRebuild: false
   triggersRepoAdd: true
-  triggersRepoRemove: false
+  triggersRepoRemove: true
   triggersNoCheck: false
 repos:
   system-goblins:
@@ -31,9 +31,9 @@ repos:
     version: null
     packages: []
   world:
-    version: 6.0.0-5
+    version: 6.1.0-1
     packages:
-      - knewstuff-6.0.0-5-x86_64.pkg.tar.zst
+      - knewstuff-6.1.0-1-x86_64.pkg.tar.zst
   lib32-goblins:
     version: null
     packages: []
