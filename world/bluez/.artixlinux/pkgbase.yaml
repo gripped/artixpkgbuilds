@@ -1,7 +1,7 @@
 ---
 pkgbase:
   name: bluez
-  version: 5.73-4.1
+  version: 5.75-1
   arch:
     - x86_64
   pkgname:
@@ -15,11 +15,11 @@ pkgbase:
     - bluez-obex
 actions:
   addRepo: world
-  removeRepo: null
-  triggersBuild: true
+  removeRepo: world-gremlins
+  triggersBuild: false
   triggersRebuild: false
   triggersRepoAdd: true
-  triggersRepoRemove: false
+  triggersRepoRemove: true
   triggersNoCheck: false
 repos:
   system-goblins:
@@ -38,16 +38,16 @@ repos:
     version: null
     packages: []
   world:
-    version: 5.73-4.1
+    version: 5.75-1
     packages:
-      - bluez-5.73-4.1-x86_64.pkg.tar.zst
-      - bluez-utils-5.73-4.1-x86_64.pkg.tar.zst
-      - bluez-libs-5.73-4.1-x86_64.pkg.tar.zst
-      - bluez-cups-5.73-4.1-x86_64.pkg.tar.zst
-      - bluez-deprecated-tools-5.73-4.1-x86_64.pkg.tar.zst
-      - bluez-hid2hci-5.73-4.1-x86_64.pkg.tar.zst
-      - bluez-mesh-5.73-4.1-x86_64.pkg.tar.zst
-      - bluez-obex-5.73-4.1-x86_64.pkg.tar.zst
+      - bluez-5.75-1-x86_64.pkg.tar.zst
+      - bluez-utils-5.75-1-x86_64.pkg.tar.zst
+      - bluez-libs-5.75-1-x86_64.pkg.tar.zst
+      - bluez-cups-5.75-1-x86_64.pkg.tar.zst
+      - bluez-deprecated-tools-5.75-1-x86_64.pkg.tar.zst
+      - bluez-hid2hci-5.75-1-x86_64.pkg.tar.zst
+      - bluez-mesh-5.75-1-x86_64.pkg.tar.zst
+      - bluez-obex-5.75-1-x86_64.pkg.tar.zst
   lib32-goblins:
     version: null
     packages: []
@@ -66,3 +66,4 @@ repos:
   galaxy:
     version: null
     packages: []
+team: world
