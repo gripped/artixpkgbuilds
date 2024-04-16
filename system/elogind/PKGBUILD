@@ -1,8 +1,10 @@
 # Maintainer: artoo <artoo@artixlinux.org>
 
+_tag=252.23-r1
+
 pkgbase=elogind
 pkgname=('elogind' 'libelogind')
-pkgver=252.23
+pkgver=${_tag/-r/.}
 pkgrel=1
 pkgdesc="The systemd project's logind, extracted to a standalone package"
 arch=('x86_64')
@@ -10,16 +12,18 @@ url="https://github.com/elogind/elogind"
 license=('GPL-1.0-only' 'LGPL-2.1-only')
 makedepends=('acl' 'libacl.so' 'audit' 'libaudit.so' 'dbus' 'pam' 'gperf' 'kexec-tools'
              'libcap' 'libcap.so' 'udev' 'util-linux' 'libmount.so'
-             'docbook-xsl' 'intltool' 'meson' 'openrc' 'python-jinja' )
-source=("${pkgbase}-${pkgver}.tar.gz::https://github.com/elogind/elogind/archive/v${pkgver}.tar.gz"
-        'elogind-252-docs.patch')
-sha256sums=('d73f1b203a5d5ee9fd77f649475d1193f9dc4f2c3451ef95f5110a1a9a0e766d'
-            'c4153ec89c4deee33e019c168a71b7f1052ff5b24dc747a847cf295a4b54749f')
+             'docbook-xsl' 'intltool' 'meson' 'openrc' 'python-jinja' 'git')
+source=(
+    "git+https://github.com/elogind/elogind.git#tag=v$_tag"
+   # "${pkgbase}-${pkgver}.tar.gz::https://github.com/elogind/elogind/archive/v${_tag}.tar.gz"
+   # 'elogind-252-docs.patch'
+)
+sha256sums=('5c90c799323b8af961067372f59f8c6a9cc947de7e7683fa24767bc987799737')
 
-prepare() {
-    cd ${pkgbase}-${pkgver}
-    patch -Np 1 -i ../elogind-252-docs.patch
-}
+# prepare() {
+#     cd ${pkgbase}-${pkgver}
+#     patch -Np 1 -i ../elogind-252-docs.patch
+# }
 
 build() {
     local meson_options=(
@@ -42,7 +46,7 @@ build() {
         -Dutmp=true
     )
 
-    artix-meson "${pkgbase}-${pkgver}" build "${meson_options[@]}"
+    artix-meson "${pkgbase}" build "${meson_options[@]}"
 
     meson compile -C build
 }
@@ -80,9 +84,4 @@ package_libelogind(){
     mv -v "${srcdir}"/_libelogind/pkgconfig "${pkgdir}"/usr/lib/
     mv -v "${srcdir}"/_libelogind/include "${pkgdir}"/usr/
     mv -v "${srcdir}"/_libelogind/man3 "${pkgdir}"/usr/share/man
-
-#     ln -sfv libelogind.so "${pkgdir}"/usr/lib/libsystemd.so
-#     ln -sfv libsystemd.so "${pkgdir}"/usr/lib/libsystemd.so.0
-#
-#     ln -sfv libelogind.pc "${pkgdir}"/usr/lib/pkgconfig/libsystemd.pc
 }
