@@ -1,18 +1,18 @@
 ---
 pkgbase:
   name: freerdp
-  version: 2:3.4.0-5
+  version: 2:3.5.0-1
   arch:
     - x86_64
   pkgname:
     - freerdp
 actions:
   addRepo: world
-  removeRepo: null
-  triggersBuild: true
+  removeRepo: world-gremlins
+  triggersBuild: false
   triggersRebuild: false
   triggersRepoAdd: true
-  triggersRepoRemove: false
+  triggersRepoRemove: true
   triggersNoCheck: false
 repos:
   system-goblins:
@@ -28,13 +28,12 @@ repos:
     version: null
     packages: []
   world-gremlins:
-    version: 2:3.4.0-3
-    packages:
-      - freerdp-2:3.4.0-3-x86_64.pkg.tar.zst
+    version: null
+    packages: []
   world:
-    version: 2:3.4.0-5
+    version: 2:3.5.0-1
     packages:
-      - freerdp-2:3.4.0-5-x86_64.pkg.tar.zst
+      - freerdp-2:3.5.0-1-x86_64.pkg.tar.zst
   lib32-goblins:
     version: null
     packages: []
@@ -53,3 +52,4 @@ repos:
   galaxy:
     version: null
     packages: []
+team: world
