@@ -1,7 +1,7 @@
 ---
 pkgbase:
   name: opus
-  version: 1.5.1-1
+  version: 1.5.2-1
   arch:
     - x86_64
   pkgname:
@@ -9,11 +9,11 @@ pkgbase:
     - opus-docs
 actions:
   addRepo: world
-  removeRepo: null
-  triggersBuild: true
+  removeRepo: world-gremlins
+  triggersBuild: false
   triggersRebuild: false
   triggersRepoAdd: true
-  triggersRepoRemove: false
+  triggersRepoRemove: true
   triggersNoCheck: false
 repos:
   system-goblins:
@@ -32,10 +32,10 @@ repos:
     version: null
     packages: []
   world:
-    version: 1.5.1-1
+    version: 1.5.2-1
     packages:
-      - opus-1.5.1-1-x86_64.pkg.tar.zst
-      - opus-docs-1.5.1-1-x86_64.pkg.tar.zst
+      - opus-1.5.2-1-x86_64.pkg.tar.zst
+      - opus-docs-1.5.2-1-x86_64.pkg.tar.zst
   lib32-goblins:
     version: null
     packages: []
@@ -54,3 +54,4 @@ repos:
   galaxy:
     version: null
     packages: []
+team: world
