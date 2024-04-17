@@ -1,7 +1,7 @@
 ---
 pkgbase:
   name: skalibs
-  version: 2.14.1.0-1
+  version: 2.14.1.1-1
   arch:
     - x86_64
   pkgname:
@@ -22,9 +22,9 @@ repos:
     version: null
     packages: []
   system:
-    version: 2.14.1.0-1
+    version: 2.14.1.1-1
     packages:
-      - skalibs-2.14.1.0-1-x86_64.pkg.tar.zst
+      - skalibs-2.14.1.1-1-x86_64.pkg.tar.zst
   world-goblins:
     version: null
     packages: []
@@ -52,3 +52,4 @@ repos:
   galaxy:
     version: null
     packages: []
+team: system
