@@ -1,7 +1,7 @@
 ---
 pkgbase:
   name: gcc12
-  version: 12.3.0-5
+  version: 12.3.0-6
   arch:
     - x86_64
   pkgname:
@@ -33,11 +33,11 @@ repos:
     version: null
     packages: []
   world:
-    version: 12.3.0-5
+    version: 12.3.0-6
     packages:
-      - gcc12-12.3.0-5-x86_64.pkg.tar.zst
-      - gcc12-libs-12.3.0-5-x86_64.pkg.tar.zst
-      - gcc12-fortran-12.3.0-5-x86_64.pkg.tar.zst
+      - gcc12-12.3.0-6-x86_64.pkg.tar.zst
+      - gcc12-libs-12.3.0-6-x86_64.pkg.tar.zst
+      - gcc12-fortran-12.3.0-6-x86_64.pkg.tar.zst
   lib32-goblins:
     version: null
     packages: []
