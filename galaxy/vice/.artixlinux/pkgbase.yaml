@@ -8,11 +8,11 @@ pkgbase:
     - vice
 actions:
   addRepo: galaxy
-  removeRepo: null
-  triggersBuild: true
+  removeRepo: world
+  triggersBuild: false
   triggersRebuild: false
   triggersRepoAdd: true
-  triggersRepoRemove: false
+  triggersRepoRemove: true
   triggersNoCheck: false
 repos:
   system-goblins:
@@ -52,3 +52,4 @@ repos:
     version: 3.8-2
     packages:
       - vice-3.8-2-x86_64.pkg.tar.zst
+team: galaxy
