@@ -4,7 +4,7 @@
 pkgbase=openldap
 pkgname=('openldap' 'libldap')
 pkgver=2.6.7
-pkgrel=1
+pkgrel=2
 arch=('x86_64')
 url="https://www.openldap.org/"
 license=('custom')
@@ -65,6 +65,7 @@ build() {
     --disable-wt \
     --enable-overlays=mod \
     --with-cyrus-sasl \
+    --with-systemd=no \
     --with-threads
 
   sed -i -e 's/ -shared / -Wl,-O1,--as-needed\0/g' libtool
