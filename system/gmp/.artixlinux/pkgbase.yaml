@@ -1,7 +1,7 @@
 ---
 pkgbase:
   name: gmp
-  version: 6.3.0-1
+  version: 6.3.0-2
   arch:
     - x86_64
   pkgname:
@@ -22,9 +22,9 @@ repos:
     version: null
     packages: []
   system:
-    version: 6.3.0-1
+    version: 6.3.0-2
     packages:
-      - gmp-6.3.0-1-x86_64.pkg.tar.zst
+      - gmp-6.3.0-2-x86_64.pkg.tar.zst
   world-goblins:
     version: null
     packages: []
@@ -52,3 +52,4 @@ repos:
   galaxy:
     version: null
     packages: []
+team: system
