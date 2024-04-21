@@ -1,14 +1,14 @@
 ---
 pkgbase:
   name: zathura-cb
-  version: 0.1.10-5
+  version: 0.1.10-6
   arch:
     - x86_64
   pkgname:
     - zathura-cb
 actions:
   addRepo: galaxy
-  removeRepo: galaxy-goblins
+  removeRepo: galaxy-gremlins
   triggersBuild: false
   triggersRebuild: false
   triggersRepoAdd: true
@@ -49,6 +49,7 @@ repos:
     version: null
     packages: []
   galaxy:
-    version: 0.1.10-5
+    version: 0.1.10-6
     packages:
-      - zathura-cb-0.1.10-5-x86_64.pkg.tar.zst
+      - zathura-cb-0.1.10-6-x86_64.pkg.tar.zst
+team: galaxy
