@@ -1,7 +1,7 @@
 ---
 pkgbase:
   name: dbus-broker
-  version: 36-1
+  version: 36-2
   arch:
     - x86_64
   pkgname:
@@ -31,9 +31,9 @@ repos:
     version: null
     packages: []
   world:
-    version: 36-1
+    version: 36-2
     packages:
-      - dbus-broker-36-1-x86_64.pkg.tar.zst
+      - dbus-broker-36-2-x86_64.pkg.tar.zst
   lib32-goblins:
     version: null
     packages: []
