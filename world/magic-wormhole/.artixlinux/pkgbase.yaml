@@ -1,7 +1,7 @@
 ---
 pkgbase:
   name: magic-wormhole
-  version: 0.14.0-4
+  version: 0.14.0-6
   arch:
     - any
   pkgname:
@@ -25,16 +25,16 @@ repos:
     version: null
     packages: []
   world-goblins:
-    version: 0.14.0-3
-    packages:
-      - magic-wormhole-0.14.0-3-any.pkg.tar.zst
-  world-gremlins:
     version: null
     packages: []
-  world:
-    version: 0.14.0-4
+  world-gremlins:
+    version: 0.14.0-5
     packages:
-      - magic-wormhole-0.14.0-4-any.pkg.tar.zst
+      - magic-wormhole-0.14.0-5-any.pkg.tar.zst
+  world:
+    version: 0.14.0-6
+    packages:
+      - magic-wormhole-0.14.0-6-any.pkg.tar.zst
   lib32-goblins:
     version: null
     packages: []
