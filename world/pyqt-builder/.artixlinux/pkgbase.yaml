@@ -1,7 +1,7 @@
 ---
 pkgbase:
   name: pyqt-builder
-  version: 1.16.1-1
+  version: 1.16.2-1
   arch:
     - any
   pkgname:
@@ -28,13 +28,13 @@ repos:
     version: null
     packages: []
   world-gremlins:
-    version: 1.16.0-2
+    version: 1.16.1-2
     packages:
-      - pyqt-builder-1.16.0-2-any.pkg.tar.zst
+      - pyqt-builder-1.16.1-2-any.pkg.tar.zst
   world:
-    version: 1.16.1-1
+    version: 1.16.2-1
     packages:
-      - pyqt-builder-1.16.1-1-any.pkg.tar.zst
+      - pyqt-builder-1.16.2-1-any.pkg.tar.zst
   lib32-goblins:
     version: null
     packages: []
