@@ -1,18 +1,18 @@
 ---
 pkgbase:
   name: python-minidump
-  version: 0.0.23-1
+  version: 0.0.23-2
   arch:
     - any
   pkgname:
     - python-minidump
 actions:
   addRepo: world
-  removeRepo: null
-  triggersBuild: true
+  removeRepo: world-gremlins
+  triggersBuild: false
   triggersRebuild: false
   triggersRepoAdd: true
-  triggersRepoRemove: false
+  triggersRepoRemove: true
   triggersNoCheck: false
 repos:
   system-goblins:
@@ -31,9 +31,9 @@ repos:
     version: null
     packages: []
   world:
-    version: 0.0.23-1
+    version: 0.0.23-2
     packages:
-      - python-minidump-0.0.23-1-any.pkg.tar.zst
+      - python-minidump-0.0.23-2-any.pkg.tar.zst
   lib32-goblins:
     version: null
     packages: []
