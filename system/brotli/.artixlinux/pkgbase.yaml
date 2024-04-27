@@ -1,7 +1,7 @@
 ---
 pkgbase:
   name: brotli
-  version: 1.1.0-1
+  version: 1.1.0-2
   arch:
     - x86_64
   pkgname:
@@ -24,11 +24,11 @@ repos:
     version: null
     packages: []
   system:
-    version: 1.1.0-1
+    version: 1.1.0-2
     packages:
-      - brotli-1.1.0-1-x86_64.pkg.tar.zst
-      - python-brotli-1.1.0-1-x86_64.pkg.tar.zst
-      - brotli-testdata-1.1.0-1-x86_64.pkg.tar.zst
+      - brotli-1.1.0-2-x86_64.pkg.tar.zst
+      - python-brotli-1.1.0-2-x86_64.pkg.tar.zst
+      - brotli-testdata-1.1.0-2-x86_64.pkg.tar.zst
   world-goblins:
     version: null
     packages: []
@@ -56,3 +56,4 @@ repos:
   galaxy:
     version: null
     packages: []
+team: system
