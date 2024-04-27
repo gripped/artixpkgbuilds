@@ -1,18 +1,18 @@
 ---
 pkgbase:
   name: copr-cli
-  version: 1.105-1
+  version: 1.105-2
   arch:
     - any
   pkgname:
     - copr-cli
 actions:
   addRepo: world
-  removeRepo: null
-  triggersBuild: true
+  removeRepo: world-gremlins
+  triggersBuild: false
   triggersRebuild: false
   triggersRepoAdd: true
-  triggersRepoRemove: false
+  triggersRepoRemove: true
   triggersNoCheck: false
 repos:
   system-goblins:
@@ -31,9 +31,9 @@ repos:
     version: null
     packages: []
   world:
-    version: 1.105-1
+    version: 1.105-2
     packages:
-      - copr-cli-1.105-1-any.pkg.tar.zst
+      - copr-cli-1.105-2-any.pkg.tar.zst
   lib32-goblins:
     version: null
     packages: []
@@ -52,3 +52,4 @@ repos:
   galaxy:
     version: null
     packages: []
+team: world
