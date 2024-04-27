@@ -1,14 +1,14 @@
 ---
 pkgbase:
   name: python-jsonschema-path
-  version: 0.3.2-2
+  version: 0.3.2-3
   arch:
     - any
   pkgname:
     - python-jsonschema-path
 actions:
   addRepo: world
-  removeRepo: world-goblins
+  removeRepo: world-gremlins
   triggersBuild: false
   triggersRebuild: false
   triggersRepoAdd: true
@@ -31,9 +31,9 @@ repos:
     version: null
     packages: []
   world:
-    version: 0.3.2-2
+    version: 0.3.2-3
     packages:
-      - python-jsonschema-path-0.3.2-2-any.pkg.tar.zst
+      - python-jsonschema-path-0.3.2-3-any.pkg.tar.zst
   lib32-goblins:
     version: null
     packages: []
@@ -52,3 +52,4 @@ repos:
   galaxy:
     version: null
     packages: []
+team: world
