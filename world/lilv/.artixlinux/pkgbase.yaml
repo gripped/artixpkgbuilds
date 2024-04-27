@@ -1,7 +1,7 @@
 ---
 pkgbase:
   name: lilv
-  version: 0.24.24-1
+  version: 0.24.24-2
   arch:
     - x86_64
   pkgname:
@@ -10,11 +10,11 @@ pkgbase:
     - python-lilv
 actions:
   addRepo: world
-  removeRepo: null
-  triggersBuild: true
+  removeRepo: world-gremlins
+  triggersBuild: false
   triggersRebuild: false
   triggersRepoAdd: true
-  triggersRepoRemove: false
+  triggersRepoRemove: true
   triggersNoCheck: false
 repos:
   system-goblins:
@@ -33,11 +33,11 @@ repos:
     version: null
     packages: []
   world:
-    version: 0.24.24-1
+    version: 0.24.24-2
     packages:
-      - lilv-0.24.24-1-x86_64.pkg.tar.zst
-      - lilv-docs-0.24.24-1-x86_64.pkg.tar.zst
-      - python-lilv-0.24.24-1-x86_64.pkg.tar.zst
+      - lilv-0.24.24-2-x86_64.pkg.tar.zst
+      - lilv-docs-0.24.24-2-x86_64.pkg.tar.zst
+      - python-lilv-0.24.24-2-x86_64.pkg.tar.zst
   lib32-goblins:
     version: null
     packages: []
@@ -56,3 +56,4 @@ repos:
   galaxy:
     version: null
     packages: []
+team: world
