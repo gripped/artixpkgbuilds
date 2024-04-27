@@ -1,7 +1,7 @@
 ---
 pkgbase:
   name: avogadrolibs
-  version: 1.99.0-1
+  version: 1.99.0-2
   arch:
     - x86_64
   pkgname:
@@ -9,11 +9,11 @@ pkgbase:
     - avogadrolibs-qt5
 actions:
   addRepo: world
-  removeRepo: null
-  triggersBuild: true
+  removeRepo: world-gremlins
+  triggersBuild: false
   triggersRebuild: false
   triggersRepoAdd: true
-  triggersRepoRemove: false
+  triggersRepoRemove: true
   triggersNoCheck: false
 repos:
   system-goblins:
@@ -32,10 +32,10 @@ repos:
     version: null
     packages: []
   world:
-    version: 1.99.0-1
+    version: 1.99.0-2
     packages:
-      - avogadrolibs-1.99.0-1-x86_64.pkg.tar.zst
-      - avogadrolibs-qt5-1.99.0-1-x86_64.pkg.tar.zst
+      - avogadrolibs-1.99.0-2-x86_64.pkg.tar.zst
+      - avogadrolibs-qt5-1.99.0-2-x86_64.pkg.tar.zst
   lib32-goblins:
     version: null
     packages: []
@@ -54,3 +54,4 @@ repos:
   galaxy:
     version: null
     packages: []
+team: world
