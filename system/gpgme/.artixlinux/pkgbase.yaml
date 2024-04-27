@@ -1,12 +1,11 @@
 ---
 pkgbase:
   name: gpgme
-  version: 1.23.2-1
+  version: 1.23.2-4
   arch:
     - x86_64
   pkgname:
     - gpgme
-    - qgpgme-qt5
     - qgpgme-qt6
     - python-gpgme
 actions:
@@ -25,12 +24,11 @@ repos:
     version: null
     packages: []
   system:
-    version: 1.23.2-1
+    version: 1.23.2-4
     packages:
-      - gpgme-1.23.2-1-x86_64.pkg.tar.zst
-      - qgpgme-qt5-1.23.2-1-x86_64.pkg.tar.zst
-      - qgpgme-qt6-1.23.2-1-x86_64.pkg.tar.zst
-      - python-gpgme-1.23.2-1-x86_64.pkg.tar.zst
+      - gpgme-1.23.2-4-x86_64.pkg.tar.zst
+      - qgpgme-qt6-1.23.2-4-x86_64.pkg.tar.zst
+      - python-gpgme-1.23.2-4-x86_64.pkg.tar.zst
   world-goblins:
     version: null
     packages: []
@@ -58,3 +56,4 @@ repos:
   galaxy:
     version: null
     packages: []
+team: system
