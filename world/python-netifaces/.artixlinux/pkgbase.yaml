@@ -1,18 +1,18 @@
 ---
 pkgbase:
   name: python-netifaces
-  version: 0.11.0-4
+  version: 0.11.0-5
   arch:
     - x86_64
   pkgname:
     - python-netifaces
 actions:
-  addRepo: null
-  removeRepo: null
+  addRepo: world
+  removeRepo: world-gremlins
   triggersBuild: false
   triggersRebuild: false
-  triggersRepoAdd: false
-  triggersRepoRemove: false
+  triggersRepoAdd: true
+  triggersRepoRemove: true
   triggersNoCheck: false
 repos:
   system-goblins:
@@ -31,9 +31,9 @@ repos:
     version: null
     packages: []
   world:
-    version: 0.11.0-4
+    version: 0.11.0-5
     packages:
-      - python-netifaces-0.11.0-4-x86_64.pkg.tar.zst
+      - python-netifaces-0.11.0-5-x86_64.pkg.tar.zst
   lib32-goblins:
     version: null
     packages: []
@@ -52,3 +52,4 @@ repos:
   galaxy:
     version: null
     packages: []
+team: world
