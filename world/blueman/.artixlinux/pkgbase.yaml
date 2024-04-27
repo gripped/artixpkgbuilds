@@ -1,18 +1,18 @@
 ---
 pkgbase:
   name: blueman
-  version: 2.4.1-1
+  version: 2.4.1-2
   arch:
     - x86_64
   pkgname:
     - blueman
 actions:
   addRepo: world
-  removeRepo: null
-  triggersBuild: true
+  removeRepo: world-gremlins
+  triggersBuild: false
   triggersRebuild: false
   triggersRepoAdd: true
-  triggersRepoRemove: false
+  triggersRepoRemove: true
   triggersNoCheck: false
 repos:
   system-goblins:
@@ -25,16 +25,15 @@ repos:
     version: null
     packages: []
   world-goblins:
-    version: 2.4-2
-    packages:
-      - blueman-2.4-2-x86_64.pkg.tar.zst
+    version: null
+    packages: []
   world-gremlins:
     version: null
     packages: []
   world:
-    version: 2.4.1-1
+    version: 2.4.1-2
     packages:
-      - blueman-2.4.1-1-x86_64.pkg.tar.zst
+      - blueman-2.4.1-2-x86_64.pkg.tar.zst
   lib32-goblins:
     version: null
     packages: []
