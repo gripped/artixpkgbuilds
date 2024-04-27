@@ -1,18 +1,18 @@
 ---
 pkgbase:
   name: python-colour
-  version: 0.1.5-12
+  version: 0.1.5-13
   arch:
     - any
   pkgname:
     - python-colour
 actions:
   addRepo: world
-  removeRepo: null
-  triggersBuild: true
+  removeRepo: world-gremlins
+  triggersBuild: false
   triggersRebuild: false
   triggersRepoAdd: true
-  triggersRepoRemove: false
+  triggersRepoRemove: true
   triggersNoCheck: false
 repos:
   system-goblins:
@@ -31,9 +31,9 @@ repos:
     version: null
     packages: []
   world:
-    version: 0.1.5-12
+    version: 0.1.5-13
     packages:
-      - python-colour-0.1.5-12-any.pkg.tar.zst
+      - python-colour-0.1.5-13-any.pkg.tar.zst
   lib32-goblins:
     version: null
     packages: []
