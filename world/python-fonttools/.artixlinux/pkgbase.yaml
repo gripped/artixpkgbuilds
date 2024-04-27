@@ -1,18 +1,18 @@
 ---
 pkgbase:
   name: python-fonttools
-  version: 4.50.0-1
+  version: 4.51.0-2
   arch:
     - x86_64
   pkgname:
     - python-fonttools
 actions:
   addRepo: world
-  removeRepo: null
-  triggersBuild: true
+  removeRepo: world-gremlins
+  triggersBuild: false
   triggersRebuild: false
   triggersRepoAdd: true
-  triggersRepoRemove: false
+  triggersRepoRemove: true
   triggersNoCheck: false
 repos:
   system-goblins:
@@ -31,9 +31,9 @@ repos:
     version: null
     packages: []
   world:
-    version: 4.50.0-1
+    version: 4.51.0-2
     packages:
-      - python-fonttools-4.50.0-1-x86_64.pkg.tar.zst
+      - python-fonttools-4.51.0-2-x86_64.pkg.tar.zst
   lib32-goblins:
     version: null
     packages: []
@@ -52,12 +52,4 @@ repos:
   galaxy:
     version: null
     packages: []
-  asteroids-goblins:
-    version: null
-    packages: []
-  asteroids-gremlins:
-    version: null
-    packages: []
-  asteroids:
-    version: null
-    packages: []
+team: world
