@@ -1,7 +1,7 @@
 ---
 pkgbase:
   name: gdb
-  version: 14.2-1
+  version: 14.2-2
   arch:
     - x86_64
   pkgname:
@@ -32,10 +32,10 @@ repos:
     version: null
     packages: []
   world:
-    version: 14.2-1
+    version: 14.2-2
     packages:
-      - gdb-14.2-1-x86_64.pkg.tar.zst
-      - gdb-common-14.2-1-x86_64.pkg.tar.zst
+      - gdb-14.2-2-x86_64.pkg.tar.zst
+      - gdb-common-14.2-2-x86_64.pkg.tar.zst
   lib32-goblins:
     version: null
     packages: []
@@ -54,3 +54,4 @@ repos:
   galaxy:
     version: null
     packages: []
+team: world
