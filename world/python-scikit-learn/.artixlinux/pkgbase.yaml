@@ -1,18 +1,18 @@
 ---
 pkgbase:
   name: python-scikit-learn
-  version: 1.4.2-1
+  version: 1.4.2-2
   arch:
     - x86_64
   pkgname:
     - python-scikit-learn
 actions:
   addRepo: world
-  removeRepo: null
-  triggersBuild: true
+  removeRepo: world-gremlins
+  triggersBuild: false
   triggersRebuild: false
   triggersRepoAdd: true
-  triggersRepoRemove: false
+  triggersRepoRemove: true
   triggersNoCheck: false
 repos:
   system-goblins:
@@ -25,16 +25,15 @@ repos:
     version: null
     packages: []
   world-goblins:
-    version: 1.4.1.post1-3
-    packages:
-      - python-scikit-learn-1.4.1.post1-3-x86_64.pkg.tar.zst
+    version: null
+    packages: []
   world-gremlins:
     version: null
     packages: []
   world:
-    version: 1.4.2-1
+    version: 1.4.2-2
     packages:
-      - python-scikit-learn-1.4.2-1-x86_64.pkg.tar.zst
+      - python-scikit-learn-1.4.2-2-x86_64.pkg.tar.zst
   lib32-goblins:
     version: null
     packages: []
