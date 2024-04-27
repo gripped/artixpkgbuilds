@@ -1,18 +1,18 @@
 ---
 pkgbase:
   name: python-pyogrio
-  version: 0.6.0-3
+  version: 0.6.0-4
   arch:
     - x86_64
   pkgname:
     - python-pyogrio
 actions:
   addRepo: world
-  removeRepo: null
-  triggersBuild: true
+  removeRepo: world-gremlins
+  triggersBuild: false
   triggersRebuild: false
   triggersRepoAdd: true
-  triggersRepoRemove: false
+  triggersRepoRemove: true
   triggersNoCheck: false
 repos:
   system-goblins:
@@ -31,9 +31,9 @@ repos:
     version: null
     packages: []
   world:
-    version: 0.6.0-3
+    version: 0.6.0-4
     packages:
-      - python-pyogrio-0.6.0-3-x86_64.pkg.tar.zst
+      - python-pyogrio-0.6.0-4-x86_64.pkg.tar.zst
   lib32-goblins:
     version: null
     packages: []
@@ -52,3 +52,4 @@ repos:
   galaxy:
     version: null
     packages: []
+team: world
