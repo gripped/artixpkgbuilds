@@ -1,18 +1,18 @@
 ---
 pkgbase:
   name: python-testresources
-  version: 2.0.1-11
+  version: 2.0.1-13
   arch:
     - any
   pkgname:
     - python-testresources
 actions:
-  addRepo: null
-  removeRepo: null
+  addRepo: world
+  removeRepo: world-gremlins
   triggersBuild: false
   triggersRebuild: false
-  triggersRepoAdd: false
-  triggersRepoRemove: false
+  triggersRepoAdd: true
+  triggersRepoRemove: true
   triggersNoCheck: false
 repos:
   system-goblins:
@@ -31,9 +31,9 @@ repos:
     version: null
     packages: []
   world:
-    version: 2.0.1-11
+    version: 2.0.1-13
     packages:
-      - python-testresources-2.0.1-11-any.pkg.tar.zst
+      - python-testresources-2.0.1-13-any.pkg.tar.zst
   lib32-goblins:
     version: null
     packages: []
@@ -52,3 +52,4 @@ repos:
   galaxy:
     version: null
     packages: []
+team: world
