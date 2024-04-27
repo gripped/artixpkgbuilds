@@ -1,11 +1,11 @@
-# Maintainer: Qontinuum <qontinuum@artixlinux.org>
+# Maintainer: Evgeniy Alekseev <arcanis.arch at gmail dot com>
 # Contributor: Stunts <f.pinamartins at gmail dot com>
 # Contributor: damir <damir at archlinux dot org>
 
 pkgname=python-biopython
 _pkgname=biopython
 pkgver=1.81
-pkgrel=2
+pkgrel=3
 pkgdesc="Freely available Python tools for computational molecular biology"
 arch=('x86_64')
 url="http://www.biopython.org"
