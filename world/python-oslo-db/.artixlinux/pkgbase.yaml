@@ -1,18 +1,18 @@
 ---
 pkgbase:
   name: python-oslo-db
-  version: 12.3.2-1
+  version: 12.3.2-2
   arch:
     - any
   pkgname:
     - python-oslo-db
 actions:
   addRepo: world
-  removeRepo: null
-  triggersBuild: true
+  removeRepo: world-gremlins
+  triggersBuild: false
   triggersRebuild: false
   triggersRepoAdd: true
-  triggersRepoRemove: false
+  triggersRepoRemove: true
   triggersNoCheck: false
 repos:
   system-goblins:
@@ -31,9 +31,9 @@ repos:
     version: null
     packages: []
   world:
-    version: 12.3.2-1
+    version: 12.3.2-2
     packages:
-      - python-oslo-db-12.3.2-1-any.pkg.tar.zst
+      - python-oslo-db-12.3.2-2-any.pkg.tar.zst
   lib32-goblins:
     version: null
     packages: []
@@ -52,3 +52,4 @@ repos:
   galaxy:
     version: null
     packages: []
+team: world
