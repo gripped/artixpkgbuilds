@@ -1,9 +1,9 @@
-# Maintainer: Nathan <ndowens@artixlinux.org>
+# Maintainer: Kyle Keen <keenerd@gmail.com>
 
 pkgbase=isodate
 pkgname=('python-isodate')
 pkgver=0.6.1
-pkgrel=3
+pkgrel=4
 pkgdesc="An ISO 8601 date/time/duration parser and formatter"
 arch=('any')
 url="https://github.com/gweis/isodate/"
