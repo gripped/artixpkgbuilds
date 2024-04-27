@@ -1,7 +1,7 @@
 ---
 pkgbase:
   name: python-dirty-equals
-  version: 0.7.1.post0-1
+  version: 0.7.1.post0-4
   arch:
     - any
   pkgname:
@@ -31,9 +31,9 @@ repos:
     version: null
     packages: []
   world:
-    version: 0.7.1.post0-1
+    version: 0.7.1.post0-4
     packages:
-      - python-dirty-equals-0.7.1.post0-1-any.pkg.tar.zst
+      - python-dirty-equals-0.7.1.post0-4-any.pkg.tar.zst
   lib32-goblins:
     version: null
     packages: []
@@ -52,3 +52,4 @@ repos:
   galaxy:
     version: null
     packages: []
+team: world
