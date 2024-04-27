@@ -1,18 +1,18 @@
 ---
 pkgbase:
   name: python-tabview
-  version: 1.4.4-3
+  version: 1.4.4-4
   arch:
     - any
   pkgname:
     - python-tabview
 actions:
-  addRepo: null
-  removeRepo: null
+  addRepo: world
+  removeRepo: world-gremlins
   triggersBuild: false
   triggersRebuild: false
-  triggersRepoAdd: false
-  triggersRepoRemove: false
+  triggersRepoAdd: true
+  triggersRepoRemove: true
   triggersNoCheck: false
 repos:
   system-goblins:
@@ -31,9 +31,9 @@ repos:
     version: null
     packages: []
   world:
-    version: 1.4.4-3
+    version: 1.4.4-4
     packages:
-      - python-tabview-1.4.4-3-any.pkg.tar.zst
+      - python-tabview-1.4.4-4-any.pkg.tar.zst
   lib32-goblins:
     version: null
     packages: []
@@ -52,3 +52,4 @@ repos:
   galaxy:
     version: null
     packages: []
+team: world
