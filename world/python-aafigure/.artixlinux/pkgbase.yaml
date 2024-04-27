@@ -1,18 +1,18 @@
 ---
 pkgbase:
   name: python-aafigure
-  version: 0.6-4
+  version: 0.6-5
   arch:
     - any
   pkgname:
     - python-aafigure
 actions:
-  addRepo: null
-  removeRepo: null
+  addRepo: world
+  removeRepo: world-gremlins
   triggersBuild: false
   triggersRebuild: false
-  triggersRepoAdd: false
-  triggersRepoRemove: false
+  triggersRepoAdd: true
+  triggersRepoRemove: true
   triggersNoCheck: false
 repos:
   system-goblins:
@@ -31,9 +31,9 @@ repos:
     version: null
     packages: []
   world:
-    version: 0.6-4
+    version: 0.6-5
     packages:
-      - python-aafigure-0.6-4-any.pkg.tar.zst
+      - python-aafigure-0.6-5-any.pkg.tar.zst
   lib32-goblins:
     version: null
     packages: []
@@ -52,3 +52,4 @@ repos:
   galaxy:
     version: null
     packages: []
+team: world
