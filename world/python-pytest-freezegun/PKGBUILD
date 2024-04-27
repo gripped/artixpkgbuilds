@@ -1,9 +1,9 @@
-# Maintainer: Qontinuum <qontinuum@artixlinux.org>
+# Maintainer: Thore Bödecker <foxxx0@archlinux.org>
 
 pkgname='python-pytest-freezegun'
 _pkgbase="${pkgname//python-/}"
 pkgver=0.4.2
-pkgrel=7
+pkgrel=8
 pkgdesc="Easily freeze time in pytest test + fixtures"
 arch=('any')
 license=('MIT')
