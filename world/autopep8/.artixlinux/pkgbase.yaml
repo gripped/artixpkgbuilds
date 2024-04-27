@@ -1,18 +1,18 @@
 ---
 pkgbase:
   name: autopep8
-  version: 1:2.1.0-1
+  version: 1:2.1.0-2
   arch:
     - any
   pkgname:
     - autopep8
 actions:
   addRepo: world
-  removeRepo: null
-  triggersBuild: true
+  removeRepo: world-gremlins
+  triggersBuild: false
   triggersRebuild: false
   triggersRepoAdd: true
-  triggersRepoRemove: false
+  triggersRepoRemove: true
   triggersNoCheck: false
 repos:
   system-goblins:
@@ -31,9 +31,9 @@ repos:
     version: null
     packages: []
   world:
-    version: 1:2.1.0-1
+    version: 1:2.1.0-2
     packages:
-      - autopep8-1:2.1.0-1-any.pkg.tar.zst
+      - autopep8-1:2.1.0-2-any.pkg.tar.zst
   lib32-goblins:
     version: null
     packages: []
