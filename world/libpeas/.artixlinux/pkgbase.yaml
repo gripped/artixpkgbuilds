@@ -1,7 +1,7 @@
 ---
 pkgbase:
   name: libpeas
-  version: 1.36.0-4
+  version: 1.36.0-5
   arch:
     - x86_64
   pkgname:
@@ -33,11 +33,11 @@ repos:
     version: null
     packages: []
   world:
-    version: 1.36.0-4
+    version: 1.36.0-5
     packages:
-      - libpeas-1.36.0-4-x86_64.pkg.tar.zst
-      - libpeas-demos-1.36.0-4-x86_64.pkg.tar.zst
-      - libpeas-docs-1.36.0-4-x86_64.pkg.tar.zst
+      - libpeas-1.36.0-5-x86_64.pkg.tar.zst
+      - libpeas-demos-1.36.0-5-x86_64.pkg.tar.zst
+      - libpeas-docs-1.36.0-5-x86_64.pkg.tar.zst
   lib32-goblins:
     version: null
     packages: []
@@ -56,3 +56,4 @@ repos:
   galaxy:
     version: null
     packages: []
+team: world
