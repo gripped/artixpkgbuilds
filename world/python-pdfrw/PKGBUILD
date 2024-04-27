@@ -1,11 +1,11 @@
-# Maintainer: Qontinuum <qontinuum@artixlinux.org>
+# Maintainer: Jiachen Yang <farseerfc@gmail.com>
 # AUR Maintainer: Phil Schaf <flying-sheep@web.de>
 
 _pypiname=pdfrw
 pkgbase=python-pdfrw
 pkgname=(python-pdfrw)
 pkgver=0.4
-pkgrel=8
+pkgrel=9
 pkgdesc='Convert restructured text to PDF via reportlab.'
 arch=('any')
 url="https://github.com/pmaupin/$_pypiname"
