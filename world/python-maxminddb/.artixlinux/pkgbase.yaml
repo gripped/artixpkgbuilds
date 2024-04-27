@@ -1,18 +1,18 @@
 ---
 pkgbase:
   name: python-maxminddb
-  version: 2.5.1-1
+  version: 2.5.1-2
   arch:
     - x86_64
   pkgname:
     - python-maxminddb
 actions:
   addRepo: world
-  removeRepo: null
-  triggersBuild: true
+  removeRepo: world-gremlins
+  triggersBuild: false
   triggersRebuild: false
   triggersRepoAdd: true
-  triggersRepoRemove: false
+  triggersRepoRemove: true
   triggersNoCheck: false
 repos:
   system-goblins:
@@ -31,9 +31,9 @@ repos:
     version: null
     packages: []
   world:
-    version: 2.5.1-1
+    version: 2.5.1-2
     packages:
-      - python-maxminddb-2.5.1-1-x86_64.pkg.tar.zst
+      - python-maxminddb-2.5.1-2-x86_64.pkg.tar.zst
   lib32-goblins:
     version: null
     packages: []
@@ -52,3 +52,4 @@ repos:
   galaxy:
     version: null
     packages: []
+team: world
