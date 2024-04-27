@@ -25,16 +25,15 @@ repos:
     version: null
     packages: []
   world-goblins:
-    version: 7.3.3-2
-    packages:
-      - python-pynetbox-7.3.3-2-any.pkg.tar.zst
+    version: null
+    packages: []
   world-gremlins:
     version: null
     packages: []
   world:
-    version: 7.3.3-1
+    version: 7.3.3-2
     packages:
-      - python-pynetbox-7.3.3-1-any.pkg.tar.zst
+      - python-pynetbox-7.3.3-2-any.pkg.tar.zst
   lib32-goblins:
     version: null
     packages: []
