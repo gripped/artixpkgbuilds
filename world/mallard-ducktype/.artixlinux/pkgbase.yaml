@@ -1,18 +1,18 @@
 ---
 pkgbase:
   name: mallard-ducktype
-  version: 1.0.2-10
+  version: 1.0.2-11
   arch:
     - any
   pkgname:
     - mallard-ducktype
 actions:
   addRepo: world
-  removeRepo: null
-  triggersBuild: true
+  removeRepo: world-gremlins
+  triggersBuild: false
   triggersRebuild: false
   triggersRepoAdd: true
-  triggersRepoRemove: false
+  triggersRepoRemove: true
   triggersNoCheck: false
 repos:
   system-goblins:
@@ -31,9 +31,9 @@ repos:
     version: null
     packages: []
   world:
-    version: 1.0.2-10
+    version: 1.0.2-11
     packages:
-      - mallard-ducktype-1.0.2-10-any.pkg.tar.zst
+      - mallard-ducktype-1.0.2-11-any.pkg.tar.zst
   lib32-goblins:
     version: null
     packages: []
