@@ -1,7 +1,7 @@
 ---
 pkgbase:
   name: namcap
-  version: 3.5.2-1
+  version: 3.5.2-2
   arch:
     - any
   pkgname:
@@ -31,9 +31,9 @@ repos:
     version: null
     packages: []
   world:
-    version: 3.5.2-1
+    version: 3.5.2-2
     packages:
-      - namcap-3.5.2-1-any.pkg.tar.zst
+      - namcap-3.5.2-2-any.pkg.tar.zst
   lib32-goblins:
     version: null
     packages: []
@@ -52,3 +52,4 @@ repos:
   galaxy:
     version: null
     packages: []
+team: world
