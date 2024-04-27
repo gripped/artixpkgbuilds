@@ -1,18 +1,18 @@
 ---
 pkgbase:
   name: python-openid
-  version: 3.2.0-6
+  version: 3.2.0-7
   arch:
     - any
   pkgname:
     - python-openid
 actions:
-  addRepo: null
-  removeRepo: null
+  addRepo: world
+  removeRepo: world-gremlins
   triggersBuild: false
   triggersRebuild: false
-  triggersRepoAdd: false
-  triggersRepoRemove: false
+  triggersRepoAdd: true
+  triggersRepoRemove: true
   triggersNoCheck: false
 repos:
   system-goblins:
@@ -31,9 +31,9 @@ repos:
     version: null
     packages: []
   world:
-    version: 3.2.0-6
+    version: 3.2.0-7
     packages:
-      - python-openid-3.2.0-6-any.pkg.tar.zst
+      - python-openid-3.2.0-7-any.pkg.tar.zst
   lib32-goblins:
     version: null
     packages: []
@@ -52,3 +52,4 @@ repos:
   galaxy:
     version: null
     packages: []
+team: world
