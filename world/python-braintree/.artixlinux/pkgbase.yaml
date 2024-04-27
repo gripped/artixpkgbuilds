@@ -1,18 +1,18 @@
 ---
 pkgbase:
   name: python-braintree
-  version: 4.28.0-1
+  version: 4.28.0-2
   arch:
     - any
   pkgname:
     - python-braintree
 actions:
   addRepo: world
-  removeRepo: null
-  triggersBuild: true
+  removeRepo: world-gremlins
+  triggersBuild: false
   triggersRebuild: false
   triggersRepoAdd: true
-  triggersRepoRemove: false
+  triggersRepoRemove: true
   triggersNoCheck: false
 repos:
   system-goblins:
@@ -31,9 +31,9 @@ repos:
     version: null
     packages: []
   world:
-    version: 4.28.0-1
+    version: 4.28.0-2
     packages:
-      - python-braintree-4.28.0-1-any.pkg.tar.zst
+      - python-braintree-4.28.0-2-any.pkg.tar.zst
   lib32-goblins:
     version: null
     packages: []
