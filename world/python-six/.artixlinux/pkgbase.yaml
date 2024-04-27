@@ -1,18 +1,18 @@
 ---
 pkgbase:
   name: python-six
-  version: 1.16.0-8
+  version: 1.16.0-9
   arch:
     - any
   pkgname:
     - python-six
 actions:
-  addRepo: null
-  removeRepo: null
+  addRepo: world
+  removeRepo: world-gremlins
   triggersBuild: false
   triggersRebuild: false
-  triggersRepoAdd: false
-  triggersRepoRemove: false
+  triggersRepoAdd: true
+  triggersRepoRemove: true
   triggersNoCheck: false
 repos:
   system-goblins:
@@ -31,9 +31,9 @@ repos:
     version: null
     packages: []
   world:
-    version: 1.16.0-8
+    version: 1.16.0-9
     packages:
-      - python-six-1.16.0-8-any.pkg.tar.zst
+      - python-six-1.16.0-9-any.pkg.tar.zst
   lib32-goblins:
     version: null
     packages: []
@@ -52,3 +52,4 @@ repos:
   galaxy:
     version: null
     packages: []
+team: world
