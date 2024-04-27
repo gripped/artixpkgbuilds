@@ -1,18 +1,18 @@
 ---
 pkgbase:
   name: ninja
-  version: 1.11.1-3
+  version: 1.11.1-4
   arch:
     - x86_64
   pkgname:
     - ninja
 actions:
-  addRepo: null
-  removeRepo: null
+  addRepo: world
+  removeRepo: world-gremlins
   triggersBuild: false
   triggersRebuild: false
-  triggersRepoAdd: false
-  triggersRepoRemove: false
+  triggersRepoAdd: true
+  triggersRepoRemove: true
   triggersNoCheck: false
 repos:
   system-goblins:
@@ -31,9 +31,9 @@ repos:
     version: null
     packages: []
   world:
-    version: 1.11.1-3
+    version: 1.11.1-4
     packages:
-      - ninja-1.11.1-3-x86_64.pkg.tar.zst
+      - ninja-1.11.1-4-x86_64.pkg.tar.zst
   lib32-goblins:
     version: null
     packages: []
@@ -52,3 +52,4 @@ repos:
   galaxy:
     version: null
     packages: []
+team: world
