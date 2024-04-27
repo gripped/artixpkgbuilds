@@ -1,18 +1,18 @@
 ---
 pkgbase:
   name: python-pygdbmi
-  version: 0.11.0.0-3
+  version: 0.11.0.0-4
   arch:
     - any
   pkgname:
     - python-pygdbmi
 actions:
   addRepo: world
-  removeRepo: null
-  triggersBuild: true
+  removeRepo: world-gremlins
+  triggersBuild: false
   triggersRebuild: false
   triggersRepoAdd: true
-  triggersRepoRemove: false
+  triggersRepoRemove: true
   triggersNoCheck: false
 repos:
   system-goblins:
@@ -31,9 +31,9 @@ repos:
     version: null
     packages: []
   world:
-    version: 0.11.0.0-3
+    version: 0.11.0.0-4
     packages:
-      - python-pygdbmi-0.11.0.0-3-any.pkg.tar.zst
+      - python-pygdbmi-0.11.0.0-4-any.pkg.tar.zst
   lib32-goblins:
     version: null
     packages: []
@@ -52,3 +52,4 @@ repos:
   galaxy:
     version: null
     packages: []
+team: world
