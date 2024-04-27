@@ -1,18 +1,18 @@
 ---
 pkgbase:
   name: python-pycparser
-  version: 2.21-5
+  version: 2.22-2
   arch:
     - any
   pkgname:
     - python-pycparser
 actions:
-  addRepo: null
-  removeRepo: null
+  addRepo: world
+  removeRepo: world-gremlins
   triggersBuild: false
   triggersRebuild: false
-  triggersRepoAdd: false
-  triggersRepoRemove: false
+  triggersRepoAdd: true
+  triggersRepoRemove: true
   triggersNoCheck: false
 repos:
   system-goblins:
@@ -31,9 +31,9 @@ repos:
     version: null
     packages: []
   world:
-    version: 2.21-5
+    version: 2.22-2
     packages:
-      - python-pycparser-2.21-5-any.pkg.tar.zst
+      - python-pycparser-2.22-2-any.pkg.tar.zst
   lib32-goblins:
     version: null
     packages: []
@@ -52,3 +52,4 @@ repos:
   galaxy:
     version: null
     packages: []
+team: world
