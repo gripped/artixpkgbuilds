@@ -1,18 +1,18 @@
 ---
 pkgbase:
   name: python-clikit
-  version: 0.6.2-9
+  version: 0.6.2-10
   arch:
     - any
   pkgname:
     - python-clikit
 actions:
-  addRepo: null
-  removeRepo: null
+  addRepo: world
+  removeRepo: world-gremlins
   triggersBuild: false
   triggersRebuild: false
-  triggersRepoAdd: false
-  triggersRepoRemove: false
+  triggersRepoAdd: true
+  triggersRepoRemove: true
   triggersNoCheck: false
 repos:
   system-goblins:
@@ -31,9 +31,9 @@ repos:
     version: null
     packages: []
   world:
-    version: 0.6.2-9
+    version: 0.6.2-10
     packages:
-      - python-clikit-0.6.2-9-any.pkg.tar.zst
+      - python-clikit-0.6.2-10-any.pkg.tar.zst
   lib32-goblins:
     version: null
     packages: []
@@ -52,3 +52,4 @@ repos:
   galaxy:
     version: null
     packages: []
+team: world
