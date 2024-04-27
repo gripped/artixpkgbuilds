@@ -1,8 +1,8 @@
-# Maintainer: Qontinuum <qontinuum@artixlinux.org>
+# Maintainer: Felix Yan <felixonmars@archlinux.org>
 
 pkgname=python-case
 pkgver=1.5.3
-pkgrel=10
+pkgrel=11
 pkgdesc="Python unittest Utilities"
 arch=('any')
 license=('BSD')
