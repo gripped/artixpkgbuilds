@@ -1,18 +1,18 @@
 ---
 pkgbase:
   name: python-cfn-lint
-  version: 0.86.0-1
+  version: 0.86.2-1
   arch:
     - any
   pkgname:
     - python-cfn-lint
 actions:
   addRepo: world
-  removeRepo: null
-  triggersBuild: true
+  removeRepo: world-gremlins
+  triggersBuild: false
   triggersRebuild: false
   triggersRepoAdd: true
-  triggersRepoRemove: false
+  triggersRepoRemove: true
   triggersNoCheck: false
 repos:
   system-goblins:
@@ -31,9 +31,9 @@ repos:
     version: null
     packages: []
   world:
-    version: 0.86.0-1
+    version: 0.86.2-1
     packages:
-      - python-cfn-lint-0.86.0-1-any.pkg.tar.zst
+      - python-cfn-lint-0.86.2-1-any.pkg.tar.zst
   lib32-goblins:
     version: null
     packages: []
@@ -52,12 +52,4 @@ repos:
   galaxy:
     version: null
     packages: []
-  asteroids-goblins:
-    version: null
-    packages: []
-  asteroids-gremlins:
-    version: null
-    packages: []
-  asteroids:
-    version: null
-    packages: []
+team: world
