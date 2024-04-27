@@ -1,18 +1,18 @@
 ---
 pkgbase:
   name: python-cycler
-  version: 0.12.1-1
+  version: 0.12.1-2
   arch:
     - any
   pkgname:
     - python-cycler
 actions:
   addRepo: world
-  removeRepo: null
-  triggersBuild: true
+  removeRepo: world-gremlins
+  triggersBuild: false
   triggersRebuild: false
   triggersRepoAdd: true
-  triggersRepoRemove: false
+  triggersRepoRemove: true
   triggersNoCheck: false
 repos:
   system-goblins:
@@ -31,9 +31,9 @@ repos:
     version: null
     packages: []
   world:
-    version: 0.12.1-1
+    version: 0.12.1-2
     packages:
-      - python-cycler-0.12.1-1-any.pkg.tar.zst
+      - python-cycler-0.12.1-2-any.pkg.tar.zst
   lib32-goblins:
     version: null
     packages: []
@@ -52,3 +52,4 @@ repos:
   galaxy:
     version: null
     packages: []
+team: world
