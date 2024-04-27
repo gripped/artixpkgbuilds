@@ -1,14 +1,14 @@
 ---
 pkgbase:
   name: pysolfc
-  version: 2.21.0-1
+  version: 2.21.0-2
   arch:
     - any
   pkgname:
     - pysolfc
 actions:
   addRepo: galaxy
-  removeRepo: world
+  removeRepo: galaxy-gremlins
   triggersBuild: false
   triggersRebuild: false
   triggersRepoAdd: true
@@ -49,6 +49,7 @@ repos:
     version: null
     packages: []
   galaxy:
-    version: 2.21.0-1
+    version: 2.21.0-2
     packages:
-      - pysolfc-2.21.0-1-any.pkg.tar.zst
+      - pysolfc-2.21.0-2-any.pkg.tar.zst
+team: galaxy
