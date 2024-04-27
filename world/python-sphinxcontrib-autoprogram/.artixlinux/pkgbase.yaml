@@ -1,18 +1,18 @@
 ---
 pkgbase:
   name: python-sphinxcontrib-autoprogram
-  version: 0.1.9-1
+  version: 0.1.9-2
   arch:
     - any
   pkgname:
     - python-sphinxcontrib-autoprogram
 actions:
   addRepo: world
-  removeRepo: null
-  triggersBuild: true
+  removeRepo: world-gremlins
+  triggersBuild: false
   triggersRebuild: false
   triggersRepoAdd: true
-  triggersRepoRemove: false
+  triggersRepoRemove: true
   triggersNoCheck: false
 repos:
   system-goblins:
@@ -31,9 +31,9 @@ repos:
     version: null
     packages: []
   world:
-    version: 0.1.9-1
+    version: 0.1.9-2
     packages:
-      - python-sphinxcontrib-autoprogram-0.1.9-1-any.pkg.tar.zst
+      - python-sphinxcontrib-autoprogram-0.1.9-2-any.pkg.tar.zst
   lib32-goblins:
     version: null
     packages: []
@@ -52,12 +52,4 @@ repos:
   galaxy:
     version: null
     packages: []
-  asteroids-goblins:
-    version: null
-    packages: []
-  asteroids-gremlins:
-    version: null
-    packages: []
-  asteroids:
-    version: null
-    packages: []
+team: world
