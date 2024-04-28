@@ -2,7 +2,7 @@
 team: galaxy
 pkgbase:
   name: kotatogram-desktop-git
-  version: 1.4.14.r4897.g0c4ceba-2
+  version: 1.4.14.r4897.g0c4ceba-3
   arch:
     - x86_64
   pkgname:
@@ -50,6 +50,6 @@ repos:
     version: null
     packages: []
   galaxy:
-    version: 1.4.14.r4897.g0c4ceba-2
+    version: 1.4.14.r4897.g0c4ceba-3
     packages:
-      - kotatogram-desktop-git-1.4.14.r4897.g0c4ceba-2-x86_64.pkg.tar.zst
+      - kotatogram-desktop-git-1.4.14.r4897.g0c4ceba-3-x86_64.pkg.tar.zst

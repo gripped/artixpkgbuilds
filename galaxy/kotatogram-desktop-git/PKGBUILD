@@ -17,7 +17,7 @@ unset _pkgtype
 _pkgname="kotatogram-desktop"
 pkgname="$_pkgname${_pkgtype:-}"
 pkgver=1.4.14.r4897.g0c4ceba
-pkgrel=2
+pkgrel=3
 pkgdesc='Experimental fork of Telegram Desktop'
 url="https://github.com/kotatogram/kotatogram-desktop"
 license=('GPL-3.0-only')
