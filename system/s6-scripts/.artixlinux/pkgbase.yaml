@@ -1,7 +1,7 @@
 ---
 pkgbase:
   name: s6-scripts
-  version: 20231229-1
+  version: 20240429-1
   arch:
     - any
   pkgname:
@@ -22,9 +22,9 @@ repos:
     version: null
     packages: []
   system:
-    version: 20231229-1
+    version: 20240429-1
     packages:
-      - s6-scripts-20231229-1-any.pkg.tar.zst
+      - s6-scripts-20240429-1-any.pkg.tar.zst
   world-goblins:
     version: null
     packages: []
@@ -52,3 +52,4 @@ repos:
   galaxy:
     version: null
     packages: []
+team: system
