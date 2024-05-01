@@ -1,7 +1,7 @@
 ---
 pkgbase:
   name: db5.3
-  version: 5.3.28-4
+  version: 5.3.28-5
   arch:
     - x86_64
   pkgname:
@@ -22,9 +22,9 @@ repos:
     version: null
     packages: []
   system:
-    version: 5.3.28-4
+    version: 5.3.28-5
     packages:
-      - db5.3-5.3.28-4-x86_64.pkg.tar.zst
+      - db5.3-5.3.28-5-x86_64.pkg.tar.zst
   world-goblins:
     version: null
     packages: []
@@ -52,3 +52,4 @@ repos:
   galaxy:
     version: null
     packages: []
+team: system
