@@ -1,7 +1,7 @@
 ---
 pkgbase:
   name: avogadrolibs
-  version: 1.99.0-2
+  version: 1.99.0-4
   arch:
     - x86_64
   pkgname:
@@ -26,16 +26,18 @@ repos:
     version: null
     packages: []
   world-goblins:
-    version: null
-    packages: []
+    version: 1.99.0-4
+    packages:
+      - avogadrolibs-1.99.0-4-x86_64.pkg.tar.zst
+      - avogadrolibs-qt5-1.99.0-4-x86_64.pkg.tar.zst
   world-gremlins:
     version: null
     packages: []
   world:
-    version: 1.99.0-2
+    version: 1.99.0-3
     packages:
-      - avogadrolibs-1.99.0-2-x86_64.pkg.tar.zst
-      - avogadrolibs-qt5-1.99.0-2-x86_64.pkg.tar.zst
+      - avogadrolibs-1.99.0-3-x86_64.pkg.tar.zst
+      - avogadrolibs-qt5-1.99.0-3-x86_64.pkg.tar.zst
   lib32-goblins:
     version: null
     packages: []
