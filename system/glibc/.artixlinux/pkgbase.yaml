@@ -1,7 +1,7 @@
 ---
 pkgbase:
   name: glibc
-  version: 2.39-2
+  version: 2.39-3
   arch:
     - x86_64
   pkgname:
@@ -24,11 +24,11 @@ repos:
     version: null
     packages: []
   system:
-    version: 2.39-2
+    version: 2.39-3
     packages:
-      - glibc-2.39-2-x86_64.pkg.tar.zst
-      - lib32-glibc-2.39-2-x86_64.pkg.tar.zst
-      - glibc-locales-2.39-2-x86_64.pkg.tar.zst
+      - glibc-2.39-3-x86_64.pkg.tar.zst
+      - lib32-glibc-2.39-3-x86_64.pkg.tar.zst
+      - glibc-locales-2.39-3-x86_64.pkg.tar.zst
   world-goblins:
     version: null
     packages: []
