@@ -1,7 +1,7 @@
 ---
 pkgbase:
   name: fpc-src
-  version: 3.2.2-3
+  version: 3.2.2-4
   arch:
     - any
   pkgname:
@@ -49,6 +49,7 @@ repos:
     version: null
     packages: []
   galaxy:
-    version: 3.2.2-3
+    version: 3.2.2-4
     packages:
-      - fpc-src-3.2.2-3-any.pkg.tar.zst
+      - fpc-src-3.2.2-4-any.pkg.tar.zst
+team: galaxy
