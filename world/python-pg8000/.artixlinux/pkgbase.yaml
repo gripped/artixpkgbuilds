@@ -1,18 +1,18 @@
 ---
 pkgbase:
   name: python-pg8000
-  version: 1.30.4-2
+  version: 1.31.2-1
   arch:
     - any
   pkgname:
     - python-pg8000
 actions:
   addRepo: world
-  removeRepo: world-gremlins
-  triggersBuild: false
+  removeRepo: null
+  triggersBuild: true
   triggersRebuild: false
   triggersRepoAdd: true
-  triggersRepoRemove: true
+  triggersRepoRemove: false
   triggersNoCheck: false
 repos:
   system-goblins:
@@ -31,9 +31,9 @@ repos:
     version: null
     packages: []
   world:
-    version: 1.30.4-2
+    version: 1.31.2-1
     packages:
-      - python-pg8000-1.30.4-2-any.pkg.tar.zst
+      - python-pg8000-1.31.2-1-any.pkg.tar.zst
   lib32-goblins:
     version: null
     packages: []
