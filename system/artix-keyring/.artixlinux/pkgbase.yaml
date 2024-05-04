@@ -1,7 +1,7 @@
 ---
 pkgbase:
   name: artix-keyring
-  version: 20220901-2
+  version: 20240425-2
   arch:
     - any
   pkgname:
@@ -22,9 +22,9 @@ repos:
     version: null
     packages: []
   system:
-    version: 20220901-2
+    version: 20240425-2
     packages:
-      - artix-keyring-20220901-2-any.pkg.tar.zst
+      - artix-keyring-20240425-2-any.pkg.tar.zst
   world-goblins:
     version: null
     packages: []
@@ -52,3 +52,4 @@ repos:
   galaxy:
     version: null
     packages: []
+team: system
