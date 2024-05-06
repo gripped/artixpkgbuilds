@@ -1,18 +1,18 @@
 ---
 pkgbase:
   name: python-ipdb
-  version: 0.13.13-3
+  version: 0.13.13-4
   arch:
     - any
   pkgname:
     - python-ipdb
 actions:
   addRepo: world
-  removeRepo: world-gremlins
-  triggersBuild: false
+  removeRepo: null
+  triggersBuild: true
   triggersRebuild: false
   triggersRepoAdd: true
-  triggersRepoRemove: true
+  triggersRepoRemove: false
   triggersNoCheck: false
 repos:
   system-goblins:
@@ -31,9 +31,9 @@ repos:
     version: null
     packages: []
   world:
-    version: 0.13.13-3
+    version: 0.13.13-4
     packages:
-      - python-ipdb-0.13.13-3-any.pkg.tar.zst
+      - python-ipdb-0.13.13-4-any.pkg.tar.zst
   lib32-goblins:
     version: null
     packages: []
