@@ -1,7 +1,7 @@
 ---
 pkgbase:
   name: gcc
-  version: 13.2.1-6
+  version: 14.1.1+r1+g43b730b9134a-1
   arch:
     - x86_64
   pkgname:
@@ -14,6 +14,7 @@ pkgbase:
     - gcc-go
     - gcc-m2
     - gcc-objc
+    - gcc-rust
     - lto-dump
     - libgccjit
 actions:
@@ -32,19 +33,20 @@ repos:
     version: null
     packages: []
   system:
-    version: 13.2.1-6
+    version: 14.1.1+r1+g43b730b9134a-1
     packages:
-      - gcc-13.2.1-6-x86_64.pkg.tar.zst
-      - gcc-libs-13.2.1-6-x86_64.pkg.tar.zst
-      - lib32-gcc-libs-13.2.1-6-x86_64.pkg.tar.zst
-      - gcc-ada-13.2.1-6-x86_64.pkg.tar.zst
-      - gcc-d-13.2.1-6-x86_64.pkg.tar.zst
-      - gcc-fortran-13.2.1-6-x86_64.pkg.tar.zst
-      - gcc-go-13.2.1-6-x86_64.pkg.tar.zst
-      - gcc-m2-13.2.1-6-x86_64.pkg.tar.zst
-      - gcc-objc-13.2.1-6-x86_64.pkg.tar.zst
-      - lto-dump-13.2.1-6-x86_64.pkg.tar.zst
-      - libgccjit-13.2.1-6-x86_64.pkg.tar.zst
+      - gcc-14.1.1+r1+g43b730b9134a-1-x86_64.pkg.tar.zst
+      - gcc-libs-14.1.1+r1+g43b730b9134a-1-x86_64.pkg.tar.zst
+      - lib32-gcc-libs-14.1.1+r1+g43b730b9134a-1-x86_64.pkg.tar.zst
+      - gcc-ada-14.1.1+r1+g43b730b9134a-1-x86_64.pkg.tar.zst
+      - gcc-d-14.1.1+r1+g43b730b9134a-1-x86_64.pkg.tar.zst
+      - gcc-fortran-14.1.1+r1+g43b730b9134a-1-x86_64.pkg.tar.zst
+      - gcc-go-14.1.1+r1+g43b730b9134a-1-x86_64.pkg.tar.zst
+      - gcc-m2-14.1.1+r1+g43b730b9134a-1-x86_64.pkg.tar.zst
+      - gcc-objc-14.1.1+r1+g43b730b9134a-1-x86_64.pkg.tar.zst
+      - gcc-rust-14.1.1+r1+g43b730b9134a-1-x86_64.pkg.tar.zst
+      - lto-dump-14.1.1+r1+g43b730b9134a-1-x86_64.pkg.tar.zst
+      - libgccjit-14.1.1+r1+g43b730b9134a-1-x86_64.pkg.tar.zst
   world-goblins:
     version: null
     packages: []
