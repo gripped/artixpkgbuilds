@@ -1,9 +1,9 @@
 ---
 pkgbase:
   name: linux-api-headers
-  version: 6.7-1
+  version: 6.8-1
   arch:
-    - any
+    - x86_64
   pkgname:
     - linux-api-headers
 actions:
@@ -22,9 +22,9 @@ repos:
     version: null
     packages: []
   system:
-    version: 6.7-1
+    version: 6.8-1
     packages:
-      - linux-api-headers-6.7-1-any.pkg.tar.zst
+      - linux-api-headers-6.8-1-x86_64.pkg.tar.zst
   world-goblins:
     version: null
     packages: []
@@ -52,3 +52,4 @@ repos:
   galaxy:
     version: null
     packages: []
+team: system
