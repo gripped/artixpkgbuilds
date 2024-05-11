@@ -1,7 +1,7 @@
 ---
 pkgbase:
   name: libpsl
-  version: 0.21.5-1
+  version: 0.21.5-2
   arch:
     - x86_64
   pkgname:
@@ -22,9 +22,9 @@ repos:
     version: null
     packages: []
   system:
-    version: 0.21.5-1
+    version: 0.21.5-2
     packages:
-      - libpsl-0.21.5-1-x86_64.pkg.tar.zst
+      - libpsl-0.21.5-2-x86_64.pkg.tar.zst
   world-goblins:
     version: null
     packages: []
