@@ -1,7 +1,7 @@
 ---
 pkgbase:
   name: libtool
-  version: 2.4.7+83+g7b091831-1
+  version: 2.5.0+1+g38c166c8-1
   arch:
     - x86_64
   pkgname:
@@ -22,9 +22,9 @@ repos:
     version: null
     packages: []
   system:
-    version: 2.4.7+83+g7b091831-1
+    version: 2.5.0+1+g38c166c8-1
     packages:
-      - libtool-2.4.7+83+g7b091831-1-x86_64.pkg.tar.zst
+      - libtool-2.5.0+1+g38c166c8-1-x86_64.pkg.tar.zst
   world-goblins:
     version: null
     packages: []
