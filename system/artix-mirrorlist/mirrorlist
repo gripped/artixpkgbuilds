@@ -1,6 +1,6 @@
 ##
 ## Artix Linux repository mirrorlist
-## Generated on 2024-04-02
+## Generated on 2024-05-08
 ##
 
 # Artix mirrors
@@ -44,6 +44,8 @@ Server = https://mirrors.qontinuum.space/artixlinux/$repo/os/$arch
 Server = https://artix.sakamoto.pl/$repo/os/$arch
 # Romania
 Server = https://hitman.go.ro/mirror/artix-linux/$repo/os/$arch
+# Russia
+Server = https://mirror.infirium.ru/artixlinux/$repo/os/$arch
 # Sweden
 Server = https://ftp.ludd.ltu.se/mirrors/artix/$repo/os/$arch
 # Switzerland
@@ -74,7 +76,7 @@ Server = https://mirrors.tuna.tsinghua.edu.cn/artixlinux/$repo/os/$arch
 Server = https://mirrors.aliyun.com/artixlinux/$repo/os/$arch
 Server = https://mirror.nju.edu.cn/artixlinux/$repo/os/$arch
 # India
-Server = https://mirror.albony.xyz/artix/$repo/os/$arch
+Server = https://mirror.albony.in/artix/$repo/os/$arch
 # Korea, Republic of
 Server = https://mirror.funami.tech/artix/$repo/os/$arch
 # Singapore
