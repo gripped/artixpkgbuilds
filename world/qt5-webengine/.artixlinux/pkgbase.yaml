@@ -1,18 +1,18 @@
 ---
 pkgbase:
   name: qt5-webengine
-  version: 5.15.16-6
+  version: 5.15.16-8
   arch:
     - x86_64
   pkgname:
     - qt5-webengine
 actions:
   addRepo: world
-  removeRepo: null
-  triggersBuild: true
+  removeRepo: world-gremlins
+  triggersBuild: false
   triggersRebuild: false
   triggersRepoAdd: true
-  triggersRepoRemove: false
+  triggersRepoRemove: true
   triggersNoCheck: false
 repos:
   system-goblins:
@@ -31,9 +31,9 @@ repos:
     version: null
     packages: []
   world:
-    version: 5.15.16-6
+    version: 5.15.16-8
     packages:
-      - qt5-webengine-5.15.16-6-x86_64.pkg.tar.zst
+      - qt5-webengine-5.15.16-8-x86_64.pkg.tar.zst
   lib32-goblins:
     version: null
     packages: []
