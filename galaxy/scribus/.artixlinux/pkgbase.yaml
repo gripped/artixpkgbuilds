@@ -43,14 +43,13 @@ repos:
     version: null
     packages: []
   galaxy-goblins:
-    version: 1.6.1-5
-    packages:
-      - scribus-1.6.1-5-x86_64.pkg.tar.zst
+    version: null
+    packages: []
   galaxy-gremlins:
     version: null
     packages: []
   galaxy:
-    version: 1.6.1-4
+    version: 1.6.1-5
     packages:
-      - scribus-1.6.1-4-x86_64.pkg.tar.zst
+      - scribus-1.6.1-5-x86_64.pkg.tar.zst
 team: galaxy
