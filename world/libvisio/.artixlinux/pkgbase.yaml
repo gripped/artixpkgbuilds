@@ -1,7 +1,7 @@
 ---
 pkgbase:
   name: libvisio
-  version: 0.1.7-10
+  version: 0.1.7-11
   arch:
     - x86_64
   pkgname:
@@ -31,9 +31,9 @@ repos:
     version: null
     packages: []
   world:
-    version: 0.1.7-10
+    version: 0.1.7-11
     packages:
-      - libvisio-0.1.7-10-x86_64.pkg.tar.zst
+      - libvisio-0.1.7-11-x86_64.pkg.tar.zst
   lib32-goblins:
     version: null
     packages: []
@@ -52,3 +52,4 @@ repos:
   galaxy:
     version: null
     packages: []
+team: world
