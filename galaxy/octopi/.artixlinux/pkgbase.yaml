@@ -1,7 +1,7 @@
 ---
 pkgbase:
   name: octopi
-  version: 0.15.0-14
+  version: 0.16.0-2
   arch:
     - x86_64
   pkgname:
@@ -50,7 +50,8 @@ repos:
     version: null
     packages: []
   galaxy:
-    version: 0.15.0-14
+    version: 0.16.0-2
     packages:
-      - octopi-0.15.0-14-x86_64.pkg.tar.zst
-      - octopi-notifier-frameworks-0.15.0-14-x86_64.pkg.tar.zst
+      - octopi-0.16.0-2-x86_64.pkg.tar.zst
+      - octopi-notifier-frameworks-0.16.0-2-x86_64.pkg.tar.zst
+team: galaxy
