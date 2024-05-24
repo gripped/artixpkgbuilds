@@ -1,7 +1,7 @@
 ---
 pkgbase:
   name: ncurses
-  version: 6.4_20230520-3
+  version: 6.5-2
   arch:
     - x86_64
   pkgname:
@@ -22,9 +22,9 @@ repos:
     version: null
     packages: []
   system:
-    version: 6.4_20230520-3
+    version: 6.5-2
     packages:
-      - ncurses-6.4_20230520-3-x86_64.pkg.tar.zst
+      - ncurses-6.5-2-x86_64.pkg.tar.zst
   world-goblins:
     version: null
     packages: []
