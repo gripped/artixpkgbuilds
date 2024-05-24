@@ -2,18 +2,18 @@
 team: galaxy
 pkgbase:
   name: qt-sudo
-  version: 1.0-1
+  version: 2.0.0-1
   arch:
     - x86_64
   pkgname:
     - qt-sudo
 actions:
   addRepo: galaxy
-  removeRepo: null
-  triggersBuild: true
+  removeRepo: galaxy-gremlins
+  triggersBuild: false
   triggersRebuild: false
   triggersRepoAdd: true
-  triggersRepoRemove: false
+  triggersRepoRemove: true
   triggersNoCheck: false
 repos:
   system-goblins:
@@ -50,6 +50,6 @@ repos:
     version: null
     packages: []
   galaxy:
-    version: 1.0-1
+    version: 2.0.0-1
     packages:
-      - qt-sudo-1.0-1-x86_64.pkg.tar.zst
+      - qt-sudo-2.0.0-1-x86_64.pkg.tar.zst
