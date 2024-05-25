@@ -1,7 +1,7 @@
 ---
 pkgbase:
   name: opensips-dinit
-  version: 20230907-1
+  version: 20230907-2
   arch:
     - any
   pkgname:
@@ -31,9 +31,9 @@ repos:
     version: null
     packages: []
   world:
-    version: 20230907-1
+    version: 20230907-2
     packages:
-      - opensips-dinit-20230907-1-any.pkg.tar.zst
+      - opensips-dinit-20230907-2-any.pkg.tar.zst
   lib32-goblins:
     version: null
     packages: []
@@ -52,3 +52,4 @@ repos:
   galaxy:
     version: null
     packages: []
+team: world
