@@ -1,3 +1,0 @@
-type       = scripted
-command    = /usr/bin/install -d -o ldap -g ldap /run/openldap
-depends-on = pseudofs
