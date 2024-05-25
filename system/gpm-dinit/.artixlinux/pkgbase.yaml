@@ -1,7 +1,7 @@
 ---
 pkgbase:
   name: gpm-dinit
-  version: 20211029-2
+  version: 20211029-3
   arch:
     - any
   pkgname:
@@ -22,9 +22,9 @@ repos:
     version: null
     packages: []
   system:
-    version: 20211029-2
+    version: 20211029-3
     packages:
-      - gpm-dinit-20211029-2-any.pkg.tar.zst
+      - gpm-dinit-20211029-3-any.pkg.tar.zst
   world-goblins:
     version: null
     packages: []
@@ -52,3 +52,4 @@ repos:
   galaxy:
     version: null
     packages: []
+team: system
