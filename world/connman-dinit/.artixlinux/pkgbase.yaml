@@ -1,7 +1,7 @@
 ---
 pkgbase:
   name: connman-dinit
-  version: 20211026-2
+  version: 20211026-3
   arch:
     - any
   pkgname:
@@ -31,9 +31,9 @@ repos:
     version: null
     packages: []
   world:
-    version: 20211026-2
+    version: 20211026-3
     packages:
-      - connman-dinit-20211026-2-any.pkg.tar.zst
+      - connman-dinit-20211026-3-any.pkg.tar.zst
   lib32-goblins:
     version: null
     packages: []
@@ -52,3 +52,4 @@ repos:
   galaxy:
     version: null
     packages: []
+team: world
