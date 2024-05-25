@@ -1,7 +1,7 @@
 ---
 pkgbase:
   name: usbguard-dinit
-  version: 20211030-3
+  version: 20211030-4
   arch:
     - any
   pkgname:
@@ -31,9 +31,9 @@ repos:
     version: null
     packages: []
   world:
-    version: 20211030-3
+    version: 20211030-4
     packages:
-      - usbguard-dinit-20211030-3-any.pkg.tar.zst
+      - usbguard-dinit-20211030-4-any.pkg.tar.zst
   lib32-goblins:
     version: null
     packages: []
@@ -52,3 +52,4 @@ repos:
   galaxy:
     version: null
     packages: []
+team: world
