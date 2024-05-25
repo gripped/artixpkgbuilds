@@ -1,14 +1,14 @@
 ---
 pkgbase:
   name: xl2tpd-dinit
-  version: 20211103-3
+  version: 20211103-4
   arch:
     - any
   pkgname:
     - xl2tpd-dinit
 actions:
   addRepo: world
-  removeRepo: world-goblins
+  removeRepo: world-gremlins
   triggersBuild: false
   triggersRebuild: false
   triggersRepoAdd: true
@@ -31,9 +31,9 @@ repos:
     version: null
     packages: []
   world:
-    version: 20211103-3
+    version: 20211103-4
     packages:
-      - xl2tpd-dinit-20211103-3-any.pkg.tar.zst
+      - xl2tpd-dinit-20211103-4-any.pkg.tar.zst
   lib32-goblins:
     version: null
     packages: []
@@ -52,3 +52,4 @@ repos:
   galaxy:
     version: null
     packages: []
+team: world
