@@ -1,7 +1,7 @@
 ---
 pkgbase:
   name: openssh-dinit
-  version: 20230906-2
+  version: 20230906-3
   arch:
     - any
   pkgname:
@@ -22,9 +22,9 @@ repos:
     version: null
     packages: []
   system:
-    version: 20230906-2
+    version: 20230906-3
     packages:
-      - openssh-dinit-20230906-2-any.pkg.tar.zst
+      - openssh-dinit-20230906-3-any.pkg.tar.zst
   world-goblins:
     version: null
     packages: []
@@ -52,3 +52,4 @@ repos:
   galaxy:
     version: null
     packages: []
+team: system
