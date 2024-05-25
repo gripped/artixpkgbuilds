@@ -1,7 +1,7 @@
 ---
 pkgbase:
   name: rpcbind-dinit
-  version: 20211029-4
+  version: 20211029-5
   arch:
     - any
   pkgname:
@@ -22,9 +22,9 @@ repos:
     version: null
     packages: []
   system:
-    version: 20211029-4
+    version: 20211029-5
     packages:
-      - rpcbind-dinit-20211029-4-any.pkg.tar.zst
+      - rpcbind-dinit-20211029-5-any.pkg.tar.zst
   world-goblins:
     version: null
     packages: []
@@ -52,3 +52,4 @@ repos:
   galaxy:
     version: null
     packages: []
+team: system
