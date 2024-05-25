@@ -1,7 +1,7 @@
 ---
 pkgbase:
   name: libvirt-dinit
-  version: 20211102-5
+  version: 20211102-6
   arch:
     - any
   pkgname:
@@ -31,9 +31,9 @@ repos:
     version: null
     packages: []
   world:
-    version: 20211102-5
+    version: 20211102-6
     packages:
-      - libvirt-dinit-20211102-5-any.pkg.tar.zst
+      - libvirt-dinit-20211102-6-any.pkg.tar.zst
   lib32-goblins:
     version: null
     packages: []
@@ -52,3 +52,4 @@ repos:
   galaxy:
     version: null
     packages: []
+team: world
