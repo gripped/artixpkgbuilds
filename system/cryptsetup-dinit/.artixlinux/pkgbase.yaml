@@ -1,7 +1,7 @@
 ---
 pkgbase:
   name: cryptsetup-dinit
-  version: 20230924-2
+  version: 20240522-1
   arch:
     - any
   pkgname:
@@ -22,9 +22,9 @@ repos:
     version: null
     packages: []
   system:
-    version: 20230924-2
+    version: 20240522-1
     packages:
-      - cryptsetup-dinit-20230924-2-any.pkg.tar.zst
+      - cryptsetup-dinit-20240522-1-any.pkg.tar.zst
   world-goblins:
     version: null
     packages: []
@@ -52,3 +52,4 @@ repos:
   galaxy:
     version: null
     packages: []
+team: system
