@@ -1,4 +1,5 @@
 type            = process
 command         = /usr/bin/tinydns
 smooth-recovery = true
-waits-for       = loginready
+depends-on      = network.target
+before          = login.target
