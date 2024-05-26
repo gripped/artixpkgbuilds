@@ -2,7 +2,7 @@
 team: galaxy
 pkgbase:
   name: qt-sudo
-  version: 2.0.0-1
+  version: 2.0.1-1
   arch:
     - x86_64
   pkgname:
@@ -50,6 +50,6 @@ repos:
     version: null
     packages: []
   galaxy:
-    version: 2.0.0-1
+    version: 2.0.1-1
     packages:
-      - qt-sudo-2.0.0-1-x86_64.pkg.tar.zst
+      - qt-sudo-2.0.1-1-x86_64.pkg.tar.zst
