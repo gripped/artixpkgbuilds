@@ -1,7 +1,7 @@
 ---
 pkgbase:
   name: elogind-dinit
-  version: 20240421-5
+  version: 20240527-1
   arch:
     - any
   pkgname:
@@ -22,9 +22,9 @@ repos:
     version: null
     packages: []
   system:
-    version: 20240421-5
+    version: 20240527-1
     packages:
-      - elogind-dinit-20240421-5-any.pkg.tar.zst
+      - elogind-dinit-20240527-1-any.pkg.tar.zst
   world-goblins:
     version: null
     packages: []
