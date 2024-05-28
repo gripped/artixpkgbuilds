@@ -1,7 +1,7 @@
 ---
 pkgbase:
   name: dinit-rc
-  version: 0.3.3-1
+  version: 0.3.4-1
   arch:
     - x86_64
   pkgname:
@@ -22,9 +22,9 @@ repos:
     version: null
     packages: []
   system:
-    version: 0.3.3-1
+    version: 0.3.4-1
     packages:
-      - dinit-rc-0.3.3-1-x86_64.pkg.tar.zst
+      - dinit-rc-0.3.4-1-x86_64.pkg.tar.zst
   world-goblins:
     version: null
     packages: []
