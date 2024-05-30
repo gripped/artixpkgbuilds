@@ -1,0 +1,20 @@
+# Contributor: Muhammad Herdiansyah <koni@artixlinux.org>
+# Contributor (the wrapper script itself): Daniel "q66" Kolesa <q66@chimera-linux.org>
+
+pkgname=dbus-dinit-user
+pkgver=20230929
+pkgrel=2
+pkgdesc="dinit service scripts for dbus"
+arch=('any')
+url="https://artixlinux.org"
+license=('BSD')
+depends=('dbus' 'dinit-base')
+groups=('turnstile-experimental')
+source=("dbus.user" "dbus.script")
+sha256sums=('bfbca3e14eb60a046baadecd6dff0ee372427a863482b9d4100d57f46cbb6e1a'
+            '6b176d6d078d643ace03008f02b07bcc57367417f1ca808c3cb9c1e954e74d98')
+
+package() {
+    install -Dm644 dbus.user   "$pkgdir/etc/dinit.d/user/dbus"
+    install -Dm755 dbus.script "$pkgdir/usr/lib/dinit/user/dbus"
+}
