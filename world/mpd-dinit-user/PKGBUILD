@@ -1,0 +1,17 @@
+# Contributor: Muhammad Herdiansyah <koni@artixlinux.org>
+
+pkgname=mpd-dinit-user
+pkgver=20230929
+pkgrel=2
+pkgdesc="dinit service scripts for mpd"
+arch=('any')
+url="https://artixlinux.org"
+license=('BSD')
+groups=('turnstile-experimental')
+depends=('mpd' 'dinit-base')
+source=("mpd.user")
+sha256sums=('9ad1f01f62078e195d03f8c658f87b7b284016fd5177aaacba21de6232265038')
+
+package() {
+    install -Dm644 mpd.user "$pkgdir/etc/dinit.d/user/mpd"
+}
