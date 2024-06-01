@@ -1,18 +1,18 @@
 ---
 pkgbase:
   name: ocaml-findlib
-  version: 1.9.6-6
+  version: 1.9.6-7
   arch:
     - x86_64
   pkgname:
     - ocaml-findlib
 actions:
   addRepo: world
-  removeRepo: null
-  triggersBuild: true
+  removeRepo: world-goblins
+  triggersBuild: false
   triggersRebuild: false
   triggersRepoAdd: true
-  triggersRepoRemove: false
+  triggersRepoRemove: true
   triggersNoCheck: false
 repos:
   system-goblins:
@@ -31,9 +31,9 @@ repos:
     version: null
     packages: []
   world:
-    version: 1.9.6-6
+    version: 1.9.6-7
     packages:
-      - ocaml-findlib-1.9.6-6-x86_64.pkg.tar.zst
+      - ocaml-findlib-1.9.6-7-x86_64.pkg.tar.zst
   lib32-goblins:
     version: null
     packages: []
