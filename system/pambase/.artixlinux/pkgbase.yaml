@@ -1,7 +1,7 @@
 ---
 pkgbase:
   name: pambase
-  version: 20230918-1
+  version: 20230918-2
   arch:
     - any
   pkgname:
@@ -22,9 +22,9 @@ repos:
     version: null
     packages: []
   system:
-    version: 20230918-1
+    version: 20230918-2
     packages:
-      - pambase-20230918-1-any.pkg.tar.zst
+      - pambase-20230918-2-any.pkg.tar.zst
   world-goblins:
     version: null
     packages: []
@@ -52,3 +52,4 @@ repos:
   galaxy:
     version: null
     packages: []
+team: system
