@@ -1,7 +1,7 @@
 ---
 pkgbase:
   name: dbus-dinit
-  version: 20240610-1
+  version: 20240610-2
   arch:
     - any
   pkgname:
@@ -23,10 +23,10 @@ repos:
     version: null
     packages: []
   system:
-    version: 20240610-1
+    version: 20240610-2
     packages:
-      - dbus-dinit-20240610-1-any.pkg.tar.zst
-      - dbus-dinit-user-20240610-1-any.pkg.tar.zst
+      - dbus-dinit-20240610-2-any.pkg.tar.zst
+      - dbus-dinit-user-20240610-2-any.pkg.tar.zst
   world-goblins:
     version: null
     packages: []
