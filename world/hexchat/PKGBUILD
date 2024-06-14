@@ -13,7 +13,7 @@ url='https://hexchat.github.io/'
 license=('GPL-2.0-or-later')
 depends=('dbus-glib' 'desktop-file-utils' 'gdk-pixbuf2' 'glib2' 'gtk2'
          'libcanberra' 'openssl' 'pango' 'pciutils')
-makedepends=('git' 'intltool' 'iso-codes' 'lua' 'meson' 'perl' 'python-cffi' 'python-setuptools')
+makedepends=('git' 'intltool' 'iso-codes' 'lua' 'meson' 'perl' 'python-cffi' 'python-setuptools' 'glib2-devel')
 optdepends=('enchant: Spell check'
             'iso-codes: Display language names instead of codes'
             'lua: Lua plugin'
