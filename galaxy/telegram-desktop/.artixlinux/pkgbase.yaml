@@ -43,9 +43,9 @@ repos:
     version: null
     packages: []
   galaxy-goblins:
-    version: 5.1.2-2
+    version: 5.1.5-2
     packages:
-      - telegram-desktop-5.1.2-2-x86_64.pkg.tar.zst
+      - telegram-desktop-5.1.5-2-x86_64.pkg.tar.zst
   galaxy-gremlins:
     version: null
     packages: []
