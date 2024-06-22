@@ -1,18 +1,18 @@
 ---
 pkgbase:
   name: mpv
-  version: 1:0.38.0-4
+  version: 1:0.38.0-5
   arch:
     - x86_64
   pkgname:
     - mpv
 actions:
   addRepo: world
-  removeRepo: null
-  triggersBuild: true
+  removeRepo: world-gremlins
+  triggersBuild: false
   triggersRebuild: false
   triggersRepoAdd: true
-  triggersRepoRemove: false
+  triggersRepoRemove: true
   triggersNoCheck: false
 repos:
   system-goblins:
@@ -25,16 +25,15 @@ repos:
     version: null
     packages: []
   world-goblins:
-    version: 1:0.38.0-3
-    packages:
-      - mpv-1:0.38.0-3-x86_64.pkg.tar.zst
+    version: null
+    packages: []
   world-gremlins:
     version: null
     packages: []
   world:
-    version: 1:0.38.0-4
+    version: 1:0.38.0-5
     packages:
-      - mpv-1:0.38.0-4-x86_64.pkg.tar.zst
+      - mpv-1:0.38.0-5-x86_64.pkg.tar.zst
   lib32-goblins:
     version: null
     packages: []
