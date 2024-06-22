@@ -1,7 +1,7 @@
 ---
 pkgbase:
   name: libopenshot
-  version: 0.3.2-10
+  version: 0.3.2-12
   arch:
     - x86_64
   pkgname:
@@ -43,13 +43,14 @@ repos:
     version: null
     packages: []
   galaxy-goblins:
-    version: null
-    packages: []
+    version: 0.3.2-12
+    packages:
+      - libopenshot-0.3.2-12-x86_64.pkg.tar.zst
   galaxy-gremlins:
     version: null
     packages: []
   galaxy:
-    version: 0.3.2-10
+    version: 0.3.2-11
     packages:
-      - libopenshot-0.3.2-10-x86_64.pkg.tar.zst
+      - libopenshot-0.3.2-11-x86_64.pkg.tar.zst
 team: galaxy
