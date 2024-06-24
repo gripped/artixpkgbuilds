@@ -1,18 +1,18 @@
 ---
 pkgbase:
   name: qt6-translations
-  version: 6.7.1-1.4
+  version: 6.7.2-1
   arch:
     - any
   pkgname:
     - qt6-translations
 actions:
   addRepo: world
-  removeRepo: null
-  triggersBuild: true
+  removeRepo: world-gremlins
+  triggersBuild: false
   triggersRebuild: false
   triggersRepoAdd: true
-  triggersRepoRemove: false
+  triggersRepoRemove: true
   triggersNoCheck: false
 repos:
   system-goblins:
@@ -31,9 +31,9 @@ repos:
     version: null
     packages: []
   world:
-    version: 6.7.1-1.4
+    version: 6.7.2-1
     packages:
-      - qt6-translations-6.7.1-1.4-any.pkg.tar.zst
+      - qt6-translations-6.7.2-1-any.pkg.tar.zst
   lib32-goblins:
     version: null
     packages: []
