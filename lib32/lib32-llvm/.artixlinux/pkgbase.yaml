@@ -1,7 +1,7 @@
 ---
 pkgbase:
   name: lib32-llvm
-  version: 17.0.6-2
+  version: 18.1.8-1
   arch:
     - x86_64
   pkgname:
@@ -41,10 +41,10 @@ repos:
     version: null
     packages: []
   lib32:
-    version: 17.0.6-2
+    version: 18.1.8-1
     packages:
-      - lib32-llvm-17.0.6-2-x86_64.pkg.tar.zst
-      - lib32-llvm-libs-17.0.6-2-x86_64.pkg.tar.zst
+      - lib32-llvm-18.1.8-1-x86_64.pkg.tar.zst
+      - lib32-llvm-libs-18.1.8-1-x86_64.pkg.tar.zst
   galaxy-goblins:
     version: null
     packages: []
@@ -54,12 +54,4 @@ repos:
   galaxy:
     version: null
     packages: []
-  asteroids-goblins:
-    version: null
-    packages: []
-  asteroids-gremlins:
-    version: null
-    packages: []
-  asteroids:
-    version: null
-    packages: []
+team: lib32
