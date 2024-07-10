@@ -1,18 +1,18 @@
 ---
 pkgbase:
   name: dnssec-anchors
-  version: 20190629-3
+  version: 20190629-4
   arch:
     - any
   pkgname:
     - dnssec-anchors
 actions:
-  addRepo: null
-  removeRepo: null
+  addRepo: system
+  removeRepo: system-gremlins
   triggersBuild: false
   triggersRebuild: false
-  triggersRepoAdd: false
-  triggersRepoRemove: false
+  triggersRepoAdd: true
+  triggersRepoRemove: true
   triggersNoCheck: false
 repos:
   system-goblins:
@@ -22,9 +22,9 @@ repos:
     version: null
     packages: []
   system:
-    version: 20190629-3
+    version: 20190629-4
     packages:
-      - dnssec-anchors-20190629-3-any.pkg.tar.zst
+      - dnssec-anchors-20190629-4-any.pkg.tar.zst
   world-goblins:
     version: null
     packages: []
@@ -52,3 +52,4 @@ repos:
   galaxy:
     version: null
     packages: []
+team: system
