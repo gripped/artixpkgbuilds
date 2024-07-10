@@ -1,18 +1,18 @@
 ---
 pkgbase:
   name: dmraid
-  version: 1.0.0.rc16.3-14
+  version: 1.0.0.rc16.3-15
   arch:
     - x86_64
   pkgname:
     - dmraid
 actions:
-  addRepo: null
-  removeRepo: null
+  addRepo: system
+  removeRepo: system-gremlins
   triggersBuild: false
   triggersRebuild: false
-  triggersRepoAdd: false
-  triggersRepoRemove: false
+  triggersRepoAdd: true
+  triggersRepoRemove: true
   triggersNoCheck: false
 repos:
   system-goblins:
@@ -22,9 +22,9 @@ repos:
     version: null
     packages: []
   system:
-    version: 1.0.0.rc16.3-14
+    version: 1.0.0.rc16.3-15
     packages:
-      - dmraid-1.0.0.rc16.3-14-x86_64.pkg.tar.zst
+      - dmraid-1.0.0.rc16.3-15-x86_64.pkg.tar.zst
   world-goblins:
     version: null
     packages: []
@@ -52,3 +52,4 @@ repos:
   galaxy:
     version: null
     packages: []
+team: system
