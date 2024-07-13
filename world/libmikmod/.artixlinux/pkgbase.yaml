@@ -1,18 +1,18 @@
 ---
 pkgbase:
   name: libmikmod
-  version: 3.3.11.1-6
+  version: 3.3.11.1-7
   arch:
     - x86_64
   pkgname:
     - libmikmod
 actions:
-  addRepo: null
-  removeRepo: null
+  addRepo: world
+  removeRepo: world-gremlins
   triggersBuild: false
   triggersRebuild: false
-  triggersRepoAdd: false
-  triggersRepoRemove: false
+  triggersRepoAdd: true
+  triggersRepoRemove: true
   triggersNoCheck: false
 repos:
   system-goblins:
@@ -31,9 +31,9 @@ repos:
     version: null
     packages: []
   world:
-    version: 3.3.11.1-6
+    version: 3.3.11.1-7
     packages:
-      - libmikmod-3.3.11.1-6-x86_64.pkg.tar.zst
+      - libmikmod-3.3.11.1-7-x86_64.pkg.tar.zst
   lib32-goblins:
     version: null
     packages: []
@@ -52,3 +52,4 @@ repos:
   galaxy:
     version: null
     packages: []
+team: world
