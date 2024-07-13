@@ -1,18 +1,18 @@
 ---
 pkgbase:
   name: gtkmm
-  version: 1:2.24.5-4.1
+  version: 1:2.24.5-5
   arch:
     - x86_64
   pkgname:
     - gtkmm
     - gtkmm-docs
 actions:
-  addRepo: null
+  addRepo: world
   removeRepo: null
-  triggersBuild: false
+  triggersBuild: true
   triggersRebuild: false
-  triggersRepoAdd: false
+  triggersRepoAdd: true
   triggersRepoRemove: false
   triggersNoCheck: false
 repos:
@@ -32,10 +32,10 @@ repos:
     version: null
     packages: []
   world:
-    version: 1:2.24.5-4.1
+    version: 1:2.24.5-5
     packages:
-      - gtkmm-1:2.24.5-4.1-x86_64.pkg.tar.zst
-      - gtkmm-docs-1:2.24.5-4.1-x86_64.pkg.tar.zst
+      - gtkmm-1:2.24.5-5-x86_64.pkg.tar.zst
+      - gtkmm-docs-1:2.24.5-5-x86_64.pkg.tar.zst
   lib32-goblins:
     version: null
     packages: []
@@ -54,3 +54,4 @@ repos:
   galaxy:
     version: null
     packages: []
+team: world
