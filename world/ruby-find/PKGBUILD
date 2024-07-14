@@ -1,9 +1,10 @@
 # Maintainer: Cory Sanin <corysanin@artixlinux.org>
+# Contributor: Andreas 'Segaja' Schleifer <segaja at archlinux dot org>
 
 _gemname='find'
 pkgname="ruby-${_gemname}"
 pkgver=0.1.1
-pkgrel=4
+pkgrel=5
 pkgdesc='This module supports top-down traversal of a set of file paths'
 arch=('any')
 url="https://github.com/ruby/${_gemname}"
