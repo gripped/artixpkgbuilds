@@ -1,9 +1,10 @@
 # Maintainer: Cory Sanin <corysanin@artixlinux.org>
+# Contributor: Andreas 'Segaja' Schleifer <segaja at archlinux dot org>
 
 _gemname='delegate'
 pkgname="ruby-${_gemname}"
 pkgver=0.2.0
-pkgrel=4
+pkgrel=5
 pkgdesc='Provides three abilities to delegate method calls to an object'
 arch=('any')
 url="https://github.com/ruby/${_gemname}"
