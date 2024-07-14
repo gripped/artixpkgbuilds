@@ -1,19 +1,19 @@
 ---
 pkgbase:
   name: ruby-forwardable
-  version: 1.3.2-6
+  version: 1.3.2-7
   arch:
     - any
   pkgname:
     - ruby-forwardable
 actions:
-  addRepo: null
+  addRepo: world
   removeRepo: null
-  triggersBuild: false
+  triggersBuild: true
   triggersRebuild: false
-  triggersRepoAdd: false
+  triggersRepoAdd: true
   triggersRepoRemove: false
-  triggersNoCheck: false
+  triggersNoCheck: true
 repos:
   system-goblins:
     version: null
@@ -31,9 +31,9 @@ repos:
     version: null
     packages: []
   world:
-    version: 1.3.2-6
+    version: 1.3.2-7
     packages:
-      - ruby-forwardable-1.3.2-6-any.pkg.tar.zst
+      - ruby-forwardable-1.3.2-7-any.pkg.tar.zst
   lib32-goblins:
     version: null
     packages: []
@@ -52,3 +52,4 @@ repos:
   galaxy:
     version: null
     packages: []
+team: world
