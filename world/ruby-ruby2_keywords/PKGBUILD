@@ -1,10 +1,11 @@
-# Maintainer: Tim Meusel <tim@bastelfreak.de>
+# Maintainer: Cory Sanin <corysanin@artixlinux.org>
+# Contributor: Tim Meusel <tim@bastelfreak.de>
 # Contributor: Anatoly Bashmakov <anatoly at posteo dot net>
 
 _gemname='ruby2_keywords'
 pkgname="ruby-${_gemname}"
 pkgver=0.0.5
-pkgrel=1
+pkgrel=2
 pkgdesc='Shim library for Module#ruby2_keywords'
 arch=('any')
 url="https://github.com/ruby/${_gemname}"
