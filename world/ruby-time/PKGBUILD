@@ -1,9 +1,10 @@
 # Maintainer: Cory Sanin <corysanin@artixlinux.org>
+# Contributor: Andreas 'Segaja' Schleifer <segaja at archlinux dot org>
 
 _gemname='time'
 pkgname="ruby-${_gemname}"
 pkgver=0.2.0
-pkgrel=4
+pkgrel=5
 pkgdesc='Extends the Time class with methods for parsing and conversion'
 arch=('any')
 url='https://github.com/ruby/time'
