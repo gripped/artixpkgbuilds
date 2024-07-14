@@ -1,10 +1,11 @@
 # Maintainer: Cory Sanin <corysanin@artixlinux.org>
+# Contributor: Andreas 'Segaja' Schleifer <segaja at archlinux dot org>
 
 _gemname='English'
 _gemname_lowercase='english'
 pkgname="ruby-${_gemname_lowercase}"
 pkgver=0.7.1
-pkgrel=5
+pkgrel=6
 pkgdesc="Require 'English.rb' to reference global variables with less cryptic names"
 arch=('any')
 url="https://github.com/ruby/${_gemname}"
