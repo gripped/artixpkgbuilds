@@ -1,10 +1,11 @@
 # Maintainer: Cory Sanin <corysanin@artixlinux.org>
-# Maintainer: Andreas 'Segaja' Schleifer <segaja at archlinux dot org>
+# Contributor: Anatol Pomozov
+# Contributor: Andreas 'Segaja' Schleifer <segaja at archlinux dot org>
 
 _gemname='reline'
 pkgname="ruby-${_gemname}"
 pkgver=0.3.1
-pkgrel=2
+pkgrel=3
 pkgdesc='Alternative GNU Readline or Editline implementation by pure Ruby.'
 arch=('any')
 url="https://github.com/ruby/${_gemname}"
