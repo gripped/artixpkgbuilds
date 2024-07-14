@@ -1,9 +1,10 @@
 # Maintainer: Cory Sanin <corysanin@artixlinux.org>
+# Contributor: Andreas 'Segaja' Schleifer <segaja at archlinux dot org>
 
 _gemname='logger'
 pkgname="ruby-${_gemname}"
 pkgver=1.5.1
-pkgrel=3
+pkgrel=4
 pkgdesc='Provides a simple logging utility for outputting messages'
 arch=('any')
 url="https://github.com/ruby/${_gemname}"
