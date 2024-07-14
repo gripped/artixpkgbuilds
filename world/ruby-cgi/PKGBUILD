@@ -1,9 +1,10 @@
 # Maintainer: Cory Sanin <corysanin@artixlinux.org>
+# Contributor: Andreas 'Segaja' Schleifer <segaja at archlinux dot org>
 
 _gemname='cgi'
 pkgname="ruby-${_gemname}"
 pkgver=0.3.6
-pkgrel=1
+pkgrel=2
 pkgdesc='Support for the Common Gateway Interface protocol.'
 arch=('x86_64')
 url="https://github.com/ruby/${_gemname}"
