@@ -1,9 +1,10 @@
 # Maintainer: Cory Sanin <corysanin@artixlinux.org>
+# Contributor: Andreas 'Segaja' Schleifer <segaja at archlinux dot org>
 
 _gemname='getoptlong'
 pkgname="ruby-${_gemname}"
 pkgver=0.1.1
-pkgrel=3
+pkgrel=4
 pkgdesc='GetoptLong for Ruby'
 arch=('any')
 url="https://github.com/ruby/${_gemname}"
