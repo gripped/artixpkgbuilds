@@ -1,19 +1,18 @@
 ---
 pkgbase:
   name: libudev0-shim
-  version: 1-5
+  version: 2-1
   arch:
-    - i686
     - x86_64
   pkgname:
     - libudev0-shim
 actions:
-  addRepo: null
-  removeRepo: null
+  addRepo: world
+  removeRepo: world-gremlins
   triggersBuild: false
   triggersRebuild: false
-  triggersRepoAdd: false
-  triggersRepoRemove: false
+  triggersRepoAdd: true
+  triggersRepoRemove: true
   triggersNoCheck: false
 repos:
   system-goblins:
@@ -32,9 +31,9 @@ repos:
     version: null
     packages: []
   world:
-    version: 1-5
+    version: 2-1
     packages:
-      - libudev0-shim-1-5-x86_64.pkg.tar.zst
+      - libudev0-shim-2-1-x86_64.pkg.tar.zst
   lib32-goblins:
     version: null
     packages: []
@@ -53,3 +52,4 @@ repos:
   galaxy:
     version: null
     packages: []
+team: world
