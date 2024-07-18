@@ -1,13 +1,13 @@
 ---
 pkgbase:
   name: lib32-libudev0-shim
-  version: 1-7
+  version: 2-1
   arch:
     - x86_64
   pkgname:
     - lib32-libudev0-shim
 actions:
-  addRepo: lib32-gremlins
+  addRepo: lib32
   removeRepo: null
   triggersBuild: true
   triggersRebuild: false
@@ -37,13 +37,12 @@ repos:
     version: null
     packages: []
   lib32-gremlins:
-    version: 1-7
-    packages:
-      - lib32-libudev0-shim-1-7-x86_64.pkg.tar.zst
+    version: null
+    packages: []
   lib32:
-    version: 1-7
+    version: 2-1
     packages:
-      - lib32-libudev0-shim-1-7-x86_64.pkg.tar.zst
+      - lib32-libudev0-shim-2-1-x86_64.pkg.tar.zst
   galaxy-goblins:
     version: null
     packages: []
