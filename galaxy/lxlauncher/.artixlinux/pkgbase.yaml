@@ -1,7 +1,7 @@
 ---
 pkgbase:
   name: lxlauncher
-  version: 0.2.5-4
+  version: 0.2.5-5
   arch:
     - x86_64
   pkgname:
@@ -9,7 +9,7 @@ pkgbase:
     - lxlauncher-gtk3
 actions:
   addRepo: galaxy
-  removeRepo: world
+  removeRepo: galaxy-gremlins
   triggersBuild: false
   triggersRebuild: false
   triggersRepoAdd: true
@@ -50,8 +50,8 @@ repos:
     version: null
     packages: []
   galaxy:
-    version: 0.2.5-4
+    version: 0.2.5-5
     packages:
-      - lxlauncher-0.2.5-4-x86_64.pkg.tar.zst
-      - lxlauncher-gtk3-0.2.5-4-x86_64.pkg.tar.zst
+      - lxlauncher-0.2.5-5-x86_64.pkg.tar.zst
+      - lxlauncher-gtk3-0.2.5-5-x86_64.pkg.tar.zst
 team: galaxy
