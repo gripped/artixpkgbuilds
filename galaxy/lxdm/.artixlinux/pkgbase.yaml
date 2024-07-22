@@ -1,7 +1,7 @@
 ---
 pkgbase:
   name: lxdm
-  version: 0.5.3-7
+  version: 0.5.3-8
   arch:
     - x86_64
   pkgname:
@@ -9,7 +9,7 @@ pkgbase:
     - lxdm-gtk3
 actions:
   addRepo: galaxy
-  removeRepo: world
+  removeRepo: galaxy-gremlins
   triggersBuild: false
   triggersRebuild: false
   triggersRepoAdd: true
@@ -50,8 +50,8 @@ repos:
     version: null
     packages: []
   galaxy:
-    version: 0.5.3-7
+    version: 0.5.3-8
     packages:
-      - lxdm-0.5.3-7-x86_64.pkg.tar.zst
-      - lxdm-gtk3-0.5.3-7-x86_64.pkg.tar.zst
+      - lxdm-0.5.3-8-x86_64.pkg.tar.zst
+      - lxdm-gtk3-0.5.3-8-x86_64.pkg.tar.zst
 team: galaxy
