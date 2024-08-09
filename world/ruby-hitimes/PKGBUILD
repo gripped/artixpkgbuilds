@@ -1,10 +1,11 @@
-# Maintainer: Levente Polyak <anthraxx[at]archlinux[dot]org>
+# Maintainer: Cory Sanin <corysanin@artixlinux.org>
+# Contributor: Levente Polyak <anthraxx[at]archlinux[dot]org>
 # Contributor: Olivier Biesmans <olivier at biesmans dot fr>
 
 _gemname=hitimes
 pkgname=ruby-${_gemname}
 pkgver=2.0.0
-pkgrel=3
+pkgrel=4
 pkgdesc='Fast, high resolution timer library for recording performance metrics'
 url='https://github.com/copiousfreetime/hitimes'
 arch=('x86_64')
