@@ -1,17 +1,17 @@
 ---
 pkgbase:
   name: rebar
-  version: 1:2.6.4-3
+  version: 1:2.6.4-4
   arch:
     - any
   pkgname:
     - rebar
 actions:
-  addRepo: null
+  addRepo: world
   removeRepo: null
-  triggersBuild: false
+  triggersBuild: true
   triggersRebuild: false
-  triggersRepoAdd: false
+  triggersRepoAdd: true
   triggersRepoRemove: false
   triggersNoCheck: false
 repos:
@@ -31,9 +31,9 @@ repos:
     version: null
     packages: []
   world:
-    version: 1:2.6.4-3
+    version: 1:2.6.4-4
     packages:
-      - rebar-1:2.6.4-3-any.pkg.tar.zst
+      - rebar-1:2.6.4-4-any.pkg.tar.zst
   lib32-goblins:
     version: null
     packages: []
@@ -52,3 +52,4 @@ repos:
   galaxy:
     version: null
     packages: []
+team: world
