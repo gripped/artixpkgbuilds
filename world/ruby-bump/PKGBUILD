@@ -1,15 +1,27 @@
-# Maintainer: Cory Sanin <corysanin@artixlinux.org>
+# Maintainer: Felix Yan <felixonmars@archlinux.org>
 
 pkgname=ruby-bump
 pkgver=0.10.0
 _commit=73c206174ca02549d120402b9a007db0d0bc9699
-pkgrel=2
+pkgrel=4
 pkgdesc='Bump your gem version file'
 arch=(any)
 url='https://github.com/gregorym/bump'
 license=(MIT)
-depends=(ruby)
-makedepends=(git)
+depends=(
+  ruby
+)
+makedepends=(
+  git
+  ruby-rdoc
+)
+checkdepends=(
+  ruby-bundler
+  ruby-byebug
+  ruby-rake
+  ruby-rspec
+  ruby-rubocop
+)
 options=(!emptydirs)
 source=(git+https://github.com/gregorym/bump.git#commit=$_commit)
 sha256sums=('SKIP')
@@ -49,6 +61,7 @@ build() {
 check() {
   local _gemdir="$(gem env gemdir)"
   cd bump
+  GEM_HOME="../tmp_install/$_gemdir" rake spec
 }
 
 package() {
