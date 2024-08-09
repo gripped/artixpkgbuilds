@@ -1,18 +1,18 @@
 ---
 pkgbase:
   name: ruby-public_suffix
-  version: 5.0.5-2
+  version: 5.0.5-3
   arch:
     - any
   pkgname:
     - ruby-public_suffix
 actions:
-  addRepo: world-goblins
-  removeRepo: null
-  triggersBuild: true
+  addRepo: world
+  removeRepo: world-gremlins
+  triggersBuild: false
   triggersRebuild: false
   triggersRepoAdd: true
-  triggersRepoRemove: false
+  triggersRepoRemove: true
   triggersNoCheck: false
 repos:
   system-goblins:
@@ -25,16 +25,15 @@ repos:
     version: null
     packages: []
   world-goblins:
-    version: 5.0.5-2
-    packages:
-      - ruby-public_suffix-5.0.5-2-any.pkg.tar.zst
+    version: null
+    packages: []
   world-gremlins:
     version: null
     packages: []
   world:
-    version: 5.0.5-2
+    version: 5.0.5-3
     packages:
-      - ruby-public_suffix-5.0.5-2-any.pkg.tar.zst
+      - ruby-public_suffix-5.0.5-3-any.pkg.tar.zst
   lib32-goblins:
     version: null
     packages: []
