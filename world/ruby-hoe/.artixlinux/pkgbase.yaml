@@ -1,18 +1,18 @@
 ---
 pkgbase:
   name: ruby-hoe
-  version: 4.0.2-1
+  version: 4.2.1-2.1
   arch:
     - any
   pkgname:
     - ruby-hoe
 actions:
-  addRepo: null
-  removeRepo: null
+  addRepo: world
+  removeRepo: world-gremlins
   triggersBuild: false
   triggersRebuild: false
-  triggersRepoAdd: false
-  triggersRepoRemove: false
+  triggersRepoAdd: true
+  triggersRepoRemove: true
   triggersNoCheck: false
 repos:
   system-goblins:
@@ -31,9 +31,9 @@ repos:
     version: null
     packages: []
   world:
-    version: 4.0.2-1
+    version: 4.2.1-2.1
     packages:
-      - ruby-hoe-4.0.2-1-any.pkg.tar.zst
+      - ruby-hoe-4.2.1-2.1-any.pkg.tar.zst
   lib32-goblins:
     version: null
     packages: []
@@ -52,3 +52,4 @@ repos:
   galaxy:
     version: null
     packages: []
+team: world
