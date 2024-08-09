@@ -3,7 +3,7 @@
 pkgname=librewolf
 _pkgname=LibreWolf
 pkgver=128.0.3
-pkgrel=1
+pkgrel=2
 pkgdesc="Community-maintained fork of Firefox, focused on privacy, security and freedom."
 url="https://librewolf.net/"
 arch=(x86_64 aarch64)
@@ -14,13 +14,33 @@ license=(
 )
 depends=(
   dbus
+  alsa-lib
+  at-spi2-core
+  bash
+  cairo
   ffmpeg
+  fontconfig
+  freetype2
+  gcc-libs
+  gdk-pixbuf2
+  glib2
+  glibc
   gtk3
+  hicolor-icon-theme
   libpulse
+  libx11
+  libxcb
+  libxcomposite
+  libxdamage
+  libxext
+  libxfixes
+  libxrandr
   libxss
   libxt
   mime-types
+  nspr
   nss
+  pango
   ttf-font
 )
 makedepends=(
@@ -46,6 +66,7 @@ makedepends=(
   'wasi-libc++abi>15'
   'wasi-libc>=1:0+314+a1c7c2c'
   xorg-server-xvfb
+  xorg-xdpyinfo
   yasm
   zip
 ) # pciutils: only to avoid some PGO warning
@@ -53,7 +74,6 @@ optdepends=(
   'hunspell-en_US: Spell checking, American English'
   'libnotify: Notification integration'
   'networkmanager: Location detection via available WiFi networks'
-  'pulseaudio: Audio support'
   'speech-dispatcher: Text-to-Speech'
   'xdg-desktop-portal: Screensharing with Wayland'
 )
@@ -64,8 +84,8 @@ options=(
   !lto
   !makeflags
 )
-_arch_git=https://raw.githubusercontent.com/archlinux/svntogit-packages/packages/firefox/trunk
-_arch_git_blob=https://raw.githubusercontent.com/archlinux/svntogit-packages
+
+_arch_git=https://gitlab.archlinux.org/archlinux/packaging/packages/firefox/-/raw
 
 install='librewolf.install'
 source=(
@@ -74,14 +94,14 @@ source=(
   "default192x192.png"
 )
 
-sha256sums=('ee4afcfe0d42da5a3b8002ed867134ffa0ccf83a29402ecd311bbc3ccfb6517c'
+sha256sums=('df1033b7d825da65e1892f599e65525e8d138374f75c5ebb76ee13ab818b4020'
             '7d01d317b7db7416783febc18ee1237ade2ec86c1567e2c2dd628a94cbf2f25d'
             '959c94c68cab8d5a8cff185ddf4dca92e84c18dccc6dc7c8fe11c78549cdc2f1')
 
 validpgpkeys=('034F7776EF5E0C613D2F7934D29FBD5F93C0CFC3') # maltej(?)
 
 # change this to false if you do not want to run a PGO build for aarch64 or x86_64
-_build_profiled_aarch64=true
+_build_profiled_aarch64=false
 _build_profiled_x86_64=true
 
 prepare() {
@@ -99,18 +119,22 @@ ac_add_options --prefix=/usr
 
 ac_add_options --disable-bootstrap
 
-export CC='clang'
-export CXX='clang++'
+
+ac_add_options --enable-application=browser
+ac_add_options --enable-hardening
+ac_add_options --enable-optimize
+ac_add_options --enable-rust-simd
+
 
 # Branding
-ac_add_options --with-app-name=${pkgname}
+#ac_add_options --with-app-name=${pkgname}
 # is this one required? upstream lw doesn't use it
 ac_add_options --enable-update-channel=release
 # unlear?
 # ac_add_options --with-app-basename=${_pkgname}
 
 # needed? yep.
-export MOZ_APP_REMOTINGNAME=${pkgname}
+#export MOZ_APP_REMOTINGNAME=${pkgname}
 
 # System libraries
 ac_add_options --with-system-nspr
@@ -119,7 +143,19 @@ ac_add_options --with-system-nss
 # Features
 # keep alsa option in here until merged upstream
 ac_add_options --enable-alsa
+ac_add_options --enable-av1
+ac_add_options --enable-eme=widevine
 ac_add_options --enable-jack
+ac_add_options --enable-jxl
+ac_add_options --enable-pulseaudio
+ac_add_options --enable-raw
+ac_add_options --enable-sandbox
+ac_add_options --enable-webrtc
+ac_add_options --disable-crashreporter
+ac_add_options --disable-default-browser-agent
+ac_add_options --disable-parental-controls
+ac_add_options --disable-updater
+ac_add_options --disable-tests
 
 # options for ci / weaker build systems
 # mk_add_options MOZ_MAKE_FLAGS="-j4"
@@ -138,7 +174,6 @@ END
   export MOZ_DEBUG_FLAGS=" "
   export CFLAGS+=" -g0"
   export CXXFLAGS+=" -g0"
-  export RUSTFLAGS="-Cdebuginfo=0"
 
   # we should have more than enough RAM on the CI spot instances.
   # ...or maybe not?
@@ -150,7 +185,7 @@ else
 ac_add_options --disable-elf-hack
 
 # might help with failing x86_64 builds?
-export LDFLAGS+=" -Wl,--no-keep-memory"
+#export LDFLAGS+=" -Wl,--no-keep-memory"
 END
 fi
 
@@ -169,8 +204,12 @@ build() {
   # export PIP_NETWORK_INSTALL_RESTRICTED_VIRTUALENVS=mach # let us hope this is a working _new_ workaround for the pip env issues?
 
   # malloc_usable_size is used in various parts of the codebase
-  CFLAGS="${CFLAGS/_FORTIFY_SOURCE=3/_FORTIFY_SOURCE=2} -fno-exceptions"
-  CXXFLAGS="${CXXFLAGS/_FORTIFY_SOURCE=3/_FORTIFY_SOURCE=2} -fno-exceptions"
+  CFLAGS="${CFLAGS/_FORTIFY_SOURCE=3/_FORTIFY_SOURCE=2}"
+  CXXFLAGS="${CXXFLAGS/_FORTIFY_SOURCE=3/_FORTIFY_SOURCE=2}"
+
+  # Breaks compilation since https://bugzilla.mozilla.org/show_bug.cgi?id=1896066
+  CFLAGS="${CFLAGS/-fexceptions/}"
+  CXXFLAGS="${CXXFLAGS/-fexceptions/}"
 
   # LTO needs more open files
   ulimit -n 4096
@@ -181,7 +220,7 @@ build() {
   if [[ $CARCH == 'aarch64' && $_build_profiled_aarch64 == true ]]; then
 
     cat >.mozconfig ../mozconfig - <<END
-ac_add_options --enable-profile-generate
+ac_add_options --enable-profile-generate=cross
 END
 
   elif [[ $CARCH == 'x86_64' && $_build_profiled_x86_64 == true ]]; then
@@ -194,17 +233,26 @@ END
 
   if [[ $CARCH == 'aarch64' && $_build_profiled_aarch64 == true || $CARCH == 'x86_64' && $_build_profiled_x86_64 == true ]]; then
 
-    ./mach build
+    ./mach build --priority normal
 
     echo "Profiling instrumented browser..."
 
     ./mach package
 
+    #emulate display
+    echo "Starting xvfb on :99..."
+    Xvfb -ac :99 -screen 0 1280x1024x16 &
+    export DISPLAY=:99
+
+    echo "Checking that xvfb started ok..."
+    xdpyinfo -display :99 >/dev/null 2>&1 && echo "xvfb is using :99" || echo "xvfb is not using :99, it's free."
+
+    echo "running xvfb"
     # Uncomment the next line if you have an error while profiling ( thanks to mkli )
     # LIBGL_ALWAYS_SOFTWARE=true \
     LLVM_PROFDATA=llvm-profdata \
       JARLOG_FILE="$PWD/jarlog" \
-      xvfb-run -s "-screen 0 1920x1080x24 -nolisten local" \
+      xvfb-run -a --server-args="-screen 0 1280x1024x24 -ac -nolisten tcp -nolisten unix" \
       ./mach python build/pgo/profileserver.py
 
     stat -c "Profile data found (%s bytes)" merged.profdata
@@ -214,7 +262,7 @@ END
     test -s jarlog
 
     echo "Removing instrumented browser..."
-    ./mach clobber
+    ./mach clobber objdir
 
     echo "Building optimized browser..."
 
@@ -243,7 +291,7 @@ END
     cat >.mozconfig ../mozconfig
   fi
 
-  ./mach build
+  ./mach build --priority normal
 }
 
 package() {
