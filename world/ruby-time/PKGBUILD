@@ -4,13 +4,23 @@
 _gemname='time'
 pkgname="ruby-${_gemname}"
 pkgver=0.2.0
-pkgrel=5
+pkgrel=6
 pkgdesc='Extends the Time class with methods for parsing and conversion'
 arch=('any')
 url='https://github.com/ruby/time'
 license=('BSD' 'RUBY')
-depends=('ruby' 'ruby-date')
-checkdepends=('ruby-rake')
+depends=(
+  ruby
+  ruby-date
+)
+makedepends=(
+  ruby-rdoc
+)
+checkdepends=(
+  ruby-bundler
+  ruby-rake
+  ruby-test-unit
+)
 options=(!emptydirs)
 source=("${url}/archive/v${pkgver}/${pkgname}-${pkgver}.tar.gz")
 sha512sums=('07b4896827014ab1f6394ee8a116a8074c2342c070b814bb190104a404828d684c9ca49d0c53fe5ef4518d5455de73d5f4c03051cbae47257fa631b17515d2f9')
