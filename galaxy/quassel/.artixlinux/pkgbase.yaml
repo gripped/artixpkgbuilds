@@ -1,0 +1,65 @@
+---
+team: galaxy
+pkgbase:
+  name: quassel
+  version: 0.14.0-3
+  arch:
+    - x86_64
+  pkgname:
+    - quassel-core
+    - quassel-client
+    - quassel-client-qt
+    - quassel-monolithic
+    - quassel-monolithic-qt
+    - quassel-common
+actions:
+  addRepo: galaxy
+  removeRepo: null
+  triggersBuild: true
+  triggersRebuild: false
+  triggersRepoAdd: true
+  triggersRepoRemove: false
+  triggersNoCheck: false
+repos:
+  system-goblins:
+    version: null
+    packages: []
+  system-gremlins:
+    version: null
+    packages: []
+  system:
+    version: null
+    packages: []
+  world-goblins:
+    version: null
+    packages: []
+  world-gremlins:
+    version: null
+    packages: []
+  world:
+    version: null
+    packages: []
+  lib32-goblins:
+    version: null
+    packages: []
+  lib32-gremlins:
+    version: null
+    packages: []
+  lib32:
+    version: null
+    packages: []
+  galaxy-goblins:
+    version: null
+    packages: []
+  galaxy-gremlins:
+    version: null
+    packages: []
+  galaxy:
+    version: 0.14.0-3
+    packages:
+      - quassel-core-0.14.0-3-x86_64.pkg.tar.zst
+      - quassel-client-0.14.0-3-x86_64.pkg.tar.zst
+      - quassel-client-qt-0.14.0-3-x86_64.pkg.tar.zst
+      - quassel-monolithic-0.14.0-3-x86_64.pkg.tar.zst
+      - quassel-monolithic-qt-0.14.0-3-x86_64.pkg.tar.zst
+      - quassel-common-0.14.0-3-x86_64.pkg.tar.zst
