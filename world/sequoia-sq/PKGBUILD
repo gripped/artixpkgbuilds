@@ -2,8 +2,7 @@
 # Maintainer: David Runge <dvzrv@archlinux.org>
 
 pkgname=sequoia-sq
-pkgver=0.34.0
-_commit=1dd63bece8dea0072f736d5b2db5dd92320d4ef1  # refs/tags/v0.34.0
+pkgver=0.36.0
 pkgrel=1
 pkgdesc='Command-line frontends for Sequoia'
 url='https://sequoia-pgp.org/'
@@ -27,8 +26,9 @@ makedepends=(
   'git'
 )
 options=('!lto')
-source=("git+https://gitlab.com/sequoia-pgp/sequoia-sq.git#tag=$_commit?signed")
-sha512sums=('SKIP')
+source=("git+https://gitlab.com/sequoia-pgp/sequoia-sq.git?signed#tag=v$pkgver")
+sha512sums=('cb35ea7d7d51dd240a6004347d950647f3ed89e5e4dcaf9c9cdd8b1767cad174a2b3c4ef6feefa9665ff1d98cabd4e5715bbc36e931a0abd694a76d45b761925')
+b2sums=('574aca06be438fce0ee357881a17f456d905c02eca724628919d998f485317484442c58be69ce4a1c8d35fb76071ac6e87d345cbea14821450c432aa2663470e')
 validpgpkeys=(
   D2F2C5D45BE9FDE6A4EE0AAF31855247603831FD  # Justus Winter (Code Signing Key) <justus@sequoia-pgp.org>
   8F17777118A33DDA9BA48E62AACB3243630052D9  # Neal H. Walfield <neal@sequoia-pgp.org>
