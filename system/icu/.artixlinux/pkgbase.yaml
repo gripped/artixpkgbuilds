@@ -1,7 +1,7 @@
 ---
 pkgbase:
   name: icu
-  version: 74.2-1
+  version: 75.1-1
   arch:
     - x86_64
   pkgname:
@@ -22,9 +22,9 @@ repos:
     version: null
     packages: []
   system:
-    version: 74.2-1
+    version: 75.1-1
     packages:
-      - icu-74.2-1-x86_64.pkg.tar.zst
+      - icu-75.1-1-x86_64.pkg.tar.zst
   world-goblins:
     version: null
     packages: []
@@ -52,3 +52,4 @@ repos:
   galaxy:
     version: null
     packages: []
+team: system
