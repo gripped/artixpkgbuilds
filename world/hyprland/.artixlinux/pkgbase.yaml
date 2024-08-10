@@ -1,7 +1,7 @@
 ---
 pkgbase:
   name: hyprland
-  version: 0.35.0-2
+  version: 0.41.2-3
   arch:
     - x86_64
     - aarch64
@@ -9,11 +9,11 @@ pkgbase:
     - hyprland
 actions:
   addRepo: world
-  removeRepo: null
-  triggersBuild: true
+  removeRepo: world-gremlins
+  triggersBuild: false
   triggersRebuild: false
   triggersRepoAdd: true
-  triggersRepoRemove: false
+  triggersRepoRemove: true
   triggersNoCheck: false
 repos:
   system-goblins:
@@ -32,9 +32,9 @@ repos:
     version: null
     packages: []
   world:
-    version: 0.35.0-2
+    version: 0.41.2-3
     packages:
-      - hyprland-0.35.0-2-x86_64.pkg.tar.zst
+      - hyprland-0.41.2-3-x86_64.pkg.tar.zst
   lib32-goblins:
     version: null
     packages: []
@@ -53,3 +53,4 @@ repos:
   galaxy:
     version: null
     packages: []
+team: world
