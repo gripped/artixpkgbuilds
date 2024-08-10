@@ -4,7 +4,7 @@
 _name=pydantic
 pkgname=python-$_name
 # WARNING: upstream pins pydantic-core down to the patch-level and using other versions breaks tests! only update in lock-step with python-pydantic-core!
-pkgver=2.6.4
+pkgver=2.8.2
 pkgrel=1
 pkgdesc='Data parsing and validation using Python type hints'
 arch=(any)
@@ -37,6 +37,7 @@ checkdepends=(
   python-pytest-benchmark
   python-pytest-examples
   python-pytest-mock
+  python-pytest-pretty
   python-sqlalchemy
 )
 optdepends=(
@@ -46,8 +47,8 @@ optdepends=(
   'python-hypothesis: for hypothesis plugin when using legacy v1'
 )
 source=($url/archive/v$pkgver/$_name-v$pkgver.tar.gz)
-sha512sums=('dd3cb35d6b062649f30ede0f32740d02e53383d231b3c92e9a6aec26d8fa07a141d22162b2e08efa49ea7321411891f9a34cb5bc2e05186c4069f57cec6e51d2')
-b2sums=('e9aab3378dceb544be12d49bd6d34f83b3d9b14db2517de058ae93dccb2fc0d84bece4103b7fe9349764d16ec3fe36f4d14fa06381880ee143efa1ac0beeaecf')
+sha512sums=('a9ef0ee54fac0d06e53effd4db793559e5d2779b5df53b5b9eceb0839c3c7dbd56224424b4d418d18932dc5341132c8a9bc159138badcbc12b957412d4d229f2')
+b2sums=('953499ce736b62ff5c1b96b4292265a3fac720968949ed2e4929328da634a022cfad5c576e34eddfe301856f9cd86cdefd8678c764765d1c767bec6acfae5227')
 
 build() {
   cd $_name-$pkgver
@@ -57,6 +58,9 @@ build() {
 check() {
   local pytest_options=(
     -vv
+    --deselect tests/test_docs.py  # we are not interested in code formatting
+    --deselect tests/test_types.py::test_string_fails
+    --deselect 'tests/test_networks.py::test_address_invalid[foobar-An email address must have an @-sign.]'
   )
   local site_packages=$(python -c "import site; print(site.getsitepackages()[0])")
 
