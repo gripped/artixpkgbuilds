@@ -1,7 +1,7 @@
 ---
 pkgbase:
   name: device-mapper-dinit
-  version: 20211029-3
+  version: 20211029-4
   arch:
     - any
   pkgname:
@@ -22,9 +22,9 @@ repos:
     version: null
     packages: []
   system:
-    version: 20211029-3
+    version: 20211029-4
     packages:
-      - device-mapper-dinit-20211029-3-any.pkg.tar.zst
+      - device-mapper-dinit-20211029-4-any.pkg.tar.zst
   world-goblins:
     version: null
     packages: []
