@@ -1,7 +1,7 @@
 ---
 pkgbase:
   name: cracklib
-  version: 2.9.11-2
+  version: 2.10.2-1
   arch:
     - x86_64
   pkgname:
@@ -22,9 +22,9 @@ repos:
     version: null
     packages: []
   system:
-    version: 2.9.11-2
+    version: 2.10.2-1
     packages:
-      - cracklib-2.9.11-2-x86_64.pkg.tar.zst
+      - cracklib-2.10.2-1-x86_64.pkg.tar.zst
   world-goblins:
     version: null
     packages: []
