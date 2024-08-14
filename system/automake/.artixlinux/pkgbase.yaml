@@ -1,18 +1,18 @@
 ---
 pkgbase:
   name: automake
-  version: 1.16.5-2
+  version: 1.17-1
   arch:
     - any
   pkgname:
     - automake
 actions:
-  addRepo: null
-  removeRepo: null
+  addRepo: system
+  removeRepo: system-gremlins
   triggersBuild: false
   triggersRebuild: false
-  triggersRepoAdd: false
-  triggersRepoRemove: false
+  triggersRepoAdd: true
+  triggersRepoRemove: true
   triggersNoCheck: false
 repos:
   system-goblins:
@@ -22,9 +22,9 @@ repos:
     version: null
     packages: []
   system:
-    version: 1.16.5-2
+    version: 1.17-1
     packages:
-      - automake-1.16.5-2-any.pkg.tar.zst
+      - automake-1.17-1-any.pkg.tar.zst
   world-goblins:
     version: null
     packages: []
@@ -52,3 +52,4 @@ repos:
   galaxy:
     version: null
     packages: []
+team: system
