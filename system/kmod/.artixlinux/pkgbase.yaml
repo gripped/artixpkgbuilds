@@ -1,7 +1,7 @@
 ---
 pkgbase:
   name: kmod
-  version: 32-1
+  version: 33-1
   arch:
     - x86_64
   pkgname:
@@ -22,9 +22,9 @@ repos:
     version: null
     packages: []
   system:
-    version: 32-1
+    version: 33-1
     packages:
-      - kmod-32-1-x86_64.pkg.tar.zst
+      - kmod-33-1-x86_64.pkg.tar.zst
   world-goblins:
     version: null
     packages: []
@@ -52,3 +52,4 @@ repos:
   galaxy:
     version: null
     packages: []
+team: system
