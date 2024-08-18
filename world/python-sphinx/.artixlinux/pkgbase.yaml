@@ -1,18 +1,18 @@
 ---
 pkgbase:
   name: python-sphinx
-  version: 7.4.7-1
+  version: 8.0.2-1
   arch:
     - any
   pkgname:
     - python-sphinx
 actions:
   addRepo: world
-  removeRepo: null
-  triggersBuild: true
+  removeRepo: world-gremlins
+  triggersBuild: false
   triggersRebuild: false
   triggersRepoAdd: true
-  triggersRepoRemove: false
+  triggersRepoRemove: true
   triggersNoCheck: false
 repos:
   system-goblins:
@@ -31,9 +31,9 @@ repos:
     version: null
     packages: []
   world:
-    version: 7.4.7-1
+    version: 8.0.2-1
     packages:
-      - python-sphinx-7.4.7-1-any.pkg.tar.zst
+      - python-sphinx-8.0.2-1-any.pkg.tar.zst
   lib32-goblins:
     version: null
     packages: []
