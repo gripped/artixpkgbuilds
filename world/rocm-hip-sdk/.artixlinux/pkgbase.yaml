@@ -1,0 +1,67 @@
+---
+team: world
+pkgbase:
+  name: rocm-hip-sdk
+  version: 6.0.2-1
+  arch:
+    - any
+  pkgname:
+    - rocm-hip-sdk
+    - rocm-hip-libraries
+    - rocm-opencl-sdk
+    - rocm-hip-runtime
+    - rocm-language-runtime
+    - rocm-ml-sdk
+    - rocm-ml-libraries
+actions:
+  addRepo: world
+  removeRepo: null
+  triggersBuild: true
+  triggersRebuild: false
+  triggersRepoAdd: true
+  triggersRepoRemove: false
+  triggersNoCheck: false
+repos:
+  system-goblins:
+    version: null
+    packages: []
+  system-gremlins:
+    version: null
+    packages: []
+  system:
+    version: null
+    packages: []
+  world-goblins:
+    version: null
+    packages: []
+  world-gremlins:
+    version: null
+    packages: []
+  world:
+    version: 6.0.2-1
+    packages:
+      - rocm-hip-sdk-6.0.2-1-any.pkg.tar.zst
+      - rocm-hip-libraries-6.0.2-1-any.pkg.tar.zst
+      - rocm-opencl-sdk-6.0.2-1-any.pkg.tar.zst
+      - rocm-hip-runtime-6.0.2-1-any.pkg.tar.zst
+      - rocm-language-runtime-6.0.2-1-any.pkg.tar.zst
+      - rocm-ml-sdk-6.0.2-1-any.pkg.tar.zst
+      - rocm-ml-libraries-6.0.2-1-any.pkg.tar.zst
+  lib32-goblins:
+    version: null
+    packages: []
+  lib32-gremlins:
+    version: null
+    packages: []
+  lib32:
+    version: null
+    packages: []
+  galaxy-goblins:
+    version: null
+    packages: []
+  galaxy-gremlins:
+    version: null
+    packages: []
+  galaxy:
+    version: null
+    packages: []
