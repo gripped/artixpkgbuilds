@@ -1,18 +1,18 @@
 ---
 pkgbase:
   name: bash
-  version: 5.2.032-1.1
+  version: 5.2.032-2
   arch:
     - x86_64
   pkgname:
     - bash
 actions:
   addRepo: system
-  removeRepo: null
-  triggersBuild: true
+  removeRepo: system-gremlins
+  triggersBuild: false
   triggersRebuild: false
   triggersRepoAdd: true
-  triggersRepoRemove: false
+  triggersRepoRemove: true
   triggersNoCheck: false
 repos:
   system-goblins:
@@ -22,9 +22,9 @@ repos:
     version: null
     packages: []
   system:
-    version: 5.2.032-1.1
+    version: 5.2.032-2
     packages:
-      - bash-5.2.032-1.1-x86_64.pkg.tar.zst
+      - bash-5.2.032-2-x86_64.pkg.tar.zst
   world-goblins:
     version: null
     packages: []
