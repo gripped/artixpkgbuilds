@@ -1,7 +1,7 @@
 ---
 pkgbase:
   name: libpipeline
-  version: 1.5.7-2
+  version: 1.5.8-1
   arch:
     - x86_64
   pkgname:
@@ -22,9 +22,9 @@ repos:
     version: null
     packages: []
   system:
-    version: 1.5.7-2
+    version: 1.5.8-1
     packages:
-      - libpipeline-1.5.7-2-x86_64.pkg.tar.zst
+      - libpipeline-1.5.8-1-x86_64.pkg.tar.zst
   world-goblins:
     version: null
     packages: []
@@ -52,3 +52,4 @@ repos:
   galaxy:
     version: null
     packages: []
+team: system
