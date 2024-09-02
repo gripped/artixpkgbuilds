@@ -1,7 +1,7 @@
 ---
 pkgbase:
   name: libpcap
-  version: 1.10.4-2
+  version: 1.10.5-2
   arch:
     - x86_64
   pkgname:
@@ -22,9 +22,9 @@ repos:
     version: null
     packages: []
   system:
-    version: 1.10.4-2
+    version: 1.10.5-2
     packages:
-      - libpcap-1.10.4-2-x86_64.pkg.tar.zst
+      - libpcap-1.10.5-2-x86_64.pkg.tar.zst
   world-goblins:
     version: null
     packages: []
