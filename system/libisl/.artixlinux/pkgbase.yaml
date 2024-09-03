@@ -1,7 +1,7 @@
 ---
 pkgbase:
   name: libisl
-  version: 0.26-2
+  version: 0.27-1
   arch:
     - x86_64
   pkgname:
@@ -22,9 +22,9 @@ repos:
     version: null
     packages: []
   system:
-    version: 0.26-2
+    version: 0.27-1
     packages:
-      - libisl-0.26-2-x86_64.pkg.tar.zst
+      - libisl-0.27-1-x86_64.pkg.tar.zst
   world-goblins:
     version: null
     packages: []
