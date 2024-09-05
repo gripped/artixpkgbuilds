@@ -1,18 +1,18 @@
 ---
 pkgbase:
   name: perl-test-object
-  version: 0.08-7
+  version: 0.08-8
   arch:
     - any
   pkgname:
     - perl-test-object
 actions:
   addRepo: world
-  removeRepo: null
-  triggersBuild: true
+  removeRepo: world-gremlins
+  triggersBuild: false
   triggersRebuild: false
   triggersRepoAdd: true
-  triggersRepoRemove: false
+  triggersRepoRemove: true
   triggersNoCheck: false
 repos:
   system-goblins:
@@ -31,9 +31,9 @@ repos:
     version: null
     packages: []
   world:
-    version: 0.08-7
+    version: 0.08-8
     packages:
-      - perl-test-object-0.08-7-any.pkg.tar.zst
+      - perl-test-object-0.08-8-any.pkg.tar.zst
   lib32-goblins:
     version: null
     packages: []
