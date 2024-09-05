@@ -1,18 +1,18 @@
 ---
 pkgbase:
   name: perl-sub-identify
-  version: 0.14-12
+  version: 0.14-13
   arch:
     - x86_64
   pkgname:
     - perl-sub-identify
 actions:
   addRepo: world
-  removeRepo: null
-  triggersBuild: true
+  removeRepo: world-gremlins
+  triggersBuild: false
   triggersRebuild: false
   triggersRepoAdd: true
-  triggersRepoRemove: false
+  triggersRepoRemove: true
   triggersNoCheck: false
 repos:
   system-goblins:
@@ -31,9 +31,9 @@ repos:
     version: null
     packages: []
   world:
-    version: 0.14-12
+    version: 0.14-13
     packages:
-      - perl-sub-identify-0.14-12-x86_64.pkg.tar.zst
+      - perl-sub-identify-0.14-13-x86_64.pkg.tar.zst
   lib32-goblins:
     version: null
     packages: []
