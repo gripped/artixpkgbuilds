@@ -1,18 +1,18 @@
 ---
 pkgbase:
   name: perl-netaddr-ip
-  version: 4.079-15
+  version: 4.079-16
   arch:
     - x86_64
   pkgname:
     - perl-netaddr-ip
 actions:
   addRepo: world
-  removeRepo: null
-  triggersBuild: true
+  removeRepo: world-gremlins
+  triggersBuild: false
   triggersRebuild: false
   triggersRepoAdd: true
-  triggersRepoRemove: false
+  triggersRepoRemove: true
   triggersNoCheck: false
 repos:
   system-goblins:
@@ -31,9 +31,9 @@ repos:
     version: null
     packages: []
   world:
-    version: 4.079-15
+    version: 4.079-16
     packages:
-      - perl-netaddr-ip-4.079-15-x86_64.pkg.tar.zst
+      - perl-netaddr-ip-4.079-16-x86_64.pkg.tar.zst
   lib32-goblins:
     version: null
     packages: []
