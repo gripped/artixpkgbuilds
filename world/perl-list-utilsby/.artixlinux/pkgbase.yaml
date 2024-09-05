@@ -1,18 +1,18 @@
 ---
 pkgbase:
   name: perl-list-utilsby
-  version: 0.12-3
+  version: 0.12-4
   arch:
     - any
   pkgname:
     - perl-list-utilsby
 actions:
   addRepo: world
-  removeRepo: null
-  triggersBuild: true
+  removeRepo: world-gremlins
+  triggersBuild: false
   triggersRebuild: false
   triggersRepoAdd: true
-  triggersRepoRemove: false
+  triggersRepoRemove: true
   triggersNoCheck: false
 repos:
   system-goblins:
@@ -31,9 +31,9 @@ repos:
     version: null
     packages: []
   world:
-    version: 0.12-3
+    version: 0.12-4
     packages:
-      - perl-list-utilsby-0.12-3-any.pkg.tar.zst
+      - perl-list-utilsby-0.12-4-any.pkg.tar.zst
   lib32-goblins:
     version: null
     packages: []
