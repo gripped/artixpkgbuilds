@@ -1,18 +1,18 @@
 ---
 pkgbase:
   name: perl-extutils-installpaths
-  version: 0.013-1
+  version: 0.013-2
   arch:
     - any
   pkgname:
     - perl-extutils-installpaths
 actions:
   addRepo: world
-  removeRepo: null
-  triggersBuild: true
+  removeRepo: world-gremlins
+  triggersBuild: false
   triggersRebuild: false
   triggersRepoAdd: true
-  triggersRepoRemove: false
+  triggersRepoRemove: true
   triggersNoCheck: false
 repos:
   system-goblins:
@@ -31,9 +31,9 @@ repos:
     version: null
     packages: []
   world:
-    version: 0.013-1
+    version: 0.013-2
     packages:
-      - perl-extutils-installpaths-0.013-1-any.pkg.tar.zst
+      - perl-extutils-installpaths-0.013-2-any.pkg.tar.zst
   lib32-goblins:
     version: null
     packages: []
