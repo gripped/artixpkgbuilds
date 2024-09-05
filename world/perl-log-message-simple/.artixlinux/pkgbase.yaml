@@ -1,18 +1,18 @@
 ---
 pkgbase:
   name: perl-log-message-simple
-  version: 0.10-10
+  version: 0.10-11
   arch:
     - any
   pkgname:
     - perl-log-message-simple
 actions:
   addRepo: world
-  removeRepo: null
-  triggersBuild: true
+  removeRepo: world-gremlins
+  triggersBuild: false
   triggersRebuild: false
   triggersRepoAdd: true
-  triggersRepoRemove: false
+  triggersRepoRemove: true
   triggersNoCheck: false
 repos:
   system-goblins:
@@ -31,9 +31,9 @@ repos:
     version: null
     packages: []
   world:
-    version: 0.10-10
+    version: 0.10-11
     packages:
-      - perl-log-message-simple-0.10-10-any.pkg.tar.zst
+      - perl-log-message-simple-0.10-11-any.pkg.tar.zst
   lib32-goblins:
     version: null
     packages: []
