@@ -1,18 +1,18 @@
 ---
 pkgbase:
   name: perl-module-install
-  version: 1.21-3
+  version: 1.21-4
   arch:
     - any
   pkgname:
     - perl-module-install
 actions:
   addRepo: world
-  removeRepo: null
-  triggersBuild: true
+  removeRepo: world-gremlins
+  triggersBuild: false
   triggersRebuild: false
   triggersRepoAdd: true
-  triggersRepoRemove: false
+  triggersRepoRemove: true
   triggersNoCheck: false
 repos:
   system-goblins:
@@ -31,9 +31,9 @@ repos:
     version: null
     packages: []
   world:
-    version: 1.21-3
+    version: 1.21-4
     packages:
-      - perl-module-install-1.21-3-any.pkg.tar.zst
+      - perl-module-install-1.21-4-any.pkg.tar.zst
   lib32-goblins:
     version: null
     packages: []
