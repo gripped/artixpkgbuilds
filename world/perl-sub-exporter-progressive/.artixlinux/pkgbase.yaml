@@ -1,18 +1,18 @@
 ---
 pkgbase:
   name: perl-sub-exporter-progressive
-  version: 0.001013-10
+  version: 0.001013-11
   arch:
     - any
   pkgname:
     - perl-sub-exporter-progressive
 actions:
   addRepo: world
-  removeRepo: null
-  triggersBuild: true
+  removeRepo: world-gremlins
+  triggersBuild: false
   triggersRebuild: false
   triggersRepoAdd: true
-  triggersRepoRemove: false
+  triggersRepoRemove: true
   triggersNoCheck: false
 repos:
   system-goblins:
@@ -31,9 +31,9 @@ repos:
     version: null
     packages: []
   world:
-    version: 0.001013-10
+    version: 0.001013-11
     packages:
-      - perl-sub-exporter-progressive-0.001013-10-any.pkg.tar.zst
+      - perl-sub-exporter-progressive-0.001013-11-any.pkg.tar.zst
   lib32-goblins:
     version: null
     packages: []
