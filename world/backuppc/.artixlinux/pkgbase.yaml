@@ -1,7 +1,7 @@
 ---
 pkgbase:
   name: backuppc
-  version: 4.4.0-7
+  version: 4.4.0-8
   arch:
     - x86_64
   pkgname:
@@ -31,9 +31,9 @@ repos:
     version: null
     packages: []
   world:
-    version: 4.4.0-7
+    version: 4.4.0-8
     packages:
-      - backuppc-4.4.0-7-x86_64.pkg.tar.zst
+      - backuppc-4.4.0-8-x86_64.pkg.tar.zst
   lib32-goblins:
     version: null
     packages: []
@@ -52,3 +52,4 @@ repos:
   galaxy:
     version: null
     packages: []
+team: world
