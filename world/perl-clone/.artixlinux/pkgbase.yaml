@@ -1,18 +1,18 @@
 ---
 pkgbase:
   name: perl-clone
-  version: 0.46-3
+  version: 0.47-1
   arch:
     - x86_64
   pkgname:
     - perl-clone
 actions:
   addRepo: world
-  removeRepo: null
-  triggersBuild: true
+  removeRepo: world-gremlins
+  triggersBuild: false
   triggersRebuild: false
   triggersRepoAdd: true
-  triggersRepoRemove: false
+  triggersRepoRemove: true
   triggersNoCheck: false
 repos:
   system-goblins:
@@ -31,9 +31,9 @@ repos:
     version: null
     packages: []
   world:
-    version: 0.46-3
+    version: 0.47-1
     packages:
-      - perl-clone-0.46-3-x86_64.pkg.tar.zst
+      - perl-clone-0.47-1-x86_64.pkg.tar.zst
   lib32-goblins:
     version: null
     packages: []
