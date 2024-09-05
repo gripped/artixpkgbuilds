@@ -1,18 +1,18 @@
 ---
 pkgbase:
   name: perl-namespace-clean
-  version: 0.27-10
+  version: 0.27-11
   arch:
     - any
   pkgname:
     - perl-namespace-clean
 actions:
   addRepo: world
-  removeRepo: null
-  triggersBuild: true
+  removeRepo: world-gremlins
+  triggersBuild: false
   triggersRebuild: false
   triggersRepoAdd: true
-  triggersRepoRemove: false
+  triggersRepoRemove: true
   triggersNoCheck: false
 repos:
   system-goblins:
@@ -31,9 +31,9 @@ repos:
     version: null
     packages: []
   world:
-    version: 0.27-10
+    version: 0.27-11
     packages:
-      - perl-namespace-clean-0.27-10-any.pkg.tar.zst
+      - perl-namespace-clean-0.27-11-any.pkg.tar.zst
   lib32-goblins:
     version: null
     packages: []
