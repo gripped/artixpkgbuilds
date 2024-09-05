@@ -1,18 +1,18 @@
 ---
 pkgbase:
   name: perl-test-exit
-  version: 0.11-7
+  version: 0.11-8
   arch:
     - any
   pkgname:
     - perl-test-exit
 actions:
   addRepo: world
-  removeRepo: null
-  triggersBuild: true
+  removeRepo: world-gremlins
+  triggersBuild: false
   triggersRebuild: false
   triggersRepoAdd: true
-  triggersRepoRemove: false
+  triggersRepoRemove: true
   triggersNoCheck: false
 repos:
   system-goblins:
@@ -31,9 +31,9 @@ repos:
     version: null
     packages: []
   world:
-    version: 0.11-7
+    version: 0.11-8
     packages:
-      - perl-test-exit-0.11-7-any.pkg.tar.zst
+      - perl-test-exit-0.11-8-any.pkg.tar.zst
   lib32-goblins:
     version: null
     packages: []
