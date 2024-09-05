@@ -1,18 +1,18 @@
 ---
 pkgbase:
   name: perl-error
-  version: 0.17029-6
+  version: 0.17029-7
   arch:
     - any
   pkgname:
     - perl-error
 actions:
   addRepo: world
-  removeRepo: null
-  triggersBuild: true
+  removeRepo: world-gremlins
+  triggersBuild: false
   triggersRebuild: false
   triggersRepoAdd: true
-  triggersRepoRemove: false
+  triggersRepoRemove: true
   triggersNoCheck: false
 repos:
   system-goblins:
@@ -31,9 +31,9 @@ repos:
     version: null
     packages: []
   world:
-    version: 0.17029-6
+    version: 0.17029-7
     packages:
-      - perl-error-0.17029-6-any.pkg.tar.zst
+      - perl-error-0.17029-7-any.pkg.tar.zst
   lib32-goblins:
     version: null
     packages: []
