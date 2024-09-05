@@ -1,18 +1,18 @@
 ---
 pkgbase:
   name: perl-ppix-utils
-  version: 0.003-5
+  version: 0.003-6
   arch:
     - any
   pkgname:
     - perl-ppix-utils
 actions:
   addRepo: world
-  removeRepo: null
-  triggersBuild: true
+  removeRepo: world-gremlins
+  triggersBuild: false
   triggersRebuild: false
   triggersRepoAdd: true
-  triggersRepoRemove: false
+  triggersRepoRemove: true
   triggersNoCheck: false
 repos:
   system-goblins:
@@ -31,9 +31,9 @@ repos:
     version: null
     packages: []
   world:
-    version: 0.003-5
+    version: 0.003-6
     packages:
-      - perl-ppix-utils-0.003-5-any.pkg.tar.zst
+      - perl-ppix-utils-0.003-6-any.pkg.tar.zst
   lib32-goblins:
     version: null
     packages: []
