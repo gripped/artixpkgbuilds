@@ -1,18 +1,18 @@
 ---
 pkgbase:
   name: perl-test-leaktrace
-  version: 0.17-5
+  version: 0.17-6
   arch:
     - x86_64
   pkgname:
     - perl-test-leaktrace
 actions:
   addRepo: world
-  removeRepo: null
-  triggersBuild: true
+  removeRepo: world-gremlins
+  triggersBuild: false
   triggersRebuild: false
   triggersRepoAdd: true
-  triggersRepoRemove: false
+  triggersRepoRemove: true
   triggersNoCheck: false
 repos:
   system-goblins:
@@ -31,9 +31,9 @@ repos:
     version: null
     packages: []
   world:
-    version: 0.17-5
+    version: 0.17-6
     packages:
-      - perl-test-leaktrace-0.17-5-x86_64.pkg.tar.zst
+      - perl-test-leaktrace-0.17-6-x86_64.pkg.tar.zst
   lib32-goblins:
     version: null
     packages: []
