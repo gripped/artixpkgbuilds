@@ -1,18 +1,18 @@
 ---
 pkgbase:
   name: perl-path-class
-  version: 0.37-10
+  version: 0.37-11
   arch:
     - any
   pkgname:
     - perl-path-class
 actions:
   addRepo: world
-  removeRepo: null
-  triggersBuild: true
+  removeRepo: world-gremlins
+  triggersBuild: false
   triggersRebuild: false
   triggersRepoAdd: true
-  triggersRepoRemove: false
+  triggersRepoRemove: true
   triggersNoCheck: false
 repos:
   system-goblins:
@@ -31,9 +31,9 @@ repos:
     version: null
     packages: []
   world:
-    version: 0.37-10
+    version: 0.37-11
     packages:
-      - perl-path-class-0.37-10-any.pkg.tar.zst
+      - perl-path-class-0.37-11-any.pkg.tar.zst
   lib32-goblins:
     version: null
     packages: []
