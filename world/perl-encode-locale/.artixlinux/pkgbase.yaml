@@ -1,18 +1,18 @@
 ---
 pkgbase:
   name: perl-encode-locale
-  version: 1.05-12
+  version: 1.05-13
   arch:
     - any
   pkgname:
     - perl-encode-locale
 actions:
   addRepo: world
-  removeRepo: null
-  triggersBuild: true
+  removeRepo: world-gremlins
+  triggersBuild: false
   triggersRebuild: false
   triggersRepoAdd: true
-  triggersRepoRemove: false
+  triggersRepoRemove: true
   triggersNoCheck: false
 repos:
   system-goblins:
@@ -31,9 +31,9 @@ repos:
     version: null
     packages: []
   world:
-    version: 1.05-12
+    version: 1.05-13
     packages:
-      - perl-encode-locale-1.05-12-any.pkg.tar.zst
+      - perl-encode-locale-1.05-13-any.pkg.tar.zst
   lib32-goblins:
     version: null
     packages: []
