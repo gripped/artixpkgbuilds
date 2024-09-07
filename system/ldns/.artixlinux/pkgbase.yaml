@@ -1,7 +1,7 @@
 ---
 pkgbase:
   name: ldns
-  version: 1.8.3-3
+  version: 1.8.4-1
   arch:
     - x86_64
   pkgname:
@@ -22,9 +22,9 @@ repos:
     version: null
     packages: []
   system:
-    version: 1.8.3-3
+    version: 1.8.4-1
     packages:
-      - ldns-1.8.3-3-x86_64.pkg.tar.zst
+      - ldns-1.8.4-1-x86_64.pkg.tar.zst
   world-goblins:
     version: null
     packages: []
