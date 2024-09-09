@@ -1,18 +1,18 @@
 ---
 pkgbase:
   name: bison
-  version: 3.8.2-6
+  version: 3.8.2-8.1
   arch:
     - x86_64
   pkgname:
     - bison
 actions:
-  addRepo: null
-  removeRepo: null
+  addRepo: system
+  removeRepo: system-gremlins
   triggersBuild: false
   triggersRebuild: false
-  triggersRepoAdd: false
-  triggersRepoRemove: false
+  triggersRepoAdd: true
+  triggersRepoRemove: true
   triggersNoCheck: false
 repos:
   system-goblins:
@@ -22,9 +22,9 @@ repos:
     version: null
     packages: []
   system:
-    version: 3.8.2-6
+    version: 3.8.2-8.1
     packages:
-      - bison-3.8.2-6-x86_64.pkg.tar.zst
+      - bison-3.8.2-8.1-x86_64.pkg.tar.zst
   world-goblins:
     version: null
     packages: []
@@ -52,3 +52,4 @@ repos:
   galaxy:
     version: null
     packages: []
+team: system
