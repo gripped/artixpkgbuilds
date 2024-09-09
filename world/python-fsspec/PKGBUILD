@@ -4,7 +4,7 @@
 _pkg=filesystem_spec
 pkgname=python-fsspec
 pkgver=2024.6.1
-pkgrel=1
+pkgrel=1.1
 pkgdesc="Specification that python filesystems should adhere to"
 arch=(any)
 url="https://github.com/intake/filesystem_spec"
