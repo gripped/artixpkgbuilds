@@ -1,7 +1,7 @@
 ---
 pkgbase:
   name: perl-devel-checkcompiler
-  version: 0.07-11
+  version: 0.07-12
   arch:
     - any
   pkgname:
@@ -31,9 +31,9 @@ repos:
     version: null
     packages: []
   world:
-    version: 0.07-11
+    version: 0.07-12
     packages:
-      - perl-devel-checkcompiler-0.07-11-any.pkg.tar.zst
+      - perl-devel-checkcompiler-0.07-12-any.pkg.tar.zst
   lib32-goblins:
     version: null
     packages: []
