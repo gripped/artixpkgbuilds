@@ -2,18 +2,18 @@
 team: world
 pkgbase:
   name: j4-dmenu-desktop
-  version: 3.1-1
+  version: 3.1-2
   arch:
     - x86_64
   pkgname:
     - j4-dmenu-desktop
 actions:
   addRepo: world
-  removeRepo: null
-  triggersBuild: true
+  removeRepo: world-gremlins
+  triggersBuild: false
   triggersRebuild: false
   triggersRepoAdd: true
-  triggersRepoRemove: false
+  triggersRepoRemove: true
   triggersNoCheck: false
 repos:
   system-goblins:
@@ -32,9 +32,9 @@ repos:
     version: null
     packages: []
   world:
-    version: 3.1-1
+    version: 3.1-2
     packages:
-      - j4-dmenu-desktop-3.1-1-x86_64.pkg.tar.zst
+      - j4-dmenu-desktop-3.1-2-x86_64.pkg.tar.zst
   lib32-goblins:
     version: null
     packages: []
