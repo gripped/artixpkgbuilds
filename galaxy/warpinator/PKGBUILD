@@ -1,0 +1,36 @@
+# Maintainer: Balló György <ballogyor+arch at gmail dot com>
+# Contributor: Sam Burgos <santiago.burgos1089@gmail.com>
+# Contributor: Kyle Laker <kyle@laker.email>
+
+pkgname=warpinator
+pkgver=1.8.6
+pkgrel=1.1
+pkgdesc='LAN file sender, send and receive files across the network'
+arch=('any')
+url='https://github.com/linuxmint/warpinator'
+license=('GPL3')
+depends=('gtk3' 'libnm' 'python-cryptography' 'python-gobject' 'python-grpcio'
+         'python-protobuf' 'python-pynacl' 'python-setproctitle' 'python-setuptools' 'python-xapp' 'python-zeroconf'
+         'xapp' 'python-cairo' 'python-qrcode' 'python-pillow')
+makedepends=('meson' 'polkit')
+optdepends=('ufw: Open a firewall port for Warpinator')
+source=("https://github.com/linuxmint/$pkgname/archive/$pkgver/$pkgname-$pkgver.tar.gz")
+sha256sums=('a7e6ef1336de6b67429e7203584b547cf927c1d7ff2b5eaed86394d0a07372b5')
+
+prepare() {
+  cd $pkgname-$pkgver
+
+  # Fix hardcoded libexec dir
+  sed -i 's|libexec/warpinator|lib/warpinator|' \
+    bin/warpinator.in \
+    data/org.x.warpinator.policy.in.in
+}
+
+build() {
+  artix-meson $pkgname-$pkgver build -D bundle-zeroconf=false -D bundle-grpc=false
+  meson compile -C build
+}
+
+package() {
+  meson install -C build --destdir "$pkgdir"
+}
