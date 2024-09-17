@@ -13,7 +13,7 @@
 _pkgname="kotatogram-desktop"
 pkgname="$_pkgname-git"
 pkgver=1.4.15.2.r1022.gbc58b5f
-pkgrel=1
+pkgrel=3
 pkgdesc='Experimental fork of Telegram Desktop'
 url="https://github.com/kotatogram/kotatogram-desktop"
 license=('GPL-3.0-only')
@@ -229,15 +229,15 @@ _source_kotatogram_desktop() {
       #'ericniebler.range-v3'::'Telegram/ThirdParty/range-v3'
       'fcitx.fcitx5-qt'::'Telegram/ThirdParty/fcitx5-qt'
       'flatpak.xdg-desktop-portal'::'Telegram/ThirdParty/xdg-desktop-portal'
-      'gitlab-freedesktop-mirrors.wayland'::'Telegram/ThirdParty/wayland'
-      'gitlab-freedesktop-mirrors.wayland-protocols'::'Telegram/ThirdParty/wayland-protocols'
+      #'gitlab-freedesktop-mirrors.wayland'::'Telegram/ThirdParty/wayland'
+      #'gitlab-freedesktop-mirrors.wayland-protocols'::'Telegram/ThirdParty/wayland-protocols'
       'google.cld3'::'Telegram/ThirdParty/cld3'
       'hamonikr.nimf'::'Telegram/ThirdParty/nimf'
       'hime-ime.hime'::'Telegram/ThirdParty/hime'
       'hunspell'::'Telegram/ThirdParty/hunspell'
       'kde.kcoreaddons'::'Telegram/ThirdParty/kcoreaddons'
       'kde.kimageformats'::'Telegram/ThirdParty/kimageformats'
-      'kde.plasma-wayland-protocols'::'Telegram/ThirdParty/plasma-wayland-protocols'
+      #'kde.plasma-wayland-protocols'::'Telegram/ThirdParty/plasma-wayland-protocols'
       'kotatogram.cmake_helpers'::'cmake'
       'kotatogram.lib_ui'::'Telegram/lib_ui'
       'lz4'::'Telegram/ThirdParty/lz4'
