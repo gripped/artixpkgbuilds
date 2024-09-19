@@ -11,7 +11,7 @@ url="https://${pkgname}.readthedocs.io"
 license=(BSD-3-Clause)
 depends=(python)
 makedepends=(python-build python-installer python-scikit-build-core cmake eigen git)
-checkdepends=(python-pytest python-scipy python-pytorch python-tensorflow)
+checkdepends=(python-pytest python-scipy)
 source=(${pkgname}-${pkgver}::git+https://github.com/wjakob/${pkgname}.git#tag=v${pkgver}
         git+https://github.com/Tessil/robin-map.git)
 sha512sums=('07974b029c80f36b986cd1d0af2c628f9ce749a0987277ce692e34995c7d8d0b9060c79f995d71f1fa3d732765c5854c17f667a0105398648335feb331687273'
