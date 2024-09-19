@@ -1,0 +1,60 @@
+# Maintainer: Fabian Bornschein <fabiscafe-at-mailbox-dot-org>
+# Maintainer: Jan Alexander Steffens (heftig) <heftig@archlinux.org>
+
+pkgbase=libspelling
+pkgname=(
+  libspelling
+  libspelling-docs
+)
+pkgver=0.4.0
+pkgrel=1
+pkgdesc="Spellcheck library for GTK 4"
+url="https://gitlab.gnome.org/chergert/libspelling"
+arch=(x86_64)
+license=(LGPL-2.1-or-later)
+depends=(
+  enchant
+  gcc-libs
+  glib2
+  glibc
+  gtk4
+  gtksourceview5
+  icu
+  pango
+)
+makedepends=(
+  gi-docgen
+  git
+  gobject-introspection
+  meson
+  vala
+)
+source=("git+https://gitlab.gnome.org/chergert/libspelling.git#tag=$pkgver")
+b2sums=('32cfe8eeb44c1bcfca5a76b0dc29c61ff05c99e58eea667c1e4410a3151634e375a49132dc631a63f3526940da5477ea3666aed9b3a5f32f2d41978fb2f06f45')
+
+build() {
+  artix-meson $pkgname build
+  meson compile -C build
+}
+
+check() {
+  meson test -C build --print-errorlogs ||:
+}
+
+package_libspelling() {
+  provides=(libspelling-1.so)
+
+  meson install -C build --destdir "$pkgdir"
+
+  mkdir -p doc/usr/share
+  mv {"$pkgdir",doc}/usr/share/doc
+}
+
+package_libspelling-docs() {
+  pkgdesc+=" (documentation)"
+  depends=()
+
+  mv doc/* "$pkgdir"
+}
+
+# vim:set sw=2 sts=-1 et:
