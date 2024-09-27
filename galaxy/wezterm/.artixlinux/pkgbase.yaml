@@ -2,18 +2,19 @@
 team: galaxy
 pkgbase:
   name: wezterm
-  version: 20240203.110809.5046fc22-2.1
+  version: 20240922.151228.2b76c63b-1
   arch:
     - x86_64
+    - i686
   pkgname:
     - wezterm
 actions:
   addRepo: galaxy
-  removeRepo: null
-  triggersBuild: true
+  removeRepo: galaxy-goblins
+  triggersBuild: false
   triggersRebuild: false
   triggersRepoAdd: true
-  triggersRepoRemove: false
+  triggersRepoRemove: true
   triggersNoCheck: false
 repos:
   system-goblins:
@@ -50,6 +51,6 @@ repos:
     version: null
     packages: []
   galaxy:
-    version: 20240203.110809.5046fc22-2.1
+    version: 20240922.151228.2b76c63b-1
     packages:
-      - wezterm-20240203.110809.5046fc22-2.1-x86_64.pkg.tar.zst
+      - wezterm-20240922.151228.2b76c63b-1-x86_64.pkg.tar.zst
