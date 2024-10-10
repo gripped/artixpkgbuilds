@@ -7,21 +7,21 @@
 
 pkgname=erlang-nox
 # https://github.com/erlang/otp/tags
-pkgver=27.1
+pkgver=27.1.1
 _docver=27.0
 pkgrel=1
 arch=(x86_64)
 pkgdesc='General-purpose concurrent functional programming language (headless version)'
 url='https://erlang.org/'
 license=(Apache)
-depends=(ncurses openssl)
+depends=(ncurses openssl unixodbc)
 makedepends=(fop git java-environment libxslt lksctp-tools)
 conflicts=(erlang)
 optdepends=('java-environment: for Java support'
             'lksctp-tools: for SCTP support')
 options=(staticlibs)
 source=("git+https://github.com/erlang/otp#tag=OTP-$pkgver")
-b2sums=('5541b940a3b5bfa478ddc96488bc91758357721a0019d2e70c5f90d14c6fb1706e8adc6a8a22d01ac961d3d3a62e7a9fecec912aa00cdb6312080e704a5273be')
+b2sums=('b3249eae170d3e35a0e099eba7aba69d4b504e329fac112429e1975d3970d0018adf8cdceb16661020286e674b3196d80c7ae1051076666a8ab634db0b50a80f')
 
 prepare() {
   sed -i 's/^LDFLAGS = /LDFLAGS += /g' otp/lib/megaco/src/flex/Makefile.in
