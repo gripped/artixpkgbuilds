@@ -1,14 +1,14 @@
 ---
 pkgbase:
   name: s6
-  version: 2.13.0.0-1
+  version: 2.13.1.0-1
   arch:
     - x86_64
   pkgname:
     - s6
 actions:
   addRepo: system
-  removeRepo: system-goblins
+  removeRepo: system-gremlins
   triggersBuild: false
   triggersRebuild: false
   triggersRepoAdd: true
@@ -22,9 +22,9 @@ repos:
     version: null
     packages: []
   system:
-    version: 2.13.0.0-1
+    version: 2.13.1.0-1
     packages:
-      - s6-2.13.0.0-1-x86_64.pkg.tar.zst
+      - s6-2.13.1.0-1-x86_64.pkg.tar.zst
   world-goblins:
     version: null
     packages: []
