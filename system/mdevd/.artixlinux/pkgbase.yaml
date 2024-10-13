@@ -2,7 +2,7 @@
 team: system
 pkgbase:
   name: mdevd
-  version: 0.1.6.4-1
+  version: 0.1.6.5-1
   arch:
     - x86_64
   pkgname:
@@ -23,9 +23,9 @@ repos:
     version: null
     packages: []
   system:
-    version: 0.1.6.4-1
+    version: 0.1.6.5-1
     packages:
-      - mdevd-0.1.6.4-1-x86_64.pkg.tar.zst
+      - mdevd-0.1.6.5-1-x86_64.pkg.tar.zst
   world-goblins:
     version: null
     packages: []
