@@ -8,11 +8,11 @@ pkgbase:
     - ruby-test-unit
 actions:
   addRepo: world
-  removeRepo: null
-  triggersBuild: true
+  removeRepo: world-gremlins
+  triggersBuild: false
   triggersRebuild: false
   triggersRepoAdd: true
-  triggersRepoRemove: false
+  triggersRepoRemove: true
   triggersNoCheck: false
 repos:
   system-goblins:
@@ -25,16 +25,15 @@ repos:
     version: null
     packages: []
   world-goblins:
-    version: 3.6.2-3
-    packages:
-      - ruby-test-unit-3.6.2-3-any.pkg.tar.zst
+    version: null
+    packages: []
   world-gremlins:
     version: null
     packages: []
   world:
-    version: 3.6.2-1.1
+    version: 3.6.2-3
     packages:
-      - ruby-test-unit-3.6.2-1.1-any.pkg.tar.zst
+      - ruby-test-unit-3.6.2-3-any.pkg.tar.zst
   lib32-goblins:
     version: null
     packages: []
