@@ -1,7 +1,7 @@
 ---
 pkgbase:
   name: ruby-traces
-  version: 0.8.0-3
+  version: 0.13.1-1
   arch:
     - any
   pkgname:
@@ -31,9 +31,9 @@ repos:
     version: null
     packages: []
   world:
-    version: 0.8.0-3
+    version: 0.13.1-1
     packages:
-      - ruby-traces-0.8.0-3-any.pkg.tar.zst
+      - ruby-traces-0.13.1-1-any.pkg.tar.zst
   lib32-goblins:
     version: null
     packages: []
