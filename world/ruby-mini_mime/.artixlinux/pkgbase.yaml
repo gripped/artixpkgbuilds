@@ -2,18 +2,18 @@
 team: world
 pkgbase:
   name: ruby-mini_mime
-  version: 1.1.2-2
+  version: 1.1.2-3
   arch:
     - any
   pkgname:
     - ruby-mini_mime
 actions:
   addRepo: world
-  removeRepo: null
-  triggersBuild: true
+  removeRepo: world-gremlins
+  triggersBuild: false
   triggersRebuild: false
   triggersRepoAdd: true
-  triggersRepoRemove: false
+  triggersRepoRemove: true
   triggersNoCheck: false
 repos:
   system-goblins:
@@ -32,9 +32,9 @@ repos:
     version: null
     packages: []
   world:
-    version: 1.1.2-2
+    version: 1.1.2-3
     packages:
-      - ruby-mini_mime-1.1.2-2-any.pkg.tar.zst
+      - ruby-mini_mime-1.1.2-3-any.pkg.tar.zst
   lib32-goblins:
     version: null
     packages: []
