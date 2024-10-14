@@ -1,18 +1,18 @@
 ---
 pkgbase:
   name: ruby-rspec-expectations
-  version: 3.13.1-1
+  version: 3.13.3-1
   arch:
     - any
   pkgname:
     - ruby-rspec-expectations
 actions:
   addRepo: world
-  removeRepo: null
-  triggersBuild: true
+  removeRepo: world-gremlins
+  triggersBuild: false
   triggersRebuild: false
   triggersRepoAdd: true
-  triggersRepoRemove: false
+  triggersRepoRemove: true
   triggersNoCheck: false
 repos:
   system-goblins:
@@ -31,9 +31,9 @@ repos:
     version: null
     packages: []
   world:
-    version: 3.13.1-1
+    version: 3.13.3-1
     packages:
-      - ruby-rspec-expectations-3.13.1-1-any.pkg.tar.zst
+      - ruby-rspec-expectations-3.13.3-1-any.pkg.tar.zst
   lib32-goblins:
     version: null
     packages: []
