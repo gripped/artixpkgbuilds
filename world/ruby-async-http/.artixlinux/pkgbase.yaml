@@ -1,7 +1,7 @@
 ---
 pkgbase:
   name: ruby-async-http
-  version: 0.59.5-3
+  version: 0.80.0-2
   arch:
     - any
   pkgname:
@@ -31,9 +31,9 @@ repos:
     version: null
     packages: []
   world:
-    version: 0.59.5-3
+    version: 0.80.0-2
     packages:
-      - ruby-async-http-0.59.5-3-any.pkg.tar.zst
+      - ruby-async-http-0.80.0-2-any.pkg.tar.zst
   lib32-goblins:
     version: null
     packages: []
