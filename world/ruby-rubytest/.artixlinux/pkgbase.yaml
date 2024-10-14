@@ -1,7 +1,7 @@
 ---
 pkgbase:
   name: ruby-rubytest
-  version: 0.8.1-2
+  version: 0.8.1-4
   arch:
     - any
   pkgname:
@@ -31,9 +31,9 @@ repos:
     version: null
     packages: []
   world:
-    version: 0.8.1-2
+    version: 0.8.1-4
     packages:
-      - ruby-rubytest-0.8.1-2-any.pkg.tar.zst
+      - ruby-rubytest-0.8.1-4-any.pkg.tar.zst
   lib32-goblins:
     version: null
     packages: []
