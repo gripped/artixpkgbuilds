@@ -1,18 +1,18 @@
 ---
 pkgbase:
   name: chrono-date
-  version: 3.0.1-4
+  version: 3.0.2-1
   arch:
     - x86_64
   pkgname:
     - chrono-date
 actions:
   addRepo: world
-  removeRepo: null
-  triggersBuild: true
+  removeRepo: world-gremlins
+  triggersBuild: false
   triggersRebuild: false
   triggersRepoAdd: true
-  triggersRepoRemove: false
+  triggersRepoRemove: true
   triggersNoCheck: false
 repos:
   system-goblins:
@@ -31,9 +31,9 @@ repos:
     version: null
     packages: []
   world:
-    version: 3.0.1-4
+    version: 3.0.2-1
     packages:
-      - chrono-date-3.0.1-4-x86_64.pkg.tar.zst
+      - chrono-date-3.0.2-1-x86_64.pkg.tar.zst
   lib32-goblins:
     version: null
     packages: []
