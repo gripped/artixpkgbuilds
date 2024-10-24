@@ -1,7 +1,7 @@
 ---
 pkgbase:
   name: nspr
-  version: 4.35-3
+  version: 4.36-1
   arch:
     - x86_64
   pkgname:
@@ -22,9 +22,9 @@ repos:
     version: null
     packages: []
   system:
-    version: 4.35-3
+    version: 4.36-1
     packages:
-      - nspr-4.35-3-x86_64.pkg.tar.zst
+      - nspr-4.36-1-x86_64.pkg.tar.zst
   world-goblins:
     version: null
     packages: []
