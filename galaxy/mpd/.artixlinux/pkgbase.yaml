@@ -1,7 +1,7 @@
 ---
 pkgbase:
   name: mpd
-  version: 0.23.15-6
+  version: 0.23.15-9
   arch:
     - x86_64
   pkgname:
@@ -43,13 +43,14 @@ repos:
     version: null
     packages: []
   galaxy-goblins:
-    version: null
-    packages: []
+    version: 0.23.15-9
+    packages:
+      - mpd-0.23.15-9-x86_64.pkg.tar.zst
   galaxy-gremlins:
     version: null
     packages: []
   galaxy:
-    version: 0.23.15-6
+    version: 0.23.15-8
     packages:
-      - mpd-0.23.15-6-x86_64.pkg.tar.zst
+      - mpd-0.23.15-8-x86_64.pkg.tar.zst
 team: galaxy
