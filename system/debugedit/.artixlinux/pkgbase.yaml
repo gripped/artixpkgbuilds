@@ -1,7 +1,7 @@
 ---
 pkgbase:
   name: debugedit
-  version: 5.0-6
+  version: 5.1-1
   arch:
     - x86_64
   pkgname:
@@ -22,9 +22,9 @@ repos:
     version: null
     packages: []
   system:
-    version: 5.0-6
+    version: 5.1-1
     packages:
-      - debugedit-5.0-6-x86_64.pkg.tar.zst
+      - debugedit-5.1-1-x86_64.pkg.tar.zst
   world-goblins:
     version: null
     packages: []
