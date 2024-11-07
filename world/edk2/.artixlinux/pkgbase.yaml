@@ -1,10 +1,12 @@
 ---
 pkgbase:
   name: edk2
-  version: 202311-1
+  version: 202408-2
   arch:
     - any
   pkgname:
+    - edk2-arm
+    - edk2-aarch64
     - edk2-shell
     - edk2-ovmf
 actions:
@@ -32,10 +34,12 @@ repos:
     version: null
     packages: []
   world:
-    version: 202311-1
+    version: 202408-2
     packages:
-      - edk2-shell-202311-1-any.pkg.tar.zst
-      - edk2-ovmf-202311-1-any.pkg.tar.zst
+      - edk2-arm-202408-2-any.pkg.tar.zst
+      - edk2-aarch64-202408-2-any.pkg.tar.zst
+      - edk2-shell-202408-2-any.pkg.tar.zst
+      - edk2-ovmf-202408-2-any.pkg.tar.zst
   lib32-goblins:
     version: null
     packages: []
@@ -54,3 +58,4 @@ repos:
   galaxy:
     version: null
     packages: []
+team: world
