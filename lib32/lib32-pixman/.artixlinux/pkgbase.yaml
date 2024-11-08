@@ -1,18 +1,18 @@
 ---
 pkgbase:
   name: lib32-pixman
-  version: 0.43.4-1
+  version: 0.44.0-1
   arch:
     - x86_64
   pkgname:
     - lib32-pixman
 actions:
   addRepo: lib32
-  removeRepo: null
-  triggersBuild: true
+  removeRepo: lib32-gremlins
+  triggersBuild: false
   triggersRebuild: false
   triggersRepoAdd: true
-  triggersRepoRemove: false
+  triggersRepoRemove: true
   triggersNoCheck: false
 repos:
   system-goblins:
@@ -40,9 +40,9 @@ repos:
     version: null
     packages: []
   lib32:
-    version: 0.43.4-1
+    version: 0.44.0-1
     packages:
-      - lib32-pixman-0.43.4-1-x86_64.pkg.tar.zst
+      - lib32-pixman-0.44.0-1-x86_64.pkg.tar.zst
   galaxy-goblins:
     version: null
     packages: []
@@ -52,12 +52,4 @@ repos:
   galaxy:
     version: null
     packages: []
-  asteroids-goblins:
-    version: null
-    packages: []
-  asteroids-gremlins:
-    version: null
-    packages: []
-  asteroids:
-    version: null
-    packages: []
+team: lib32
