@@ -1,18 +1,18 @@
 ---
 pkgbase:
   name: audacious-plugins
-  version: 4.4.2-1
+  version: 4.4.2-2
   arch:
     - x86_64
   pkgname:
     - audacious-plugins
 actions:
   addRepo: galaxy
-  removeRepo: null
-  triggersBuild: true
+  removeRepo: galaxy-gremlins
+  triggersBuild: false
   triggersRebuild: false
   triggersRepoAdd: true
-  triggersRepoRemove: false
+  triggersRepoRemove: true
   triggersNoCheck: false
 repos:
   system-goblins:
@@ -43,14 +43,13 @@ repos:
     version: null
     packages: []
   galaxy-goblins:
-    version: 4.4.1-2
-    packages:
-      - audacious-plugins-4.4.1-2-x86_64.pkg.tar.zst
+    version: null
+    packages: []
   galaxy-gremlins:
     version: null
     packages: []
   galaxy:
-    version: 4.4.2-1
+    version: 4.4.2-2
     packages:
-      - audacious-plugins-4.4.2-1-x86_64.pkg.tar.zst
+      - audacious-plugins-4.4.2-2-x86_64.pkg.tar.zst
 team: galaxy
