@@ -43,14 +43,13 @@ repos:
     version: null
     packages: []
   galaxy-goblins:
-    version: 0.23.15-9
-    packages:
-      - mpd-0.23.15-9-x86_64.pkg.tar.zst
+    version: null
+    packages: []
   galaxy-gremlins:
     version: null
     packages: []
   galaxy:
-    version: 0.23.15-8
+    version: 0.23.15-9
     packages:
-      - mpd-0.23.15-8-x86_64.pkg.tar.zst
+      - mpd-0.23.15-9-x86_64.pkg.tar.zst
 team: galaxy
