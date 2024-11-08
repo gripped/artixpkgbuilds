@@ -1,7 +1,7 @@
 ---
 pkgbase:
   name: chromaprint
-  version: 1.5.1-8
+  version: 1.5.1-9
   arch:
     - x86_64
   pkgname:
@@ -31,9 +31,9 @@ repos:
     version: null
     packages: []
   world:
-    version: 1.5.1-8
+    version: 1.5.1-9
     packages:
-      - chromaprint-1.5.1-8-x86_64.pkg.tar.zst
+      - chromaprint-1.5.1-9-x86_64.pkg.tar.zst
   lib32-goblins:
     version: null
     packages: []
