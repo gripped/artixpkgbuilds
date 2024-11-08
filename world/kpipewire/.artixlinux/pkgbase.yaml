@@ -1,18 +1,18 @@
 ---
 pkgbase:
   name: kpipewire
-  version: 6.2.3-1
+  version: 6.2.3-2
   arch:
     - x86_64
   pkgname:
     - kpipewire
 actions:
   addRepo: world
-  removeRepo: null
-  triggersBuild: true
+  removeRepo: world-gremlins
+  triggersBuild: false
   triggersRebuild: false
   triggersRepoAdd: true
-  triggersRepoRemove: false
+  triggersRepoRemove: true
   triggersNoCheck: false
 repos:
   system-goblins:
@@ -25,17 +25,15 @@ repos:
     version: null
     packages: []
   world-goblins:
-    version: 6.2.2-2
-    packages:
-      - kpipewire-6.2.2-2-x86_64.pkg.tar.zst
+    version: null
+    packages: []
   world-gremlins:
-    version: 6.2.2-2.1
-    packages:
-      - kpipewire-6.2.2-2.1-x86_64.pkg.tar.zst
+    version: null
+    packages: []
   world:
-    version: 6.2.3-1
+    version: 6.2.3-2
     packages:
-      - kpipewire-6.2.3-1-x86_64.pkg.tar.zst
+      - kpipewire-6.2.3-2-x86_64.pkg.tar.zst
   lib32-goblins:
     version: null
     packages: []
