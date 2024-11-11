@@ -2,18 +2,18 @@
 team: world
 pkgbase:
   name: limine
-  version: 8.3.1-1
+  version: 8.4.0-1
   arch:
     - x86_64
   pkgname:
     - limine
 actions:
   addRepo: world
-  removeRepo: null
-  triggersBuild: true
+  removeRepo: world-gremlins
+  triggersBuild: false
   triggersRebuild: false
   triggersRepoAdd: true
-  triggersRepoRemove: false
+  triggersRepoRemove: true
   triggersNoCheck: false
 repos:
   system-goblins:
@@ -32,9 +32,9 @@ repos:
     version: null
     packages: []
   world:
-    version: 8.3.1-1
+    version: 8.4.0-1
     packages:
-      - limine-8.3.1-1-x86_64.pkg.tar.zst
+      - limine-8.4.0-1-x86_64.pkg.tar.zst
   lib32-goblins:
     version: null
     packages: []
