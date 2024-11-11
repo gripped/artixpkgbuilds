@@ -1,7 +1,7 @@
 ---
 pkgbase:
   name: ibus
-  version: 1.5.30-3
+  version: 1.5.31-1
   arch:
     - x86_64
   pkgname:
@@ -9,11 +9,11 @@ pkgbase:
     - libibus
 actions:
   addRepo: world
-  removeRepo: null
-  triggersBuild: true
+  removeRepo: world-gremlins
+  triggersBuild: false
   triggersRebuild: false
   triggersRepoAdd: true
-  triggersRepoRemove: false
+  triggersRepoRemove: true
   triggersNoCheck: false
 repos:
   system-goblins:
@@ -32,10 +32,10 @@ repos:
     version: null
     packages: []
   world:
-    version: 1.5.30-3
+    version: 1.5.31-1
     packages:
-      - ibus-1.5.30-3-x86_64.pkg.tar.zst
-      - libibus-1.5.30-3-x86_64.pkg.tar.zst
+      - ibus-1.5.31-1-x86_64.pkg.tar.zst
+      - libibus-1.5.31-1-x86_64.pkg.tar.zst
   lib32-goblins:
     version: null
     packages: []
