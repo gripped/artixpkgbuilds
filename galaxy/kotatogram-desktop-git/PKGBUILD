@@ -12,7 +12,7 @@
 _pkgname="kotatogram-desktop"
 pkgname="$_pkgname-git"
 pkgver=1.5.0.4.r1004.ge30c185
-pkgrel=2
+pkgrel=3
 pkgdesc='Experimental fork of Telegram Desktop'
 url="https://github.com/kotatogram/kotatogram-desktop"
 license=('GPL-3.0-only')
