@@ -8,7 +8,7 @@ pkgbase:
     - libsysstat
 actions:
   addRepo: galaxy
-  removeRepo: galaxy-gremlins
+  removeRepo: world
   triggersBuild: false
   triggersRebuild: false
   triggersRepoAdd: true
