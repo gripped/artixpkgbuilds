@@ -2,7 +2,7 @@
 team: world
 pkgbase:
   name: python-jiter
-  version: 0.6.1-1
+  version: 0.7.0-1
   arch:
     - x86_64
   pkgname:
@@ -32,9 +32,9 @@ repos:
     version: null
     packages: []
   world:
-    version: 0.6.1-1
+    version: 0.7.0-1
     packages:
-      - python-jiter-0.6.1-1-x86_64.pkg.tar.zst
+      - python-jiter-0.7.0-1-x86_64.pkg.tar.zst
   lib32-goblins:
     version: null
     packages: []
