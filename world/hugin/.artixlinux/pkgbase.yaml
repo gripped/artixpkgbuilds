@@ -1,18 +1,18 @@
 ---
 pkgbase:
   name: hugin
-  version: 2023.0.0-4
+  version: 2024.0.1-2
   arch:
     - x86_64
   pkgname:
     - hugin
 actions:
   addRepo: world
-  removeRepo: null
-  triggersBuild: true
+  removeRepo: world-gremlins
+  triggersBuild: false
   triggersRebuild: false
   triggersRepoAdd: true
-  triggersRepoRemove: false
+  triggersRepoRemove: true
   triggersNoCheck: false
 repos:
   system-goblins:
@@ -25,16 +25,16 @@ repos:
     version: null
     packages: []
   world-goblins:
+    version: 2024.0.1-2
+    packages:
+      - hugin-2024.0.1-2-x86_64.pkg.tar.zst
+  world-gremlins:
     version: null
     packages: []
-  world-gremlins:
-    version: 2023.0.0-3
-    packages:
-      - hugin-2023.0.0-3-x86_64.pkg.tar.zst
   world:
-    version: 2023.0.0-4
+    version: 2024.0.1-1
     packages:
-      - hugin-2023.0.0-4-x86_64.pkg.tar.zst
+      - hugin-2024.0.1-1-x86_64.pkg.tar.zst
   lib32-goblins:
     version: null
     packages: []
