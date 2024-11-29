@@ -1,7 +1,7 @@
 ---
 pkgbase:
   name: librewolf
-  version: 132.0.2-1
+  version: 133.0-1
   arch:
     - x86_64
     - aarch64
@@ -47,10 +47,11 @@ repos:
     version: null
     packages: []
   galaxy-gremlins:
-    version: null
-    packages: []
-  galaxy:
-    version: 132.0.2-1
+    version: 133.0-1
     packages:
-      - librewolf-132.0.2-1-x86_64.pkg.tar.zst
+      - librewolf-133.0-1-x86_64.pkg.tar.zst
+  galaxy:
+    version: 133.0-1
+    packages:
+      - librewolf-133.0-1-x86_64.pkg.tar.zst
 team: galaxy
