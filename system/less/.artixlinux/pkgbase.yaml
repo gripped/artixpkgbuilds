@@ -1,7 +1,7 @@
 ---
 pkgbase:
   name: less
-  version: 1:661-1
+  version: 1:668-1
   arch:
     - x86_64
   pkgname:
@@ -22,9 +22,9 @@ repos:
     version: null
     packages: []
   system:
-    version: 1:661-1
+    version: 1:668-1
     packages:
-      - less-1:661-1-x86_64.pkg.tar.zst
+      - less-1:668-1-x86_64.pkg.tar.zst
   world-goblins:
     version: null
     packages: []
