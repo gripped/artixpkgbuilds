@@ -1,7 +1,7 @@
 ---
 pkgbase:
   name: libbpf
-  version: 1.4.3-1
+  version: 1.5.0-1
   arch:
     - x86_64
   pkgname:
@@ -22,9 +22,9 @@ repos:
     version: null
     packages: []
   system:
-    version: 1.4.3-1
+    version: 1.5.0-1
     packages:
-      - libbpf-1.4.3-1-x86_64.pkg.tar.zst
+      - libbpf-1.5.0-1-x86_64.pkg.tar.zst
   world-goblins:
     version: null
     packages: []
