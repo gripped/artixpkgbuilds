@@ -1,7 +1,7 @@
 ---
 pkgbase:
   name: btrfs-progs
-  version: 6.11-1
+  version: 6.12-2
   arch:
     - x86_64
   pkgname:
@@ -16,15 +16,16 @@ actions:
   triggersNoCheck: false
 repos:
   system-goblins:
-    version: null
-    packages: []
+    version: 6.12-2
+    packages:
+      - btrfs-progs-6.12-2-x86_64.pkg.tar.zst
   system-gremlins:
     version: null
     packages: []
   system:
-    version: 6.11-1
+    version: 6.12-1
     packages:
-      - btrfs-progs-6.11-1-x86_64.pkg.tar.zst
+      - btrfs-progs-6.12-1-x86_64.pkg.tar.zst
   world-goblins:
     version: null
     packages: []
