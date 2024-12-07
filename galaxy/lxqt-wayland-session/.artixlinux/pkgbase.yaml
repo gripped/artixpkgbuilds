@@ -2,9 +2,9 @@
 team: galaxy
 pkgbase:
   name: lxqt-wayland-session
-  version: 0.1.0-2.2
+  version: 0.1.1-1
   arch:
-    - x86_64
+    - any
   pkgname:
     - lxqt-wayland-session
 actions:
@@ -50,6 +50,6 @@ repos:
     version: null
     packages: []
   galaxy:
-    version: 0.1.0-2.2
+    version: 0.1.1-1
     packages:
-      - lxqt-wayland-session-0.1.0-2.2-x86_64.pkg.tar.zst
+      - lxqt-wayland-session-0.1.1-1-any.pkg.tar.zst
