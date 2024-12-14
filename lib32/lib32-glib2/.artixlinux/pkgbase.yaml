@@ -1,7 +1,7 @@
 ---
 pkgbase:
   name: lib32-glib2
-  version: 2.82.3-1
+  version: 2.82.4-2
   arch:
     - x86_64
   pkgname:
@@ -34,15 +34,16 @@ repos:
     version: null
     packages: []
   lib32-goblins:
-    version: null
-    packages: []
+    version: 2.82.4-2
+    packages:
+      - lib32-glib2-2.82.4-2-x86_64.pkg.tar.zst
   lib32-gremlins:
     version: null
     packages: []
   lib32:
-    version: 2.82.3-1
+    version: 2.82.4-1
     packages:
-      - lib32-glib2-2.82.3-1-x86_64.pkg.tar.zst
+      - lib32-glib2-2.82.4-1-x86_64.pkg.tar.zst
   galaxy-goblins:
     version: null
     packages: []
