@@ -2,18 +2,18 @@
 team: galaxy
 pkgbase:
   name: liboctopi
-  version: 1.0-2
+  version: 1.0.1-1
   arch:
     - x86_64
   pkgname:
     - liboctopi
 actions:
   addRepo: galaxy
-  removeRepo: null
-  triggersBuild: true
+  removeRepo: galaxy-gremlins
+  triggersBuild: false
   triggersRebuild: false
   triggersRepoAdd: true
-  triggersRepoRemove: false
+  triggersRepoRemove: true
   triggersNoCheck: false
 repos:
   system-goblins:
@@ -50,6 +50,6 @@ repos:
     version: null
     packages: []
   galaxy:
-    version: 1.0-2
+    version: 1.0.1-1
     packages:
-      - liboctopi-1.0-2-x86_64.pkg.tar.zst
+      - liboctopi-1.0.1-1-x86_64.pkg.tar.zst
