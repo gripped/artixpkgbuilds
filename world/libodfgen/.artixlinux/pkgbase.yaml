@@ -8,11 +8,11 @@ pkgbase:
     - libodfgen
 actions:
   addRepo: world
-  removeRepo: null
-  triggersBuild: true
+  removeRepo: galaxy
+  triggersBuild: false
   triggersRebuild: false
   triggersRepoAdd: true
-  triggersRepoRemove: false
+  triggersRepoRemove: true
   triggersNoCheck: false
 repos:
   system-goblins:
