@@ -1,0 +1,30 @@
+# artist for Artix Linux
+
+pkgname=sfwbar
+pkgver=1.0_beta16
+pkgrel=1
+
+pkgdesc='Flexible taskbar application for istacking wayland compositors'
+arch=('x86_64')
+url='https://github.com/LBCrion/sfwbar'
+license=('GPL3')
+depends=('wayland' 'gtk3' 'json-c' 'gtk-layer-shell' 'wayland-protocols' 'python3')
+makedepends=('alsa-lib' 'libpulse' 'meson' 'libmpdclient')
+
+source=("$pkgname-$pkgver.tar.gz::$url/archive/refs/tags/v$pkgver.tar.gz")
+
+sha256sums=('238d6394650dfdfc2f36374ec25702bbef57e2cff1d9a149ecb9a52f887c3cdf')
+
+build() {
+    cd "$pkgname-$pkgver"
+    meson --prefix=/usr \
+          --buildtype=plain \
+          build
+    ninja -C build
+}
+
+package() {
+    cd "$pkgname-$pkgver"
+    DESTDIR="$pkgdir" ninja -C build install
+}
+
