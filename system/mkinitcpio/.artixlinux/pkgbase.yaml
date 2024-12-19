@@ -1,7 +1,7 @@
 ---
 pkgbase:
   name: mkinitcpio
-  version: 39.2-2
+  version: 39.2-3
   arch:
     - any
   pkgname:
@@ -22,9 +22,9 @@ repos:
     version: null
     packages: []
   system:
-    version: 39.2-2
+    version: 39.2-3
     packages:
-      - mkinitcpio-39.2-2-any.pkg.tar.zst
+      - mkinitcpio-39.2-3-any.pkg.tar.zst
   world-goblins:
     version: null
     packages: []
