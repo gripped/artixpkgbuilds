@@ -1,7 +1,7 @@
 ---
 pkgbase:
   name: jupyter-nbclient
-  version: 0.10.1-1
+  version: 0.10.2-1
   arch:
     - any
   pkgname:
@@ -32,9 +32,9 @@ repos:
     packages:
       - jupyter-nbclient-0.10.1-2-any.pkg.tar.zst
   world:
-    version: 0.10.1-1
+    version: 0.10.2-1
     packages:
-      - jupyter-nbclient-0.10.1-1-any.pkg.tar.zst
+      - jupyter-nbclient-0.10.2-1-any.pkg.tar.zst
   lib32-goblins:
     version: null
     packages: []
