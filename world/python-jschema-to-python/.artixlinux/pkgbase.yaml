@@ -1,7 +1,7 @@
 ---
 pkgbase:
   name: python-jschema-to-python
-  version: 1.2.3-6
+  version: 1.2.3-7
   arch:
     - any
   pkgname:
@@ -31,9 +31,9 @@ repos:
     version: null
     packages: []
   world:
-    version: 1.2.3-6
+    version: 1.2.3-7
     packages:
-      - python-jschema-to-python-1.2.3-6-any.pkg.tar.zst
+      - python-jschema-to-python-1.2.3-7-any.pkg.tar.zst
   lib32-goblins:
     version: null
     packages: []
