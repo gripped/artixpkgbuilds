@@ -1,7 +1,7 @@
 ---
 pkgbase:
   name: python-pytest-vcr
-  version: 1.0.2-8
+  version: 1.0.2-9
   arch:
     - any
   pkgname:
@@ -31,9 +31,9 @@ repos:
     version: null
     packages: []
   world:
-    version: 1.0.2-8
+    version: 1.0.2-9
     packages:
-      - python-pytest-vcr-1.0.2-8-any.pkg.tar.zst
+      - python-pytest-vcr-1.0.2-9-any.pkg.tar.zst
   lib32-goblins:
     version: null
     packages: []
