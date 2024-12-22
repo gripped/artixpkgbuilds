@@ -1,7 +1,7 @@
 ---
 pkgbase:
   name: python-async-timeout
-  version: 4.0.3-5
+  version: 4.0.3-6
   arch:
     - any
   pkgname:
@@ -31,9 +31,9 @@ repos:
     version: null
     packages: []
   world:
-    version: 4.0.3-5
+    version: 4.0.3-6
     packages:
-      - python-async-timeout-4.0.3-5-any.pkg.tar.zst
+      - python-async-timeout-4.0.3-6-any.pkg.tar.zst
   lib32-goblins:
     version: null
     packages: []
