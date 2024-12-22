@@ -1,7 +1,7 @@
 ---
 pkgbase:
   name: python-appdirs
-  version: 1.4.4-10
+  version: 1.4.4-11
   arch:
     - any
   pkgname:
@@ -31,9 +31,9 @@ repos:
     version: null
     packages: []
   world:
-    version: 1.4.4-10
+    version: 1.4.4-11
     packages:
-      - python-appdirs-1.4.4-10-any.pkg.tar.zst
+      - python-appdirs-1.4.4-11-any.pkg.tar.zst
   lib32-goblins:
     version: null
     packages: []
