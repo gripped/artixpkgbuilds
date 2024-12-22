@@ -1,7 +1,7 @@
 ---
 pkgbase:
   name: python-blessed
-  version: 1.20.0-6
+  version: 1.20.0-7
   arch:
     - any
   pkgname:
@@ -31,9 +31,9 @@ repos:
     version: null
     packages: []
   world:
-    version: 1.20.0-6
+    version: 1.20.0-7
     packages:
-      - python-blessed-1.20.0-6-any.pkg.tar.zst
+      - python-blessed-1.20.0-7-any.pkg.tar.zst
   lib32-goblins:
     version: null
     packages: []
