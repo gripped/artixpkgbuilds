@@ -1,7 +1,7 @@
 ---
 pkgbase:
   name: python-django-filter
-  version: 24.3-2
+  version: 24.3-3
   arch:
     - any
   pkgname:
@@ -31,9 +31,9 @@ repos:
     version: null
     packages: []
   world:
-    version: 24.3-2
+    version: 24.3-3
     packages:
-      - python-django-filter-24.3-2-any.pkg.tar.zst
+      - python-django-filter-24.3-3-any.pkg.tar.zst
   lib32-goblins:
     version: null
     packages: []
