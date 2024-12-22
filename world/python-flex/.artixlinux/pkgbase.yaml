@@ -1,7 +1,7 @@
 ---
 pkgbase:
   name: python-flex
-  version: 6.14.1-12
+  version: 6.14.1-13
   arch:
     - any
   pkgname:
@@ -31,9 +31,9 @@ repos:
     version: null
     packages: []
   world:
-    version: 6.14.1-12
+    version: 6.14.1-13
     packages:
-      - python-flex-6.14.1-12-any.pkg.tar.zst
+      - python-flex-6.14.1-13-any.pkg.tar.zst
   lib32-goblins:
     version: null
     packages: []
