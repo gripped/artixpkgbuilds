@@ -1,9 +1,9 @@
 ---
 pkgbase:
   name: python-genshi
-  version: 0.7.7-3
+  version: 0.7.9-1
   arch:
-    - any
+    - x86_64
   pkgname:
     - python-genshi
 actions:
@@ -31,9 +31,9 @@ repos:
     version: null
     packages: []
   world:
-    version: 0.7.7-3
+    version: 0.7.9-1
     packages:
-      - python-genshi-0.7.7-3-any.pkg.tar.zst
+      - python-genshi-0.7.9-1-x86_64.pkg.tar.zst
   lib32-goblins:
     version: null
     packages: []
