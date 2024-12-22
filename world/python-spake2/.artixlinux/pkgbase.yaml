@@ -1,7 +1,7 @@
 ---
 pkgbase:
   name: python-spake2
-  version: 0.8-12
+  version: 0.8-13
   arch:
     - any
   pkgname:
@@ -31,9 +31,9 @@ repos:
     version: null
     packages: []
   world:
-    version: 0.8-12
+    version: 0.8-13
     packages:
-      - python-spake2-0.8-12-any.pkg.tar.zst
+      - python-spake2-0.8-13-any.pkg.tar.zst
   lib32-goblins:
     version: null
     packages: []
