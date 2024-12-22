@@ -2,18 +2,18 @@
 team: world
 pkgbase:
   name: python-coloredlogs
-  version: 15.0.1-5
+  version: 15.0.1-6
   arch:
     - any
   pkgname:
     - python-coloredlogs
 actions:
   addRepo: world
-  removeRepo: null
-  triggersBuild: true
+  removeRepo: world-gremlins
+  triggersBuild: false
   triggersRebuild: false
   triggersRepoAdd: true
-  triggersRepoRemove: false
+  triggersRepoRemove: true
   triggersNoCheck: false
 repos:
   system-goblins:
@@ -32,9 +32,9 @@ repos:
     version: null
     packages: []
   world:
-    version: 15.0.1-5
+    version: 15.0.1-6
     packages:
-      - python-coloredlogs-15.0.1-5-any.pkg.tar.zst
+      - python-coloredlogs-15.0.1-6-any.pkg.tar.zst
   lib32-goblins:
     version: null
     packages: []
