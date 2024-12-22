@@ -1,7 +1,7 @@
 ---
 pkgbase:
   name: scribus
-  version: 1.6.2-5
+  version: 1.6.2-7
   arch:
     - x86_64
   pkgname:
@@ -43,13 +43,14 @@ repos:
     version: null
     packages: []
   galaxy-goblins:
-    version: null
-    packages: []
+    version: 1.6.2-7
+    packages:
+      - scribus-1.6.2-7-x86_64.pkg.tar.zst
   galaxy-gremlins:
     version: null
     packages: []
   galaxy:
-    version: 1.6.2-5
+    version: 1.6.2-6
     packages:
-      - scribus-1.6.2-5-x86_64.pkg.tar.zst
+      - scribus-1.6.2-6-x86_64.pkg.tar.zst
 team: galaxy
