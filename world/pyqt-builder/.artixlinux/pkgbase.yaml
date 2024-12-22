@@ -1,18 +1,18 @@
 ---
 pkgbase:
   name: pyqt-builder
-  version: 1.17.0-1
+  version: 1.17.0-2
   arch:
     - any
   pkgname:
     - pyqt-builder
 actions:
   addRepo: world
-  removeRepo: null
-  triggersBuild: true
+  removeRepo: world-gremlins
+  triggersBuild: false
   triggersRebuild: false
   triggersRepoAdd: true
-  triggersRepoRemove: false
+  triggersRepoRemove: true
   triggersNoCheck: false
 repos:
   system-goblins:
@@ -25,16 +25,15 @@ repos:
     version: null
     packages: []
   world-goblins:
-    version: 1.16.4-2.1
-    packages:
-      - pyqt-builder-1.16.4-2.1-any.pkg.tar.zst
+    version: null
+    packages: []
   world-gremlins:
     version: null
     packages: []
   world:
-    version: 1.17.0-1
+    version: 1.17.0-2
     packages:
-      - pyqt-builder-1.17.0-1-any.pkg.tar.zst
+      - pyqt-builder-1.17.0-2-any.pkg.tar.zst
   lib32-goblins:
     version: null
     packages: []
