@@ -1,7 +1,7 @@
 ---
 pkgbase:
   name: python-hyperframe
-  version: 6.0.1-5
+  version: 6.0.1-6
   arch:
     - any
   pkgname:
@@ -31,9 +31,9 @@ repos:
     version: null
     packages: []
   world:
-    version: 6.0.1-5
+    version: 6.0.1-6
     packages:
-      - python-hyperframe-6.0.1-5-any.pkg.tar.zst
+      - python-hyperframe-6.0.1-6-any.pkg.tar.zst
   lib32-goblins:
     version: null
     packages: []
