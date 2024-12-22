@@ -1,7 +1,7 @@
 ---
 pkgbase:
   name: python-rfc3986-validator
-  version: 0.1.1-4
+  version: 0.1.1-5
   arch:
     - any
   pkgname:
@@ -31,9 +31,9 @@ repos:
     version: null
     packages: []
   world:
-    version: 0.1.1-4
+    version: 0.1.1-5
     packages:
-      - python-rfc3986-validator-0.1.1-4-any.pkg.tar.zst
+      - python-rfc3986-validator-0.1.1-5-any.pkg.tar.zst
   lib32-goblins:
     version: null
     packages: []
