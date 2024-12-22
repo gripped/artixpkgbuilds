@@ -1,7 +1,7 @@
 ---
 pkgbase:
   name: python-pydbus
-  version: 0.6.0-11
+  version: 0.6.0-12
   arch:
     - any
   pkgname:
@@ -31,9 +31,9 @@ repos:
     version: null
     packages: []
   world:
-    version: 0.6.0-11
+    version: 0.6.0-12
     packages:
-      - python-pydbus-0.6.0-11-any.pkg.tar.zst
+      - python-pydbus-0.6.0-12-any.pkg.tar.zst
   lib32-goblins:
     version: null
     packages: []
