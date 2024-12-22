@@ -1,7 +1,7 @@
 ---
 pkgbase:
   name: python-slip
-  version: 0.6.5-9
+  version: 0.6.5-10
   arch:
     - any
   pkgname:
@@ -31,9 +31,9 @@ repos:
     version: null
     packages: []
   world:
-    version: 0.6.5-9
+    version: 0.6.5-10
     packages:
-      - python-slip-0.6.5-9-any.pkg.tar.zst
+      - python-slip-0.6.5-10-any.pkg.tar.zst
   lib32-goblins:
     version: null
     packages: []
