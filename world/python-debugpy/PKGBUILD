@@ -3,8 +3,8 @@
 
 _pipname=debugpy
 pkgname=python-$_pipname
-pkgver=1.8.8
-pkgrel=1
+pkgver=1.8.11
+pkgrel=2
 pkgdesc='An implementation of the Debug Adapter Protocol for Python'
 arch=(x86_64)
 url='https://aka.ms/debugpy'
@@ -19,7 +19,7 @@ makedepends=(cython
              python-setuptools
              python-wheel)
 source=(git+https://github.com/microsoft/debugpy#tag=v$pkgver)
-sha256sums=('3eb5aa7012add2e0dc242c9fc99fa77d462caa7e417634c03eefec600e949525')
+sha256sums=('de7237f3f205db596bc5996c38d9c87549d5bf3444fd4c9f414ac1e08df29b69')
 
 build() {
   cd $_pipname
