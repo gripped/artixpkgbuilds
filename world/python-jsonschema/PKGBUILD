@@ -6,7 +6,7 @@
 
 pkgname=python-jsonschema
 pkgver=4.23.0
-pkgrel=1
+pkgrel=2
 pkgdesc='An implementation of JSON Schema validation for Python'
 arch=('any')
 url='https://github.com/python-jsonschema/jsonschema'
@@ -81,3 +81,4 @@ package() {
   ln -s "$site_packages/${pkgname#python-}-$pkgver.dist-info/licenses/COPYING" \
     "$pkgdir/usr/share/licenses/$pkgname/COPYING"
 }
+
