@@ -3,7 +3,7 @@
 pkgname=python-django-guardian
 _name="${pkgname#python-}"
 pkgver=2.4.0
-pkgrel=6
+pkgrel=7
 pkgdesc="Per object permissions for Django"
 arch=(any)
 url="https://github.com/django-guardian/django-guardian"
@@ -52,3 +52,4 @@ package() {
   install -vDm 644 {AUTHORS,CHANGES,README.rst} -t "$pkgdir/usr/share/doc/$pkgname/"
   install -vDm 644 ../*.txt -t "$pkgdir/usr/share/licenses/$pkgname/"
 }
+
