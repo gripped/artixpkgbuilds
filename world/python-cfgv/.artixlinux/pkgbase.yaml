@@ -1,7 +1,7 @@
 ---
 pkgbase:
   name: python-cfgv
-  version: 3.4.0-2
+  version: 3.4.0-6
   arch:
     - any
   pkgname:
@@ -31,9 +31,9 @@ repos:
     version: null
     packages: []
   world:
-    version: 3.4.0-2
+    version: 3.4.0-6
     packages:
-      - python-cfgv-3.4.0-2-any.pkg.tar.zst
+      - python-cfgv-3.4.0-6-any.pkg.tar.zst
   lib32-goblins:
     version: null
     packages: []
