@@ -1,7 +1,7 @@
 ---
 pkgbase:
   name: python-hatch-nodejs-version
-  version: 0.3.2-2
+  version: 0.3.2-4
   arch:
     - any
   pkgname:
@@ -31,9 +31,9 @@ repos:
     version: null
     packages: []
   world:
-    version: 0.3.2-2
+    version: 0.3.2-4
     packages:
-      - python-hatch-nodejs-version-0.3.2-2-any.pkg.tar.zst
+      - python-hatch-nodejs-version-0.3.2-4-any.pkg.tar.zst
   lib32-goblins:
     version: null
     packages: []
