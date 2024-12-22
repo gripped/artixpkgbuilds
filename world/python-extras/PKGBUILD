@@ -2,7 +2,7 @@
 
 pkgname=python-extras
 pkgver=1.0.0
-pkgrel=12
+pkgrel=13
 pkgdesc="Useful extra bits for Python - things that should be in the standard library"
 arch=('any')
 license=('MIT')
@@ -28,3 +28,4 @@ package() {
   python setup.py install --root="$pkgdir" --optimize=1
   install -D -m644 LICENSE "$pkgdir"/usr/share/licenses/$pkgname/LICENSE
 }
+
