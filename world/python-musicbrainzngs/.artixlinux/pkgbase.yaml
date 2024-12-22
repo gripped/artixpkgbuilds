@@ -1,7 +1,7 @@
 ---
 pkgbase:
   name: python-musicbrainzngs
-  version: 0.7.1-7
+  version: 0.7.1-8
   arch:
     - any
   pkgname:
@@ -31,9 +31,9 @@ repos:
     version: null
     packages: []
   world:
-    version: 0.7.1-7
+    version: 0.7.1-8
     packages:
-      - python-musicbrainzngs-0.7.1-7-any.pkg.tar.zst
+      - python-musicbrainzngs-0.7.1-8-any.pkg.tar.zst
   lib32-goblins:
     version: null
     packages: []
