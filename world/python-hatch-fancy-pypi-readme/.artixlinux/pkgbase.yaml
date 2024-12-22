@@ -1,7 +1,7 @@
 ---
 pkgbase:
   name: python-hatch-fancy-pypi-readme
-  version: 24.1.0-3
+  version: 24.1.0-4
   arch:
     - any
   pkgname:
@@ -31,9 +31,9 @@ repos:
     version: null
     packages: []
   world:
-    version: 24.1.0-3
+    version: 24.1.0-4
     packages:
-      - python-hatch-fancy-pypi-readme-24.1.0-3-any.pkg.tar.zst
+      - python-hatch-fancy-pypi-readme-24.1.0-4-any.pkg.tar.zst
   lib32-goblins:
     version: null
     packages: []
