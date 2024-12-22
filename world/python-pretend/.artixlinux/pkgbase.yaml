@@ -1,7 +1,7 @@
 ---
 pkgbase:
   name: python-pretend
-  version: 1.0.9-12
+  version: 1.0.9-13
   arch:
     - any
   pkgname:
@@ -31,9 +31,9 @@ repos:
     version: null
     packages: []
   world:
-    version: 1.0.9-12
+    version: 1.0.9-13
     packages:
-      - python-pretend-1.0.9-12-any.pkg.tar.zst
+      - python-pretend-1.0.9-13-any.pkg.tar.zst
   lib32-goblins:
     version: null
     packages: []
