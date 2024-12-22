@@ -1,7 +1,7 @@
 ---
 pkgbase:
   name: python-flup
-  version: 1.0.3-10
+  version: 1.0.3-11
   arch:
     - any
   pkgname:
@@ -31,9 +31,9 @@ repos:
     version: null
     packages: []
   world:
-    version: 1.0.3-10
+    version: 1.0.3-11
     packages:
-      - python-flup-1.0.3-10-any.pkg.tar.zst
+      - python-flup-1.0.3-11-any.pkg.tar.zst
   lib32-goblins:
     version: null
     packages: []
