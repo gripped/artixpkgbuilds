@@ -2,7 +2,7 @@
 
 pkgname=python-immutabledict
 pkgver=4.2.0
-pkgrel=1
+pkgrel=2
 pkgdesc="Immutable wrapper around dictionaries (a fork of frozendict)"
 arch=('any')
 url=https://github.com/corenting/immutabledict
@@ -30,3 +30,4 @@ package() {
     python -m installer --destdir="$pkgdir" dist/*.whl
     install -Dm0644 -t "$pkgdir/usr/share/licenses/$pkgname/" LICENSE
 }
+
