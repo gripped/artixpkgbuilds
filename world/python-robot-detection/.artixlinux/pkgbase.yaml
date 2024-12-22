@@ -1,7 +1,7 @@
 ---
 pkgbase:
   name: python-robot-detection
-  version: 0.4.0-8
+  version: 0.4.0-10
   arch:
     - any
   pkgname:
@@ -31,9 +31,9 @@ repos:
     version: null
     packages: []
   world:
-    version: 0.4.0-8
+    version: 0.4.0-10
     packages:
-      - python-robot-detection-0.4.0-8-any.pkg.tar.zst
+      - python-robot-detection-0.4.0-10-any.pkg.tar.zst
   lib32-goblins:
     version: null
     packages: []
