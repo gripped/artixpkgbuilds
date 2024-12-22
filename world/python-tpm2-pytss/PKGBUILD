@@ -1,10 +1,8 @@
 # Maintainer:
 pkgname=python-tpm2-pytss
 _name=${pkgname#python-}
-# NOTE: no trust path: https://github.com/tpm2-software/tpm2-pytss/issues/566
-pkgver=2.1.0.r40.70a4ccc
-_commit=70a4ccc850bd9dba05043a90f08f818a1860826c # refs/tags/2.1.1
-pkgrel=1
+pkgver=2.3.0
+pkgrel=3
 pkgdesc='Python bindings for tpm2-tss'
 arch=(x86_64)
 url='https://github.com/tpm2-software/tpm2-pytss'
@@ -34,14 +32,15 @@ checkdepends=(
   tpm2-tools
 )
 source=(
-  "git+$url.git#tag=$_commit"
+  "git+$url.git#tag=$pkgver"
+  "adjust-tpm-pt-revision-to-fix-test.patch"
 )
-sha512sums=('SKIP')
-validpgpkeys=('5B482B8E3E19DA7C978E1D016DE2E9078E1F50C1') # William Roberts (Bill Roberts) <william.c.roberts@intel.com>
+sha512sums=('ca6013685b5f0e251a691086a48476f87fde6a74166bd499a12105d1bce8648b2b35e4a3c0f49f894b5b5a09b60ecc771b709c75a5bb806d20f4676911f13281'
+            '5be9f4944b080910ef082feb73f408ab3b3443a5aa7a84544016e20cbc5b3ee07276e770005d75d589a4177c34289996ef4d10757e5299af180d004846b49fec')
 
-pkgver() {
+prepare() {
   cd $_name
-  git describe | sed 's/\([^-]*-\)g/r\1/;s/-/./g'
+  patch -Np1 -i ../adjust-tpm-pt-revision-to-fix-test.patch
 }
 
 build() {
@@ -68,3 +67,4 @@ package() {
   python -m installer --destdir="$pkgdir" dist/*.whl
   install -Dm644 LICENSE -t "$pkgdir/usr/share/licenses/$pkgname"
 }
+
