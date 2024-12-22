@@ -1,7 +1,7 @@
 ---
 pkgbase:
   name: mopidy
-  version: 3.4.2-2
+  version: 4.0.0a2-1
   arch:
     - any
   pkgname:
@@ -31,9 +31,9 @@ repos:
     version: null
     packages: []
   world:
-    version: 3.4.2-2
+    version: 4.0.0a2-1
     packages:
-      - mopidy-3.4.2-2-any.pkg.tar.zst
+      - mopidy-4.0.0a2-1-any.pkg.tar.zst
   lib32-goblins:
     version: null
     packages: []
