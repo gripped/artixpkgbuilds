@@ -1,7 +1,7 @@
 ---
 pkgbase:
   name: python-mujson
-  version: 1.4-7
+  version: 1.4-8
   arch:
     - any
   pkgname:
@@ -31,9 +31,9 @@ repos:
     version: null
     packages: []
   world:
-    version: 1.4-7
+    version: 1.4-8
     packages:
-      - python-mujson-1.4-7-any.pkg.tar.zst
+      - python-mujson-1.4-8-any.pkg.tar.zst
   lib32-goblins:
     version: null
     packages: []
