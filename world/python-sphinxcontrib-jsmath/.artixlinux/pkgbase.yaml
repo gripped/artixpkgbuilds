@@ -1,7 +1,7 @@
 ---
 pkgbase:
   name: python-sphinxcontrib-jsmath
-  version: 1.0.1-17
+  version: 1.0.1-19
   arch:
     - any
   pkgname:
@@ -31,9 +31,9 @@ repos:
     version: null
     packages: []
   world:
-    version: 1.0.1-17
+    version: 1.0.1-19
     packages:
-      - python-sphinxcontrib-jsmath-1.0.1-17-any.pkg.tar.zst
+      - python-sphinxcontrib-jsmath-1.0.1-19-any.pkg.tar.zst
   lib32-goblins:
     version: null
     packages: []
