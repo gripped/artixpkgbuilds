@@ -1,7 +1,7 @@
 ---
 pkgbase:
   name: python-unittest-mixins
-  version: 1.6-11
+  version: 1.6-13
   arch:
     - any
   pkgname:
@@ -31,9 +31,9 @@ repos:
     version: null
     packages: []
   world:
-    version: 1.6-11
+    version: 1.6-13
     packages:
-      - python-unittest-mixins-1.6-11-any.pkg.tar.zst
+      - python-unittest-mixins-1.6-13-any.pkg.tar.zst
   lib32-goblins:
     version: null
     packages: []
