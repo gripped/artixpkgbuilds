@@ -1,7 +1,7 @@
 ---
 pkgbase:
   name: python-update-checker
-  version: 0.18.0-7
+  version: 0.18.0-8
   arch:
     - any
   pkgname:
@@ -31,9 +31,9 @@ repos:
     version: null
     packages: []
   world:
-    version: 0.18.0-7
+    version: 0.18.0-8
     packages:
-      - python-update-checker-0.18.0-7-any.pkg.tar.zst
+      - python-update-checker-0.18.0-8-any.pkg.tar.zst
   lib32-goblins:
     version: null
     packages: []
