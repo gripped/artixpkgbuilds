@@ -1,7 +1,7 @@
 ---
 pkgbase:
   name: python-cmd2
-  version: 2.4.3-4
+  version: 2.4.3-5
   arch:
     - any
   pkgname:
@@ -31,9 +31,9 @@ repos:
     version: null
     packages: []
   world:
-    version: 2.4.3-4
+    version: 2.4.3-5
     packages:
-      - python-cmd2-2.4.3-4-any.pkg.tar.zst
+      - python-cmd2-2.4.3-5-any.pkg.tar.zst
   lib32-goblins:
     version: null
     packages: []
