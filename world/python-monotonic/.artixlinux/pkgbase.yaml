@@ -1,7 +1,7 @@
 ---
 pkgbase:
   name: python-monotonic
-  version: 1.6-5
+  version: 1.6-6
   arch:
     - any
   pkgname:
@@ -31,9 +31,9 @@ repos:
     version: null
     packages: []
   world:
-    version: 1.6-5
+    version: 1.6-6
     packages:
-      - python-monotonic-1.6-5-any.pkg.tar.zst
+      - python-monotonic-1.6-6-any.pkg.tar.zst
   lib32-goblins:
     version: null
     packages: []
