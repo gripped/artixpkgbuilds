@@ -1,7 +1,7 @@
 ---
 pkgbase:
   name: python-infinity
-  version: 1.5-7
+  version: 1.5-8
   arch:
     - any
   pkgname:
@@ -31,9 +31,9 @@ repos:
     version: null
     packages: []
   world:
-    version: 1.5-7
+    version: 1.5-8
     packages:
-      - python-infinity-1.5-7-any.pkg.tar.zst
+      - python-infinity-1.5-8-any.pkg.tar.zst
   lib32-goblins:
     version: null
     packages: []
