@@ -1,7 +1,7 @@
 ---
 pkgbase:
   name: python-pytest-lazy-fixture
-  version: 0.6.3-7
+  version: 0.6.3-8
   arch:
     - any
   pkgname:
@@ -31,9 +31,9 @@ repos:
     version: null
     packages: []
   world:
-    version: 0.6.3-7
+    version: 0.6.3-8
     packages:
-      - python-pytest-lazy-fixture-0.6.3-7-any.pkg.tar.zst
+      - python-pytest-lazy-fixture-0.6.3-8-any.pkg.tar.zst
   lib32-goblins:
     version: null
     packages: []
