@@ -1,7 +1,7 @@
 ---
 pkgbase:
   name: python-aiohttp-openmetrics
-  version: 0.0.12-2
+  version: 0.0.12-3
   arch:
     - any
   pkgname:
@@ -31,9 +31,9 @@ repos:
     version: null
     packages: []
   world:
-    version: 0.0.12-2
+    version: 0.0.12-3
     packages:
-      - python-aiohttp-openmetrics-0.0.12-2-any.pkg.tar.zst
+      - python-aiohttp-openmetrics-0.0.12-3-any.pkg.tar.zst
   lib32-goblins:
     version: null
     packages: []
