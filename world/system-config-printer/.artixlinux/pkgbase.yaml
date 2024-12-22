@@ -1,18 +1,18 @@
 ---
 pkgbase:
   name: system-config-printer
-  version: 1.5.18-4
+  version: 1.5.18-5
   arch:
     - x86_64
   pkgname:
     - system-config-printer
 actions:
   addRepo: world
-  removeRepo: null
-  triggersBuild: true
+  removeRepo: world-gremlins
+  triggersBuild: false
   triggersRebuild: false
   triggersRepoAdd: true
-  triggersRepoRemove: false
+  triggersRepoRemove: true
   triggersNoCheck: false
 repos:
   system-goblins:
@@ -31,9 +31,9 @@ repos:
     version: null
     packages: []
   world:
-    version: 1.5.18-4
+    version: 1.5.18-5
     packages:
-      - system-config-printer-1.5.18-4-x86_64.pkg.tar.zst
+      - system-config-printer-1.5.18-5-x86_64.pkg.tar.zst
   lib32-goblins:
     version: null
     packages: []
