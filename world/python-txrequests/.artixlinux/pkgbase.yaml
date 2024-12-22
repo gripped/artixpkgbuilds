@@ -1,7 +1,7 @@
 ---
 pkgbase:
   name: python-txrequests
-  version: 0.9.6-10
+  version: 0.9.6-11
   arch:
     - any
   pkgname:
@@ -31,9 +31,9 @@ repos:
     version: null
     packages: []
   world:
-    version: 0.9.6-10
+    version: 0.9.6-11
     packages:
-      - python-txrequests-0.9.6-10-any.pkg.tar.zst
+      - python-txrequests-0.9.6-11-any.pkg.tar.zst
   lib32-goblins:
     version: null
     packages: []
