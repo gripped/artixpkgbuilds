@@ -1,7 +1,7 @@
 ---
 pkgbase:
   name: python-pep440
-  version: 0.1.2-4
+  version: 0.1.2-5
   arch:
     - any
   pkgname:
@@ -31,9 +31,9 @@ repos:
     version: null
     packages: []
   world:
-    version: 0.1.2-4
+    version: 0.1.2-5
     packages:
-      - python-pep440-0.1.2-4-any.pkg.tar.zst
+      - python-pep440-0.1.2-5-any.pkg.tar.zst
   lib32-goblins:
     version: null
     packages: []
