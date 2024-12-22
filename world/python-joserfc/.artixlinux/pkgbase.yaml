@@ -2,7 +2,7 @@
 team: world
 pkgbase:
   name: python-joserfc
-  version: 1.0.0-1
+  version: 1.0.1-1
   arch:
     - any
   pkgname:
@@ -32,9 +32,9 @@ repos:
     version: null
     packages: []
   world:
-    version: 1.0.0-1
+    version: 1.0.1-1
     packages:
-      - python-joserfc-1.0.0-1-any.pkg.tar.zst
+      - python-joserfc-1.0.1-1-any.pkg.tar.zst
   lib32-goblins:
     version: null
     packages: []
