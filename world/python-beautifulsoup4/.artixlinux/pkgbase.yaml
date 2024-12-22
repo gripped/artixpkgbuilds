@@ -1,7 +1,7 @@
 ---
 pkgbase:
   name: python-beautifulsoup4
-  version: 4.12.3-2
+  version: 4.12.3-3
   arch:
     - any
   pkgname:
@@ -31,9 +31,9 @@ repos:
     version: null
     packages: []
   world:
-    version: 4.12.3-2
+    version: 4.12.3-3
     packages:
-      - python-beautifulsoup4-4.12.3-2-any.pkg.tar.zst
+      - python-beautifulsoup4-4.12.3-3-any.pkg.tar.zst
   lib32-goblins:
     version: null
     packages: []
