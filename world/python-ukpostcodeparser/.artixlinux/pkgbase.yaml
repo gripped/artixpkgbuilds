@@ -1,7 +1,7 @@
 ---
 pkgbase:
   name: python-ukpostcodeparser
-  version: 1.1.2-12
+  version: 1.1.2-13
   arch:
     - any
   pkgname:
@@ -31,9 +31,9 @@ repos:
     version: null
     packages: []
   world:
-    version: 1.1.2-12
+    version: 1.1.2-13
     packages:
-      - python-ukpostcodeparser-1.1.2-12-any.pkg.tar.zst
+      - python-ukpostcodeparser-1.1.2-13-any.pkg.tar.zst
   lib32-goblins:
     version: null
     packages: []
