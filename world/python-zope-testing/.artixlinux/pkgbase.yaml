@@ -1,7 +1,7 @@
 ---
 pkgbase:
   name: python-zope-testing
-  version: 5.0.1-5
+  version: 5.0.1-8
   arch:
     - any
   pkgname:
@@ -31,9 +31,9 @@ repos:
     version: null
     packages: []
   world:
-    version: 5.0.1-5
+    version: 5.0.1-8
     packages:
-      - python-zope-testing-5.0.1-5-any.pkg.tar.zst
+      - python-zope-testing-5.0.1-8-any.pkg.tar.zst
   lib32-goblins:
     version: null
     packages: []
