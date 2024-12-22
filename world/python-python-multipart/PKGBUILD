@@ -1,18 +1,19 @@
 # Maintainer: Filipe Laíns (FFY00) <lains@archlinux.org>
+# Maintainer: Robin Candau <antiz@archlinux.org>
 
 _pkgname=python-multipart
 pkgname=python-$_pkgname
-pkgver=0.0.16
+pkgver=0.0.20
 pkgrel=1
 pkgdesc='streaming multipart parser for Python'
 arch=('any')
-url='https://github.com/andrew-d/python-multipart'
+url='https://multipart.fastapiexpert.com'
 license=('Apache-2.0')
 depends=('python')
 makedepends=('python-build' 'python-installer' 'python-hatchling')
 checkdepends=('python-pytest' 'python-yaml')
-source=("$pkgname-$pkgver.tar.gz::$url/archive/$pkgver.tar.gz")
-sha512sums=('c2a58f96425217d08e71307e9d1a7649df70ee8a1d8587d1fc2d01e39863837cd56fe6acdcdac3c04e6790a744ac2074b82278073652a47b9178e584a040cb97')
+source=("$pkgname-$pkgver.tar.gz::https://github.com/kludex/python-multipart/archive/$pkgver.tar.gz")
+sha512sums=('9e59fc38413da38429e9fab15105d20103da820437a059082dfed588423fb4a2ec10abd7742e65c3778e7e5e5aba346936900d9dbe49c73518eaa30b24842203')
 
 build() {
   cd $_pkgname-$pkgver
