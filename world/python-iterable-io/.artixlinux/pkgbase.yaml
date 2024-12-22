@@ -2,7 +2,7 @@
 team: world
 pkgbase:
   name: python-iterable-io
-  version: 1.0.0-2
+  version: 1.0.0-4
   arch:
     - any
   pkgname:
@@ -32,9 +32,9 @@ repos:
     version: null
     packages: []
   world:
-    version: 1.0.0-2
+    version: 1.0.0-4
     packages:
-      - python-iterable-io-1.0.0-2-any.pkg.tar.zst
+      - python-iterable-io-1.0.0-4-any.pkg.tar.zst
   lib32-goblins:
     version: null
     packages: []
