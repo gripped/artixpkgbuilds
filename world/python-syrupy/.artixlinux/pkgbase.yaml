@@ -2,7 +2,7 @@
 team: world
 pkgbase:
   name: python-syrupy
-  version: 4.6.1-2
+  version: 4.6.1-3
   arch:
     - any
   pkgname:
@@ -32,9 +32,9 @@ repos:
     version: null
     packages: []
   world:
-    version: 4.6.1-2
+    version: 4.6.1-3
     packages:
-      - python-syrupy-4.6.1-2-any.pkg.tar.zst
+      - python-syrupy-4.6.1-3-any.pkg.tar.zst
   lib32-goblins:
     version: null
     packages: []
