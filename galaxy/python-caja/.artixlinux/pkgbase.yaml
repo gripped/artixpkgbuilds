@@ -1,7 +1,7 @@
 ---
 pkgbase:
   name: python-caja
-  version: 1.28.0-2
+  version: 1.28.0-3
   arch:
     - x86_64
   pkgname:
@@ -25,8 +25,9 @@ repos:
     version: null
     packages: []
   world-goblins:
-    version: null
-    packages: []
+    version: 1.28.0-3
+    packages:
+      - python-caja-1.28.0-3-x86_64.pkg.tar.zst
   world-gremlins:
     version: null
     packages: []
@@ -49,7 +50,7 @@ repos:
     version: null
     packages: []
   galaxy:
-    version: 1.28.0-2
+    version: 1.28.0-3
     packages:
-      - python-caja-1.28.0-2-x86_64.pkg.tar.zst
+      - python-caja-1.28.0-3-x86_64.pkg.tar.zst
 team: galaxy
