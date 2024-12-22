@@ -1,7 +1,7 @@
 ---
 pkgbase:
   name: python-btchip
-  version: 0.1.32-4
+  version: 0.1.32-5
   arch:
     - any
   pkgname:
@@ -31,9 +31,9 @@ repos:
     version: null
     packages: []
   world:
-    version: 0.1.32-4
+    version: 0.1.32-5
     packages:
-      - python-btchip-0.1.32-4-any.pkg.tar.zst
+      - python-btchip-0.1.32-5-any.pkg.tar.zst
   lib32-goblins:
     version: null
     packages: []
