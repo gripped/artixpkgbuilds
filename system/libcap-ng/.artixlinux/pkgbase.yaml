@@ -1,7 +1,7 @@
 ---
 pkgbase:
   name: libcap-ng
-  version: 0.8.5-2
+  version: 0.8.5-3
   arch:
     - x86_64
   pkgname:
@@ -23,10 +23,10 @@ repos:
     version: null
     packages: []
   system:
-    version: 0.8.5-2
+    version: 0.8.5-3
     packages:
-      - libcap-ng-0.8.5-2-x86_64.pkg.tar.zst
-      - python-capng-0.8.5-2-x86_64.pkg.tar.zst
+      - libcap-ng-0.8.5-3-x86_64.pkg.tar.zst
+      - python-capng-0.8.5-3-x86_64.pkg.tar.zst
   world-goblins:
     version: null
     packages: []
