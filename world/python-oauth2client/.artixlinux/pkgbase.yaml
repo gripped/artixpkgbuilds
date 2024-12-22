@@ -1,7 +1,7 @@
 ---
 pkgbase:
   name: python-oauth2client
-  version: 4.1.3-10
+  version: 4.1.3-11
   arch:
     - any
   pkgname:
@@ -31,9 +31,9 @@ repos:
     version: null
     packages: []
   world:
-    version: 4.1.3-10
+    version: 4.1.3-11
     packages:
-      - python-oauth2client-4.1.3-10-any.pkg.tar.zst
+      - python-oauth2client-4.1.3-11-any.pkg.tar.zst
   lib32-goblins:
     version: null
     packages: []
