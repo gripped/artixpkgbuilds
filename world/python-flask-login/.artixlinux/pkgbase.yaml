@@ -1,18 +1,18 @@
 ---
 pkgbase:
   name: python-flask-login
-  version: 0.6.3-5
+  version: 0.6.3-6
   arch:
     - any
   pkgname:
     - python-flask-login
 actions:
   addRepo: world
-  removeRepo: null
-  triggersBuild: true
+  removeRepo: world-gremlins
+  triggersBuild: false
   triggersRebuild: false
   triggersRepoAdd: true
-  triggersRepoRemove: false
+  triggersRepoRemove: true
   triggersNoCheck: false
 repos:
   system-goblins:
@@ -31,9 +31,9 @@ repos:
     version: null
     packages: []
   world:
-    version: 0.6.3-5
+    version: 0.6.3-6
     packages:
-      - python-flask-login-0.6.3-5-any.pkg.tar.zst
+      - python-flask-login-0.6.3-6-any.pkg.tar.zst
   lib32-goblins:
     version: null
     packages: []
