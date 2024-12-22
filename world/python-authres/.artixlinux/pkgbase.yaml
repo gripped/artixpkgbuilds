@@ -1,7 +1,7 @@
 ---
 pkgbase:
   name: python-authres
-  version: 1.2.0-10
+  version: 1.2.0-11
   arch:
     - any
   pkgname:
@@ -31,9 +31,9 @@ repos:
     version: null
     packages: []
   world:
-    version: 1.2.0-10
+    version: 1.2.0-11
     packages:
-      - python-authres-1.2.0-10-any.pkg.tar.zst
+      - python-authres-1.2.0-11-any.pkg.tar.zst
   lib32-goblins:
     version: null
     packages: []
