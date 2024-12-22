@@ -1,7 +1,7 @@
 ---
 pkgbase:
   name: python-zope-schema
-  version: 7.0.1-4
+  version: 7.0.1-5
   arch:
     - any
   pkgname:
@@ -31,9 +31,9 @@ repos:
     version: null
     packages: []
   world:
-    version: 7.0.1-4
+    version: 7.0.1-5
     packages:
-      - python-zope-schema-7.0.1-4-any.pkg.tar.zst
+      - python-zope-schema-7.0.1-5-any.pkg.tar.zst
   lib32-goblins:
     version: null
     packages: []
