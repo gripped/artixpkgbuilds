@@ -4,7 +4,7 @@
 _pyname=traitlets
 pkgname=python-$_pyname
 pkgver=5.14.3
-pkgrel=2
+pkgrel=3
 pkgdesc='A configuration system for Python applications'
 arch=(any)
 url='https://traitlets.readthedocs.io/en/stable'
@@ -38,3 +38,4 @@ package() {
   python -m installer --destdir="$pkgdir" dist/*.whl
   install -Dm644 LICENSE -t "$pkgdir"/usr/share/licenses/$pkgname
 }
+
