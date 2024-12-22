@@ -1,7 +1,7 @@
 ---
 pkgbase:
   name: python-fissix
-  version: 21.11.13-3
+  version: 24.4.24-1
   arch:
     - any
   pkgname:
@@ -31,9 +31,9 @@ repos:
     version: null
     packages: []
   world:
-    version: 21.11.13-3
+    version: 24.4.24-1
     packages:
-      - python-fissix-21.11.13-3-any.pkg.tar.zst
+      - python-fissix-24.4.24-1-any.pkg.tar.zst
   lib32-goblins:
     version: null
     packages: []
