@@ -2,7 +2,7 @@
 
 pkgname=python-oslotest
 pkgver=5.0.0
-pkgrel=2
+pkgrel=3
 pkgdesc="Oslo test framework"
 arch=('any')
 url="https://github.com/openstack/oslotest"
@@ -29,3 +29,4 @@ package() {
 }
 
 # vim:set ts=2 sw=2 et:
+
