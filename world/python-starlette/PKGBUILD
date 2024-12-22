@@ -4,8 +4,8 @@
 
 _name=starlette
 pkgname=python-$_name
-pkgver=0.41.2
-pkgrel=1
+pkgver=0.42.0
+pkgrel=2
 pkgdesc='The little ASGI framework that shines'
 arch=(any)
 url="https://github.com/encode/starlette"
@@ -43,14 +43,20 @@ optdepends=(
   'python-pyyaml: for schema generator'
   'python-httpx: for test client'
 )
-source=($_name-$pkgver.tar.gz::$url/archive/$pkgver.tar.gz)
-sha512sums=('7ef590fdd7bebcae54f203acf57cf086a85653b0286aa7dc5eac92c67f846e04961680234234cfd2a6d57c12678b2ce76763c39e96caed984a1220558090303c')
-b2sums=('387665e21586ec43a3683f30c111fe77ad71a7f1c8dfea13f50fae9a9315e6a00ede22f5a1c55cd05210e4996a834b2d3d60c001899905a002e11cb09b5e60c8')
+source=($_name-$pkgver.tar.gz::$url/archive/$pkgver.tar.gz
+        fix_tests_with_httpx_0.27.patch)
+sha512sums=('d7b0da5333930d6ce9315387cc7e23fd22b4ed379d37c8f143cf6e6a07b5cb2d207d4c349616788633387fa54c6fc377feb28df6ccd1216b824e66a47c950f2b'
+            '673f1e3f714b2d7c962111e279d9086ee2868fab93e537f6363749c2043c92711db403460d5adfc8520cc8253417a47f55a2da4a1df4aa4abc0e662dad25875a')
+b2sums=('8c8d85288ad7a42b9771431377e5b6ecd98f6c6088fa913bddf496db2de1c7c1e471d1b9a0a6a17885acfe96e503391e066d1b8c6f612329afe69d8ca8743935'
+        'c3a2a1f340c912940a78ada3925729ee635ee58dde3b79391dc87cb266c72434fdcb67f04d1b3f77f7f2388dbcd9f1bf323bf819dcc3b7f5b3ff50fa0265f533')
 
 prepare() {
   cd $_name-$pkgver
   # Ignore new warnings from python-anyio 4.4.0 making check() fails
   sed -i '/"error"/d' pyproject.toml
+  # Temporary test to fix tests with python-httpx < 0.28
+  # Reverts https://github.com/encode/starlette/pull/2773
+  patch -Np1 < $srcdir/fix_tests_with_httpx_0.27.patch
 }
 
 build() {
