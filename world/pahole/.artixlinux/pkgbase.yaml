@@ -1,7 +1,7 @@
 ---
 pkgbase:
   name: pahole
-  version: 1:1.27-2
+  version: 1:1.28-3
   arch:
     - x86_64
   pkgname:
@@ -9,11 +9,11 @@ pkgbase:
     - ostra-cg
 actions:
   addRepo: world
-  removeRepo: null
-  triggersBuild: true
+  removeRepo: world-gremlins
+  triggersBuild: false
   triggersRebuild: false
   triggersRepoAdd: true
-  triggersRepoRemove: false
+  triggersRepoRemove: true
   triggersNoCheck: false
 repos:
   system-goblins:
@@ -32,10 +32,10 @@ repos:
     version: null
     packages: []
   world:
-    version: 1:1.27-2
+    version: 1:1.28-3
     packages:
-      - pahole-1:1.27-2-x86_64.pkg.tar.zst
-      - ostra-cg-1:1.27-2-x86_64.pkg.tar.zst
+      - pahole-1:1.28-3-x86_64.pkg.tar.zst
+      - ostra-cg-1:1.28-3-x86_64.pkg.tar.zst
   lib32-goblins:
     version: null
     packages: []
