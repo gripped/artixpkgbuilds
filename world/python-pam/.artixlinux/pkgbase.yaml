@@ -1,7 +1,7 @@
 ---
 pkgbase:
   name: python-pam
-  version: 2.0.2-3
+  version: 2.0.2-4
   arch:
     - any
   pkgname:
@@ -31,9 +31,9 @@ repos:
     version: null
     packages: []
   world:
-    version: 2.0.2-3
+    version: 2.0.2-4
     packages:
-      - python-pam-2.0.2-3-any.pkg.tar.zst
+      - python-pam-2.0.2-4-any.pkg.tar.zst
   lib32-goblins:
     version: null
     packages: []
