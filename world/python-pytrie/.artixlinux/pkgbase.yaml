@@ -1,7 +1,7 @@
 ---
 pkgbase:
   name: python-pytrie
-  version: 0.4.0-7
+  version: 0.4.0-8
   arch:
     - any
   pkgname:
@@ -31,9 +31,9 @@ repos:
     version: null
     packages: []
   world:
-    version: 0.4.0-7
+    version: 0.4.0-8
     packages:
-      - python-pytrie-0.4.0-7-any.pkg.tar.zst
+      - python-pytrie-0.4.0-8-any.pkg.tar.zst
   lib32-goblins:
     version: null
     packages: []
