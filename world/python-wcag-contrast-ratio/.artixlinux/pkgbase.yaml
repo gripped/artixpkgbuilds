@@ -1,7 +1,7 @@
 ---
 pkgbase:
   name: python-wcag-contrast-ratio
-  version: 0.9-5
+  version: 0.9-6
   arch:
     - any
   pkgname:
@@ -31,9 +31,9 @@ repos:
     version: null
     packages: []
   world:
-    version: 0.9-5
+    version: 0.9-6
     packages:
-      - python-wcag-contrast-ratio-0.9-5-any.pkg.tar.zst
+      - python-wcag-contrast-ratio-0.9-6-any.pkg.tar.zst
   lib32-goblins:
     version: null
     packages: []
