@@ -2,7 +2,7 @@
 team: world
 pkgbase:
   name: python-pylatexenc
-  version: 2.10-4
+  version: 2.10-5
   arch:
     - any
   pkgname:
@@ -32,9 +32,9 @@ repos:
     version: null
     packages: []
   world:
-    version: 2.10-4
+    version: 2.10-5
     packages:
-      - python-pylatexenc-2.10-4-any.pkg.tar.zst
+      - python-pylatexenc-2.10-5-any.pkg.tar.zst
   lib32-goblins:
     version: null
     packages: []
