@@ -1,7 +1,7 @@
 # Maintainer: Jakub Klinkovský <lahwaacz at archlinux dot org>
 
 pkgname=python-dask-expr
-pkgver=1.1.20
+pkgver=1.1.21
 pkgrel=1
 pkgdesc="High Level Expressions for Dask"
 arch=(any)
@@ -11,7 +11,7 @@ depends=(python python-dask python-pyarrow python-pandas)
 makedepends=(python-build python-installer python-wheel python-versioneer)
 checkdepends=(python-pytest)
 source=(${pkgname}-${pkgver}.tar.gz::https://github.com/dask/dask-expr/archive/refs/tags/v${pkgver}.tar.gz)
-sha256sums=('118ee4100c97fa2b1fb487a7ed5e47939b3203862597b1cdacdfc5cb59dbf438')
+sha256sums=('befe88d38e275bcf5562edd169ec065aeed787dc60fb295b044f0022a2e77624')
 
 prepare() {
   cd dask-expr-${pkgver}
