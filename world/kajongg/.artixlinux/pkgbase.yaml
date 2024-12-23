@@ -25,16 +25,15 @@ repos:
     version: null
     packages: []
   world-goblins:
-    version: 24.12.0-2
-    packages:
-      - kajongg-24.12.0-2-any.pkg.tar.zst
+    version: null
+    packages: []
   world-gremlins:
     version: null
     packages: []
   world:
-    version: 24.12.0-1
+    version: 24.12.0-2
     packages:
-      - kajongg-24.12.0-1-any.pkg.tar.zst
+      - kajongg-24.12.0-2-any.pkg.tar.zst
   lib32-goblins:
     version: null
     packages: []
