@@ -2,18 +2,18 @@
 team: galaxy
 pkgbase:
   name: libxfce4windowing
-  version: 4.19.3-4
+  version: 4.20.0-3
   arch:
     - x86_64
   pkgname:
     - libxfce4windowing
 actions:
   addRepo: galaxy
-  removeRepo: null
-  triggersBuild: true
+  removeRepo: galaxy-gremlins
+  triggersBuild: false
   triggersRebuild: false
   triggersRepoAdd: true
-  triggersRepoRemove: false
+  triggersRepoRemove: true
   triggersNoCheck: false
 repos:
   system-goblins:
@@ -50,6 +50,6 @@ repos:
     version: null
     packages: []
   galaxy:
-    version: 4.19.3-4
+    version: 4.20.0-3
     packages:
-      - libxfce4windowing-4.19.3-4-x86_64.pkg.tar.zst
+      - libxfce4windowing-4.20.0-3-x86_64.pkg.tar.zst
