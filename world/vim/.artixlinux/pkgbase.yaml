@@ -1,7 +1,7 @@
 ---
 pkgbase:
   name: vim
-  version: 9.1.0785-1
+  version: 9.1.0954-1
   arch:
     - x86_64
   pkgname:
@@ -30,14 +30,17 @@ repos:
     version: null
     packages: []
   world-gremlins:
-    version: null
-    packages: []
-  world:
-    version: 9.1.0785-1
+    version: 9.1.0866-2
     packages:
-      - vim-9.1.0785-1-x86_64.pkg.tar.zst
-      - gvim-9.1.0785-1-x86_64.pkg.tar.zst
-      - vim-runtime-9.1.0785-1-x86_64.pkg.tar.zst
+      - vim-9.1.0866-2-x86_64.pkg.tar.zst
+      - gvim-9.1.0866-2-x86_64.pkg.tar.zst
+      - vim-runtime-9.1.0866-2-x86_64.pkg.tar.zst
+  world:
+    version: 9.1.0954-1
+    packages:
+      - vim-9.1.0954-1-x86_64.pkg.tar.zst
+      - gvim-9.1.0954-1-x86_64.pkg.tar.zst
+      - vim-runtime-9.1.0954-1-x86_64.pkg.tar.zst
   lib32-goblins:
     version: null
     packages: []
