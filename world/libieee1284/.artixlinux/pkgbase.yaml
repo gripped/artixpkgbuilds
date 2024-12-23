@@ -1,7 +1,7 @@
 ---
 pkgbase:
   name: libieee1284
-  version: 0.2.11-16
+  version: 0.2.11-18
   arch:
     - x86_64
   pkgname:
@@ -31,9 +31,9 @@ repos:
     version: null
     packages: []
   world:
-    version: 0.2.11-16
+    version: 0.2.11-18
     packages:
-      - libieee1284-0.2.11-16-x86_64.pkg.tar.zst
+      - libieee1284-0.2.11-18-x86_64.pkg.tar.zst
   lib32-goblins:
     version: null
     packages: []
