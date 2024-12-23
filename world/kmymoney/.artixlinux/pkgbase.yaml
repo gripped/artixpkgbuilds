@@ -25,16 +25,15 @@ repos:
     version: null
     packages: []
   world-goblins:
-    version: 5.1.3-22
-    packages:
-      - kmymoney-5.1.3-22-x86_64.pkg.tar.zst
+    version: null
+    packages: []
   world-gremlins:
     version: null
     packages: []
   world:
-    version: 5.1.3-21
+    version: 5.1.3-22
     packages:
-      - kmymoney-5.1.3-21-x86_64.pkg.tar.zst
+      - kmymoney-5.1.3-22-x86_64.pkg.tar.zst
   lib32-goblins:
     version: null
     packages: []
