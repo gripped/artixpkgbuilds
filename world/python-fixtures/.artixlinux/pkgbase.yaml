@@ -1,7 +1,7 @@
 ---
 pkgbase:
   name: python-fixtures
-  version: 4.1.0-5
+  version: 4.2.2-1
   arch:
     - any
   pkgname:
@@ -31,9 +31,9 @@ repos:
     version: null
     packages: []
   world:
-    version: 4.1.0-5
+    version: 4.2.2-1
     packages:
-      - python-fixtures-4.1.0-5-any.pkg.tar.zst
+      - python-fixtures-4.2.2-1-any.pkg.tar.zst
   lib32-goblins:
     version: null
     packages: []
