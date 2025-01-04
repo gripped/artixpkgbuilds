@@ -1,7 +1,7 @@
 ---
 pkgbase:
   name: nvidia-open
-  version: 565.77-9
+  version: 565.77-10
   arch:
     - x86_64
   pkgname:
@@ -31,9 +31,9 @@ repos:
     version: null
     packages: []
   world:
-    version: 565.77-9
+    version: 565.77-10
     packages:
-      - nvidia-open-565.77-9-x86_64.pkg.tar.zst
+      - nvidia-open-565.77-10-x86_64.pkg.tar.zst
   lib32-goblins:
     version: null
     packages: []
