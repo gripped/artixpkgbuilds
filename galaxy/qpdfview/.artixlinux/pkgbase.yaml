@@ -1,18 +1,18 @@
 ---
 pkgbase:
   name: qpdfview
-  version: 0.5.0-2
+  version: 0.5.0-3
   arch:
     - x86_64
   pkgname:
     - qpdfview
 actions:
   addRepo: galaxy
-  removeRepo: null
-  triggersBuild: true
+  removeRepo: galaxy-gremlins
+  triggersBuild: false
   triggersRebuild: false
   triggersRepoAdd: true
-  triggersRepoRemove: false
+  triggersRepoRemove: true
   triggersNoCheck: false
 repos:
   system-goblins:
@@ -49,6 +49,7 @@ repos:
     version: null
     packages: []
   galaxy:
-    version: 0.5.0-2
+    version: 0.5.0-3
     packages:
-      - qpdfview-0.5.0-2-x86_64.pkg.tar.zst
+      - qpdfview-0.5.0-3-x86_64.pkg.tar.zst
+team: galaxy
