@@ -1,18 +1,18 @@
 ---
 pkgbase:
   name: parley
-  version: 24.12.0-2
+  version: 24.12.1-1
   arch:
     - x86_64
   pkgname:
     - parley
 actions:
   addRepo: world
-  removeRepo: null
-  triggersBuild: true
+  removeRepo: world-gremlins
+  triggersBuild: false
   triggersRebuild: false
   triggersRepoAdd: true
-  triggersRepoRemove: false
+  triggersRepoRemove: true
   triggersNoCheck: false
 repos:
   system-goblins:
@@ -31,9 +31,9 @@ repos:
     version: null
     packages: []
   world:
-    version: 24.12.0-2
+    version: 24.12.1-1
     packages:
-      - parley-24.12.0-2-x86_64.pkg.tar.zst
+      - parley-24.12.1-1-x86_64.pkg.tar.zst
   lib32-goblins:
     version: null
     packages: []
