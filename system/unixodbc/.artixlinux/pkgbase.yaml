@@ -1,7 +1,7 @@
 ---
 pkgbase:
   name: unixodbc
-  version: 2.3.12-2
+  version: 2.3.12-3
   arch:
     - x86_64
   pkgname:
@@ -22,9 +22,9 @@ repos:
     version: null
     packages: []
   system:
-    version: 2.3.12-2
+    version: 2.3.12-3
     packages:
-      - unixodbc-2.3.12-2-x86_64.pkg.tar.zst
+      - unixodbc-2.3.12-3-x86_64.pkg.tar.zst
   world-goblins:
     version: null
     packages: []
