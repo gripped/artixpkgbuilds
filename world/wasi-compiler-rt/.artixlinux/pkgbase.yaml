@@ -1,7 +1,7 @@
 ---
 pkgbase:
   name: wasi-compiler-rt
-  version: 18.1.8-2
+  version: 19.1.6-1
   arch:
     - any
   pkgname:
@@ -31,9 +31,9 @@ repos:
     version: null
     packages: []
   world:
-    version: 18.1.8-2
+    version: 19.1.6-1
     packages:
-      - wasi-compiler-rt-18.1.8-2-any.pkg.tar.zst
+      - wasi-compiler-rt-19.1.6-1-any.pkg.tar.zst
   lib32-goblins:
     version: null
     packages: []
