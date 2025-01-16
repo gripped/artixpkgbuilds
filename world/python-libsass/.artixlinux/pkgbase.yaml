@@ -2,7 +2,7 @@
 team: world
 pkgbase:
   name: python-libsass
-  version: 0.23.0-3
+  version: 0.23.0-5
   arch:
     - x86_64
   pkgname:
@@ -32,9 +32,9 @@ repos:
     version: null
     packages: []
   world:
-    version: 0.23.0-4
+    version: 0.23.0-5
     packages:
-      - python-libsass-0.23.0-4-x86_64.pkg.tar.zst
+      - python-libsass-0.23.0-5-x86_64.pkg.tar.zst
   lib32-goblins:
     version: null
     packages: []
