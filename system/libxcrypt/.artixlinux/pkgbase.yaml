@@ -1,7 +1,7 @@
 ---
 pkgbase:
   name: libxcrypt
-  version: 4.4.37-1
+  version: 4.4.38-1
   arch:
     - x86_64
   pkgname:
@@ -23,10 +23,10 @@ repos:
     version: null
     packages: []
   system:
-    version: 4.4.37-1
+    version: 4.4.38-1
     packages:
-      - libxcrypt-4.4.37-1-x86_64.pkg.tar.zst
-      - libxcrypt-compat-4.4.37-1-x86_64.pkg.tar.zst
+      - libxcrypt-4.4.38-1-x86_64.pkg.tar.zst
+      - libxcrypt-compat-4.4.38-1-x86_64.pkg.tar.zst
   world-goblins:
     version: null
     packages: []
