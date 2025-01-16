@@ -1,7 +1,7 @@
 ---
 pkgbase:
   name: audit
-  version: 4.0.2-3
+  version: 4.0.3-1
   arch:
     - x86_64
   pkgname:
@@ -23,10 +23,10 @@ repos:
     version: null
     packages: []
   system:
-    version: 4.0.2-3
+    version: 4.0.3-1
     packages:
-      - audit-4.0.2-3-x86_64.pkg.tar.zst
-      - python-audit-4.0.2-3-x86_64.pkg.tar.zst
+      - audit-4.0.3-1-x86_64.pkg.tar.zst
+      - python-audit-4.0.3-1-x86_64.pkg.tar.zst
   world-goblins:
     version: null
     packages: []
