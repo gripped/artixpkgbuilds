@@ -1,7 +1,7 @@
 ---
 pkgbase:
   name: level-zero
-  version: 1.18.5-3
+  version: 1.19.2-1
   arch:
     - x86_64
   pkgname:
@@ -9,11 +9,11 @@ pkgbase:
     - level-zero-loader
 actions:
   addRepo: world
-  removeRepo: null
-  triggersBuild: true
+  removeRepo: world-gremlins
+  triggersBuild: false
   triggersRebuild: false
   triggersRepoAdd: true
-  triggersRepoRemove: false
+  triggersRepoRemove: true
   triggersNoCheck: false
 repos:
   system-goblins:
@@ -32,10 +32,10 @@ repos:
     version: null
     packages: []
   world:
-    version: 1.18.5-3
+    version: 1.19.2-1
     packages:
-      - level-zero-headers-1.18.5-3-x86_64.pkg.tar.zst
-      - level-zero-loader-1.18.5-3-x86_64.pkg.tar.zst
+      - level-zero-headers-1.19.2-1-x86_64.pkg.tar.zst
+      - level-zero-loader-1.19.2-1-x86_64.pkg.tar.zst
   lib32-goblins:
     version: null
     packages: []
