@@ -1,7 +1,7 @@
 ---
 pkgbase:
   name: vlc
-  version: 3.0.21-9
+  version: 3.0.21-11
   arch:
     - x86_64
   pkgname:
@@ -9,11 +9,11 @@ pkgbase:
     - libvlc
 actions:
   addRepo: world
-  removeRepo: null
-  triggersBuild: true
+  removeRepo: world-gremlins
+  triggersBuild: false
   triggersRebuild: false
   triggersRepoAdd: true
-  triggersRepoRemove: false
+  triggersRepoRemove: true
   triggersNoCheck: false
 repos:
   system-goblins:
@@ -32,10 +32,10 @@ repos:
     version: null
     packages: []
   world:
-    version: 3.0.21-9
+    version: 3.0.21-11
     packages:
-      - vlc-3.0.21-9-x86_64.pkg.tar.zst
-      - libvlc-3.0.21-9-x86_64.pkg.tar.zst
+      - vlc-3.0.21-11-x86_64.pkg.tar.zst
+      - libvlc-3.0.21-11-x86_64.pkg.tar.zst
   lib32-goblins:
     version: null
     packages: []
