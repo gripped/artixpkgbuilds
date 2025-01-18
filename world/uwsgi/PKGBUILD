@@ -24,7 +24,7 @@ pkgname=(
   uwsgi-plugin-notfound
 )
 pkgver=2.0.28
-pkgrel=2
+pkgrel=3
 pkgdesc="A full stack for building hosting services"
 arch=(x86_64)
 url="https://uwsgi-docs.readthedocs.io/en/latest/"
@@ -108,7 +108,6 @@ package_uwsgi() {
     zlib
   )
   backup=('etc/uwsgi/emperor.ini')
-  install=uwsgi.install
 
   cd $pkgbase-$pkgver
   install -vDm 755 "${pkgbase}" -t "$pkgdir/usr/bin/"
