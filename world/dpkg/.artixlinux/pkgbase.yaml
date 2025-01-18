@@ -2,18 +2,18 @@
 team: world
 pkgbase:
   name: dpkg
-  version: 1.22.13-2
+  version: 1.22.14-1
   arch:
     - x86_64
   pkgname:
     - dpkg
 actions:
   addRepo: world
-  removeRepo: null
-  triggersBuild: true
+  removeRepo: world-gremlins
+  triggersBuild: false
   triggersRebuild: false
   triggersRepoAdd: true
-  triggersRepoRemove: false
+  triggersRepoRemove: true
   triggersNoCheck: false
 repos:
   system-goblins:
@@ -32,9 +32,9 @@ repos:
     version: null
     packages: []
   world:
-    version: 1.22.13-2
+    version: 1.22.14-1
     packages:
-      - dpkg-1.22.13-2-x86_64.pkg.tar.zst
+      - dpkg-1.22.14-1-x86_64.pkg.tar.zst
   lib32-goblins:
     version: null
     packages: []
