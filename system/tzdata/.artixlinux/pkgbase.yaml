@@ -1,7 +1,7 @@
 ---
 pkgbase:
   name: tzdata
-  version: 2024b-2
+  version: 2025a-1
   arch:
     - x86_64
   pkgname:
@@ -22,9 +22,9 @@ repos:
     version: null
     packages: []
   system:
-    version: 2024b-2
+    version: 2025a-1
     packages:
-      - tzdata-2024b-2-x86_64.pkg.tar.zst
+      - tzdata-2025a-1-x86_64.pkg.tar.zst
   world-goblins:
     version: null
     packages: []
