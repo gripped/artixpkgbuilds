@@ -1,18 +1,18 @@
 ---
 pkgbase:
   name: ruby-unicode-display_width
-  version: 3.1.2-1
+  version: 3.1.2-2
   arch:
     - any
   pkgname:
     - ruby-unicode-display_width
 actions:
   addRepo: world
-  removeRepo: null
-  triggersBuild: true
+  removeRepo: world-gremlins
+  triggersBuild: false
   triggersRebuild: false
   triggersRepoAdd: true
-  triggersRepoRemove: false
+  triggersRepoRemove: true
   triggersNoCheck: false
 repos:
   system-goblins:
@@ -31,9 +31,9 @@ repos:
     version: null
     packages: []
   world:
-    version: 3.1.2-1
+    version: 3.1.2-2
     packages:
-      - ruby-unicode-display_width-3.1.2-1-any.pkg.tar.zst
+      - ruby-unicode-display_width-3.1.2-2-any.pkg.tar.zst
   lib32-goblins:
     version: null
     packages: []
