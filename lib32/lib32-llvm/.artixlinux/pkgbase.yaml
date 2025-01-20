@@ -1,7 +1,7 @@
 ---
 pkgbase:
   name: lib32-llvm
-  version: 1:19.1.6-1
+  version: 1:19.1.7-1
   arch:
     - x86_64
   pkgname:
@@ -41,10 +41,10 @@ repos:
     version: null
     packages: []
   lib32:
-    version: 1:19.1.6-1
+    version: 1:19.1.7-1
     packages:
-      - lib32-llvm-1:19.1.6-1-x86_64.pkg.tar.zst
-      - lib32-llvm-libs-1:19.1.6-1-x86_64.pkg.tar.zst
+      - lib32-llvm-1:19.1.7-1-x86_64.pkg.tar.zst
+      - lib32-llvm-libs-1:19.1.7-1-x86_64.pkg.tar.zst
   galaxy-goblins:
     version: null
     packages: []
