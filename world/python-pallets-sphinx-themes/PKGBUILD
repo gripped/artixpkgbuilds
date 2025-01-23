@@ -2,25 +2,25 @@
 
 pkgname=python-pallets-sphinx-themes
 _pyname=${pkgname/python-/}
-pkgver=2.1.3
-pkgrel=3
+pkgver=2.3.0
+pkgrel=2
 pkgdesc='Sphinx themes for Pallets and related projects'
 url='https://github.com/pallets/pallets-sphinx-themes'
 arch=('any')
 license=('BSD')
-depends=('python' 'python-sphinx')
-makedepends=('python-build' 'python-installer' 'python-flit-core')
-source=(https://github.com/pallets/pallets-sphinx-themes/archive/${pkgver}/${_pyname}-${pkgver}.tar.gz)
-sha512sums=('e80b409b5854ae879a64cf6a0660bd7d2e7123a281bb3dd9fb1b838057dc51811d287e20ccb135e25d893e33bc520e026f0d6762a0d86df408e266cab1ee9a0c')
-b2sums=('bdf4ad6ab02bafc2d5f8eb98bc7d23db0bcbd118ab95f97456c2a5ab7f8103a4c116c726abd705bb5582d27aab2a65eaac49476ea80c06ebcf9427e9b3c97e8e')
+depends=('python' 'python-sphinx' 'python-sphinx-notfound-page')
+makedepends=('python-build' 'python-installer' 'python-flit-core' 'git')
+source=(git+https://github.com/pallets/pallets-sphinx-themes#tag=${pkgver})
+sha512sums=('7fdc12869fa0243c39ccd476db6f5feaace463f89793804658faa63f5ad4faf3b24bdab3dc643d70cdb412ad4d15c2cb742f2c96a524c5e7ca96704bfaccb38f')
+b2sums=('10efa67c7d413ec0bc4dbe6c6291f65a082c027a70ff1f45f284be74b4747f172f27d5bce02685d5009f9154692dda8e80f565c33c86868c0c6fe4c5f203f493')
 
 build() {
-  cd ${_pyname}-${pkgver}
+  cd ${_pyname}
   python -m build --wheel --no-isolation
 }
 
 package() {
-  cd ${_pyname}-${pkgver}
+  cd ${_pyname}
   python -m installer --destdir="${pkgdir}" dist/*.whl
   install -Dm 644 LICENSE.txt -t "${pkgdir}/usr/share/licenses/${pkgname}"
   install -Dm 644 README.md -t "${pkgdir}/usr/share/doc/${pkgname}"
