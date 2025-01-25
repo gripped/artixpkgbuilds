@@ -1,18 +1,18 @@
 ---
 pkgbase:
   name: i2pd
-  version: 2.55.0-1
+  version: 2.55.0-3
   arch:
     - x86_64
   pkgname:
     - i2pd
 actions:
   addRepo: world
-  removeRepo: null
-  triggersBuild: true
+  removeRepo: world-gremlins
+  triggersBuild: false
   triggersRebuild: false
   triggersRepoAdd: true
-  triggersRepoRemove: false
+  triggersRepoRemove: true
   triggersNoCheck: false
 repos:
   system-goblins:
@@ -25,15 +25,16 @@ repos:
     version: null
     packages: []
   world-goblins:
-    version: null
-    packages: []
+    version: 2.55.0-3
+    packages:
+      - i2pd-2.55.0-3-x86_64.pkg.tar.zst
   world-gremlins:
     version: null
     packages: []
   world:
-    version: 2.55.0-1
+    version: 2.55.0-2
     packages:
-      - i2pd-2.55.0-1-x86_64.pkg.tar.zst
+      - i2pd-2.55.0-2-x86_64.pkg.tar.zst
   lib32-goblins:
     version: null
     packages: []
