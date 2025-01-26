@@ -2,7 +2,7 @@
 team: world
 pkgbase:
   name: python-kubernetes
-  version: 31.0.0-2
+  version: 32.0.0-1
   arch:
     - any
   pkgname:
@@ -32,9 +32,9 @@ repos:
     version: null
     packages: []
   world:
-    version: 31.0.0-2
+    version: 32.0.0-1
     packages:
-      - python-kubernetes-31.0.0-2-any.pkg.tar.zst
+      - python-kubernetes-32.0.0-1-any.pkg.tar.zst
   lib32-goblins:
     version: null
     packages: []
