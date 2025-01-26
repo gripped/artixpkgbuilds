@@ -1,7 +1,7 @@
 ---
 pkgbase:
   name: bpython
-  version: 0.24-6
+  version: 0.25-1
   arch:
     - any
   pkgname:
@@ -31,9 +31,9 @@ repos:
     version: null
     packages: []
   world:
-    version: 0.24-6
+    version: 0.25-1
     packages:
-      - bpython-0.24-6-any.pkg.tar.zst
+      - bpython-0.25-1-any.pkg.tar.zst
   lib32-goblins:
     version: null
     packages: []
