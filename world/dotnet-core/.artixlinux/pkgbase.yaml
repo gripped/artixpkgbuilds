@@ -1,0 +1,69 @@
+---
+team: world
+pkgbase:
+  name: dotnet-core
+  version: 9.0.1.sdk102-1
+  arch:
+    - x86_64
+  pkgname:
+    - dotnet-host
+    - dotnet-runtime
+    - aspnet-runtime
+    - dotnet-sdk
+    - netstandard-targeting-pack
+    - dotnet-targeting-pack
+    - aspnet-targeting-pack
+    - dotnet-source-built-artifacts
+actions:
+  addRepo: world
+  removeRepo: world-gremlins
+  triggersBuild: false
+  triggersRebuild: false
+  triggersRepoAdd: true
+  triggersRepoRemove: true
+  triggersNoCheck: false
+repos:
+  system-goblins:
+    version: null
+    packages: []
+  system-gremlins:
+    version: null
+    packages: []
+  system:
+    version: null
+    packages: []
+  world-goblins:
+    version: null
+    packages: []
+  world-gremlins:
+    version: null
+    packages: []
+  world:
+    version: 9.0.1.sdk102-1
+    packages:
+      - dotnet-host-9.0.1.sdk102-1-x86_64.pkg.tar.zst
+      - dotnet-runtime-9.0.1.sdk102-1-x86_64.pkg.tar.zst
+      - aspnet-runtime-9.0.1.sdk102-1-x86_64.pkg.tar.zst
+      - dotnet-sdk-9.0.1.sdk102-1-x86_64.pkg.tar.zst
+      - netstandard-targeting-pack-9.0.1.sdk102-1-x86_64.pkg.tar.zst
+      - dotnet-targeting-pack-9.0.1.sdk102-1-x86_64.pkg.tar.zst
+      - aspnet-targeting-pack-9.0.1.sdk102-1-x86_64.pkg.tar.zst
+      - dotnet-source-built-artifacts-9.0.1.sdk102-1-x86_64.pkg.tar.zst
+  lib32-goblins:
+    version: null
+    packages: []
+  lib32-gremlins:
+    version: null
+    packages: []
+  lib32:
+    version: null
+    packages: []
+  galaxy-goblins:
+    version: null
+    packages: []
+  galaxy-gremlins:
+    version: null
+    packages: []
+  galaxy:
+    version: null
+    packages: []
