@@ -1,14 +1,14 @@
 ---
 pkgbase:
   name: python-vcrpy
-  version: 6.0.1-4
+  version: 7.0.0-1
   arch:
     - any
   pkgname:
     - python-vcrpy
 actions:
   addRepo: world
-  removeRepo: world-goblins
+  removeRepo: world-gremlins
   triggersBuild: false
   triggersRebuild: false
   triggersRepoAdd: true
@@ -31,9 +31,9 @@ repos:
     version: null
     packages: []
   world:
-    version: 6.0.1-4
+    version: 7.0.0-1
     packages:
-      - python-vcrpy-6.0.1-4-any.pkg.tar.zst
+      - python-vcrpy-7.0.0-1-any.pkg.tar.zst
   lib32-goblins:
     version: null
     packages: []
