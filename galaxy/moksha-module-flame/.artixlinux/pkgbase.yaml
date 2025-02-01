@@ -2,7 +2,7 @@
 team: galaxy
 pkgbase:
   name: moksha-module-flame
-  version: 0.1.1-4.1
+  version: 0.1.1-5
   arch:
     - x86_64
   pkgname:
@@ -50,6 +50,6 @@ repos:
     version: null
     packages: []
   galaxy:
-    version: 0.1.1-4.1
+    version: 0.1.1-5
     packages:
-      - moksha-module-flame-0.1.1-4.1-x86_64.pkg.tar.zst
+      - moksha-module-flame-0.1.1-5-x86_64.pkg.tar.zst
