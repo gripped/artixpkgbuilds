@@ -2,7 +2,7 @@
 team: galaxy
 pkgbase:
   name: moksha-module-screenshot
-  version: 0.1.1-8.2
+  version: 0.1.1-9
   arch:
     - x86_64
   pkgname:
@@ -50,6 +50,6 @@ repos:
     version: null
     packages: []
   galaxy:
-    version: 0.1.1-8.2
+    version: 0.1.1-9
     packages:
-      - moksha-module-screenshot-0.1.1-8.2-x86_64.pkg.tar.zst
+      - moksha-module-screenshot-0.1.1-9-x86_64.pkg.tar.zst
