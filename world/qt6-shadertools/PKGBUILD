@@ -4,8 +4,8 @@
 
 pkgname=qt6-shadertools
 _pkgver=6.8.1
-pkgver=6.8.1
-pkgrel=1
+pkgver=${_pkgver/-/}
+pkgrel=1.1
 arch=(x86_64)
 url='https://www.qt.io'
 license=(GPL-3.0-only
