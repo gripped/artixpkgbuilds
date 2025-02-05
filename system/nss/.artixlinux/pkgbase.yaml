@@ -1,7 +1,7 @@
 ---
 pkgbase:
   name: nss
-  version: 3.107-1
+  version: 3.108-1
   arch:
     - x86_64
   pkgname:
@@ -23,10 +23,10 @@ repos:
     version: null
     packages: []
   system:
-    version: 3.107-1
+    version: 3.108-1
     packages:
-      - nss-3.107-1-x86_64.pkg.tar.zst
-      - ca-certificates-mozilla-3.107-1-x86_64.pkg.tar.zst
+      - nss-3.108-1-x86_64.pkg.tar.zst
+      - ca-certificates-mozilla-3.108-1-x86_64.pkg.tar.zst
   world-goblins:
     version: null
     packages: []
