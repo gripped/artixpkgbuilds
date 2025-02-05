@@ -1,7 +1,7 @@
 ---
 pkgbase:
   name: linux
-  version: 6.12.9.artix1-1
+  version: 6.13.1.artix1-1
   arch:
     - x86_64
   pkgname:
@@ -24,11 +24,11 @@ repos:
     version: null
     packages: []
   system:
-    version: 6.12.9.artix1-1
+    version: 6.13.1.artix1-1
     packages:
-      - linux-6.12.9.artix1-1-x86_64.pkg.tar.zst
-      - linux-headers-6.12.9.artix1-1-x86_64.pkg.tar.zst
-      - linux-docs-6.12.9.artix1-1-x86_64.pkg.tar.zst
+      - linux-6.13.1.artix1-1-x86_64.pkg.tar.zst
+      - linux-headers-6.13.1.artix1-1-x86_64.pkg.tar.zst
+      - linux-docs-6.13.1.artix1-1-x86_64.pkg.tar.zst
   world-goblins:
     version: null
     packages: []
