@@ -1,7 +1,7 @@
 ---
 pkgbase:
   name: postgresql
-  version: 17.2-1
+  version: 17.2-2
   arch:
     - x86_64
   pkgname:
@@ -33,11 +33,11 @@ repos:
     version: null
     packages: []
   world:
-    version: 17.2-1
+    version: 17.2-2
     packages:
-      - postgresql-17.2-1-x86_64.pkg.tar.zst
-      - postgresql-libs-17.2-1-x86_64.pkg.tar.zst
-      - postgresql-docs-17.2-1-x86_64.pkg.tar.zst
+      - postgresql-17.2-2-x86_64.pkg.tar.zst
+      - postgresql-libs-17.2-2-x86_64.pkg.tar.zst
+      - postgresql-docs-17.2-2-x86_64.pkg.tar.zst
   lib32-goblins:
     version: null
     packages: []
