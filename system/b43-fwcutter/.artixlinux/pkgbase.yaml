@@ -1,7 +1,7 @@
 ---
 pkgbase:
   name: b43-fwcutter
-  version: 019-5
+  version: 019-6
   arch:
     - x86_64
   pkgname:
@@ -22,9 +22,9 @@ repos:
     version: null
     packages: []
   system:
-    version: 019-5
+    version: 019-6
     packages:
-      - b43-fwcutter-019-5-x86_64.pkg.tar.zst
+      - b43-fwcutter-019-6-x86_64.pkg.tar.zst
   world-goblins:
     version: null
     packages: []
