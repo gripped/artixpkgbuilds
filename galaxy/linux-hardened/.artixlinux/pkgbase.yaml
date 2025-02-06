@@ -1,7 +1,7 @@
 ---
 pkgbase:
   name: linux-hardened
-  version: 6.12.10.hardened1-1
+  version: 6.12.10.hardened1-2
   arch:
     - x86_64
   pkgname:
@@ -10,11 +10,11 @@ pkgbase:
     - linux-hardened-docs
 actions:
   addRepo: galaxy
-  removeRepo: null
-  triggersBuild: true
+  removeRepo: galaxy-gremlins
+  triggersBuild: false
   triggersRebuild: false
   triggersRepoAdd: true
-  triggersRepoRemove: false
+  triggersRepoRemove: true
   triggersNoCheck: false
 repos:
   system-goblins:
@@ -51,9 +51,9 @@ repos:
     version: null
     packages: []
   galaxy:
-    version: 6.12.10.hardened1-1
+    version: 6.12.10.hardened1-2
     packages:
-      - linux-hardened-6.12.10.hardened1-1-x86_64.pkg.tar.zst
-      - linux-hardened-headers-6.12.10.hardened1-1-x86_64.pkg.tar.zst
-      - linux-hardened-docs-6.12.10.hardened1-1-x86_64.pkg.tar.zst
+      - linux-hardened-6.12.10.hardened1-2-x86_64.pkg.tar.zst
+      - linux-hardened-headers-6.12.10.hardened1-2-x86_64.pkg.tar.zst
+      - linux-hardened-docs-6.12.10.hardened1-2-x86_64.pkg.tar.zst
 team: galaxy
