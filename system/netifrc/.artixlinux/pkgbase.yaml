@@ -1,7 +1,7 @@
 ---
 pkgbase:
   name: netifrc
-  version: 0.7.12-1
+  version: 0.7.12-2
   arch:
     - x86_64
   pkgname:
@@ -22,9 +22,9 @@ repos:
     version: null
     packages: []
   system:
-    version: 0.7.12-1
+    version: 0.7.12-2
     packages:
-      - netifrc-0.7.12-1-x86_64.pkg.tar.zst
+      - netifrc-0.7.12-2-x86_64.pkg.tar.zst
   world-goblins:
     version: null
     packages: []
