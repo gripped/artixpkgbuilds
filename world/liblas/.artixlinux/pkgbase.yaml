@@ -1,7 +1,7 @@
 ---
 pkgbase:
   name: liblas
-  version: 1.8.1.r128+gded46373-11
+  version: 1.8.1.r128+gded46373-12
   arch:
     - x86_64
   pkgname:
@@ -31,9 +31,9 @@ repos:
     version: null
     packages: []
   world:
-    version: 1.8.1.r128+gded46373-11
+    version: 1.8.1.r128+gded46373-12
     packages:
-      - liblas-1.8.1.r128+gded46373-11-x86_64.pkg.tar.zst
+      - liblas-1.8.1.r128+gded46373-12-x86_64.pkg.tar.zst
   lib32-goblins:
     version: null
     packages: []
