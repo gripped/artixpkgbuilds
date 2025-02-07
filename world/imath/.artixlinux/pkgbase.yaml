@@ -1,7 +1,7 @@
 ---
 pkgbase:
   name: imath
-  version: 3.1.12-2
+  version: 3.1.12-3
   arch:
     - x86_64
   pkgname:
@@ -31,9 +31,9 @@ repos:
     version: null
     packages: []
   world:
-    version: 3.1.12-2
+    version: 3.1.12-3
     packages:
-      - imath-3.1.12-2-x86_64.pkg.tar.zst
+      - imath-3.1.12-3-x86_64.pkg.tar.zst
   lib32-goblins:
     version: null
     packages: []
