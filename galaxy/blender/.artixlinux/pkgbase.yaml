@@ -44,13 +44,12 @@ repos:
     version: null
     packages: []
   galaxy-goblins:
-    version: 17:4.3.2-8
-    packages:
-      - blender-17:4.3.2-8-x86_64.pkg.tar.zst
+    version: null
+    packages: []
   galaxy-gremlins:
     version: null
     packages: []
   galaxy:
-    version: 17:4.3.2-7
+    version: 17:4.3.2-8
     packages:
-      - blender-17:4.3.2-7-x86_64.pkg.tar.zst
+      - blender-17:4.3.2-8-x86_64.pkg.tar.zst
