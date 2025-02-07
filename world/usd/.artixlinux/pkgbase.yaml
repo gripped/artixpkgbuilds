@@ -26,16 +26,15 @@ repos:
     version: null
     packages: []
   world-goblins:
-    version: 25.02-2
-    packages:
-      - usd-25.02-2-x86_64.pkg.tar.zst
+    version: null
+    packages: []
   world-gremlins:
     version: null
     packages: []
   world:
-    version: 25.02-1
+    version: 25.02-2
     packages:
-      - usd-25.02-1-x86_64.pkg.tar.zst
+      - usd-25.02-2-x86_64.pkg.tar.zst
   lib32-goblins:
     version: null
     packages: []
