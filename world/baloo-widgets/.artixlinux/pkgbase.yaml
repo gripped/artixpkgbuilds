@@ -1,7 +1,7 @@
 ---
 pkgbase:
   name: baloo-widgets
-  version: 24.12.1-1
+  version: 24.12.2-1
   arch:
     - x86_64
   pkgname:
@@ -31,9 +31,9 @@ repos:
     version: null
     packages: []
   world:
-    version: 24.12.1-1
+    version: 24.12.2-1
     packages:
-      - baloo-widgets-24.12.1-1-x86_64.pkg.tar.zst
+      - baloo-widgets-24.12.2-1-x86_64.pkg.tar.zst
   lib32-goblins:
     version: null
     packages: []
