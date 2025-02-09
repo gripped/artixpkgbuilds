@@ -1,7 +1,7 @@
 ---
 pkgbase:
   name: elfutils
-  version: 0.192-3
+  version: 0.192-4
   arch:
     - x86_64
   pkgname:
@@ -24,11 +24,11 @@ repos:
     version: null
     packages: []
   system:
-    version: 0.192-3
+    version: 0.192-4
     packages:
-      - elfutils-0.192-3-x86_64.pkg.tar.zst
-      - libelf-0.192-3-x86_64.pkg.tar.zst
-      - debuginfod-0.192-3-x86_64.pkg.tar.zst
+      - elfutils-0.192-4-x86_64.pkg.tar.zst
+      - libelf-0.192-4-x86_64.pkg.tar.zst
+      - debuginfod-0.192-4-x86_64.pkg.tar.zst
   world-goblins:
     version: null
     packages: []
