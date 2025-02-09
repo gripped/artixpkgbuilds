@@ -1,7 +1,7 @@
 ---
 pkgbase:
   name: libtasn1
-  version: 4.19.0-2
+  version: 4.20.0-1
   arch:
     - x86_64
   pkgname:
@@ -22,9 +22,9 @@ repos:
     version: null
     packages: []
   system:
-    version: 4.19.0-2
+    version: 4.20.0-1
     packages:
-      - libtasn1-4.19.0-2-x86_64.pkg.tar.zst
+      - libtasn1-4.20.0-1-x86_64.pkg.tar.zst
   world-goblins:
     version: null
     packages: []
