@@ -1,7 +1,7 @@
 ---
 pkgbase:
   name: libretro-dolphin
-  version: 33044-2
+  version: 33044-3
   arch:
     - x86_64
   pkgname:
@@ -49,7 +49,7 @@ repos:
     version: null
     packages: []
   galaxy:
-    version: 33044-2
+    version: 33044-3
     packages:
-      - libretro-dolphin-33044-2-x86_64.pkg.tar.zst
+      - libretro-dolphin-33044-3-x86_64.pkg.tar.zst
 team: galaxy
