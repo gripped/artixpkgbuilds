@@ -1,18 +1,18 @@
 ---
 pkgbase:
   name: toxic
-  version: 0.15.1-1
+  version: 0.16.0-1
   arch:
     - x86_64
   pkgname:
     - toxic
 actions:
   addRepo: world
-  removeRepo: null
-  triggersBuild: true
+  removeRepo: world-gremlins
+  triggersBuild: false
   triggersRebuild: false
   triggersRepoAdd: true
-  triggersRepoRemove: false
+  triggersRepoRemove: true
   triggersNoCheck: false
 repos:
   system-goblins:
@@ -31,9 +31,9 @@ repos:
     version: null
     packages: []
   world:
-    version: 0.15.1-1
+    version: 0.16.0-1
     packages:
-      - toxic-0.15.1-1-x86_64.pkg.tar.zst
+      - toxic-0.16.0-1-x86_64.pkg.tar.zst
   lib32-goblins:
     version: null
     packages: []
