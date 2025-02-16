@@ -2,7 +2,7 @@
 team: galaxy
 pkgbase:
   name: moksha-theme-green
-  version: 1.17.8-1
+  version: 1.17.9-1
   arch:
     - any
   pkgname:
@@ -50,6 +50,6 @@ repos:
     version: null
     packages: []
   galaxy:
-    version: 1.17.8-1
+    version: 1.17.9-1
     packages:
-      - moksha-theme-green-1.17.8-1-any.pkg.tar.zst
+      - moksha-theme-green-1.17.9-1-any.pkg.tar.zst
