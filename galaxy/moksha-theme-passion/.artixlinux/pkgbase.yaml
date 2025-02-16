@@ -2,7 +2,7 @@
 team: galaxy
 pkgbase:
   name: moksha-theme-passion
-  version: 2.6.15-1
+  version: 2.6.17-1
   arch:
     - any
   pkgname:
@@ -50,6 +50,6 @@ repos:
     version: null
     packages: []
   galaxy:
-    version: 2.6.15-1
+    version: 2.6.17-1
     packages:
-      - moksha-theme-passion-2.6.15-1-any.pkg.tar.zst
+      - moksha-theme-passion-2.6.17-1-any.pkg.tar.zst
