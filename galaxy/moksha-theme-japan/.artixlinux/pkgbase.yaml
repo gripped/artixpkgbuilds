@@ -2,7 +2,7 @@
 team: galaxy
 pkgbase:
   name: moksha-theme-japan
-  version: 0.4.0-9
+  version: 0.4.0-10
   arch:
     - any
   pkgname:
@@ -50,6 +50,6 @@ repos:
     version: null
     packages: []
   galaxy:
-    version: 0.4.0-9
+    version: 0.4.0-10
     packages:
-      - moksha-theme-japan-0.4.0-9-any.pkg.tar.zst
+      - moksha-theme-japan-0.4.0-10-any.pkg.tar.zst
