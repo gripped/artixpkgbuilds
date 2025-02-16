@@ -2,7 +2,7 @@
 team: galaxy
 pkgbase:
   name: moksha-theme-viceversa
-  version: 0.1.4-8
+  version: 0.1.4-9
   arch:
     - any
   pkgname:
@@ -50,6 +50,6 @@ repos:
     version: null
     packages: []
   galaxy:
-    version: 0.1.4-8
+    version: 0.1.4-9
     packages:
-      - moksha-theme-viceversa-0.1.4-8-any.pkg.tar.zst
+      - moksha-theme-viceversa-0.1.4-9-any.pkg.tar.zst
