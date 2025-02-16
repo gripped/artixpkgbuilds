@@ -2,7 +2,7 @@
 team: galaxy
 pkgbase:
   name: moksha-theme-pink
-  version: 0.3.6-7
+  version: 0.3.6-8
   arch:
     - any
   pkgname:
@@ -50,6 +50,6 @@ repos:
     version: null
     packages: []
   galaxy:
-    version: 0.3.6-7
+    version: 0.3.6-8
     packages:
-      - moksha-theme-pink-0.3.6-7-any.pkg.tar.zst
+      - moksha-theme-pink-0.3.6-8-any.pkg.tar.zst
