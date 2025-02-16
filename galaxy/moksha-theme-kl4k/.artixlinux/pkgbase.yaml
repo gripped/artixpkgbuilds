@@ -2,7 +2,7 @@
 team: galaxy
 pkgbase:
   name: moksha-theme-kl4k
-  version: 0.3.8-8
+  version: 0.3.8-9
   arch:
     - any
   pkgname:
@@ -50,6 +50,6 @@ repos:
     version: null
     packages: []
   galaxy:
-    version: 0.3.8-8
+    version: 0.3.8-9
     packages:
-      - moksha-theme-kl4k-0.3.8-8-any.pkg.tar.zst
+      - moksha-theme-kl4k-0.3.8-9-any.pkg.tar.zst
