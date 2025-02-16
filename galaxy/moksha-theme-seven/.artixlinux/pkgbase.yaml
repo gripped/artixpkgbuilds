@@ -2,7 +2,7 @@
 team: galaxy
 pkgbase:
   name: moksha-theme-seven
-  version: 0.3.9-7
+  version: 0.3.9-8
   arch:
     - any
   pkgname:
@@ -50,6 +50,6 @@ repos:
     version: null
     packages: []
   galaxy:
-    version: 0.3.9-7
+    version: 0.3.9-8
     packages:
-      - moksha-theme-seven-0.3.9-7-any.pkg.tar.zst
+      - moksha-theme-seven-0.3.9-8-any.pkg.tar.zst
