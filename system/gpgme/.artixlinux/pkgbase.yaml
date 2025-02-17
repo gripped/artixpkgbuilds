@@ -1,7 +1,7 @@
 ---
 pkgbase:
   name: gpgme
-  version: 1.24.1-3
+  version: 1.24.2-1
   arch:
     - x86_64
   pkgname:
@@ -24,11 +24,11 @@ repos:
     version: null
     packages: []
   system:
-    version: 1.24.1-3
+    version: 1.24.2-1
     packages:
-      - gpgme-1.24.1-3-x86_64.pkg.tar.zst
-      - qgpgme-qt6-1.24.1-3-x86_64.pkg.tar.zst
-      - python-gpgme-1.24.1-3-x86_64.pkg.tar.zst
+      - gpgme-1.24.2-1-x86_64.pkg.tar.zst
+      - qgpgme-qt6-1.24.2-1-x86_64.pkg.tar.zst
+      - python-gpgme-1.24.2-1-x86_64.pkg.tar.zst
   world-goblins:
     version: null
     packages: []
