@@ -1,7 +1,7 @@
 ---
 pkgbase:
   name: python
-  version: 3.13.1-1
+  version: 3.13.2-1
   arch:
     - x86_64
   pkgname:
@@ -23,10 +23,10 @@ repos:
     version: null
     packages: []
   system:
-    version: 3.13.1-1
+    version: 3.13.2-1
     packages:
-      - python-3.13.1-1-x86_64.pkg.tar.zst
-      - python-tests-3.13.1-1-x86_64.pkg.tar.zst
+      - python-3.13.2-1-x86_64.pkg.tar.zst
+      - python-tests-3.13.2-1-x86_64.pkg.tar.zst
   world-goblins:
     version: null
     packages: []
