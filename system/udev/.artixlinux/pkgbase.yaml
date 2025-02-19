@@ -1,7 +1,7 @@
 ---
 pkgbase:
   name: udev
-  version: 257.2-1
+  version: 257.3-1
   arch:
     - x86_64
   pkgname:
@@ -25,12 +25,12 @@ repos:
     version: null
     packages: []
   system:
-    version: 257.2-1
+    version: 257.3-1
     packages:
-      - udev-257.2-1-x86_64.pkg.tar.zst
-      - libudev-257.2-1-x86_64.pkg.tar.zst
-      - esysusers-257.2-1-x86_64.pkg.tar.zst
-      - etmpfiles-257.2-1-x86_64.pkg.tar.zst
+      - udev-257.3-1-x86_64.pkg.tar.zst
+      - libudev-257.3-1-x86_64.pkg.tar.zst
+      - esysusers-257.3-1-x86_64.pkg.tar.zst
+      - etmpfiles-257.3-1-x86_64.pkg.tar.zst
   world-goblins:
     version: null
     packages: []
