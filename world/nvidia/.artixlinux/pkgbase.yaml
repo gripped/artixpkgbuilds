@@ -1,7 +1,7 @@
 ---
 pkgbase:
   name: nvidia
-  version: 570.86.16-5
+  version: 570.86.16-6
   arch:
     - x86_64
   pkgname:
@@ -31,9 +31,9 @@ repos:
     version: null
     packages: []
   world:
-    version: 570.86.16-5
+    version: 570.86.16-6
     packages:
-      - nvidia-570.86.16-5-x86_64.pkg.tar.zst
+      - nvidia-570.86.16-6-x86_64.pkg.tar.zst
   lib32-goblins:
     version: null
     packages: []
