@@ -1,7 +1,7 @@
 ---
 pkgbase:
   name: perl
-  version: 5.40.1-1
+  version: 5.40.1-2
   arch:
     - x86_64
   pkgname:
@@ -22,9 +22,9 @@ repos:
     version: null
     packages: []
   system:
-    version: 5.40.1-1
+    version: 5.40.1-2
     packages:
-      - perl-5.40.1-1-x86_64.pkg.tar.zst
+      - perl-5.40.1-2-x86_64.pkg.tar.zst
   world-goblins:
     version: null
     packages: []
