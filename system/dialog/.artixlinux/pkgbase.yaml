@@ -1,7 +1,7 @@
 ---
 pkgbase:
   name: dialog
-  version: 1:1.3_20240619-2
+  version: 1:1.3_20250116-1
   arch:
     - x86_64
   pkgname:
@@ -22,9 +22,9 @@ repos:
     version: null
     packages: []
   system:
-    version: 1:1.3_20240619-2
+    version: 1:1.3_20250116-1
     packages:
-      - dialog-1:1.3_20240619-2-x86_64.pkg.tar.zst
+      - dialog-1:1.3_20250116-1-x86_64.pkg.tar.zst
   world-goblins:
     version: null
     packages: []
