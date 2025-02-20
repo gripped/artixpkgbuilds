@@ -1,18 +1,18 @@
 ---
 pkgbase:
   name: python-psutil
-  version: 6.1.1-1.1
+  version: 7.0.0-1
   arch:
     - x86_64
   pkgname:
     - python-psutil
 actions:
   addRepo: world
-  removeRepo: null
-  triggersBuild: true
+  removeRepo: world-gremlins
+  triggersBuild: false
   triggersRebuild: false
   triggersRepoAdd: true
-  triggersRepoRemove: false
+  triggersRepoRemove: true
   triggersNoCheck: false
 repos:
   system-goblins:
@@ -31,9 +31,9 @@ repos:
     version: null
     packages: []
   world:
-    version: 6.1.1-1.1
+    version: 7.0.0-1
     packages:
-      - python-psutil-6.1.1-1.1-x86_64.pkg.tar.zst
+      - python-psutil-7.0.0-1-x86_64.pkg.tar.zst
   lib32-goblins:
     version: null
     packages: []
