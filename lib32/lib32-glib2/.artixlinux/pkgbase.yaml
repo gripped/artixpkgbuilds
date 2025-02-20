@@ -34,16 +34,15 @@ repos:
     version: null
     packages: []
   lib32-goblins:
-    version: 2.82.4-2
-    packages:
-      - lib32-glib2-2.82.4-2-x86_64.pkg.tar.zst
+    version: null
+    packages: []
   lib32-gremlins:
     version: null
     packages: []
   lib32:
-    version: 2.82.4-1
+    version: 2.82.4-2
     packages:
-      - lib32-glib2-2.82.4-1-x86_64.pkg.tar.zst
+      - lib32-glib2-2.82.4-2-x86_64.pkg.tar.zst
   galaxy-goblins:
     version: null
     packages: []
