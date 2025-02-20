@@ -1,7 +1,7 @@
 ---
 pkgbase:
   name: libzmf
-  version: 0.0.2-16
+  version: 0.0.2-17
   arch:
     - x86_64
   pkgname:
@@ -31,9 +31,9 @@ repos:
     version: null
     packages: []
   world:
-    version: 0.0.2-16
+    version: 0.0.2-17
     packages:
-      - libzmf-0.0.2-16-x86_64.pkg.tar.zst
+      - libzmf-0.0.2-17-x86_64.pkg.tar.zst
   lib32-goblins:
     version: null
     packages: []
