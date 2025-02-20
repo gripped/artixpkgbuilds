@@ -1,14 +1,14 @@
 ---
 pkgbase:
   name: lib32-icu
-  version: 75.1-1
+  version: 76.1-1
   arch:
     - x86_64
   pkgname:
     - lib32-icu
 actions:
   addRepo: lib32
-  removeRepo: lib32-goblins
+  removeRepo: lib32-gremlins
   triggersBuild: false
   triggersRebuild: false
   triggersRepoAdd: true
@@ -40,9 +40,9 @@ repos:
     version: null
     packages: []
   lib32:
-    version: 75.1-1
+    version: 76.1-1
     packages:
-      - lib32-icu-75.1-1-x86_64.pkg.tar.zst
+      - lib32-icu-76.1-1-x86_64.pkg.tar.zst
   galaxy-goblins:
     version: null
     packages: []
