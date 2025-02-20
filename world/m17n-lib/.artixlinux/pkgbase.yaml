@@ -1,7 +1,7 @@
 ---
 pkgbase:
   name: m17n-lib
-  version: 1.8.4-3
+  version: 1.8.4-4
   arch:
     - x86_64
   pkgname:
@@ -31,9 +31,9 @@ repos:
     version: null
     packages: []
   world:
-    version: 1.8.4-3
+    version: 1.8.4-4
     packages:
-      - m17n-lib-1.8.4-3-x86_64.pkg.tar.zst
+      - m17n-lib-1.8.4-4-x86_64.pkg.tar.zst
   lib32-goblins:
     version: null
     packages: []
