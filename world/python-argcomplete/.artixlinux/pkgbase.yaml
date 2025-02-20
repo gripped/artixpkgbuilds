@@ -1,7 +1,7 @@
 ---
 pkgbase:
   name: python-argcomplete
-  version: 3.4.0-2
+  version: 3.5.3-1
   arch:
     - any
   pkgname:
@@ -31,9 +31,9 @@ repos:
     version: null
     packages: []
   world:
-    version: 3.4.0-2
+    version: 3.5.3-1
     packages:
-      - python-argcomplete-3.4.0-2-any.pkg.tar.zst
+      - python-argcomplete-3.5.3-1-any.pkg.tar.zst
   lib32-goblins:
     version: null
     packages: []
