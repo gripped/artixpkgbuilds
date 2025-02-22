@@ -1,7 +1,7 @@
 ---
 pkgbase:
   name: gdbm
-  version: 1.24-1
+  version: 1.24-2
   arch:
     - x86_64
   pkgname:
@@ -22,9 +22,9 @@ repos:
     version: null
     packages: []
   system:
-    version: 1.24-1
+    version: 1.24-2
     packages:
-      - gdbm-1.24-1-x86_64.pkg.tar.zst
+      - gdbm-1.24-2-x86_64.pkg.tar.zst
   world-goblins:
     version: null
     packages: []
