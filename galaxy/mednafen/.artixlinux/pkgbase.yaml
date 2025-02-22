@@ -2,18 +2,18 @@
 team: galaxy
 pkgbase:
   name: mednafen
-  version: 1.32.1-1
+  version: 1.32.1-2
   arch:
     - x86_64
   pkgname:
     - mednafen
 actions:
   addRepo: galaxy
-  removeRepo: null
-  triggersBuild: true
+  removeRepo: galaxy-goblins
+  triggersBuild: false
   triggersRebuild: false
   triggersRepoAdd: true
-  triggersRepoRemove: false
+  triggersRepoRemove: true
   triggersNoCheck: false
 repos:
   system-goblins:
@@ -50,6 +50,6 @@ repos:
     version: null
     packages: []
   galaxy:
-    version: 1.32.1-1
+    version: 1.32.1-2
     packages:
-      - mednafen-1.32.1-1-x86_64.pkg.tar.zst
+      - mednafen-1.32.1-2-x86_64.pkg.tar.zst
