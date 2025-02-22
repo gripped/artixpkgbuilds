@@ -1,18 +1,18 @@
 ---
 pkgbase:
   name: lib32-flac
-  version: 1.4.3-2
+  version: 1.5.0-1
   arch:
     - x86_64
   pkgname:
     - lib32-flac
 actions:
   addRepo: lib32
-  removeRepo: null
-  triggersBuild: true
+  removeRepo: lib32-goblins
+  triggersBuild: false
   triggersRebuild: false
   triggersRepoAdd: true
-  triggersRepoRemove: false
+  triggersRepoRemove: true
   triggersNoCheck: false
 repos:
   system-goblins:
@@ -40,9 +40,9 @@ repos:
     version: null
     packages: []
   lib32:
-    version: 1.4.3-2
+    version: 1.5.0-1
     packages:
-      - lib32-flac-1.4.3-2-x86_64.pkg.tar.zst
+      - lib32-flac-1.5.0-1-x86_64.pkg.tar.zst
   galaxy-goblins:
     version: null
     packages: []
