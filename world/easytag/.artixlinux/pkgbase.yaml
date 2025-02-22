@@ -1,18 +1,18 @@
 ---
 pkgbase:
   name: easytag
-  version: 2.4.3-13
+  version: 2.4.3-14
   arch:
     - x86_64
   pkgname:
     - easytag
 actions:
   addRepo: world
-  removeRepo: null
-  triggersBuild: true
+  removeRepo: world-goblins
+  triggersBuild: false
   triggersRebuild: false
   triggersRepoAdd: true
-  triggersRepoRemove: false
+  triggersRepoRemove: true
   triggersNoCheck: false
 repos:
   system-goblins:
@@ -31,9 +31,9 @@ repos:
     version: null
     packages: []
   world:
-    version: 2.4.3-13
+    version: 2.4.3-14
     packages:
-      - easytag-2.4.3-13-x86_64.pkg.tar.zst
+      - easytag-2.4.3-14-x86_64.pkg.tar.zst
   lib32-goblins:
     version: null
     packages: []
