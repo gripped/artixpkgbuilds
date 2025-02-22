@@ -1,7 +1,7 @@
 ---
 pkgbase:
   name: docker-buildx
-  version: 0.20.1-1
+  version: 0.21.1-1
   arch:
     - x86_64
   pkgname:
@@ -28,13 +28,12 @@ repos:
     version: null
     packages: []
   world-gremlins:
-    version: 0.20.0-1
-    packages:
-      - docker-buildx-0.20.0-1-x86_64.pkg.tar.zst
+    version: null
+    packages: []
   world:
-    version: 0.20.1-1
+    version: 0.21.1-1
     packages:
-      - docker-buildx-0.20.1-1-x86_64.pkg.tar.zst
+      - docker-buildx-0.21.1-1-x86_64.pkg.tar.zst
   lib32-goblins:
     version: null
     packages: []
