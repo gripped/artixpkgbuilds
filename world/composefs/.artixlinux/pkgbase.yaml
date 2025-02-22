@@ -2,7 +2,7 @@
 team: world
 pkgbase:
   name: composefs
-  version: 1.0.4-1
+  version: 1.0.7-1
   arch:
     - x86_64
   pkgname:
@@ -32,9 +32,9 @@ repos:
     version: null
     packages: []
   world:
-    version: 1.0.4-1
+    version: 1.0.7-1
     packages:
-      - composefs-1.0.4-1-x86_64.pkg.tar.zst
+      - composefs-1.0.7-1-x86_64.pkg.tar.zst
   lib32-goblins:
     version: null
     packages: []
