@@ -1,18 +1,18 @@
 ---
 pkgbase:
   name: opus-tools
-  version: 0.2-6
+  version: 0.2-7
   arch:
     - x86_64
   pkgname:
     - opus-tools
 actions:
   addRepo: world
-  removeRepo: null
-  triggersBuild: true
+  removeRepo: world-goblins
+  triggersBuild: false
   triggersRebuild: false
   triggersRepoAdd: true
-  triggersRepoRemove: false
+  triggersRepoRemove: true
   triggersNoCheck: false
 repos:
   system-goblins:
@@ -31,9 +31,9 @@ repos:
     version: null
     packages: []
   world:
-    version: 0.2-6
+    version: 0.2-7
     packages:
-      - opus-tools-0.2-6-x86_64.pkg.tar.zst
+      - opus-tools-0.2-7-x86_64.pkg.tar.zst
   lib32-goblins:
     version: null
     packages: []
