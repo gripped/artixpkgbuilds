@@ -1,7 +1,7 @@
 ---
 pkgbase:
   name: libffi
-  version: 3.4.6-1
+  version: 3.4.7-1
   arch:
     - x86_64
   pkgname:
@@ -22,9 +22,9 @@ repos:
     version: null
     packages: []
   system:
-    version: 3.4.6-1
+    version: 3.4.7-1
     packages:
-      - libffi-3.4.6-1-x86_64.pkg.tar.zst
+      - libffi-3.4.7-1-x86_64.pkg.tar.zst
   world-goblins:
     version: null
     packages: []
@@ -52,3 +52,4 @@ repos:
   galaxy:
     version: null
     packages: []
+team: system
