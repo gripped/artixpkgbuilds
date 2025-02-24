@@ -1,7 +1,7 @@
 ---
 pkgbase:
   name: pcre2
-  version: 10.44-1
+  version: 10.45-1
   arch:
     - x86_64
   pkgname:
@@ -22,9 +22,9 @@ repos:
     version: null
     packages: []
   system:
-    version: 10.44-1
+    version: 10.45-1
     packages:
-      - pcre2-10.44-1-x86_64.pkg.tar.zst
+      - pcre2-10.45-1-x86_64.pkg.tar.zst
   world-goblins:
     version: null
     packages: []
