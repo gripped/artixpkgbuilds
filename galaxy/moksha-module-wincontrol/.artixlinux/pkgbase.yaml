@@ -2,7 +2,7 @@
 team: galaxy
 pkgbase:
   name: moksha-module-wincontrol
-  version: 0.1.1-5.1
+  version: 0.1.1-7
   arch:
     - x86_64
   pkgname:
@@ -50,6 +50,6 @@ repos:
     version: null
     packages: []
   galaxy:
-    version: 0.1.1-5.1
+    version: 0.1.1-7
     packages:
-      - moksha-module-wincontrol-0.1.1-5.1-x86_64.pkg.tar.zst
+      - moksha-module-wincontrol-0.1.1-7-x86_64.pkg.tar.zst
