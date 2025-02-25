@@ -1,18 +1,18 @@
 ---
 pkgbase:
   name: openrct2
-  version: 0.4.19.1-2
+  version: 0.4.20-0
   arch:
     - x86_64
   pkgname:
     - openrct2
 actions:
   addRepo: galaxy
-  removeRepo: galaxy-goblins
-  triggersBuild: false
+  removeRepo: null
+  triggersBuild: true
   triggersRebuild: false
   triggersRepoAdd: true
-  triggersRepoRemove: true
+  triggersRepoRemove: false
   triggersNoCheck: false
 repos:
   system-goblins:
@@ -46,11 +46,10 @@ repos:
     version: null
     packages: []
   galaxy-gremlins:
-    version: 0.4.19.1-1.1
-    packages:
-      - openrct2-0.4.19.1-1.1-x86_64.pkg.tar.zst
+    version: null
+    packages: []
   galaxy:
-    version: 0.4.19.1-2
+    version: 0.4.20-0
     packages:
-      - openrct2-0.4.19.1-2-x86_64.pkg.tar.zst
+      - openrct2-0.4.20-0-x86_64.pkg.tar.zst
 team: galaxy
