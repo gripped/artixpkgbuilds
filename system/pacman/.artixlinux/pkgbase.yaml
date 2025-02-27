@@ -1,7 +1,7 @@
 ---
 pkgbase:
   name: pacman
-  version: 7.0.0.r6.gc685ae6-1.1
+  version: 7.0.0.r6.gc685ae6-2
   arch:
     - x86_64
   pkgname:
@@ -22,9 +22,9 @@ repos:
     version: null
     packages: []
   system:
-    version: 7.0.0.r6.gc685ae6-1.1
+    version: 7.0.0.r6.gc685ae6-2
     packages:
-      - pacman-7.0.0.r6.gc685ae6-1.1-x86_64.pkg.tar.zst
+      - pacman-7.0.0.r6.gc685ae6-2-x86_64.pkg.tar.zst
   world-goblins:
     version: null
     packages: []
