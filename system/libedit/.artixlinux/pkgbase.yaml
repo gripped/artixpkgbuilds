@@ -1,7 +1,7 @@
 ---
 pkgbase:
   name: libedit
-  version: 20240808_3.1-1
+  version: 20250104_3.1-1
   arch:
     - x86_64
   pkgname:
@@ -22,9 +22,9 @@ repos:
     version: null
     packages: []
   system:
-    version: 20240808_3.1-1
+    version: 20250104_3.1-1
     packages:
-      - libedit-20240808_3.1-1-x86_64.pkg.tar.zst
+      - libedit-20250104_3.1-1-x86_64.pkg.tar.zst
   world-goblins:
     version: null
     packages: []
