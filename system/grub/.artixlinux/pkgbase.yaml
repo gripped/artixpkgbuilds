@@ -1,7 +1,7 @@
 ---
 pkgbase:
   name: grub
-  version: 2:2.12-3.2
+  version: 2:2.12.r212.g4dc616657-2
   arch:
     - x86_64
   pkgname:
@@ -22,9 +22,9 @@ repos:
     version: null
     packages: []
   system:
-    version: 2:2.12-3.2
+    version: 2:2.12.r212.g4dc616657-2
     packages:
-      - grub-2:2.12-3.2-x86_64.pkg.tar.zst
+      - grub-2:2.12.r212.g4dc616657-2-x86_64.pkg.tar.zst
   world-goblins:
     version: null
     packages: []
