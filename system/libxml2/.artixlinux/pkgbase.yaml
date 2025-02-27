@@ -1,7 +1,7 @@
 ---
 pkgbase:
   name: libxml2
-  version: 2.13.6-2
+  version: 2.13.6-3
   arch:
     - x86_64
   pkgname:
@@ -23,10 +23,10 @@ repos:
     version: null
     packages: []
   system:
-    version: 2.13.6-2
+    version: 2.13.6-3
     packages:
-      - libxml2-2.13.6-2-x86_64.pkg.tar.zst
-      - libxml2-docs-2.13.6-2-x86_64.pkg.tar.zst
+      - libxml2-2.13.6-3-x86_64.pkg.tar.zst
+      - libxml2-docs-2.13.6-3-x86_64.pkg.tar.zst
   world-goblins:
     version: null
     packages: []
