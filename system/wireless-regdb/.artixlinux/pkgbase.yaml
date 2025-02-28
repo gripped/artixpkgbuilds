@@ -1,7 +1,7 @@
 ---
 pkgbase:
   name: wireless-regdb
-  version: 2024.10.07-1
+  version: 2025.02.20-1
   arch:
     - any
   pkgname:
@@ -22,9 +22,9 @@ repos:
     version: null
     packages: []
   system:
-    version: 2024.10.07-1
+    version: 2025.02.20-1
     packages:
-      - wireless-regdb-2024.10.07-1-any.pkg.tar.zst
+      - wireless-regdb-2025.02.20-1-any.pkg.tar.zst
   world-goblins:
     version: null
     packages: []
