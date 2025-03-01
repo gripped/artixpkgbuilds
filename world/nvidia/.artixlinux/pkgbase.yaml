@@ -1,7 +1,7 @@
 ---
 pkgbase:
   name: nvidia
-  version: 570.86.16-7.1
+  version: 570.124.04-2
   arch:
     - x86_64
   pkgname:
@@ -31,9 +31,9 @@ repos:
     version: null
     packages: []
   world:
-    version: 570.86.16-7.1
+    version: 570.124.04-2
     packages:
-      - nvidia-570.86.16-7.1-x86_64.pkg.tar.zst
+      - nvidia-570.124.04-2-x86_64.pkg.tar.zst
   lib32-goblins:
     version: null
     packages: []
