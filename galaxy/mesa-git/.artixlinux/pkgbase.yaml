@@ -1,0 +1,55 @@
+---
+team: galaxy
+pkgbase:
+  name: mesa-git
+  version: 25.0.0_devel.200442.bfa6b9b6551.d41d8cd-1
+  arch:
+    - x86_64
+  pkgname:
+    - mesa-git
+actions:
+  addRepo: galaxy
+  removeRepo: null
+  triggersBuild: true
+  triggersRebuild: false
+  triggersRepoAdd: true
+  triggersRepoRemove: false
+  triggersNoCheck: false
+repos:
+  system-goblins:
+    version: null
+    packages: []
+  system-gremlins:
+    version: null
+    packages: []
+  system:
+    version: null
+    packages: []
+  world-goblins:
+    version: null
+    packages: []
+  world-gremlins:
+    version: null
+    packages: []
+  world:
+    version: null
+    packages: []
+  lib32-goblins:
+    version: null
+    packages: []
+  lib32-gremlins:
+    version: null
+    packages: []
+  lib32:
+    version: null
+    packages: []
+  galaxy-goblins:
+    version: null
+    packages: []
+  galaxy-gremlins:
+    version: null
+    packages: []
+  galaxy:
+    version: 25.0.0_devel.200442.bfa6b9b6551.d41d8cd-1
+    packages:
+      - mesa-git-25.0.0_devel.200442.bfa6b9b6551.d41d8cd-1-x86_64.pkg.tar.zst
