@@ -1,7 +1,7 @@
 ---
 pkgbase:
   name: pam
-  version: 1.7.0-1.1
+  version: 1.7.0-2
   arch:
     - x86_64
   pkgname:
@@ -22,9 +22,9 @@ repos:
     version: null
     packages: []
   system:
-    version: 1.7.0-1.1
+    version: 1.7.0-2
     packages:
-      - pam-1.7.0-1.1-x86_64.pkg.tar.zst
+      - pam-1.7.0-2-x86_64.pkg.tar.zst
   world-goblins:
     version: null
     packages: []
