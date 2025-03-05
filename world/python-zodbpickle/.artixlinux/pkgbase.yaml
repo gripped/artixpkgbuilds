@@ -2,7 +2,7 @@
 team: world
 pkgbase:
   name: python-zodbpickle
-  version: 4.1.1-3
+  version: 4.2-1
   arch:
     - x86_64
   pkgname:
@@ -32,9 +32,9 @@ repos:
     version: null
     packages: []
   world:
-    version: 4.1.1-3
+    version: 4.2-1
     packages:
-      - python-zodbpickle-4.1.1-3-x86_64.pkg.tar.zst
+      - python-zodbpickle-4.2-1-x86_64.pkg.tar.zst
   lib32-goblins:
     version: null
     packages: []
