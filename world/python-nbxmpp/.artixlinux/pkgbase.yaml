@@ -1,18 +1,18 @@
 ---
 pkgbase:
   name: python-nbxmpp
-  version: 6.0.0-1
+  version: 6.0.1-1
   arch:
     - any
   pkgname:
     - python-nbxmpp
 actions:
   addRepo: world
-  removeRepo: null
-  triggersBuild: true
+  removeRepo: world-gremlins
+  triggersBuild: false
   triggersRebuild: false
   triggersRepoAdd: true
-  triggersRepoRemove: false
+  triggersRepoRemove: true
   triggersNoCheck: false
 repos:
   system-goblins:
@@ -31,9 +31,9 @@ repos:
     version: null
     packages: []
   world:
-    version: 6.0.0-1
+    version: 6.0.1-1
     packages:
-      - python-nbxmpp-6.0.0-1-any.pkg.tar.zst
+      - python-nbxmpp-6.0.1-1-any.pkg.tar.zst
   lib32-goblins:
     version: null
     packages: []
