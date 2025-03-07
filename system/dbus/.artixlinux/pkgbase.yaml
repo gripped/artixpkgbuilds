@@ -1,7 +1,7 @@
 ---
 pkgbase:
   name: dbus
-  version: 1.16.1-1.4
+  version: 1.16.2-1
   arch:
     - x86_64
   pkgname:
@@ -23,10 +23,10 @@ repos:
     version: null
     packages: []
   system:
-    version: 1.16.1-1.4
+    version: 1.16.2-1
     packages:
-      - dbus-1.16.1-1.4-x86_64.pkg.tar.zst
-      - dbus-docs-1.16.1-1.4-x86_64.pkg.tar.zst
+      - dbus-1.16.2-1-x86_64.pkg.tar.zst
+      - dbus-docs-1.16.2-1-x86_64.pkg.tar.zst
   world-goblins:
     version: null
     packages: []
