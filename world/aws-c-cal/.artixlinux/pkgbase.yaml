@@ -1,18 +1,18 @@
 ---
 pkgbase:
   name: aws-c-cal
-  version: 0.8.3-1
+  version: 0.8.5-1
   arch:
     - x86_64
   pkgname:
     - aws-c-cal
 actions:
   addRepo: world
-  removeRepo: null
-  triggersBuild: true
+  removeRepo: world-gremlins
+  triggersBuild: false
   triggersRebuild: false
   triggersRepoAdd: true
-  triggersRepoRemove: false
+  triggersRepoRemove: true
   triggersNoCheck: false
 repos:
   system-goblins:
@@ -31,9 +31,9 @@ repos:
     version: null
     packages: []
   world:
-    version: 0.8.3-1
+    version: 0.8.5-1
     packages:
-      - aws-c-cal-0.8.3-1-x86_64.pkg.tar.zst
+      - aws-c-cal-0.8.5-1-x86_64.pkg.tar.zst
   lib32-goblins:
     version: null
     packages: []
