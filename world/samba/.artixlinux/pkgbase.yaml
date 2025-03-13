@@ -1,7 +1,7 @@
 ---
 pkgbase:
   name: samba
-  version: 2:4.21.4-1
+  version: 2:4.22.0-1
   arch:
     - x86_64
   pkgname:
@@ -34,12 +34,12 @@ repos:
     version: null
     packages: []
   world:
-    version: 2:4.21.4-1
+    version: 2:4.22.0-1
     packages:
-      - libwbclient-2:4.21.4-1-x86_64.pkg.tar.zst
-      - ldb-2:4.21.4-1-x86_64.pkg.tar.zst
-      - smbclient-2:4.21.4-1-x86_64.pkg.tar.zst
-      - samba-2:4.21.4-1-x86_64.pkg.tar.zst
+      - libwbclient-2:4.22.0-1-x86_64.pkg.tar.zst
+      - ldb-2:4.22.0-1-x86_64.pkg.tar.zst
+      - smbclient-2:4.22.0-1-x86_64.pkg.tar.zst
+      - samba-2:4.22.0-1-x86_64.pkg.tar.zst
   lib32-goblins:
     version: null
     packages: []
