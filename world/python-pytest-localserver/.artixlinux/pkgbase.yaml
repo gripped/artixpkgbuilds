@@ -1,7 +1,7 @@
 ---
 pkgbase:
   name: python-pytest-localserver
-  version: 0.8.1-3
+  version: 0.8.1-4
   arch:
     - any
   pkgname:
@@ -31,9 +31,9 @@ repos:
     version: null
     packages: []
   world:
-    version: 0.8.1-3
+    version: 0.8.1-4
     packages:
-      - python-pytest-localserver-0.8.1-3-any.pkg.tar.zst
+      - python-pytest-localserver-0.8.1-4-any.pkg.tar.zst
   lib32-goblins:
     version: null
     packages: []
