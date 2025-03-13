@@ -1,7 +1,7 @@
 ---
 pkgbase:
   name: glib2
-  version: 2.82.5-1
+  version: 2.84.0-1
   arch:
     - x86_64
   pkgname:
@@ -24,11 +24,11 @@ repos:
     version: null
     packages: []
   system:
-    version: 2.82.5-1
+    version: 2.84.0-1
     packages:
-      - glib2-2.82.5-1-x86_64.pkg.tar.zst
-      - glib2-devel-2.82.5-1-x86_64.pkg.tar.zst
-      - glib2-docs-2.82.5-1-x86_64.pkg.tar.zst
+      - glib2-2.84.0-1-x86_64.pkg.tar.zst
+      - glib2-devel-2.84.0-1-x86_64.pkg.tar.zst
+      - glib2-docs-2.84.0-1-x86_64.pkg.tar.zst
   world-goblins:
     version: null
     packages: []
