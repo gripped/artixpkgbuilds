@@ -1,7 +1,7 @@
 ---
 pkgbase:
   name: man-pages
-  version: 6.12-1
+  version: 6.13-1
   arch:
     - any
   pkgname:
@@ -22,9 +22,9 @@ repos:
     version: null
     packages: []
   system:
-    version: 6.12-1
+    version: 6.13-1
     packages:
-      - man-pages-6.12-1-any.pkg.tar.zst
+      - man-pages-6.13-1-any.pkg.tar.zst
   world-goblins:
     version: null
     packages: []
