@@ -1,19 +1,19 @@
 ---
 pkgbase:
   name: python-tornado
-  version: 6.4.1-3
+  version: 6.4.2-1
   arch:
     - x86_64
   pkgname:
     - python-tornado
 actions:
   addRepo: world
-  removeRepo: world-gremlins
-  triggersBuild: false
+  removeRepo: null
+  triggersBuild: true
   triggersRebuild: false
   triggersRepoAdd: true
-  triggersRepoRemove: true
-  triggersNoCheck: false
+  triggersRepoRemove: false
+  triggersNoCheck: true
 repos:
   system-goblins:
     version: null
@@ -31,9 +31,9 @@ repos:
     version: null
     packages: []
   world:
-    version: 6.4.1-3
+    version: 6.4.2-1
     packages:
-      - python-tornado-6.4.1-3-x86_64.pkg.tar.zst
+      - python-tornado-6.4.2-1-x86_64.pkg.tar.zst
   lib32-goblins:
     version: null
     packages: []
