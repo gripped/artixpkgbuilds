@@ -3,7 +3,7 @@
 
 pkgname=nvchecker
 pkgver=2.16
-pkgrel=2
+pkgrel=3
 pkgdesc="New version checker for software releases"
 arch=('any')
 url="https://github.com/lilydjwg/nvchecker"
@@ -79,5 +79,3 @@ package() {
   install -Dm644 sample_config.toml -t "$pkgdir"/usr/share/doc/$pkgname/
   install -Dm644 docs/_build/man/nvchecker.1 -t "$pkgdir"/usr/share/man/man1/
 }
-
-# vim:set ts=2 sw=2 et:
