@@ -1,14 +1,14 @@
 ---
 pkgbase:
   name: python-mailmanclient
-  version: 3.3.5-6
+  version: 3.3.5-7
   arch:
     - any
   pkgname:
     - python-mailmanclient
 actions:
   addRepo: world
-  removeRepo: world-gremlins
+  removeRepo: world-goblins
   triggersBuild: false
   triggersRebuild: false
   triggersRepoAdd: true
@@ -31,9 +31,9 @@ repos:
     version: null
     packages: []
   world:
-    version: 3.3.5-6
+    version: 3.3.5-7
     packages:
-      - python-mailmanclient-3.3.5-6-any.pkg.tar.zst
+      - python-mailmanclient-3.3.5-7-any.pkg.tar.zst
   lib32-goblins:
     version: null
     packages: []
