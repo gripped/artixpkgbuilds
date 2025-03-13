@@ -1,7 +1,7 @@
 ---
 pkgbase:
   name: kcachegrind
-  version: 24.12.2-1
+  version: 24.12.3-1
   arch:
     - x86_64
   pkgname:
@@ -33,11 +33,11 @@ repos:
     version: null
     packages: []
   world:
-    version: 24.12.2-1
+    version: 24.12.3-1
     packages:
-      - kcachegrind-24.12.2-1-x86_64.pkg.tar.zst
-      - kcachegrind-common-24.12.2-1-x86_64.pkg.tar.zst
-      - qcachegrind-24.12.2-1-x86_64.pkg.tar.zst
+      - kcachegrind-24.12.3-1-x86_64.pkg.tar.zst
+      - kcachegrind-common-24.12.3-1-x86_64.pkg.tar.zst
+      - qcachegrind-24.12.3-1-x86_64.pkg.tar.zst
   lib32-goblins:
     version: null
     packages: []
