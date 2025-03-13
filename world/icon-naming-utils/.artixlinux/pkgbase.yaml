@@ -1,18 +1,18 @@
 ---
 pkgbase:
   name: icon-naming-utils
-  version: 0.8.90-5
+  version: 0.8.90-7
   arch:
     - any
   pkgname:
     - icon-naming-utils
 actions:
-  addRepo: null
-  removeRepo: null
+  addRepo: world
+  removeRepo: world-gremlins
   triggersBuild: false
   triggersRebuild: false
-  triggersRepoAdd: false
-  triggersRepoRemove: false
+  triggersRepoAdd: true
+  triggersRepoRemove: true
   triggersNoCheck: false
 repos:
   system-goblins:
@@ -31,9 +31,9 @@ repos:
     version: null
     packages: []
   world:
-    version: 0.8.90-5
+    version: 0.8.90-7
     packages:
-      - icon-naming-utils-0.8.90-5-any.pkg.tar.zst
+      - icon-naming-utils-0.8.90-7-any.pkg.tar.zst
   lib32-goblins:
     version: null
     packages: []
@@ -52,3 +52,4 @@ repos:
   galaxy:
     version: null
     packages: []
+team: world
