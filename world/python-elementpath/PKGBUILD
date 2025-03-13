@@ -1,8 +1,8 @@
 # Maintainer: Felix Yan <felixonmars@archlinux.org>
 
 pkgname=python-elementpath
-pkgver=4.6.0
-pkgrel=2
+pkgver=4.8.0
+pkgrel=1
 pkgdesc="XPath 1.0/2.0 parsers and selectors for ElementTree and lxml"
 url="https://github.com/sissaschool/elementpath"
 license=('MIT')
@@ -11,7 +11,7 @@ depends=('python')
 makedepends=('git' 'python-setuptools')
 checkdepends=('python-lxml' 'python-pytest' 'python-xmlschema')
 source=("git+https://github.com/sissaschool/elementpath.git#tag=v$pkgver")
-sha512sums=('31c33b799413fdc7d1e0b48b9aa81a0bfa5ea39efcdf5930293c3cfcc3e2dcc3d4bc7d46970dbf4d337298c308dea6673aa8343619df3c761c1f0b5feb8d2802')
+sha512sums=('2aa9bc9a76aabcefd422a44ace984f651a3418bf67aa8ea4538f1b6f8142e1de880ab91c204316a10df87722cf1741eace931d45cb03da77b9fe806eeae320b9')
 
 build() {
   cd elementpath
