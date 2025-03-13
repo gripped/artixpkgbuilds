@@ -1,18 +1,18 @@
 ---
 pkgbase:
   name: lib32-libcap
-  version: 2.71-1.2
+  version: 2.75-1
   arch:
     - x86_64
   pkgname:
     - lib32-libcap
 actions:
   addRepo: lib32
-  removeRepo: null
-  triggersBuild: true
+  removeRepo: lib32-gremlins
+  triggersBuild: false
   triggersRebuild: false
   triggersRepoAdd: true
-  triggersRepoRemove: false
+  triggersRepoRemove: true
   triggersNoCheck: false
 repos:
   system-goblins:
@@ -40,9 +40,9 @@ repos:
     version: null
     packages: []
   lib32:
-    version: 2.71-1.2
+    version: 2.75-1
     packages:
-      - lib32-libcap-2.71-1.2-x86_64.pkg.tar.zst
+      - lib32-libcap-2.75-1-x86_64.pkg.tar.zst
   galaxy-goblins:
     version: null
     packages: []
