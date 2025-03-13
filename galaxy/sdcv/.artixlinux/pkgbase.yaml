@@ -2,17 +2,17 @@
 team: galaxy
 pkgbase:
   name: sdcv
-  version: 0.5.5-2
+  version: 0.5.5-2.1
   arch:
     - x86_64
   pkgname:
     - sdcv
 actions:
-  addRepo: galaxy
-  removeRepo: galaxy-gremlins
+  addRepo: null
+  removeRepo: world
   triggersBuild: false
   triggersRebuild: false
-  triggersRepoAdd: true
+  triggersRepoAdd: false
   triggersRepoRemove: true
   triggersNoCheck: false
 repos:
@@ -50,6 +50,6 @@ repos:
     version: null
     packages: []
   galaxy:
-    version: 0.5.5-2
+    version: 0.5.5-2.1
     packages:
-      - sdcv-0.5.5-2-x86_64.pkg.tar.zst
+      - sdcv-0.5.5-2.1-x86_64.pkg.tar.zst
