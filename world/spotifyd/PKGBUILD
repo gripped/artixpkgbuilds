@@ -1,23 +1,33 @@
-# Maintainer: Nathan <ndowens@artixlinux.org>
+# Maintainer: Frederik Schwan <freswa at archlinux dot org>
 # Contributor: Bert Peters <bert@bertptrs.nl>
 # Contributor: Varakh <varakh@varakh.de>
 # Contributor: Florian Klink <flokli@flokli.de>
 
 pkgname=spotifyd
-pkgver=0.3.5
+pkgver=0.4.1
 pkgrel=1
 pkgdesc='Lightweight spotify streaming daemon with spotify connect support'
 arch=('x86_64')
 url='https://github.com/Spotifyd/spotifyd'
 license=('GPL3')
-depends=('alsa-lib' 'libogg' 'libpulse' 'dbus')
-makedepends=('rust')
+depends=(
+  alsa-lib
+  dbus
+  libogg
+  libpulse
+)
+makedepends=(
+  clang
+  cmake
+  rust
+)
 options=(!lto)
 source=("https://github.com/Spotifyd/spotifyd/archive/v${pkgver}/${pkgname}-${pkgver}.tar.gz")
-b2sums=('dd266f499f960b4f0e37e8c89d73286c0efc9f7c782007e6df901a9b432a88f4fb276666d5ec16c3408633eeb53950b45cfe32884f9a0ecfdb27430f412ac99a')
+b2sums=('3657e0cc266a3c49d012d4dfbc678c44168ff572935f2088d99bbef6b1363bba10d0089c32c9d8ed9aaafa2843d4b7fb3b74ffe5004413cd667e4aeb0a2169c7')
 
 prepare() {
   cd spotifyd-${pkgver}
+  export RUSTUP_TOOLCHAIN=stable
   cargo fetch --locked --target "$CARCH-unknown-linux-gnu"
 }
 
@@ -25,7 +35,7 @@ build() {
   cd spotifyd-${pkgver}
   export RUSTUP_TOOLCHAIN=stable
   export CARGO_TARGET_DIR=target
-  cargo build --release --locked --features pulseaudio_backend,dbus_mpris,dbus_keyring,rodio_backend
+  cargo build --release --locked --features pulseaudio_backend,dbus_mpris,rodio_backend
 }
 
 check() {
@@ -36,6 +46,6 @@ check() {
 
 package() {
   cd spotifyd-${pkgver}
-  cargo install --locked --root "${pkgdir}"/usr --path "${srcdir}"/${pkgbase}-${pkgver} --features pulseaudio_backend,dbus_mpris,dbus_keyring,rodio_backend
+  cargo install --locked --root "${pkgdir}"/usr --path "${srcdir}"/${pkgbase}-${pkgver} --features pulseaudio_backend,dbus_mpris,rodio_backend
   rm "${pkgdir}"/usr/{.crates.toml,.crates2.json}
 }
