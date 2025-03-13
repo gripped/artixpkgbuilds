@@ -1,18 +1,18 @@
 ---
 pkgbase:
   name: rst2pdf
-  version: 0.102-1
+  version: 0.102-2
   arch:
     - any
   pkgname:
     - rst2pdf
 actions:
   addRepo: world
-  removeRepo: null
-  triggersBuild: true
+  removeRepo: world-gremlins
+  triggersBuild: false
   triggersRebuild: false
   triggersRepoAdd: true
-  triggersRepoRemove: false
+  triggersRepoRemove: true
   triggersNoCheck: false
 repos:
   system-goblins:
@@ -31,9 +31,9 @@ repos:
     version: null
     packages: []
   world:
-    version: 0.102-1
+    version: 0.102-2
     packages:
-      - rst2pdf-0.102-1-any.pkg.tar.zst
+      - rst2pdf-0.102-2-any.pkg.tar.zst
   lib32-goblins:
     version: null
     packages: []
