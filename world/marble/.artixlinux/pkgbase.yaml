@@ -1,7 +1,7 @@
 ---
 pkgbase:
   name: marble
-  version: 24.12.2-1
+  version: 24.12.3-2.1
   arch:
     - x86_64
   pkgname:
@@ -35,13 +35,13 @@ repos:
     version: null
     packages: []
   world:
-    version: 24.12.2-1
+    version: 24.12.3-2.1
     packages:
-      - marble-24.12.2-1-x86_64.pkg.tar.zst
-      - marble-behaim-24.12.2-1-x86_64.pkg.tar.zst
-      - marble-common-24.12.2-1-x86_64.pkg.tar.zst
-      - marble-maps-24.12.2-1-x86_64.pkg.tar.zst
-      - marble-qt-24.12.2-1-x86_64.pkg.tar.zst
+      - marble-24.12.3-2.1-x86_64.pkg.tar.zst
+      - marble-behaim-24.12.3-2.1-x86_64.pkg.tar.zst
+      - marble-common-24.12.3-2.1-x86_64.pkg.tar.zst
+      - marble-maps-24.12.3-2.1-x86_64.pkg.tar.zst
+      - marble-qt-24.12.3-2.1-x86_64.pkg.tar.zst
   lib32-goblins:
     version: null
     packages: []
