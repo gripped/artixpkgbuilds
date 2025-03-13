@@ -1,7 +1,7 @@
 ---
 pkgbase:
   name: ipython
-  version: 8.32.0-1
+  version: 9.0.2-1
   arch:
     - any
   pkgname:
@@ -28,12 +28,13 @@ repos:
     version: null
     packages: []
   world-gremlins:
-    version: null
-    packages: []
-  world:
-    version: 8.32.0-1
+    version: 9.0.1-1
     packages:
-      - ipython-8.32.0-1-any.pkg.tar.zst
+      - ipython-9.0.1-1-any.pkg.tar.zst
+  world:
+    version: 9.0.2-1
+    packages:
+      - ipython-9.0.2-1-any.pkg.tar.zst
   lib32-goblins:
     version: null
     packages: []
