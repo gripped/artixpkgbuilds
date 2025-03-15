@@ -1,7 +1,7 @@
 ---
 pkgbase:
   name: bbswitch
-  version: 0.8-734
+  version: 0.8-735
   arch:
     - x86_64
   pkgname:
@@ -32,10 +32,10 @@ repos:
     version: null
     packages: []
   world:
-    version: 0.8-734
+    version: 0.8-735
     packages:
-      - bbswitch-0.8-734-x86_64.pkg.tar.zst
-      - bbswitch-dkms-0.8-734-x86_64.pkg.tar.zst
+      - bbswitch-0.8-735-x86_64.pkg.tar.zst
+      - bbswitch-dkms-0.8-735-x86_64.pkg.tar.zst
   lib32-goblins:
     version: null
     packages: []
