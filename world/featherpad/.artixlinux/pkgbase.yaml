@@ -1,8 +1,8 @@
 ---
-team: galaxy
+team: world
 pkgbase:
   name: featherpad
-  version: 1.6.0-1
+  version: 1.6.1-1
   arch:
     - x86_64
   pkgname:
@@ -32,9 +32,9 @@ repos:
     version: null
     packages: []
   world:
-    version: 1.6.0-1
+    version: 1.6.1-1
     packages:
-      - featherpad-1.6.0-1-x86_64.pkg.tar.zst
+      - featherpad-1.6.1-1-x86_64.pkg.tar.zst
   lib32-goblins:
     version: null
     packages: []
@@ -51,6 +51,5 @@ repos:
     version: null
     packages: []
   galaxy:
-    version: 1.5.2-1
-    packages:
-      - featherpad-1.5.2-1-x86_64.pkg.tar.zst
+    version: null
+    packages: []
