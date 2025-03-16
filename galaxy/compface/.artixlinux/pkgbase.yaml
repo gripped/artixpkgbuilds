@@ -2,18 +2,18 @@
 team: galaxy
 pkgbase:
   name: compface
-  version: 1.5.2-12
+  version: 1.5.2-12.2
   arch:
     - x86_64
   pkgname:
     - compface
 actions:
   addRepo: galaxy
-  removeRepo: galaxy-gremlins
-  triggersBuild: false
+  removeRepo: null
+  triggersBuild: true
   triggersRebuild: false
   triggersRepoAdd: true
-  triggersRepoRemove: true
+  triggersRepoRemove: false
   triggersNoCheck: false
 repos:
   system-goblins:
@@ -50,6 +50,6 @@ repos:
     version: null
     packages: []
   galaxy:
-    version: 1.5.2-12
+    version: 1.5.2-12.2
     packages:
-      - compface-1.5.2-12-x86_64.pkg.tar.zst
+      - compface-1.5.2-12.2-x86_64.pkg.tar.zst
