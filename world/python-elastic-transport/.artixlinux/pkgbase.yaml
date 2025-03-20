@@ -2,7 +2,7 @@
 team: world
 pkgbase:
   name: python-elastic-transport
-  version: 8.17.0-1
+  version: 8.17.1-1
   arch:
     - any
   pkgname:
@@ -32,9 +32,9 @@ repos:
     version: null
     packages: []
   world:
-    version: 8.17.0-1
+    version: 8.17.1-1
     packages:
-      - python-elastic-transport-8.17.0-1-any.pkg.tar.zst
+      - python-elastic-transport-8.17.1-1-any.pkg.tar.zst
   lib32-goblins:
     version: null
     packages: []
