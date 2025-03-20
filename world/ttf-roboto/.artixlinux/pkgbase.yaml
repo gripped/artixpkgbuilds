@@ -1,7 +1,7 @@
 ---
 pkgbase:
   name: ttf-roboto
-  version: 3.010-2
+  version: 3.011-1
   arch:
     - any
   pkgname:
@@ -31,9 +31,9 @@ repos:
     version: null
     packages: []
   world:
-    version: 3.010-2
+    version: 3.011-1
     packages:
-      - ttf-roboto-3.010-2-any.pkg.tar.zst
+      - ttf-roboto-3.011-1-any.pkg.tar.zst
   lib32-goblins:
     version: null
     packages: []
