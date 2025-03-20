@@ -1,18 +1,21 @@
 ---
 pkgbase:
   name: bogofilter
-  version: 1.2.5-9
+  version: 1.2.5-12
   arch:
     - x86_64
   pkgname:
-    - bogofilter
+    - bogofilter-db
+    - bogofilter-kyotocabinet
+    - bogofilter-lmdb
+    - bogofilter-sqlite
 actions:
   addRepo: world
-  removeRepo: null
-  triggersBuild: true
+  removeRepo: galaxy
+  triggersBuild: false
   triggersRebuild: false
   triggersRepoAdd: true
-  triggersRepoRemove: false
+  triggersRepoRemove: true
   triggersNoCheck: false
 repos:
   system-goblins:
@@ -31,9 +34,12 @@ repos:
     version: null
     packages: []
   world:
-    version: 1.2.5-9
+    version: 1.2.5-12
     packages:
-      - bogofilter-1.2.5-9-x86_64.pkg.tar.zst
+      - bogofilter-db-1.2.5-12-x86_64.pkg.tar.zst
+      - bogofilter-kyotocabinet-1.2.5-12-x86_64.pkg.tar.zst
+      - bogofilter-lmdb-1.2.5-12-x86_64.pkg.tar.zst
+      - bogofilter-sqlite-1.2.5-12-x86_64.pkg.tar.zst
   lib32-goblins:
     version: null
     packages: []
