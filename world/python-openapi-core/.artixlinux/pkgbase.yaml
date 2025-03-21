@@ -1,18 +1,18 @@
 ---
 pkgbase:
   name: python-openapi-core
-  version: 0.19.4-6
+  version: 0.19.5-1
   arch:
     - any
   pkgname:
     - python-openapi-core
 actions:
   addRepo: world
-  removeRepo: world-goblins
-  triggersBuild: false
+  removeRepo: null
+  triggersBuild: true
   triggersRebuild: false
   triggersRepoAdd: true
-  triggersRepoRemove: true
+  triggersRepoRemove: false
   triggersNoCheck: false
 repos:
   system-goblins:
@@ -28,13 +28,12 @@ repos:
     version: null
     packages: []
   world-gremlins:
-    version: 0.19.4-5
-    packages:
-      - python-openapi-core-0.19.4-5-any.pkg.tar.zst
+    version: null
+    packages: []
   world:
-    version: 0.19.4-6
+    version: 0.19.5-1
     packages:
-      - python-openapi-core-0.19.4-6-any.pkg.tar.zst
+      - python-openapi-core-0.19.5-1-any.pkg.tar.zst
   lib32-goblins:
     version: null
     packages: []
