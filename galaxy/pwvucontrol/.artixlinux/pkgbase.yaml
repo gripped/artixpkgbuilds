@@ -2,18 +2,18 @@
 team: galaxy
 pkgbase:
   name: pwvucontrol
-  version: 0.4.8-1
+  version: 0.4.9-1
   arch:
     - x86_64
   pkgname:
     - pwvucontrol
 actions:
   addRepo: galaxy
-  removeRepo: null
-  triggersBuild: true
+  removeRepo: galaxy-gremlins
+  triggersBuild: false
   triggersRebuild: false
   triggersRepoAdd: true
-  triggersRepoRemove: false
+  triggersRepoRemove: true
   triggersNoCheck: false
 repos:
   system-goblins:
@@ -50,6 +50,6 @@ repos:
     version: null
     packages: []
   galaxy:
-    version: 0.4.8-1
+    version: 0.4.9-1
     packages:
-      - pwvucontrol-0.4.8-1-x86_64.pkg.tar.zst
+      - pwvucontrol-0.4.9-1-x86_64.pkg.tar.zst
