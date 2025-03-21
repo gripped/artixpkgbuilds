@@ -1,7 +1,7 @@
 ---
 pkgbase:
   name: pkgconf
-  version: 2.3.0-1
+  version: 2.4.3-1
   arch:
     - x86_64
   pkgname:
@@ -22,9 +22,9 @@ repos:
     version: null
     packages: []
   system:
-    version: 2.3.0-1
+    version: 2.4.3-1
     packages:
-      - pkgconf-2.3.0-1-x86_64.pkg.tar.zst
+      - pkgconf-2.4.3-1-x86_64.pkg.tar.zst
   world-goblins:
     version: null
     packages: []
