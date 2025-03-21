@@ -1,7 +1,7 @@
 ---
 pkgbase:
   name: libusb
-  version: 1.0.27-1
+  version: 1.0.28-1
   arch:
     - x86_64
   pkgname:
@@ -22,9 +22,9 @@ repos:
     version: null
     packages: []
   system:
-    version: 1.0.27-1
+    version: 1.0.28-1
     packages:
-      - libusb-1.0.27-1-x86_64.pkg.tar.zst
+      - libusb-1.0.28-1-x86_64.pkg.tar.zst
   world-goblins:
     version: null
     packages: []
@@ -52,3 +52,4 @@ repos:
   galaxy:
     version: null
     packages: []
+team: system
