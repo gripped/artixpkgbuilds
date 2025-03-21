@@ -1,7 +1,7 @@
 ---
 pkgbase:
   name: linux-firmware
-  version: 20250311.b69d4b74-2
+  version: 20250311.b69d4b74-3
   arch:
     - any
   pkgname:
@@ -31,18 +31,18 @@ repos:
     version: null
     packages: []
   system:
-    version: 20250311.b69d4b74-2
+    version: 20250311.b69d4b74-3
     packages:
-      - linux-firmware-whence-20250311.b69d4b74-2-any.pkg.tar.zst
-      - linux-firmware-20250311.b69d4b74-2-any.pkg.tar.zst
-      - amd-ucode-20250311.b69d4b74-2-any.pkg.tar.zst
-      - linux-firmware-nfp-20250311.b69d4b74-2-any.pkg.tar.zst
-      - linux-firmware-mellanox-20250311.b69d4b74-2-any.pkg.tar.zst
-      - linux-firmware-marvell-20250311.b69d4b74-2-any.pkg.tar.zst
-      - linux-firmware-qcom-20250311.b69d4b74-2-any.pkg.tar.zst
-      - linux-firmware-liquidio-20250311.b69d4b74-2-any.pkg.tar.zst
-      - linux-firmware-qlogic-20250311.b69d4b74-2-any.pkg.tar.zst
-      - linux-firmware-bnx2x-20250311.b69d4b74-2-any.pkg.tar.zst
+      - linux-firmware-whence-20250311.b69d4b74-3-any.pkg.tar.zst
+      - linux-firmware-20250311.b69d4b74-3-any.pkg.tar.zst
+      - amd-ucode-20250311.b69d4b74-3-any.pkg.tar.zst
+      - linux-firmware-nfp-20250311.b69d4b74-3-any.pkg.tar.zst
+      - linux-firmware-mellanox-20250311.b69d4b74-3-any.pkg.tar.zst
+      - linux-firmware-marvell-20250311.b69d4b74-3-any.pkg.tar.zst
+      - linux-firmware-qcom-20250311.b69d4b74-3-any.pkg.tar.zst
+      - linux-firmware-liquidio-20250311.b69d4b74-3-any.pkg.tar.zst
+      - linux-firmware-qlogic-20250311.b69d4b74-3-any.pkg.tar.zst
+      - linux-firmware-bnx2x-20250311.b69d4b74-3-any.pkg.tar.zst
   world-goblins:
     version: null
     packages: []
