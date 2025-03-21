@@ -2,7 +2,7 @@
 team: world
 pkgbase:
   name: hiprt
-  version: 2.3.bd75b7c.rc7-3
+  version: 2.5.a21e075-1
   arch:
     - x86_64
   pkgname:
@@ -32,9 +32,9 @@ repos:
     version: null
     packages: []
   world:
-    version: 2.3.bd75b7c.rc7-3
+    version: 2.5.a21e075-1
     packages:
-      - hiprt-2.3.bd75b7c.rc7-3-x86_64.pkg.tar.zst
+      - hiprt-2.5.a21e075-1-x86_64.pkg.tar.zst
   lib32-goblins:
     version: null
     packages: []
