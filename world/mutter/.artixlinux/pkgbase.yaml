@@ -1,7 +1,7 @@
 ---
 pkgbase:
   name: mutter
-  version: 47.6-1
+  version: 48.0-3
   arch:
     - x86_64
   pkgname:
@@ -9,11 +9,11 @@ pkgbase:
     - mutter-docs
 actions:
   addRepo: world
-  removeRepo: null
-  triggersBuild: true
+  removeRepo: world-gremlins
+  triggersBuild: false
   triggersRebuild: false
   triggersRepoAdd: true
-  triggersRepoRemove: false
+  triggersRepoRemove: true
   triggersNoCheck: false
 repos:
   system-goblins:
@@ -32,10 +32,10 @@ repos:
     version: null
     packages: []
   world:
-    version: 47.6-1
+    version: 48.0-3
     packages:
-      - mutter-47.6-1-x86_64.pkg.tar.zst
-      - mutter-docs-47.6-1-x86_64.pkg.tar.zst
+      - mutter-48.0-3-x86_64.pkg.tar.zst
+      - mutter-docs-48.0-3-x86_64.pkg.tar.zst
   lib32-goblins:
     version: null
     packages: []
