@@ -1,7 +1,7 @@
 ---
 pkgbase:
   name: gtksourceview5
-  version: 5.14.2-1
+  version: 5.16.0-1
   arch:
     - x86_64
   pkgname:
@@ -9,11 +9,11 @@ pkgbase:
     - gtksourceview5-docs
 actions:
   addRepo: world
-  removeRepo: null
-  triggersBuild: true
+  removeRepo: world-gremlins
+  triggersBuild: false
   triggersRebuild: false
   triggersRepoAdd: true
-  triggersRepoRemove: false
+  triggersRepoRemove: true
   triggersNoCheck: false
 repos:
   system-goblins:
@@ -32,10 +32,10 @@ repos:
     version: null
     packages: []
   world:
-    version: 5.14.2-1
+    version: 5.16.0-1
     packages:
-      - gtksourceview5-5.14.2-1-x86_64.pkg.tar.zst
-      - gtksourceview5-docs-5.14.2-1-x86_64.pkg.tar.zst
+      - gtksourceview5-5.16.0-1-x86_64.pkg.tar.zst
+      - gtksourceview5-docs-5.16.0-1-x86_64.pkg.tar.zst
   lib32-goblins:
     version: null
     packages: []
