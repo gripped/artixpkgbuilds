@@ -2,7 +2,7 @@
 team: world
 pkgbase:
   name: gnome-app-list
-  version: 1.0-1
+  version: 3.0-1
   arch:
     - any
   pkgname:
@@ -32,9 +32,9 @@ repos:
     version: null
     packages: []
   world:
-    version: 1.0-1
+    version: 3.0-1
     packages:
-      - gnome-app-list-1.0-1-any.pkg.tar.zst
+      - gnome-app-list-3.0-1-any.pkg.tar.zst
   lib32-goblins:
     version: null
     packages: []
