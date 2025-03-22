@@ -1,7 +1,7 @@
 ---
 pkgbase:
   name: adwaita-icon-theme
-  version: 47.0-1
+  version: 48.0-1
   arch:
     - any
   pkgname:
@@ -32,10 +32,10 @@ repos:
     version: null
     packages: []
   world:
-    version: 47.0-1
+    version: 48.0-1
     packages:
-      - adwaita-icon-theme-47.0-1-any.pkg.tar.zst
-      - adwaita-cursors-47.0-1-any.pkg.tar.zst
+      - adwaita-icon-theme-48.0-1-any.pkg.tar.zst
+      - adwaita-cursors-48.0-1-any.pkg.tar.zst
   lib32-goblins:
     version: null
     packages: []
