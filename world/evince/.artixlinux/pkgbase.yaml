@@ -1,7 +1,7 @@
 ---
 pkgbase:
   name: evince
-  version: 46.3.1-2
+  version: 48.0-1
   arch:
     - x86_64
   pkgname:
@@ -9,11 +9,11 @@ pkgbase:
     - evince-lib-docs
 actions:
   addRepo: world
-  removeRepo: null
-  triggersBuild: true
+  removeRepo: world-gremlins
+  triggersBuild: false
   triggersRebuild: false
   triggersRepoAdd: true
-  triggersRepoRemove: false
+  triggersRepoRemove: true
   triggersNoCheck: false
 repos:
   system-goblins:
@@ -32,10 +32,10 @@ repos:
     version: null
     packages: []
   world:
-    version: 46.3.1-2
+    version: 48.0-1
     packages:
-      - evince-46.3.1-2-x86_64.pkg.tar.zst
-      - evince-lib-docs-46.3.1-2-x86_64.pkg.tar.zst
+      - evince-48.0-1-x86_64.pkg.tar.zst
+      - evince-lib-docs-48.0-1-x86_64.pkg.tar.zst
   lib32-goblins:
     version: null
     packages: []
