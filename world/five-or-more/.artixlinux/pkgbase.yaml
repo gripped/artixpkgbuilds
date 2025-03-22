@@ -1,18 +1,18 @@
 ---
 pkgbase:
   name: five-or-more
-  version: 3.32.3-4
+  version: 48.0-1
   arch:
     - x86_64
   pkgname:
     - five-or-more
 actions:
   addRepo: world
-  removeRepo: null
-  triggersBuild: true
+  removeRepo: world-gremlins
+  triggersBuild: false
   triggersRebuild: false
   triggersRepoAdd: true
-  triggersRepoRemove: false
+  triggersRepoRemove: true
   triggersNoCheck: false
 repos:
   system-goblins:
@@ -31,9 +31,9 @@ repos:
     version: null
     packages: []
   world:
-    version: 3.32.3-4
+    version: 48.0-1
     packages:
-      - five-or-more-3.32.3-4-x86_64.pkg.tar.zst
+      - five-or-more-48.0-1-x86_64.pkg.tar.zst
   lib32-goblins:
     version: null
     packages: []
