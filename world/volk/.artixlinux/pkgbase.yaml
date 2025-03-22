@@ -2,18 +2,18 @@
 team: world
 pkgbase:
   name: volk
-  version: 1.4.304.1-2
+  version: 1.4.309.0-1
   arch:
     - x86_64
   pkgname:
     - volk
 actions:
   addRepo: world
-  removeRepo: null
-  triggersBuild: true
+  removeRepo: world-gremlins
+  triggersBuild: false
   triggersRebuild: false
   triggersRepoAdd: true
-  triggersRepoRemove: false
+  triggersRepoRemove: true
   triggersNoCheck: false
 repos:
   system-goblins:
@@ -32,9 +32,9 @@ repos:
     version: null
     packages: []
   world:
-    version: 1.4.304.1-2
+    version: 1.4.309.0-1
     packages:
-      - volk-1.4.304.1-2-x86_64.pkg.tar.zst
+      - volk-1.4.309.0-1-x86_64.pkg.tar.zst
   lib32-goblins:
     version: null
     packages: []
