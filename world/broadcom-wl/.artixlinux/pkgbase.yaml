@@ -1,7 +1,7 @@
 ---
 pkgbase:
   name: broadcom-wl
-  version: 6.30.223.271-609
+  version: 6.30.223.271-610
   arch:
     - x86_64
   pkgname:
@@ -31,9 +31,9 @@ repos:
     version: null
     packages: []
   world:
-    version: 6.30.223.271-609
+    version: 6.30.223.271-610
     packages:
-      - broadcom-wl-6.30.223.271-609-x86_64.pkg.tar.zst
+      - broadcom-wl-6.30.223.271-610-x86_64.pkg.tar.zst
   lib32-goblins:
     version: null
     packages: []
