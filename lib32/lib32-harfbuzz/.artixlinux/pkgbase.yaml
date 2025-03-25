@@ -1,7 +1,7 @@
 ---
 pkgbase:
   name: lib32-harfbuzz
-  version: 10.4.0-1
+  version: 11.0.0-1
   arch:
     - x86_64
   pkgname:
@@ -10,11 +10,11 @@ pkgbase:
     - lib32-harfbuzz-icu
 actions:
   addRepo: lib32
-  removeRepo: null
-  triggersBuild: true
+  removeRepo: lib32-gremlins
+  triggersBuild: false
   triggersRebuild: false
   triggersRepoAdd: true
-  triggersRepoRemove: false
+  triggersRepoRemove: true
   triggersNoCheck: false
 repos:
   system-goblins:
@@ -42,11 +42,11 @@ repos:
     version: null
     packages: []
   lib32:
-    version: 10.4.0-1
+    version: 11.0.0-1
     packages:
-      - lib32-harfbuzz-10.4.0-1-x86_64.pkg.tar.zst
-      - lib32-harfbuzz-cairo-10.4.0-1-x86_64.pkg.tar.zst
-      - lib32-harfbuzz-icu-10.4.0-1-x86_64.pkg.tar.zst
+      - lib32-harfbuzz-11.0.0-1-x86_64.pkg.tar.zst
+      - lib32-harfbuzz-cairo-11.0.0-1-x86_64.pkg.tar.zst
+      - lib32-harfbuzz-icu-11.0.0-1-x86_64.pkg.tar.zst
   galaxy-goblins:
     version: null
     packages: []
