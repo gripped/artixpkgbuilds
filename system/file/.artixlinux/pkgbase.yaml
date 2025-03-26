@@ -1,7 +1,7 @@
 ---
 pkgbase:
   name: file
-  version: 5.46-3
+  version: 5.46-4
   arch:
     - x86_64
   pkgname:
@@ -22,9 +22,9 @@ repos:
     version: null
     packages: []
   system:
-    version: 5.46-3
+    version: 5.46-4
     packages:
-      - file-5.46-3-x86_64.pkg.tar.zst
+      - file-5.46-4-x86_64.pkg.tar.zst
   world-goblins:
     version: null
     packages: []
