@@ -1,18 +1,18 @@
 ---
 pkgbase:
   name: fcitx5-qt
-  version: 5.1.9-1
+  version: 5.1.9-2
   arch:
     - x86_64
   pkgname:
     - fcitx5-qt
 actions:
   addRepo: world
-  removeRepo: null
-  triggersBuild: true
+  removeRepo: world-gremlins
+  triggersBuild: false
   triggersRebuild: false
   triggersRepoAdd: true
-  triggersRepoRemove: false
+  triggersRepoRemove: true
   triggersNoCheck: false
 repos:
   system-goblins:
@@ -31,9 +31,9 @@ repos:
     version: null
     packages: []
   world:
-    version: 5.1.9-1
+    version: 5.1.9-2
     packages:
-      - fcitx5-qt-5.1.9-1-x86_64.pkg.tar.zst
+      - fcitx5-qt-5.1.9-2-x86_64.pkg.tar.zst
   lib32-goblins:
     version: null
     packages: []
