@@ -1,7 +1,7 @@
 ---
 pkgbase:
   name: util-linux
-  version: 2.41-3
+  version: 2.41-4
   arch:
     - x86_64
   pkgname:
@@ -23,10 +23,10 @@ repos:
     version: null
     packages: []
   system:
-    version: 2.41-3
+    version: 2.41-4
     packages:
-      - util-linux-2.41-3-x86_64.pkg.tar.zst
-      - util-linux-libs-2.41-3-x86_64.pkg.tar.zst
+      - util-linux-2.41-4-x86_64.pkg.tar.zst
+      - util-linux-libs-2.41-4-x86_64.pkg.tar.zst
   world-goblins:
     version: null
     packages: []
