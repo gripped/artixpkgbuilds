@@ -1,7 +1,7 @@
 ---
 pkgbase:
   name: iptables
-  version: 1:1.8.11-1
+  version: 1:1.8.11-2
   arch:
     - x86_64
   pkgname:
@@ -23,10 +23,10 @@ repos:
     version: null
     packages: []
   system:
-    version: 1:1.8.11-1
+    version: 1:1.8.11-2
     packages:
-      - iptables-1:1.8.11-1-x86_64.pkg.tar.zst
-      - iptables-nft-1:1.8.11-1-x86_64.pkg.tar.zst
+      - iptables-1:1.8.11-2-x86_64.pkg.tar.zst
+      - iptables-nft-1:1.8.11-2-x86_64.pkg.tar.zst
   world-goblins:
     version: null
     packages: []
