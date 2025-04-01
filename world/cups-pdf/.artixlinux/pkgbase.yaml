@@ -1,18 +1,18 @@
 ---
 pkgbase:
   name: cups-pdf
-  version: 3.0.1-8
+  version: 3.0.2-1
   arch:
     - x86_64
   pkgname:
     - cups-pdf
 actions:
   addRepo: world
-  removeRepo: null
-  triggersBuild: true
+  removeRepo: world-gremlins
+  triggersBuild: false
   triggersRebuild: false
   triggersRepoAdd: true
-  triggersRepoRemove: false
+  triggersRepoRemove: true
   triggersNoCheck: false
 repos:
   system-goblins:
@@ -31,9 +31,9 @@ repos:
     version: null
     packages: []
   world:
-    version: 3.0.1-8
+    version: 3.0.2-1
     packages:
-      - cups-pdf-3.0.1-8-x86_64.pkg.tar.zst
+      - cups-pdf-3.0.2-1-x86_64.pkg.tar.zst
   lib32-goblins:
     version: null
     packages: []
