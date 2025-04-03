@@ -1,14 +1,14 @@
 ---
 pkgbase:
   name: openresolv
-  version: 3.13.2-2
+  version: 3.14.1-1
   arch:
     - any
   pkgname:
     - openresolv
 actions:
   addRepo: world
-  removeRepo: system
+  removeRepo: world-gremlins
   triggersBuild: false
   triggersRebuild: false
   triggersRepoAdd: true
@@ -31,9 +31,9 @@ repos:
     version: null
     packages: []
   world:
-    version: 3.13.2-2
+    version: 3.14.1-1
     packages:
-      - openresolv-3.13.2-2-any.pkg.tar.zst
+      - openresolv-3.14.1-1-any.pkg.tar.zst
   lib32-goblins:
     version: null
     packages: []
