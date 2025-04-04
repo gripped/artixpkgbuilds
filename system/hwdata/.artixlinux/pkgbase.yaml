@@ -1,7 +1,7 @@
 ---
 pkgbase:
   name: hwdata
-  version: 0.393-1
+  version: 0.394-1
   arch:
     - any
   pkgname:
@@ -22,9 +22,9 @@ repos:
     version: null
     packages: []
   system:
-    version: 0.393-1
+    version: 0.394-1
     packages:
-      - hwdata-0.393-1-any.pkg.tar.zst
+      - hwdata-0.394-1-any.pkg.tar.zst
   world-goblins:
     version: null
     packages: []
