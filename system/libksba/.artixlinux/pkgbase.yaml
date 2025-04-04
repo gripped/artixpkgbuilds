@@ -1,7 +1,7 @@
 ---
 pkgbase:
   name: libksba
-  version: 1.6.7-1
+  version: 1.6.7-2
   arch:
     - x86_64
   pkgname:
@@ -22,9 +22,9 @@ repos:
     version: null
     packages: []
   system:
-    version: 1.6.7-1
+    version: 1.6.7-2
     packages:
-      - libksba-1.6.7-1-x86_64.pkg.tar.zst
+      - libksba-1.6.7-2-x86_64.pkg.tar.zst
   world-goblins:
     version: null
     packages: []
