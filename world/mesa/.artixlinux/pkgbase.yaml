@@ -1,7 +1,7 @@
 ---
 pkgbase:
   name: mesa
-  version: 1:25.0.2-2
+  version: 1:25.0.3-1
   arch:
     - x86_64
   pkgname:
@@ -42,20 +42,20 @@ repos:
     version: null
     packages: []
   world:
-    version: 1:25.0.2-2
+    version: 1:25.0.3-1
     packages:
-      - mesa-1:25.0.2-2-x86_64.pkg.tar.zst
-      - opencl-clover-mesa-1:25.0.2-2-x86_64.pkg.tar.zst
-      - opencl-rusticl-mesa-1:25.0.2-2-x86_64.pkg.tar.zst
-      - vulkan-dzn-1:25.0.2-2-x86_64.pkg.tar.zst
-      - vulkan-gfxstream-1:25.0.2-2-x86_64.pkg.tar.zst
-      - vulkan-intel-1:25.0.2-2-x86_64.pkg.tar.zst
-      - vulkan-nouveau-1:25.0.2-2-x86_64.pkg.tar.zst
-      - vulkan-radeon-1:25.0.2-2-x86_64.pkg.tar.zst
-      - vulkan-swrast-1:25.0.2-2-x86_64.pkg.tar.zst
-      - vulkan-virtio-1:25.0.2-2-x86_64.pkg.tar.zst
-      - vulkan-mesa-layers-1:25.0.2-2-x86_64.pkg.tar.zst
-      - mesa-docs-1:25.0.2-2-x86_64.pkg.tar.zst
+      - mesa-1:25.0.3-1-x86_64.pkg.tar.zst
+      - opencl-clover-mesa-1:25.0.3-1-x86_64.pkg.tar.zst
+      - opencl-rusticl-mesa-1:25.0.3-1-x86_64.pkg.tar.zst
+      - vulkan-dzn-1:25.0.3-1-x86_64.pkg.tar.zst
+      - vulkan-gfxstream-1:25.0.3-1-x86_64.pkg.tar.zst
+      - vulkan-intel-1:25.0.3-1-x86_64.pkg.tar.zst
+      - vulkan-nouveau-1:25.0.3-1-x86_64.pkg.tar.zst
+      - vulkan-radeon-1:25.0.3-1-x86_64.pkg.tar.zst
+      - vulkan-swrast-1:25.0.3-1-x86_64.pkg.tar.zst
+      - vulkan-virtio-1:25.0.3-1-x86_64.pkg.tar.zst
+      - vulkan-mesa-layers-1:25.0.3-1-x86_64.pkg.tar.zst
+      - mesa-docs-1:25.0.3-1-x86_64.pkg.tar.zst
   lib32-goblins:
     version: null
     packages: []
