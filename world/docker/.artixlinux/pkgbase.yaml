@@ -1,7 +1,7 @@
 ---
 pkgbase:
   name: docker
-  version: 1:28.0.4-1
+  version: 1:28.0.4-2
   arch:
     - x86_64
     - aarch64
@@ -9,11 +9,11 @@ pkgbase:
     - docker
 actions:
   addRepo: world
-  removeRepo: null
-  triggersBuild: true
+  removeRepo: world-gremlins
+  triggersBuild: false
   triggersRebuild: false
   triggersRepoAdd: true
-  triggersRepoRemove: false
+  triggersRepoRemove: true
   triggersNoCheck: false
 repos:
   system-goblins:
@@ -32,9 +32,9 @@ repos:
     version: null
     packages: []
   world:
-    version: 1:28.0.4-1
+    version: 1:28.0.4-2
     packages:
-      - docker-1:28.0.4-1-x86_64.pkg.tar.zst
+      - docker-1:28.0.4-2-x86_64.pkg.tar.zst
   lib32-goblins:
     version: null
     packages: []
