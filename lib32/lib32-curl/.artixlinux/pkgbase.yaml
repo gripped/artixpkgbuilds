@@ -1,7 +1,7 @@
 ---
 pkgbase:
   name: lib32-curl
-  version: 8.12.1-1
+  version: 8.13.0-1
   arch:
     - x86_64
   pkgname:
@@ -42,11 +42,11 @@ repos:
     version: null
     packages: []
   lib32:
-    version: 8.12.1-1
+    version: 8.13.0-1
     packages:
-      - lib32-curl-8.12.1-1-x86_64.pkg.tar.zst
-      - lib32-libcurl-compat-8.12.1-1-x86_64.pkg.tar.zst
-      - lib32-libcurl-gnutls-8.12.1-1-x86_64.pkg.tar.zst
+      - lib32-curl-8.13.0-1-x86_64.pkg.tar.zst
+      - lib32-libcurl-compat-8.13.0-1-x86_64.pkg.tar.zst
+      - lib32-libcurl-gnutls-8.13.0-1-x86_64.pkg.tar.zst
   galaxy-goblins:
     version: null
     packages: []
