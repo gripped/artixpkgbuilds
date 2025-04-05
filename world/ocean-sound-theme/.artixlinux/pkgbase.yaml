@@ -1,7 +1,7 @@
 ---
 pkgbase:
   name: ocean-sound-theme
-  version: 6.3.3-1
+  version: 6.3.4-1
   arch:
     - any
   pkgname:
@@ -31,9 +31,9 @@ repos:
     version: null
     packages: []
   world:
-    version: 6.3.3-1
+    version: 6.3.4-1
     packages:
-      - ocean-sound-theme-6.3.3-1-any.pkg.tar.zst
+      - ocean-sound-theme-6.3.4-1-any.pkg.tar.zst
   lib32-goblins:
     version: null
     packages: []
