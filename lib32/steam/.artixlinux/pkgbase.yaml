@@ -1,18 +1,18 @@
 ---
 pkgbase:
   name: steam
-  version: 1.0.0.82-1
+  version: 1.0.0.82-2
   arch:
     - x86_64
   pkgname:
     - steam
 actions:
   addRepo: lib32
-  removeRepo: null
-  triggersBuild: true
+  removeRepo: lib32-gremlins
+  triggersBuild: false
   triggersRebuild: false
   triggersRepoAdd: true
-  triggersRepoRemove: false
+  triggersRepoRemove: true
   triggersNoCheck: false
 repos:
   system-goblins:
@@ -40,9 +40,9 @@ repos:
     version: null
     packages: []
   lib32:
-    version: 1.0.0.82-1
+    version: 1.0.0.82-2
     packages:
-      - steam-1.0.0.82-1-x86_64.pkg.tar.zst
+      - steam-1.0.0.82-2-x86_64.pkg.tar.zst
   galaxy-goblins:
     version: null
     packages: []
