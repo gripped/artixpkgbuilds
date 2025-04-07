@@ -2,7 +2,7 @@
 team: world
 pkgbase:
   name: hyprland-qtutils
-  version: 0.1.3-4
+  version: 0.1.3-5
   arch:
     - x86_64
     - aarch64
@@ -33,9 +33,9 @@ repos:
     version: null
     packages: []
   world:
-    version: 0.1.3-4
+    version: 0.1.3-5
     packages:
-      - hyprland-qtutils-0.1.3-4-x86_64.pkg.tar.zst
+      - hyprland-qtutils-0.1.3-5-x86_64.pkg.tar.zst
   lib32-goblins:
     version: null
     packages: []
