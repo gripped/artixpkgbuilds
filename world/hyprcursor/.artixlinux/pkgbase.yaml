@@ -1,7 +1,7 @@
 ---
 pkgbase:
   name: hyprcursor
-  version: 0.1.12-1
+  version: 0.1.12-2
   arch:
     - x86_64
     - aarch64
@@ -9,11 +9,11 @@ pkgbase:
     - hyprcursor
 actions:
   addRepo: world
-  removeRepo: null
-  triggersBuild: true
+  removeRepo: world-gremlins
+  triggersBuild: false
   triggersRebuild: false
   triggersRepoAdd: true
-  triggersRepoRemove: false
+  triggersRepoRemove: true
   triggersNoCheck: false
 repos:
   system-goblins:
@@ -32,9 +32,9 @@ repos:
     version: null
     packages: []
   world:
-    version: 0.1.12-1
+    version: 0.1.12-2
     packages:
-      - hyprcursor-0.1.12-1-x86_64.pkg.tar.zst
+      - hyprcursor-0.1.12-2-x86_64.pkg.tar.zst
   lib32-goblins:
     version: null
     packages: []
