@@ -1,18 +1,18 @@
 ---
 pkgbase:
   name: ddclient
-  version: 3.11.2-5
+  version: 4.0.0-1
   arch:
     - any
   pkgname:
     - ddclient
 actions:
   addRepo: world
-  removeRepo: null
-  triggersBuild: true
+  removeRepo: world-gremlins
+  triggersBuild: false
   triggersRebuild: false
   triggersRepoAdd: true
-  triggersRepoRemove: false
+  triggersRepoRemove: true
   triggersNoCheck: false
 repos:
   system-goblins:
@@ -31,9 +31,9 @@ repos:
     version: null
     packages: []
   world:
-    version: 3.11.2-5
+    version: 4.0.0-1
     packages:
-      - ddclient-3.11.2-5-any.pkg.tar.zst
+      - ddclient-4.0.0-1-any.pkg.tar.zst
   lib32-goblins:
     version: null
     packages: []
@@ -52,3 +52,4 @@ repos:
   galaxy:
     version: null
     packages: []
+team: world
