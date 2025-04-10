@@ -1,7 +1,6 @@
 # Maintainer: Jan Alexander Steffens (heftig) <heftig@archlinux.org>
 
-
-_ver=6.13.8
+_ver=6.14.1
 _rel=1
 _arch=arch${_rel}
 _artix=${_arch/arch/artix}
@@ -51,16 +50,16 @@ validpgpkeys=(
   83BC8889351B5DEBBB68416EB8AC08600F108CDF  # Jan Alexander Steffens (heftig)
 )
 # https://www.kernel.org/pub/linux/kernel/v6.x/sha256sums.asc
-sha256sums=('259afa59d73d676bec2ae89beacd949e08d54d3f70a7f8b0a742315095751abb'
+sha256sums=('5bf122d1879fd64fadf0cecfcd477957ebce1bc5931c14835ee0eda88463e407'
             'SKIP'
-            '8807a915606709dd8ab98fa836fadefda39ed500c48377355be09fe9a2caaf81'
+            'c5b4773e9d402dd1fb9d198d6c65e1a400dcc994e27f6f82d0567301a84b8554'
             'SKIP'
-            '5bdd05243afef68bff7eeb2e7ca247d502c7b5d16849bd938fe9e571cb092901')
-b2sums=('c20916a44a07d355ba8337229f102cd507deae92c88576040965e909fa89c09f98611746a8c8f249bc3dcf492238ce3f08c48f523670ccad4bd7ec21622806af'
+            '6a7077991bf225811f483cadb788170f290667bf62feb6dabb393fb7e3ad98ea')
+b2sums=('1aa584824d71cf7ac25d3b848aa8c00f7f172dc2491972cb0b4eeebdd491f0f5dc000c55f825da656f3447c3a38eb8d480c5f98927339811247f2cc8c82e3c50'
         'SKIP'
-        'ebff29f7282a7dab84ca09c9c23621daec8d38541c773dc068d5c313db7a60c67e204775ad6e00746ee8f04a7705ab398688e03b2e5534e9062d276e8d6c9d30'
+        'af0eca8302cf15ddc342f20998f8585b64fc88ed82fdedeeafed644afc9583006e86a0a62e353e0c212814d399e167045ee2f85a7d3b30c58b38e2fea01b7a1a'
         'SKIP'
-        '1b2dc9786d0aba40739371f1052672b768118fc5be83a1eadfdeced79709e72c9f0b34258432bc69ab462d3b43993cd958ac41099a545e7603a4d9ea56ece983')
+        'e9cf100758df9e66bfc70bb8d9f94e84e3a94d66a5f27e976b8e54735bc3cff643c401cb908f9e2869d9587bce373012222a238e92cebb38aa9659270309f64b')
 
 export KBUILD_BUILD_HOST=artixlinux
 export KBUILD_BUILD_USER=$pkgbase
@@ -114,6 +113,7 @@ _package() {
   )
   provides=(
     KSMBD-MODULE
+    NTSYNC-MODULE
     VIRTUALBOX-GUEST-MODULES
     WIREGUARD-MODULE
   )
