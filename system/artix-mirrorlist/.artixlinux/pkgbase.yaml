@@ -1,7 +1,7 @@
 ---
 pkgbase:
   name: artix-mirrorlist
-  version: 20250326-1
+  version: 20250410-1
   arch:
     - any
   pkgname:
@@ -22,9 +22,9 @@ repos:
     version: null
     packages: []
   system:
-    version: 20250326-1
+    version: 20250410-1
     packages:
-      - artix-mirrorlist-20250326-1-any.pkg.tar.zst
+      - artix-mirrorlist-20250410-1-any.pkg.tar.zst
   world-goblins:
     version: null
     packages: []
