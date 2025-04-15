@@ -2,18 +2,18 @@
 team: galaxy
 pkgbase:
   name: dino
-  version: 0.4.5-1
+  version: 0.5.0-1
   arch:
     - x86_64
   pkgname:
     - dino
 actions:
   addRepo: galaxy
-  removeRepo: null
-  triggersBuild: true
+  removeRepo: galaxy-gremlins
+  triggersBuild: false
   triggersRebuild: false
   triggersRepoAdd: true
-  triggersRepoRemove: false
+  triggersRepoRemove: true
   triggersNoCheck: false
 repos:
   system-goblins:
@@ -50,6 +50,6 @@ repos:
     version: null
     packages: []
   galaxy:
-    version: 0.4.5-1
+    version: 0.5.0-1
     packages:
-      - dino-0.4.5-1-x86_64.pkg.tar.zst
+      - dino-0.5.0-1-x86_64.pkg.tar.zst
