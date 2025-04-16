@@ -1,7 +1,7 @@
 ---
 pkgbase:
   name: nano
-  version: 8.3-1
+  version: 8.4-1
   arch:
     - x86_64
   pkgname:
@@ -22,9 +22,9 @@ repos:
     version: null
     packages: []
   system:
-    version: 8.3-1
+    version: 8.4-1
     packages:
-      - nano-8.3-1-x86_64.pkg.tar.zst
+      - nano-8.4-1-x86_64.pkg.tar.zst
   world-goblins:
     version: null
     packages: []
