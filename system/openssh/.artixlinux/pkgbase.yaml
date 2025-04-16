@@ -1,7 +1,7 @@
 ---
 pkgbase:
   name: openssh
-  version: 9.9p2-1
+  version: 10.0p1-3
   arch:
     - x86_64
   pkgname:
@@ -22,9 +22,9 @@ repos:
     version: null
     packages: []
   system:
-    version: 9.9p2-1
+    version: 10.0p1-3
     packages:
-      - openssh-9.9p2-1-x86_64.pkg.tar.zst
+      - openssh-10.0p1-3-x86_64.pkg.tar.zst
   world-goblins:
     version: null
     packages: []
