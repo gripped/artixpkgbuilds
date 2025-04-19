@@ -1,18 +1,18 @@
 ---
 pkgbase:
   name: patch
-  version: 2.7.6-10
+  version: 2.8-1
   arch:
     - x86_64
   pkgname:
     - patch
 actions:
-  addRepo: null
-  removeRepo: null
+  addRepo: system
+  removeRepo: system-gremlins
   triggersBuild: false
   triggersRebuild: false
-  triggersRepoAdd: false
-  triggersRepoRemove: false
+  triggersRepoAdd: true
+  triggersRepoRemove: true
   triggersNoCheck: false
 repos:
   system-goblins:
@@ -22,9 +22,9 @@ repos:
     version: null
     packages: []
   system:
-    version: 2.7.6-10
+    version: 2.8-1
     packages:
-      - patch-2.7.6-10-x86_64.pkg.tar.zst
+      - patch-2.8-1-x86_64.pkg.tar.zst
   world-goblins:
     version: null
     packages: []
@@ -52,3 +52,4 @@ repos:
   galaxy:
     version: null
     packages: []
+team: system
