@@ -1,18 +1,18 @@
 ---
 pkgbase:
   name: grep
-  version: 3.11-1
+  version: 3.12-1
   arch:
     - x86_64
   pkgname:
     - grep
 actions:
-  addRepo: null
-  removeRepo: null
+  addRepo: system
+  removeRepo: system-gremlins
   triggersBuild: false
   triggersRebuild: false
-  triggersRepoAdd: false
-  triggersRepoRemove: false
+  triggersRepoAdd: true
+  triggersRepoRemove: true
   triggersNoCheck: false
 repos:
   system-goblins:
@@ -22,9 +22,9 @@ repos:
     version: null
     packages: []
   system:
-    version: 3.11-1
+    version: 3.12-1
     packages:
-      - grep-3.11-1-x86_64.pkg.tar.zst
+      - grep-3.12-1-x86_64.pkg.tar.zst
   world-goblins:
     version: null
     packages: []
@@ -52,3 +52,4 @@ repos:
   galaxy:
     version: null
     packages: []
+team: system
