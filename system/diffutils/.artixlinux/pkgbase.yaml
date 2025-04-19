@@ -1,7 +1,7 @@
 ---
 pkgbase:
   name: diffutils
-  version: 3.11-2
+  version: 3.12-1
   arch:
     - x86_64
   pkgname:
@@ -22,9 +22,9 @@ repos:
     version: null
     packages: []
   system:
-    version: 3.11-2
+    version: 3.12-1
     packages:
-      - diffutils-3.11-2-x86_64.pkg.tar.zst
+      - diffutils-3.12-1-x86_64.pkg.tar.zst
   world-goblins:
     version: null
     packages: []
