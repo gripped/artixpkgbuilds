@@ -1,18 +1,18 @@
 ---
 pkgbase:
   name: kdevelop-python
-  version: 25.04.0-1
+  version: 25.04.0-1.1
   arch:
     - x86_64
   pkgname:
     - kdevelop-python
 actions:
   addRepo: world
-  removeRepo: null
-  triggersBuild: true
+  removeRepo: world-gremlins
+  triggersBuild: false
   triggersRebuild: false
   triggersRepoAdd: true
-  triggersRepoRemove: false
+  triggersRepoRemove: true
   triggersNoCheck: false
 repos:
   system-goblins:
@@ -31,9 +31,9 @@ repos:
     version: null
     packages: []
   world:
-    version: 25.04.0-1
+    version: 25.04.0-1.1
     packages:
-      - kdevelop-python-25.04.0-1-x86_64.pkg.tar.zst
+      - kdevelop-python-25.04.0-1.1-x86_64.pkg.tar.zst
   lib32-goblins:
     version: null
     packages: []
