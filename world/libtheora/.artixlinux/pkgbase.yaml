@@ -1,18 +1,18 @@
 ---
 pkgbase:
   name: libtheora
-  version: 1.1.1-6
+  version: 1.2.0-1
   arch:
     - x86_64
   pkgname:
     - libtheora
 actions:
-  addRepo: null
-  removeRepo: null
+  addRepo: world
+  removeRepo: world-gremlins
   triggersBuild: false
   triggersRebuild: false
-  triggersRepoAdd: false
-  triggersRepoRemove: false
+  triggersRepoAdd: true
+  triggersRepoRemove: true
   triggersNoCheck: false
 repos:
   system-goblins:
@@ -31,9 +31,9 @@ repos:
     version: null
     packages: []
   world:
-    version: 1.1.1-6
+    version: 1.2.0-1
     packages:
-      - libtheora-1.1.1-6-x86_64.pkg.tar.zst
+      - libtheora-1.2.0-1-x86_64.pkg.tar.zst
   lib32-goblins:
     version: null
     packages: []
@@ -52,3 +52,4 @@ repos:
   galaxy:
     version: null
     packages: []
+team: world
