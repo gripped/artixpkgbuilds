@@ -1,7 +1,7 @@
 ---
 pkgbase:
   name: python-pyelftools
-  version: 0.31-3
+  version: 0.32-1
   arch:
     - any
   pkgname:
@@ -31,9 +31,9 @@ repos:
     version: null
     packages: []
   world:
-    version: 0.31-3
+    version: 0.32-1
     packages:
-      - python-pyelftools-0.31-3-any.pkg.tar.zst
+      - python-pyelftools-0.32-1-any.pkg.tar.zst
   lib32-goblins:
     version: null
     packages: []
