@@ -1,7 +1,7 @@
 ---
 pkgbase:
   name: ruby-stackprof
-  version: 0.2.26-3
+  version: 0.2.26-5
   arch:
     - x86_64
   pkgname:
@@ -31,9 +31,9 @@ repos:
     version: null
     packages: []
   world:
-    version: 0.2.26-3
+    version: 0.2.26-5
     packages:
-      - ruby-stackprof-0.2.26-3-x86_64.pkg.tar.zst
+      - ruby-stackprof-0.2.26-5-x86_64.pkg.tar.zst
   lib32-goblins:
     version: null
     packages: []
