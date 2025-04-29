@@ -1,7 +1,7 @@
 ---
 pkgbase:
   name: ruby-regexp_parser
-  version: 2.6.0-3
+  version: 2.10.0-2
   arch:
     - any
   pkgname:
@@ -31,9 +31,9 @@ repos:
     version: null
     packages: []
   world:
-    version: 2.6.0-3
+    version: 2.10.0-2
     packages:
-      - ruby-regexp_parser-2.6.0-3-any.pkg.tar.zst
+      - ruby-regexp_parser-2.10.0-2-any.pkg.tar.zst
   lib32-goblins:
     version: null
     packages: []
