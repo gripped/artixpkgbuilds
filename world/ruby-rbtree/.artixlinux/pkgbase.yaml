@@ -2,7 +2,7 @@
 team: world
 pkgbase:
   name: ruby-rbtree
-  version: 0.4.6-4
+  version: 0.4.6-6
   arch:
     - x86_64
   pkgname:
@@ -32,9 +32,9 @@ repos:
     version: null
     packages: []
   world:
-    version: 0.4.6-4
+    version: 0.4.6-6
     packages:
-      - ruby-rbtree-0.4.6-4-x86_64.pkg.tar.zst
+      - ruby-rbtree-0.4.6-6-x86_64.pkg.tar.zst
   lib32-goblins:
     version: null
     packages: []
