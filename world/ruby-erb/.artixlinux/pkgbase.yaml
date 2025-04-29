@@ -1,7 +1,7 @@
 ---
 pkgbase:
   name: ruby-erb
-  version: 4.0.4-6
+  version: 4.0.4-9
   arch:
     - x86_64
   pkgname:
@@ -31,9 +31,9 @@ repos:
     version: null
     packages: []
   world:
-    version: 4.0.4-6
+    version: 4.0.4-9
     packages:
-      - ruby-erb-4.0.4-6-x86_64.pkg.tar.zst
+      - ruby-erb-4.0.4-9-x86_64.pkg.tar.zst
   lib32-goblins:
     version: null
     packages: []
