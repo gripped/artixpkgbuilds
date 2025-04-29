@@ -1,18 +1,18 @@
 ---
 pkgbase:
   name: rubygems
-  version: 3.5.22-3
+  version: 3.6.7-2
   arch:
     - any
   pkgname:
     - rubygems
 actions:
   addRepo: world
-  removeRepo: null
-  triggersBuild: true
+  removeRepo: world-gremlins
+  triggersBuild: false
   triggersRebuild: false
   triggersRepoAdd: true
-  triggersRepoRemove: false
+  triggersRepoRemove: true
   triggersNoCheck: false
 repos:
   system-goblins:
@@ -31,9 +31,9 @@ repos:
     version: null
     packages: []
   world:
-    version: 3.5.22-3
+    version: 3.6.7-2
     packages:
-      - rubygems-3.5.22-3-any.pkg.tar.zst
+      - rubygems-3.6.7-2-any.pkg.tar.zst
   lib32-goblins:
     version: null
     packages: []
