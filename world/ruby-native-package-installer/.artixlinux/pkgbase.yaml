@@ -1,18 +1,18 @@
 ---
 pkgbase:
   name: ruby-native-package-installer
-  version: 1.1.9-1
+  version: 1.1.9-3
   arch:
     - any
   pkgname:
     - ruby-native-package-installer
 actions:
   addRepo: world
-  removeRepo: null
-  triggersBuild: true
+  removeRepo: world-gremlins
+  triggersBuild: false
   triggersRebuild: false
   triggersRepoAdd: true
-  triggersRepoRemove: false
+  triggersRepoRemove: true
   triggersNoCheck: false
 repos:
   system-goblins:
@@ -31,9 +31,9 @@ repos:
     version: null
     packages: []
   world:
-    version: 1.1.9-1
+    version: 1.1.9-3
     packages:
-      - ruby-native-package-installer-1.1.9-1-any.pkg.tar.zst
+      - ruby-native-package-installer-1.1.9-3-any.pkg.tar.zst
   lib32-goblins:
     version: null
     packages: []
