@@ -1,7 +1,7 @@
 ---
 pkgbase:
   name: ruby-test-unit-rr
-  version: 1.0.5-8
+  version: 1.0.5-10
   arch:
     - any
   pkgname:
@@ -31,9 +31,9 @@ repos:
     version: null
     packages: []
   world:
-    version: 1.0.5-8
+    version: 1.0.5-10
     packages:
-      - ruby-test-unit-rr-1.0.5-8-any.pkg.tar.zst
+      - ruby-test-unit-rr-1.0.5-10-any.pkg.tar.zst
   lib32-goblins:
     version: null
     packages: []
