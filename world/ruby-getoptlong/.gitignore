@@ -1,4 +1,4 @@
-# ---> ArchLinuxPackages
+# ---> ArtixLinuxPackages
 *.tar
 *.tar.*
 *.jar
@@ -16,3 +16,5 @@ src/
 *.service
 *.timer
 *.socket
+
+
