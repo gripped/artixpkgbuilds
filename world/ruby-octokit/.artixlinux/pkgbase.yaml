@@ -2,7 +2,7 @@
 team: world
 pkgbase:
   name: ruby-octokit
-  version: 9.1.0-2
+  version: 9.1.0-4
   arch:
     - any
   pkgname:
@@ -32,9 +32,9 @@ repos:
     version: null
     packages: []
   world:
-    version: 9.1.0-2
+    version: 9.1.0-4
     packages:
-      - ruby-octokit-9.1.0-2-any.pkg.tar.zst
+      - ruby-octokit-9.1.0-4-any.pkg.tar.zst
   lib32-goblins:
     version: null
     packages: []
