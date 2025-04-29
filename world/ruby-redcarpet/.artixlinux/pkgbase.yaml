@@ -1,18 +1,18 @@
 ---
 pkgbase:
   name: ruby-redcarpet
-  version: 3.6.0-6
+  version: 3.6.0-8
   arch:
     - x86_64
   pkgname:
     - ruby-redcarpet
 actions:
   addRepo: world
-  removeRepo: null
-  triggersBuild: true
+  removeRepo: world-gremlins
+  triggersBuild: false
   triggersRebuild: false
   triggersRepoAdd: true
-  triggersRepoRemove: false
+  triggersRepoRemove: true
   triggersNoCheck: false
 repos:
   system-goblins:
@@ -31,9 +31,9 @@ repos:
     version: null
     packages: []
   world:
-    version: 3.6.0-6
+    version: 3.6.0-8
     packages:
-      - ruby-redcarpet-3.6.0-6-x86_64.pkg.tar.zst
+      - ruby-redcarpet-3.6.0-8-x86_64.pkg.tar.zst
   lib32-goblins:
     version: null
     packages: []
