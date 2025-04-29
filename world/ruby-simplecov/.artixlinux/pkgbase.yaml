@@ -1,7 +1,7 @@
 ---
 pkgbase:
   name: ruby-simplecov
-  version: 0.22.0-2
+  version: 0.22.0-5
   arch:
     - any
   pkgname:
@@ -31,9 +31,9 @@ repos:
     version: null
     packages: []
   world:
-    version: 0.22.0-2
+    version: 0.22.0-5
     packages:
-      - ruby-simplecov-0.22.0-2-any.pkg.tar.zst
+      - ruby-simplecov-0.22.0-5-any.pkg.tar.zst
   lib32-goblins:
     version: null
     packages: []
