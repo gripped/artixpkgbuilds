@@ -7,7 +7,7 @@ pkgbase:
   pkgname:
     - openbox
 actions:
-  addRepo: world
+  addRepo: galaxy
   removeRepo: null
   triggersBuild: true
   triggersRebuild: false
@@ -28,8 +28,9 @@ repos:
     version: null
     packages: []
   world-gremlins:
-    version: null
-    packages: []
+    version: 3.6.1-12
+    packages:
+      - openbox-3.6.1-12-x86_64.pkg.tar.zst
   world:
     version: 3.6.1-11
     packages:
@@ -51,7 +52,7 @@ repos:
     version: null
     packages: []
   galaxy:
-    version: 3.6.1-11.1
+    version: 3.6.1-11
     packages:
-      - openbox-3.6.1-11.1-x86_64.pkg.tar.zst
+      - openbox-3.6.1-11-x86_64.pkg.tar.zst
 team: galaxy
