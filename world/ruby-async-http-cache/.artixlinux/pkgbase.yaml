@@ -2,18 +2,18 @@
 team: world
 pkgbase:
   name: ruby-async-http-cache
-  version: 0.4.5-1
+  version: 0.4.5-3
   arch:
     - any
   pkgname:
     - ruby-async-http-cache
 actions:
   addRepo: world
-  removeRepo: null
-  triggersBuild: true
+  removeRepo: world-gremlins
+  triggersBuild: false
   triggersRebuild: false
   triggersRepoAdd: true
-  triggersRepoRemove: false
+  triggersRepoRemove: true
   triggersNoCheck: false
 repos:
   system-goblins:
@@ -32,9 +32,9 @@ repos:
     version: null
     packages: []
   world:
-    version: 0.4.5-1
+    version: 0.4.5-3
     packages:
-      - ruby-async-http-cache-0.4.5-1-any.pkg.tar.zst
+      - ruby-async-http-cache-0.4.5-3-any.pkg.tar.zst
   lib32-goblins:
     version: null
     packages: []
