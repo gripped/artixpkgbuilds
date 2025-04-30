@@ -1,7 +1,7 @@
 ---
 pkgbase:
   name: perl-alien-libxml2
-  version: 0.19-4
+  version: 0.20-1
   arch:
     - any
   pkgname:
@@ -31,9 +31,9 @@ repos:
     version: null
     packages: []
   world:
-    version: 0.19-4
+    version: 0.20-1
     packages:
-      - perl-alien-libxml2-0.19-4-any.pkg.tar.zst
+      - perl-alien-libxml2-0.20-1-any.pkg.tar.zst
   lib32-goblins:
     version: null
     packages: []
