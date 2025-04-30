@@ -1,7 +1,7 @@
 ---
 pkgbase:
   name: telepathy-salut
-  version: 0.8.1-9
+  version: 0.8.1-10
   arch:
     - x86_64
   pkgname:
@@ -31,9 +31,9 @@ repos:
     version: null
     packages: []
   world:
-    version: 0.8.1-9
+    version: 0.8.1-10
     packages:
-      - telepathy-salut-0.8.1-9-x86_64.pkg.tar.zst
+      - telepathy-salut-0.8.1-10-x86_64.pkg.tar.zst
   lib32-goblins:
     version: null
     packages: []
