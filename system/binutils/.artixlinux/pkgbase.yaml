@@ -1,7 +1,7 @@
 ---
 pkgbase:
   name: binutils
-  version: 2.44-1
+  version: 2.44+r94+gfe459e33c676-1
   arch:
     - x86_64
   pkgname:
@@ -22,9 +22,9 @@ repos:
     version: null
     packages: []
   system:
-    version: 2.44-1
+    version: 2.44+r94+gfe459e33c676-1
     packages:
-      - binutils-2.44-1-x86_64.pkg.tar.zst
+      - binutils-2.44+r94+gfe459e33c676-1-x86_64.pkg.tar.zst
   world-goblins:
     version: null
     packages: []
