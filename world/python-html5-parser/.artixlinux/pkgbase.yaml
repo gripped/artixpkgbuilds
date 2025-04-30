@@ -1,7 +1,7 @@
 ---
 pkgbase:
   name: python-html5-parser
-  version: 0.4.12-3
+  version: 0.4.12-4
   arch:
     - x86_64
   pkgname:
@@ -31,9 +31,9 @@ repos:
     version: null
     packages: []
   world:
-    version: 0.4.12-3
+    version: 0.4.12-4
     packages:
-      - python-html5-parser-0.4.12-3-x86_64.pkg.tar.zst
+      - python-html5-parser-0.4.12-4-x86_64.pkg.tar.zst
   lib32-goblins:
     version: null
     packages: []
