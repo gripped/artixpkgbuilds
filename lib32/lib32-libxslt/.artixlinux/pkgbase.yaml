@@ -1,18 +1,18 @@
 ---
 pkgbase:
   name: lib32-libxslt
-  version: 1.1.43-1
+  version: 1.1.43-2
   arch:
     - x86_64
   pkgname:
     - lib32-libxslt
 actions:
   addRepo: lib32
-  removeRepo: null
-  triggersBuild: true
+  removeRepo: lib32-gremlins
+  triggersBuild: false
   triggersRebuild: false
   triggersRepoAdd: true
-  triggersRepoRemove: false
+  triggersRepoRemove: true
   triggersNoCheck: false
 repos:
   system-goblins:
@@ -40,9 +40,9 @@ repos:
     version: null
     packages: []
   lib32:
-    version: 1.1.43-1
+    version: 1.1.43-2
     packages:
-      - lib32-libxslt-1.1.43-1-x86_64.pkg.tar.zst
+      - lib32-libxslt-1.1.43-2-x86_64.pkg.tar.zst
   galaxy-goblins:
     version: null
     packages: []
