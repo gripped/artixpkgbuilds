@@ -1,18 +1,18 @@
 ---
 pkgbase:
   name: libxklavier
-  version: 5.4-5
+  version: 5.4-6
   arch:
     - x86_64
   pkgname:
     - libxklavier
 actions:
-  addRepo: null
-  removeRepo: null
+  addRepo: world
+  removeRepo: world-gremlins
   triggersBuild: false
   triggersRebuild: false
-  triggersRepoAdd: false
-  triggersRepoRemove: false
+  triggersRepoAdd: true
+  triggersRepoRemove: true
   triggersNoCheck: false
 repos:
   system-goblins:
@@ -31,9 +31,9 @@ repos:
     version: null
     packages: []
   world:
-    version: 5.4-5
+    version: 5.4-6
     packages:
-      - libxklavier-5.4-5-x86_64.pkg.tar.zst
+      - libxklavier-5.4-6-x86_64.pkg.tar.zst
   lib32-goblins:
     version: null
     packages: []
@@ -52,3 +52,4 @@ repos:
   galaxy:
     version: null
     packages: []
+team: world
