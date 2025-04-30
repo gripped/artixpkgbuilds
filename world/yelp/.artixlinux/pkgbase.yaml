@@ -1,18 +1,18 @@
 ---
 pkgbase:
   name: yelp
-  version: 42.2-3
+  version: 42.2-4
   arch:
     - x86_64
   pkgname:
     - yelp
 actions:
   addRepo: world
-  removeRepo: null
-  triggersBuild: true
+  removeRepo: world-gremlins
+  triggersBuild: false
   triggersRebuild: false
   triggersRepoAdd: true
-  triggersRepoRemove: false
+  triggersRepoRemove: true
   triggersNoCheck: false
 repos:
   system-goblins:
@@ -31,9 +31,9 @@ repos:
     version: null
     packages: []
   world:
-    version: 42.2-3
+    version: 42.2-4
     packages:
-      - yelp-42.2-3-x86_64.pkg.tar.zst
+      - yelp-42.2-4-x86_64.pkg.tar.zst
   lib32-goblins:
     version: null
     packages: []
