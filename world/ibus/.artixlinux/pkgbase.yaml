@@ -1,7 +1,7 @@
 ---
 pkgbase:
   name: ibus
-  version: 1.5.31-2
+  version: 1.5.32-1
   arch:
     - x86_64
   pkgname:
@@ -32,10 +32,10 @@ repos:
     version: null
     packages: []
   world:
-    version: 1.5.31-2
+    version: 1.5.32-1
     packages:
-      - ibus-1.5.31-2-x86_64.pkg.tar.zst
-      - libibus-1.5.31-2-x86_64.pkg.tar.zst
+      - ibus-1.5.32-1-x86_64.pkg.tar.zst
+      - libibus-1.5.32-1-x86_64.pkg.tar.zst
   lib32-goblins:
     version: null
     packages: []
