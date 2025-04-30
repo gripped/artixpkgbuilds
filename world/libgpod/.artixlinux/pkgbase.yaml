@@ -1,18 +1,18 @@
 ---
 pkgbase:
   name: libgpod
-  version: 0.8.3-16
+  version: 0.8.3-17
   arch:
     - x86_64
   pkgname:
     - libgpod
 actions:
   addRepo: world
-  removeRepo: null
-  triggersBuild: true
+  removeRepo: world-gremlins
+  triggersBuild: false
   triggersRebuild: false
   triggersRepoAdd: true
-  triggersRepoRemove: false
+  triggersRepoRemove: true
   triggersNoCheck: false
 repos:
   system-goblins:
@@ -31,9 +31,9 @@ repos:
     version: null
     packages: []
   world:
-    version: 0.8.3-16
+    version: 0.8.3-17
     packages:
-      - libgpod-0.8.3-16-x86_64.pkg.tar.zst
+      - libgpod-0.8.3-17-x86_64.pkg.tar.zst
   lib32-goblins:
     version: null
     packages: []
