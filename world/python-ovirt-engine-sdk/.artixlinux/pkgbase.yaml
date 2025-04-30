@@ -1,7 +1,7 @@
 ---
 pkgbase:
   name: python-ovirt-engine-sdk
-  version: 4.6.2-2
+  version: 4.6.2-3
   arch:
     - x86_64
   pkgname:
@@ -31,9 +31,9 @@ repos:
     version: null
     packages: []
   world:
-    version: 4.6.2-2
+    version: 4.6.2-3
     packages:
-      - python-ovirt-engine-sdk-4.6.2-2-x86_64.pkg.tar.zst
+      - python-ovirt-engine-sdk-4.6.2-3-x86_64.pkg.tar.zst
   lib32-goblins:
     version: null
     packages: []
