@@ -1,7 +1,7 @@
 ---
 pkgbase:
   name: lib32-gstreamer
-  version: 1.26.0-5
+  version: 1.26.1-1
   arch:
     - x86_64
   pkgname:
@@ -37,22 +37,18 @@ repos:
     version: null
     packages: []
   lib32-goblins:
-    version: 1.26.0-5
-    packages:
-      - lib32-gstreamer-1.26.0-5-x86_64.pkg.tar.zst
-      - lib32-gst-plugins-base-libs-1.26.0-5-x86_64.pkg.tar.zst
-      - lib32-gst-plugins-base-1.26.0-5-x86_64.pkg.tar.zst
-      - lib32-gst-plugins-good-1.26.0-5-x86_64.pkg.tar.zst
+    version: null
+    packages: []
   lib32-gremlins:
     version: null
     packages: []
   lib32:
-    version: 1.26.0-2
+    version: 1.26.1-1
     packages:
-      - lib32-gstreamer-1.26.0-2-x86_64.pkg.tar.zst
-      - lib32-gst-plugins-base-libs-1.26.0-2-x86_64.pkg.tar.zst
-      - lib32-gst-plugins-base-1.26.0-2-x86_64.pkg.tar.zst
-      - lib32-gst-plugins-good-1.26.0-2-x86_64.pkg.tar.zst
+      - lib32-gstreamer-1.26.1-1-x86_64.pkg.tar.zst
+      - lib32-gst-plugins-base-libs-1.26.1-1-x86_64.pkg.tar.zst
+      - lib32-gst-plugins-base-1.26.1-1-x86_64.pkg.tar.zst
+      - lib32-gst-plugins-good-1.26.1-1-x86_64.pkg.tar.zst
   galaxy-goblins:
     version: null
     packages: []
