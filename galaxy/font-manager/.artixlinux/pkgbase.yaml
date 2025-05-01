@@ -1,7 +1,7 @@
 ---
 pkgbase:
   name: font-manager
-  version: 0.9.4-1
+  version: 0.9.4-2.1
   arch:
     - x86_64
     - i686
@@ -47,10 +47,11 @@ repos:
     version: null
     packages: []
   galaxy-gremlins:
-    version: null
-    packages: []
-  galaxy:
-    version: 0.9.4-1
+    version: 0.9.4-2
     packages:
-      - font-manager-0.9.4-1-x86_64.pkg.tar.zst
+      - font-manager-0.9.4-2-x86_64.pkg.tar.zst
+  galaxy:
+    version: 0.9.4-2.1
+    packages:
+      - font-manager-0.9.4-2.1-x86_64.pkg.tar.zst
 team: galaxy
