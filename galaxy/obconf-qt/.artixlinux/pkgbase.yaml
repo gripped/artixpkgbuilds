@@ -1,18 +1,18 @@
 ---
 pkgbase:
   name: obconf-qt
-  version: 0.16.5-1
+  version: 0.16.5-2.1
   arch:
     - x86_64
   pkgname:
     - obconf-qt
 actions:
   addRepo: galaxy
-  removeRepo: galaxy-gremlins
-  triggersBuild: false
+  removeRepo: null
+  triggersBuild: true
   triggersRebuild: false
   triggersRepoAdd: true
-  triggersRepoRemove: true
+  triggersRepoRemove: false
   triggersNoCheck: false
 repos:
   system-goblins:
@@ -46,10 +46,11 @@ repos:
     version: null
     packages: []
   galaxy-gremlins:
-    version: null
-    packages: []
-  galaxy:
-    version: 0.16.5-1
+    version: 0.16.5-2
     packages:
-      - obconf-qt-0.16.5-1-x86_64.pkg.tar.zst
+      - obconf-qt-0.16.5-2-x86_64.pkg.tar.zst
+  galaxy:
+    version: 0.16.5-2.1
+    packages:
+      - obconf-qt-0.16.5-2.1-x86_64.pkg.tar.zst
 team: galaxy
