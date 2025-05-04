@@ -1,12 +1,4 @@
 ---
-pkgbase:
-  name: nss
-  version: 3.110-1
-  arch:
-    - x86_64
-  pkgname:
-    - nss
-    - ca-certificates-mozilla
 actions:
   addRepo: system
   removeRepo: system-gremlins
@@ -19,39 +11,51 @@ repos:
   system-goblins:
     version: null
     packages: []
+    debug: []
   system-gremlins:
     version: null
     packages: []
+    debug: []
   system:
-    version: 3.110-1
+    version: 3.111-1
     packages:
-      - nss-3.110-1-x86_64.pkg.tar.zst
-      - ca-certificates-mozilla-3.110-1-x86_64.pkg.tar.zst
+      - nss-3.111-1-x86_64.pkg.tar.zst
+      - ca-certificates-mozilla-3.111-1-x86_64.pkg.tar.zst
+    debug: []
   world-goblins:
     version: null
     packages: []
+    debug: []
   world-gremlins:
     version: null
     packages: []
+    debug: []
   world:
     version: null
     packages: []
+    debug: []
   lib32-goblins:
     version: null
     packages: []
+    debug: []
   lib32-gremlins:
     version: null
     packages: []
+    debug: []
   lib32:
     version: null
     packages: []
+    debug: []
   galaxy-goblins:
     version: null
     packages: []
+    debug: []
   galaxy-gremlins:
     version: null
     packages: []
+    debug: []
   galaxy:
     version: null
     packages: []
+    debug: []
 team: system
