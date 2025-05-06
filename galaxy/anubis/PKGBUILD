@@ -1,0 +1,56 @@
+# Maintainer: Jan Alexander Steffens (heftig) <heftig@archlinux.org>
+
+pkgname=anubis
+pkgver=1.17.0
+pkgrel=1
+pkgdesc="Reverse proxy to protect against scraper bots"
+url="https://anubis.techaro.lol/"
+arch=(x86_64)
+license=(MIT)
+depends=(glibc)
+makedepends=(
+  brotli
+  esbuild
+  git
+  go
+  gzip
+  npm
+  zstd
+)
+backup=(etc/anubis/default.env)
+source=("git+https://github.com/TecharoHQ/anubis#tag=v${pkgver/[a-z]/-&}")
+b2sums=('48bb647163efd14776bc480ad3a6b80b7a949059f25fc020443566fb9eb021c40b3ccba1c0bc6ba68a1f239dfe421f8a98a65006a979bc9a2624299070aa520a')
+
+prepare() {
+  cd anubis
+  make deps
+}
+
+build() {
+  cd anubis
+
+  export CGO_CPPFLAGS="${CPPFLAGS}"
+  export CGO_CFLAGS="${CFLAGS}"
+  export CGO_CXXFLAGS="${CXXFLAGS}"
+  export CGO_LDFLAGS="${LDFLAGS}"
+  export GOFLAGS="-buildmode=pie -trimpath -mod=readonly -modcacherw"
+
+  make assets
+  make prebaked-build
+}
+
+package() {
+  cd anubis
+
+  install -D var/anubis -t "$pkgdir/usr/bin"
+
+  install -Dm644 run/default.env -t "$pkgdir/etc/anubis"
+
+  install -Dm644 README.md data/botPolicies.json -t "$pkgdir/usr/share/doc/$pkgname"
+  cp -a docs/docs "$pkgdir/usr/share/doc/$pkgname/docs"
+  find "$pkgdir/usr/share/doc" -name _category_.json -delete
+
+  install -Dm644 LICENSE -t "$pkgdir/usr/share/licenses/$pkgname"
+}
+
+# vim:set sw=2 sts=-1 et:
