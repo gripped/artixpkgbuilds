@@ -1,0 +1,26 @@
+---
+version: 1:2.5.7-1
+pkgbase:
+  name: pyenv
+  pkgdesc: Easily switch between multiple versions of Python
+  pkgver: 2.5.7
+  pkgrel: 1
+  epoch: 1
+  url: https://github.com/pyenv/pyenv
+  arch:
+    - any
+  license:
+    - MIT
+  depends:
+    - bash
+  optdepends:
+    - 'git: installing development versions'
+  source:
+    - https://github.com/pyenv/pyenv/archive/v2.5.7/pyenv-2.5.7.tar.gz
+  sha512sums:
+    - bf5952deb7f0661c00757d6f2f2f4e926409950b950a7c41a820262cb128462002b6906f2778858e201f6ec4694141798d2f7bf36d754d235a10df28c99909fc
+  b2sums:
+    - 2e287ba8e04850204d2b3a7617429d6bd399a947656f5a79f33592006567445578f3004453ff2fe54632c21016f6bc54a2a634f7fd96a3baefdce2a9b871d81f
+pkgname:
+  - name: pyenv
+# generated with artixpkg 0.36.1-1-any
