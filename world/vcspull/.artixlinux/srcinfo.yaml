@@ -1,0 +1,38 @@
+---
+version: 1.34.0-1
+pkgbase:
+  name: vcspull
+  pkgdesc: Synchronize projects via yaml/json manifest. Built using `libvcs`
+  pkgver: 1.34.0
+  pkgrel: 1
+  url: https://vcspull.git-pull.com/
+  arch:
+    - any
+  license:
+    - MIT
+  checkdepends:
+    - git
+    - python-pytest
+    - python-pytest-rerunfailures
+  makedepends:
+    - python-build
+    - python-hatchling
+    - python-installer
+    - python-poetry-core
+  depends:
+    - python
+    - python-colorama
+    - python-libvcs
+    - python-shtab
+    - python-yaml
+  optdepends:
+    - 'bash-completion: for command line completion in bash'
+  source:
+    - https://github.com/vcs-python/vcspull/archive/v1.34.0/vcspull-1.34.0.tar.gz
+  sha512sums:
+    - 7b2a94a769ba33fc5b02b69611a41962498f6db247a9c85847855042c9191b8aadb5eec5ee051ef5519c2230b859fbfd562d3b312395a7795b2f841bc0fbfd05
+  b2sums:
+    - fc438d8d27b5adbb0bcf26a8f96391449235649723211ea2a47e8bbb467e8046a354a39e44a7599c58cdd751da7debfc63638e453262bbd53f1257f2bc8e18fa
+pkgname:
+  - name: vcspull
+# generated with artixpkg 0.36.1-3-any
