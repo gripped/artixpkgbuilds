@@ -29,11 +29,11 @@ repos:
     packages: []
     debug: []
   world:
-    version: 2:7.1.1-2
+    version: 2:7.1.1-3
     packages:
-      - ffmpeg-2:7.1.1-2-x86_64.pkg.tar.zst
+      - ffmpeg-2:7.1.1-3-x86_64.pkg.tar.zst
     debug:
-      - ffmpeg-debug-2:7.1.1-2-x86_64.pkg.tar.zst
+      - ffmpeg-debug-2:7.1.1-3-x86_64.pkg.tar.zst
   lib32-goblins:
     version: null
     packages: []
