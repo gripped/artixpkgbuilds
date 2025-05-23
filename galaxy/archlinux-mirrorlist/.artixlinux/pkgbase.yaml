@@ -53,8 +53,8 @@ repos:
     packages: []
     debug: []
   galaxy:
-    version: 20250503-1
+    version: 20250522-1
     packages:
-      - archlinux-mirrorlist-20250503-1-any.pkg.tar.zst
+      - archlinux-mirrorlist-20250522-1-any.pkg.tar.zst
     debug: []
 team: galaxy
