@@ -53,8 +53,8 @@ repos:
     packages: []
     debug: []
   galaxy:
-    version: 138.0.4-1
+    version: 139.0-1
     packages:
-      - firefox-138.0.4-1-x86_64.pkg.tar.zst
+      - firefox-139.0-1-x86_64.pkg.tar.zst
     debug: []
 team: galaxy
