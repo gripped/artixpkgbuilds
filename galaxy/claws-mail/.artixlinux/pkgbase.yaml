@@ -1,7 +1,7 @@
 ---
 team: galaxy
 actions:
-  addRepo: world-goblins
+  addRepo: galaxy-goblins
   removeRepo: null
   triggersBuild: true
   triggersRebuild: false
@@ -22,9 +22,8 @@ repos:
     packages: []
     debug: []
   world-goblins:
-    version: 4.3.1-2
-    packages:
-      - claws-mail-4.3.1-2-x86_64.pkg.tar.zst
+    version: null
+    packages: []
     debug: []
   world-gremlins:
     version: null
@@ -47,8 +46,9 @@ repos:
     packages: []
     debug: []
   galaxy-goblins:
-    version: null
-    packages: []
+    version: 4.3.1-2
+    packages:
+      - claws-mail-4.3.1-2-x86_64.pkg.tar.zst
     debug: []
   galaxy-gremlins:
     version: null
