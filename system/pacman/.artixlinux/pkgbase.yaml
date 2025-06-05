@@ -1,11 +1,4 @@
 ---
-pkgbase:
-  name: pacman
-  version: 7.0.0.r6.gc685ae6-2
-  arch:
-    - x86_64
-  pkgname:
-    - pacman
 actions:
   addRepo: system
   removeRepo: system-gremlins
@@ -16,40 +9,53 @@ actions:
   triggersNoCheck: false
 repos:
   system-goblins:
-    version: null
-    packages: []
+    version: 7.0.0.r6.gc685ae6-6
+    packages:
+      - pacman-7.0.0.r6.gc685ae6-6-x86_64.pkg.tar.zst
+    debug: []
   system-gremlins:
     version: null
     packages: []
+    debug: []
   system:
-    version: 7.0.0.r6.gc685ae6-2
+    version: 7.0.0.r6.gc685ae6-5
     packages:
-      - pacman-7.0.0.r6.gc685ae6-2-x86_64.pkg.tar.zst
+      - pacman-7.0.0.r6.gc685ae6-5-x86_64.pkg.tar.zst
+    debug: []
   world-goblins:
     version: null
     packages: []
+    debug: []
   world-gremlins:
     version: null
     packages: []
+    debug: []
   world:
     version: null
     packages: []
+    debug: []
   lib32-goblins:
     version: null
     packages: []
+    debug: []
   lib32-gremlins:
     version: null
     packages: []
+    debug: []
   lib32:
     version: null
     packages: []
+    debug: []
   galaxy-goblins:
     version: null
     packages: []
+    debug: []
   galaxy-gremlins:
     version: null
     packages: []
+    debug: []
   galaxy:
     version: null
     packages: []
+    debug: []
 team: system
