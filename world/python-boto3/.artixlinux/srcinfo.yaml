@@ -1,9 +1,9 @@
 ---
-version: 1.38.18-1
+version: 1.38.27-1
 pkgbase:
   name: python-boto3
   pkgdesc: The AWS SDK for Python
-  pkgver: 1.38.18
+  pkgver: 1.38.27
   pkgrel: 1
   url: https://github.com/boto/boto3
   arch:
@@ -27,9 +27,9 @@ pkgbase:
   optdepends:
     - 'python-awscrt: AWS CRT S3 transfers'
   source:
-    - https://github.com/boto/boto3/archive/1.38.18/python-boto3-1.38.18.tar.gz
+    - https://github.com/boto/boto3/archive/1.38.27/python-boto3-1.38.27.tar.gz
   sha512sums:
-    - af9dbf07a2a2dd378fbf5d346b9a4b43d74ccaaf2bc713f738e122ba402529aec6361ca7971101e88a1ed7e39623a69a4d84272505e39fedc5d7a89985cdaf98
+    - 27ab3c3453b16649d58d6ee11ef62abd6e302889b0dc46067e4370af1e9fb4d75292886471f7c7fb530707c226ae78c42d0268d8cd9730fd27ad72ef1fb69d45
 pkgname:
   - name: python-boto3
-# generated with artixpkg 0.36.2-1-any
+# generated with artixpkg 0.36.3-1-any
