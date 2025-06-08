@@ -1,0 +1,49 @@
+---
+version: 6.0.3-1
+pkgbase:
+  name: gnuplot
+  pkgdesc: Plotting package which outputs to X11, PostScript, PNG, GIF, and others
+  pkgver: 6.0.3
+  pkgrel: 1
+  url: http://www.gnuplot.info
+  arch:
+    - x86_64
+  license:
+    - LicenseRef-Gnuplot
+  makedepends:
+    - emacs
+    - git
+    - qt6-tools
+    - texlive-latexextra
+  depends:
+    - cairo
+    - gcc-libs
+    - gd
+    - glib2
+    - glibc
+    - gtk3
+    - libcaca
+    - libcerf
+    - libwebp
+    - libx11
+    - lua
+    - pango
+    - qt6-5compat
+    - qt6-base
+    - qt6-svg
+    - readline
+    - wxwidgets-common
+    - wxwidgets-gtk3
+  source:
+    - git+https://git.code.sf.net/p/gnuplot/gnuplot-main#tag=6.0.3
+    - lua53_compat.patch
+  sha256sums:
+    - 0477bb969ee2ca7038ef02e3e473d337132105b52953eb460649ac581b883981
+    - bfd8a61abbf4491c74225cb9fd252619d4fc29751838bcb4c0639ffe05a00695
+pkgname:
+  - name: gnuplot
+  - name: gnuplot-demos
+    pkgdesc: Demos for gnuplot
+    depends:
+      - gnuplot
+# generated with artixpkg 0.36.3-1-any
