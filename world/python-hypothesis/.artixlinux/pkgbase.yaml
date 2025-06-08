@@ -1,10 +1,10 @@
 ---
 actions:
-  addRepo: world
+  addRepo: null
   removeRepo: world-gremlins
   triggersBuild: false
   triggersRebuild: false
-  triggersRepoAdd: true
+  triggersRepoAdd: false
   triggersRepoRemove: true
   triggersNoCheck: false
 repos:
@@ -29,9 +29,9 @@ repos:
     packages: []
     debug: []
   world:
-    version: 6.131.23-1
+    version: 6.133.2-1
     packages:
-      - python-hypothesis-6.131.23-1-any.pkg.tar.zst
+      - python-hypothesis-6.133.2-1-any.pkg.tar.zst
     debug: []
   lib32-goblins:
     version: null
