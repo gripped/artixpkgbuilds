@@ -1,0 +1,29 @@
+---
+version: 2.4.0-7
+pkgbase:
+  name: ruby-sassc
+  pkgdesc: Use libsass with Ruby!
+  pkgver: 2.4.0
+  pkgrel: 7
+  url: https://github.com/sass/sassc-ruby
+  arch:
+    - x86_64
+  license:
+    - MIT
+  makedepends:
+    - git
+  depends:
+    - ruby
+    - ruby-erb
+    - ruby-ffi
+  options:
+    - '!emptydirs'
+  source:
+    - ruby-sassc::git+https://github.com/sass/sassc-ruby#tag=v2.4.0
+    - libsass::git+https://github.com/sass/libsass.git
+  sha256sums:
+    - f2eb7ab00afba92187b899d130ddfabeaafafd839ecdf7b7129c443fc36d4247
+    - SKIP
+pkgname:
+  - name: ruby-sassc
+# generated with artixpkg 0.36.3-1-any
