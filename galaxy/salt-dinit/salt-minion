@@ -1,0 +1,6 @@
+type            = process
+command         = /usr/bin/salt-minion
+smooth-recovery = true
+depends-on      = salt-master
+depends-on      = network.target
+before          = login.target

@@ -1,0 +1,5 @@
+type            = process
+command         = /usr/bin/salt-syndic
+smooth-recovery = true
+depends-on      = network.target
+before          = login.target
