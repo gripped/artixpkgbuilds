@@ -1,0 +1,33 @@
+---
+version: 4.1.1-1
+pkgbase:
+  name: certbot-dns-gehirn
+  pkgdesc: Gehirn DNS Authenticator plugin for Certbot
+  pkgver: 4.1.1
+  pkgrel: 1
+  url: https://pypi.python.org/pypi/certbot-dns-gehirn
+  arch:
+    - any
+  license:
+    - Apache-2.0
+  checkdepends:
+    - python-pytest
+  makedepends:
+    - git
+    - python-build
+    - python-installer
+    - python-setuptools
+    - python-wheel
+  depends:
+    - certbot=4.1.1
+    - python-acme=4.1.1
+    - dns-lexicon
+  source:
+    - github.com-certbot-certbot::git+https://github.com/certbot/certbot#tag=v4.1.1
+  sha512sums:
+    - 8c01903ea9c0b561b46d36ea58011cf3692f94ce3549926be6ca79536b76b8f018a3a3a1102ed2a8fd6ab10453fe6662a3699e2a5eb7565dbe8762071f5b51bb
+  b2sums:
+    - bd35be84989fc60c673d20b8344c0482486cd68b85d8b9a969ce6c67ed520b89a23965a6bf382ffd8581623f886220644ce99fcc500df255f135b0afc9d717d8
+pkgname:
+  - name: certbot-dns-gehirn
+# generated with artixpkg 0.36.3-1-any
