@@ -41,9 +41,9 @@ repos:
     packages: []
     debug: []
   lib32:
-    version: 257.6-1
+    version: 257.7-1
     packages:
-      - lib32-udev-257.6-1-x86_64.pkg.tar.zst
+      - lib32-udev-257.7-1-x86_64.pkg.tar.zst
     debug: []
   galaxy-goblins:
     version: null
