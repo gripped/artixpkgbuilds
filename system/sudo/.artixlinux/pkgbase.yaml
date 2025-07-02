@@ -1,11 +1,4 @@
 ---
-pkgbase:
-  name: sudo
-  version: 1.9.16.p2-2
-  arch:
-    - x86_64
-  pkgname:
-    - sudo
 actions:
   addRepo: system
   removeRepo: system-gremlins
@@ -18,38 +11,50 @@ repos:
   system-goblins:
     version: null
     packages: []
+    debug: []
   system-gremlins:
     version: null
     packages: []
+    debug: []
   system:
-    version: 1.9.16.p2-2
+    version: 1.9.17.p1-1
     packages:
-      - sudo-1.9.16.p2-2-x86_64.pkg.tar.zst
+      - sudo-1.9.17.p1-1-x86_64.pkg.tar.zst
+    debug: []
   world-goblins:
     version: null
     packages: []
+    debug: []
   world-gremlins:
     version: null
     packages: []
+    debug: []
   world:
     version: null
     packages: []
+    debug: []
   lib32-goblins:
     version: null
     packages: []
+    debug: []
   lib32-gremlins:
     version: null
     packages: []
+    debug: []
   lib32:
     version: null
     packages: []
+    debug: []
   galaxy-goblins:
     version: null
     packages: []
+    debug: []
   galaxy-gremlins:
     version: null
     packages: []
+    debug: []
   galaxy:
     version: null
     packages: []
+    debug: []
 team: system
