@@ -18,9 +18,9 @@ repos:
     packages: []
     debug: []
   system:
-    version: 1.4.0-1
+    version: 1.5.0-1
     packages:
-      - leancrypto-1.4.0-1-x86_64.pkg.tar.zst
+      - leancrypto-1.5.0-1-x86_64.pkg.tar.zst
     debug: []
   world-goblins:
     version: null
