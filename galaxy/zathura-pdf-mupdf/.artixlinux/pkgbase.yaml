@@ -1,11 +1,11 @@
 ---
 actions:
   addRepo: galaxy
-  removeRepo: null
-  triggersBuild: true
+  removeRepo: galaxy-gremlins
+  triggersBuild: false
   triggersRebuild: false
   triggersRepoAdd: true
-  triggersRepoRemove: false
+  triggersRepoRemove: true
   triggersNoCheck: false
 repos:
   system-goblins:
@@ -21,8 +21,9 @@ repos:
     packages: []
     debug: []
   world-goblins:
-    version: null
-    packages: []
+    version: 0.4.4-18.1
+    packages:
+      - zathura-pdf-mupdf-0.4.4-18.1-x86_64.pkg.tar.zst
     debug: []
   world-gremlins:
     version: null
@@ -53,8 +54,8 @@ repos:
     packages: []
     debug: []
   galaxy:
-    version: 0.4.4-17
+    version: 0.4.4-19
     packages:
-      - zathura-pdf-mupdf-0.4.4-17-x86_64.pkg.tar.zst
+      - zathura-pdf-mupdf-0.4.4-19-x86_64.pkg.tar.zst
     debug: []
 team: galaxy
