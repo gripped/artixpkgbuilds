@@ -1,0 +1,10 @@
+--- a/src/x11/xf86Wacom.c	2025-07-03 15:00:41.490240766 +0200
++++ b/src/x11/xf86Wacom.c	2025-07-03 15:00:24.959844978 +0200
+@@ -71,7 +71,7 @@
+ 	va_list args;
+ 
+ 	va_start(args, format);
+-	xf86VIDrvMsgVerb(priv->frontend, xtype, 0, format, args);
++	/* xf86VIDrvMsgVerb(priv->frontend, xtype, 0, format, args); */
+ 	va_end(args);
+ }
