@@ -1,55 +1,60 @@
 ---
 team: lib32
-pkgbase:
-  name: lib32-libnm
-  version: 1.52.0-1.1
-  arch:
-    - x86_64
-  pkgname:
-    - lib32-libnm
 actions:
   addRepo: lib32
-  removeRepo: null
-  triggersBuild: true
+  removeRepo: lib32-gremlins
+  triggersBuild: false
   triggersRebuild: false
   triggersRepoAdd: true
-  triggersRepoRemove: false
+  triggersRepoRemove: true
   triggersNoCheck: false
 repos:
   system-goblins:
     version: null
     packages: []
+    debug: []
   system-gremlins:
     version: null
     packages: []
+    debug: []
   system:
     version: null
     packages: []
+    debug: []
   world-goblins:
     version: null
     packages: []
+    debug: []
   world-gremlins:
     version: null
     packages: []
+    debug: []
   world:
     version: null
     packages: []
+    debug: []
   lib32-goblins:
     version: null
     packages: []
+    debug: []
   lib32-gremlins:
     version: null
     packages: []
+    debug: []
   lib32:
-    version: 1.52.0-1.1
+    version: 1.52.1-1
     packages:
-      - lib32-libnm-1.52.0-1.1-x86_64.pkg.tar.zst
+      - lib32-libnm-1.52.1-1-x86_64.pkg.tar.zst
+    debug: []
   galaxy-goblins:
     version: null
     packages: []
+    debug: []
   galaxy-gremlins:
     version: null
     packages: []
+    debug: []
   galaxy:
     version: null
     packages: []
+    debug: []
