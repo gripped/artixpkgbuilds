@@ -17,9 +17,9 @@ repos:
     packages: []
     debug: []
   system:
-    version: 8.2.013-2
+    version: 8.3.0-3
     packages:
-      - readline-8.2.013-2-x86_64.pkg.tar.zst
+      - readline-8.3.0-3-x86_64.pkg.tar.zst
     debug: []
   world-goblins:
     version: null
