@@ -54,7 +54,7 @@ repos:
     packages: []
     debug: []
   galaxy:
-    version: 1.9.5-1
+    version: 1.9.6-1
     packages:
-      - rpi-imager-1.9.5-1-x86_64.pkg.tar.zst
+      - rpi-imager-1.9.6-1-x86_64.pkg.tar.zst
     debug: []
