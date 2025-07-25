@@ -17,9 +17,9 @@ repos:
     packages: []
     debug: []
   system:
-    version: 6.14-1
+    version: 6.15-1
     packages:
-      - man-pages-6.14-1-any.pkg.tar.zst
+      - man-pages-6.15-1-any.pkg.tar.zst
     debug: []
   world-goblins:
     version: null
