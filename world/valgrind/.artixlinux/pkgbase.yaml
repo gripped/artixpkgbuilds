@@ -29,11 +29,11 @@ repos:
     packages: []
     debug: []
   world:
-    version: 3.25.1-1
+    version: 3.25.1-2
     packages:
-      - valgrind-3.25.1-1-x86_64.pkg.tar.zst
+      - valgrind-3.25.1-2-x86_64.pkg.tar.zst
     debug:
-      - valgrind-debug-3.25.1-1-x86_64.pkg.tar.zst
+      - valgrind-debug-3.25.1-2-x86_64.pkg.tar.zst
   lib32-goblins:
     version: null
     packages: []
