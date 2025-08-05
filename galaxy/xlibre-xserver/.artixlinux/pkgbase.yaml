@@ -54,12 +54,12 @@ repos:
     packages: []
     debug: []
   galaxy:
-    version: 25.0.0.7-1
+    version: 25.0.0.7-2
     packages:
-      - xlibre-xserver-25.0.0.7-1-x86_64.pkg.tar.zst
-      - xlibre-xserver-xephyr-25.0.0.7-1-x86_64.pkg.tar.zst
-      - xlibre-xserver-xvfb-25.0.0.7-1-x86_64.pkg.tar.zst
-      - xlibre-xserver-xnest-25.0.0.7-1-x86_64.pkg.tar.zst
-      - xlibre-xserver-common-25.0.0.7-1-x86_64.pkg.tar.zst
-      - xlibre-xserver-devel-25.0.0.7-1-x86_64.pkg.tar.zst
+      - xlibre-xserver-25.0.0.7-2-x86_64.pkg.tar.zst
+      - xlibre-xserver-xephyr-25.0.0.7-2-x86_64.pkg.tar.zst
+      - xlibre-xserver-xvfb-25.0.0.7-2-x86_64.pkg.tar.zst
+      - xlibre-xserver-xnest-25.0.0.7-2-x86_64.pkg.tar.zst
+      - xlibre-xserver-common-25.0.0.7-2-x86_64.pkg.tar.zst
+      - xlibre-xserver-devel-25.0.0.7-2-x86_64.pkg.tar.zst
     debug: []
