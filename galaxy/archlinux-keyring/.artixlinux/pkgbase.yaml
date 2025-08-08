@@ -53,8 +53,8 @@ repos:
     packages: []
     debug: []
   galaxy:
-    version: 20250716-1
+    version: 20250807.1-1
     packages:
-      - archlinux-keyring-20250716-1-any.pkg.tar.zst
+      - archlinux-keyring-20250807.1-1-any.pkg.tar.zst
     debug: []
 team: galaxy
