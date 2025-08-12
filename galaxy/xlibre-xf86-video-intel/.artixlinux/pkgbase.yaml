@@ -54,7 +54,7 @@ repos:
     packages: []
     debug: []
   galaxy:
-    version: 3.0.0.1-1.1
+    version: 3.0.0.2-1
     packages:
-      - xlibre-xf86-video-intel-3.0.0.1-1.1-x86_64.pkg.tar.zst
+      - xlibre-xf86-video-intel-3.0.0.2-1-x86_64.pkg.tar.zst
     debug: []
