@@ -1,11 +1,7 @@
---- a/res/config.ini	2025-06-03 11:02:22.771350408 +0200
-+++ b/res/config.ini	2025-06-03 11:04:12.991364590 +0200
-@@ -171,10 +171,10 @@
- 
- # Default path
- # If null, ly doesn't set a path
--path = /sbin:/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin
-+path = /usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin
+--- a/res/config.ini	2025-08-06 14:07:35.182697343 +0200
++++ b/res/config.ini	2025-08-06 14:07:15.694850289 +0200
+@@ -174,7 +174,7 @@
+ path = /usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
  
  # Command executed when pressing restart_key
 -restart_cmd = /sbin/shutdown -r now
