@@ -1,57 +1,60 @@
 ---
-pkgbase:
-  name: mpd-dinit
-  version: 20240610-1
-  arch:
-    - any
-  pkgname:
-    - mpd-dinit
-    - mpd-dinit-user
 actions:
   addRepo: galaxy
-  removeRepo: null
-  triggersBuild: true
+  removeRepo: galaxy-gremlins
+  triggersBuild: false
   triggersRebuild: false
   triggersRepoAdd: true
-  triggersRepoRemove: false
+  triggersRepoRemove: true
   triggersNoCheck: false
 repos:
   system-goblins:
     version: null
     packages: []
+    debug: []
   system-gremlins:
     version: null
     packages: []
+    debug: []
   system:
     version: null
     packages: []
+    debug: []
   world-goblins:
     version: null
     packages: []
+    debug: []
   world-gremlins:
     version: null
     packages: []
+    debug: []
   world:
     version: null
     packages: []
+    debug: []
   lib32-goblins:
     version: null
     packages: []
+    debug: []
   lib32-gremlins:
     version: null
     packages: []
+    debug: []
   lib32:
     version: null
     packages: []
+    debug: []
   galaxy-goblins:
     version: null
     packages: []
+    debug: []
   galaxy-gremlins:
     version: null
     packages: []
+    debug: []
   galaxy:
-    version: 20240610-1
+    version: 20240815-3
     packages:
-      - mpd-dinit-20240610-1-any.pkg.tar.zst
-      - mpd-dinit-user-20240610-1-any.pkg.tar.zst
-team: world
+      - mpd-dinit-20240815-3-any.pkg.tar.zst
+    debug: []
+team: galaxy
