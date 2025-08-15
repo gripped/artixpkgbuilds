@@ -1,12 +1,11 @@
 ---
-version: 1.0.0-3
+version: 1.0.0-5
 pkgbase:
   name: dinit-user-spawn
   pkgdesc: Launches a user process dinit for you on login
   pkgver: 1.0.0
-  pkgrel: 3
+  pkgrel: 5
   url: https://github.com/initMayday/dinit-user-spawn
-  install: dinit-user-spawn.install
   arch:
     - x86_64
   groups:
@@ -17,14 +16,13 @@ pkgbase:
     - meson
     - git
   depends:
-    - dinit
     - gcc-libs
     - glibc
     - tomlplusplus
   source:
     - git+https://github.com/initMayday/dinit-user-spawn.git#tag=v1.0.0
   sha256sums:
-    - f8f311afcdcd73567f52188508df7724a92489f205351d40973d3b17025ca0e7
+    - ef739d7084dca2bc81af3e3ce53de5af3b02e2d868d8e8c906ac233cf7441909
 pkgname:
   - name: dinit-user-spawn
 # generated with artixpkg 0.36.4-1-any
