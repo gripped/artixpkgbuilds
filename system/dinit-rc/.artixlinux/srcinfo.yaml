@@ -1,21 +1,25 @@
 ---
-version: 0.5.0-1
+version: 0.6.0-3
 pkgbase:
   name: dinit-rc
   pkgdesc: rc files for dinit
-  pkgver: 0.5.0
-  pkgrel: 1
+  pkgver: 0.6.0
+  pkgrel: 3
   url: https://gitea.artixlinux.org/artix/dinit-rc
   arch:
     - x86_64
   license:
-    - BSD
+    - BSD-2-Clause
   makedepends:
+    - git
     - scdoc
   depends:
-    - udev
     - artix-cgroups
+    - bash
     - dbus
+    - dinit-user-spawn
+    - glibc
+    - udev
   optdepends:
     - 'cryptsetup-dinit: Encrypted disks support'
     - 'lvm2-dinit: LVM support'
@@ -32,9 +36,13 @@ pkgbase:
     - etc/rc.local
     - etc/rc.shutdown
   source:
-    - dinit-rc-0.5.0.tar.gz::https://gitea.artixlinux.org/artix/dinit-rc/archive/0.5.0.tar.gz
+    - git+https://gitea.artixlinux.org/artix/dinit-rc.git#tag=0.6.0
+    - rc.local
+    - rc.shutdown
   sha256sums:
-    - 09a7298253b7f4f7c709886a4e5e710ee7681e6cf5589ca4961cc772f41acb03
+    - 92deb5abf4eead4ba81f17b0ba1affffe0bfe66ba4cd312ee0bc61213000fba1
+    - 1a7cc77e88cc15b4cbbdc8543a34a445fb386c41b1fb57bae94548dda19972f8
+    - 1a7cc77e88cc15b4cbbdc8543a34a445fb386c41b1fb57bae94548dda19972f8
 pkgname:
   - name: dinit-rc
-# generated with artixpkg 0.36.2-1-any
+# generated with artixpkg 0.36.4-1-any
