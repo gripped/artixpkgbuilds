@@ -17,10 +17,10 @@ repos:
     packages: []
     debug: []
   system:
-    version: 3.13.6-1
+    version: 3.13.7-1
     packages:
-      - python-3.13.6-1-x86_64.pkg.tar.zst
-      - python-tests-3.13.6-1-x86_64.pkg.tar.zst
+      - python-3.13.7-1-x86_64.pkg.tar.zst
+      - python-tests-3.13.7-1-x86_64.pkg.tar.zst
     debug: []
   world-goblins:
     version: null
