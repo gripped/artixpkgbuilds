@@ -1,55 +1,60 @@
 ---
-pkgbase:
-  name: xfce4-panel
-  version: 4.20.4-1
-  arch:
-    - x86_64
-  pkgname:
-    - xfce4-panel
 actions:
   addRepo: galaxy
-  removeRepo: null
-  triggersBuild: true
+  removeRepo: galaxy-gremlins
+  triggersBuild: false
   triggersRebuild: false
   triggersRepoAdd: true
-  triggersRepoRemove: false
+  triggersRepoRemove: true
   triggersNoCheck: false
 repos:
   system-goblins:
     version: null
     packages: []
+    debug: []
   system-gremlins:
     version: null
     packages: []
+    debug: []
   system:
     version: null
     packages: []
+    debug: []
   world-goblins:
     version: null
     packages: []
+    debug: []
   world-gremlins:
     version: null
     packages: []
+    debug: []
   world:
     version: null
     packages: []
+    debug: []
   lib32-goblins:
     version: null
     packages: []
+    debug: []
   lib32-gremlins:
     version: null
     packages: []
+    debug: []
   lib32:
     version: null
     packages: []
+    debug: []
   galaxy-goblins:
     version: null
     packages: []
+    debug: []
   galaxy-gremlins:
     version: null
     packages: []
+    debug: []
   galaxy:
-    version: 4.20.4-1
+    version: 4.20.5-1
     packages:
-      - xfce4-panel-4.20.4-1-x86_64.pkg.tar.zst
+      - xfce4-panel-4.20.5-1-x86_64.pkg.tar.zst
+    debug: []
 team: galaxy
