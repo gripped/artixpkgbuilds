@@ -1,8 +1,8 @@
 ---
-version: 25.0.0.8-1
+version: 25.0.0.9-1
 pkgbase:
   name: xlibre-xserver
-  pkgver: 25.0.0.8
+  pkgver: 25.0.0.9
   pkgrel: 1
   url: https://github.com/X11Libre/xserver
   arch:
@@ -57,11 +57,11 @@ pkgbase:
     - elogind
     - meson
   source:
-    - https://codeload.github.com/X11Libre/xserver/tar.gz/refs/tags/xlibre-xserver-25.0.0.8
+    - https://codeload.github.com/X11Libre/xserver/tar.gz/refs/tags/xlibre-xserver-25.0.0.9
     - xvfb-run
     - xvfb-run.1
   sha256sums:
-    - 9be47f55fb1258addc38b24a48322647c65e8e38f78402e1425f8282e7073483
+    - e122a65c030e18057bc1885cc7ed14f9974ae0bcbbc409db35eceba8dcaa28c3
     - 27ce50f4432e5549e662db857118761fa9cd74c6900aac52c4db768c956838db
     - 2460adccd3362fefd4cdc5f1c70f332d7b578091fb9167bf88b5f91265bbd776
 pkgname:
