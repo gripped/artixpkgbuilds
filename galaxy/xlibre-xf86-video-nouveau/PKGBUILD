@@ -3,7 +3,7 @@
 pkgname=xlibre-xf86-video-nouveau
 _pkgname=xf86-video-nouveau
 pkgver=1.0.18.1
-pkgrel=1.1
+pkgrel=9
 pkgdesc="XLibre fork of X.Org Open Source 3D acceleration driver for nVidia cards"
 arch=('x86_64')
 url="https://github.com/X11Libre"
