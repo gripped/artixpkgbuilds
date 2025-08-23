@@ -1,0 +1,33 @@
+---
+version: 1.2.0.1-9
+pkgbase:
+  name: xlibre-xf86-video-ast
+  pkgdesc: XLibre fork of X.Org aspeed video driver
+  pkgver: 1.2.0.1
+  pkgrel: 9
+  url: https://github.com/X11Libre
+  arch:
+    - x86_64
+  groups:
+    - xlibre-drivers
+  license:
+    - MIT
+  makedepends:
+    - xlibre-xserver-devel
+    - udev
+    - X-ABI-VIDEODRV_VERSION=28.0
+  depends:
+    - glibc
+  provides:
+    - xf86-video-ast
+  conflicts:
+    - xf86-video-ast
+    - X-ABI-VIDEODRV_VERSION<28
+    - X-ABI-VIDEODRV_VERSION>=29
+  source:
+    - https://github.com/X11Libre/xf86-video-ast/archive/refs/tags/xlibre-xf86-video-ast-1.2.0.1.tar.gz
+  sha256sums:
+    - 14f2c2e9b8c95a6163ab4004959fbbb690bce53abf4b2254271cfa1f722182f0
+pkgname:
+  - name: xlibre-xf86-video-ast
+# generated with artixpkg 0.36.4-1-any
