@@ -1,0 +1,32 @@
+# Maintainer: artist for Artix Linux
+
+pkgname=xlibre-xf86-input-keyboard
+_pkgname=xf86-input-keyboard
+pkgver=2.1.0.2
+pkgrel=9
+pkgdesc="XLibre fork of X.Org keyboard input driver"
+arch=(x86_64)
+license=('custom')
+url="https://github.com/X11Libre"
+depends=('glibc')
+makedepends=('xlibre-xserver-devel' 'X-ABI-XINPUT_VERSION=26.0' 'xorgproto')
+conflicts=(${_pkgname} 'xorg-server<21.1.1' 'X-ABI-XINPUT_VERSION<26' 'X-ABI-XINPUT_VERSION>=27')
+provides=(${_pkgname})
+source=("${url}/${_pkgname}/archive/refs/tags/${pkgname}-${pkgver}.tar.gz")
+groups=('xlibre-drivers')
+
+build() {
+  cd ${_pkgname}-${pkgname}-${pkgver}
+  ./autogen.sh
+  ./configure --prefix=/usr 
+  make
+}
+
+package() {
+  cd ${_pkgname}-${pkgname}-${pkgver}
+  make DESTDIR="${pkgdir}" install
+  install -Dm644 "${srcdir}"/${_pkgname}-${pkgname}-${pkgver}/COPYING "${pkgdir}"/usr/share/licenses/${pkgname}/LICENSE
+}
+
+sha256sums=('6e72dc5bde6215d1daa6970367caac27a7b8f491c1ea6b3030960a4736169110')
+

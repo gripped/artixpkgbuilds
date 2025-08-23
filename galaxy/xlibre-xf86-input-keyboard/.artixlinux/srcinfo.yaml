@@ -1,0 +1,34 @@
+---
+version: 2.1.0.2-9
+pkgbase:
+  name: xlibre-xf86-input-keyboard
+  pkgdesc: XLibre fork of X.Org keyboard input driver
+  pkgver: 2.1.0.2
+  pkgrel: 9
+  url: https://github.com/X11Libre
+  arch:
+    - x86_64
+  groups:
+    - xlibre-drivers
+  license:
+    - custom
+  makedepends:
+    - xlibre-xserver-devel
+    - X-ABI-XINPUT_VERSION=26.0
+    - xorgproto
+  depends:
+    - glibc
+  provides:
+    - xf86-input-keyboard
+  conflicts:
+    - xf86-input-keyboard
+    - xorg-server<21.1.1
+    - X-ABI-XINPUT_VERSION<26
+    - X-ABI-XINPUT_VERSION>=27
+  source:
+    - https://github.com/X11Libre/xf86-input-keyboard/archive/refs/tags/xlibre-xf86-input-keyboard-2.1.0.2.tar.gz
+  sha256sums:
+    - 6e72dc5bde6215d1daa6970367caac27a7b8f491c1ea6b3030960a4736169110
+pkgname:
+  - name: xlibre-xf86-input-keyboard
+# generated with artixpkg 0.36.4-1-any
