@@ -1,0 +1,44 @@
+---
+version: 0.16-4
+pkgbase:
+  name: calamares-extensions
+  pkgdesc: Distribution-independent installer framework extensions
+  pkgver: 0.16
+  pkgrel: 4
+  url: https://gitea.artixlinux.org/artix/calamares-extensions
+  arch:
+    - x86_64
+  license:
+    - GPL-3.0-or-later
+    - LGPL-2.1-only
+    - LGPL-3.0-or-later
+  makedepends:
+    - extra-cmake-modules
+    - qt6-tools
+    - git
+    - qt6-translations
+    - calamares
+    - kdialog
+  depends:
+    - bash
+    - gcc-libs
+    - glibc
+    - python
+    - qt6-base
+    - qt6-declarative
+  source:
+    - git+https://gitea.artixlinux.org/artix/calamares-extensions.git#commit=91712d4f3b8ae81e3c5bfe51b92a7a1241746258
+  sha256sums:
+    - SKIP
+pkgname:
+  - name: calamares-extensions
+    depends:
+      - bash
+      - gcc-libs
+      - glibc
+      - python
+      - qt6-base
+      - qt6-declarative
+      - calamares
+      - kdialog
+# generated with artixpkg 0.36.5-1-any
