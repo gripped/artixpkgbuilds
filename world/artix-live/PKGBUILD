@@ -2,6 +2,8 @@
 # Contributor: nous <nous@artixlinux.org>
 # Contributor: dudemanguy <dudemanguy@artixlinux.org>
 
+_commit=1db120e8dc69c2c75f4a9327eff4e7dc56919b15
+
 pkgbase=artix-live
 pkgname=('artix-live-base'
         'artix-live-openrc'
@@ -9,14 +11,13 @@ pkgname=('artix-live-base'
         'artix-live-s6'
         'artix-live-dinit'
         'artix-grub-live')
-pkgver=2025.01
-pkgrel=3
+pkgver=2025.08
+pkgrel=4
 pkgdesc='Artix live session'
 arch=('any')
 url="https://gitea.artixlinux.org/artix/artix-live"
 license=('GPL')
 makedepends=('git' 'bash' 'artools-base')
-_commit=ff902c578f5114ab1df5b79237039392a667b41b
 source=("git+$url.git#commit=$_commit")
 sha256sums=('SKIP')
 
