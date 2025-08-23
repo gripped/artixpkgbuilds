@@ -17,10 +17,10 @@ repos:
     packages: []
     debug: []
   system:
-    version: 20250819-2
+    version: 20250819-3
     packages:
-      - dbus-dinit-20250819-2-any.pkg.tar.zst
-      - dbus-dinit-user-20250819-2-any.pkg.tar.zst
+      - dbus-dinit-20250819-3-any.pkg.tar.zst
+      - dbus-dinit-user-20250819-3-any.pkg.tar.zst
     debug: []
   world-goblins:
     version: null
