@@ -1,10 +1,10 @@
 ---
-version: 1.10.0.1-9
+version: 1.10.0.2-1
 pkgbase:
   name: xlibre-xf86-input-synaptics
   pkgdesc: XLibre fork of X.Org Synaptics driver for notebook touchpads
-  pkgver: 1.10.0.1
-  pkgrel: 9
+  pkgver: 1.10.0.2
+  pkgrel: 1
   url: https://github.com/X11Libre
   install: xf86-input-synaptics.install
   arch:
@@ -32,9 +32,9 @@ pkgbase:
     - X-ABI-XINPUT_VERSION>=27
     - synaptics
   source:
-    - https://github.com/X11Libre/xf86-input-synaptics/archive/refs/tags/xf86-input-synaptics-1.10.0.tar.gz
+    - https://github.com/X11Libre/xf86-input-synaptics/archive/refs/tags/xlibre-xf86-input-synaptics-1.10.0.2.tar.gz
   sha256sums:
-    - b2dfcffb7aafada79bfd28dccfbb1e25ff93a1500ccb4b71e995b8fbcd511fe8
+    - 3e6bc8453f5f957074db28b12e4826ef65ab017e0dd5e34a29d57692ce0c7fe5
 pkgname:
   - name: xlibre-xf86-input-synaptics
 # generated with artixpkg 0.36.4-1-any
