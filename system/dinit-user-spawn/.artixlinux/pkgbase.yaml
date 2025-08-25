@@ -18,9 +18,9 @@ repos:
     packages: []
     debug: []
   system:
-    version: 1.0.0-9
+    version: 1.0.0-11
     packages:
-      - dinit-user-spawn-1.0.0-9-x86_64.pkg.tar.zst
+      - dinit-user-spawn-1.0.0-11-x86_64.pkg.tar.zst
     debug: []
   world-goblins:
     version: null
