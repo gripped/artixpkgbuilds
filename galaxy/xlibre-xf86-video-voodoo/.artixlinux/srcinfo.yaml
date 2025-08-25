@@ -1,10 +1,10 @@
 ---
-version: 1.2.6.1-9
+version: 1.2.6.2-1
 pkgbase:
   name: xlibre-xf86-video-voodoo
   pkgdesc: XLibre fork of X.Org 3dfx Voodoo1/Voodoo2 2D video driver
-  pkgver: 1.2.6.1
-  pkgrel: 9
+  pkgver: 1.2.6.2
+  pkgrel: 1
   url: https://github.com/X11Libre
   arch:
     - x86_64
@@ -25,9 +25,9 @@ pkgbase:
     - X-ABI-VIDEODRV_VERSION<28
     - X-ABI-VIDEODRV_VERSION>=29
   source:
-    - https://codeload.github.com/X11Libre/xf86-video-voodoo/tar.gz/refs/tags/xlibre-xf86-video-voodoo-1.2.6.1
+    - https://github.com/X11Libre/xf86-video-voodoo/archive/refs/tags/xlibre-xf86-video-voodoo-1.2.6.2.tar.gz
   sha256sums:
-    - 46a90d6f62820cec75757b0d9ca1e99a3479c33af27079f3e64ebd7471a0933e
+    - acdea470f57d33c27a4b1bbb18568a950ac344230e5a9a2ee57ad99f09acc97a
 pkgname:
   - name: xlibre-xf86-video-voodoo
 # generated with artixpkg 0.36.4-1-any
