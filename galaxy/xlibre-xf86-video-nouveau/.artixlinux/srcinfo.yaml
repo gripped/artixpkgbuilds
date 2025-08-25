@@ -1,10 +1,10 @@
 ---
-version: 1.0.18.1-9
+version: 1.0.18.2-1
 pkgbase:
   name: xlibre-xf86-video-nouveau
   pkgdesc: XLibre fork of X.Org Open Source 3D acceleration driver for nVidia cards
-  pkgver: 1.0.18.1
-  pkgrel: 9
+  pkgver: 1.0.18.2
+  pkgrel: 1
   url: https://github.com/X11Libre
   arch:
     - x86_64
@@ -27,9 +27,9 @@ pkgbase:
     - X-ABI-VIDEODRV_VERSION<28
     - X-ABI-VIDEODRV_VERSION>=29
   source:
-    - https://github.com/X11Libre/xf86-video-nouveau/archive/refs/tags/xlibre-xf86-video-nouveau-1.0.18.1.tar.gz
+    - https://github.com/X11Libre/xf86-video-nouveau/archive/refs/tags/xlibre-xf86-video-nouveau-1.0.18.2.tar.gz
   sha256sums:
-    - 5db8a77b4e24af7d74f2e08b6eb27959230b210cf2baf486c43f1defc0406611
+    - d77755cf251750630723e03a9c6426a26cecf691364d66c2533eb9119d49f069
 pkgname:
   - name: xlibre-xf86-video-nouveau
 # generated with artixpkg 0.36.4-1-any
