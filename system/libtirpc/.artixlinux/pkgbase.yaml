@@ -17,9 +17,9 @@ repos:
     packages: []
     debug: []
   system:
-    version: 1.3.6-2
+    version: 1.3.7-1
     packages:
-      - libtirpc-1.3.6-2-x86_64.pkg.tar.zst
+      - libtirpc-1.3.7-1-x86_64.pkg.tar.zst
     debug: []
   world-goblins:
     version: null
