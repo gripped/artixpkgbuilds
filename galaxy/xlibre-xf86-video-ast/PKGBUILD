@@ -3,15 +3,14 @@
 pkgname=xlibre-xf86-video-ast
 _pkgname=xf86-video-ast
 pkgver=1.2.0.1
-pkgrel=9
+pkgrel=9.1
 pkgdesc="XLibre fork of X.Org aspeed video driver"
 arch=('x86_64')
 url="https://github.com/X11Libre"
 license=('MIT')
 depends=('glibc')
 makedepends=('xlibre-xserver-devel' 'udev' 'X-ABI-VIDEODRV_VERSION=28.0')
-conflicts=(${_pkgname} 'X-ABI-VIDEODRV_VERSION<28' 'X-ABI-VIDEODRV_VERSION>=29')
-provides=(${_pkgname})
+conflicts=('X-ABI-VIDEODRV_VERSION<28' 'X-ABI-VIDEODRV_VERSION>=29')
 groups=('xlibre-drivers')
 source=("${url}/${_pkgname}/archive/refs/tags/${pkgname}-${pkgver}.tar.gz")
 
