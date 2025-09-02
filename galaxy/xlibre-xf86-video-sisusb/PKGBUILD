@@ -3,15 +3,14 @@
 pkgname=xlibre-xf86-video-sisusb
 _pkgname=xf86-video-sisusb
 pkgver=0.9.7.2
-pkgrel=1
+pkgrel=1.1
 pkgdesc="XLibre fork of X.org SiS USB video driver"
 arch=(x86_64)
 url="https://github.com/X11Libre"
 license=('BSD-3-Clause')
 depends=('glibc')
 makedepends=('xlibre-xserver-devel' 'X-ABI-VIDEODRV_VERSION=28.0')
-conflicts=(${_pkgname} 'xorg-server<21.1.1' 'X-ABI-VIDEODRV_VERSION<28' 'X-ABI-VIDEODRV_VERSION>=29')
-provides=(${_pkgname})
+conflicts=('xorg-server<21.1.1' 'X-ABI-VIDEODRV_VERSION<28' 'X-ABI-VIDEODRV_VERSION>=29')
 source=("${url}/${_pkgname}/archive/refs/tags/${pkgname}-${pkgver}.tar.gz")
 groups=('xlibre-drivers')
 
