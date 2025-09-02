@@ -3,15 +3,13 @@
 pkgname=xlibre-xf86-input-evdev
 _pkgname=xf86-input-evdev
 pkgver=2.11.0.2
-pkgrel=1
+pkgrel=1.1
 pkgdesc="XLibre fork of X.Org evdev input driver"
 arch=(x86_64)
 url="https://github.com/X11Libre"
 license=('HPND-sell-variant AND MIT')
 depends=('xlibre-xserver' 'libudev' 'mtdev' 'libevdev' 'glibc')
 makedepends=('xlibre-xserver-devel' 'X-ABI-XINPUT_VERSION=26.0' 'xorgproto')
-conflicts=(${_pkgname})
-provides=(${_pkgname})
 groups=('xlibre-drivers')
 source=("${url}/${_pkgname}/archive/refs/tags/${pkgname}-${pkgver}.tar.gz")
 
