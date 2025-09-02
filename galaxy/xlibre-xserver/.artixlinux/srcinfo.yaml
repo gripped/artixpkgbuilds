@@ -1,9 +1,9 @@
 ---
-version: 25.0.0.11-1
+version: 25.0.0.11-1.2
 pkgbase:
   name: xlibre-xserver
   pkgver: 25.0.0.11
-  pkgrel: 1
+  pkgrel: 1.2
   url: https://github.com/X11Libre/xserver
   arch:
     - x86_64
@@ -88,12 +88,16 @@ pkgname:
       - libdrm
       - libxshmfence
       - libxcvt
+    optdepends:
+      - '12to11: Tool for running Wayland applications on XLibre'
+      - 'kwin-x11-improved: kwin-x11 with ports from kwin-wayland, bug fixes, and maybe other improvements, for XLibre'
     provides:
       - xorg-server
       - X-ABI-VIDEODRV_VERSION=28.0
       - X-ABI-XINPUT_VERSION=26.0
       - X-ABI-EXTENSION_VERSION=11.0
       - x-server
+      - x11win-server
     conflicts:
       - xorg-server
       - nvidia-utils<=331.20
@@ -197,4 +201,4 @@ pkgname:
       - xorg-server-devel
     conflicts:
       - xorg-server-devel
-# generated with artixpkg 0.36.4-1-any
+# generated with artixpkg 0.37.4-1-any
