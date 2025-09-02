@@ -3,15 +3,14 @@
 pkgname=xlibre-xf86-input-void
 _pkgname=xf86-input-void
 pkgver=1.4.2.2
-pkgrel=1
+pkgrel=1.1
 pkgdesc="XLibre fork of X.Org void input driver"
 arch=(x86_64)
 license=('custom')
 url="https://github.com/X11Libre"
 depends=('glibc')
 makedepends=('xlibre-xserver-devel' 'X-ABI-XINPUT_VERSION=26.0' 'xorgproto')
-conflicts=(${_pkgname} 'X-ABI-XINPUT_VERSION<26' 'X-ABI-XINPUT_VERSION>=27')
-provides=(${_pkgname})
+conflicts=('X-ABI-XINPUT_VERSION<26' 'X-ABI-XINPUT_VERSION>=27')
 source=("${url}/${_pkgname}/archive/refs/tags/${pkgname}-${pkgver}.tar.gz")
 groups=('xlibre-drivers')
 
