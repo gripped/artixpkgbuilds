@@ -1,10 +1,10 @@
 ---
-version: 23.0.0.4-9
+version: 23.0.0.4-9.1
 pkgbase:
   name: xlibre-xf86-video-amdgpu
   pkgdesc: XLibre fork of X.Org amdgpu video driver
   pkgver: 23.0.0.4
-  pkgrel: 9
+  pkgrel: 9.1
   url: https://github.com/X11Libre
   arch:
     - x86_64
@@ -21,10 +21,7 @@ pkgbase:
     - mesa
     - libdrm
     - glibc
-  provides:
-    - xf86-video-amdgpu
   conflicts:
-    - xf86-video-amdgpu
     - X-ABI-VIDEODRV_VERSION<28
     - X-ABI-VIDEODRV_VERSION>=29
   source:
