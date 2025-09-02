@@ -1,10 +1,10 @@
 ---
-version: 1.2.3-1.1
+version: 1.2.3-1.5
 pkgbase:
   name: xf86-input-wacom
   pkgdesc: X.Org Wacom tablet driver
   pkgver: 1.2.3
-  pkgrel: 1.1
+  pkgrel: 1.5
   url: https://github.com/linuxwacom/xf86-input-wacom
   arch:
     - x86_64
@@ -27,6 +27,8 @@ pkgbase:
     - libudev
     - libx11
     - glibc
+  provides:
+    - x11win-input-wacom
   conflicts:
     - xorg-server<21.1.1
     - X-ABI-XINPUT_VERSION<24
