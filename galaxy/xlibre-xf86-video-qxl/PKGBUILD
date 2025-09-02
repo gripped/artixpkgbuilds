@@ -3,7 +3,7 @@
 pkgname=xlibre-xf86-video-qxl
 _pkgname=xf86-video-qxl
 pkgver=0.1.6.2
-pkgrel=1
+pkgrel=1.1
 pkgdesc='XLibre fork of X.Org X11 qxl video driver'
 arch=('x86_64')
 url="https://github.com/X11Libre"
@@ -13,8 +13,7 @@ depends=('spice' 'libudev' 'libxfont2' 'glibc')
 optdepends=('python: for Xspice')
 makedepends=('xlibre-xserver-devel' 'X-ABI-VIDEODRV_VERSION=28.0' 'spice-protocol'
              'xorgproto' 'libcacard')
-conflicts=(${_pkgname} 'X-ABI-VIDEODRV_VERSION<28' 'X-ABI-VIDEODRV_VERSION>=29')
-provides=(${_pkgname})
+conflicts=('X-ABI-VIDEODRV_VERSION<28' 'X-ABI-VIDEODRV_VERSION>=29')
 source=("${url}/${_pkgname}/archive/refs/tags/${pkgname}-${pkgver}.tar.gz")
 
 build() {
