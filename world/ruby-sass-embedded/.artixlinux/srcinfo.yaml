@@ -1,10 +1,10 @@
 ---
-version: 1.90.0-1
+version: 1.90.0-1.1
 pkgbase:
   name: ruby-sass-embedded
   pkgdesc: Embedded Sass Host for Ruby
   pkgver: 1.90.0
-  pkgrel: 1
+  pkgrel: 1.1
   url: https://github.com/sass-contrib/sass-embedded-host-ruby
   arch:
     - any
@@ -30,4 +30,4 @@ pkgbase:
     - 400bf05b863d1e29245c48a211b524b12ec72e0f11ee65cca2e5a5fc052ea042
 pkgname:
   - name: ruby-sass-embedded
-# generated with artixpkg 0.36.4-1-any
+# generated with artixpkg 0.37.4-1-any
