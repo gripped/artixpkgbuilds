@@ -53,8 +53,8 @@ repos:
     packages: []
     debug: []
   galaxy:
-    version: 4.2.0-1
+    version: 5.0.0-1
     packages:
-      - certbot-dns-gehirn-4.2.0-1-any.pkg.tar.zst
+      - certbot-dns-gehirn-5.0.0-1-any.pkg.tar.zst
     debug: []
 team: galaxy
