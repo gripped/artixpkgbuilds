@@ -53,8 +53,8 @@ repos:
     packages: []
     debug: []
   galaxy:
-    version: 3.4.0-1
+    version: 3.4.1-1
     packages:
-      - pysolfc-3.4.0-1-any.pkg.tar.zst
+      - pysolfc-3.4.1-1-any.pkg.tar.zst
     debug: []
 team: galaxy
