@@ -3,14 +3,15 @@
 pkgname=xlibre-xf86-video-vmware
 _pkgname=xf86-video-vmware
 pkgver=13.4.0.2
-pkgrel=1.1
+pkgrel=1.3
 pkgdesc="XLibre fork of X.org vmware video driver"
 arch=(x86_64)
 url="https://github.com/X11Libre"
 license=('MIT AND X11')
 depends=('mesa' 'libudev' 'libxext' 'libx11' 'libdrm' 'glibc')
 makedepends=('xlibre-xserver-devel' 'X-ABI-VIDEODRV_VERSION=28.0')
-conflicts=('xorg-server<21.1.1' 'X-ABI-VIDEODRV_VERSION<25' 'X-ABI-VIDEODRV_VERSION>=29')
+conflicts=('xorg-server<21.1.1' 'X-ABI-VIDEODRV_VERSION<28' 'X-ABI-VIDEODRV_VERSION>=29')
+provides=('xf86-video-vmware')   # for virtualbox-guest-utils / nous
 groups=('xlibre-drivers')
 source=("${url}/${_pkgname}/archive/refs/tags/${pkgname}-${pkgver}.tar.gz")
 options=('!emptydirs')
