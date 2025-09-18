@@ -17,9 +17,9 @@ repos:
     packages: []
     debug: []
   system:
-    version: 10.0p1-4
+    version: 10.0p1-5
     packages:
-      - openssh-10.0p1-4-x86_64.pkg.tar.zst
+      - openssh-10.0p1-5-x86_64.pkg.tar.zst
     debug: []
   world-goblins:
     version: null
