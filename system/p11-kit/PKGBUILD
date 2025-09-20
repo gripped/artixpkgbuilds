@@ -7,7 +7,7 @@ pkgname=(
   libp11-kit
   p11-kit-docs
 )
-pkgver=0.25.6
+pkgver=0.25.9
 pkgrel=1
 pkgdesc="Loads and enumerates PKCS#11 modules"
 url="https://p11-glue.freedesktop.org"
@@ -29,10 +29,11 @@ checkdepends=(
   gnutls
 )
 source=(
-  "git+https://github.com/p11-glue/p11-kit?signed#tag=$pkgver"
+  # https://github.com/p11-glue/p11-kit/issues/721
+  "git+https://github.com/p11-glue/p11-kit#tag=$pkgver"
   git+https://github.com/p11-glue/pkcs11-json
 )
-b2sums=('ef27c6dd2cd60881b185e1d05a46a9799cda8ebb86407ae9264d7173b2b686c757de91e3463babfeda5307adcb452d7e67e22b5c1a8df1613a5e176d0a2ee913'
+b2sums=('02475cbc1edfcb75b3ebd8cc9a519f44dc4ebcf6fd8828238a7d45306459a21e0dd2cdcf82c17d58695641e0510166342ba20e592de555c7dd9f7bc5c585199b'
         'SKIP')
 validpgpkeys=(
   C0F67099B808FB063E2C81117BFB1108D92765AF  # Stef Walter <stef@thewalter.net>
@@ -42,9 +43,6 @@ validpgpkeys=(
 
 prepare() {
   cd p11-kit
-
-  # Install systemd unit files again
-  git cherry-pick -n 93ba10fd8c7764dd253105c9ae927dcaae406843
 
   git submodule init
   git submodule set-url subprojects/pkcs11-json "$srcdir/pkcs11-json"
