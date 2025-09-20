@@ -1,11 +1,11 @@
 ---
 actions:
   addRepo: lib32
-  removeRepo: null
-  triggersBuild: true
+  removeRepo: lib32-gremlins
+  triggersBuild: false
   triggersRebuild: false
   triggersRepoAdd: true
-  triggersRepoRemove: false
+  triggersRepoRemove: true
   triggersNoCheck: false
 repos:
   system-goblins:
@@ -41,9 +41,9 @@ repos:
     packages: []
     debug: []
   lib32:
-    version: 2.14.6-1
+    version: 2.15.0-1
     packages:
-      - lib32-libxml2-2.14.6-1-x86_64.pkg.tar.zst
+      - lib32-libxml2-2.15.0-1-x86_64.pkg.tar.zst
     debug: []
   galaxy-goblins:
     version: null
