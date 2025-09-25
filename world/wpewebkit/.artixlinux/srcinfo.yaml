@@ -1,9 +1,9 @@
 ---
-version: 2.48.6-1
+version: 2.50.0-1
 pkgbase:
   name: wpewebkit
   pkgdesc: Embeddable web content engine
-  pkgver: 2.48.6
+  pkgver: 2.50.0
   pkgrel: 1
   url: https://wpewebkit.org
   arch:
@@ -91,16 +91,16 @@ pkgbase:
     - xdg-dbus-proxy
     - zlib
   source:
-    - https://wpewebkit.org/releases/wpewebkit-2.48.6.tar.xz
-    - https://wpewebkit.org/releases/wpewebkit-2.48.6.tar.xz.asc
+    - https://wpewebkit.org/releases/wpewebkit-2.50.0.tar.xz
+    - https://wpewebkit.org/releases/wpewebkit-2.50.0.tar.xz.asc
   validpgpkeys:
     - 5AA3BC334FD7E3369E7C77B291C559DBE4C9123B
     - 013A0127AC9C65B34FFA62526C1009B693975393
   sha256sums:
-    - e29b76002c5fb9c9883586dddfa9957da1782b01af66decb10669e6f2b2142aa
+    - a9af62c5e18551b7386b7db864e8ba8156f219b8e6c639934bf6f3a567969922
     - SKIP
   b2sums:
-    - 03e9e56a521fe329bb879941c9842f6c0cbf2e961906e39c0b9625a3815d44a7f73409429d32de0c3f2646788276453421d8a218324a4e058e12884c4671e4d5
+    - 3447d4800c46164a7e2045fa9a87b67da4cf05f8b7a10af44144cc90e49fd2343b14a268bd12fe1895c19a6aea25a34ab51fe625d05e796fd5a1b6636e0499a8
     - SKIP
 pkgname:
   - name: wpewebkit
