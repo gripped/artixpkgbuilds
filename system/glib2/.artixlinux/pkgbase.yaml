@@ -17,11 +17,11 @@ repos:
     packages: []
     debug: []
   system:
-    version: 2.84.4-2
+    version: 2.86.0-2
     packages:
-      - glib2-2.84.4-2-x86_64.pkg.tar.zst
-      - glib2-devel-2.84.4-2-x86_64.pkg.tar.zst
-      - glib2-docs-2.84.4-2-x86_64.pkg.tar.zst
+      - glib2-2.86.0-2-x86_64.pkg.tar.zst
+      - glib2-devel-2.86.0-2-x86_64.pkg.tar.zst
+      - glib2-docs-2.86.0-2-x86_64.pkg.tar.zst
     debug: []
   world-goblins:
     version: null
