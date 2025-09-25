@@ -46,16 +46,15 @@ repos:
     packages: []
     debug: []
   galaxy-goblins:
-    version: 4.20.4-2
-    packages:
-      - libxfce4windowing-4.20.4-2-x86_64.pkg.tar.zst
+    version: null
+    packages: []
     debug: []
   galaxy-gremlins:
     version: null
     packages: []
     debug: []
   galaxy:
-    version: 4.20.4-1
+    version: 4.20.4-2
     packages:
-      - libxfce4windowing-4.20.4-1-x86_64.pkg.tar.zst
+      - libxfce4windowing-4.20.4-2-x86_64.pkg.tar.zst
     debug: []
