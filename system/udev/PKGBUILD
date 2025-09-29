@@ -5,14 +5,21 @@
 
 _pkgbase=systemd
 
-_alpm=2.2
-_tag='257.9'
+_alpm=2.4.4
+_tag='258'
 
 pkgbase=udev
-pkgname=('udev' 'libudev' 'esysusers' 'etmpfiles')
+pkgname=(
+    'udev'
+    'libudev'
+    'esysusers'
+    'etmpfiles'
+    'egummiboot'
+    'eukify'
+)
 pkgdesc='Userspace device file manager'
 pkgver="${_tag/[-~]/}"
-pkgrel=1
+pkgrel=6
 arch=('x86_64')
 url='https://www.github.com/systemd/systemd'
 license=(
@@ -39,6 +46,8 @@ makedepends=(
     'python-jinja'
     'rsync'
     'bash-completion'
+    'python-pyelftools'
+    'python-pefile'
 )
 validpgpkeys=('63CDA1E5D3FC22B998D20DD6327F26951A015CC4'  # Lennart Poettering <lennart@poettering.net>
               'A9EA9081724FFAE0484C35A1A81CEA22BC8C7E2E'  # Luca Boccassi <luca.boccassi@gmail.com>
@@ -48,13 +57,28 @@ source=("git+https://github.com/systemd/systemd#tag=v${_tag}?signed"
         "git+https://gitea.artixlinux.org/artix/alpm-hooks.git#tag=${_alpm}"
         0001-Use-Arch-Linux-device-access-groups.patch
         0001-artix-standalone-install.patch
+        0001-artix-boot-standalone.patch
+        artix.conf
+        loader.conf
 )
-sha512sums=('27daa6035ef853ec802f8423c9d8d90810c2b0f71af2ec7d21d468905eacc109497e2186d15834856c006fea71cf9b96278d26a20e48bb212b7c049eac9fdd08'
-            '3b0c46459666137ff164bedb4b64c30a9713e8e236cf2675afca413ee25a1f2c0b9f0a65eab798e51fda70be84ab1bc84a3e3b137b776bf64133f2007e56ae84'
-            '78065bde708118b7d6e4ed492e096c763e4679a1c54bd98750d5d609d8cc2f1373023f308880f14fc923ae7f9fea34824917ef884c0f996b1f43d08ef022c0fb'
-            'c2d1b85f3cd5948333edca36b590dad19d5045424f0145b64fe9abdf6fe7e2c3a0fca6c1901e9bfaa26b4e6fc98ff0ec8d9c825845f778fe77d681075cc47eb2')
+sha512sums=('4703b54464ae42acb9e8b2a123f9e76cbe94b03c416292a95b9a8eb282eb2908e0499294b8c7f9bbb7946147e9379db7b277d1c277a08ee00f92f8d0eff33330'
+            '1c2cfce7051107172d1d1e75890ef9e4500c1b4516193b36d01e18fc4ee8dcb5324ee20b03b0890eecea674921cda55d5a455b49505f57991226e3a22be94417'
+            'beb15210d8afe69e1e47c99a81da5967428ccc64ece85b8a843333cb741eda061ae7a91a79cec8a1136a624e93e63140013986499589bf10edcc52d865729377'
+            '1a000d32abe0ae275ee1fad8fd511de7d6683f5bf163859f9856f3f508b2db593d3a49509bfbd02e44f78785c453ae235a86ddffebfa1d40f7e299734da3378f'
+            'e8acc127c0468019ca163edb2119e43ac0b0b539350cbdbb605d657dd1519203af89799044ed4cc0ee36158e305a13483047f16975e1b09f42fc036ec7115313'
+            '982341dc60bcd15c956eddd683e0b42b63c93d9521acc204bd1ad38a7d1183ae91e8e3074a53294b29e5058a17a8b6d257156dd0bfc21facdba1c035fa64f2c5'
+            'ff87b29ecb95d88c9048a74aadb84f8971fd1162e18097f74d7d2cfd40e8de0a42580f5a7fd9e393cfec402990b7390908ccaf24bba8bb8fb61653111a80ae58')
 
 _backports=(
+    # fix-link-udev-shared-option
+    '9736f634c8b61343be966114ce1c9eddaf0fa742'
+    # basic/efivars: read EFI variables using one read(), not two #38864
+    # https://github.com/systemd/systemd/pull/38864
+    '9db9d6806e398465a6366dfc5bdde2e24338ac29~1..4125e0c3db9fd8a2102781674db7aae263714aec'
+    # udev,login: update ACL on static device nodes #39071
+    '41c4a69653f7ca48a449de172e73acd43eda81a4~1..2c762d90cfe7d67f10af87986ed2e6f0005eabfb'
+    # measure: strip tpm 1.x remnants and make GetActivePcrBanks() work #39089
+    '496489c2a70b1675af679c1d33cee035fe7c9aff~1..b388fa20c735add38080a746fd831273820c93ac'
 )
 
 _reverts=(
@@ -77,6 +101,7 @@ prepare() {
     patch -Np1 -i ../0001-Use-Arch-Linux-device-access-groups.patch
 
     patch -Np1 -i ../0001-artix-standalone-install.patch
+    patch -Np1 -i ../0001-artix-boot-standalone.patch
 }
 
 build() {
@@ -109,6 +134,8 @@ build() {
         -Dtests=true
 
         -Dlink-udev-shared=false
+        -Dlink-boot-shared=false
+        -Dlink-kernel-install-shared=false
 
         -Ddefault-keymap='us'
 
@@ -118,7 +145,11 @@ build() {
 
         -Ddns-servers=''
         -Dntp-servers=''
-        -Defi=false
+        -Defi=true
+
+        -Dbootloader=enabled
+        -Dkernel-install=true
+        -Dukify=enabled
 
         -Dsysvinit-path=
         -Dsysvrcnd-path=
@@ -131,12 +162,10 @@ build() {
 
         -Dadm-group=false
         -Danalyze=false
-
         -Dapparmor=disabled
         -Daudit=disabled
         -Dbacklight=false
         -Dbinfmt=false
-        -Dbootloader=disabled
         -Dbzip2=disabled
         -Dcoredump=false
         -Ddbus=disabled
@@ -152,7 +181,6 @@ build() {
         -Dima=false
         -Dinitrd=false
         -Dfirstboot=false
-        -Dkernel-install=false
         -Dldconfig=false
         -Dlibcryptsetup=disabled
         -Dlibcurl=disabled
@@ -166,7 +194,6 @@ build() {
         -Dmachined=false
         -Dmicrohttpd=disabled
         -Dnetworkd=false
-        -Dnscd=false
         -Dnss-myhostname=false
         -Dnss-resolve=disabled
         -Dnss-systemd=false
@@ -201,7 +228,6 @@ build() {
         -Dxz=disabled
         -Dzlib=disabled
         -Dzstd=disabled
-
         -Dbpf-framework=disabled
         -Dpasswdqc=disabled
         -Dselinux=disabled
@@ -213,11 +239,19 @@ build() {
         -Dhomed=disabled
         -Dremote=disabled
         -Dnss-mymachines=disabled
-        -Dukify=disabled
         -Dtpm2=disabled
+        -Dshellprofiledir=no
     )
 
     artix-meson "$_pkgbase" build "${_meson_options[@]}"
+
+    local _efi_arch
+
+    case $CARCH in
+        x86_64*) _efi_arch=x64 ;;
+        i686) _efi_arch=ia32 ;;
+    esac
+
 
     _targets+=(
         udev:shared_library
@@ -238,6 +272,23 @@ build() {
         man/{sysusers,tmpfiles}.d.5
         man/systemd-{sysusers,tmpfiles}.8
         factory/templates/{locale,vconsole}.conf
+
+        bootctl
+        man/bootctl.1
+        src/boot/eboot${_efi_arch}.efi
+        src/boot/linux${_efi_arch}.efi.stub
+        src/boot/addon${_efi_arch}.efi.stub
+
+        ebless-boot{,-generator}
+        man/systemd-{boot.7,bless-boot-generator.8}
+
+        kernel-install
+        src/kernel-install/90-loaderentry.install
+        man/kernel-install.8
+
+        ukify
+        src/kernel-install/60-ukify.install
+        man/ukify.1
 
         systemd-detect-virt
         systemd-runtest.env
@@ -302,7 +353,10 @@ _inst_man() {
     install -d "${pkgdir}"/usr/share/man/man"$y"
     case "$x" in
         *sysusers*|*tmpfiles*) man=${x/systemd-/e} ;;
-        *) man=${x/systemd/udev} ;;
+        *systemd-hwdb*) man=${x/systemd/udev} ;;
+        *systemd-boot*) man=${x/systemd-/egummi} ;;
+        *systemd-bless-boot-generator*) man=${x/systemd-/e} ;;
+        *) man=${x/systemd-/e} ;;
     esac
     install -vm644 build/man/"$x" "${pkgdir}"/usr/share/man/man"$y/$man"
 }
@@ -322,7 +376,7 @@ package_udev() {
     backup=(etc/udev/iocost.conf
             etc/udev/udev.conf)
 
-    meson install -C build --destdir "$pkgdir" --no-rebuild --tags udev,udev-devel
+    meson install -C build --destdir "$pkgdir" --no-rebuild --tags udev,udev-devel,hwdb
 
     for m in udev.conf.5 iocost.conf.5 udev.7 udevadm.8 systemd-hwdb.8; do
         _inst_man "$m"
@@ -374,4 +428,44 @@ package_etmpfiles() {
 
     # pacman hooks
     make -C alpm-hooks DESTDIR="${pkgdir}" install_tmpfiles
+}
+
+package_egummiboot() {
+    pkgdesc='the gummiboot bootloader'
+    provides=('gummiboot')
+    depends+=(
+        'util-linux' 'libblkid.so' 'libmount.so'
+        'libcap.so'
+        'sh'
+    )
+
+    meson install -C build --destdir "$pkgdir" --no-rebuild --tags eboot,kernel-install,ebless
+
+    # add example bootctl configuration
+    install -D -m0644 artix.conf "$pkgdir"/usr/share/egummiboot/bootctl/artix.conf
+    install -D -m0644 loader.conf "$pkgdir"/usr/share/egummiboot/bootctl/loader.conf
+    # install -D -m0644 splash-artix.bmp "$pkgdir"/usr/share/egummiboot/bootctl/splash-artix.bmp
+
+    for m in bootctl.1 kernel-install.8 systemd-boot.7 systemd-bless-boot-generator.8; do
+        _inst_man "$m"
+    done
+}
+
+package_eukify() {
+    pkgdesc='Combine kernel and initrd into a signed Unified Kernel Image'
+    provides=('ukify')
+    depends+=(
+        'binutils'
+        'python'
+        'python-cryptography'
+        'python-pefile'
+    )
+    optdepends=(
+        'python-pillow: Show the size of splash image'
+        'sbsigntools: Sign the embedded kernel'
+    )
+
+    meson install -C build --destdir "$pkgdir" --no-rebuild --tags eukify
+
+    _inst_man "ukify.1"
 }
