@@ -1,10 +1,10 @@
 ---
-version: 5.15.19-2
+version: 5.15.19-3
 pkgbase:
   name: qt5-webengine
   pkgdesc: Provides support for web applications using the Chromium browser project
   pkgver: 5.15.19
-  pkgrel: 2
+  pkgrel: 3
   url: https://www.qt.io
   arch:
     - x86_64
@@ -48,8 +48,6 @@ pkgbase:
   source:
     - kde-qtwebengine::git+https://code.qt.io/qt/qtwebengine.git#tag=v5.15.19-lts
     - git+https://code.qt.io/qt/qtwebengine-chromium.git
-    - qt5-webengine-ffmpeg5.patch
-    - qt5-webengine-ffmpeg7.patch
     - qt5-webengine-pipewire-0.3.patch
     - qt5-webengine-icu-75.patch
     - qt5-webengine-ninja-1.12.patch
@@ -58,8 +56,6 @@ pkgbase:
   sha256sums:
     - 10ae73fd623eff84af2921ea2c83c723d9a847e23abbc8d862d0dc346382ef9b
     - SKIP
-    - c50d3019626183e753c53a997dc8a55938847543aa3178d4c51f377be741c693
-    - 82a56cfc3e278617e11093078abe672a73c6fdaad98a2c8604ad8f22bc879ce5
     - 5e3a3c4711d964d5152a04059a2b5c1d14bb13dd29bce370120f60e85b476b6f
     - 7cac28ba784d24b4abf6414079548ada165343af507ecd8e23cbe7e4f63ae52f
     - 6672741b64d896dc555c8ee42ca2329c4f20d5f406095a69fe72da44b3a142f4
@@ -67,4 +63,4 @@ pkgbase:
     - ac87ec55ee5cbcf2d520e1ea433d041c0bf754271a17f859edbb9976f192ce3f
 pkgname:
   - name: qt5-webengine
-# generated with artixpkg 0.36.2-1-any
+# generated with artixpkg 0.37.4-1-any
