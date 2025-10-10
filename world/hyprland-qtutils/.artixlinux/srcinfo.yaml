@@ -1,10 +1,10 @@
 ---
-version: 0.1.5-3
+version: 0.1.5-4
 pkgbase:
   name: hyprland-qtutils
   pkgdesc: Qt/QML utility apps for Hyprland
   pkgver: 0.1.5
-  pkgrel: 3
+  pkgrel: 4
   url: https://github.com/hyprwm/hyprland-qtutils
   arch:
     - x86_64
@@ -21,11 +21,12 @@ pkgbase:
     - hyprland-qt-support
     - qt6-base
     - qt6-declarative
-    - qt6-wayland
   source:
     - https://github.com/hyprwm/hyprland-qtutils/archive/v0.1.5/hyprland-qtutils-0.1.5.tar.gz
+    - https://github.com/hyprwm/hyprland-qtutils/commit/5ffdfc13ed03df1dae5084468d935f0a3f2c9a4c.patch
   sha256sums:
     - c02e47c9f720c20a5adca1baebbcfee0db5d3d36ce9595779563a2e5d27bafca
+    - 8546391a1e6fa4655008dfd84253a54e58cc3d89f2e4395bbd1f83ab7576422e
 pkgname:
   - name: hyprland-qtutils
 # generated with artixpkg 0.37.4-1-any
