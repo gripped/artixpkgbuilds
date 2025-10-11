@@ -41,9 +41,9 @@ repos:
     packages: []
     debug: []
   lib32:
-    version: 3.116-1
+    version: 3.117-1
     packages:
-      - lib32-nss-3.116-1-x86_64.pkg.tar.zst
+      - lib32-nss-3.117-1-x86_64.pkg.tar.zst
     debug: []
   galaxy-goblins:
     version: null
