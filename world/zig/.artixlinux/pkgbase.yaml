@@ -1,6 +1,6 @@
 ---
 actions:
-  addRepo: world
+  addRepo: world-gremlins
   removeRepo: null
   triggersBuild: true
   triggersRebuild: false
@@ -21,12 +21,14 @@ repos:
     packages: []
     debug: []
   world-goblins:
-    version: null
-    packages: []
+    version: 0.15.2-2.1
+    packages:
+      - zig-0.15.2-2.1-x86_64.pkg.tar.zst
     debug: []
   world-gremlins:
-    version: null
-    packages: []
+    version: 0.15.2-2
+    packages:
+      - zig-0.15.2-2-x86_64.pkg.tar.zst
     debug: []
   world:
     version: 0.15.2-2
