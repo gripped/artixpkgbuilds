@@ -17,9 +17,9 @@ repos:
     packages: []
     debug: []
   system:
-    version: 2025.07.10-1
+    version: 2025.10.07-1
     packages:
-      - wireless-regdb-2025.07.10-1-any.pkg.tar.zst
+      - wireless-regdb-2025.10.07-1-any.pkg.tar.zst
     debug: []
   world-goblins:
     version: null
