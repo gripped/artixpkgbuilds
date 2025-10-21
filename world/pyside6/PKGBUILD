@@ -6,7 +6,7 @@ pkgname=(pyside6
          pyside6-tools
          shiboken6)
 pkgver=6.10.0
-pkgrel=1
+pkgrel=3
 arch=(x86_64)
 url='https://www.qt.io'
 license=(GPL-3.0-only
@@ -144,3 +144,4 @@ package_pyside6-tools() {
   echo "exec designer6 \$@" >> pyside6-designer
   install -Dm755 pyside6-designer -t "$pkgdir"/usr/bin
 }
+
