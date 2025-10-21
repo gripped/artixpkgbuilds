@@ -17,9 +17,9 @@ repos:
     packages: []
     debug: []
   system:
-    version: 2025.05.03-1
+    version: 2025.10.12-1
     packages:
-      - filesystem-2025.05.03-1-any.pkg.tar.zst
+      - filesystem-2025.10.12-1-any.pkg.tar.zst
     debug: []
   world-goblins:
     version: null
