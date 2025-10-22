@@ -41,10 +41,10 @@ repos:
     packages: []
     debug: []
   lib32:
-    version: 1:21.1.3-2
+    version: 1:21.1.4-1
     packages:
-      - lib32-llvm-1:21.1.3-2-x86_64.pkg.tar.zst
-      - lib32-llvm-libs-1:21.1.3-2-x86_64.pkg.tar.zst
+      - lib32-llvm-1:21.1.4-1-x86_64.pkg.tar.zst
+      - lib32-llvm-libs-1:21.1.4-1-x86_64.pkg.tar.zst
     debug: []
   galaxy-goblins:
     version: null
