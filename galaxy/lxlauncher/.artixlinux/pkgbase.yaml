@@ -53,8 +53,8 @@ repos:
     packages: []
     debug: []
   galaxy:
-    version: 0.2.8-2
+    version: 0.2.8-2.1
     packages:
-      - lxlauncher-0.2.8-2-x86_64.pkg.tar.zst
+      - lxlauncher-0.2.8-2.1-x86_64.pkg.tar.zst
     debug: []
 team: galaxy
