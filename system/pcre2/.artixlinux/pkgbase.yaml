@@ -17,9 +17,9 @@ repos:
     packages: []
     debug: []
   system:
-    version: 10.46-1
+    version: 10.47-1
     packages:
-      - pcre2-10.46-1-x86_64.pkg.tar.zst
+      - pcre2-10.47-1-x86_64.pkg.tar.zst
     debug: []
   world-goblins:
     version: null
