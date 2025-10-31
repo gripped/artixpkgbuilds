@@ -1,11 +1,11 @@
 ---
 team: galaxy
 actions:
-  addRepo: null
-  removeRepo: world-gremlins
+  addRepo: galaxy
+  removeRepo: galaxy-gremlins
   triggersBuild: false
   triggersRebuild: false
-  triggersRepoAdd: false
+  triggersRepoAdd: true
   triggersRepoRemove: true
   triggersNoCheck: false
 repos:
@@ -50,6 +50,10 @@ repos:
     packages: []
     debug: []
   galaxy-gremlins:
+    version: null
+    packages: []
+    debug: []
+  galaxy:
     version: 25.0.0.14-1
     packages:
       - xlibre-xserver-25.0.0.14-1-x86_64.pkg.tar.zst
@@ -58,14 +62,4 @@ repos:
       - xlibre-xserver-xnest-25.0.0.14-1-x86_64.pkg.tar.zst
       - xlibre-xserver-common-25.0.0.14-1-x86_64.pkg.tar.zst
       - xlibre-xserver-devel-25.0.0.14-1-x86_64.pkg.tar.zst
-    debug: []
-  galaxy:
-    version: 25.0.0.13-1
-    packages:
-      - xlibre-xserver-25.0.0.13-1-x86_64.pkg.tar.zst
-      - xlibre-xserver-xephyr-25.0.0.13-1-x86_64.pkg.tar.zst
-      - xlibre-xserver-xvfb-25.0.0.13-1-x86_64.pkg.tar.zst
-      - xlibre-xserver-xnest-25.0.0.13-1-x86_64.pkg.tar.zst
-      - xlibre-xserver-common-25.0.0.13-1-x86_64.pkg.tar.zst
-      - xlibre-xserver-devel-25.0.0.13-1-x86_64.pkg.tar.zst
     debug: []
