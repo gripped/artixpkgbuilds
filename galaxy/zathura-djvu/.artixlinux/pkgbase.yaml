@@ -1,11 +1,11 @@
 ---
 actions:
   addRepo: galaxy
-  removeRepo: null
-  triggersBuild: true
+  removeRepo: galaxy-gremlins
+  triggersBuild: false
   triggersRebuild: false
   triggersRepoAdd: true
-  triggersRepoRemove: false
+  triggersRepoRemove: true
   triggersNoCheck: false
 repos:
   system-goblins:
@@ -53,8 +53,8 @@ repos:
     packages: []
     debug: []
   galaxy:
-    version: 0.2.10-6
+    version: 0.2.11-1
     packages:
-      - zathura-djvu-0.2.10-6-x86_64.pkg.tar.zst
+      - zathura-djvu-0.2.11-1-x86_64.pkg.tar.zst
     debug: []
 team: galaxy
