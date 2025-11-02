@@ -41,9 +41,9 @@ repos:
     packages: []
     debug: []
   lib32:
-    version: 0.193-4
+    version: 0.194-1
     packages:
-      - lib32-libelf-0.193-4-x86_64.pkg.tar.zst
+      - lib32-libelf-0.194-1-x86_64.pkg.tar.zst
     debug: []
   galaxy-goblins:
     version: null
