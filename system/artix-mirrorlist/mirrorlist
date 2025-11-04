@@ -1,6 +1,6 @@
 ##
 ## Artix Linux repository mirrorlist
-## Generated on 2025-07-29
+## Generated on 2025-10-30
 ##
 
 # Artix mirrors
@@ -12,7 +12,6 @@
 Server = https://mirrors.rit.edu/artixlinux/$repo/os/$arch
 Server = https://ftp.crifo.org/artix/repos/$repo/os/$arch
 Server = https://ftp.sh.cvut.cz/artix-linux/$repo/os/$arch
-Server = http://ftp.ntua.gr/pub/linux/artix-linux/$repo/os/$arch
 Server = https://mirrors.dotsrc.org/artix-linux/repos/$repo/os/$arch
 
 ## Europe
@@ -38,7 +37,6 @@ Server = https://mirror3.artixlinux.org/repos/$repo/os/$arch
 Server = https://tools.sphnet.in/mirror/artix/$repo/os/$arch
 # Greece
 Server = https://ftp.cc.uoc.gr/mirrors/linux/artixlinux/$repo/os/$arch
-Server = http://ftp.ntua.gr/pub/linux/artix-linux/$repo/os/$arch
 # Poland
 Server = https://artix.sakamoto.pl/$repo/os/$arch
 # Romania
@@ -49,8 +47,9 @@ Server = https://mirror.infirium.ru/artixlinux/$repo/os/$arch
 Server = https://ftp.ludd.ltu.se/mirrors/artix/$repo/os/$arch
 # Switzerland
 Server = https://artix.kurdy.org/$repo/os/$arch
+# The Netherlands
+Server = https://artist.artixlinux.org/repos/$repo/os/$arch
 # United Kingdom
-Server = http://artist.artixlinux.org/repos/$repo/os/$arch
 Server = https://mirror.vinehost.net/artix-linux/$repo/os/$arch
 
 ## North America
