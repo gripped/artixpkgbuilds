@@ -53,8 +53,8 @@ repos:
     packages: []
     debug: []
   galaxy:
-    version: 4.20.3-1
+    version: 4.20.3-2
     packages:
-      - xfce4-session-4.20.3-1-x86_64.pkg.tar.zst
+      - xfce4-session-4.20.3-2-x86_64.pkg.tar.zst
     debug: []
 team: galaxy
