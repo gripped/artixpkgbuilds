@@ -1,0 +1,53 @@
+# Maintainer: artist for Artix Linux
+
+pkgname=cosmic-store
+pkgver=1.0.0.beta.5
+pkgrel=1.1
+pkgdesc='Cosmic App Store'
+arch=(x86_64)
+url=https://github.com/pop-os/cosmic-store
+license=(GPL-3.0-only)
+groups=(cosmic)
+depends=(
+  archlinux-appstream-data
+  cosmic-icon-theme
+  gcc-libs
+  glib2
+  glibc
+  libxkbcommon
+  openssl
+  packagekit
+  wayland
+)
+makedepends=(
+  cargo
+  flatpak
+  git
+  just
+  lld
+)
+optdepends=('packagekit: Native packages support')
+source=(
+  git+https://github.com/pop-os/cosmic-store.git#tag=epoch-${pkgver/.beta./-beta.}
+  cosmic-store-lto.patch
+)
+b2sums=('7913e89755aba696e53b1d2c2f6c3447da8859cc51190806b89a25c37e508ae1a02f41f997fa9ee29ef431cefb8a1963292c49929ef71141c5740ded97e71dd7'
+        'ed4089dd1ded4a87307c50f38af03ff3742bfc54053a668416f713c9b27eb591e608166ce14f2f50f8303aaf06533963fd821d00522b77e7f965827035a7ff11')
+
+prepare() {
+  cd cosmic-store
+  patch -Np1 -i ../cosmic-store-lto.patch
+  cargo fetch --locked
+}
+
+build() {
+  cd cosmic-store
+  RUSTFLAGS+=" -C link-arg=-fuse-ld=lld"
+  just build-release --frozen
+}
+
+package() {
+  cd cosmic-store
+  just rootdir="${pkgdir}" install
+}
+
