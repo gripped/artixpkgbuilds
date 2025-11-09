@@ -2,8 +2,8 @@
 
 pkgname=xlibre-xf86-video-vesa
 _pkgname=xf86-video-vesa
-pkgver=2.6.0.3
-pkgrel=1.1
+pkgver=2.6.0.4
+pkgrel=1
 pkgdesc="XLibre fork of X.Org vesa video driver"
 arch=(x86_64)
 license=('MIT')
@@ -31,4 +31,4 @@ package() {
   install -Dm644 "${srcdir}"/${_pkgname}-${pkgname}-${pkgver}/COPYING "${pkgdir}"/usr/share/licenses/${pkgname}/LICENSE
 }
 
-sha256sums=('7137c2bdd9e290aff83565d77b842a209b138776785c745cf7c0d10c9f25fe8f')
+sha256sums=('c87e821b2a89cb3c487c1306bf192c57f3dbb775f34044fc2e32b95fd9573fdd')
