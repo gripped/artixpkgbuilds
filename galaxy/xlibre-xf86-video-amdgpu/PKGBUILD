@@ -2,7 +2,7 @@
 
 pkgname=xlibre-xf86-video-amdgpu
 _pkgname=xf86-video-amdgpu
-pkgver=23.0.0.5
+pkgver=23.0.0.6
 pkgrel=1
 pkgdesc="XLibre fork of X.Org amdgpu video driver"
 arch=('x86_64')
@@ -37,5 +37,5 @@ package() {
   install -Dm644 "${srcdir}"/${_pkgname}-${pkgname}-${pkgver}/COPYING "${pkgdir}"/usr/share/licenses/${pkgname}/LICENSE
 }
 
-sha256sums=('a255bf446272a87907ea0a13274536dcc65898c223fa42aa9afd52007ad23209')
+sha256sums=('27c6cc0a8e024517ccf9c044b84fef70eb9a43c328c147ddeb2251e30a5af04c')
 

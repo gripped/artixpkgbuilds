@@ -1,9 +1,9 @@
 ---
-version: 23.0.0.5-1
+version: 23.0.0.6-1
 pkgbase:
   name: xlibre-xf86-video-amdgpu
   pkgdesc: XLibre fork of X.Org amdgpu video driver
-  pkgver: 23.0.0.5
+  pkgver: 23.0.0.6
   pkgrel: 1
   url: https://github.com/X11Libre
   arch:
@@ -25,9 +25,9 @@ pkgbase:
     - X-ABI-VIDEODRV_VERSION<28
     - X-ABI-VIDEODRV_VERSION>=29
   source:
-    - https://github.com/X11Libre/xf86-video-amdgpu/archive/refs/tags/xlibre-xf86-video-amdgpu-23.0.0.5.tar.gz
+    - https://github.com/X11Libre/xf86-video-amdgpu/archive/refs/tags/xlibre-xf86-video-amdgpu-23.0.0.6.tar.gz
   sha256sums:
-    - a255bf446272a87907ea0a13274536dcc65898c223fa42aa9afd52007ad23209
+    - 27c6cc0a8e024517ccf9c044b84fef70eb9a43c328c147ddeb2251e30a5af04c
 pkgname:
   - name: xlibre-xf86-video-amdgpu
 # generated with artixpkg 0.37.4-1-any
