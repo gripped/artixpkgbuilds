@@ -2,8 +2,8 @@
 
 pkgname=xlibre-xf86-input-wacom
 _pkgname=xf86-input-wacom
-pkgver=1.2.3.1
-pkgrel=9.4
+pkgver=1.2.3.2
+pkgrel=1
 pkgdesc="XLibre fork of X.Org Wacom tablet driver"
 arch=(x86_64)
 url="https://github.com/X11Libre"
@@ -15,14 +15,8 @@ makedepends=('xlibre-xserver-devel' 'X-ABI-XINPUT_VERSION=26.0' 'meson' 'gobject
 conflicts=("$_pkgname" 'xorg-server<21.1.1' 'X-ABI-XINPUT_VERSION<26' 'X-ABI-XINPUT_VERSION>=27')
 #provides=("$_pkgname")
 provides=("x11win-input-wacom")
-source=("${url}/${_pkgname}/archive/refs/tags/${pkgname}-${pkgver}.tar.gz"
-        aggregate.patch)
+source=("${url}/${_pkgname}/archive/refs/tags/${pkgname}-${pkgver}.tar.gz")
 groups=('xlibre-drivers')
-
-prepare() {
-  cd ${srcdir}/${_pkgname}-${pkgname}-${pkgver}
-  patch -Np1 -i ${srcdir}/aggregate.patch
-}
 
 build() {
   artix-meson ${_pkgname}-${pkgname}-${pkgver} build \
@@ -42,6 +36,5 @@ package() {
   rm -r ${pkgdir}/usr/lib/systemd
 }
 
-sha256sums=('961f7b229e79e585a85b59be395e54392c00a3766204de95af832d2fa59207ed'
-            '1fca9985ac7cee6ea27956839c38f1c2b6b2cefc6bf51747378d1f93f9504b1c')
+sha256sums=('8c1942cbf90ee80d6505d115bab27461680c623d7acddf6be931224ea8176c36')
 
