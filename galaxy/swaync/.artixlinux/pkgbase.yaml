@@ -2,11 +2,11 @@
 team: galaxy
 actions:
   addRepo: galaxy
-  removeRepo: null
-  triggersBuild: true
+  removeRepo: galaxy-gremlins
+  triggersBuild: false
   triggersRebuild: false
   triggersRepoAdd: true
-  triggersRepoRemove: false
+  triggersRepoRemove: true
   triggersNoCheck: false
 repos:
   system-goblins:
@@ -54,7 +54,7 @@ repos:
     packages: []
     debug: []
   galaxy:
-    version: 0.12.2-2
+    version: 0.12.3-1
     packages:
-      - swaync-0.12.2-2-x86_64.pkg.tar.zst
+      - swaync-0.12.3-1-x86_64.pkg.tar.zst
     debug: []
