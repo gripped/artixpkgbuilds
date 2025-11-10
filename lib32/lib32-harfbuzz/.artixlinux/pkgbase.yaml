@@ -1,11 +1,11 @@
 ---
 actions:
-  addRepo: lib32-goblins
-  removeRepo: null
-  triggersBuild: true
+  addRepo: lib32
+  removeRepo: lib32-gremlins
+  triggersBuild: false
   triggersRebuild: false
   triggersRepoAdd: true
-  triggersRepoRemove: false
+  triggersRepoRemove: true
   triggersNoCheck: false
 repos:
   system-goblins:
@@ -33,22 +33,19 @@ repos:
     packages: []
     debug: []
   lib32-goblins:
-    version: 12.1.0-1
-    packages:
-      - lib32-harfbuzz-12.1.0-1-x86_64.pkg.tar.zst
-      - lib32-harfbuzz-cairo-12.1.0-1-x86_64.pkg.tar.zst
-      - lib32-harfbuzz-icu-12.1.0-1-x86_64.pkg.tar.zst
+    version: null
+    packages: []
     debug: []
   lib32-gremlins:
     version: null
     packages: []
     debug: []
   lib32:
-    version: 12.1.0-1
+    version: 12.2.0-2
     packages:
-      - lib32-harfbuzz-12.1.0-1-x86_64.pkg.tar.zst
-      - lib32-harfbuzz-cairo-12.1.0-1-x86_64.pkg.tar.zst
-      - lib32-harfbuzz-icu-12.1.0-1-x86_64.pkg.tar.zst
+      - lib32-harfbuzz-12.2.0-2-x86_64.pkg.tar.zst
+      - lib32-harfbuzz-cairo-12.2.0-2-x86_64.pkg.tar.zst
+      - lib32-harfbuzz-icu-12.2.0-2-x86_64.pkg.tar.zst
     debug: []
   galaxy-goblins:
     version: null
