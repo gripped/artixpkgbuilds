@@ -17,10 +17,10 @@ repos:
     packages: []
     debug: []
   system:
-    version: 4.5.0-1
+    version: 4.5.1-1
     packages:
-      - libxcrypt-4.5.0-1-x86_64.pkg.tar.zst
-      - libxcrypt-compat-4.5.0-1-x86_64.pkg.tar.zst
+      - libxcrypt-4.5.1-1-x86_64.pkg.tar.zst
+      - libxcrypt-compat-4.5.1-1-x86_64.pkg.tar.zst
     debug: []
   world-goblins:
     version: null
