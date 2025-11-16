@@ -1,0 +1,39 @@
+---
+version: 1.6.4.2-1
+pkgbase:
+  name: xlibre-input-joystick
+  pkgdesc: XLibre fork of X.Org input driver that translates joystick input to mouse and keyboard events. (Do not use for games with native joystick support or XI2 applications. See manpage.)
+  pkgver: 1.6.4.2
+  pkgrel: 1
+  url: https://github.com/X11Libre
+  arch:
+    - x86_64
+  groups:
+    - xlibre-drivers
+  license:
+    - custom
+  makedepends:
+    - xlibre-xserver-devel
+    - X-ABI-XINPUT_VERSION=26.0
+    - xorgproto
+    - git
+  depends:
+    - glibc
+  provides:
+    - xlibre-xf86-input-joystick
+  conflicts:
+    - xlibre-xf86-input-joystick
+    - xorg-server<21.1.1
+    - X-ABI-XINPUT_VERSION<26
+    - X-ABI-XINPUT_VERSION>=27
+  replaces:
+    - xlibre-xf86-input-joystick
+  options:
+    - '!debug'
+  source:
+    - https://github.com/X11Libre/xf86-input-joystick/archive/refs/tags/xlibre-xf86-input-joystick-1.6.4.2.tar.gz
+  sha256sums:
+    - fdd994915e97fe51a521798af5bfdfbe3dd5d2f10048a65358617b4c347a5aa1
+pkgname:
+  - name: xlibre-input-joystick
+# generated with artixpkg 0.37.4-1-any
