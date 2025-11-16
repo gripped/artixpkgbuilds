@@ -1,0 +1,36 @@
+# Maintainer: artist for Artix Linux
+
+pkgname=xlibre-video-dummy
+_pkgname=xf86-video-dummy
+pkgver=0.4.1.2
+pkgrel=1.1
+pkgdesc="XLibre fork of X.Org dummy video driver"
+arch=(x86_64)
+url="https://github.com/X11Libre"
+license=('MIT AND X11')
+depends=('glibc')
+makedepends=('xlibre-xserver-devel' 'X-ABI-VIDEODRV_VERSION=28.0' 'xorgproto')
+conflicts=("xlibre-${_pkgname}" 'xorg-server<21.1.1' 'X-ABI-VIDEODRV_VERSION<28' 'X-ABI-VIDEODRV_VERSION>=29')
+replaces=("xlibre-${_pkgname}")
+provides=("xlibre-${_pkgname}" 'x11win-video-dummy')
+source=("${url}/${_pkgname}/archive/refs/tags/xlibre-${_pkgname}-${pkgver}.tar.gz")
+groups=('xlibre-drivers')
+
+build() {
+  cd ${_pkgname}-xlibre-${_pkgname}-${pkgver}
+  export CFLAGS=${CFLAGS/-fno-plt}
+  export CXXFLAGS=${CXXFLAGS/-fno-plt}
+  export LDFLAGS=${LDFLAGS/-Wl,-z,now}
+
+  ./autogen.sh
+  ./configure --prefix=/usr
+  make
+}
+
+package() {
+  cd ${_pkgname}-xlibre-${_pkgname}-${pkgver}
+  make DESTDIR="${pkgdir}" install
+  install -Dm644 "${srcdir}"/${_pkgname}-xlibre-${_pkgname}-${pkgver}/COPYING "${pkgdir}"/usr/share/licenses/${pkgname}/LICENSE
+}
+
+sha256sums=('85df099b4b22ab41b25c850f44741092be44d201994a3d8963fd997f6dd365be')
