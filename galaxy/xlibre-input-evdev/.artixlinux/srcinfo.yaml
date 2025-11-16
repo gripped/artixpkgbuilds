@@ -1,0 +1,35 @@
+---
+version: 2.11.0.2-1.1
+pkgbase:
+  name: xlibre-input-evdev
+  pkgdesc: XLibre fork of X.Org evdev input driver
+  pkgver: 2.11.0.2
+  pkgrel: 1.1
+  url: https://github.com/X11Libre
+  arch:
+    - x86_64
+  groups:
+    - xlibre-drivers
+  license:
+    - HPND-sell-variant AND MIT
+  makedepends:
+    - xlibre-xserver-devel
+    - X-ABI-XINPUT_VERSION=26.0
+    - xorgproto
+  depends:
+    - xlibre-xserver
+    - libudev
+    - mtdev
+    - libevdev
+    - glibc
+  provides:
+    - xlibre-xf86-input-evdev
+  replaces:
+    - xlibre-xf86-input-evdev
+  source:
+    - https://github.com/X11Libre/xf86-input-evdev/archive/refs/tags/xlibre-xf86-input-evdev-2.11.0.2.tar.gz
+  sha256sums:
+    - 70a8a65ec56cce7057b8491f68744c6883debe8750948bb290ae7b1c3ec28dfc
+pkgname:
+  - name: xlibre-input-evdev
+# generated with artixpkg 0.37.4-1-any
