@@ -1,0 +1,35 @@
+---
+version: 1.4.2.2-1.1
+pkgbase:
+  name: xlibre-input-void
+  pkgdesc: XLibre fork of X.Org void input driver
+  pkgver: 1.4.2.2
+  pkgrel: 1.1
+  url: https://github.com/X11Libre
+  arch:
+    - x86_64
+  groups:
+    - xlibre-drivers
+  license:
+    - custom
+  makedepends:
+    - xlibre-xserver-devel
+    - X-ABI-XINPUT_VERSION=26.0
+    - xorgproto
+  depends:
+    - glibc
+  provides:
+    - xlibre-xf86-input-void
+  conflicts:
+    - xlibre-xf86-input-void
+    - X-ABI-XINPUT_VERSION<26
+    - X-ABI-XINPUT_VERSION>=27
+  replaces:
+    - xlibre-xf86-input-void
+  source:
+    - https://github.com/X11Libre/xf86-input-void/archive/refs/tags/xlibre-xf86-input-void-1.4.2.2.tar.gz
+  sha256sums:
+    - f551a1d295a798dca3ad6d9daf45c6d19dc7ed60525f71f090d087152c5b3f7b
+pkgname:
+  - name: xlibre-input-void
+# generated with artixpkg 0.37.4-1-any

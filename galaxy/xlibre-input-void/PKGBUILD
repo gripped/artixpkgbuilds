@@ -1,0 +1,32 @@
+# Maintainer: artist for Artix Linux
+
+pkgname=xlibre-input-void
+_pkgname=xf86-input-void
+pkgver=1.4.2.2
+pkgrel=1.1
+pkgdesc="XLibre fork of X.Org void input driver"
+arch=(x86_64)
+license=('custom')
+url="https://github.com/X11Libre"
+depends=('glibc')
+makedepends=('xlibre-xserver-devel' 'X-ABI-XINPUT_VERSION=26.0' 'xorgproto')
+conflicts=("xlibre-${_pkgname}" 'X-ABI-XINPUT_VERSION<26' 'X-ABI-XINPUT_VERSION>=27')
+provides=("xlibre-${_pkgname}")
+replaces=("xlibre-${_pkgname}")
+source=("${url}/${_pkgname}/archive/refs/tags/xlibre-${_pkgname}-${pkgver}.tar.gz")
+groups=('xlibre-drivers')
+
+build() {
+  cd ${_pkgname}-xlibre-${_pkgname}-${pkgver}
+  ./autogen.sh
+  ./configure --prefix=/usr
+  make
+}
+
+package() {
+  cd ${_pkgname}-xlibre-${_pkgname}-${pkgver}
+  make DESTDIR="${pkgdir}" install
+  install -Dm644 "${srcdir}"/${_pkgname}-xlibre-${_pkgname}-${pkgver}/COPYING "${pkgdir}"/usr/share/licenses/${pkgname}/LICENSE
+}
+
+sha256sums=('f551a1d295a798dca3ad6d9daf45c6d19dc7ed60525f71f090d087152c5b3f7b')
