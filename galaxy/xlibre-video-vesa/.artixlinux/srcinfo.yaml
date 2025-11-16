@@ -1,0 +1,35 @@
+---
+version: 2.6.0.4-1
+pkgbase:
+  name: xlibre-video-vesa
+  pkgdesc: XLibre fork of X.Org vesa video driver
+  pkgver: 2.6.0.4
+  pkgrel: 1
+  url: https://github.com/X11Libre
+  arch:
+    - x86_64
+  groups:
+    - xlibre-drivers
+    - xlibre
+  license:
+    - MIT
+  makedepends:
+    - xlibre-xserver-devel
+    - X-ABI-VIDEODRV_VERSION=28.0
+  depends:
+    - glibc
+  provides:
+    - xlibre-xf86-video-vesa
+  conflicts:
+    - xlibre-xf86-video-vesa
+    - X-ABI-VIDEODRV_VERSION<28
+    - X-ABI-VIDEODRV_VERSION>=29
+  replaces:
+    - xlibre-xf86-video-vesa
+  source:
+    - https://github.com/X11Libre/xf86-video-vesa/archive/refs/tags/xlibre-xf86-video-vesa-2.6.0.4.tar.gz
+  sha256sums:
+    - c87e821b2a89cb3c487c1306bf192c57f3dbb775f34044fc2e32b95fd9573fdd
+pkgname:
+  - name: xlibre-video-vesa
+# generated with artixpkg 0.37.4-1-any
