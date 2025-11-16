@@ -1,0 +1,36 @@
+# Maintainer: artist for Artix Linux
+
+pkgname=xlibre-video-sisusb
+_pkgname=xf86-video-sisusb
+pkgver=0.9.7.2
+pkgrel=1.1
+pkgdesc="XLibre fork of X.org SiS USB video driver"
+arch=(x86_64)
+url="https://github.com/X11Libre"
+license=('BSD-3-Clause')
+depends=('glibc')
+makedepends=('xlibre-xserver-devel' 'X-ABI-VIDEODRV_VERSION=28.0')
+conflicts=("xlibre-${_pkgname}" 'xorg-server<21.1.1' 'X-ABI-VIDEODRV_VERSION<28' 'X-ABI-VIDEODRV_VERSION>=29')
+provides=("xlibre-${_pkgname}")
+replaces=("xlibre-${_pkgname}")
+source=("${url}/${_pkgname}/archive/refs/tags/xlibre-${_pkgname}-${pkgver}.tar.gz")
+groups=('xlibre-drivers')
+
+build() {
+  cd ${_pkgname}-xlibre-${_pkgname}-${pkgver}
+  export CFLAGS=${CFLAGS/-fno-plt}
+  export CXXFLAGS=${CXXFLAGS/-fno-plt}
+  export LDFLAGS=${LDFLAGS/-Wl,-z,now}
+
+  ./autogen.sh
+  ./configure --prefix=/usr
+  make
+}
+
+package() {
+  cd ${_pkgname}-xlibre-${_pkgname}-${pkgver}
+  make DESTDIR="${pkgdir}" install
+  install -Dm644 "${srcdir}"/${_pkgname}-xlibre-${_pkgname}-${pkgver}/COPYING "${pkgdir}"/usr/share/licenses/${pkgname}/LICENSE
+}
+
+sha256sums=('19835f66f4684c6e08184a00d1bb563effe0bc934fa877842f1953971bcce998')
