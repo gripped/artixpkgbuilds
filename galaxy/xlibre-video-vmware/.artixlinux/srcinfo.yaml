@@ -1,0 +1,43 @@
+---
+version: 13.4.0.3-1
+pkgbase:
+  name: xlibre-video-vmware
+  pkgdesc: XLibre fork of X.org vmware video driver
+  pkgver: 13.4.0.3
+  pkgrel: 1
+  url: https://github.com/X11Libre
+  arch:
+    - x86_64
+  groups:
+    - xlibre-drivers
+  license:
+    - MIT AND X11
+  makedepends:
+    - xlibre-xserver-devel
+    - X-ABI-VIDEODRV_VERSION=28.0
+  depends:
+    - mesa
+    - libudev
+    - libxext
+    - libx11
+    - libdrm
+    - glibc
+  provides:
+    - xlibre-xf86-video-vmware
+    - xf86-video-vmware
+  conflicts:
+    - xlibre-xf86-video-vmware
+    - xorg-server<21.1.1
+    - X-ABI-VIDEODRV_VERSION<28
+    - X-ABI-VIDEODRV_VERSION>=29
+  replaces:
+    - xlibre-xf86-video-vmware
+  options:
+    - '!emptydirs'
+  source:
+    - https://github.com/X11Libre/xf86-video-vmware/archive/refs/tags/xlibre-xf86-video-vmware-13.4.0.3.tar.gz
+  sha256sums:
+    - 1773016119fc0e7d5992ad95e1e7ad26a103b5f0198516389447bed5dd9d963d
+pkgname:
+  - name: xlibre-video-vmware
+# generated with artixpkg 0.37.4-1-any
