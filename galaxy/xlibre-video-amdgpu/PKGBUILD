@@ -1,0 +1,43 @@
+# Maintainer: artist for Artix Linux
+
+pkgname=xlibre-video-amdgpu
+_pkgname=xf86-video-amdgpu
+pkgver=23.0.0.6
+pkgrel=1
+pkgdesc="XLibre fork of X.Org amdgpu video driver"
+arch=('x86_64')
+url="https://github.com/X11Libre"
+license=('MIT')
+depends=('libudev' 'mesa' 'libdrm' 'glibc')
+makedepends=('xlibre-xserver-devel' 'udev' 'X-ABI-VIDEODRV_VERSION=28.0')
+conflicts=("xlibre-${_pkgname}" 'X-ABI-VIDEODRV_VERSION<28' 'X-ABI-VIDEODRV_VERSION>=29')
+provides=("xlibre-${_pkgname}")
+replaces=("xlibre-${_pkgname}")
+source=("${url}/${_pkgname}/archive/refs/tags/xlibre-${_pkgname}-${pkgver}.tar.gz")
+groups=('xlibre-drivers')
+
+build() {
+  cd ${_pkgname}-xlibre-${_pkgname}-${pkgver}
+  export CFLAGS=${CFLAGS/-fno-plt}
+  export CXXFLAGS=${CXXFLAGS/-fno-plt}
+  export LDFLAGS=${LDFLAGS/-Wl,-z,now}
+
+  ./autogen.sh
+  ./configure --prefix=/usr \
+    --enable-glamor
+  make
+}
+
+check() {
+  cd ${_pkgname}-xlibre-${_pkgname}-${pkgver}
+  make check
+}
+
+package() {
+  cd ${_pkgname}-xlibre-${_pkgname}-${pkgver}
+  make "DESTDIR=${pkgdir}" install
+  install -Dm644 "${srcdir}"/${_pkgname}-xlibre-${_pkgname}-${pkgver}/COPYING "${pkgdir}"/usr/share/licenses/${pkgname}/LICENSE
+}
+
+sha256sums=('27c6cc0a8e024517ccf9c044b84fef70eb9a43c328c147ddeb2251e30a5af04c')
+
