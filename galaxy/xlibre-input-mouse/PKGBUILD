@@ -3,7 +3,7 @@
 pkgname=xlibre-input-mouse
 _pkgname=xf86-input-mouse
 pkgver=1.9.5.3
-pkgrel=1
+pkgrel=1.1
 pkgdesc="XLibre fork of X.Org mouse input driver"
 arch=(x86_64)
 license=('custom')
@@ -11,7 +11,7 @@ url="https://github.com/X11Libre"
 depends=('glibc' 'xorgproto')
 makedepends=('xlibre-xserver-devel' 'X-ABI-XINPUT_VERSION=26.0')
 conflicts=("xlibre-${_pkgname}" 'xorg-server<21.1.1' 'X-ABI-XINPUT_VERSION<26' 'X-ABI-XINPUT_VERSION>=27')
-provides=("xlibre-${_pkgname}")
+provides=("xlibre-${_pkgname}" "${_pkgname}")
 replaces=("xlibre-${_pkgname}")
 source=("${url}/${_pkgname}/archive/refs/tags/xlibre-${_pkgname}-${pkgver}.tar.gz")
 groups=('xlibre-drivers')
