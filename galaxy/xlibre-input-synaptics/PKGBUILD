@@ -12,7 +12,7 @@ depends=('libxtst' 'libevdev' 'libx11' 'libxi' 'glibc')
 makedepends=('xlibre-xserver-devel' 'X-ABI-XINPUT_VERSION=26.0' 'xorgproto')
 conflicts=("xlibre-${_pkgname}" 'X-ABI-XINPUT_VERSION<26' 'X-ABI-XINPUT_VERSION>=27' 'synaptics')
 replaces=("xlibre-${_pkgname}")
-provides=("xlibre-${_pkgname}" 'synaptics')
+provides=("xlibre-${_pkgname}" 'synaptics' "${_pkgname}")
 groups=('xlibre-drivers')
 source=("${url}/${_pkgname}/archive/refs/tags/xlibre-${_pkgname}-${pkgver}.tar.gz")
 install=xlibre-input-synaptics.install

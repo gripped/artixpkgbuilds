@@ -26,6 +26,7 @@ pkgbase:
   provides:
     - xlibre-xf86-input-synaptics
     - synaptics
+    - xf86-input-synaptics
   conflicts:
     - xlibre-xf86-input-synaptics
     - X-ABI-XINPUT_VERSION<26
