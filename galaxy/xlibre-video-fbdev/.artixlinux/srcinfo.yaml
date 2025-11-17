@@ -1,10 +1,10 @@
 ---
-version: 0.5.1.2-1.1
+version: 0.5.1.2-1.2
 pkgbase:
   name: xlibre-video-fbdev
   pkgdesc: XLibre fork of framebuffer video driver
   pkgver: 0.5.1.2
-  pkgrel: 1.1
+  pkgrel: 1.2
   url: https://github.com/X11Libre
   arch:
     - x86_64
@@ -19,6 +19,7 @@ pkgbase:
     - glibc
   provides:
     - xlibre-xf86-video-fbdev
+    - xf86-video-fbdev
   conflicts:
     - xlibre-xf86-video-fbdev
     - X-ABI-VIDEODRV_VERSION<28
