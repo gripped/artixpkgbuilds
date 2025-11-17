@@ -17,10 +17,10 @@ repos:
     packages: []
     debug: []
   system:
-    version: 0.19.4-8
+    version: 0.20.0-1
     packages:
-      - dinit-0.19.4-8-x86_64.pkg.tar.zst
-      - dinit-base-0.19.4-8-x86_64.pkg.tar.zst
+      - dinit-0.20.0-1-x86_64.pkg.tar.zst
+      - dinit-base-0.20.0-1-x86_64.pkg.tar.zst
     debug: []
   world-goblins:
     version: null
