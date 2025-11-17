@@ -3,7 +3,7 @@
 pkgname=xlibre-video-dummy
 _pkgname=xf86-video-dummy
 pkgver=0.4.1.2
-pkgrel=1.1
+pkgrel=1.2
 pkgdesc="XLibre fork of X.Org dummy video driver"
 arch=(x86_64)
 url="https://github.com/X11Libre"
@@ -12,7 +12,7 @@ depends=('glibc')
 makedepends=('xlibre-xserver-devel' 'X-ABI-VIDEODRV_VERSION=28.0' 'xorgproto')
 conflicts=("xlibre-${_pkgname}" 'xorg-server<21.1.1' 'X-ABI-VIDEODRV_VERSION<28' 'X-ABI-VIDEODRV_VERSION>=29')
 replaces=("xlibre-${_pkgname}")
-provides=("xlibre-${_pkgname}" 'x11win-video-dummy')
+provides=("xlibre-${_pkgname}" 'x11win-video-dummy' "${_pkgname}")
 source=("${url}/${_pkgname}/archive/refs/tags/xlibre-${_pkgname}-${pkgver}.tar.gz")
 groups=('xlibre-drivers')
 
