@@ -1,10 +1,10 @@
 ---
-version: 2.11.0.2-1.1
+version: 2.11.0.2-1.2
 pkgbase:
   name: xlibre-input-evdev
   pkgdesc: XLibre fork of X.Org evdev input driver
   pkgver: 2.11.0.2
-  pkgrel: 1.1
+  pkgrel: 1.2
   url: https://github.com/X11Libre
   arch:
     - x86_64
@@ -24,6 +24,7 @@ pkgbase:
     - glibc
   provides:
     - xlibre-xf86-input-evdev
+    - xf86-input-evdev
   replaces:
     - xlibre-xf86-input-evdev
   source:
