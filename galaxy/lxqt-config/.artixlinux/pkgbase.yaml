@@ -49,12 +49,13 @@ repos:
     packages: []
     debug: []
   galaxy-gremlins:
-    version: null
-    packages: []
+    version: 2.3.0-1.1
+    packages:
+      - lxqt-config-2.3.0-1.1-x86_64.pkg.tar.zst
     debug: []
   galaxy:
-    version: 2.2.0-1.1
+    version: 2.2.0-1.2
     packages:
-      - lxqt-config-2.2.0-1.1-x86_64.pkg.tar.zst
+      - lxqt-config-2.2.0-1.2-x86_64.pkg.tar.zst
     debug: []
 team: galaxy
