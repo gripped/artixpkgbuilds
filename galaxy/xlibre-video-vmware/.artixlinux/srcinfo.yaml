@@ -1,10 +1,10 @@
 ---
-version: 13.4.0.3-1
+version: 13.4.0.3-1.1
 pkgbase:
   name: xlibre-video-vmware
   pkgdesc: XLibre fork of X.org vmware video driver
   pkgver: 13.4.0.3
-  pkgrel: 1
+  pkgrel: 1.1
   url: https://github.com/X11Libre
   arch:
     - x86_64
@@ -24,6 +24,7 @@ pkgbase:
     - glibc
   provides:
     - xlibre-xf86-video-vmware
+    - xf86-video-vmware
     - xf86-video-vmware
   conflicts:
     - xlibre-xf86-video-vmware
