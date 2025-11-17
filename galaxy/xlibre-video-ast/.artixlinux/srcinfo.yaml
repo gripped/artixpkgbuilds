@@ -1,10 +1,10 @@
 ---
-version: 1.2.0.1-9.1
+version: 1.2.0.1-9.2
 pkgbase:
   name: xlibre-video-ast
   pkgdesc: XLibre fork of X.Org aspeed video driver
   pkgver: 1.2.0.1
-  pkgrel: 9.1
+  pkgrel: 9.2
   url: https://github.com/X11Libre
   arch:
     - x86_64
@@ -20,6 +20,7 @@ pkgbase:
     - glibc
   provides:
     - xlibre-xf86-video-ast
+    - xf86-video-ast
   conflicts:
     - xlibre-xf86-video-ast
     - X-ABI-VIDEODRV_VERSION<28
