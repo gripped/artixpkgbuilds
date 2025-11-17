@@ -70,7 +70,7 @@ pkgname:
     install: xlibre-xserver.install
     depends:
       - xlibre-xserver-common
-      - xlibre-xf86-input-libinput
+      - xlibre-input-libinput
       - libepoxy
       - libxfont2
       - pixman
