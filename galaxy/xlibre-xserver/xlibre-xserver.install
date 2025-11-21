@@ -17,7 +17,7 @@ post_install() {
   post_upgrade
   cat <<MSG2
 >>> It is required to replace all installed xf86* xorg driver
-    packages with their xlibre-xf86* counterparts before starting
+    packages with their xlibre* counterparts before starting
     xlibre-xsever. So if for example xf86-video-intel has been
     installed it should be replaced with xlibre-xf86-video-intel.
 
