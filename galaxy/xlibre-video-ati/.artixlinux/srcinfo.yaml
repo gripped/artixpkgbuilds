@@ -1,10 +1,10 @@
 ---
-version: 22.0.0.3-1.1
+version: 22.0.0.4-1
 pkgbase:
   name: xlibre-video-ati
   pkgdesc: XLibre fork of X.Org ati video driver
-  pkgver: 22.0.0.3
-  pkgrel: 1.1
+  pkgver: 22.0.0.4
+  pkgrel: 1
   url: https://github.com/X11Libre
   arch:
     - x86_64
@@ -32,9 +32,9 @@ pkgbase:
   replaces:
     - xlibre-xf86-video-ati
   source:
-    - https://github.com/X11Libre/xf86-video-ati/archive/refs/tags/xlibre-xf86-video-ati-22.0.0.3.tar.gz
+    - https://github.com/X11Libre/xf86-video-ati/archive/refs/tags/xlibre-xf86-video-ati-22.0.0.4.tar.gz
   sha256sums:
-    - 4d9925766f18d244b8e5d2e3c8737b9cfb8c86eb48ab7a6aa649992ac836b44f
+    - f23bff5f9a299e4b227c1ed46124679592af25eacb268b858632272d2816f4eb
 pkgname:
   - name: xlibre-video-ati
 # generated with artixpkg 0.37.4-1-any
