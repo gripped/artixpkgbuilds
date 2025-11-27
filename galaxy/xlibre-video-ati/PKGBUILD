@@ -3,7 +3,7 @@
 pkgname=xlibre-video-ati
 _pkgname=xf86-video-ati
 pkgver=22.0.0.4
-pkgrel=1
+pkgrel=1.1
 pkgdesc="XLibre fork of X.Org ati video driver"
 arch=('x86_64')
 url="https://github.com/X11Libre"
@@ -22,7 +22,8 @@ build() {
   export CXXFLAGS=${CXXFLAGS/-fno-plt}
   export LDFLAGS=${LDFLAGS/-Wl,-z,now}
 
-  ./autogen.sh --prefix=/usr --enable-glamor --disable-debug
+  #./autogen.sh --prefix=/usr --enable-glamor --disable-debug
+  ./autogen.sh --prefix=/usr --disable-glamor --disable-debug
   ./configure --prefix=/usr
   make
 }
