@@ -1,6 +1,6 @@
 ##
 ## Artix Linux repository mirrorlist
-## Generated on 2025-10-30
+## Generated on 2025-11-30
 ##
 
 # Artix mirrors
@@ -9,9 +9,10 @@
 # Then put the resulting list on top of this file.
 
 # Default mirrors
+Server = https://artix.wheaton.edu/repos/$repo/os/$arch
+Server = https://ftp.sh.cvut.cz/artix-linux/$repo/os/$arch
 Server = https://mirrors.rit.edu/artixlinux/$repo/os/$arch
 Server = https://ftp.crifo.org/artix/repos/$repo/os/$arch
-Server = https://ftp.sh.cvut.cz/artix-linux/$repo/os/$arch
 Server = https://mirrors.dotsrc.org/artix-linux/repos/$repo/os/$arch
 
 ## Europe
@@ -37,12 +38,10 @@ Server = https://mirror3.artixlinux.org/repos/$repo/os/$arch
 Server = https://tools.sphnet.in/mirror/artix/$repo/os/$arch
 # Greece
 Server = https://ftp.cc.uoc.gr/mirrors/linux/artixlinux/$repo/os/$arch
+# Monaco
+Server = https://qontinuum.space/mirror/artixlinux/$repo/os/$arch
 # Poland
 Server = https://artix.sakamoto.pl/$repo/os/$arch
-# Romania
-Server = https://hitman.go.ro/mirror/artix-linux/$repo/os/$arch
-# Russia
-Server = https://mirror.infirium.ru/artixlinux/$repo/os/$arch
 # Sweden
 Server = https://ftp.ludd.ltu.se/mirrors/artix/$repo/os/$arch
 # Switzerland
@@ -67,9 +66,6 @@ Server = https://mirror.csclub.uwaterloo.ca/artixlinux/$repo/os/$arch
 Server = https://artix-linux.mirrors.prairievoice.ca/$repo/os/$arch
 
 ## South America
-# Chile
-Server = https://mirror1.cl.netactuate.com/artix/repos/$repo/os/$arch
-
 ## Asia
 # China
 Server = https://mirrors.tuna.tsinghua.edu.cn/artixlinux/$repo/os/$arch
@@ -83,7 +79,7 @@ Server = https://www.miraa.jp/artix-linux/$repo/os/$arch
 Server = https://mirror.funami.tech/artix/$repo/os/$arch
 # Singapore
 Server = https://mirror.freedif.org/Artix/$repo/os/$arch
-# Taiwan
+# Taiwan	# Up, not syncing
 Server = https://mirrors.cloud.tencent.com/artixlinux/$repo/os/$arch
 # Vietnam
 Server = https://mirrors.nguyenhoang.cloud/artix-linux/$repo/os/$arch
