@@ -54,7 +54,7 @@ repos:
     packages: []
     debug: []
   galaxy:
-    version: 1.8.2.1-1
+    version: 1.8.2.2-1
     packages:
-      - distrobox-1.8.2.1-1-any.pkg.tar.zst
+      - distrobox-1.8.2.2-1-any.pkg.tar.zst
     debug: []
