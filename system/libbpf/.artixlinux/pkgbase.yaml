@@ -17,9 +17,9 @@ repos:
     packages: []
     debug: []
   system:
-    version: 1.5.1-1
+    version: 1.6.2-1
     packages:
-      - libbpf-1.5.1-1-x86_64.pkg.tar.zst
+      - libbpf-1.6.2-1-x86_64.pkg.tar.zst
     debug: []
   world-goblins:
     version: null
