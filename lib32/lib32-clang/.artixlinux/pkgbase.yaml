@@ -41,9 +41,9 @@ repos:
     packages: []
     debug: []
   lib32:
-    version: 21.1.5-1
+    version: 21.1.6-1
     packages:
-      - lib32-clang-21.1.5-1-x86_64.pkg.tar.zst
+      - lib32-clang-21.1.6-1-x86_64.pkg.tar.zst
     debug: []
   galaxy-goblins:
     version: null
