@@ -41,9 +41,9 @@ repos:
     packages: []
     debug: []
   lib32:
-    version: 2.86.1-1
+    version: 2.86.2-1
     packages:
-      - lib32-glib2-2.86.1-1-x86_64.pkg.tar.zst
+      - lib32-glib2-2.86.2-1-x86_64.pkg.tar.zst
     debug: []
   galaxy-goblins:
     version: null
