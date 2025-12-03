@@ -17,9 +17,9 @@ repos:
     packages: []
     debug: []
   system:
-    version: 40-1
+    version: 40-2
     packages:
-      - mkinitcpio-40-1-any.pkg.tar.zst
+      - mkinitcpio-40-2-any.pkg.tar.zst
     debug: []
   world-goblins:
     version: null
