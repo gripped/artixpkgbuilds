@@ -1,10 +1,10 @@
 ---
-version: 1:25.2.7-1
+version: 1:25.3.1-2
 pkgbase:
   name: lib32-mesa
   pkgdesc: Open-source OpenGL drivers - 32-bit
-  pkgver: 25.2.7
-  pkgrel: 1
+  pkgver: 25.3.1
+  pkgrel: 2
   epoch: 1
   url: https://www.mesa3d.org/
   arch:
@@ -17,12 +17,12 @@ pkgbase:
     - lib32-expat
     - lib32-gcc-libs
     - lib32-glibc
+    - lib32-libdisplay-info
     - lib32-libdrm
     - lib32-libelf
     - lib32-libglvnd
     - lib32-libpng
     - lib32-libva
-    - lib32-libvdpau
     - lib32-libx11
     - lib32-libxcb
     - lib32-libxext
@@ -58,9 +58,8 @@ pkgbase:
   options:
     - '!lto'
   source:
-    - https://archive.mesa3d.org/mesa-25.2.7.tar.xz
-    - https://archive.mesa3d.org/mesa-25.2.7.tar.xz.sig
-    - 0001-anv-fix-FS-output-attachment-map-building.patch
+    - https://archive.mesa3d.org/mesa-25.3.1.tar.xz
+    - https://archive.mesa3d.org/mesa-25.3.1.tar.xz.sig
     - zerocopy-0.8.13.tar.gz::https://crates.io/api/v1/crates/zerocopy/0.8.13/download
     - ucd-trie-0.1.6.tar.gz::https://crates.io/api/v1/crates/ucd-trie/0.1.6/download
     - pest_meta-2.8.0.tar.gz::https://crates.io/api/v1/crates/pest_meta/2.8.0/download
@@ -96,9 +95,8 @@ pkgbase:
     - A5CC9FEC93F2F837CB044912336909B6B25FADFA
     - E3E8F480C52ADD73B278EE78E1ECBE07D7D70895
   sha256sums:
-    - b40232a642011820211aab5a9cdf754e106b0bce15044bc4496b0ac9615892ad
+    - 059d0d985622f49588f01aa29152804f4da8ffe6add046e00a52923379c2d8da
     - SKIP
-    - 58e81f7d5f38c837f6414f4eb8ba150b21309d02a2060559556e47a3c67cc2fe
     - 67914ab451f3bfd2e69e5e9d2ef3858484e7074d63f204fd166ec391b54de21d
     - ed646292ffc8188ef8ea4d1e0e0150fb15a5c2e12ad9b8fc191ae7a8a7f3c4b9
     - 7f9f832470494906d1fca5329f8ab5791cc60beb230c74815dff541cbd2b5ca0
@@ -127,9 +125,8 @@ pkgbase:
     - 692fcb63b64b1758029e0a96ee63e049ce8c5948587f2f7208df04625e5f6b56
     - 25aa4ce346d03a6dcd68dd8b4010bcb74e54e62c90c573f394c46eae99aba32d
   b2sums:
-    - 7e834275fc23760e76c944cd83440e26bbc6286bb4bad75d7344a62934dc472e9f9f24a756e3b7488a617c2934dbdefd91bf79847ea09b5767ea3ccc2fdf5173
+    - 1c2927a04eeac787a583a31167ae1d40cb839fc45fcd3c0bad0e0b3842694444bd3f950d106f692ceb47b9881c9d101be995bcf7385a4fb992c54a23d56ffd1e
     - SKIP
-    - ee9be38d036aad299b3ecd32b2ca3fca5534c6ab329bb0d9f841ce5911d5f6a0fcdab2219b7a3a849f585863c313465ea3160e201b23ce3a80a2bfeaaabd06bc
     - 431439d31632d177aeb15f910b4f546efa76d54fc74fc8e140399dc5e54eca33fd606f11dbfb48fa83067c8474ee512e62751895d5948367b65ab08b984284e5
     - a6d47c903be6094423d89b8ec3ca899d0a84df6dbd6e76632bb6c9b9f40ad9c216f8fa400310753d392f85072756b43ac3892e0a2c4d55f87ab6463002554823
     - 9a73962e1e38b84131ab2350b69a1f5d611c549533eec73e898c394a9b9442f357bb5d5f59e1be12270dd29bdf237dc2d21786c0c2210736e224ef5d48300dcf
@@ -181,20 +178,16 @@ pkgname:
     optdepends:
       - 'opengl-man-pages: for the OpenGL API man pages'
     provides:
-      - lib32-libva-mesa-driver=1:25.2.7-1
-      - lib32-mesa-libgl=1:25.2.7-1
-      - lib32-mesa-vdpau=1:25.2.7-1
+      - lib32-libva-mesa-driver=1:25.3.1-2
+      - lib32-mesa-libgl=1:25.3.1-2
       - lib32-libva-driver
       - lib32-opengl-driver
-      - lib32-vdpau-driver
     conflicts:
       - lib32-libva-mesa-driver<1:24.2.7-1
       - lib32-mesa-libgl<17.0.1-2
-      - lib32-mesa-vdpau<1:24.2.7-1
     replaces:
       - lib32-libva-mesa-driver<1:24.2.7-1
       - lib32-mesa-libgl<17.0.1-2
-      - lib32-mesa-vdpau<1:24.2.7-1
   - name: lib32-opencl-mesa
     pkgdesc: Open-source OpenCL drivers - 32-bit
     depends:
@@ -226,13 +219,14 @@ pkgname:
       - lib32-expat
       - lib32-gcc-libs
       - lib32-glibc
+      - lib32-libdisplay-info
       - lib32-libdrm
       - lib32-libx11
       - lib32-libxcb
       - lib32-libxshmfence
       - lib32-spirv-tools
       - lib32-vulkan-icd-loader
-      - lib32-vulkan-mesa-device-select
+      - lib32-vulkan-mesa-implicit-layers
       - lib32-wayland
       - lib32-xcb-util-keysyms
       - lib32-zlib
@@ -248,13 +242,14 @@ pkgname:
       - lib32-expat
       - lib32-gcc-libs
       - lib32-glibc
+      - lib32-libdisplay-info
       - lib32-libdrm
       - lib32-libx11
       - lib32-libxcb
       - lib32-libxshmfence
       - lib32-spirv-tools
       - lib32-vulkan-icd-loader
-      - lib32-vulkan-mesa-device-select
+      - lib32-vulkan-mesa-implicit-layers
       - lib32-wayland
       - lib32-xcb-util-keysyms
       - lib32-zlib
@@ -270,13 +265,14 @@ pkgname:
       - lib32-expat
       - lib32-gcc-libs
       - lib32-glibc
+      - lib32-libdisplay-info
       - lib32-libdrm
       - lib32-libx11
       - lib32-libxcb
       - lib32-libxshmfence
       - lib32-spirv-tools
       - lib32-vulkan-icd-loader
-      - lib32-vulkan-mesa-device-select
+      - lib32-vulkan-mesa-implicit-layers
       - lib32-wayland
       - lib32-xcb-util-keysyms
       - lib32-zlib
@@ -292,12 +288,13 @@ pkgname:
       - lib32-expat
       - lib32-gcc-libs
       - lib32-glibc
+      - lib32-libdisplay-info
       - lib32-libdrm
       - lib32-libx11
       - lib32-libxcb
       - lib32-libxshmfence
       - lib32-vulkan-icd-loader
-      - lib32-vulkan-mesa-device-select
+      - lib32-vulkan-mesa-implicit-layers
       - lib32-wayland
       - lib32-xcb-util-keysyms
       - vulkan-gfxstream
@@ -311,13 +308,14 @@ pkgname:
       - lib32-expat
       - lib32-gcc-libs
       - lib32-glibc
+      - lib32-libdisplay-info
       - lib32-libdrm
       - lib32-libx11
       - lib32-libxcb
       - lib32-libxshmfence
       - lib32-spirv-tools
       - lib32-vulkan-icd-loader
-      - lib32-vulkan-mesa-device-select
+      - lib32-vulkan-mesa-implicit-layers
       - lib32-wayland
       - lib32-xcb-util-keysyms
       - lib32-zlib
@@ -333,13 +331,14 @@ pkgname:
       - lib32-expat
       - lib32-gcc-libs
       - lib32-glibc
+      - lib32-libdisplay-info
       - lib32-libdrm
       - lib32-libx11
       - lib32-libxcb
       - lib32-libxshmfence
       - lib32-spirv-tools
       - lib32-vulkan-icd-loader
-      - lib32-vulkan-mesa-device-select
+      - lib32-vulkan-mesa-implicit-layers
       - lib32-wayland
       - lib32-xcb-util-keysyms
       - lib32-zlib
@@ -355,6 +354,7 @@ pkgname:
       - lib32-expat
       - lib32-gcc-libs
       - lib32-glibc
+      - lib32-libdisplay-info
       - lib32-libdrm
       - lib32-libelf
       - lib32-libx11
@@ -363,7 +363,7 @@ pkgname:
       - lib32-llvm-libs
       - lib32-spirv-tools
       - lib32-vulkan-icd-loader
-      - lib32-vulkan-mesa-device-select
+      - lib32-vulkan-mesa-implicit-layers
       - lib32-wayland
       - lib32-xcb-util-keysyms
       - lib32-zlib
@@ -381,6 +381,7 @@ pkgname:
       - lib32-expat
       - lib32-gcc-libs
       - lib32-glibc
+      - lib32-libdisplay-info
       - lib32-libdrm
       - lib32-libx11
       - lib32-libxcb
@@ -388,7 +389,7 @@ pkgname:
       - lib32-llvm-libs
       - lib32-spirv-tools
       - lib32-vulkan-icd-loader
-      - lib32-vulkan-mesa-device-select
+      - lib32-vulkan-mesa-implicit-layers
       - lib32-wayland
       - lib32-xcb-util-keysyms
       - lib32-zlib
@@ -408,12 +409,13 @@ pkgname:
       - lib32-expat
       - lib32-gcc-libs
       - lib32-glibc
+      - lib32-libdisplay-info
       - lib32-libdrm
       - lib32-libx11
       - lib32-libxcb
       - lib32-libxshmfence
       - lib32-vulkan-icd-loader
-      - lib32-vulkan-mesa-device-select
+      - lib32-vulkan-mesa-implicit-layers
       - lib32-wayland
       - lib32-xcb-util-keysyms
       - lib32-zlib
@@ -423,16 +425,21 @@ pkgname:
       - 'lib32-vulkan-mesa-layers: additional vulkan layers'
     provides:
       - lib32-vulkan-driver
-  - name: lib32-vulkan-mesa-device-select
-    pkgdesc: Mesa's Vulkan Device Select layer - 32-bit
+  - name: lib32-vulkan-mesa-implicit-layers
+    pkgdesc: Mesa's implicit Vulkan layers - 32-bit
     depends:
+      - lib32-gcc-libs
       - lib32-glibc
       - lib32-libdrm
       - lib32-libxcb
       - lib32-wayland
-      - vulkan-mesa-device-select
+      - vulkan-mesa-implicit-layers
+    conflicts:
+      - lib32-vulkan-mesa-device-select
+    replaces:
+      - lib32-vulkan-mesa-device-select
   - name: lib32-vulkan-mesa-layers
-    pkgdesc: Mesa's Vulkan layers - 32-bit
+    pkgdesc: Mesa's explicit Vulkan layers - 32-bit
     depends:
       - lib32-gcc-libs
       - lib32-glibc
