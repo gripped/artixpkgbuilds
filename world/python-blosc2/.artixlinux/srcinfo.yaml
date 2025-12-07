@@ -1,9 +1,9 @@
 ---
-version: 3.11.1-1
+version: 3.12.2-1
 pkgbase:
   name: python-blosc2
   pkgdesc: Wrapper for the blosc2 compressor
-  pkgver: 3.11.1
+  pkgver: 3.12.2
   pkgrel: 1
   url: https://github.com/Blosc/python-blosc2
   arch:
@@ -34,11 +34,11 @@ pkgbase:
     - python-py-cpuinfo
     - python-requests
   source:
-    - python-blosc2::git+https://github.com/Blosc/python-blosc2#tag=v3.11.1
+    - python-blosc2::git+https://github.com/Blosc/python-blosc2#tag=v3.12.2
   sha512sums:
-    - 1aa5941fc945cdc175b5ddaf08300c0e22111986ce1f91ff078c4edb82feddcd007a8a15cf022e72e6fe519fb64e65a4ab524bfcf23d0600b4dc1d2ca84a0891
+    - dad0c609f185725c3c12436f7c977651ec5f86f97c9cf40fb09db1f01667e59b79727722fba5ac70084e076ee47eec964ae0445c5167b2d3e5f8eff25beb35b7
   b2sums:
-    - 35475fd215573edfcb335903459490f60d6ff862c53210f91c2de5688210e824d789e112215d29da2655c7de14f4c9c5306f8dac21b527322c0b7095e008e078
+    - 6ba678e37d114ff420b0566ca115e8b0c2727202d30712a4951ddf1c5ac9b8a4313b8b717d43c8e0a316c6e9f2d9b7f4b5426dbcb0cc8b51a904e2d83e7660e0
 pkgname:
   - name: python-blosc2
 # generated with artixpkg 0.37.4-1-any
