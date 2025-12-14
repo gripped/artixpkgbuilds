@@ -17,9 +17,9 @@ repos:
     packages: []
     debug: []
   system:
-    version: 5.3.8-1
+    version: 5.3.9-1
     packages:
-      - bash-5.3.8-1-x86_64.pkg.tar.zst
+      - bash-5.3.9-1-x86_64.pkg.tar.zst
     debug: []
   world-goblins:
     version: null
