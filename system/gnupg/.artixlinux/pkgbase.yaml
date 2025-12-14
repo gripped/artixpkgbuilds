@@ -17,9 +17,9 @@ repos:
     packages: []
     debug: []
   system:
-    version: 2.4.8-3
+    version: 2.4.8-4
     packages:
-      - gnupg-2.4.8-3-x86_64.pkg.tar.zst
+      - gnupg-2.4.8-4-x86_64.pkg.tar.zst
     debug: []
   world-goblins:
     version: null
