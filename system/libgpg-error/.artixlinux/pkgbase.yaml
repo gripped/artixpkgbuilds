@@ -17,9 +17,9 @@ repos:
     packages: []
     debug: []
   system:
-    version: 1.56-1
+    version: 1.57-1
     packages:
-      - libgpg-error-1.56-1-x86_64.pkg.tar.zst
+      - libgpg-error-1.57-1-x86_64.pkg.tar.zst
     debug: []
   world-goblins:
     version: null
