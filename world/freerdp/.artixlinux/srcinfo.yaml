@@ -1,10 +1,10 @@
 ---
-version: 2:3.17.2-6
+version: 2:3.19.1-1
 pkgbase:
   name: freerdp
   pkgdesc: Free implementation of the Remote Desktop Protocol (RDP)
-  pkgver: 3.17.2
-  pkgrel: 6
+  pkgver: 3.19.1
+  pkgrel: 1
   epoch: 2
   url: https://www.freerdp.com/
   arch:
@@ -17,7 +17,6 @@ pkgbase:
     - ffmpeg
     - git
     - icu
-    - json-c
     - krb5
     - libjpeg-turbo
     - libp11
@@ -35,6 +34,7 @@ pkgbase:
     - fuse3
     - gcc-libs
     - glibc
+    - jansson
     - libcups
     - libx11
     - libxcursor
@@ -61,19 +61,18 @@ pkgbase:
     - libwinpr-tools3.so
     - libwinpr3.so
   source:
-    - git+https://github.com/freerdp/freerdp?signed#tag=3.17.2
-  validpgpkeys:
-    - 7703B333420E0AEF995EB4B3A49454A3FC909FD5
+    - git+https://github.com/freerdp/freerdp#tag=3.19.1
   sha512sums:
-    - 598bb7bb424ebd85c46780019a7264dc979a02f3189d314ffab967c9478e7f04c64c60aeeb1a6938e2796950b97d8a547236109f2539a411d0f828b719ee9436
+    - 987d9337ccb8db11ab2308165b8deb56086795a17a042371983584e50f4846f3a7daf0435f94881c447d9fa3afb44f99c8d0112eaf76d2296265d600ebc0b450
   b2sums:
-    - 5e83fda70de09191a8bf4300019793fe3b299cc06c8d0baca8393f847e95840dca5bb024c02bde8c2cec21c023703c6fd48dfce671936c1dcad86b061c00b42b
+    - dce17e6838a7bd7064deba9a0845eabe6c6a881db3fb7447c22ef4b85e82ff3e37d1f69adba56f0059b8d23a71bf2e26aa33c208e4756acb837e10cbe73b9409
 pkgname:
   - name: freerdp
     depends:
       - fuse3
       - gcc-libs
       - glibc
+      - jansson
       - libcups
       - libx11
       - libxcursor
@@ -99,8 +98,6 @@ pkgname:
       - libswscale.so
       - icu
       - libicuuc.so
-      - json-c
-      - libjson-c.so
       - krb5
       - libk5crypto.so
       - libkrb5.so
