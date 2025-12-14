@@ -30,10 +30,11 @@ repos:
     packages: []
     debug: []
   world:
-    version: 1.4.328.1-1
+    version: 1.4.335.0-1
     packages:
-      - vulkan-utility-libraries-1.4.328.1-1-x86_64.pkg.tar.zst
-    debug: []
+      - vulkan-utility-libraries-1.4.335.0-1-x86_64.pkg.tar.zst
+    debug:
+      - vulkan-utility-libraries-debug-1.4.335.0-1-x86_64.pkg.tar.zst
   lib32-goblins:
     version: null
     packages: []
