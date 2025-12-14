@@ -17,9 +17,9 @@ repos:
     packages: []
     debug: []
   system:
-    version: 7.0.0.r6.gc685ae6-6
+    version: 7.1.0.r7.gb9f7d4a-1
     packages:
-      - pacman-7.0.0.r6.gc685ae6-6-x86_64.pkg.tar.zst
+      - pacman-7.1.0.r7.gb9f7d4a-1-x86_64.pkg.tar.zst
     debug: []
   world-goblins:
     version: null
