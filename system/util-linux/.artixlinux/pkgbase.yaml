@@ -17,10 +17,10 @@ repos:
     packages: []
     debug: []
   system:
-    version: 2.41.2-1
+    version: 2.41.3-1
     packages:
-      - util-linux-2.41.2-1-x86_64.pkg.tar.zst
-      - util-linux-libs-2.41.2-1-x86_64.pkg.tar.zst
+      - util-linux-2.41.3-1-x86_64.pkg.tar.zst
+      - util-linux-libs-2.41.3-1-x86_64.pkg.tar.zst
     debug: []
   world-goblins:
     version: null
