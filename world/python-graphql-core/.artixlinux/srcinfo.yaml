@@ -1,0 +1,32 @@
+---
+version: 3.2.7-1
+pkgbase:
+  name: python-graphql-core
+  pkgdesc: GraphQL base implementation for Python
+  pkgver: 3.2.7
+  pkgrel: 1
+  url: https://github.com/graphql-python/graphql-core
+  arch:
+    - any
+  license:
+    - MIT
+  checkdepends:
+    - python-pytest
+    - python-pytest-asyncio
+    - python-pytest-benchmark
+  makedepends:
+    - git
+    - python-build
+    - python-installer
+    - python-poetry-core
+    - python-setuptools
+    - python-wheel
+  depends:
+    - python
+  source:
+    - git+https://github.com/graphql-python/graphql-core.git#tag=42328a69a7b9c71bb539497c0a844916eb4e1805
+  sha256sums:
+    - 249eca74d4179cb5ae25104fd84c7d9f9c7f2a164233aa5a89bdf418608a4c2f
+pkgname:
+  - name: python-graphql-core
+# generated with artixpkg 0.37.4-1-any
