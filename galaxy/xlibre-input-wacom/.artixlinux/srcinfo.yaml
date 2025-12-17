@@ -1,10 +1,10 @@
 ---
-version: 1.2.3.2-1.1
+version: 1.2.3.3-1
 pkgbase:
   name: xlibre-input-wacom
   pkgdesc: XLibre fork of X.Org Wacom tablet driver
-  pkgver: 1.2.3.2
-  pkgrel: 1.1
+  pkgver: 1.2.3.3
+  pkgrel: 1
   url: https://github.com/X11Libre
   arch:
     - x86_64
@@ -42,9 +42,9 @@ pkgbase:
   replaces:
     - xlibre-xf86-input-wacom
   source:
-    - https://github.com/X11Libre/xf86-input-wacom/archive/refs/tags/xlibre-xf86-input-wacom-1.2.3.2.tar.gz
+    - https://github.com/X11Libre/xf86-input-wacom/archive/refs/tags/xlibre-xf86-input-wacom-1.2.3.3.tar.gz
   sha256sums:
-    - 8c1942cbf90ee80d6505d115bab27461680c623d7acddf6be931224ea8176c36
+    - 21f25957a0049cd4f001c75996137ed794714e042cb7382d1ac77e23715c51fa
 pkgname:
   - name: xlibre-input-wacom
 # generated with artixpkg 0.37.4-1-any
