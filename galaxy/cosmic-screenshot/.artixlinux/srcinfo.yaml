@@ -1,10 +1,11 @@
 ---
-version: 1.0.0.beta.7-1
+version: 1:1.0.0-1
 pkgbase:
   name: cosmic-screenshot
   pkgdesc: Utility for capturing screenshots via XDG Desktop Portal
-  pkgver: 1.0.0.beta.7
+  pkgver: 1.0.0
   pkgrel: 1
+  epoch: 1
   url: https://github.com/pop-os/cosmic-screenshot
   arch:
     - x86_64
@@ -23,9 +24,9 @@ pkgbase:
     - glibc
     - xdg-desktop-portal-cosmic
   source:
-    - git+https://github.com/pop-os/cosmic-screenshot.git#tag=epoch-1.0.0-beta.7
+    - git+https://github.com/pop-os/cosmic-screenshot.git#tag=epoch-1.0.0
   b2sums:
-    - df46d5fd2bc53feb5985937ced6e6b8e048e766763faaf701f877a92f9a95dddba9fa0b227d511cee37eb50bcc3f1de09f19dcdb324403e69eee6d8753c78a18
+    - 94353c5594c4b99a46a5542b1bedf6e948353a3bef1e4dd173cf73aebd67b78c1c12c743f5e7f3f3c713cdf734175adfb22b35a999bc4b738a6de734f9acd0ce
 pkgname:
   - name: cosmic-screenshot
 # generated with artixpkg 0.37.4-1-any
