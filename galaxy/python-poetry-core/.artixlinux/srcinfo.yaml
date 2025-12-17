@@ -1,0 +1,39 @@
+---
+version: 2.2.1-2
+pkgbase:
+  name: python-poetry-core
+  pkgdesc: Poetry PEP 517 Build Backend & Core Utilities
+  pkgver: 2.2.1
+  pkgrel: 2
+  url: https://github.com/python-poetry/poetry-core
+  arch:
+    - any
+  groups:
+    - python-build-backend
+  license:
+    - MIT
+  checkdepends:
+    - git
+    - python-pytest
+    - python-pytest-mock
+    - python-setuptools
+    - python-tomli-w
+    - python-trove-classifiers
+    - python-virtualenv
+  makedepends:
+    - python-build
+    - python-installer
+  depends:
+    - python
+    - python-fastjsonschema
+    - python-lark-parser
+    - python-packaging
+  source:
+    - https://github.com/python-poetry/poetry-core/archive/2.2.1/poetry-core-2.2.1.tar.gz
+    - python-poetry-core-1.9.0-devendor.patch
+  sha256sums:
+    - f5a68f3f1d24078624c124fc9dd24ec7365a65a22dc7a24a2a5d5680490325e4
+    - 568e62b1a4fd2a5507d5c0644a5dee891780ebbc8db7e777f14a718e0f777215
+pkgname:
+  - name: python-poetry-core
+# generated with artixpkg 0.37.4-1-any
