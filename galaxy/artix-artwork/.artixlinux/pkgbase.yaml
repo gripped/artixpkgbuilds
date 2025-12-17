@@ -1,12 +1,16 @@
 ---
 pkgbase:
   name: artix-artwork
-  version: 0.9-3
+  version: 2024.07-1
   arch:
     - any
   pkgname:
     - artix-icons
     - artix-backgrounds
+    - artix-breeze-sddm
+    - artix-grub-theme
+    - artix-plasma-splash
+    - artix-wallpapers
 actions:
   addRepo: world
   removeRepo: null
@@ -32,10 +36,14 @@ repos:
     version: null
     packages: []
   world:
-    version: 0.9-3
+    version: 2024.07-1
     packages:
-      - artix-icons-0.9-3-any.pkg.tar.zst
-      - artix-backgrounds-0.9-3-any.pkg.tar.zst
+      - artix-icons-2024.07-1-any.pkg.tar.zst
+      - artix-backgrounds-2024.07-1-any.pkg.tar.zst
+      - artix-breeze-sddm-2024.07-1-any.pkg.tar.zst
+      - artix-grub-theme-2024.07-1-any.pkg.tar.zst
+      - artix-plasma-splash-2024.07-1-any.pkg.tar.zst
+      - artix-wallpapers-2024.07-1-any.pkg.tar.zst
   lib32-goblins:
     version: null
     packages: []
@@ -54,3 +62,4 @@ repos:
   galaxy:
     version: null
     packages: []
+team: world
