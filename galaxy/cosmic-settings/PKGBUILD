@@ -4,8 +4,9 @@
 # Contributor: Mark Wagie <mark.wagie@proton.me>
 
 pkgname=cosmic-settings
-pkgver=1.0.0.beta.7
-pkgrel=1.1
+pkgver=1.0.0
+pkgrel=1
+epoch=1
 pkgdesc='The settings application for the COSMIC desktop environment'
 arch=(x86_64)
 url=https://github.com/pop-os/cosmic-settings
@@ -36,11 +37,11 @@ makedepends=(
   clang
   git
   just
-  lld
+  mold
 )
 optdepends=('power-profiles-daemon: power profiles support')
-source=(git+https://github.com/pop-os/cosmic-settings.git#tag=epoch-${pkgver/.beta./-beta.})
-b2sums=('7b95360927307fd94dd7593b0745df6f8c8a3862c59325ef8f9ea5cbbcf857bda19d562426b473247a8d0d7f2f50fc8428972093db81b1bc78572dc6b167634c')
+source=(git+https://github.com/pop-os/cosmic-settings.git#tag=epoch-${pkgver})
+b2sums=('af4523b4fc83302f80157772c27f4fca0d184b391e79bf7d39e9bfe93577d7a0f95abe8397f6507f7b3af2ee57868c077af7d93ece87c8252f7ad635d1dcfcd5')
 
 prepare() {
   cd cosmic-settings
@@ -49,7 +50,7 @@ prepare() {
 
 build() {
   cd cosmic-settings
-  RUSTFLAGS+=" -C link-arg=-fuse-ld=lld"
+  RUSTFLAGS+=" -C link-arg=-fuse-ld=mold"
   just build-release --frozen
 }
 
