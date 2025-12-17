@@ -1,11 +1,11 @@
 ---
 actions:
   addRepo: galaxy
-  removeRepo: galaxy-gremlins
-  triggersBuild: false
+  removeRepo: null
+  triggersBuild: true
   triggersRebuild: false
   triggersRepoAdd: true
-  triggersRepoRemove: true
+  triggersRepoRemove: false
   triggersNoCheck: false
 repos:
   system-goblins:
@@ -45,16 +45,17 @@ repos:
     packages: []
     debug: []
   galaxy-goblins:
-    version: null
-    packages: []
+    version: 1.6.4-12
+    packages:
+      - scribus-1.6.4-12-x86_64.pkg.tar.zst
     debug: []
   galaxy-gremlins:
     version: null
     packages: []
     debug: []
   galaxy:
-    version: 1.6.4-10
+    version: 1.6.5-2
     packages:
-      - scribus-1.6.4-10-x86_64.pkg.tar.zst
+      - scribus-1.6.5-2-x86_64.pkg.tar.zst
     debug: []
 team: galaxy
