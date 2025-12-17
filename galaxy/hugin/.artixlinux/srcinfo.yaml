@@ -1,0 +1,51 @@
+---
+version: 2025.0.1-1
+pkgbase:
+  name: hugin
+  pkgdesc: Panorama photo stitcher
+  pkgver: 2025.0.1
+  pkgrel: 1
+  url: http://hugin.sourceforge.net/
+  arch:
+    - x86_64
+  license:
+    - GPL-2.0-only
+  makedepends:
+    - cmake
+    - dos2unix
+    - mesa
+    - python-setuptools
+    - swig
+    - tclap
+  depends:
+    - enblend-enfuse
+    - exiv2
+    - fftw
+    - glew
+    - glu
+    - lapack
+    - lcms2
+    - lensfun
+    - libpano13
+    - libtiff
+    - libxi
+    - libxmu
+    - openexr
+    - python
+    - sqlite
+    - vigra
+    - wxwidgets-gtk3
+  optdepends:
+    - 'darktable: RAW import using darktable'
+    - 'dcraw: RAW import using dcraw'
+    - 'perl-image-exiftool: GPano tags support'
+    - 'rawtherapee: RAW import using rawtherapee'
+  source:
+    - https://downloads.sourceforge.net/hugin/hugin-2025.0.1.tar.bz2
+    - ignore_gzip_timestamps.patch
+  sha256sums:
+    - 7cf8eb33a6a8848cc7f816faf4bc88389228883d5513136dccb5cb243912ab79
+    - e6a41ce195c55f0c895a359203c84c47e885dbbd98c9b077c9a5e092be3bafb4
+pkgname:
+  - name: hugin
+# generated with artixpkg 0.37.4-1-any
