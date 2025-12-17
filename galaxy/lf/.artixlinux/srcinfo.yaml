@@ -1,9 +1,9 @@
 ---
-version: 38-1
+version: 40-1
 pkgbase:
   name: lf
   pkgdesc: A terminal file manager inspired by ranger
-  pkgver: 38
+  pkgver: 40
   pkgrel: 1
   url: https://github.com/gokcehan/lf
   arch:
@@ -15,14 +15,12 @@ pkgbase:
     - go
   depends:
     - glibc
-  options:
-    - '!lto'
   source:
-    - lf::git+https://github.com/gokcehan/lf#tag=r38
+    - lf::git+https://github.com/gokcehan/lf#tag=r40
   sha512sums:
-    - f945054b40d6a522d4430eae24280acbb8c1185d2f063970fccc6f088757cf4052fc54945bf471979e3a86ef6cf3a9cd3a59a4c103c31f9388bc72a7020935e2
+    - adf8cfcb91b4b3c84b36ccf63836c72509168c31579f445465ede77482cd8d7d31714758da62b7580d6764774437f82b62c5e358dca4fefa239b29602874d435
   b2sums:
-    - 017317b995551f7db73cde99008453e278e615788f0b6000921a9965aed9e506c040c08b827908ccc44469330bbf4a7630bae9061a192849733ae4b52021e330
+    - 022a36b42c03519e9a7bb12e2ec9a904bd37239189159d8ed60aec09b934c7afae8a41252551a80fce8f9a1feae6801de18667934eaa0c28e7f4cdfaa0c74a41
 pkgname:
   - name: lf
-# generated with artixpkg 0.37.4-1-any
+# generated with artixpkg 0.37.5-10-any
