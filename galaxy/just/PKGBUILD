@@ -3,8 +3,8 @@
 # Contributor: Fredy García <frealgagu at gmail dot com>
 
 pkgname=just
-pkgver=1.43.1
-pkgrel=1
+pkgver=1.45.0
+pkgrel=1.2
 pkgdesc="A handy way to save and run project-specific commands"
 arch=("x86_64")
 url="https://github.com/casey/just"
@@ -12,11 +12,11 @@ license=("custom:CC0")
 depends=("gcc-libs")
 makedepends=("cargo")
 source=("${pkgname}-${pkgver}.tar.gz::https://github.com/casey/${pkgname}/archive/${pkgver}.tar.gz")
-sha256sums=('741b5c6743501dc4dbd23050dd798f571d873d042b67bcea113d622b0c37d180')
+sha256sums=('e43dfa0f541fd8a115fb61de7c30d949d2f169d155fb1776abeaba9be7eb0e07')
 
 prepare() {
   cd "${pkgname}-${pkgver}"
-  cargo fetch --locked --target "$(rustc -vV | sed -n 's/host: //p')"
+  cargo fetch --locked --target "$(rustc --print host-tuple)"
   mkdir -p man completions
 }
 
