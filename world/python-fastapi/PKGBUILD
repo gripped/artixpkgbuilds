@@ -4,8 +4,8 @@
 
 _name=fastapi
 pkgname=python-$_name
-pkgver=0.123.5
-pkgrel=1
+pkgver=0.127.0
+pkgrel=2
 pkgdesc='FastAPI framework, high performance, easy to learn, fast to code, ready for production'
 arch=(any)
 url="https://github.com/fastapi/fastapi"
@@ -32,7 +32,6 @@ checkdepends=(
   # test dependencies
   python-aiosqlite
   python-anyio
-  python-databases
   python-flask
   python-httpx
   python-inline-snapshot
@@ -71,8 +70,8 @@ optdepends=(
   'uvicorn: for Uvicorn as ASGI server'
 )
 source=($_name-$pkgver.tar.gz::$url/archive/$pkgver.tar.gz)
-sha512sums=('289967084f91414069123c464d48bc1862bbd93c0eee238adc5f8e39cceecf424292c0babd622d67956fb9737906e988bbcb0cb093a0b99907b9c8690fdd8624')
-b2sums=('92f1fea99efe87fb670f20cf1d032bcbfd8adb99a014b3cca820f68dbcdda8f2ee3a51b53289bfe4f9641a2e962cabc9b9e4b4ba926e35562c51c5f142eec342')
+sha512sums=('a35f4c4c617c00982a450cec68006f4abd76c319d383a89b64fec6415defcfef00f564d2cd8abaafa70e20a61168c9d0a7924bce8b3559913c345b2aaaf11719')
+b2sums=('0fb37a667de352b121f22d9871c489dd2149a60a90348fb93fdc90ea98369b50e34c41851b09ce33ab2a4724148da09ea2a3a0714510f3813d1a9d410fcecdd0')
 
 prepare() {
   cd $_name-$pkgver
@@ -106,3 +105,4 @@ package() {
   python -m installer --destdir="$pkgdir" dist/*.whl
   install -vDm 644 LICENSE -t "$pkgdir/usr/share/licenses/$pkgname/"
 }
+ 
