@@ -5,7 +5,7 @@
 
 pkgname=cinnamon-desktop
 pkgver=6.6.1
-pkgrel=1.1
+pkgrel=1.7
 pkgdesc="Library with common API for various Cinnamon modules"
 arch=(x86_64)
 url="https://github.com/linuxmint/${pkgname}"
@@ -27,10 +27,11 @@ prepare() {
 }
 
 build() {
-  artix-meson build $pkgname
+  artix-meson build $pkgname -Dsystemd=disabled
   meson compile -C build
 }
 
 package() {
   meson install -C build --destdir="$pkgdir"
 }
+
