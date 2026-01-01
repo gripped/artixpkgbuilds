@@ -1,0 +1,26 @@
+---
+version: 1.2.15.1-1
+pkgbase:
+  name: alsa-ucm-conf
+  pkgdesc: ALSA Use Case Manager configuration (and topologies)
+  pkgver: 1.2.15.1
+  pkgrel: 1
+  url: https://alsa-project.org/
+  arch:
+    - any
+  license:
+    - BSD-3-Clause
+  source:
+    - https://alsa-project.org//files/pub/lib/alsa-ucm-conf-1.2.15.1.tar.bz2
+    - https://alsa-project.org//files/pub/lib/alsa-ucm-conf-1.2.15.1.tar.bz2.sig
+  validpgpkeys:
+    - F04DF50737AC1A884C4B3D718380596DA6E59C91
+  sha512sums:
+    - 1c506cd6ed18ecf3f549dce9d945684594cbc3ca315b2c9d399dc5b8d6617209400053509dfb76ba5dd48a215803e5c0bbc654a40498bb8097ea6fa1baa90f9e
+    - SKIP
+  b2sums:
+    - c8c0ef9872f6c2bb69f2a43585a7833663e0f559dc51a5f2c0d361f6dd8fad2d6180dfdebbd4c63f094216570f6109097d1f788bf90b75149ca42871d493ef1d
+    - SKIP
+pkgname:
+  - name: alsa-ucm-conf
+# generated with artixpkg 0.37.4-1-any
