@@ -54,7 +54,7 @@ repos:
     packages: []
     debug: []
   galaxy:
-    version: 0.0.1-13
+    version: 0.0.1-14
     packages:
-      - moksha-theme-dimensions-0.0.1-13-any.pkg.tar.zst
+      - moksha-theme-dimensions-0.0.1-14-any.pkg.tar.zst
     debug: []
