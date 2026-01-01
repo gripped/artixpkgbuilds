@@ -1,55 +1,61 @@
 ---
-pkgbase:
-  name: alsa-utils
-  version: 1.2.14-1
-  arch:
-    - x86_64
-  pkgname:
-    - alsa-utils
 actions:
   addRepo: world
-  removeRepo: null
-  triggersBuild: true
+  removeRepo: world-gremlins
+  triggersBuild: false
   triggersRebuild: false
   triggersRepoAdd: true
-  triggersRepoRemove: false
+  triggersRepoRemove: true
   triggersNoCheck: false
 repos:
   system-goblins:
     version: null
     packages: []
+    debug: []
   system-gremlins:
     version: null
     packages: []
+    debug: []
   system:
     version: null
     packages: []
+    debug: []
   world-goblins:
     version: null
     packages: []
+    debug: []
   world-gremlins:
     version: null
     packages: []
+    debug: []
   world:
-    version: 1.2.14-1
+    version: 1.2.15.1-1
     packages:
-      - alsa-utils-1.2.14-1-x86_64.pkg.tar.zst
+      - alsa-utils-1.2.15.1-1-x86_64.pkg.tar.zst
+    debug:
+      - alsa-utils-debug-1.2.15.1-1-x86_64.pkg.tar.zst
   lib32-goblins:
     version: null
     packages: []
+    debug: []
   lib32-gremlins:
     version: null
     packages: []
+    debug: []
   lib32:
     version: null
     packages: []
+    debug: []
   galaxy-goblins:
     version: null
     packages: []
+    debug: []
   galaxy-gremlins:
     version: null
     packages: []
+    debug: []
   galaxy:
     version: null
     packages: []
+    debug: []
 team: world
