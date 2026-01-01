@@ -54,7 +54,7 @@ repos:
     packages: []
     debug: []
   galaxy:
-    version: 0.12.11-1
+    version: 0.12.11-2
     packages:
-      - moksha-theme-detour-0.12.11-1-any.pkg.tar.zst
+      - moksha-theme-detour-0.12.11-2-any.pkg.tar.zst
     debug: []
