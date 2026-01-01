@@ -54,7 +54,7 @@ repos:
     packages: []
     debug: []
   galaxy:
-    version: 0.3.8-10
+    version: 0.3.8-11
     packages:
-      - moksha-theme-kl4k-0.3.8-10-any.pkg.tar.zst
+      - moksha-theme-kl4k-0.3.8-11-any.pkg.tar.zst
     debug: []
