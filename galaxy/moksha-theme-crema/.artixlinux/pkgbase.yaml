@@ -54,7 +54,7 @@ repos:
     packages: []
     debug: []
   galaxy:
-    version: 0.10.0-10
+    version: 0.10.0-11
     packages:
-      - moksha-theme-crema-0.10.0-10-any.pkg.tar.zst
+      - moksha-theme-crema-0.10.0-11-any.pkg.tar.zst
     debug: []
