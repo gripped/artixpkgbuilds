@@ -54,7 +54,7 @@ repos:
     packages: []
     debug: []
   galaxy:
-    version: 0.5.0-16
+    version: 0.5.0-17
     packages:
-      - moksha-theme-arc-green-0.5.0-16-any.pkg.tar.zst
+      - moksha-theme-arc-green-0.5.0-17-any.pkg.tar.zst
     debug: []
