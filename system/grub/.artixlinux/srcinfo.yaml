@@ -1,9 +1,9 @@
 ---
-version: 2:2.14rc1-2
+version: 2:2.14rc1.r54.g29f3131a-2
 pkgbase:
   name: grub
   pkgdesc: GNU GRand Unified Bootloader (2)
-  pkgver: 2.14rc1
+  pkgver: 2.14rc1.r54.g29f3131a
   pkgrel: 2
   epoch: 2
   url: https://www.gnu.org/software/grub/
@@ -26,6 +26,7 @@ pkgbase:
     - sdl
     - texinfo
     - ttf-dejavu
+    - wget
     - xz
   depends:
     - device-mapper

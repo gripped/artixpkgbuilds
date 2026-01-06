@@ -17,9 +17,9 @@ repos:
     packages: []
     debug: []
   system:
-    version: 2:2.14rc1-2
+    version: 2:2.14rc1.r54.g29f3131a-2
     packages:
-      - grub-2:2.14rc1-2-x86_64.pkg.tar.zst
+      - grub-2:2.14rc1.r54.g29f3131a-2-x86_64.pkg.tar.zst
     debug: []
   world-goblins:
     version: null
