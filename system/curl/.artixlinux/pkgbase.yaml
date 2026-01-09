@@ -17,12 +17,13 @@ repos:
     packages: []
     debug: []
   system:
-    version: 8.17.0-2
+    version: 8.18.0-2
     packages:
-      - curl-8.17.0-2-x86_64.pkg.tar.zst
-      - libcurl-compat-8.17.0-2-x86_64.pkg.tar.zst
-      - libcurl-gnutls-8.17.0-2-x86_64.pkg.tar.zst
-    debug: []
+      - curl-8.18.0-2-x86_64.pkg.tar.zst
+      - libcurl-compat-8.18.0-2-x86_64.pkg.tar.zst
+      - libcurl-gnutls-8.18.0-2-x86_64.pkg.tar.zst
+    debug:
+      - curl-debug-8.18.0-2-x86_64.pkg.tar.zst
   world-goblins:
     version: null
     packages: []
