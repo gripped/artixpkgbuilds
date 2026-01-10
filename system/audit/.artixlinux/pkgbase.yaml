@@ -17,12 +17,12 @@ repos:
     packages: []
     debug: []
   system:
-    version: 4.1.2-1
+    version: 4.1.2-2
     packages:
-      - audit-4.1.2-1-x86_64.pkg.tar.zst
-      - audispd-plugins-4.1.2-1-x86_64.pkg.tar.zst
-      - audispd-plugins-zos-4.1.2-1-x86_64.pkg.tar.zst
-      - python-audit-4.1.2-1-x86_64.pkg.tar.zst
+      - audit-4.1.2-2-x86_64.pkg.tar.zst
+      - audispd-plugins-4.1.2-2-x86_64.pkg.tar.zst
+      - audispd-plugins-zos-4.1.2-2-x86_64.pkg.tar.zst
+      - python-audit-4.1.2-2-x86_64.pkg.tar.zst
     debug: []
   world-goblins:
     version: null
