@@ -17,9 +17,9 @@ repos:
     packages: []
     debug: []
   system:
-    version: 1.26-1
+    version: 1.26-2
     packages:
-      - gdbm-1.26-1-x86_64.pkg.tar.zst
+      - gdbm-1.26-2-x86_64.pkg.tar.zst
     debug: []
   world-goblins:
     version: null
