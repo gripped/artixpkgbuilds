@@ -53,9 +53,9 @@ repos:
     packages: []
     debug: []
   galaxy:
-    version: 20260107-1
+    version: 20260107-2
     packages:
-      - archlinux-keyring-20260107-1-any.pkg.tar.zst
-      - voa-verifiers-arch-20260107-1-any.pkg.tar.zst
+      - archlinux-keyring-20260107-2-any.pkg.tar.zst
+      - voa-verifiers-arch-20260107-2-any.pkg.tar.zst
     debug: []
 team: galaxy
