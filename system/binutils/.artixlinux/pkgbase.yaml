@@ -17,11 +17,11 @@ repos:
     packages: []
     debug: []
   system:
-    version: 2.45.1-1
+    version: 2.45.1+r35+g12d0a1dbc1b9-1
     packages:
-      - binutils-2.45.1-1-x86_64.pkg.tar.zst
+      - binutils-2.45.1+r35+g12d0a1dbc1b9-1-x86_64.pkg.tar.zst
     debug:
-      - binutils-debug-2.45.1-1-x86_64.pkg.tar.zst
+      - binutils-debug-2.45.1+r35+g12d0a1dbc1b9-1-x86_64.pkg.tar.zst
   world-goblins:
     version: null
     packages: []
