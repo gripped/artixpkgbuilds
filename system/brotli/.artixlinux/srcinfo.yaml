@@ -1,0 +1,40 @@
+---
+version: 1.2.0-1
+pkgbase:
+  name: brotli
+  pkgdesc: Generic-purpose lossless compression algorithm
+  pkgver: 1.2.0
+  pkgrel: 1
+  url: https://github.com/google/brotli
+  arch:
+    - x86_64
+  license:
+    - MIT
+  makedepends:
+    - git
+    - cmake
+    - python-setuptools
+    - python-build
+    - python-installer
+    - python-wheel
+    - python-pkgconfig
+  source:
+    - brotli::git+https://github.com/google/brotli#tag=v1.2.0
+  sha512sums:
+    - 36b8fadb3e5de540746eea19c758234095fafc0a4a687bd70fc70b0f74036c03cf9c70a7339aa1626f1197b5ac707bf5b01e393f6cd26c90b78519529724871a
+pkgname:
+  - name: brotli
+    depends:
+      - glibc
+    provides:
+      - libbrotlicommon.so
+      - libbrotlidec.so
+      - libbrotlienc.so
+  - name: python-brotli
+    pkgdesc: Generic-purpose lossless compression algorithm - python library
+    depends:
+      - python
+  - name: brotli-testdata
+    pkgdesc: Generic-purpose lossless compression algorithm - test data
+    depends: []
+# generated with artixpkg 0.37.4-1-any
