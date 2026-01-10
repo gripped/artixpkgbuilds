@@ -17,9 +17,9 @@ repos:
     packages: []
     debug: []
   system:
-    version: 1.10.5-3
+    version: 1.10.6-1
     packages:
-      - libpcap-1.10.5-3-x86_64.pkg.tar.zst
+      - libpcap-1.10.6-1-x86_64.pkg.tar.zst
     debug: []
   world-goblins:
     version: null
