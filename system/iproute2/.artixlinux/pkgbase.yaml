@@ -17,9 +17,9 @@ repos:
     packages: []
     debug: []
   system:
-    version: 6.17.0-1
+    version: 6.18.0-1
     packages:
-      - iproute2-6.17.0-1-x86_64.pkg.tar.zst
+      - iproute2-6.18.0-1-x86_64.pkg.tar.zst
     debug: []
   world-goblins:
     version: null
