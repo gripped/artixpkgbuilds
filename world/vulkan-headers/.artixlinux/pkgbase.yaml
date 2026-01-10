@@ -29,11 +29,11 @@ repos:
     packages: []
     debug: []
   world:
-    version: 1:1.4.335.0-1
+    version: 1:1.4.335.0-2
     packages:
-      - vulkan-headers-1:1.4.335.0-1-any.pkg.tar.zst
+      - vulkan-headers-1:1.4.335.0-2-any.pkg.tar.zst
     debug:
-      - vulkan-headers-debug-1:1.4.335.0-1-any.pkg.tar.zst
+      - vulkan-headers-debug-1:1.4.335.0-2-any.pkg.tar.zst
   lib32-goblins:
     version: null
     packages: []
