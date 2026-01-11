@@ -1,10 +1,10 @@
 ---
-version: 1.3.0-1
+version: 1.3.0-4
 pkgbase:
   name: python-build
   pkgdesc: A simple, correct Python build frontend
   pkgver: 1.3.0
-  pkgrel: 1
+  pkgrel: 4
   url: https://github.com/pypa/build
   arch:
     - any
@@ -47,4 +47,4 @@ pkgname:
       - python-pyproject-hooks
       - python-packaging
       - python-pyproject-hooks
-# generated with artixpkg 0.36.4-1-any
+# generated with artixpkg 0.37.4-1-any
