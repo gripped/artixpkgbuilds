@@ -1,28 +1,49 @@
-# Maintainer: kpcyrd <kpcyrd[at]archlinux[dot]org>
+# Maintainer: Carl Smedstad <carsme@archlinux.org>
+# Contributor: kpcyrd <kpcyrd[at]archlinux[dot]org>
 # Contributor: Dobroslaw Kijowski [dobo] <dobo90_at_gmail.com>
 
 pkgname=python-intervaltree
-_pyname=intervaltree
-pkgver=3.1.0
-pkgrel=9
+pkgver=3.2.1
+pkgrel=1
 pkgdesc='Library providing a mutable, self-balancing interval tree for Python'
-url="https://github.com/chaimleib/intervaltree"
 arch=('any')
-license=('Apache')
-depends=('python-sortedcontainers')
-makedepends=('python-setuptools')
-source=("${pkgname}-${pkgver}.tar.gz::https://github.com/chaimleib/${_pyname}/archive/${pkgver}.tar.gz")
-sha512sums=('96dd7710bb5b02470cb7d1b479d905d5e4a18abb9aef055fa55de6b7c25dcad46260f76e5d042bec599b02de2045d8ba03ff1900fff9562227dff5a76b45a070')
-b2sums=('c11a93d3dfcf9f58ccf18e1a2a219daa5082abc3187f0c65fb309df221ec61495a31923819a92c03ff251a2f00b0588ab00aaaf70417a3b1a785c18a7bb3a702')
+url="https://github.com/chaimleib/intervaltree"
+license=('Apache-2.0')
+depends=(
+  'python'
+  'python-sortedcontainers'
+)
+makedepends=(
+  'python-build'
+  'python-hatchling'
+  'python-installer'
+  'python-wheel'
+)
+checkdepends=('python-pytest')
+source=(
+  "$url/archive/$pkgver/$pkgname-$pkgver.tar.gz"
+  "$pkgname-remove-uv-dynamic-version.patch"
+)
+b2sums=('7aa45f4d7908eee0d613e782bd4180e5e90111e9740f9cfc4025700ad0e6b3530cb9487275ce6959d5a0ea75fe74d1e9436e24c63f5abd4a4cf863a54381634c'
+        '2cc99fdcc760e53579d3d2a603c8b78f85e21daeb09dac44431c4dc307355fd0237b173d162f68fbfceac59c870aad2730f31421ea46a328e39a93a560a267ea')
+
+prepare() {
+  cd ${pkgname#python-}-$pkgver
+  patch -Np1 < ../$pkgname-remove-uv-dynamic-version.patch
+  sed -i "s/@VERSION@/$pkgver/" pyproject.toml
+}
 
 build() {
-  cd "${_pyname}-${pkgver}"
-  python setup.py build
+  cd ${pkgname#python-}-$pkgver
+  python -m build --wheel --no-isolation --skip-dependency-check
+}
+
+check() {
+  cd ${pkgname#python-}-$pkgver
+  pytest
 }
 
 package() {
-  cd "${_pyname}-${pkgver}"
-  python setup.py install -O1 --root="${pkgdir}" --skip-build
+  cd ${pkgname#python-}-$pkgver
+  python -m installer --destdir="$pkgdir" dist/*.whl
 }
-
-# vim: ts=2 sw=2 et:
