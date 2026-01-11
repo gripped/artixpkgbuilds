@@ -1,0 +1,28 @@
+---
+version: 1.7.1-1
+pkgbase:
+  name: python-configargparse
+  pkgdesc: A drop-in replacement for argparse that allows options to also be set via config files and/or environment variables
+  pkgver: 1.7.1
+  pkgrel: 1
+  url: https://github.com/bw2/ConfigArgParse
+  arch:
+    - any
+  license:
+    - MIT
+  checkdepends:
+    - python-pytest
+    - python-yaml
+  makedepends:
+    - python-setuptools
+  depends:
+    - python
+  optdepends:
+    - 'python-yaml: for YAML support'
+  source:
+    - https://github.com/bw2/ConfigArgParse/archive/1.7.1/python-configargparse-1.7.1.tar.gz
+  sha512sums:
+    - ca9741cf04a444b86c589a0097838cf9d6e1e752287587dda103cf59d9603890067b418ac26323aac4749787ac28c9764f1a41be839055756420e51363db10c7
+pkgname:
+  - name: python-configargparse
+# generated with artixpkg 0.37.4-1-any
