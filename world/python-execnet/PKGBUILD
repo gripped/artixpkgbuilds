@@ -2,7 +2,7 @@
 
 pkgname=python-execnet
 pkgver=2.1.2
-pkgrel=1
+pkgrel=3
 pkgdesc="Rapid multi-Python deployment"
 arch=('any')
 license=('MIT')
@@ -44,3 +44,4 @@ package() {
   python -m installer --destdir="$pkgdir" dist/*.whl
   install -Dm644 LICENSE -t "$pkgdir"/usr/share/licenses/$pkgname/
 }
+ 
