@@ -1,0 +1,34 @@
+---
+version: 0.29.1-4
+pkgbase:
+  name: python-mongoengine
+  pkgdesc: A Python Object-Document-Mapper for working with MongoDB
+  pkgver: 0.29.1
+  pkgrel: 4
+  url: https://github.com/MongoEngine/mongoengine
+  arch:
+    - any
+  license:
+    - MIT
+  checkdepends:
+    - python-mongomock
+    - python-pillow
+    - python-pytest
+  makedepends:
+    - python-build
+    - python-installer
+    - python-setuptools
+    - python-wheel
+  depends:
+    - python
+    - python-pymongo
+  optdepends:
+    - 'python-dateutil: for DateTimeField'
+    - 'python-pillow: for ImageField / ImageGridFsProxy'
+  source:
+    - https://github.com/MongoEngine/mongoengine/archive/v0.29.1/python-mongoengine-0.29.1.tar.gz
+  b2sums:
+    - 6781abd5aa6c9dfbe6e56427878aae5a5f4e66189c2d4d82b80fcb8bd3b0afc8fbd8d7fcc0d0ee95888545e0e4411965ce8a13719231198e8f52c0327679f524
+pkgname:
+  - name: python-mongoengine
+# generated with artixpkg 0.37.4-1-any
