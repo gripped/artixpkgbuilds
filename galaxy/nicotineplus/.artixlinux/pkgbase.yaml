@@ -2,7 +2,7 @@
 team: galaxy
 actions:
   addRepo: galaxy
-  removeRepo: galaxy-goblins
+  removeRepo: galaxy-gremlins
   triggersBuild: false
   triggersRebuild: false
   triggersRepoAdd: true
@@ -54,7 +54,7 @@ repos:
     packages: []
     debug: []
   galaxy:
-    version: 3.3.10-1
+    version: 3.3.10-2
     packages:
-      - nicotine+-3.3.10-1-any.pkg.tar.zst
+      - nicotine+-3.3.10-2-any.pkg.tar.zst
     debug: []
