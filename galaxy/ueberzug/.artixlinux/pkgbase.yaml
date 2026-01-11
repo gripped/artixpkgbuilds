@@ -1,12 +1,12 @@
 ---
-team: world
+team: galaxy
 actions:
   addRepo: galaxy
-  removeRepo: null
-  triggersBuild: true
+  removeRepo: galaxy-gremlins
+  triggersBuild: false
   triggersRebuild: false
   triggersRepoAdd: true
-  triggersRepoRemove: false
+  triggersRepoRemove: true
   triggersNoCheck: false
 repos:
   system-goblins:
@@ -54,7 +54,7 @@ repos:
     packages: []
     debug: []
   galaxy:
-    version: 18.3.1-4
+    version: 18.3.1-5
     packages:
-      - ueberzug-18.3.1-4-x86_64.pkg.tar.zst
+      - ueberzug-18.3.1-5-x86_64.pkg.tar.zst
     debug: []
