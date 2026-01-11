@@ -4,7 +4,7 @@
 # Contributor: Angel 'angvp' Velasquez <angvp[at]archlinux.com.ve>
 
 pkgname=python-numpy
-pkgver=2.3.5
+pkgver=2.4.1
 pkgrel=1
 pkgdesc="Scientific tools for Python"
 arch=('x86_64')
@@ -21,7 +21,7 @@ source=(git+https://github.com/numpy/numpy#tag=v$pkgver
         numpy-pocketfft::git+https://github.com/mreineck/pocketfft
         numpy-svml::git+https://github.com/numpy/SVML.git
         numpy-pythoncapi-compat::git+https://github.com/python/pythoncapi-compat)
-sha512sums=('2cc2f09fbd67f8d6c3ca24191cb7dee87c801ca2fd82a6256117366a4b54da43e0ca257c3ea8cf5379c4721997df4f9203fc96567075468302106e1e32784639'
+sha512sums=('cd6459f1087752714771b0194bf24ca6e404b8453413c2ae6afaf4d03cc34cd673eec506e8556936a455fcf2f55dee7ffa7f596b841aaa9fdc2365a3861b9a1d'
             'SKIP'
             'SKIP'
             'SKIP'
@@ -53,9 +53,10 @@ build() {
   CFLAGS+=" -ffat-lto-objects" \
   CXXFLAGS+=" -ffat-lto-objects" \
   python -m build --wheel --no-isolation \
-    -Csetup-args="-Dblas=cblas" \
-    -Csetup-args="-Dlapack=lapack" \
-    -Csetup-args="-Denable-openmp=true"
+    -Csetup-args=-Dblas=cblas \
+    -Csetup-args=-Dlapack=lapack \
+    -Csetup-args=-Denable-openmp=true \
+    -Csetup-args=-Dcpu-baseline=NONE
 }
 
 check() {
