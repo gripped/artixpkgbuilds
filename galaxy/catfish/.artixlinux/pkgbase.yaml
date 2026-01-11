@@ -53,8 +53,8 @@ repos:
     packages: []
     debug: []
   galaxy:
-    version: 4.20.1-1
+    version: 4.20.1-2
     packages:
-      - catfish-4.20.1-1-any.pkg.tar.zst
+      - catfish-4.20.1-2-any.pkg.tar.zst
     debug: []
 team: galaxy
