@@ -1,11 +1,11 @@
 ---
 actions:
   addRepo: galaxy
-  removeRepo: null
-  triggersBuild: true
+  removeRepo: galaxy-gremlins
+  triggersBuild: false
   triggersRebuild: false
   triggersRepoAdd: true
-  triggersRepoRemove: false
+  triggersRepoRemove: true
   triggersNoCheck: false
 repos:
   system-goblins:
@@ -46,17 +46,16 @@ repos:
     packages: []
     debug: []
   galaxy-goblins:
-    version: 3.2.1-2
-    packages:
-      - xapp-3.2.1-2-x86_64.pkg.tar.zst
+    version: null
+    packages: []
     debug: []
   galaxy-gremlins:
     version: null
     packages: []
     debug: []
   galaxy:
-    version: 3.2.1-1.2
+    version: 3.2.1-2.2
     packages:
-      - xapp-3.2.1-1.2-x86_64.pkg.tar.zst
+      - xapp-3.2.1-2.2-x86_64.pkg.tar.zst
     debug: []
-team: world
+team: galaxy
