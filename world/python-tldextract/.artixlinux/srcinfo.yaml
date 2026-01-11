@@ -1,0 +1,40 @@
+---
+version: 5.3.1-2
+pkgbase:
+  name: python-tldextract
+  pkgdesc: Accurately separate the TLD from the registered domain and subdomains of a URL, using the Public Suffix List
+  pkgver: 5.3.1
+  pkgrel: 2
+  url: https://github.com/john-kurkowski/tldextract
+  arch:
+    - any
+  license:
+    - BSD-3-Clause
+  checkdepends:
+    - python-pytest
+    - python-pytest-mock
+    - python-responses
+    - python-isort
+    - python-syrupy
+  makedepends:
+    - git
+    - python-build
+    - python-installer
+    - python-setuptools
+    - python-setuptools-scm
+    - python-wheel
+  depends:
+    - python
+    - python-idna
+    - python-requests
+    - python-requests-file
+    - python-filelock
+  source:
+    - python-tldextract::git+https://github.com/john-kurkowski/tldextract.git#tag=5.3.1
+  sha512sums:
+    - 82d54bd13ac85cdc70db01f92fec2a27991d4391250e7a570eee35642a0a8229d5cb315a9aa5a55dbeb448da283f56e915f7dd56e998c0a9433b4c437d42a6da
+  b2sums:
+    - a08e7615c207dfbace5dc307198ab52ccbcd481e01114231692c31e1ae405c1ddc1568d4501aaf49c996a5defb0c45a4ec08a9fc4ce64d6765b339b5490229a6
+pkgname:
+  - name: python-tldextract
+# generated with artixpkg 0.37.4-1-any
