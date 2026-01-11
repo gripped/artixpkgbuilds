@@ -1,0 +1,34 @@
+---
+version: 3.7.2-1
+pkgbase:
+  name: python-pyproj
+  pkgdesc: Python interfaces to PROJ.4 library
+  pkgver: 3.7.2
+  pkgrel: 1
+  url: https://github.com/pyproj4/pyproj
+  arch:
+    - x86_64
+  license:
+    - custom
+  checkdepends:
+    - python-pytest
+    - python-numpy
+    - python-pandas
+    - python-shapely
+    - python-xarray
+  makedepends:
+    - python-setuptools
+    - python-wheel
+    - python-build
+    - python-installer
+    - cython
+  depends:
+    - proj
+    - python-certifi
+  source:
+    - https://github.com/pyproj4/pyproj/archive/3.7.2/python-pyproj-3.7.2.tar.gz
+  sha256sums:
+    - a13e65d9c3de0b3a7a510746165ed55163924298f2222523d4f381a8ee58fbcf
+pkgname:
+  - name: python-pyproj
+# generated with artixpkg 0.37.4-1-any
