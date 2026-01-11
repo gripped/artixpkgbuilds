@@ -4,7 +4,7 @@
 
 pkgname=python-versioningit
 pkgver=3.3.0
-pkgrel=1
+pkgrel=2
 pkgdesc='Versioning It with your Version In Git'
 arch=('any')
 url='https://github.com/jwodder/versioningit'
@@ -57,3 +57,4 @@ package() {
   python -m installer --destdir="$pkgdir" dist/*.whl
   install -Dm644 LICENSE "${pkgdir}"/usr/share/licenses/${pkgname}/LICENSE
 }
+
