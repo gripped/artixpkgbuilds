@@ -1,11 +1,11 @@
 ---
 actions:
   addRepo: world
-  removeRepo: null
-  triggersBuild: true
+  removeRepo: world-gremlins
+  triggersBuild: false
   triggersRebuild: false
   triggersRepoAdd: true
-  triggersRepoRemove: false
+  triggersRepoRemove: true
   triggersNoCheck: false
 repos:
   system-goblins:
@@ -29,10 +29,11 @@ repos:
     packages: []
     debug: []
   world:
-    version: 1.13.13-1
+    version: 1.13.13-2
     packages:
-      - ropper-1.13.13-1-any.pkg.tar.zst
-    debug: []
+      - ropper-1.13.13-2-any.pkg.tar.zst
+    debug:
+      - ropper-debug-1.13.13-2-any.pkg.tar.zst
   lib32-goblins:
     version: null
     packages: []
