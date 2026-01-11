@@ -5,7 +5,7 @@
 
 pkgname=python-paramiko
 pkgver=4.0.0
-pkgrel=1
+pkgrel=2
 pkgdesc="Python module that implements the SSH2 protocol"
 url="https://github.com/paramiko/paramiko/"
 license=('LGPL-2.1-only')
@@ -44,3 +44,4 @@ package() {
   install -m644 demos/* "$pkgdir"/usr/share/doc/$pkgname/demos
   chmod 755 "$pkgdir"/usr/share/doc/$pkgname/demos/*.py
 }
+ 
