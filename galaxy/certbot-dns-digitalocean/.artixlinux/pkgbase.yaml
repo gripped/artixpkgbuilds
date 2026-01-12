@@ -1,11 +1,11 @@
 ---
 actions:
   addRepo: galaxy
-  removeRepo: null
-  triggersBuild: true
+  removeRepo: galaxy-gremlins
+  triggersBuild: false
   triggersRebuild: false
   triggersRepoAdd: true
-  triggersRepoRemove: false
+  triggersRepoRemove: true
   triggersNoCheck: false
 repos:
   system-goblins:
@@ -53,8 +53,8 @@ repos:
     packages: []
     debug: []
   galaxy:
-    version: 5.2.2-1
+    version: 5.2.2-2
     packages:
-      - certbot-dns-digitalocean-5.2.2-1-any.pkg.tar.zst
+      - certbot-dns-digitalocean-5.2.2-2-any.pkg.tar.zst
     debug: []
 team: galaxy
