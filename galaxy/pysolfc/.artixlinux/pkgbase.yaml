@@ -21,8 +21,9 @@ repos:
     packages: []
     debug: []
   world-goblins:
-    version: null
-    packages: []
+    version: 3.4.1-2
+    packages:
+      - pysolfc-3.4.1-2-any.pkg.tar.zst
     debug: []
   world-gremlins:
     version: null
@@ -53,8 +54,8 @@ repos:
     packages: []
     debug: []
   galaxy:
-    version: 3.4.1-1
+    version: 3.4.1-2
     packages:
-      - pysolfc-3.4.1-1-any.pkg.tar.zst
+      - pysolfc-3.4.1-2-any.pkg.tar.zst
     debug: []
 team: galaxy
