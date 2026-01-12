@@ -29,11 +29,11 @@ repos:
     packages: []
     debug: []
   world:
-    version: 1.2.15.1-1
+    version: 1.2.15.2-1
     packages:
-      - alsa-ucm-conf-1.2.15.1-1-any.pkg.tar.zst
+      - alsa-ucm-conf-1.2.15.2-1-any.pkg.tar.zst
     debug:
-      - alsa-ucm-conf-debug-1.2.15.1-1-any.pkg.tar.zst
+      - alsa-ucm-conf-debug-1.2.15.2-1-any.pkg.tar.zst
   lib32-goblins:
     version: null
     packages: []
