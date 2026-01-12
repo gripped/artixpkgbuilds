@@ -2,7 +2,7 @@
 
 pkgname=sonicde-meta
 pkgver=6.5
-pkgrel=4
+pkgrel=5
 pkgdesc='Meta package to install the Sonic Desktop Environment which aims for keeping and improving the X11-specific ascpects of KDE'
 arch=(x86_64)
 license=('GPL-2.0-or-later')
@@ -58,6 +58,7 @@ depends=(aurorae
          powerdevil
          print-manager
          sddm-kcm
+         sonic-silver-sddm
          sonic-silver-theme
          sonic-win
          sonic-workspace
