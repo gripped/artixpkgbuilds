@@ -29,11 +29,11 @@ repos:
     packages: []
     debug: []
   world:
-    version: 1.2.15.1-1
+    version: 1.2.15.2-1
     packages:
-      - alsa-lib-1.2.15.1-1-x86_64.pkg.tar.zst
+      - alsa-lib-1.2.15.2-1-x86_64.pkg.tar.zst
     debug:
-      - alsa-lib-debug-1.2.15.1-1-x86_64.pkg.tar.zst
+      - alsa-lib-debug-1.2.15.2-1-x86_64.pkg.tar.zst
   lib32-goblins:
     version: null
     packages: []
