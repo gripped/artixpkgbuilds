@@ -53,8 +53,8 @@ repos:
     packages: []
     debug: []
   galaxy:
-    version: 1.6.5-3
+    version: 1.6.5-4
     packages:
-      - scribus-1.6.5-3-x86_64.pkg.tar.zst
+      - scribus-1.6.5-4-x86_64.pkg.tar.zst
     debug: []
 team: galaxy
