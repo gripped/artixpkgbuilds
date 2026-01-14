@@ -45,17 +45,17 @@ repos:
     packages: []
     debug: []
   galaxy-goblins:
-    version: 6.6.2-2
+    version: 6.6.3-2
     packages:
-      - cinnamon-6.6.2-2-x86_64.pkg.tar.zst
+      - cinnamon-6.6.3-2-x86_64.pkg.tar.zst
     debug: []
   galaxy-gremlins:
     version: null
     packages: []
     debug: []
   galaxy:
-    version: 6.6.3-1
+    version: 6.6.3-7
     packages:
-      - cinnamon-6.6.3-1-x86_64.pkg.tar.zst
+      - cinnamon-6.6.3-7-x86_64.pkg.tar.zst
     debug: []
 team: galaxy
