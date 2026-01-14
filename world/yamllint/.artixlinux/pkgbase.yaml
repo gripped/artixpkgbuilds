@@ -29,11 +29,11 @@ repos:
     packages: []
     debug: []
   world:
-    version: 1.37.1-2
+    version: 1.38.0-1
     packages:
-      - yamllint-1.37.1-2-any.pkg.tar.zst
+      - yamllint-1.38.0-1-any.pkg.tar.zst
     debug:
-      - yamllint-debug-1.37.1-2-any.pkg.tar.zst
+      - yamllint-debug-1.38.0-1-any.pkg.tar.zst
   lib32-goblins:
     version: null
     packages: []
