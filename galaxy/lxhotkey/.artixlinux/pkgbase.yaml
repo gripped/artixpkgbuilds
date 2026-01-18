@@ -53,8 +53,8 @@ repos:
     packages: []
     debug: []
   galaxy:
-    version: 0.1.2-2.1
+    version: 0.1.2-3
     packages:
-      - lxhotkey-0.1.2-2.1-x86_64.pkg.tar.zst
+      - lxhotkey-0.1.2-3-x86_64.pkg.tar.zst
     debug: []
 team: galaxy
