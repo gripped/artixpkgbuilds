@@ -54,7 +54,7 @@ repos:
     packages: []
     debug: []
   galaxy:
-    version: 2023-4
+    version: 2023-5
     packages:
-      - reflector-2023-4-any.pkg.tar.zst
+      - reflector-2023-5-any.pkg.tar.zst
     debug: []
