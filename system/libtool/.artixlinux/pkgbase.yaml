@@ -17,11 +17,12 @@ repos:
     packages: []
     debug: []
   system:
-    version: 2.6.0-1
+    version: 2.6.0-2
     packages:
-      - libtool-2.6.0-1-x86_64.pkg.tar.zst
+      - libtool-2.6.0-2-x86_64.pkg.tar.zst
+      - lib32-libltdl-2.6.0-2-x86_64.pkg.tar.zst
     debug:
-      - libtool-debug-2.6.0-1-x86_64.pkg.tar.zst
+      - libtool-debug-2.6.0-2-x86_64.pkg.tar.zst
   world-goblins:
     version: null
     packages: []
