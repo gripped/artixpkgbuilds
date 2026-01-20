@@ -1,9 +1,9 @@
 ---
-version: 1.27.0-1
+version: 1.28.1-1
 pkgbase:
   name: bazelisk
   pkgdesc: A user-friendly launcher for Bazel.
-  pkgver: 1.27.0
+  pkgver: 1.28.1
   pkgrel: 1
   url: https://github.com/bazelbuild/bazelisk
   arch:
@@ -22,9 +22,9 @@ pkgbase:
   options:
     - '!lto'
   source:
-    - git+https://github.com/bazelbuild/bazelisk#tag=v1.27.0
+    - git+https://github.com/bazelbuild/bazelisk#tag=v1.28.1
   sha256sums:
-    - f11a26f40961a59462575ab810e425555f3d70ff805f6edd1a1caeee22d91333
+    - 90ddeed84af7001fb0519fe3d79da26f7451ffda9323cef7f793015eb9504eac
 pkgname:
   - name: bazelisk
-# generated with artixpkg 0.36.5-1-any
+# generated with artixpkg 0.37.5-1-any
