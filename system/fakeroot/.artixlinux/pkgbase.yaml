@@ -17,10 +17,11 @@ repos:
     packages: []
     debug: []
   system:
-    version: 1.37.1.2-1
+    version: 1.37.2-1
     packages:
-      - fakeroot-1.37.1.2-1-x86_64.pkg.tar.zst
-    debug: []
+      - fakeroot-1.37.2-1-x86_64.pkg.tar.zst
+    debug:
+      - fakeroot-debug-1.37.2-1-x86_64.pkg.tar.zst
   world-goblins:
     version: null
     packages: []
