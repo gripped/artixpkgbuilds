@@ -17,11 +17,11 @@ repos:
     packages: []
     debug: []
   system:
-    version: 0.25.10-2
+    version: 0.26.1-1
     packages:
-      - p11-kit-0.25.10-2-x86_64.pkg.tar.zst
-      - libp11-kit-0.25.10-2-x86_64.pkg.tar.zst
-      - p11-kit-docs-0.25.10-2-x86_64.pkg.tar.zst
+      - p11-kit-0.26.1-1-x86_64.pkg.tar.zst
+      - libp11-kit-0.26.1-1-x86_64.pkg.tar.zst
+      - p11-kit-docs-0.26.1-1-x86_64.pkg.tar.zst
     debug: []
   world-goblins:
     version: null
