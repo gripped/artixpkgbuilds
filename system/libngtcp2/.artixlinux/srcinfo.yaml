@@ -1,0 +1,41 @@
+---
+version: 1.20.0-1
+pkgbase:
+  name: libngtcp2
+  pkgdesc: Implementation of IETF QUIC protocol
+  pkgver: 1.20.0
+  pkgrel: 1
+  url: https://github.com/ngtcp2/ngtcp2
+  arch:
+    - x86_64
+  license:
+    - MIT
+  makedepends:
+    - git
+    - brotli
+  depends:
+    - glibc
+    - openssl
+    - libssl.so
+    - gnutls
+  provides:
+    - libngtcp2.so
+    - libngtcp2_crypto_gnutls.so
+    - libngtcp2_crypto_ossl.so
+  source:
+    - git+https://github.com/ngtcp2/ngtcp2.git#tag=v1.20.0?signed
+    - git+https://github.com/ngtcp2/munit.git
+    - git+https://github.com/ngtcp2/urlparse.git
+  validpgpkeys:
+    - F4F3B91474D1EB29889BD0EF7E8403D5D673C366
+  sha256sums:
+    - a2ecedfcb7c859fa699f6bd84afac3f71568a73a8dbc7e84f4213a533e4464ff
+    - SKIP
+    - SKIP
+  b2sums:
+    - 09390fc9dc1fa54be684e89f67f5049eb9c728c94e8dc1161be6dc1c1b42d941d0e10d62e1b54459f9f46ec7d2bc818afc0aed97ec74b32a0a14c59d73ef80c9
+    - SKIP
+    - SKIP
+pkgname:
+  - name: libngtcp2
+# generated with artixpkg 0.37.5-1-any
