@@ -4,7 +4,7 @@
 # Contributor: Daniel Isenmann <daniel@archlinux.org>
 
 pkgname=gimp
-pkgver=3.0.6
+pkgver=3.0.8
 pkgrel=2
 pkgdesc='GNU Image Manipulation Program'
 url='https://www.gimp.org/'
@@ -63,6 +63,7 @@ depends=(
 )
 makedepends=(
   'alsa-lib'
+  'bash-completion'
   'cfitsio'
   'ghostscript'
   'gi-docgen'
@@ -79,6 +80,7 @@ makedepends=(
 )
 optdepends=(
   'alsa-lib: for MIDI event controller module'
+  'bash-completion: for bash completion support'
   'cfitsio: for FITS support'
   'ghostscript: for PostScript support'
   'gjs: for JavaScript scripting support'
@@ -90,7 +92,7 @@ source=(
   git+https://gitlab.gnome.org/GNOME/gimp.git#tag=GIMP_${pkgver//./_}
   git+https://gitlab.gnome.org/GNOME/gimp-data.git
 )
-sha256sums=('207318f002baa3703197d24bc45267c00564505b0307cd312a2279424ca4d7e2'
+sha256sums=('7737db8e51e7a95a43734cfe8c01cdf8a8391c9d19262348c3f5bee42a0bda04'
             'SKIP')
 
 prepare() {
@@ -117,6 +119,10 @@ build() {
 
   artix-meson ${pkgname} build "${meson_options[@]}"
   meson compile -C build
+}
+
+check() {
+  meson test -C build --print-errorlogs
 }
 
 package() {
