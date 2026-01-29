@@ -17,9 +17,9 @@ repos:
     packages: []
     debug: []
   system:
-    version: 1.7.1-1
+    version: 1.7.2-2
     packages:
-      - pam-1.7.1-1-x86_64.pkg.tar.zst
+      - pam-1.7.2-2-x86_64.pkg.tar.zst
     debug: []
   world-goblins:
     version: null
