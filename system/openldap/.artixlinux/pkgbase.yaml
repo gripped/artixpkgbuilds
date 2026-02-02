@@ -17,10 +17,10 @@ repos:
     packages: []
     debug: []
   system:
-    version: 2.6.10-2
+    version: 2.6.12-1
     packages:
-      - openldap-2.6.10-2-x86_64.pkg.tar.zst
-      - libldap-2.6.10-2-x86_64.pkg.tar.zst
+      - openldap-2.6.12-1-x86_64.pkg.tar.zst
+      - libldap-2.6.12-1-x86_64.pkg.tar.zst
     debug: []
   world-goblins:
     version: null
