@@ -50,12 +50,11 @@ repos:
     packages: []
     debug: []
   galaxy-gremlins:
-    version: 0.5.19-7
-    packages:
-      - lutris-0.5.19-7-any.pkg.tar.zst
+    version: null
+    packages: []
     debug: []
   galaxy:
-    version: 0.5.19-8
+    version: 0.5.19-9
     packages:
-      - lutris-0.5.19-8-any.pkg.tar.zst
+      - lutris-0.5.19-9-any.pkg.tar.zst
     debug: []
