@@ -17,9 +17,9 @@ repos:
     packages: []
     debug: []
   system:
-    version: 1:691-1
+    version: 1:691-2
     packages:
-      - less-1:691-1-x86_64.pkg.tar.zst
+      - less-1:691-2-x86_64.pkg.tar.zst
     debug: []
   world-goblins:
     version: null
