@@ -17,10 +17,10 @@ repos:
     packages: []
     debug: []
   system:
-    version: 2.8.4-1
+    version: 2.8.5-1
     packages:
-      - nfs-utils-2.8.4-1-x86_64.pkg.tar.zst
-      - nfsidmap-2.8.4-1-x86_64.pkg.tar.zst
+      - nfs-utils-2.8.5-1-x86_64.pkg.tar.zst
+      - nfsidmap-2.8.5-1-x86_64.pkg.tar.zst
     debug: []
   world-goblins:
     version: null
