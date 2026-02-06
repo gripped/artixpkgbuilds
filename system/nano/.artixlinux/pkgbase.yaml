@@ -17,9 +17,9 @@ repos:
     packages: []
     debug: []
   system:
-    version: 8.7-1
+    version: 8.7.1-1
     packages:
-      - nano-8.7-1-x86_64.pkg.tar.zst
+      - nano-8.7.1-1-x86_64.pkg.tar.zst
     debug: []
   world-goblins:
     version: null
