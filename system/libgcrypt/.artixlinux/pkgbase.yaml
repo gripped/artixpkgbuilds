@@ -17,9 +17,9 @@ repos:
     packages: []
     debug: []
   system:
-    version: 1.11.2-1
+    version: 1.12.0-1
     packages:
-      - libgcrypt-1.11.2-1-x86_64.pkg.tar.zst
+      - libgcrypt-1.12.0-1-x86_64.pkg.tar.zst
     debug: []
   world-goblins:
     version: null
