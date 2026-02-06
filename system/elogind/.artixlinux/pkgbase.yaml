@@ -17,10 +17,10 @@ repos:
     packages: []
     debug: []
   system:
-    version: 255.22-1
+    version: 255.22-2
     packages:
-      - elogind-255.22-1-x86_64.pkg.tar.zst
-      - libelogind-255.22-1-x86_64.pkg.tar.zst
+      - elogind-255.22-2-x86_64.pkg.tar.zst
+      - libelogind-255.22-2-x86_64.pkg.tar.zst
     debug: []
   world-goblins:
     version: null
