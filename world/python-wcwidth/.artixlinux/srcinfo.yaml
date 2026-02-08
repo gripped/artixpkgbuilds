@@ -1,9 +1,9 @@
 ---
-version: 0.3.5-1
+version: 0.6.0-1
 pkgbase:
   name: python-wcwidth
   pkgdesc: Python library that measures the width of unicode strings rendered to a terminal
-  pkgver: 0.3.5
+  pkgver: 0.6.0
   pkgrel: 1
   url: https://github.com/jquast/wcwidth
   arch:
@@ -20,11 +20,11 @@ pkgbase:
   depends:
     - python
   source:
-    - python-wcwidth::git+https://github.com/jquast/wcwidth#tag=0.3.5
+    - python-wcwidth::git+https://github.com/jquast/wcwidth#tag=0.6.0
   sha512sums:
-    - c55fcbf24287e0336b862268a1dbdd538df38efadd531c6b6eab74b831472d613ef9205d2f242cd28feedbedb8d0e3ce74da8d6dd08d2eb677c269e84ae79626
+    - 167c7a58322fda0a9b7f069bf2f718da7fbff990c4cc982039fd89e8ca8c3b963f9dbc118e7aef2052cc3d82b423a8672af5b108cd59c5eb50f9d80523b2a68e
   b2sums:
-    - 670a080f51f29445e0cb25f5482d52f478ca95ac8f5f35091b0239bfab17fd6e35063c80befd0bae5076e53f3a4cec87295018f909fb2492af459002a566bd40
+    - 3242e1e0814bcb132f9a61a114aa2704250618c20d2ad3936307b90174a1d40f9cc29df6bc1da2f3792bf0de1d7a6e4e4d6a56d86852de75cbc28eab4f564247
 pkgname:
   - name: python-wcwidth
 # generated with artixpkg 0.37.6-1-any
