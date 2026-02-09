@@ -1,10 +1,10 @@
 ---
-version: 0.2.3-3
+version: 0.2.5-1
 pkgbase:
   name: python-sqlite-anyio
   pkgdesc: Asynchronous client for SQLite using AnyIO
-  pkgver: 0.2.3
-  pkgrel: 3
+  pkgver: 0.2.5
+  pkgrel: 1
   url: https://github.com/davidbrochart/sqlite-anyio
   arch:
     - any
@@ -16,15 +16,15 @@ pkgbase:
   makedepends:
     - git
     - python-build
-    - python-hatchling
     - python-installer
+    - python-uv-build
   depends:
     - python
     - python-anyio
   source:
-    - git+https://github.com/davidbrochart/sqlite-anyio#tag=v0.2.3
+    - git+https://github.com/davidbrochart/sqlite-anyio#tag=0.2.5
   sha256sums:
-    - e72c03f25557a4dd409e382818fc84cd23591f41fa39fe2592cf429b1bff9497
+    - 6800182cab3e89a4a0a3fe0753c19fe9b35e90d90ad50830a6615a299b088e9b
 pkgname:
   - name: python-sqlite-anyio
-# generated with artixpkg 0.37.4-1-any
+# generated with artixpkg 0.37.6-1-any
