@@ -41,10 +41,12 @@ repos:
     packages: []
     debug: []
   lib32:
-    version: 1.0.0.85-1.1
+    version: 1.0.0.85-3
     packages:
-      - steam-1.0.0.85-1.1-x86_64.pkg.tar.zst
-    debug: []
+      - steam-1.0.0.85-3-x86_64.pkg.tar.zst
+      - steam-devices-1.0.0.85-3-x86_64.pkg.tar.zst
+    debug:
+      - steam-debug-1.0.0.85-3-x86_64.pkg.tar.zst
   galaxy-goblins:
     version: null
     packages: []
