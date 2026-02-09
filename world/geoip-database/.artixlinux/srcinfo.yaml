@@ -1,0 +1,39 @@
+---
+version: 20260204-1
+pkgbase:
+  name: geoip-database
+  pkgver: 20260204
+  pkgrel: 1
+  url: https://mailfud.org/geoip-legacy/
+  arch:
+    - any
+  license:
+    - LicenseRef-GeoLite2-End-User-License-Agreement
+  checkdepends:
+    - geoip
+  makedepends:
+    - util-linux
+  source:
+    - GeoIP-20260204.dat.gz::https://mailfud.org/geoip-legacy/GeoIP.dat.gz
+    - GeoIPv6-20260204.dat.gz::https://mailfud.org/geoip-legacy/GeoIPv6.dat.gz
+    - GeoIPCity-20260204.dat.gz::https://mailfud.org/geoip-legacy/GeoIPCity.dat.gz
+    - GeoIPCityv6-20260204.dat.gz::https://mailfud.org/geoip-legacy/GeoIPCityv6.dat.gz
+    - GeoIPASNum-20260204.dat.gz::https://mailfud.org/geoip-legacy/GeoIPASNum.dat.gz
+    - GeoIPASNumv6-20260204.dat.gz::https://mailfud.org/geoip-legacy/GeoIPASNumv6.dat.gz
+    - GeoLite2-End-User-License-Agreement.pdf
+  sha256sums:
+    - 0f1740a4e12c0389233654108185acfe4751370f582902b133449ed717741c1d
+    - ce2135480abd1ac0e1d3703cd1d20c35cafdb657cf6ab9e0915cf1bcdc2815cc
+    - 8baefe1cb633ac5f38933aea2ad92234f4827e046d5bae21a978886de681cc12
+    - dbacda4920410081da03caad6035c8b09d49c4b8891ed37f1e8d57f31c15a309
+    - e3fd0215641f1b7762264fd80fd824ebe98ce7e3a04de20464832a4ab56d56dd
+    - 85f11f7c00da8c4c7ed3c0d5c7d970ca56f8db3eff999032ea919c293cf53f64
+    - b9c7fbfcdd5b682b5635592281d72006df89d73f163308b7ef35a59f293b036e
+pkgname:
+  - name: geoip-database
+    pkgdesc: GeoIP legacy country database (based on GeoLite2 data created by MaxMind)
+    install: geoip-database.install
+  - name: geoip-database-extra
+    pkgdesc: GeoIP legacy city/ASN databases (based on GeoLite2 data created by MaxMind)
+    install: geoip-database-extra.install
+# generated with artixpkg 0.37.6-1-any
