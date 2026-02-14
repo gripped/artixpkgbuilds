@@ -1,7 +1,7 @@
 ---
 team: galaxy
 actions:
-  addRepo: galaxy
+  addRepo: galaxy-gremlins
   removeRepo: null
   triggersBuild: true
   triggersRebuild: false
@@ -50,11 +50,11 @@ repos:
     packages: []
     debug: []
   galaxy-gremlins:
-    version: null
-    packages: []
+    version: 25.1.0-1
+    packages:
+      - xlibre-video-amdgpu-25.1.0-1-x86_64.pkg.tar.zst
     debug: []
   galaxy:
-    version: 23.0.0.7-1
-    packages:
-      - xlibre-video-amdgpu-23.0.0.7-1-x86_64.pkg.tar.zst
+    version: null
+    packages: []
     debug: []
