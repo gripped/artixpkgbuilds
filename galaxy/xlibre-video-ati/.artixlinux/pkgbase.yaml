@@ -1,12 +1,12 @@
 ---
 team: galaxy
 actions:
-  addRepo: galaxy
-  removeRepo: galaxy-gremlins
-  triggersBuild: false
+  addRepo: galaxy-gremlins
+  removeRepo: null
+  triggersBuild: true
   triggersRebuild: false
   triggersRepoAdd: true
-  triggersRepoRemove: true
+  triggersRepoRemove: false
   triggersNoCheck: false
 repos:
   system-goblins:
@@ -50,11 +50,11 @@ repos:
     packages: []
     debug: []
   galaxy-gremlins:
-    version: null
-    packages: []
+    version: 25.0.1-1
+    packages:
+      - xlibre-video-ati-25.0.1-1-x86_64.pkg.tar.zst
     debug: []
   galaxy:
-    version: 22.0.0.4-1.1
-    packages:
-      - xlibre-video-ati-22.0.0.4-1.1-x86_64.pkg.tar.zst
+    version: null
+    packages: []
     debug: []

@@ -1,29 +1,53 @@
-# Maintainer: artist for Artix Linux
+# Maintainer: artist for Artix Linux and XLibre <artist@artixlinux.org>
 
 pkgname=xlibre-video-ati
-_pkgname=xf86-video-ati
-pkgver=22.0.0.4
-pkgrel=1.1
+pkgver=25.0.1
+pkgrel=1
 pkgdesc="XLibre fork of X.Org ati video driver"
-arch=('x86_64')
-url="https://github.com/X11Libre"
-license=('MIT')
-depends=('libudev' 'mesa' 'libpciaccess' 'libdrm' 'glibc')
-makedepends=('xlibre-xserver-devel' 'udev' 'X-ABI-VIDEODRV_VERSION=28.0')
-conflicts=("xlibre-${_pkgname}" 'X-ABI-VIDEODRV_VERSION<28' 'X-ABI-VIDEODRV_VERSION>=29')
-provides=("xlibre-${_pkgname}" "${_pkgname}")
-replaces=("xlibre-${_pkgname}")
+arch=(x86_64 aarch64)
+_pkgname="${pkgname//xlibre/xf86}"
+url="https://github.com/X11Libre/${_pkgname}"
+depends=("xlibre-xserver>=${pkgver%.*}" 'glibc')
+makedepends=("xlibre-xserver-devel>=${pkgver%.*}" 'xorgproto')
+conflicts=("${_pkgname}")
+provides=("${_pkgname}")
+source=("${url}/archive/refs/tags/xlibre-${_pkgname}-${pkgver}.tar.gz")
 groups=('xlibre-drivers')
-source=("${url}/${_pkgname}/archive/refs/tags/xlibre-${_pkgname}-${pkgver}.tar.gz")
+depends+=('mesa' 'libpciaccess' 'libdrm')
 
 build() {
-  cd ${_pkgname}-xlibre-${_pkgname}-${pkgver}
-  export CFLAGS=${CFLAGS/-fno-plt}
-  export CXXFLAGS=${CXXFLAGS/-fno-plt}
-  export LDFLAGS=${LDFLAGS/-Wl,-z,now}
+  case "$CARCH" in
+    "x86_64")
+      CFLAGS=" -march=x86-64"
+      ;;
+    "aarch64")
+      CFLAGS=" -march=armv8-a"
+      ;;
+    *)
+      CFLAGS=" -march=native"
+      ;;
+  esac
+  CFLAGS+=" -mtune=generic -O2 -pipe -fexceptions -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security"
+  CFLAGS+=" -fstack-clash-protection -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer"
+  LDFLAGS=" -Wl,-O1 -Wl,--sort-common -Wl,--as-needed -Wl,-z,lazy -Wl,-z,relro -Wl,-z,pack-relative-relocs"
+  if [[ $CARCH != 'aarch64' ]]; then
+    CFLAGS+=" -fcf-protection"
+  fi
+  if [[ "$_pkgname" == *"xf86-input"* ]]; then
+    CFLAGS+=" -fno-plt"
+    LDFLAGS+=" -Wl,-z,now"
+  fi
+  if [[ "$_pkgname" == *"xf86-video-intel"* ]]; then
+    CFLAGS+=" -fno-lto"
+    LDFLAGS+=" -fno-lto"
+  fi
+  CXXFLAGS="${CFLAGS} -Wp,-D_GLIBCXX_ASSERTIONS"
+  export CFLAGS="${CFLAGS}"
+  export CXXFLAGS="${CXXFLAGS}"
+  export LDFLAGS="${LDFLAGS}"
 
-  #./autogen.sh --prefix=/usr --enable-glamor --disable-debug
-  ./autogen.sh --prefix=/usr --disable-glamor --disable-debug
+  cd ${_pkgname}-xlibre-${_pkgname}-${pkgver}
+  ./autogen.sh --prefix=/usr --enable-glamor --disable-debug
   ./configure --prefix=/usr
   make
 }
@@ -40,4 +64,4 @@ package() {
   install -Dm644 "${srcdir}"/${_pkgname}-xlibre-${_pkgname}-${pkgver}/COPYING "${pkgdir}"/usr/share/licenses/${pkgname}/LICENSE
 }
 
-sha256sums=('f23bff5f9a299e4b227c1ed46124679592af25eacb268b858632272d2816f4eb')
+sha256sums=('35c96222fdbce8112f3a44b63d098a8a59c5950265ccf400561e49b8010fb0f6')
