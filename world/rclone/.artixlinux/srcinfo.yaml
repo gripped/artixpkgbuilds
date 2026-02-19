@@ -1,9 +1,9 @@
 ---
-version: 1.72.1-1
+version: 1.73.1-1
 pkgbase:
   name: rclone
   pkgdesc: rsync for cloud storage
-  pkgver: 1.72.1
+  pkgver: 1.73.1
   pkgrel: 1
   url: https://github.com/rclone/rclone
   arch:
@@ -22,11 +22,11 @@ pkgbase:
   options:
     - '!lto'
   source:
-    - git+https://github.com/rclone/rclone.git#tag=v1.72.1?signed
+    - git+https://github.com/rclone/rclone.git#tag=v1.73.1?signed
   validpgpkeys:
     - E3B358DC858FB307F48170B9CB0DBEBC5F32C81D
   sha512sums:
-    - 8de570d22c7997b1d07c94e6c5bf747c5fd1e9aef64c5289c5ecf1a839489164e4ae6a13c14a4e185346bacb77e685b8ad1c4635c35ce791238ac169c325c6f3
+    - ece08b24ddcebfb20d8aa5374f5fc1278f1adda4b23f995941251d739c9744563a3b7eff89f891528c70a805686a5ecae5ab20d690820eadb5a11a4f2e853670
 pkgname:
   - name: rclone
-# generated with artixpkg 0.37.4-1-any
+# generated with artixpkg 0.37.6-1-any
