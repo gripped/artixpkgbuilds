@@ -17,9 +17,9 @@ repos:
     packages: []
     debug: []
   system:
-    version: 6.2.32-3
+    version: 6.2.32-4
     packages:
-      - db-6.2.32-3-x86_64.pkg.tar.zst
+      - db-6.2.32-4-x86_64.pkg.tar.zst
     debug: []
   world-goblins:
     version: null
