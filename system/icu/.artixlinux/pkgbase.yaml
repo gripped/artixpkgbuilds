@@ -17,11 +17,10 @@ repos:
     packages: []
     debug: []
   system:
-    version: 78.2-1
+    version: 78.2-2
     packages:
-      - icu-78.2-1-x86_64.pkg.tar.zst
-    debug:
-      - icu-debug-78.2-1-x86_64.pkg.tar.zst
+      - icu-78.2-2-x86_64.pkg.tar.zst
+    debug: []
   world-goblins:
     version: null
     packages: []
