@@ -166,3 +166,4 @@ package() {
 
   rm "$pkgdir/$site_packages/$_name"/*.exe
 }
+
