@@ -1,79 +1,81 @@
-# Maintainer: artist for Artix Linux
+# Maintainer: Ungoogled Software Contributors
+# Maintainer: networkException <git@nwex.de>
+
+# Based on extra/chromium, with ungoogled-chromium patches
+
+# Maintainer: Christian Heusel <gromit@archlinux.org>
+# Contributor: Evangelos Foutras <foutrelis@archlinux.org>
+# Contributor: Pierre Schmitz <pierre@archlinux.de>
+# Contributor: Jan "heftig" Steffens <jan.steffens@gmail.com>
+# Contributor: Daniel J Griffiths <ghost1227@archlinux.us>
 
 pkgname=ungoogled-chromium
-pkgver=120.0.6099.199
-pkgrel=1
+pkgver=145.0.7632.109
+pkgrel=2
 _launcher_ver=8
+_manual_clone=0
+_system_clang=1
 # ungoogled chromium variables
 _uc_usr=ungoogled-software
-_uc_ver=120.0.6099.199-1
-_cews_name=chromium-extension-web-store
-_cews_ver=1.5.4.1
-_cews_id=ocaahdebbfolfmndjeplogmgcagdmblk
-_cews_url="https://github.com/NeverDecaf/chromium-web-store"
+_uc_ver=145.0.7632.109-1
 pkgdesc="A lightweight approach to removing Google web service dependency"
 arch=('x86_64')
 url="https://github.com/ungoogled-software/ungoogled-chromium"
-license=('BSD')
+license=('BSD-3-Clause')
 depends=('gtk3' 'nss' 'alsa-lib' 'xdg-utils' 'libxss' 'libcups' 'libgcrypt'
-         'ttf-liberation' 'udev' 'dbus' 'libpulse' 'pciutils' 'libva'
+         'ttf-liberation' 'dbus' 'libpulse' 'pciutils' 'libva'
          'libffi' 'desktop-file-utils' 'hicolor-icon-theme')
 makedepends=('python' 'gn' 'ninja' 'clang' 'lld' 'gperf' 'nodejs' 'pipewire'
-             'qt5-base' 'java-runtime-headless' 'git')
+             'rust' 'rust-bindgen' 'qt6-base' 'java-runtime-headless'
+             'git' 'compiler-rt')
 optdepends=('pipewire: WebRTC desktop sharing under Wayland'
             'kdialog: support for native dialogs in Plasma'
-            'qt5-base: enable Qt5 with --enable-features=AllowQt'
             'gtk4: for --gtk-version=4 (GTK4 IME might work better on Wayland)'
             'org.freedesktop.secrets: password storage backend on GNOME / Xfce'
-            'kwallet: support for storing passwords in KWallet on Plasma')
-provides=('chromium')
-conflicts=('chromium')
+            'kwallet: support for storing passwords in KWallet on Plasma'
+            'upower: Battery Status API support')
+provides=("chromium=$pkgver" "chromedriver=$pkgver")
+conflicts=('chromium' 'chromedriver')
 options=('!lto') # Chromium adds its own flags for ThinLTO
-source=(https://commondatastorage.googleapis.com/chromium-browser-official/chromium-$pkgver.tar.xz
+source=(https://commondatastorage.googleapis.com/chromium-browser-official/chromium-$pkgver-lite.tar.xz
         $pkgname-$_uc_ver.tar.gz::https://github.com/$_uc_usr/ungoogled-chromium/archive/$_uc_ver.tar.gz
         https://github.com/foutrelis/chromium-launcher/archive/v$_launcher_ver/chromium-launcher-$_launcher_ver.tar.gz
-        https://gitlab.com/Matt.Jolly/chromium-patches/-/archive/${pkgver%%.*}/chromium-patches-${pkgver%%.*}.tar.bz2
-        ${_cews_name}-${_cews_ver}.crx::${_cews_url}/releases/download/v${_cews_ver}/Chromium.Web.Store.crx
-        chromium.wrapper
-        extension_management.patch
-        ungoogled_first_run.patch
-        chromium-drirc-disable-10bpc-color-configs.conf
-        use-oauth2-client-switches-as-default.patch
-        libxml2-2.12.patch
-        drop-flags-unsupported-by-clang16.patch
-        icu-74.patch)
-noextract=("${_cews_name}-${_cews_ver}.crx")
-sha256sums=('84009db5c898517f38f7b44b81b8a98e21fd28ca3f9aad9dda07516d8640574c'
-            '33cf5428b87e9046172a714ab119ddc750eb83f3ef72f3d6187d38671c02f91a'
+        chromium-138-nodejs-version-check.patch
+        chromium-145-fix-SYS_SECCOMP.patch
+        compiler-rt-adjust-paths.patch
+        increase-fortify-level.patch
+        use-oauth2-client-switches-as-default.patch)
+sha256sums=('4b9460a4c852b824dbd3c6de00948fe97b760e89ac56c62b5e28f8581a5c1690'
+            '17b1909d1525020f6e7241dc11f8cbec591c8ac985e023846e74cb40a45c0aa0'
             '213e50f48b67feb4441078d50b0fd431df34323be15be97c55302d3fdac4483a'
-            'ffee1082fbe3d0c9e79dacb8405d5a0e1aa94d6745089a30b093f647354894d2'
-            '3136dfe3c344e8e751fca76c223243deb9168f531a9ad2dc601fa500e460f855'
-            'ad6b55d98102b128b568dd195cbc86092539539a72274078712c9bb585f0bd97'
-            '2f93752b962f40b3a59a23ec9b90e5dcd8057dfe6d315c5a86e9d599e8dac090'
-            'ce94e04f05cc2d8da9143855bc54263d15a049e3d1575cfa12046134d2c5edbc'
-            'babda4f5c1179825797496898d77334ac067149cac03d797ab27ac69671a7feb'
-            'e393174d7695d0bafed69e868c5fbfecf07aa6969f3b64596d0bae8b067e1711'
-            '1808df5ba4d1e2f9efa07ac6b510bec866fa6d60e44505d82aea3f6072105a71'
-            '8d1cdf3ddd8ff98f302c90c13953f39cd804b3479b13b69b8ef138ac57c83556'
-            'ff9ebd86b0010e1c604d47303ab209b1d76c3e888c423166779cefbc22de297f')
+            '11a96ffa21448ec4c63dd5c8d6795a1998d8e5cd5a689d91aea4d2bdd13fb06e'
+            '4fc040a0656a0a524dd8ad090cd129fc5b6cb21adcc66be82080165789e8c13e'
+            'ec8e49b7114e2fa2d359155c9ef722ff1ba5fe2c518fa48e30863d71d3b82863'
+            'd634d2ce1fc63da7ac41f432b1e84c59b7cceabf19d510848a7cff40c8025342'
+            '9343afa1a4308a7cfb3317229f5aff7778688debcc03c4a74a85908aa1d0cc3a')
+
+if (( _manual_clone )); then
+  source[0]=fetch-chromium-release
+  sha256sums[0]='2e2f36e3cd1ebc4ad57fd310774a5e5e9db77883d5f9374fedeaabd3c103b819'
+  makedepends+=('python-httplib2' 'python-pyparsing' 'python-six' 'npm' 'rsync')
+fi
 
 # Possible replacements are listed in build/linux/unbundle/replace_gn_files.py
 # Keys are the names in the above script; values are the dependencies in Arch
 declare -gA _system_libs=(
-  #[brotli]=brotli
-  [dav1d]=dav1d
+  [brotli]=brotli
+  #[dav1d]=dav1d
   #[ffmpeg]=ffmpeg    # YouTube playback stopped working in Chromium 120
   [flac]=flac
   [fontconfig]=fontconfig
   [freetype]=freetype2
   [harfbuzz-ng]=harfbuzz
-  [icu]=icu
+  #[icu]=icu
   #[jsoncpp]=jsoncpp  # needs libstdc++
   #[libaom]=aom
-  #[libavif]=libavif  # needs https://github.com/AOMediaCodec/libavif/commit/5410b23f76
-  [libdrm]=
-  [libjpeg]=libjpeg
-  [libpng]=libpng
+  #[libavif]=libavif  # needs -DAVIF_ENABLE_EXPERIMENTAL_GAIN_MAP=ON
+  [libjpeg]=libjpeg-turbo
+  #[libpng]=libpng
   #[libvpx]=libvpx
   [libwebp]=libwebp
   [libxml]=libxml2
@@ -90,16 +92,10 @@ _unwanted_bundled_libs=(
 depends+=(${_system_libs[@]})
 
 prepare() {
-
-  # Create json file for chromium-extension-web-store extension :
-  cat << EOF > "${_cews_id}".json
-{
-  "external_crx": "/usr/lib/${_cews_name}/${_cews_name}-${_cews_ver}.crx",
-  "external_version": "${_cews_ver}"
-}
-EOF
-
-  cd "$srcdir/chromium-$pkgver"
+  if (( _manual_clone )); then
+    ./fetch-chromium-release $pkgver
+  fi
+  cd chromium-$pkgver
 
   # Allow building against system libraries in official builds
   sed -i 's/OFFICIAL_BUILD/GOOGLE_CHROME_BUILD/' \
@@ -107,10 +103,10 @@ EOF
 
   # https://crbug.com/893950
   sed -i -e 's/\<xmlMalloc\>/malloc/' -e 's/\<xmlFree\>/free/' \
+         -e '1i #include <cstdlib>' \
     third_party/blink/renderer/core/xml/*.cc \
     third_party/blink/renderer/core/xml/parser/xml_document_parser.cc \
-    third_party/libxml/chromium/*.cc \
-    third_party/maldoca/src/maldoca/ole/oss_utils.h
+    third_party/libxml/chromium/*.cc
 
   # Use the --oauth2-client-id= and --oauth2-client-secret= switches for
   # setting GOOGLE_DEFAULT_CLIENT_ID and GOOGLE_DEFAULT_CLIENT_SECRET at
@@ -118,40 +114,49 @@ EOF
   patch -Np1 -i ../use-oauth2-client-switches-as-default.patch
 
   # Upstream fixes
-  patch -Np1 -i ../libxml2-2.12.patch
 
-  # Fix build with ICU 74
-  patch -Np1 -i ../icu-74.patch
+  # Fixes from Gentoo
+  patch -Np1 -i ../chromium-138-nodejs-version-check.patch
 
-  # Drop compiler flags that need newer clang
-  patch -Np1 -i ../drop-flags-unsupported-by-clang16.patch
+  # Allow libclang_rt.builtins from compiler-rt >= 16 to be used
+  patch -Np1 -i ../compiler-rt-adjust-paths.patch
 
-  # Fixes for building with libstdc++ instead of libc++
-  #patch -Np1 -i ../chromium-patches-*/chromium-114-ruy-include.patch
-  #patch -Np1 -i ../chromium-patches-*/chromium-117-material-color-include.patch
-  patch -Np1 -i ../chromium-patches-*/chromium-119-at-spi-variable-consumption.patch
-  patch -Np1 -i ../chromium-patches-*/chromium-119-clang16.patch
-  #patch -Np1 -i ../chromium-patches-*/chromium-120-std-nullptr_t.patch
+  # Increase _FORTIFY_SOURCE level to match Arch's default flags
+  patch -Np1 -i ../increase-fortify-level.patch
 
-  # Link to system tools required by the build
-  mkdir -p third_party/node/linux/node-linux-x64/bin
-  ln -s /usr/bin/node third_party/node/linux/node-linux-x64/bin/
-  ln -s /usr/bin/java third_party/jdk/current/bin/
+  # https://crbug.com/456218403
+  patch -Np1 -i ../chromium-145-fix-SYS_SECCOMP.patch
+
+  if (( !_system_clang )); then
+    # Use prebuilt rust as system rust cannot be used due to the error:
+    #   error: the option `Z` is only accepted on the nightly compiler
+    ./tools/rust/update_rust.py
+
+    # To link to rust libraries we need to compile with prebuilt clang
+    ./tools/clang/scripts/update.py
+  else
+    # To use correct libadler2 lib
+    # See also: https://github.com/ungoogled-software/ungoogled-chromium/pull/3598
+    sed -i 's/rustc_nightly_capability = use_chromium_rust_toolchain/rustc_nightly_capability = true/' \
+      build/config/rust.gni
+  fi
 
   # Ungoogled Chromium changes
   _ungoogled_repo="$srcdir/$pkgname-$_uc_ver"
   _utils="${_ungoogled_repo}/utils"
   msg2 'Pruning binaries'
-  python "$_utils/prune_binaries.py" ./ "$_ungoogled_repo/pruning.list"
+  python "$_utils/prune_binaries.py" ./ "$_ungoogled_repo/pruning.list" || echo "some errors"
   msg2 'Applying patches'
   python "$_utils/patches.py" apply ./ "$_ungoogled_repo/patches"
   msg2 'Applying domain substitution'
   python "$_utils/domain_substitution.py" apply -r "$_ungoogled_repo/domain_regex.list" \
     -f "$_ungoogled_repo/domain_substitution.list" -c domainsubcache.tar.gz ./
 
-  patch -Np1 -i "$srcdir/extension_management.patch"
-  patch -Np1 -i "$srcdir/ungoogled_first_run.patch"
-  
+  # Link to system tools required by the build
+  mkdir -p third_party/node/linux/node-linux-x64/bin third_party/jdk/current/bin
+  ln -s /usr/bin/node third_party/node/linux/node-linux-x64/bin/
+  ln -s /usr/bin/java third_party/jdk/current/bin/
+
   # Remove bundled libraries for which we will use the system copies; this
   # *should* do what the remove_bundled_libraries.py script does, with the
   # added benefit of not having to list all the remaining libraries
@@ -172,25 +177,28 @@ EOF
 build() {
   make -C chromium-launcher-$_launcher_ver
 
-  cd "$srcdir/chromium-$pkgver"
+  cd chromium-$pkgver
 
-  if check_buildoption ccache y; then
-    # Avoid falling back to preprocessor mode when sources contain time macros
-    export CCACHE_SLOPPINESS=time_macros
+  if (( _system_clang )); then
+    export CC=clang
+    export CXX=clang++
+    export AR=ar
+    export NM=nm
+  else
+    local _clang_path="$PWD/third_party/llvm-build/Release+Asserts/bin"
+    export CC=$_clang_path/clang
+    export CXX=$_clang_path/clang++
+    export AR=$_clang_path/llvm-ar
+    export NM=$_clang_path/llvm-nm
   fi
-
-  export CC=clang
-  export CXX=clang++
-  export AR=ar
-  export NM=nm
 
   local _flags=(
     'custom_toolchain="//build/toolchain/linux/unbundle:default"'
     'host_toolchain="//build/toolchain/linux/unbundle:default"'
-    'clang_base_path="/usr"'
     'is_official_build=true' # implies is_cfi=true on x86_64
     'symbol_level=0' # sufficient for backtraces on x86(_64)
-    #'chrome_pgo_phase=0' # needs newer clang to read the bundled PGO profile
+    'treat_warnings_as_errors=false'
+    'fatal_linker_warnings=false'
     'disable_fieldtrial_testing_config=true'
     'blink_enable_generated_code_formatting=false'
     'ffmpeg_branding="Chrome"'
@@ -201,10 +209,13 @@ build() {
     'use_sysroot=false'
     'use_system_libffi=true'
     'enable_widevine=true'
-    'enable_rust=false'
+    'use_qt5=false'
+    'use_qt6=true'
+    'moc_qt6_path="/usr/lib/qt6"'
     'use_vaapi=true'
     'enable_platform_hevc=true'
     'enable_hevc_parser_and_hw_decoder=true'
+    'use_clang_modules=false'
   )
 
   if [[ -n ${_system_libs[icu]+set} ]]; then
@@ -215,9 +226,27 @@ build() {
   _ungoogled_repo="$srcdir/$pkgname-$_uc_ver"
   readarray -t -O ${#_flags[@]} _flags < "${_ungoogled_repo}/flags.gn"
 
-  # See https://github.com/ungoogled-software/ungoogled-chromium-archlinux/issues/123
-  CFLAGS="-march=x86-64 -mtune=generic -O2 -pipe -fno-plt"
-  CXXFLAGS="$CFLAGS"
+  if (( _system_clang )); then
+    local _clang_version=$(
+      clang --version | grep -m1 version | sed 's/.* \([0-9]\+\).*/\1/')
+
+    _flags+=(
+      'clang_base_path="/usr"'
+      'clang_use_chrome_plugins=false'
+      "clang_version=\"$_clang_version\""
+      'chrome_pgo_phase=0' # needs newer clang to read the bundled PGO profile
+    )
+
+    # Allow the use of nightly features with stable Rust compiler
+    # https://github.com/ungoogled-software/ungoogled-chromium/pull/2696#issuecomment-1918173198
+    export RUSTC_BOOTSTRAP=1
+
+    _flags+=(
+      'rust_sysroot_absolute="/usr"'
+      'rust_bindgen_root="/usr"'
+      "rustc_version=\"$(rustc --version)\""
+    )
+  fi
 
   # Facilitate deterministic builds (taken from build/config/compiler/BUILD.gn)
   CFLAGS+='   -Wno-builtin-macro-redefined'
@@ -231,9 +260,6 @@ build() {
   # Let Chromium set its own symbol level
   CFLAGS=${CFLAGS/-g }
   CXXFLAGS=${CXXFLAGS/-g }
-  # -fvar-tracking-assignments is not recognized by clang
-  CFLAGS=${CFLAGS/-fvar-tracking-assignments}
-  CXXFLAGS=${CXXFLAGS/-fvar-tracking-assignments}
 
   # https://github.com/ungoogled-software/ungoogled-chromium-archlinux/issues/123
   CFLAGS=${CFLAGS/-fexceptions}
@@ -256,52 +282,45 @@ build() {
 }
 
 package() {
-
-  install -Dm644 -t "${pkgdir}/usr/share/chromium/extensions/" "${_cews_id}.json"
-  install -Dm644 -t "${pkgdir}/usr/lib/${_cews_name}/" "${_cews_name}-${_cews_ver}.crx"
-
   cd chromium-launcher-$_launcher_ver
   make PREFIX=/usr DESTDIR="$pkgdir" install
-  install -Dm644 LICENSE \
+  install -Dvm644 LICENSE \
     "$pkgdir/usr/share/licenses/chromium/LICENSE.launcher"
 
-  mv "$pkgdir/usr/bin/chromium" "$pkgdir/usr/bin/chromium-bin"
-  install -Dm755 "$srcdir/chromium.wrapper" "$pkgdir/usr/bin/chromium"       
+  cd ../chromium-$pkgver
 
-  cd "$srcdir/chromium-$pkgver"
+  install -Dv out/Release/chrome "$pkgdir/usr/lib/chromium/chromium"
+  install -Dv out/Release/chromedriver "$pkgdir/usr/bin/chromedriver"
+  install -Dvm4755 out/Release/chrome_sandbox "$pkgdir/usr/lib/chromium/chrome-sandbox"
 
-  install -D out/Release/chrome "$pkgdir/usr/lib/chromium/chromium"
-  install -D out/Release/chromedriver "$pkgdir/usr/bin/chromedriver"
-  install -Dm4755 out/Release/chrome_sandbox "$pkgdir/usr/lib/chromium/chrome-sandbox"
-
-  install -Dm644 ../chromium-drirc-disable-10bpc-color-configs.conf \
-    "$pkgdir/usr/share/drirc.d/10-$pkgname.conf"
-
-  install -Dm644 chrome/installer/linux/common/desktop.template \
+  install -Dvm644 chrome/installer/linux/common/desktop.template \
     "$pkgdir/usr/share/applications/chromium.desktop"
-  install -Dm644 chrome/app/resources/manpage.1.in \
+  install -Dvm644 chrome/app/resources/manpage.1.in \
     "$pkgdir/usr/share/man/man1/chromium.1"
   sed -i \
-    -e 's/@@MENUNAME@@/Chromium/g' \
-    -e 's/@@PACKAGE@@/chromium/g' \
-    -e 's/@@USR_BIN_SYMLINK_NAME@@/chromium/g' \
+    -e 's/@@MENUNAME/Chromium/g' \
+    -e 's/@@PACKAGE/chromium/g' \
+    -e 's/@@usr_bin_symlink_name/chromium/g' \
+    -e 's|@@uri_scheme|x-scheme-handler/chromium;|g' \
+    -e 's/@@extra_desktop_entries//g' \
     "$pkgdir/usr/share/applications/chromium.desktop" \
     "$pkgdir/usr/share/man/man1/chromium.1"
 
-  install -Dm644 chrome/installer/linux/common/chromium-browser/chromium-browser.appdata.xml \
-    "$pkgdir/usr/share/metainfo/chromium.appdata.xml"
-  sed -ni \
-    -e 's/chromium-browser\.desktop/chromium.desktop/' \
-    -e '/<update_contact>/d' \
-    -e '/<p>/N;/<p>\n.*\(We invite\|Chromium supports Vorbis\)/,/<\/p>/d' \
-    -e '/^<?xml/,$p' \
-    "$pkgdir/usr/share/metainfo/chromium.appdata.xml"
+  # Fill in common Chrome/Chromium AppData template with Chromium info
+  (
+    tmpl_file=chrome/installer/linux/common/appdata.xml.template
+    info_file=chrome/installer/linux/common/chromium-browser.info
+    . $info_file; PACKAGE=chromium
+    export $(grep -o '^[A-Z_]*' $info_file)
+    sed -E -e 's/@@([A-Z_]*)@@/\${\1}/g' -e '/<update_contact>/d' $tmpl_file | envsubst
+  ) \
+  | install -Dvm644 /dev/stdin "$pkgdir/usr/share/metainfo/chromium.appdata.xml"
 
   local toplevel_files=(
     chrome_100_percent.pak
     chrome_200_percent.pak
     chrome_crashpad_handler
-    libqt5_shim.so
+    libqt6_shim.so
     resources.pak
     v8_context_snapshot.bin
 
@@ -311,6 +330,7 @@ package() {
 
     # SwiftShader ICD
     libvk_swiftshader.so
+    libvulkan.so.1
     vk_swiftshader_icd.json
   )
 
@@ -319,19 +339,19 @@ package() {
   fi
 
   cp "${toplevel_files[@]/#/out/Release/}" "$pkgdir/usr/lib/chromium/"
-  install -Dm644 -t "$pkgdir/usr/lib/chromium/locales" out/Release/locales/*.pak
+  install -Dvm644 -t "$pkgdir/usr/lib/chromium/locales" out/Release/locales/*.pak
 
   for size in 24 48 64 128 256; do
-    install -Dm644 "chrome/app/theme/chromium/product_logo_$size.png" \
+    install -Dvm644 "chrome/app/theme/chromium/product_logo_$size.png" \
       "$pkgdir/usr/share/icons/hicolor/${size}x${size}/apps/chromium.png"
   done
 
   for size in 16 32; do
-    install -Dm644 "chrome/app/theme/default_100_percent/chromium/product_logo_$size.png" \
+    install -Dvm644 "chrome/app/theme/default_100_percent/chromium/product_logo_$size.png" \
       "$pkgdir/usr/share/icons/hicolor/${size}x${size}/apps/chromium.png"
   done
 
-  install -Dm644 LICENSE "$pkgdir/usr/share/licenses/chromium/LICENSE"
+  install -Dvm644 LICENSE "$pkgdir/usr/share/licenses/chromium/LICENSE"
 }
 
-# vim:set ts=2 sw=2 et ft=sh:
+# vim:set ts=2 sw=2 et:
