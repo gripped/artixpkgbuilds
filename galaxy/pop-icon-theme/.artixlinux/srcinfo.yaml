@@ -1,10 +1,10 @@
 ---
-version: 3.5.1-1.1
+version: 3.5.1-1
 pkgbase:
   name: pop-icon-theme
   pkgdesc: System76 Pop Icon Theme
   pkgver: 3.5.1
-  pkgrel: 1.1
+  pkgrel: 1
   url: https://github.com/pop-os/icon-theme
   arch:
     - any
@@ -21,4 +21,4 @@ pkgbase:
     - 31018a78e3e141b76f6533d668d0cec0aae96e71bb157ddae1b0c01f946a66b496319ef511c441a8ed0a788d0c215189ef17aacfd191b46a0276da08b70e39ad
 pkgname:
   - name: pop-icon-theme
-# generated with artixpkg 0.37.4-1-any
+# generated with artixpkg 0.37.6-1-any

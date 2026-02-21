@@ -1,9 +1,10 @@
-# Maintainer: Maxime Gauduin <alucryd@archlinux.org>
+# Maintainer: Cory Sanin <corysanin@artixlinux.org>
+# Contributor: Maxime Gauduin <alucryd@archlinux.org>
 # Contributor: Christopher Reimer <mail@c-reimer.de>
 
 pkgname=pop-icon-theme
 pkgver=3.5.1
-pkgrel=1.1
+pkgrel=1
 pkgdesc='System76 Pop Icon Theme'
 arch=(any)
 url=https://github.com/pop-os/icon-theme
