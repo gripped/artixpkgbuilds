@@ -1,10 +1,10 @@
 ---
-version: 1:1.0.0-2
+version: 1:1.0.7-1
 pkgbase:
   name: cosmic-applets
   pkgdesc: Applets for COSMIC Panel
-  pkgver: 1.0.0
-  pkgrel: 2
+  pkgver: 1.0.7
+  pkgrel: 1
   epoch: 1
   url: https://github.com/pop-os/cosmic-applets
   arch:
@@ -31,9 +31,9 @@ pkgbase:
     - libelogind
     - util-linux
   source:
-    - git+https://github.com/pop-os/cosmic-applets.git#tag=epoch-1.0.0
+    - git+https://github.com/pop-os/cosmic-applets.git#tag=epoch-1.0.7
   b2sums:
-    - 0d4849931c8f15c316f9a3a7daa4d2e71c55ff7b5a5ee6eeeab0a99839a2c051d28fd495490857ac07d4bcaffc2c93cd8efecbc9148fb604a5a3ce8abe3739c6
+    - bf50639071d0bf5c9e03e5607a391655445d1684e4414cf8e4cb143fe2e9c68e8897923b7f63228fc83eecd589c65b2cd3de28dd4faa560035cbeda408a87b4f
 pkgname:
   - name: cosmic-applets
-# generated with artixpkg 0.37.4-1-any
+# generated with artixpkg 0.37.6-1-any
