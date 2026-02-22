@@ -1,9 +1,9 @@
 ---
-version: 1:1.0.0-1
+version: 1:1.0.7-1
 pkgbase:
   name: cosmic-text-editor
   pkgdesc: Text editor for the COSMIC desktop
-  pkgver: 1.0.0
+  pkgver: 1.0.7
   pkgrel: 1
   epoch: 1
   url: https://github.com/pop-os/cosmic-edit
@@ -26,11 +26,11 @@ pkgbase:
     - libxkbcommon
     - wayland
   source:
-    - git+https://github.com/pop-os/cosmic-edit.git#tag=epoch-1.0.0
+    - git+https://github.com/pop-os/cosmic-edit.git#tag=epoch-1.0.7
     - cosmic-text-editor-lto.patch
   b2sums:
-    - f7233368401f8a4da2257d0a3a5a87b1442284a208fda14d9f2b2f498818aa09e86231e812cffaef02b199a4a23cb96496cb907e964a787101531a4f2c505316
+    - 37fc1bc0ba470de9a3d619e6983dac055caed32fb6188b88ba1ac4aab17328c56498be92d4dab7c97867e0337aa1e43d6d8acc0208093cdc925e9e3c8c9526d9
     - d0ac6a0caa849a4445812f574787c5f99e42e73dbc53dcbf0c0a212cc97382dcd3cdbce58f6203fb2d920fc45d4a0a4b5d086308bcb5e2a92b86f1bebf1dd6da
 pkgname:
   - name: cosmic-text-editor
-# generated with artixpkg 0.37.4-1-any
+# generated with artixpkg 0.37.6-1-any
