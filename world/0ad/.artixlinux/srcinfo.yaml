@@ -1,0 +1,59 @@
+---
+version: 0.28.0-2
+pkgbase:
+  name: 0ad
+  pkgdesc: Cross-platform, 3D and historically-based real-time strategy game
+  pkgver: 0.28.0
+  pkgrel: 2
+  url: http://play0ad.com/
+  arch:
+    - x86_64
+  license:
+    - GPL-2.0-or-later
+  makedepends:
+    - boost
+    - cmake
+    - mesa
+    - zip
+    - libsm
+    - rust
+    - git
+    - python
+    - llvm
+    - cbindgen
+    - premake
+  depends:
+    - 0ad-data=0.28.0
+    - binutils
+    - boost-libs
+    - curl
+    - enet
+    - libogg
+    - libpng
+    - libvorbis
+    - libxml2
+    - openal
+    - sdl2
+    - wxwidgets-gtk3
+    - zlib
+    - libgl
+    - glu
+    - fmt
+    - gloox
+    - miniupnpc
+    - libminiupnpc.so
+    - icu
+    - nspr
+    - libsodium
+    - which
+  options:
+    - '!lto'
+  source:
+    - https://releases.wildfiregames.com/0ad-0.28.0-unix-build.tar.xz
+  validpgpkeys:
+    - A035C8C19219BA821ECEA86B64E628F8D684696D
+  sha512sums:
+    - 6b5d7893d27d5fa71ce4cad1b424a7d4b36e8bc438c590cbd86d9872148d5051cd3215f8f8f4b817e48d4fe386d8902ecc0dcd612ca779306ef35dfa2898a878
+pkgname:
+  - name: 0ad
+# generated with artixpkg 0.37.6-1-any
