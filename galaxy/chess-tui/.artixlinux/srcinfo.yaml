@@ -1,9 +1,9 @@
 ---
-version: 2.3.0-1
+version: 2.5.1-1
 pkgbase:
   name: chess-tui
   pkgdesc: Play chess in your terminal
-  pkgver: 2.3.0
+  pkgver: 2.5.1
   pkgrel: 1
   url: https://github.com/thomas-mauran/chess-tui
   arch:
@@ -16,9 +16,9 @@ pkgbase:
     - gcc-libs
     - alsa-lib
   source:
-    - chess-tui-2.3.0.tar.gz::https://github.com/thomas-mauran/chess-tui/archive/2.3.0.tar.gz
+    - chess-tui-2.5.1.tar.gz::https://github.com/thomas-mauran/chess-tui/archive/2.5.1.tar.gz
   sha512sums:
-    - 48277a5d25c17aa1843280e4ad2095724c4902ce3d532e968a9725d7afa3aeb4d3c83698f32384fc3c02897649b39b8554e138861ccebb8f7fa5eeb6578ca741
+    - 9034bf20db8fdfc62ce474f538bb5b0baec6f446010ca3990705e2057a54eb14e0bb230743da3e80d5b2ee394a5f29224fb9ae16403f2a53dce0453a7cf7a16f
 pkgname:
   - name: chess-tui
-# generated with artixpkg 0.37.4-1-any
+# generated with artixpkg 0.37.6-1-any
