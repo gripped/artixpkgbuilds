@@ -1,10 +1,10 @@
 ---
-version: 1.7.0-2
+version: 1.8.1-1
 pkgbase:
   name: pulseaudio-qt
   pkgdesc: Qt bindings for libpulse
-  pkgver: 1.7.0
-  pkgrel: 2
+  pkgver: 1.8.1
+  pkgrel: 1
   url: https://community.kde.org/Frameworks
   arch:
     - x86_64
@@ -14,19 +14,19 @@ pkgbase:
   makedepends:
     - extra-cmake-modules
   depends:
-    - gcc-libs
     - glibc
     - libpulse
+    - libstdc++
     - qt6-base
   source:
-    - https://download.kde.org/stable/pulseaudio-qt/pulseaudio-qt-1.7.0.tar.xz
-    - https://download.kde.org/stable/pulseaudio-qt/pulseaudio-qt-1.7.0.tar.xz.sig
+    - https://download.kde.org/stable/pulseaudio-qt/pulseaudio-qt-1.8.1.tar.xz
+    - https://download.kde.org/stable/pulseaudio-qt/pulseaudio-qt-1.8.1.tar.xz.sig
   validpgpkeys:
     - 2D1D5B0588357787DE9EE225EC94D18F7F05997E
     - 90A968ACA84537CC27B99EAF2C8DF587A6D4AAC1
   sha256sums:
-    - 6a18db76dd2bcc3df7d9a9379c025295817264baa1f2ed8caaac7da44e04e931
+    - 79619c55b94808aa7d307fb234ad39a1096d088f21f806be0e788be79a76b3c9
     - SKIP
 pkgname:
   - name: pulseaudio-qt
-# generated with artixpkg 0.37.4-1-any
+# generated with artixpkg 0.38.2-1-any
