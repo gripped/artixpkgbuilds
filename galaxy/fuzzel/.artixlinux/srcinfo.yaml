@@ -1,0 +1,36 @@
+---
+version: 1.14.1-1
+pkgbase:
+  name: fuzzel
+  pkgdesc: Application launcher for wlroots based Wayland compositors
+  pkgver: 1.14.1
+  pkgrel: 1
+  url: https://codeberg.org/dnkl/fuzzel
+  arch:
+    - x86_64
+  license:
+    - MIT
+  makedepends:
+    - meson
+    - scdoc
+    - tllist
+    - wayland-protocols
+  depends:
+    - cairo
+    - fcft
+    - fontconfig
+    - libfcft.so
+    - libpng
+    - libxkbcommon
+    - pixman
+    - wayland
+    - resvg
+  backup:
+    - etc/xdg/fuzzel/fuzzel.ini
+  source:
+    - fuzzel-1.14.1.tar.gz::https://codeberg.org/dnkl/fuzzel/archive/1.14.1.tar.gz
+  sha256sums:
+    - c6416786c3a0600b8ad91ed951c43c002a639870c3823b4a60c910442f4ae097
+pkgname:
+  - name: fuzzel
+# generated with artixpkg 0.38.2-1-any
