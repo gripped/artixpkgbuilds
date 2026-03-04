@@ -1,10 +1,10 @@
 ---
-version: 0.1-2
+version: 1.0.0-1
 pkgbase:
   name: sonic-silver-sddm
   pkgdesc: Sonic Silver SDDM Theme (KDE Plasma 6)
-  pkgver: 0.1
-  pkgrel: 2
+  pkgver: 1.0.0
+  pkgrel: 1
   url: https://github.com/Sonic-DE/silver-sddm
   arch:
     - x86_64
@@ -12,14 +12,12 @@ pkgbase:
     - sonicde
   license:
     - LGPL-2.0-or-later
-  makedepends:
-    - git
   depends:
     - sonic-workspace
   source:
-    - git+https://github.com/Sonic-DE/silver-sddm.git#commit=8b3c56d815bd13d242301e1f8be23a7c95
+    - 1.0.0-silver-sddm.tag.gz::https://github.com/Sonic-DE/silver-sddm/archive/refs/tags/1.0.0.tar.gz
   sha256sums:
-    - 8c32ef6a026c665ee215d8b13bb6420fc5a09f6898460dffdc060347776d5a44
+    - 3c32317306a723a0cdbffb41ebb0e817e46527c8f2ebdfd1cd1f304ee6d3a235
 pkgname:
   - name: sonic-silver-sddm
-# generated with artixpkg 0.37.5-1-any
+# generated with artixpkg 0.38.2-1-any
