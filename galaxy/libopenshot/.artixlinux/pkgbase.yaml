@@ -1,4 +1,5 @@
 ---
+team: galaxy
 actions:
   addRepo: galaxy
   removeRepo: null
@@ -53,8 +54,7 @@ repos:
     packages: []
     debug: []
   galaxy:
-    version: 0.4.0-14
+    version: 0.5.0-2
     packages:
-      - libopenshot-0.4.0-14-x86_64.pkg.tar.zst
+      - libopenshot-0.5.0-2-x86_64.pkg.tar.zst
     debug: []
-team: galaxy
