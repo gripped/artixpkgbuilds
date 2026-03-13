@@ -1,9 +1,9 @@
 ---
-version: 12.3.2-1
+version: 13.1.0-1
 pkgbase:
   name: lib32-harfbuzz
   pkgdesc: OpenType text shaping engine - 32-bit
-  pkgver: 12.3.2
+  pkgver: 13.1.0
   pkgrel: 1
   url: https://harfbuzz.github.io/
   arch:
@@ -16,51 +16,55 @@ pkgbase:
   makedepends:
     - git
     - glib2-devel
-    - lib32-cairo
-    - lib32-icu
-    - meson
-    - python
-    - ragel
-  depends:
     - harfbuzz
+    - lib32-cairo
     - lib32-freetype2
     - lib32-gcc-libs
     - lib32-glib2
     - lib32-glibc
+    - lib32-icu
+    - lib32-libpng
+    - meson
+    - python
+    - ragel
   source:
-    - git+https://github.com/harfbuzz/harfbuzz?signed#tag=12.3.2
+    - git+https://github.com/harfbuzz/harfbuzz?signed#tag=13.1.0
   validpgpkeys:
     - 053D20F17CCCA9651B2C6FCB9AB24930C0B997A2
     - 9F377DDB6D3153A48EB3EB1E63CC496475267693
     - 2277650A4E8BDFE4B7F6BE419FEE04E5D3531115
     - EACF64F53455E2771BA661A4803B21859F015E4E
   b2sums:
-    - d6f26fe614aeea8f84e5be74b1cb4fd8212aa285b2a951f2dee3a39e1ad1be14524ce0b2c1d02b3307d63610e58510a2345b5b2619ea078bd820a07edcac1893
+    - b2670ceedb372c631d2a1771f1ea19c16711530306a7326c4d8f6ba9993515d59ae6bdcf1612fb5365df21f2e6e9495c5a978dfc1f3953ddb81e23ff7c07f769
 pkgname:
   - name: lib32-harfbuzz
     depends:
       - harfbuzz
       - lib32-freetype2
+      - libfreetype.so
       - lib32-gcc-libs
       - lib32-glib2
-      - lib32-glibc
-      - libfreetype.so
       - libglib-2.0.so
       - libgobject-2.0.so
+      - lib32-glibc
+      - lib32-libpng
+      - libpng16.so
     provides:
       - libharfbuzz.so
       - libharfbuzz-subset.so
       - libharfbuzz-gobject.so
+      - libharfbuzz-raster.so
+      - libharfbuzz-vector.so
   - name: lib32-harfbuzz-cairo
     pkgdesc: OpenType text shaping engine - 32-bit - Cairo integration
     depends:
       - harfbuzz-cairo
       - lib32-cairo
+      - libcairo.so
       - lib32-freetype2
       - lib32-glib2
       - lib32-glibc
       - lib32-harfbuzz
-      - libcairo.so
       - libharfbuzz.so
     provides:
       - libharfbuzz-cairo.so
@@ -70,9 +74,9 @@ pkgname:
       - harfbuzz-icu
       - lib32-glibc
       - lib32-harfbuzz
-      - lib32-icu
       - libharfbuzz.so
+      - lib32-icu
       - libicuuc.so
     provides:
       - libharfbuzz-icu.so
-# generated with artixpkg 0.37.6-1-any
+# generated with artixpkg 0.38.2-1-any
