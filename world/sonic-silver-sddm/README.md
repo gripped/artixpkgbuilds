@@ -1,0 +1,2 @@
+# sonic-silver-sddm
+
