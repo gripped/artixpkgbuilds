@@ -1,10 +1,10 @@
 ---
-version: 1.4.3-4
+version: 1.4.3-6
 pkgbase:
   name: inkscape
   pkgdesc: Professional vector graphics editor
   pkgver: 1.4.3
-  pkgrel: 4
+  pkgrel: 6
   url: https://inkscape.org/
   arch:
     - x86_64
@@ -148,4 +148,4 @@ pkgbase:
     - SKIP
 pkgname:
   - name: inkscape
-# generated with artixpkg 0.38-1-any
+# generated with artixpkg 0.38.2-1-any
