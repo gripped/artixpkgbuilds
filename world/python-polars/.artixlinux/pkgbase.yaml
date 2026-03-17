@@ -2,11 +2,11 @@
 team: world
 actions:
   addRepo: world
-  removeRepo: null
-  triggersBuild: true
+  removeRepo: world-gremlins
+  triggersBuild: false
   triggersRebuild: false
   triggersRepoAdd: true
-  triggersRepoRemove: false
+  triggersRepoRemove: true
   triggersNoCheck: false
 repos:
   system-goblins:
@@ -30,12 +30,12 @@ repos:
     packages: []
     debug: []
   world:
-    version: 1.38.1-1
+    version: 1.39.0-1
     packages:
-      - python-polars-1.38.1-1-x86_64.pkg.tar.zst
-      - python-polars-runtime-32-1.38.1-1-x86_64.pkg.tar.zst
-      - python-polars-runtime-64-1.38.1-1-x86_64.pkg.tar.zst
-      - python-polars-runtime-compat-1.38.1-1-x86_64.pkg.tar.zst
+      - python-polars-1.39.0-1-x86_64.pkg.tar.zst
+      - python-polars-runtime-32-1.39.0-1-x86_64.pkg.tar.zst
+      - python-polars-runtime-64-1.39.0-1-x86_64.pkg.tar.zst
+      - python-polars-runtime-compat-1.39.0-1-x86_64.pkg.tar.zst
     debug: []
   lib32-goblins:
     version: null
