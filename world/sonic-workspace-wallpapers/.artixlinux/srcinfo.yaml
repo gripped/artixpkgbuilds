@@ -1,0 +1,28 @@
+---
+version: 6.6.3-1
+pkgbase:
+  name: sonic-workspace-wallpapers
+  pkgdesc: Additional wallpapers for the Sonic Workspace
+  pkgver: 6.6.3
+  pkgrel: 1
+  url: https://github.com/Sonic-DE/sonic-workspace-wallpapers
+  arch:
+    - any
+  groups:
+    - sonicde
+  license:
+    - LGPL
+  makedepends:
+    - extra-cmake-modules
+    - qt5-base
+  provides:
+    - plasma-workspace-wallpapers
+  conflicts:
+    - plasma-workspace-wallpapers
+  source:
+    - sonic-workspace-wallpapers-6.6.3.tar.gz::https://github.com/Sonic-DE/sonic-workspace-wallpapers/archive/refs/tags/6.6.3.tar.gz
+  sha256sums:
+    - 0f3f2b853cc0fb2bb0372bb1b255575e79821ccccb3c748db5dca3511f0ff386
+pkgname:
+  - name: sonic-workspace-wallpapers
+# generated with artixpkg 0.38.2-1-any
