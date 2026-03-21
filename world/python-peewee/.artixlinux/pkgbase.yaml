@@ -1,6 +1,6 @@
 ---
 actions:
-  addRepo: world
+  addRepo: world-gremlins
   removeRepo: null
   triggersBuild: true
   triggersRebuild: false
@@ -25,9 +25,9 @@ repos:
     packages: []
     debug: []
   world-gremlins:
-    version: 3.18.3-2
+    version: 3.19.0-1
     packages:
-      - python-peewee-3.18.3-2-x86_64.pkg.tar.zst
+      - python-peewee-3.19.0-1-x86_64.pkg.tar.zst
     debug: []
   world:
     version: 3.19.0-1
