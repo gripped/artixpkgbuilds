@@ -1,10 +1,10 @@
 ---
-version: 0.4.9.5-1
+version: 0.4.9.5-2
 pkgbase:
   name: tor
   pkgdesc: Anonymizing overlay network.
   pkgver: 0.4.9.5
-  pkgrel: 1
+  pkgrel: 2
   url: https://www.torproject.org/download/tor/
   arch:
     - x86_64
@@ -16,11 +16,11 @@ pkgbase:
     - ca-certificates
   depends:
     - bash
-    - gcc-libs
     - glibc
     - libcap.so
     - libcrypto.so
     - libevent
+    - libgcc
     - liblzma.so
     - libseccomp.so
     - libssl.so
@@ -60,4 +60,4 @@ pkgbase:
     - 5d55d9a7e42b6ce78b8ab985bab37afe8f0bacddb5abd895c4a490adb8f98b9422f90b40066fef05ecf37b7b21e80aadc615c4b7f6e12b05581304113a1b1f1d
 pkgname:
   - name: tor
-# generated with artixpkg 0.37.6-1-any
+# generated with artixpkg 0.38.2-1-any
