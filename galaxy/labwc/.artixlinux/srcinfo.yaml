@@ -1,9 +1,9 @@
 ---
-version: 0.9.3-1
+version: 0.9.6-1
 pkgbase:
   name: labwc
   pkgdesc: stacking wayland compositor with look and feel from openbox
-  pkgver: 0.9.3
+  pkgver: 0.9.6
   pkgrel: 1
   url: https://github.com/labwc/labwc
   arch:
@@ -36,9 +36,9 @@ pkgbase:
   optdepends:
     - 'bemenu: default launcher via Alt+F3'
   source:
-    - git+https://github.com/labwc/labwc#tag=0.9.3
+    - git+https://github.com/labwc/labwc#tag=0.9.6
   b2sums:
-    - 20c541cf3b859e557af154a440ec04c2493fe4293f039d21fe624bed16734df555bacf8fab40f69c31dc551f15f6c815a0b51a7cda97f2fc59fa65f644c5dd5a
+    - bc54ae3bf7d9e3cc2f3e06fb7378711287dc80373dc8931c9e12da0c7e1a0370ba6377eeacd6fdf30922263e6e5bf4eac947facab6e86d9ee4b14347a528e3dc
 pkgname:
   - name: labwc
-# generated with artixpkg 0.37.4-1-any
+# generated with artixpkg 0.38.2-1-any
