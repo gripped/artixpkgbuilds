@@ -17,11 +17,10 @@ repos:
     packages: []
     debug: []
   system:
-    version: 6.6-1
+    version: 6.6-2
     packages:
-      - ncurses-6.6-1-x86_64.pkg.tar.zst
-    debug:
-      - ncurses-debug-6.6-1-x86_64.pkg.tar.zst
+      - ncurses-6.6-2-x86_64.pkg.tar.zst
+    debug: []
   world-goblins:
     version: null
     packages: []
