@@ -2,9 +2,9 @@
 # Maintainer: Felix Yan <felixonmars@archlinux.org>
 
 pkgname=qt6-webengine
-_pkgver=6.10.0
+_pkgver=6.10.2
 pkgver=${_pkgver/-/}
-pkgrel=3.2
+pkgrel=2
 _chromium=
 arch=(x86_64)
 url='https://www.qt.io'
@@ -81,7 +81,7 @@ groups=(qt6)
 _pkgfn=${pkgname/6-/}
 source=(git+https://code.qt.io/qt/$_pkgfn#tag=v$_pkgver
         git+https://code.qt.io/qt/qtwebengine-chromium)
-sha256sums=('bf7483c49ea6f7695d31fade149c7049644131a8df21209ed3f691a62357f67d'
+sha256sums=('98d8f65137ae6d913ddbe45b3dac562e6b01a5879695424d7f1c3f9eeeb16c21'
             'SKIP')
 
 prepare() {
@@ -90,7 +90,7 @@ prepare() {
   git submodule set-url src/3rdparty "$srcdir"/qtwebengine-chromium
   git -c protocol.file.allow=always submodule update
 
-  git cherry-pick -n ac20cd91b59dcaa40a8106354cb4253c541e7643 # Fix GPU rendering with mesa 25.2
+  git cherry-pick -n 4b2f03af22bfb19168e71092d075c649e942604f # Fix crashes
 
   # Bump chromium to head of stable branch
   cd src/3rdparty
