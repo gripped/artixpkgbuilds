@@ -1,9 +1,9 @@
 ---
-version: 6.19.3-1
+version: 6.19.9-1.1
 pkgbase:
   name: linux-tools
-  pkgver: 6.19.3
-  pkgrel: 1
+  pkgver: 6.19.9
+  pkgrel: 1.1
   url: https://www.kernel.org
   arch:
     - x86_64
@@ -48,13 +48,13 @@ pkgbase:
     - '!strip'
     - '!lto'
   source:
-    - https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.19.3.tar.xz
-    - https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.19.3.tar.sign
+    - https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.19.9.tar.xz
+    - https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.19.9.tar.sign
   validpgpkeys:
     - ABAF11C65A2970B130ABE3C479BE3E4300411886
     - 647F28654894E3BD457199BE38DBBDC86092693E
   sha256sums:
-    - 0e474968adfcbee32916fd01a89d8ccfd1168d8d32569e76a5c664c793198ebe
+    - c16068a3af12e3943dee3b1eef57ca70229c069128bfa1184fb3f48b219d55bf
     - SKIP
 pkgname:
   - name: bootconfig
@@ -161,4 +161,4 @@ pkgname:
     pkgdesc: Read or write MSR_IA32_ENERGY_PERF_BIAS
     depends:
       - glibc
-# generated with artixpkg 0.38-1-any
+# generated with artixpkg 0.38.2-1-any

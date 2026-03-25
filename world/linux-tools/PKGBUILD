@@ -16,8 +16,8 @@ pkgname=(
   'usbip'
   'x86_energy_perf_policy'
 )
-pkgver=6.19.3
-pkgrel=1
+pkgver=6.19.9
+pkgrel=1.1
 _srcname=linux-${pkgver}
 license=('GPL-2.0-only')
 arch=('x86_64')
@@ -45,12 +45,13 @@ makedepends+=('llvm' 'clang')
 # intel-speed-select
 makedepends+=('libnl')
 groups=("$pkgbase")
-source=(https://cdn.kernel.org/pub/linux/kernel/v${pkgver%%.*}.x/${_srcname}.tar.{xz,sign})
+source=(https://cdn.kernel.org/pub/linux/kernel/v${pkgver%%.*}.x/${_srcname}.tar.{xz,sign}
+)
 validpgpkeys=(
   'ABAF11C65A2970B130ABE3C479BE3E4300411886'  # Linus Torvalds
   '647F28654894E3BD457199BE38DBBDC86092693E'  # Greg Kroah-Hartman
 )
-sha256sums=('0e474968adfcbee32916fd01a89d8ccfd1168d8d32569e76a5c664c793198ebe'
+sha256sums=('c16068a3af12e3943dee3b1eef57ca70229c069128bfa1184fb3f48b219d55bf'
             'SKIP')
 
 prepare() {
@@ -217,7 +218,6 @@ package_cpupower() {
     confdir='/etc/default/' \
     sbindir='/usr/bin' \
     libdir='/usr/lib' \
-    libexecdir='/usr/lib/artix' \
     mandir='/usr/share/man' \
     docdir='/usr/share/doc/cpupower' \
     install install-man
