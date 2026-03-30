@@ -1,8 +1,8 @@
 ---
-version: 6.19.9-1.1
+version: 6.19.10-1.1
 pkgbase:
   name: linux-tools
-  pkgver: 6.19.9
+  pkgver: 6.19.10
   pkgrel: 1.1
   url: https://www.kernel.org
   arch:
@@ -48,13 +48,13 @@ pkgbase:
     - '!strip'
     - '!lto'
   source:
-    - https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.19.9.tar.xz
-    - https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.19.9.tar.sign
+    - https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.19.10.tar.xz
+    - https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.19.10.tar.sign
   validpgpkeys:
     - ABAF11C65A2970B130ABE3C479BE3E4300411886
     - 647F28654894E3BD457199BE38DBBDC86092693E
   sha256sums:
-    - c16068a3af12e3943dee3b1eef57ca70229c069128bfa1184fb3f48b219d55bf
+    - 466d441a0ea5e04b7023618b7b201bfd60effab225f806fd41ce663484395a1c
     - SKIP
 pkgname:
   - name: bootconfig
