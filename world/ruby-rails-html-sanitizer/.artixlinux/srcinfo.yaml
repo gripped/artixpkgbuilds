@@ -1,0 +1,30 @@
+---
+version: 1.7.0-1
+pkgbase:
+  name: ruby-rails-html-sanitizer
+  pkgdesc: HTML sanitization for Rails applications
+  pkgver: 1.7.0
+  pkgrel: 1
+  url: https://github.com/rails/rails-html-sanitizer
+  arch:
+    - any
+  license:
+    - MIT
+  checkdepends:
+    - ruby-rails-dom-testing
+  makedepends:
+    - ruby-bundler
+    - ruby-minitest
+    - ruby-rake
+  depends:
+    - ruby
+    - ruby-loofah
+  options:
+    - '!emptydirs'
+  source:
+    - https://github.com/rails/rails-html-sanitizer/archive/v1.7.0/ruby-rails-html-sanitizer-1.7.0.tar.gz
+  sha512sums:
+    - a60322e9358d1df6b8485d0dfc5fa34e9918dfdf9b7ffc8a3726c54ab5dd869e24b17fbc260ad5ad7ff30eded082d41bdc2d2c9ca56eade837cca610f9ad892e
+pkgname:
+  - name: ruby-rails-html-sanitizer
+# generated with artixpkg 0.38.4-1-any
