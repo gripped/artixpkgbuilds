@@ -1,0 +1,27 @@
+---
+version: 0.5.13.1-1
+pkgbase:
+  name: dash
+  pkgdesc: POSIX compliant shell that aims to be as small as possible
+  pkgver: 0.5.13.1
+  pkgrel: 1
+  url: http://gondor.apana.org.au/~herbert/dash/
+  install: dash.install
+  arch:
+    - x86_64
+  license:
+    - BSD-3-Clause
+    - GPL-2.0-or-later
+  depends:
+    - glibc
+    - libedit
+    - libedit.so
+  source:
+    - https://git.kernel.org/pub/scm/utils/dash/dash.git/snapshot/dash-0.5.13.1.tar.gz
+  sha512sums:
+    - c5ef88538fcbfd0de586e42626886e4ae1e35e52004bde103db8df978d5e159dcafdaa4ef4b8e4b699405742f17ce813a018525d544417563a2389357dd67122
+  b2sums:
+    - 6a57a7e1a532019ddaaca5484d4d2e50e63959776cf0e87d0bceb4cacafc5fd4aeedfe05c9a8d3b76a5334c78a1ce2df485b9f8313427e413f275eea9ff29085
+pkgname:
+  - name: dash
+# generated with artixpkg 0.38-1-any
