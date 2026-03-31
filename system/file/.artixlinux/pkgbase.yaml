@@ -17,9 +17,9 @@ repos:
     packages: []
     debug: []
   system:
-    version: 5.46-5
+    version: 5.47-1
     packages:
-      - file-5.46-5-x86_64.pkg.tar.zst
+      - file-5.47-1-x86_64.pkg.tar.zst
     debug: []
   world-goblins:
     version: null
