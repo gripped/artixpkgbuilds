@@ -29,12 +29,12 @@ repos:
     packages: []
     debug: []
   world:
-    version: 0.15.2-3
+    version: 0.15.2-4
     packages:
-      - check-0.15.2-3-x86_64.pkg.tar.zst
-      - check-docs-0.15.2-3-x86_64.pkg.tar.zst
+      - check-0.15.2-4-x86_64.pkg.tar.zst
+      - check-docs-0.15.2-4-x86_64.pkg.tar.zst
     debug:
-      - check-debug-0.15.2-3-x86_64.pkg.tar.zst
+      - check-debug-0.15.2-4-x86_64.pkg.tar.zst
   lib32-goblins:
     version: null
     packages: []
