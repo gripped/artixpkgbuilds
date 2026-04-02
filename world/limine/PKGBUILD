@@ -1,9 +1,8 @@
-# Maintainer: Robin Candau <antiz@archlinux.org>
-# Contributor: Mintsuki <mintsuki@protonmail.com>
+# Maintainer: artist
 
 pkgname=limine
-pkgver=10.4.0
-pkgrel=1
+pkgver=11.1.0
+pkgrel=1.2
 pkgdesc="An advanced, portable, multiprotocol bootloader"
 url="https://limine-bootloader.org/"
 arch=('x86_64')
@@ -11,7 +10,7 @@ license=('BSD-2-Clause')
 depends=('glibc')
 makedepends=('git' 'nasm' 'mtools' 'llvm' 'lld' 'clang')
 source=("git+https://codeberg.org/Limine/limine.git#tag=v${pkgver}?signed")
-sha256sums=('4c4ffc8203d6e315d984c27eb0d331bcdbbd01de50e9adafd34348ba4ebcab77')
+sha256sums=('fa2dce812e77a5641888630ce69f85d48737b93a679d4ef908f6a1349290280a')
 validpgpkeys=('05D29860D0A0668AAEFB9D691F3C021BECA23821') # Mintsuki <mintsuki@protonmail.com>
 
 prepare() {
@@ -30,3 +29,4 @@ package() {
   	make DESTDIR="${pkgdir}" install
 	install -Dm 644 COPYING "${pkgdir}/usr/share/licenses/${pkgname}/COPYING"
 }
+
