@@ -54,7 +54,7 @@ repos:
     packages: []
     debug: []
   galaxy:
-    version: 0.68-7
+    version: 0.68-8
     packages:
-      - perl-ldap-0.68-7-any.pkg.tar.zst
+      - perl-ldap-0.68-8-any.pkg.tar.zst
     debug: []
