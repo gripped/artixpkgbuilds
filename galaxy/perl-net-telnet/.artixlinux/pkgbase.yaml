@@ -54,7 +54,7 @@ repos:
     packages: []
     debug: []
   galaxy:
-    version: 3.05-7
+    version: 3.05-8
     packages:
-      - perl-net-telnet-3.05-7-any.pkg.tar.zst
+      - perl-net-telnet-3.05-8-any.pkg.tar.zst
     debug: []
