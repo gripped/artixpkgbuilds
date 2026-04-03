@@ -50,11 +50,12 @@ repos:
     packages: []
     debug: []
   galaxy-gremlins:
-    version: null
-    packages: []
+    version: 0.11.25-2
+    packages:
+      - miniaudio-0.11.25-2-any.pkg.tar.zst
     debug: []
   galaxy:
-    version: 0.11.25-1
+    version: 0.11.25-4
     packages:
-      - miniaudio-0.11.25-1-any.pkg.tar.zst
+      - miniaudio-0.11.25-4-x86_64.pkg.tar.zst
     debug: []
