@@ -17,9 +17,9 @@ repos:
     packages: []
     debug: []
   system:
-    version: 3.14.0-1
+    version: 3.15.0-1
     packages:
-      - pciutils-3.14.0-1-x86_64.pkg.tar.zst
+      - pciutils-3.15.0-1-x86_64.pkg.tar.zst
     debug: []
   world-goblins:
     version: null
