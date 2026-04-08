@@ -1,9 +1,9 @@
 ---
-version: 0.38.2-1
+version: 0.38.4-1
 pkgbase:
   name: artools
   pkgdesc: Development tools for Artix
-  pkgver: 0.38.2
+  pkgver: 0.38.4
   pkgrel: 1
   url: https://gitea.artixlinux.org/artix/artools
   arch:
@@ -16,9 +16,9 @@ pkgbase:
   makedepends:
     - git
   source:
-    - git+https://gitea.artixlinux.org/artix/artools.git#tag=0.38.2
+    - git+https://gitea.artixlinux.org/artix/artools.git#tag=0.38.4
   sha256sums:
-    - 6f7282142cf64c06d5d05797d4520fea1fda13eb98bee99df1e3cd82ede8aac6
+    - 716883ef53a326850daa9ec147f80b89452fbedfb02481eaee08d14184657013
 pkgname:
   - name: artools-base
     pkgdesc: Development tools for Artix (base tools)
