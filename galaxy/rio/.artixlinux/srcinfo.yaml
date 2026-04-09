@@ -1,9 +1,9 @@
 ---
-version: 0.3.1-1
+version: 0.3.2-1
 pkgbase:
   name: rio
   pkgdesc: A hardware-accelerated GPU terminal emulator powered by WebGPU
-  pkgver: 0.3.1
+  pkgver: 0.3.2
   pkgrel: 1
   url: https://github.com/raphamorim/rio
   arch:
@@ -28,9 +28,9 @@ pkgbase:
   options:
     - '!lto'
   source:
-    - rio-0.3.1.tar.gz::https://github.com/raphamorim/rio/archive/refs/tags/v0.3.1.tar.gz
+    - rio-0.3.2.tar.gz::https://github.com/raphamorim/rio/archive/refs/tags/v0.3.2.tar.gz
   sha512sums:
-    - 14397a6fbb9e0af3ef4ef208f36d87cf789e0460fdb309e276687e341deb0d863d29ba85cf9d2e7bcc6eedd55b93fc37dbe02b38b082c8dff61ba1509c233df5
+    - 505e9dbdf553540f6f9eac45e387ab76a0fac308938c45082e02203ba4721a6be3cc8ae9037a46feff052e29b6a329ddb73c3ad1dbdfe1ce09ffe49eef482da2
 pkgname:
   - name: rio
 # generated with artixpkg 0.38.4-1-any
