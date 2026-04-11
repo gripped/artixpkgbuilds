@@ -1,9 +1,9 @@
 ---
-version: 3.3.10.2-1
+version: 3.3.11.1-1
 pkgbase:
   name: ruby-parser
   pkgdesc: A production-ready Ruby parser written in pure Ruby
-  pkgver: 3.3.10.2
+  pkgver: 3.3.11.1
   pkgrel: 1
   url: https://github.com/whitequark/parser
   arch:
@@ -16,7 +16,7 @@ pkgbase:
     - ruby-simplecov
   makedepends:
     - git
-    - ragel
+    - ragel6
     - ruby-bundler
     - ruby-rake
     - ruby-rdoc
@@ -27,11 +27,11 @@ pkgbase:
   options:
     - '!emptydirs'
   source:
-    - git+https://github.com/whitequark/parser.git#tag=v3.3.10.2
+    - git+https://github.com/whitequark/parser.git#tag=v3.3.11.1
   sha512sums:
-    - 96aa3bafc8bfe17cc6953dde3657a49ec21adfa3968b62559e34b5ceb9adafadbe5f33a1c3bfac2ab4f50ca3f41ee71eab280805936f4c08627a5921512d3a21
+    - 5e496ac62607028cbd530b701100839c8017d2c6c9e65cee2880f8b216abc61201beeedceb404160de598e547f60efde29a728793bf9be995cef95446dd7566d
   b2sums:
-    - c340355d35e98ecd103dd198f53461559d42b058be6e31cd4e89826902382db0e545ef37e21960c132bc50a48ee19142ce6d0cbaa38f5307f44ea8cfc641177c
+    - 2f7578fdf6c65d8e852c21a8f5e1e3f96397e42c3d9b3fad00e61dc7d62418a8b786fafe566ac89c47fb9bf12be10a46a075c63692c54a951c34dff4c60ff026
 pkgname:
   - name: ruby-parser
 # generated with artixpkg 0.38.4-1-any
