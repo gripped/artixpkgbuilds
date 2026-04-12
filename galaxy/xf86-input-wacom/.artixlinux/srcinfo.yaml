@@ -1,0 +1,42 @@
+---
+version: 1.2.4-1
+pkgbase:
+  name: xf86-input-wacom
+  pkgdesc: X.Org Wacom tablet driver
+  pkgver: 1.2.4
+  pkgrel: 1
+  url: https://github.com/linuxwacom/xf86-input-wacom
+  arch:
+    - x86_64
+  license:
+    - GPL-2.0-or-later
+  makedepends:
+    - xorg-server-devel
+    - X-ABI-XINPUT_VERSION=24.4
+    - meson
+    - gobject-introspection
+    - python-libevdev
+    - python-pytest
+    - python-yaml
+    - python-gobject
+    - python-attrs
+  depends:
+    - libxi
+    - libxinerama
+    - libxrandr
+    - libudev
+    - libx11
+    - glibc
+  provides:
+    - x11win-input-wacom
+  conflicts:
+    - xorg-server<21.1.1
+    - X-ABI-XINPUT_VERSION<24
+    - X-ABI-XINPUT_VERSION>=25
+  source:
+    - https://github.com/linuxwacom/xf86-input-wacom/releases/download/xf86-input-wacom-1.2.4/xf86-input-wacom-1.2.4.tar.bz2
+  sha256sums:
+    - cbc5fccda8994b9314e60da6933d8e5f901e4c3f208dd9fc09a611fe25b71a0d
+pkgname:
+  - name: xf86-input-wacom
+# generated with artixpkg 0.37.4-1-any
