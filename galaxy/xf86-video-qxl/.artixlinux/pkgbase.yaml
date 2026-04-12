@@ -1,0 +1,43 @@
+team: galaxy
+repos:
+  system-goblins:
+    debug: []
+  system-gremlins:
+    debug: []
+  system:
+    debug: []
+  world-goblins:
+    debug: []
+  world-gremlins:
+    debug: []
+    version: null
+    packages: []
+  world:
+    debug: []
+    version: null
+    packages: []
+  lib32-goblins:
+    debug: []
+  lib32-gremlins:
+    debug: []
+  lib32:
+    debug: []
+  galaxy-goblins:
+    debug: []
+  galaxy-gremlins:
+    debug: []
+    version: null
+    packages: []
+  galaxy:
+    debug: []
+    version: 0.1.6-2.2
+    packages:
+      - xf86-video-qxl-0.1.6-2.2-x86_64.pkg.tar.zst
+actions:
+  addRepo: galaxy
+  removeRepo: world
+  triggersBuild: false
+  triggersRebuild: false
+  triggersRepoAdd: true
+  triggersRepoRemove: true
+  triggersNoCheck: false
