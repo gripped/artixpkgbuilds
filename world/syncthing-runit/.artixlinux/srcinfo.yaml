@@ -1,10 +1,10 @@
 ---
-version: 20250813-1.1
+version: 20260413-2
 pkgbase:
   name: syncthing-runit
   pkgdesc: Runit service script for syncthing
-  pkgver: 20250813
-  pkgrel: 1.1
+  pkgver: 20260413
+  pkgrel: 2
   url: https://artixlinux.org
   install: syncthing-runit.install
   arch:
@@ -12,22 +12,25 @@ pkgbase:
   groups:
     - runit-galaxy
   license:
-    - BSD
+    - BSD-3-Clause
   depends:
     - syncthing
     - runit
+    - util-linux
   provides:
     - init-syncthing
   conflicts:
     - init-syncthing
+  backup:
+    - etc/runit/sv/syncthing/conf
   source:
     - syncthing.run
     - logsyncthing.run
     - syncthing.conf
   sha256sums:
-    - 9539c154ac402f29e4e1c465af3eab97e63f514a5461df7ba6c1bed7c3bf56eb
+    - 486f86711c73ca959fbc0f335802626ccf2a94b510bff5a1486ca7402e9c7fa1
     - cc524d6e190a19a70ca34b66520abec2060e08041589b34a3a1048b63e6bf4a4
     - 9af1ce2cf531c758a0a84f7e683172cac24081fbb2001d6e3125e512a214f03e
 pkgname:
   - name: syncthing-runit
-# generated with artixpkg 0.36.4-1-any
+# generated with artixpkg 0.38.5-1-any

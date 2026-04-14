@@ -1,5 +1,6 @@
 #!/bin/sh
-[ -r conf ] && . ./conf
+test -r ./conf && . ./conf
 
 exec 2>&1
-exec chpst -u "$USER" syncthing serve -logflags 0
+exec setpriv --reuid="$USER" --regid="$USER" --init-groups --reset-env -- \
+	sh -c 'test -r ./conf && . ./conf; cd "$HOME" && exec syncthing "$@"' -- $SYNCTHING_ARGS
