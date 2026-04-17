@@ -1,9 +1,9 @@
 ---
-version: 25.1.0-1
+version: 25.3.0-1
 pkgbase:
   name: gunicorn
   pkgdesc: WSGI HTTP Server for UNIX
-  pkgver: 25.1.0
+  pkgver: 25.3.0
   pkgrel: 1
   url: https://gunicorn.org/
   arch:
@@ -32,9 +32,9 @@ pkgbase:
     - 'python-setproctitle: for process renaming'
     - 'python-tornado: for asynchronous request handling with tornado'
   source:
-    - git+https://github.com/benoitc/gunicorn.git#tag=25.1.0
+    - git+https://github.com/benoitc/gunicorn.git#tag=25.3.0
   b2sums:
-    - 77a976ca86533da8f24884f6e8b607bc6c4f61cb4f1a203dd99cda769a63e0d27c09cef0e614f6119a31992bcec4068ddadf04301f02977fe06f5f6ceed447a9
+    - 82c5b655bc8dbe611e69cec6f2079bfad3cb3057613e677b7a846e10e56a95c55c27a5547cb811fed3c4e937df75b106ee132b703f45a1fb3fad01915e2e453e
 pkgname:
   - name: gunicorn
-# generated with artixpkg 0.38.2-1-any
+# generated with artixpkg 0.38.4-1-any
