@@ -1,17 +1,17 @@
 # Maintainer: Felix Yan <felixonmars@archlinux.org>
 
 pkgname=python-sybil
-pkgver=9.1.0
+pkgver=10.0.0
 pkgrel=1
 pkgdesc='Automated testing for the examples in your documentation.'
 arch=('any')
 license=('MIT')
 url='https://github.com/simplistix/sybil'
 depends=('python')
-makedepends=('git' 'python-build' 'python-installer' 'python-setuptools' 'python-wheel')
+makedepends=('git' 'python-build' 'python-hatchling' 'python-installer')
 checkdepends=('python-pytest' 'python-seedir' 'python-testfixtures' 'python-yaml')
 source=("git+https://github.com/simplistix/sybil.git#tag=$pkgver")
-sha512sums=('8a96cf8a2e3ff1cfc658ff3dd45f6c0d2de76c899475fbb90ff15669d6b248488d3116c0bff5dd2eaadfea7494fde6aed5d24c1e3dca5a0177abf674d7f90df7')
+sha512sums=('ed9c0fd6508a61c0aa073f17ccb65a0d1cf267af07d5481c7a80d56d953c04ca2463d248b2ba8d26d17320ceb04ae985f2ebddd690e8737dcdbbf3dbc028ca5e')
 
 build() {
   cd sybil
@@ -20,7 +20,7 @@ build() {
 
 check() {
   cd sybil
-  python -m pytest
+  PYTHONPATH=src python -m pytest
 }
 
 package() {
