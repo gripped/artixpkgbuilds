@@ -1,2 +1,2 @@
-# font-awesome
+# otf-font-awesome
 
