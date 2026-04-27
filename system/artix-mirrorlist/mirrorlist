@@ -1,6 +1,6 @@
 ##
 ## Artix Linux repository mirrorlist
-## Generated on 2026-03-24 by artix-mlg
+## Generated on 2026-04-26 by artix-mlg
 ##
 
 # Artix mirrors
@@ -38,10 +38,10 @@ Server = https://tools.sphnet.in/mirror/artix/$repo/os/$arch
 Server = https://mirror.rabisu.com/mirrors/artixlinux/$repo/os/$arch
 # Greece
 Server = https://ftp.cc.uoc.gr/mirrors/linux/artixlinux/$repo/os/$arch
-# Hungary
-Server = https://quantum-mirror.hu/mirrors/pub/artix-linux/$repo/os/$arch
 # Italy
 Server = https://artixlinux.mirror.garr.it/$repo/os/$arch
+# Monaco
+Server = https://qontinuum.space/mirror/artixlinux/$repo/os/$arch
 # Netherlands
 Server = https://artist-mirror.artixlinux.org/$repo/os/$arch
 # Poland
@@ -59,6 +59,7 @@ Server = https://mirror.vinehost.net/artix-linux/$repo/os/$arch
 # Canada
 Server = https://mirror.csclub.uwaterloo.ca/artixlinux/$repo/os/$arch
 Server = https://artix-linux.mirrors.prairievoice.ca/$repo/os/$arch
+Server = https://artix.tuxmirrors.xyz/$repo/os/$arch
 # United States
 Server = https://mirrors.rit.edu/artixlinux/$repo/os/$arch
 Server = https://artix.wheaton.edu/repos/$repo/os/$arch
@@ -73,6 +74,8 @@ Server = https://mirrors.lug.mtu.edu/artixlinux/$repo/os/$arch
 Server = https://mirrors.cicku.me/artix/$repo/os/$arch
 
 ## South America
+# Brazil
+Server = https://artix.nicolasbianconi.space/$repo/os/$arch
 # Chile
 Server = https://mirror1.cl.netactuate.com/artix/repos/$repo/os/$arch
 
