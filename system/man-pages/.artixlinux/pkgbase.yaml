@@ -17,10 +17,10 @@ repos:
     packages: []
     debug: []
   system:
-    version: 6.17-1
+    version: 6.18-1
     packages:
-      - man-pages-6.17-1-any.pkg.tar.zst
-      - man-pages-utils-6.17-1-any.pkg.tar.zst
+      - man-pages-6.18-1-any.pkg.tar.zst
+      - man-pages-utils-6.18-1-any.pkg.tar.zst
     debug: []
   world-goblins:
     version: null
