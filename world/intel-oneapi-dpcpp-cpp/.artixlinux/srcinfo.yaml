@@ -1,0 +1,35 @@
+---
+version: 2026.0.0_947-1
+pkgbase:
+  name: intel-oneapi-dpcpp-cpp
+  pkgdesc: Intel oneAPI DPC++/C++ Compiler
+  pkgver: 2026.0.0_947
+  pkgrel: 1
+  url: https://software.intel.com/content/www/us/en/develop/tools/oneapi.html
+  arch:
+    - x86_64
+  license:
+    - LicenseRef-Intel-EULA-Developer-Tools
+  depends:
+    - intel-oneapi-compiler-dpcpp-cpp-common
+    - intel-oneapi-compiler-dpcpp-cpp-runtime
+    - intel-oneapi-compiler-shared-runtime
+    - intel-oneapi-compiler-shared
+    - intel-oneapi-tbb
+    - intel-oneapi-dev-utilities
+    - intel-oneapi-common
+    - gcc-libs
+    - glibc
+    - bash
+    - zlib
+  conflicts:
+    - intel-oneapi-basekit
+  noextract:
+    - intel-oneapi-dpcpp-cpp-2026.0-2026.0.0-947_amd64.deb
+  source:
+    - https://apt.repos.intel.com/oneapi/pool/main/intel-oneapi-dpcpp-cpp-2026.0-2026.0.0-947_amd64.deb
+  b2sums:
+    - a4307b1ba59fce43483755eb9d1070ebf1a4b86cb21bba084a65f711b1b2b76315141ab03c4b288d1626ccf8a75a87a985b07ccce4bd694836b2eabc12e96b0b
+pkgname:
+  - name: intel-oneapi-dpcpp-cpp
+# generated with artixpkg 0.38.5-1-any
