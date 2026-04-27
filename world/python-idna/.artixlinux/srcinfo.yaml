@@ -1,10 +1,10 @@
 ---
-version: 3.11-2
+version: 3.13-1
 pkgbase:
   name: python-idna
   pkgdesc: Internationalized Domain Names in Applications (IDNA)
-  pkgver: 3.11
-  pkgrel: 2
+  pkgver: 3.13
+  pkgrel: 1
   url: https://github.com/kjd/idna
   arch:
     - any
@@ -20,9 +20,9 @@ pkgbase:
   depends:
     - python
   source:
-    - git+https://github.com/kjd/idna.git#tag=v3.11
+    - git+https://github.com/kjd/idna.git#tag=v3.13
   sha512sums:
-    - abe8aaf9d19326701e749fb13eaabe9f2562ed7e7e8e1a5efeec01e402a956ed2951aa79059196ee585ee1cca127bd4aa91f8cd8b6e1458aaddd01d2ab9ecd9d
+    - 3ff4acd8689f959072a325535eea5185e82ccd0233dd536b393160d8a06af886a72a537aac472e434db2599d31cd690cfa7ea200381311b9f21f133cf3659680
 pkgname:
   - name: python-idna
-# generated with artixpkg 0.37.4-1-any
+# generated with artixpkg 0.38.5-1-any
