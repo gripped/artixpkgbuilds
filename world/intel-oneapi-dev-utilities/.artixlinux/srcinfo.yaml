@@ -1,0 +1,30 @@
+---
+version: 2026.0.0_230-1
+pkgbase:
+  name: intel-oneapi-dev-utilities
+  pkgdesc: Intel oneAPI Dev Utilities
+  pkgver: 2026.0.0_230
+  pkgrel: 1
+  url: https://software.intel.com/content/www/us/en/develop/tools/oneapi.html
+  arch:
+    - any
+  license:
+    - LicenseRef-Intel-EULA-Developer-Tools
+  depends:
+    - intel-oneapi-common
+  provides:
+    - intel-oneapi-dev-utilities-eclipse-cfg
+  conflicts:
+    - intel-oneapi-basekit
+  noextract:
+    - intel-oneapi-dev-utilities-2026.0.0-230_amd64.deb
+    - intel-oneapi-dev-utilities-eclipse-cfg-2026.0-2026.0.0-230_all.deb
+  source:
+    - https://apt.repos.intel.com/oneapi/pool/main/intel-oneapi-dev-utilities-2026.0.0-230_amd64.deb
+    - https://apt.repos.intel.com/oneapi/pool/main/intel-oneapi-dev-utilities-eclipse-cfg-2026.0-2026.0.0-230_all.deb
+  b2sums:
+    - ab8d4f5fabb834dd84679111291352c483e7d9c7425241e45be390e09ebc8dbcacabb0929bcfd2f488bc16ca39e2f81ab7a1dad401460ebb73430c6e7928c959
+    - 4bb7afb5c330bfbb0da97d5e559e0bfac2edb09ead69fb9054b6e938a9423e9e5165a085640ef1ba9d840d56d12432127fcfc59489049e5e9b77dae20405184f
+pkgname:
+  - name: intel-oneapi-dev-utilities
+# generated with artixpkg 0.38.5-1-any
