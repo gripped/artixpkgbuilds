@@ -1,9 +1,9 @@
 ---
-version: 1:0.39.1-1
+version: 1:0.40.1-1
 pkgbase:
   name: gemini-cli
   pkgdesc: Open-source AI agent that brings the power of Gemini directly into your terminal
-  pkgver: 0.39.1
+  pkgver: 0.40.1
   pkgrel: 1
   epoch: 1
   url: https://github.com/google-gemini/gemini-cli
@@ -33,9 +33,9 @@ pkgbase:
     - 'xclip: clipboard image pasting on X11'
     - 'xdg-utils: opening URLs in default browser'
   source:
-    - git+https://github.com/google-gemini/gemini-cli.git#tag=v0.39.1
+    - git+https://github.com/google-gemini/gemini-cli.git#tag=v0.40.1
   b2sums:
-    - 64591531c90e8909b495f2a3796f6df5a968376220d9d08ad01b048cb8cd55dd7bc2e7ac81dd1e3024bde0baa8a1b5c3757b7251b800a8274e89005362eaaeca
+    - 4a2afaae9a269a3b1543b9e9210c7f923f331176e4b4f801fc6cb51f46d564e9784c77fedde0cf68329aa1e30c0b24cad8996ae0016682cb280774a0c67e83fc
 pkgname:
   - name: gemini-cli
 # generated with artixpkg 0.38.5-1-any
