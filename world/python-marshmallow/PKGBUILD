@@ -1,7 +1,7 @@
 # Maintainer: Felix Yan <felixonmars@archlinux.org>
 
 pkgname=python-marshmallow
-pkgver=3.25.0
+pkgver=3.26.1
 pkgrel=1
 pkgdesc="A lightweight library for converting complex datatypes to and from native Python datatypes."
 url="https://github.com/marshmallow-code/marshmallow"
@@ -11,7 +11,14 @@ depends=('python-packaging')
 makedepends=('git' 'python-build' 'python-installer' 'python-flit-core')
 checkdepends=('python-pytest' 'python-simplejson')
 source=("git+https://github.com/marshmallow-code/marshmallow.git#tag=$pkgver")
-sha512sums=('f21ebbd1cd60f3768d984d76cd937e69971f99bbf2bd516db5e41341cdd0b04b8659d56b169de15eb7b44b694ea95edc21c43f4e23719b075113bc238301c322')
+sha512sums=('675bac051860fc6a3c31b2126f2b175b32f9e1aef28f18f8b5cd28c9d559728c24fd51c1bd102e369a6a0cc3c604ca6c72d9bffe6d66982de3642654a360d430')
+
+prepare() {
+  cd marshmallow
+  sed -i 's/"flit_core<4"/"flit_core"/' pyproject.toml
+  # Handle Python 3.14's changed datetime overflow error message in tests.
+  sed -i 's/match="out of range"/match=r"out of range|year must be in 1\\.\\.9999"/' tests/test_utils.py
+}
 
 build() {
   cd marshmallow
