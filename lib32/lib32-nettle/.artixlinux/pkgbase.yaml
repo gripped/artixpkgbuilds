@@ -41,9 +41,9 @@ repos:
     packages: []
     debug: []
   lib32:
-    version: 3.10.2-1
+    version: 4.0-1
     packages:
-      - lib32-nettle-3.10.2-1-x86_64.pkg.tar.zst
+      - lib32-nettle-4.0-1-x86_64.pkg.tar.zst
     debug: []
   galaxy-goblins:
     version: null
