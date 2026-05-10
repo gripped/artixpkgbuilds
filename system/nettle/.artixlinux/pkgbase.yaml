@@ -17,9 +17,9 @@ repos:
     packages: []
     debug: []
   system:
-    version: 3.10.2-1
+    version: 4.0-1
     packages:
-      - nettle-3.10.2-1-x86_64.pkg.tar.zst
+      - nettle-4.0-1-x86_64.pkg.tar.zst
     debug: []
   world-goblins:
     version: null
