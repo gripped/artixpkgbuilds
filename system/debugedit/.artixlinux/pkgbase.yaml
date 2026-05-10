@@ -17,10 +17,11 @@ repos:
     packages: []
     debug: []
   system:
-    version: 5.2-1
+    version: 5.3-1
     packages:
-      - debugedit-5.2-1-x86_64.pkg.tar.zst
-    debug: []
+      - debugedit-5.3-1-x86_64.pkg.tar.zst
+    debug:
+      - debugedit-debug-5.3-1-x86_64.pkg.tar.zst
   world-goblins:
     version: null
     packages: []
