@@ -17,11 +17,11 @@ repos:
     packages: []
     debug: []
   system:
-    version: 7.0.3.artix1-2
+    version: 7.0.5.artix1-1
     packages:
-      - linux-7.0.3.artix1-2-x86_64.pkg.tar.zst
-      - linux-headers-7.0.3.artix1-2-x86_64.pkg.tar.zst
-      - linux-docs-7.0.3.artix1-2-x86_64.pkg.tar.zst
+      - linux-7.0.5.artix1-1-x86_64.pkg.tar.zst
+      - linux-headers-7.0.5.artix1-1-x86_64.pkg.tar.zst
+      - linux-docs-7.0.5.artix1-1-x86_64.pkg.tar.zst
     debug: []
   world-goblins:
     version: null
