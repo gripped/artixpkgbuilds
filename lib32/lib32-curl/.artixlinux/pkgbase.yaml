@@ -33,22 +33,19 @@ repos:
     packages: []
     debug: []
   lib32-goblins:
-    version: 8.20.0-6
-    packages:
-      - lib32-curl-8.20.0-6-x86_64.pkg.tar.zst
-      - lib32-libcurl-compat-8.20.0-6-x86_64.pkg.tar.zst
-      - lib32-libcurl-gnutls-8.20.0-6-x86_64.pkg.tar.zst
+    version: null
+    packages: []
     debug: []
   lib32-gremlins:
     version: null
     packages: []
     debug: []
   lib32:
-    version: 8.20.0-5
+    version: 8.20.0-6
     packages:
-      - lib32-curl-8.20.0-5-x86_64.pkg.tar.zst
-      - lib32-libcurl-compat-8.20.0-5-x86_64.pkg.tar.zst
-      - lib32-libcurl-gnutls-8.20.0-5-x86_64.pkg.tar.zst
+      - lib32-curl-8.20.0-6-x86_64.pkg.tar.zst
+      - lib32-libcurl-compat-8.20.0-6-x86_64.pkg.tar.zst
+      - lib32-libcurl-gnutls-8.20.0-6-x86_64.pkg.tar.zst
     debug: []
   galaxy-goblins:
     version: null
