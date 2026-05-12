@@ -1,0 +1,47 @@
+---
+version: 50.0-1
+pkgbase:
+  name: gnome-session
+  pkgdesc: The GNOME Session Handler
+  pkgver: 50.0
+  pkgrel: 1
+  url: https://gitlab.gnome.org/GNOME/gnome-session
+  arch:
+    - x86_64
+  groups:
+    - gnome
+  license:
+    - GPL-2.0-or-later
+  makedepends:
+    - docbook-xsl
+    - git
+    - glib2-devel
+    - libxslt
+    - meson
+    - xmlto
+  depends:
+    - dconf
+    - glib2
+    - glibc
+    - gnome-desktop-4
+    - gsettings-desktop-schemas
+    - libgcc
+    - libelogind
+    - xdg-desktop-portal-gnome
+  optdepends:
+    - 'gnome-keyring: Secrets service backend'
+  provides:
+    - gnome-mimeapps
+  conflicts:
+    - gnome-mimeapps
+  replaces:
+    - gnome-mimeapps
+  source:
+    - git+https://gitlab.gnome.org/GNOME/gnome-session.git#tag=50.0
+    - 0001-meson-allow-building-with-elogind.patch
+  b2sums:
+    - 255580de8e1a260d7d677049abac79e782e675d979de390209fab824b0fdb6d683916abd85f5e9c3fda33f19a97c9a6fbc5ad3cc171697c9286d418a56f98190
+    - 0685ff053573841b23fe427e79bc9e42aaef92017f479b59347645083830efbe9a08a27d62afb74d0cdc1b5e341be5139b3d8eeb194d3b322f272aaf0d40da4f
+pkgname:
+  - name: gnome-session
+# generated with artixpkg 0.38.5-1-any
