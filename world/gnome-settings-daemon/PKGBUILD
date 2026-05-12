@@ -2,7 +2,7 @@
 # Maintainer: Jan Alexander Steffens (heftig) <heftig@archlinux.org>
 
 pkgname=gnome-settings-daemon
-pkgver=48.1
+pkgver=50.1
 pkgrel=1
 pkgdesc="GNOME Settings Daemon"
 url="https://gitlab.gnome.org/GNOME/gnome-settings-daemon"
@@ -14,21 +14,20 @@ license=(
 depends=(
   alsa-lib
   bash
-  cairo
   dconf
   fontconfig
-  gcc-libs
   gcr-4
   geoclue
   geocode-glib-2
   glib2
   glibc
-  gnome-desktop
+  gnome-desktop-4
   gsettings-desktop-schemas
-  gtk3
+  gtk4
   libcanberra-pulse
   libcolord
   libcups
+  libgcc
   libgudev
   libgweather-4
   libmm-glib
@@ -36,21 +35,12 @@ depends=(
   libnotify
   libp11-kit
   libpulse
-  librsvg
-  libwacom
   libx11
-  libxext
   libxfixes
-  libxi
-  nss
-  pango
   polkit
   pulse-native-provider
-  elogind
   libelogind
   upower
-  wayland
-  xorg-xrdb
 )
 makedepends=(
   docbook-xsl
@@ -59,6 +49,7 @@ makedepends=(
   libxslt
   meson
   python
+  udev
   usbguard
 )
 checkdepends=(
@@ -72,7 +63,7 @@ source=(
   "git+https://gitlab.gnome.org/GNOME/gnome-settings-daemon.git#tag=${pkgver/[a-z]/.&}"
   "git+https://gitlab.gnome.org/GNOME/libgnome-volume-control.git"
 )
-b2sums=('58eefca256c425049936de5f7e58b35dad065f9a659a1ba89a8a15f9e2bbbc9a698f0e295f8bb2ff24b8f76ff9ece6a77244068452a69c4ba6bd32c669babbec'
+b2sums=('0b410617b89c8b3956086cecdd66704c73d3e57c64888a5c510d6eb4c43efa112c578a0cf2eda1e9729e631ac7f6201dcd2cd3c97eddb15ec316ba6bba55887e'
         'SKIP')
 
 prepare() {
