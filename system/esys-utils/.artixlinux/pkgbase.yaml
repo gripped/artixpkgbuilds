@@ -18,13 +18,13 @@ repos:
     packages: []
     debug: []
   system:
-    version: 260.1-6
+    version: 260.1-8
     packages:
-      - esysusers-260.1-6-x86_64.pkg.tar.zst
-      - etmpfiles-260.1-6-x86_64.pkg.tar.zst
-      - egummiboot-260.1-6-x86_64.pkg.tar.zst
-      - eukify-260.1-6-x86_64.pkg.tar.zst
-      - eshutdown-260.1-6-x86_64.pkg.tar.zst
+      - esysusers-260.1-8-x86_64.pkg.tar.zst
+      - etmpfiles-260.1-8-x86_64.pkg.tar.zst
+      - egummiboot-260.1-8-x86_64.pkg.tar.zst
+      - eukify-260.1-8-x86_64.pkg.tar.zst
+      - eshutdown-260.1-8-x86_64.pkg.tar.zst
     debug: []
   world-goblins:
     version: null
