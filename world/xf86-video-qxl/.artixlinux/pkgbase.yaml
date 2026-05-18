@@ -31,9 +31,11 @@ repos:
     packages: []
   galaxy:
     debug: []
+    version: null
+    packages: []
 actions:
   addRepo: world
-  removeRepo: world-gremlins
+  removeRepo: galaxy
   triggersBuild: false
   triggersRebuild: false
   triggersRepoAdd: true
