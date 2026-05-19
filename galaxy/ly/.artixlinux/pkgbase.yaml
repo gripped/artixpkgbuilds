@@ -53,8 +53,8 @@ repos:
     packages: []
     debug: []
   galaxy:
-    version: 1.4.0-1.6
+    version: 1.4.1-1
     packages:
-      - ly-1.4.0-1.6-x86_64.pkg.tar.zst
+      - ly-1.4.1-1-x86_64.pkg.tar.zst
     debug: []
 team: galaxy
