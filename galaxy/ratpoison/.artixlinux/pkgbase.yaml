@@ -1,0 +1,40 @@
+repos:
+  system-goblins:
+    debug: []
+  system-gremlins:
+    debug: []
+  system:
+    debug: []
+  world-goblins:
+    debug: []
+  world-gremlins:
+    debug: []
+  world:
+    debug: []
+  lib32-goblins:
+    debug: []
+  lib32-gremlins:
+    debug: []
+  lib32:
+    debug: []
+  galaxy-goblins:
+    debug: []
+  galaxy-gremlins:
+    debug: []
+    version: null
+    packages: []
+  galaxy:
+    debug:
+      - ratpoison-debug-1.4.9-6-x86_64.pkg.tar.zst
+    version: 1.4.9-6
+    packages:
+      - ratpoison-1.4.9-6-x86_64.pkg.tar.zst
+actions:
+  addRepo: galaxy
+  removeRepo: galaxy-gremlins
+  triggersBuild: false
+  triggersRebuild: false
+  triggersRepoAdd: true
+  triggersRepoRemove: true
+  triggersNoCheck: false
+team: galaxy
