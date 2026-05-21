@@ -1,9 +1,9 @@
 ---
-version: 13.5.0-1
+version: 13.7.0-1
 pkgbase:
   name: ansible
   pkgdesc: Official assortment of Ansible collections
-  pkgver: 13.5.0
+  pkgver: 13.7.0
   pkgrel: 1
   url: https://pypi.org/project/ansible/
   arch:
@@ -37,11 +37,11 @@ pkgbase:
   provides:
     - python-ansible_collections
   source:
-    - https://pypi.python.org/packages/source/a/ansible/ansible-13.5.0.tar.gz
+    - https://pypi.python.org/packages/source/a/ansible/ansible-13.7.0.tar.gz
     - ansible-13.4.0-remove-pkg_resources.patch
   sha512sums:
-    - 663b8672ed3c43370cc0f16fd2b644b614388b842dfb1a0bc1b73b42b6bcbe4ad467bd187e64daf4af0c1ab67d0a3fe44604adf5a9376436e6864d6495c3cda1
+    - 76a7002c4cc71edb2b36f3fa9194d952ce924402b72843b22b8ac5cb9aca7f01098f9be8d128e32a354b6518c88b4e0551dfb28823d33119cde849c5475925cd
     - 8055d481ca3f4705822ce22fc3057129150fd647817ac1fad3937382b3af6a3f0379274aff9e9c4c8039266971302c7daea0311ddd8dea4b2ce2150bce06f82d
 pkgname:
   - name: ansible
-# generated with artixpkg 0.38.2-1-any
+# generated with artixpkg 0.38.5-1-any
