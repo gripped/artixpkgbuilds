@@ -41,9 +41,9 @@ repos:
     packages: []
     debug: []
   lib32:
-    version: 1.0.29-1
+    version: 1.0.30-1
     packages:
-      - lib32-libusb-1.0.29-1-x86_64.pkg.tar.zst
+      - lib32-libusb-1.0.30-1-x86_64.pkg.tar.zst
     debug: []
   galaxy-goblins:
     version: null
