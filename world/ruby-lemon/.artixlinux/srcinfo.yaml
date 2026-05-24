@@ -1,0 +1,32 @@
+---
+version: 0.9.3-1
+pkgbase:
+  name: ruby-lemon
+  pkgdesc: Pucker-Strength Unit Testing
+  pkgver: 0.9.3
+  pkgrel: 1
+  url: https://github.com/rubyworks/lemon
+  arch:
+    - any
+  license:
+    - BSD-2-Clause
+  checkdepends:
+    - ruby-erb
+    - ruby-qed
+  makedepends:
+    - git
+    - ruby-rdoc
+  depends:
+    - ruby
+    - ruby-ae
+    - ruby-ansi
+    - ruby-rubytest-cli
+  options:
+    - '!emptydirs'
+  source:
+    - git+https://github.com/rubyworks/lemon.git#tag=v0.9.3
+  sha256sums:
+    - 6c25bcab9ac1a9e5d924c652855ec45c697682a2c29a75e76d18e25bcd6cc0f0
+pkgname:
+  - name: ruby-lemon
+# generated with artixpkg 0.38.5-1-any
