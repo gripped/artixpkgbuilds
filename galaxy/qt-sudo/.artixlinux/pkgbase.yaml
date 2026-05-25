@@ -54,7 +54,7 @@ repos:
     packages: []
     debug: []
   galaxy:
-    version: 2.2.0-1
+    version: 2.3.0-1
     packages:
-      - qt-sudo-2.2.0-1-x86_64.pkg.tar.zst
+      - qt-sudo-2.3.0-1-x86_64.pkg.tar.zst
     debug: []
