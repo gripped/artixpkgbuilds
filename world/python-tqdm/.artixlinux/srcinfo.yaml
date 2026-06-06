@@ -1,9 +1,9 @@
 ---
-version: 4.67.3-1
+version: 4.68.1-1
 pkgbase:
   name: python-tqdm
   pkgdesc: Fast, Extensible Progress Meter
-  pkgver: 4.67.3
+  pkgver: 4.68.1
   pkgrel: 1
   url: https://github.com/tqdm/tqdm
   arch:
@@ -32,9 +32,9 @@ pkgbase:
   optdepends:
     - 'python-requests: telegram'
   source:
-    - git+https://github.com/tqdm/tqdm.git#commit=v4.67.3
+    - git+https://github.com/tqdm/tqdm.git#commit=v4.68.1
   sha512sums:
-    - 7d35ae467a8d0d54cfe9b78f3187fa425b664034a9ee7740e33cf39fd509764a497ab6480c5eb005b41b6cd74f28f4ac2523ed4ac476c2c7925c578adc65dce6
+    - 920b3a7017128662493119741464e2de6f520b966c599c6e674f2146d120d5d92e3583b92ca4e81ea2cd38ec0ee398683f914310e89b576122cbb9154dfcfda2
 pkgname:
   - name: python-tqdm
-# generated with artixpkg 0.37.6-1-any
+# generated with artixpkg 0.38.5-1-any
