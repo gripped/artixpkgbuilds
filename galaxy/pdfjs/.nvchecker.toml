@@ -1,0 +1,5 @@
+[pdfjs]
+source = "git"
+git = "https://github.com/mozilla/pdf.js.git"
+prefix = "v"
+exclude_regex = ".*(rc|alpha|beta).*"
