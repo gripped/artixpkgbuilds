@@ -1,0 +1,5 @@
+[amule]
+source = 'git'
+git = 'https://github.com/amule-project/amule'
+use_max_tag = true
+exclude_regex = ".*(beta|rc|pre).*"
