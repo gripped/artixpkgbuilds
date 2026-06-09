@@ -1,7 +1,7 @@
 ---
 actions:
   addRepo: galaxy
-  removeRepo: galaxy-goblins
+  removeRepo: galaxy-gremlins
   triggersBuild: false
   triggersRebuild: false
   triggersRepoAdd: true
@@ -53,8 +53,8 @@ repos:
     packages: []
     debug: []
   galaxy:
-    version: 0.6.2-9
+    version: 0.6.3-1
     packages:
-      - libcmis-0.6.2-9-x86_64.pkg.tar.zst
+      - libcmis-0.6.3-1-x86_64.pkg.tar.zst
     debug: []
 team: galaxy
