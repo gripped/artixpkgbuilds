@@ -1,11 +1,11 @@
 ---
 actions:
   addRepo: galaxy
-  removeRepo: galaxy-goblins
-  triggersBuild: false
+  removeRepo: null
+  triggersBuild: true
   triggersRebuild: false
   triggersRepoAdd: true
-  triggersRepoRemove: true
+  triggersRepoRemove: false
   triggersNoCheck: false
 repos:
   system-goblins:
@@ -45,16 +45,17 @@ repos:
     packages: []
     debug: []
   galaxy-goblins:
-    version: null
-    packages: []
+    version: 6.8.2-5
+    packages:
+      - telegram-desktop-6.8.2-5-x86_64.pkg.tar.zst
     debug: []
   galaxy-gremlins:
     version: null
     packages: []
     debug: []
   galaxy:
-    version: 6.8.2-4
+    version: 6.9.1-1
     packages:
-      - telegram-desktop-6.8.2-4-x86_64.pkg.tar.zst
+      - telegram-desktop-6.9.1-1-x86_64.pkg.tar.zst
     debug: []
 team: galaxy
