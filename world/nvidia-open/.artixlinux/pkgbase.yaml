@@ -29,9 +29,9 @@ repos:
     packages: []
     debug: []
   world:
-    version: 595.71.05-12
+    version: 610.43.02-3
     packages:
-      - nvidia-open-595.71.05-12-x86_64.pkg.tar.zst
+      - nvidia-open-610.43.02-3-x86_64.pkg.tar.zst
     debug: []
   lib32-goblins:
     version: null
