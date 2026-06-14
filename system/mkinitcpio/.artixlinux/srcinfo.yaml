@@ -1,10 +1,10 @@
 ---
-version: 41-3
+version: 41-4
 pkgbase:
   name: mkinitcpio
   pkgdesc: Modular initramfs image creation utility
   pkgver: 41
-  pkgrel: 3
+  pkgrel: 4
   url: https://gitlab.archlinux.org/archlinux/mkinitcpio/mkinitcpio
   arch:
     - any
