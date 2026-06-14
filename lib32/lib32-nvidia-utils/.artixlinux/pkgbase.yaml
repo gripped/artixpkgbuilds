@@ -41,10 +41,10 @@ repos:
     packages: []
     debug: []
   lib32:
-    version: 595.71.05-1
+    version: 610.43.02-1
     packages:
-      - lib32-nvidia-utils-595.71.05-1-x86_64.pkg.tar.zst
-      - lib32-opencl-nvidia-595.71.05-1-x86_64.pkg.tar.zst
+      - lib32-nvidia-utils-610.43.02-1-x86_64.pkg.tar.zst
+      - lib32-opencl-nvidia-610.43.02-1-x86_64.pkg.tar.zst
     debug: []
   galaxy-goblins:
     version: null
