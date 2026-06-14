@@ -54,7 +54,7 @@ repos:
     packages: []
     debug: []
   galaxy:
-    version: 20260313-16
+    version: 20260313-18
     packages:
-      - vhba-module-20260313-16-x86_64.pkg.tar.zst
+      - vhba-module-20260313-18-x86_64.pkg.tar.zst
     debug: []
