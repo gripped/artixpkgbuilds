@@ -1,0 +1,28 @@
+---
+version: 1.10.1-1
+pkgbase:
+  name: libetpan
+  pkgdesc: A portable middleware for email access
+  pkgver: 1.10.1
+  pkgrel: 1
+  url: https://www.etpan.org/libetpan.html
+  arch:
+    - x86_64
+  license:
+    - BSD-3-Clause AND BSD-3-Clause-Attribution AND BSD-4-Clause
+  makedepends:
+    - expat
+  depends:
+    - gnutls
+    - libsasl
+    - zlib
+    - glibc
+  provides:
+    - libetpan.so
+  source:
+    - libetpan-1.10.1.tar.gz::https://github.com/dinhvh/libetpan/archive/1.10.1.tar.gz
+  sha256sums:
+    - 87bacdc62661a2a7aa5fe9f1f28d2f7c7a53256633ac5129903916c59f80c4c2
+pkgname:
+  - name: libetpan
+# generated with artixpkg 0.38.5-1-any
