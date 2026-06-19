@@ -1,0 +1,32 @@
+---
+version: 25.0.0-6
+pkgbase:
+  name: xlibre-video-sunleo
+  pkgdesc: XLibre fork of sunleo video driver
+  pkgver: 25.0.0
+  pkgrel: 6
+  url: https://github.com/X11Libre/xf86-video-sunleo
+  arch:
+    - x86_64
+    - aarch64
+  groups:
+    - xlibre-drivers
+  license:
+    - X11
+  makedepends:
+    - xlibre-xserver-devel>=25.0
+    - xorgproto
+  depends:
+    - xlibre-xserver>=25.0
+    - glibc
+  provides:
+    - xf86-video-sunleo
+  conflicts:
+    - xf86-video-sunleo
+  source:
+    - https://github.com/X11Libre/xf86-video-sunleo/archive/refs/tags/xlibre-xf86-video-sunleo-25.0.0.tar.gz
+  sha256sums:
+    - 930f697fc51f85d5de6e382413094fec481de0ef2e3b0efd192968de2f900a35
+pkgname:
+  - name: xlibre-video-sunleo
+# generated with artixpkg 0.37.4-1-any
