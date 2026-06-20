@@ -1,0 +1,53 @@
+---
+version: 5.1.14-1
+pkgbase:
+  name: fcitx5-configtool
+  pkgdesc: Configuration Tool for Fcitx5
+  pkgver: 5.1.14
+  pkgrel: 1
+  url: https://github.com/fcitx/fcitx5-configtool
+  arch:
+    - x86_64
+  groups:
+    - fcitx5-im
+  license:
+    - GPL-2.0-or-later
+  makedepends:
+    - git
+    - extra-cmake-modules
+    - kcmutils
+    - kdeclarative
+    - kirigami
+    - ksvg
+    - libplasma
+    - ninja
+    - python
+  depends:
+    - fcitx5
+    - fcitx5-qt
+    - kdbusaddons
+    - kwidgetsaddons
+    - kitemviews
+    - kwindowsystem
+  optdepends:
+    - 'kcmutils: for KCM support'
+    - 'kdeclarative: for KCM support'
+    - 'kirigami: for KCM support'
+    - 'ksvg: for KCM support'
+    - 'libplasma: for fcitx5-plasma-theme-generator'
+  provides:
+    - fcitx5-config-qt
+    - kcm-fcitx5
+  conflicts:
+    - kcm-fcitx5
+  replaces:
+    - kcm-fcitx5
+  source:
+    - git+https://github.com/fcitx/fcitx5-configtool.git#tag=5.1.14?signed
+  validpgpkeys:
+    - 2CC8A0609AD2A479C65B6D5C8E8B898CBF2412F9
+  sha512sums:
+    - 831ea450f4e49cce111b12629f9dab31096e5c7f5f4a188eccbb8dcdf3e45d0f1c212915c04a3c13fe1979742e1832715988914347e70d05a512411d0fdfcdd5
+pkgname:
+  - name: fcitx5-configtool
+# generated with artixpkg 0.38.5-1-any
