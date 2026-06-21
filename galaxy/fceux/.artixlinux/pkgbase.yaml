@@ -1,7 +1,7 @@
 ---
 actions:
   addRepo: galaxy
-  removeRepo: galaxy-goblins
+  removeRepo: galaxy-gremlins
   triggersBuild: false
   triggersRebuild: false
   triggersRepoAdd: true
@@ -53,8 +53,8 @@ repos:
     packages: []
     debug: []
   galaxy:
-    version: 2.6.6-8
+    version: 2.6.6-9
     packages:
-      - fceux-2.6.6-8-x86_64.pkg.tar.zst
+      - fceux-2.6.6-9-x86_64.pkg.tar.zst
     debug: []
 team: galaxy
