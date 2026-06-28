@@ -17,13 +17,13 @@ repos:
     packages: []
     debug: []
   system:
-    version: 2.43+r22+g8362e8ce10b2-2
+    version: 2.43+r37+gfdf10644d6ee-1
     packages:
-      - glibc-2.43+r22+g8362e8ce10b2-2-x86_64.pkg.tar.zst
-      - lib32-glibc-2.43+r22+g8362e8ce10b2-2-x86_64.pkg.tar.zst
-      - glibc-locales-2.43+r22+g8362e8ce10b2-2-x86_64.pkg.tar.zst
+      - glibc-2.43+r37+gfdf10644d6ee-1-x86_64.pkg.tar.zst
+      - lib32-glibc-2.43+r37+gfdf10644d6ee-1-x86_64.pkg.tar.zst
+      - glibc-locales-2.43+r37+gfdf10644d6ee-1-x86_64.pkg.tar.zst
     debug:
-      - glibc-debug-2.43+r22+g8362e8ce10b2-2-x86_64.pkg.tar.zst
+      - glibc-debug-2.43+r37+gfdf10644d6ee-1-x86_64.pkg.tar.zst
   world-goblins:
     version: null
     packages: []
