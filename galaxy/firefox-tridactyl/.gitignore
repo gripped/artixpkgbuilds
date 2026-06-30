@@ -1,0 +1,21 @@
+# ---> ArtixLinuxPackages
+*.tar
+*.tar.*
+*.jar
+*.exe
+*.msi
+*.zip
+*.tgz
+*.log
+*.log.*
+*.sig
+
+pkg/
+src/
+tridactyl/
+
+*.service
+*.timer
+*.socket
+
+

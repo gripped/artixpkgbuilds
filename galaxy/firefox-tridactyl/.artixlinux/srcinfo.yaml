@@ -1,0 +1,29 @@
+---
+version: 1.24.6-1
+pkgbase:
+  name: firefox-tridactyl
+  pkgver: 1.24.6
+  pkgrel: 1
+  url: https://github.com/tridactyl/tridactyl
+  arch:
+    - any
+  license:
+    - Apache-2.0
+  makedepends:
+    - git
+    - node-gyp
+    - python
+    - strip-nondeterminism
+    - yarn
+  source:
+    - git+https://github.com/tridactyl/tridactyl.git#commit=1.24.6?signed
+  validpgpkeys:
+    - 15D03C86837936A0A638AA2D2BB8C36BB504BFF3
+  b2sums:
+    - ed418936ac7832c971e7c92ff34926dbd19fb4c198e5f49ea438d0d2fdca1047d340615cbdeee3fb0d12a9c7106a562b275f0ba1904a02c75cdc32d2c42bacbc
+pkgname:
+  - name: firefox-tridactyl
+  - name: firefox-developer-edition-tridactyl
+  - name: firefox-esr-tridactyl
+  - name: konform-browser-tridactyl
+# generated with artixpkg 0.38.5-1-any
