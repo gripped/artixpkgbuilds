@@ -1,0 +1,31 @@
+---
+version: 1.1.2-1
+pkgbase:
+  name: xorg-xfontsel
+  pkgdesc: Point and click selection of X11 font names
+  pkgver: 1.1.2
+  pkgrel: 1
+  url: https://gitlab.freedesktop.org/xorg/app/xfontsel
+  arch:
+    - x86_64
+  license:
+    - X11
+  makedepends:
+    - xorg-util-macros
+  depends:
+    - libxaw
+    - libxmu
+    - libxt
+    - libx11
+    - glibc
+  source:
+    - https://xorg.freedesktop.org/archive/individual/app/xfontsel-1.1.2.tar.xz
+    - https://xorg.freedesktop.org/archive/individual/app/xfontsel-1.1.2.tar.xz.sig
+  validpgpkeys:
+    - 3AB285232C46AE43D8E192F4DAB0F78EA6E7E2D2
+  sha512sums:
+    - 377ef4e95f68411716a9cd202f4b2468ef5638d53ebd058518bdf97319f8008052f2cb76154503a1eae76aae3ce27dfa7334428b66f738a087d0915bef69c603
+    - SKIP
+pkgname:
+  - name: xorg-xfontsel
+# generated with artixpkg 0.38.5-1-any
