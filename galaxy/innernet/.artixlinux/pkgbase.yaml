@@ -54,8 +54,8 @@ repos:
     packages: []
     debug: []
   galaxy:
-    version: 1.7.1-1
+    version: 2.0.0-1
     packages:
-      - innernet-1.7.1-1-x86_64.pkg.tar.zst
+      - innernet-2.0.0-1-x86_64.pkg.tar.zst
     debug:
-      - innernet-debug-1.7.1-1-x86_64.pkg.tar.zst
+      - innernet-debug-2.0.0-1-x86_64.pkg.tar.zst
