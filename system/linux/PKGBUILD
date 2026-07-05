@@ -1,13 +1,13 @@
 # Maintainer: artist for Artix Linux
 
-_ver=7.0.13
-_rel=1
+_ver=7.1.2
+_rel=3
 _arch=arch${_rel}
 _artix=${_arch/arch/artix}
 
 pkgbase=linux
 pkgver=${_ver}.${_artix}
-pkgrel=2
+pkgrel=1.1
 pkgdesc='Linux'
 url='https://github.com/archlinux/linux'
 arch=(
@@ -49,8 +49,10 @@ options=(
 _srcname=linux-${_ver}
 _srctag=v${_ver}-${_arch}
 source=(
-  https://cdn.kernel.org/pub/linux/kernel/v${_ver%%.*}.x/${_srcname}.tar.{xz,sign}
+  #https://cdn.kernel.org/pub/linux/kernel/v${_ver%%.*}.x/${_srcname}.tar.{xz,sign}
+  https://artist.ydns.eu/artist/${_srcname}.tar.{xz,sign}
   $url/releases/download/$_srctag/linux-$_srctag.patch.zst{,.sig}
+  631849ff5d603841e74f19f4a5e30fe1f7d7cf30.patch
 )
 source_x86_64=(config.x86_64)
 validpgpkeys=(
@@ -58,16 +60,18 @@ validpgpkeys=(
   647F28654894E3BD457199BE38DBBDC86092693E  # Greg Kroah-Hartman
   83BC8889351B5DEBBB68416EB8AC08600F108CDF  # Jan Alexander Steffens (heftig)
 )
-sha256sums=('3c81edd0f716aca3dd48dff691681827580cc53d35a8eec3be47d346d1f89913'
+sha256sums=('37198c93727be247c9fb5309bb86cd5e496c61e5322cd8c4eca9476bb0b5883f'
             'SKIP'
-            'd37578467eefea5a8bb8e9832fd7cce73d1cb4a974ea3e13efe5dd65ad23821b'
-            'SKIP')
-sha256sums_x86_64=('2dfd60cf33033150df934353e0ddc9b18c2504925fabc88f3c39aa419869d76e')
-b2sums=('c92878038062d7f41f805fa8d2bcbc4f1621c7d07e6b210b0ed03b3aa078832b4978761c391db3583459902acb1b22072ee5ebbcd6e37e9e263308b9c9521a5d'
+            '192f924ebf6b64838b8447a967acee494fe897c3d84145434358b65305aebd9a'
+            'SKIP'
+            'e5ff2861c9b1d8cc68176b1be06bad7e4b10fbfcae3c5f4d4264674976a989f7')
+sha256sums_x86_64=('9e2577d9d3eccfcde6af8ab5103324d5aaae7faa6b61f2b23d43295bdccdbb56')
+b2sums=('0d6e9ff535af085190da7df50887b20f395cd4d6befb7158c9993bf77fe92459a9982877ce944ca522192daa5a54c952c3d368def04b579796ba7109a972453b'
         'SKIP'
-        'ae188d8aea54fcf1d0851951d44071914171c880fb635467fd11e10585b886b65cf4f7313b6005c050c1eceb8f640d2a22bcc0699ecda9847fdec050765baef4'
-        'SKIP')
-b2sums_x86_64=('21317ff5a9eb7f3f2c846fd20eb4ecc9d49b16e273373e7184598abc714fde0069c8e220baf871edb875a19f31cc2fce2f0fb7e8b3bcdef150bd570de8cc6f0e')
+        '4fab0cea48c5457bc5dfef0b55194d1a2ad316ffbfea7d64b94d36d7e43b1636256e3b54213c65d42e4ec8bcf79022efe78e9525620476859dd08aba9cdb77e8'
+        'SKIP'
+        '9ec0dba5c8544659386201fcbfa445069f0201cdd413e2a51f14208f39ca15ac6cd451fb1468ee79946438641d06a4869ded207c82e701463f260a6136760725')
+b2sums_x86_64=('c602be8fa8252cfb5cabb2b37bd4cc808b9af537a340ecff9b5d3ee6757e5615db4ef2e6fa8721a07a9602c0765f1a626555e8404b5f34d0bb31edcff5fb298d')
 
 # https://www.kernel.org/pub/linux/kernel/v6.x/sha256sums.asc
 
