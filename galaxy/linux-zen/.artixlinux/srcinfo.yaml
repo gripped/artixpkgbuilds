@@ -1,9 +1,9 @@
 ---
-version: 7.0.14.zen1-1
+version: 7.1.2.zen3-1
 pkgbase:
   name: linux-zen
   pkgdesc: Linux ZEN
-  pkgver: 7.0.14.zen1
+  pkgver: 7.1.2.zen3
   pkgrel: 1
   url: https://github.com/zen-kernel/zen-kernel
   arch:
@@ -39,28 +39,28 @@ pkgbase:
     - '!debug'
     - '!strip'
   source:
-    - https://cdn.kernel.org/pub/linux/kernel/v7.x/linux-7.0.14.tar.xz
-    - https://cdn.kernel.org/pub/linux/kernel/v7.x/linux-7.0.14.tar.sign
-    - https://github.com/zen-kernel/zen-kernel/releases/download/v7.0.14-zen1/linux-v7.0.14-zen1.patch.zst
-    - https://github.com/zen-kernel/zen-kernel/releases/download/v7.0.14-zen1/linux-v7.0.14-zen1.patch.zst.sig
+    - https://cdn.kernel.org/pub/linux/kernel/v7.x/linux-7.1.2.tar.xz
+    - https://cdn.kernel.org/pub/linux/kernel/v7.x/linux-7.1.2.tar.sign
+    - https://github.com/zen-kernel/zen-kernel/releases/download/v7.1.2-zen3/linux-v7.1.2-zen3.patch.zst
+    - https://github.com/zen-kernel/zen-kernel/releases/download/v7.1.2-zen3/linux-v7.1.2-zen3.patch.zst.sig
   validpgpkeys:
     - ABAF11C65A2970B130ABE3C479BE3E4300411886
     - 647F28654894E3BD457199BE38DBBDC86092693E
     - 83BC8889351B5DEBBB68416EB8AC08600F108CDF
   sha256sums:
-    - de9999b784d2293f00d39c62d8f92a08ab8a54bc4e80ffd250a0c09cb07a0f98
+    - 37198c93727be247c9fb5309bb86cd5e496c61e5322cd8c4eca9476bb0b5883f
     - SKIP
-    - a021eed86b9eabbf4c566c7105354152567f86492f9b30c147c2df50244f3604
+    - a652bba07b25e24e06e9e8600b6bec00b1c6955caaf8cd7b7d42eaa4da8186a9
     - SKIP
   b2sums:
-    - f313eb3360dc5cd0e611758b84f9d8d7a984f28b6f832d45823619f66679c56823a18a55eaf7b4704d903b031704cc624f1e055ce25752daa5bf77966839c2d2
+    - 0d6e9ff535af085190da7df50887b20f395cd4d6befb7158c9993bf77fe92459a9982877ce944ca522192daa5a54c952c3d368def04b579796ba7109a972453b
     - SKIP
-    - b6f8f016d7acfcfe04abb0392cf711c683cb06cc8e955db869a4cc7f44af071b1149322df9abeefebdbee4f98cd2e94e6cf36884dc88fbbdb259c21b726422ff
+    - a07bb13e1f412474742240b9957a5f3b1d533b521fa282baba85d7fc201612ba106fa7b1ad46d123d2d9075b7eb7552d390ea7d79534c8cbad80b841025a459c
     - SKIP
   source_x86_64:
     - config.x86_64
   b2sums_x86_64:
-    - a26e8bd8d30b31cf1a6325dc5ec7b8fe111e3987aaae8c8e0c2281c5dda0a38bdb5cfb8222d3b5622de104c44c27d479fd0f169e2fb8fe18ada58a13fdd41db4
+    - 11e64c3ea62915d3cdb21cf6ac1c8fd18c2769886547c7c16eab0bfaed6afd7bbfc3b280c3fa1b889a0e21d8c3220d8690c440633a587891fb9c3c4aaca07351
 pkgname:
   - name: linux-zen
     pkgdesc: The Linux ZEN kernel and modules
