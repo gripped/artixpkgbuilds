@@ -49,12 +49,13 @@ repos:
     packages: []
     debug: []
   galaxy-gremlins:
-    version: null
-    packages: []
+    version: 2026.05.10-5
+    packages:
+      - zathura-pdf-poppler-2026.05.10-5-x86_64.pkg.tar.zst
     debug: []
   galaxy:
-    version: 2026.05.10-4.1
+    version: 2026.05.10-5.1
     packages:
-      - zathura-pdf-poppler-2026.05.10-4.1-x86_64.pkg.tar.zst
+      - zathura-pdf-poppler-2026.05.10-5.1-x86_64.pkg.tar.zst
     debug: []
 team: galaxy
