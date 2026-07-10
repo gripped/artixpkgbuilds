@@ -17,9 +17,9 @@ repos:
     packages: []
     debug: []
   system:
-    version: 2026b-1
+    version: 2026c-1
     packages:
-      - tzdata-2026b-1-x86_64.pkg.tar.zst
+      - tzdata-2026c-1-x86_64.pkg.tar.zst
     debug: []
   world-goblins:
     version: null
