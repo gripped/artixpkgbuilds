@@ -49,12 +49,13 @@ repos:
     packages: []
     debug: []
   galaxy-gremlins:
-    version: null
-    packages: []
+    version: 2026.07.08-1
+    packages:
+      - zathura-cb-2026.07.08-1-x86_64.pkg.tar.zst
     debug: []
   galaxy:
-    version: 2026.05.10-4.1
+    version: 2026.07.08-1.1
     packages:
-      - zathura-cb-2026.05.10-4.1-x86_64.pkg.tar.zst
+      - zathura-cb-2026.07.08-1.1-x86_64.pkg.tar.zst
     debug: []
 team: galaxy
