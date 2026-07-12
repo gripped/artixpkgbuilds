@@ -1,0 +1,19 @@
+# ---> ArtixLinuxPackages
+*.tar
+*.tar.*
+*.jar
+*.exe
+*.msi
+*.zip
+*.tgz
+*.log
+*.log.*
+*.sig
+
+/pkg
+/src
+/radicle-desktop
+
+*.service
+*.timer
+*.socket
