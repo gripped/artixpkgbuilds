@@ -17,9 +17,9 @@ repos:
     packages: []
     debug: []
   system:
-    version: 1.11.1-5
+    version: 1.11.1-6
     packages:
-      - libssh2-1.11.1-5-x86_64.pkg.tar.zst
+      - libssh2-1.11.1-6-x86_64.pkg.tar.zst
     debug: []
   world-goblins:
     version: null
