@@ -17,9 +17,9 @@ repos:
     packages: []
     debug: []
   system:
-    version: 4.10.0-3
+    version: 4.11.0-1
     packages:
-      - findutils-4.10.0-3-x86_64.pkg.tar.zst
+      - findutils-4.11.0-1-x86_64.pkg.tar.zst
     debug: []
   world-goblins:
     version: null
