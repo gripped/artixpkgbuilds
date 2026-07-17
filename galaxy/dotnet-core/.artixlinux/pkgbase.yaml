@@ -1,0 +1,66 @@
+---
+team: galaxy
+actions:
+  addRepo: galaxy
+  removeRepo: world
+  triggersBuild: false
+  triggersRebuild: false
+  triggersRepoAdd: true
+  triggersRepoRemove: true
+  triggersNoCheck: false
+repos:
+  system-goblins:
+    version: null
+    packages: []
+    debug: []
+  system-gremlins:
+    version: null
+    packages: []
+    debug: []
+  system:
+    version: null
+    packages: []
+    debug: []
+  world-goblins:
+    version: null
+    packages: []
+    debug: []
+  world-gremlins:
+    version: null
+    packages: []
+    debug: []
+  world:
+    version: null
+    packages: []
+    debug: []
+  lib32-goblins:
+    version: null
+    packages: []
+    debug: []
+  lib32-gremlins:
+    version: null
+    packages: []
+    debug: []
+  lib32:
+    version: null
+    packages: []
+    debug: []
+  galaxy-goblins:
+    version: null
+    packages: []
+    debug: []
+  galaxy-gremlins:
+    version: null
+    packages: []
+    debug: []
+  galaxy:
+    version: 10.0.10.sdk110-1
+    packages:
+      - dotnet-host-10.0.10.sdk110-1-x86_64.pkg.tar.zst
+      - dotnet-runtime-10.0.10.sdk110-1-x86_64.pkg.tar.zst
+      - aspnet-runtime-10.0.10.sdk110-1-x86_64.pkg.tar.zst
+      - dotnet-sdk-10.0.10.sdk110-1-x86_64.pkg.tar.zst
+      - dotnet-targeting-pack-10.0.10.sdk110-1-x86_64.pkg.tar.zst
+      - aspnet-targeting-pack-10.0.10.sdk110-1-x86_64.pkg.tar.zst
+      - dotnet-source-built-artifacts-10.0.10.sdk110-1-x86_64.pkg.tar.zst
+    debug: []
