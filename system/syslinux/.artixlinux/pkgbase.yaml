@@ -17,9 +17,9 @@ repos:
     packages: []
     debug: []
   system:
-    version: 6.04.pre3.r3.g05ac953c-4
+    version: 6.04.pre3.r3.g05ac953c-5
     packages:
-      - syslinux-6.04.pre3.r3.g05ac953c-4-x86_64.pkg.tar.zst
+      - syslinux-6.04.pre3.r3.g05ac953c-5-x86_64.pkg.tar.zst
     debug: []
   world-goblins:
     version: null
