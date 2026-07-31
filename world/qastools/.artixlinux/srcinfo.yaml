@@ -1,0 +1,46 @@
+---
+version: 1.5.0-1
+pkgbase:
+  name: qastools
+  pkgdesc: A collection of desktop applications for the Linux sound system ALSA.
+  pkgver: 1.5.0
+  pkgrel: 1
+  url: https://gitlab.com/sebholt/qastools
+  arch:
+    - x86_64
+  groups:
+    - pro-audio
+  license:
+    - MIT
+  makedepends:
+    - alsa-lib
+    - cmake
+    - qt6-tools
+    - libudev
+  depends:
+    - glibc
+    - hicolor-icon-theme
+    - libgcc
+    - libstdc++
+    - qt6-base
+    - qt6-svg
+  source:
+    - https://gitlab.com/sebholt/qastools/-/archive/v1.5.0/qastools-v1.5.0.tar.gz
+  sha512sums:
+    - cd34dc931e109c3bb1e5c103c1e15191f013cddd74ae7c72aee141de394c72908b34081639b3cae833a3c5724f6b619b4be5b201f50720a54a4b51fe7ad629db
+  b2sums:
+    - bc95ad666b5fa976c3bd3a47842e6dfc17f49821a47ffe27564becc95c423812dae38c167745551915ff4a6c8a1e6252fb9abce57d4f782fdd87e68e63aef227
+pkgname:
+  - name: qastools
+    depends:
+      - glibc
+      - hicolor-icon-theme
+      - libgcc
+      - libstdc++
+      - qt6-base
+      - qt6-svg
+      - alsa-lib
+      - libasound.so
+      - libudev
+      - libudev.so
+# generated with artixpkg 0.38.5-1-any
