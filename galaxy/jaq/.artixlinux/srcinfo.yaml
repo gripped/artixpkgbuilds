@@ -1,0 +1,26 @@
+---
+version: 3.1.1-1
+pkgbase:
+  name: jaq
+  pkgdesc: A jq clone focussed on correctness, speed, and simplicity
+  pkgver: 3.1.1
+  pkgrel: 1
+  url: https://github.com/01mf02/jaq
+  arch:
+    - x86_64
+  license:
+    - MIT
+  makedepends:
+    - cargo
+    - jotdown
+  depends:
+    - glibc
+    - libgcc
+    - libgcc_s.so
+  source:
+    - https://github.com/01mf02/jaq/archive/refs/tags/v3.1.1/jaq-3.1.1.tar.gz
+  sha256sums:
+    - 9b8587436be48b5791c8276573321a3d4f404e0dc77ea6503d05725a55edd266
+pkgname:
+  - name: jaq
+# generated with artixpkg 0.39.1-1-any
