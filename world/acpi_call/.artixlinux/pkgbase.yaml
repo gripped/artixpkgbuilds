@@ -29,9 +29,9 @@ repos:
     packages: []
     debug: []
   world:
-    version: 1.2.2-370
+    version: 1.2.2-373
     packages:
-      - acpi_call-1.2.2-370-x86_64.pkg.tar.zst
+      - acpi_call-1.2.2-373-x86_64.pkg.tar.zst
     debug: []
   lib32-goblins:
     version: null
