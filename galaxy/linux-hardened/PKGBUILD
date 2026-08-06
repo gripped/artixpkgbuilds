@@ -5,7 +5,7 @@
 # Contributor: Thomas Baechler <thomas@archlinux.org>
 
 pkgbase=linux-hardened
-pkgver=7.1.4.hardened1
+pkgver=7.1.6.hardened1
 pkgrel=1
 pkgdesc='Security-Hardened Linux'
 url='https://github.com/anthraxx/linux-hardened'
@@ -57,16 +57,16 @@ validpgpkeys=(
   647F28654894E3BD457199BE38DBBDC86092693E  # Greg Kroah-Hartman
   E240B57E2C4630BA768E2F26FC1B547C8D8172C8  # Levente Polyak
 )
-sha256sums=('1c63922a119675d38e3ae0f8f6ee07f15c41a786ab9ed66563749bb8c9a08e2e'
+sha256sums=('995dd7188d924662b94b48fd6fb783587267590e5b8bb33dade2c771e7d855c1'
             'SKIP'
-            '75484ae8f2e8657b7a8d238ef8265f2ead01e3bc320c44d9905b804cdb597c18'
+            '717377c8f5c5035311008b4352585f85febe525d1c197fb883b587624cf89a8e'
             'SKIP')
-sha256sums_x86_64=('b3d9bf7100bbd12c0f64883d089e127b64f147ad7e5d435542ee52ba0bbe96e4')
-b2sums=('bb2b7d559325ce4138c46ad286335725b215ea2049e784efb55547bd3ff7883e508d2ef8c2fe20048b1a3b524e30b231fd06e5e81136a9e3a626e89e0a804628'
+sha256sums_x86_64=('454fddc95c8e01090fafd2842f3f29d7d46bc7ed6bea70a416b9904c880b28af')
+b2sums=('86bf9bebe2d44f1a7782a5b313690eeac03a9bf34934f5eec90a1f5252130d22f813e86e1db5a269d717f6cea26d846551ba32e6921caadc80294f9b6b487d30'
         'SKIP'
-        '59a87929dc86ef03452a04bc62081d9ad1f3ef90cd452e13bdd93844dd9201f8e23a5e27935e2a40a13d4ba0cf1d7969dd895132a4afab6fc76f03329119843c'
+        '1a0ad31fedfdbb6b9905f9ade568b405f716df0181336dc62f3a6e7e888a531066084564c8e6109ff2171c67b190fb9796cf5ad7befd34b611a5743b2e87ac80'
         'SKIP')
-b2sums_x86_64=('c954741fcea57f998d64f4c49cc8c7d6460f3237d1235297f55efe288899c7148329b4092d1bd41c5b35760f24576ae9531b4cd8f5a4451c128003cfe939ccc0')
+b2sums_x86_64=('92cb17f0e14e498e9c6e3e277b010f2e8ab47bfd326f39e13b4909b310d8a80ab8e657b873134e8ceb2b173498799cd994905313e2f0517ff7b4d92f95ebfc45')
 
 # https://www.kernel.org/pub/linux/kernel/v6.x/sha256sums.asc
 
