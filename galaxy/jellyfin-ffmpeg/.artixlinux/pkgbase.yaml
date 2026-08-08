@@ -54,7 +54,7 @@ repos:
     packages: []
     debug: []
   galaxy:
-    version: 1:7.1.4p1-2
+    version: 1:7.1.4p1-3
     packages:
-      - jellyfin-ffmpeg-1:7.1.4p1-2-x86_64.pkg.tar.zst
+      - jellyfin-ffmpeg-1:7.1.4p1-3-x86_64.pkg.tar.zst
     debug: []
