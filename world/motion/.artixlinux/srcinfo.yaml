@@ -1,10 +1,10 @@
 ---
-version: 4.7.1-1
+version: 4.7.1-2
 pkgbase:
   name: motion
   pkgdesc: Monitor and record video signals from many types of cameras
   pkgver: 4.7.1
-  pkgrel: 1
+  pkgrel: 2
   url: https://motion-project.github.io
   arch:
     - x86_64
@@ -30,4 +30,4 @@ pkgbase:
     - cae88686417c31984c56d0df6625fb4ee62c2910d7f45b0e46dc1de6775b1a7b5463efc3ad1299e44746317332100c6afb6526b68fa6abea23e86b62d897460b
 pkgname:
   - name: motion
-# generated with artixpkg 0.37.4-1-any
+# generated with artixpkg 0.39.1-1-any
