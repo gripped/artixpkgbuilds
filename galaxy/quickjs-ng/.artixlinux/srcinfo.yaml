@@ -1,10 +1,10 @@
 ---
-version: 0.15.1-2
+version: 0.16.1-1
 pkgbase:
   name: quickjs-ng
   pkgdesc: A mighty JavaScript engine
-  pkgver: 0.15.1
-  pkgrel: 2
+  pkgver: 0.16.1
+  pkgrel: 1
   url: https://quickjs-ng.github.io/quickjs
   arch:
     - x86_64
@@ -15,9 +15,9 @@ pkgbase:
   depends:
     - glibc
   source:
-    - quickjs-ng-0.15.1.tar.gz::https://github.com/quickjs-ng/quickjs/archive/refs/tags/v0.15.1.tar.gz
+    - quickjs-ng-0.16.1.tar.gz::https://github.com/quickjs-ng/quickjs/archive/refs/tags/v0.16.1.tar.gz
   sha256sums:
-    - c4e813951b7c46845096a948e978c620b11ab4cf5fd622ca09c727ec31f42623
+    - 4b3c11f37dab2c58bdeccbaeb23b923fa4a9798a45e50be6af55f3e75b616ea0
 pkgname:
   - name: quickjs-ng
-# generated with artixpkg 0.38.5-1-any
+# generated with artixpkg 0.39.1-1-any
