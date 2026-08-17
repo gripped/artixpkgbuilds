@@ -1,11 +1,11 @@
 ---
 actions:
   addRepo: galaxy
-  removeRepo: null
-  triggersBuild: true
+  removeRepo: galaxy-gremlins
+  triggersBuild: false
   triggersRebuild: false
   triggersRepoAdd: true
-  triggersRepoRemove: false
+  triggersRepoRemove: true
   triggersNoCheck: false
 repos:
   system-goblins:
@@ -53,8 +53,8 @@ repos:
     packages: []
     debug: []
   galaxy:
-    version: 1:153.0.3_1-2
+    version: 153.0.4_1-1
     packages:
-      - librewolf-1:153.0.3_1-2-x86_64.pkg.tar.zst
+      - librewolf-153.0.4_1-1-x86_64.pkg.tar.zst
     debug: []
 team: galaxy
