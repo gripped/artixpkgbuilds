@@ -2,7 +2,7 @@
 
 pkgname=xlibre-input-void
 pkgver=25.0.0
-pkgrel=6
+pkgrel=7
 pkgdesc="XLibre fork of X.Org void input driver"
 arch=(x86_64 aarch64)
 license=('custom')
