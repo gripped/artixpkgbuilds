@@ -1,10 +1,10 @@
 ---
-version: 25.0.0-6
+version: 25.0.0-7
 pkgbase:
   name: xlibre-video-i740
   pkgdesc: XLibre fork of i740 video driver
   pkgver: 25.0.0
-  pkgrel: 6
+  pkgrel: 7
   url: https://github.com/X11Libre/xf86-video-i740
   arch:
     - x86_64
@@ -29,4 +29,4 @@ pkgbase:
     - dd797c5eae9cc74a099c695c28bef951e45ecc06effab672fb9b805c2725af5f
 pkgname:
   - name: xlibre-video-i740
-# generated with artixpkg 0.37.4-1-any
+# generated with artixpkg 0.38.5-1-any
