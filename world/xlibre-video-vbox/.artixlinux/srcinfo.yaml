@@ -1,10 +1,10 @@
 ---
-version: 25.0.0-6
+version: 25.0.0-7
 pkgbase:
   name: xlibre-video-vbox
   pkgdesc: XLibre fork of vbox video driver
   pkgver: 25.0.0
-  pkgrel: 6
+  pkgrel: 7
   url: https://github.com/X11Libre/xf86-video-vbox
   arch:
     - x86_64
@@ -29,4 +29,4 @@ pkgbase:
     - e08a036e4c291164988a7bd941a34d2e8f6a4eb10062a2863fb63aa5f1c8db93
 pkgname:
   - name: xlibre-video-vbox
-# generated with artixpkg 0.37.4-1-any
+# generated with artixpkg 0.38.5-1-any
