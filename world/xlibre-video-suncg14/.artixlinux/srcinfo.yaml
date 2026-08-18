@@ -1,10 +1,10 @@
 ---
-version: 25.0.0-6
+version: 25.0.0-7
 pkgbase:
   name: xlibre-video-suncg14
   pkgdesc: XLibre fork of suncg14 video driver
   pkgver: 25.0.0
-  pkgrel: 6
+  pkgrel: 7
   url: https://github.com/X11Libre/xf86-video-suncg14
   arch:
     - x86_64
@@ -29,4 +29,4 @@ pkgbase:
     - 5a18a434ccc2c23455d6dae7ad25a1d95ebe6c2dac4082e3c0aa32c238b34567
 pkgname:
   - name: xlibre-video-suncg14
-# generated with artixpkg 0.37.4-1-any
+# generated with artixpkg 0.38.5-1-any
