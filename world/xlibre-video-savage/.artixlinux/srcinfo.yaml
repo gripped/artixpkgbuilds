@@ -1,10 +1,10 @@
 ---
-version: 25.0.0-6
+version: 25.0.0-7
 pkgbase:
   name: xlibre-video-savage
   pkgdesc: XLibre fork of savage video driver
   pkgver: 25.0.0
-  pkgrel: 6
+  pkgrel: 7
   url: https://github.com/X11Libre/xf86-video-savage
   arch:
     - x86_64
@@ -29,4 +29,4 @@ pkgbase:
     - 72e088bdd9cdd019782c825bdf2450082658e1871c70e4cd7f5f762dd3126efb
 pkgname:
   - name: xlibre-video-savage
-# generated with artixpkg 0.37.4-1-any
+# generated with artixpkg 0.38.5-1-any
