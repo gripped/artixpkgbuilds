@@ -1,10 +1,10 @@
 ---
-version: 25.0.0-6
+version: 25.0.0-7
 pkgbase:
   name: xlibre-video-nv
   pkgdesc: XLibre fork of nv video driver
   pkgver: 25.0.0
-  pkgrel: 6
+  pkgrel: 7
   url: https://github.com/X11Libre/xf86-video-nv
   arch:
     - x86_64
@@ -29,4 +29,4 @@ pkgbase:
     - cc8573fb3672410523b6b9758f2affb1f0867bf95708c092279e0e3014f12b04
 pkgname:
   - name: xlibre-video-nv
-# generated with artixpkg 0.37.4-1-any
+# generated with artixpkg 0.38.5-1-any
