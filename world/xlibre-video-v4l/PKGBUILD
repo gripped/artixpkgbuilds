@@ -2,7 +2,7 @@
 
 pkgname=xlibre-video-v4l
 pkgver=25.0.1
-pkgrel=1
+pkgrel=2
 pkgdesc="XLibre fork of v4l video driver"
 arch=(x86_64 aarch64)
 license=('X11')
