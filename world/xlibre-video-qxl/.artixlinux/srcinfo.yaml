@@ -1,10 +1,10 @@
 ---
-version: 25.0.0-8
+version: 25.0.0-10
 pkgbase:
   name: xlibre-video-qxl
   pkgdesc: XLibre fork of X.Org X11 qxl video driver
   pkgver: 25.0.0
-  pkgrel: 8
+  pkgrel: 10
   url: https://github.com/X11Libre/xf86-video-qxl
   arch:
     - x86_64
@@ -25,7 +25,7 @@ pkgbase:
   optdepends:
     - 'python: for Xspice'
   provides:
-    - xf86-video-qxl
+    - xlibre-xf86-video-qxl
   conflicts:
     - xf86-video-qxl
   source:
@@ -34,4 +34,4 @@ pkgbase:
     - ee0b0798a2fa2dd3e2494dee996cdc41ac2e43054f53b33a619960786d5b7e8c
 pkgname:
   - name: xlibre-video-qxl
-# generated with artixpkg 0.37.4-1-any
+# generated with artixpkg 0.38.5-1-any
