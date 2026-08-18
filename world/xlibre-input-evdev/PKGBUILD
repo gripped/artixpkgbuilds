@@ -2,7 +2,7 @@
 
 pkgname=xlibre-input-evdev
 pkgver=25.0.0
-pkgrel=8
+pkgrel=9
 pkgdesc="XLibre fork of X.Org evdev input driver"
 arch=(x86_64 aarch64)
 _pkgname="${pkgname//xlibre/xf86}"
