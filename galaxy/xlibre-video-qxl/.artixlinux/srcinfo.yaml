@@ -1,43 +1,37 @@
 ---
-version: 0.1.6.3-1
+version: 25.0.0-10
 pkgbase:
   name: xlibre-video-qxl
   pkgdesc: XLibre fork of X.Org X11 qxl video driver
-  pkgver: 0.1.6.3
-  pkgrel: 1
-  url: https://github.com/X11Libre
+  pkgver: 25.0.0
+  pkgrel: 10
+  url: https://github.com/X11Libre/xf86-video-qxl
   arch:
     - x86_64
+    - aarch64
   groups:
     - xlibre-drivers
   license:
     - MIT
   makedepends:
-    - xlibre-xserver-devel
-    - X-ABI-VIDEODRV_VERSION=28.0
-    - spice-protocol
+    - xlibre-xserver-devel>=25.0
     - xorgproto
     - libcacard
   depends:
-    - spice
-    - libudev
-    - libxfont2
+    - xlibre-xserver>=25.0
     - glibc
+    - spice
+    - libxfont2
   optdepends:
     - 'python: for Xspice'
   provides:
     - xlibre-xf86-video-qxl
-    - xf86-video-qxl
   conflicts:
-    - xlibre-xf86-video-qxl
-    - X-ABI-VIDEODRV_VERSION<28
-    - X-ABI-VIDEODRV_VERSION>=29
-  replaces:
-    - xlibre-xf86-video-qxl
+    - xf86-video-qxl
   source:
-    - https://github.com/X11Libre/xf86-video-qxl/archive/refs/tags/xlibre-xf86-video-qxl-0.1.6.3.tar.gz
+    - https://github.com/X11Libre/xf86-video-qxl/archive/refs/tags/xlibre-xf86-video-qxl-25.0.0.tar.gz
   sha256sums:
-    - 3e02f822510f135048e14d424dc969c7245be381c39847d092aea2360348b4ea
+    - ee0b0798a2fa2dd3e2494dee996cdc41ac2e43054f53b33a619960786d5b7e8c
 pkgname:
   - name: xlibre-video-qxl
-# generated with artixpkg 0.37.4-1-any
+# generated with artixpkg 0.38.5-1-any
