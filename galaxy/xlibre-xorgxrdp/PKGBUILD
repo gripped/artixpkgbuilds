@@ -3,7 +3,7 @@
 _pkgname=xorgxrdp
 pkgname=xlibre-$_pkgname
 pkgver=0.10.4
-pkgrel=1
+pkgrel=4
 pkgdesc="XLibre drivers for xrdp"
 arch=('aarch64' 'i686' 'x86_64')
 url="https://github.com/neutrinolabs/xorgxrdp"
@@ -34,7 +34,8 @@ build() {
   ./bootstrap
 
   CFLAGS="$CFLAGS -ffat-lto-objects $(pkgconf --cflags-only-I libdrm)"
-  sed -i 's|moduledir=`pkg-config xorg-server --variable=moduledir`|moduledir="/usr/lib/xorg/modules/xlibre-25.0"|' configure
+  CFLAGS+=" -Wno-implicit-function-declaration -Wno-int-conversion"
+  sed -i 's|moduledir=`pkg-config xorg-server --variable=moduledir`|moduledir="/usr/lib/xorg/modules/xlibre-25"|' configure
   ./configure \
     --prefix="/usr"
   make
