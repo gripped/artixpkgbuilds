@@ -2,11 +2,11 @@
 team: galaxy
 actions:
   addRepo: galaxy
-  removeRepo: null
-  triggersBuild: true
+  removeRepo: world
+  triggersBuild: false
   triggersRebuild: false
   triggersRepoAdd: true
-  triggersRepoRemove: false
+  triggersRepoRemove: true
   triggersNoCheck: false
 repos:
   system-goblins:
@@ -54,7 +54,7 @@ repos:
     packages: []
     debug: []
   galaxy:
-    version: 1.4.2.3-1
+    version: 25.0.0-7
     packages:
-      - xlibre-input-void-1.4.2.3-1-x86_64.pkg.tar.zst
+      - xlibre-input-void-25.0.0-7-x86_64.pkg.tar.zst
     debug: []
