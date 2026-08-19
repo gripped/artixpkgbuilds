@@ -2,11 +2,11 @@
 team: galaxy
 actions:
   addRepo: galaxy
-  removeRepo: null
-  triggersBuild: true
+  removeRepo: world
+  triggersBuild: false
   triggersRebuild: false
   triggersRepoAdd: true
-  triggersRepoRemove: false
+  triggersRepoRemove: true
   triggersNoCheck: false
 repos:
   system-goblins:
@@ -54,7 +54,7 @@ repos:
     packages: []
     debug: []
   galaxy:
-    version: 3.0.0.6-1
+    version: 25.0.2-3
     packages:
-      - xlibre-video-intel-3.0.0.6-1-x86_64.pkg.tar.zst
+      - xlibre-video-intel-25.0.2-3-x86_64.pkg.tar.zst
     debug: []

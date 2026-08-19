@@ -1,33 +1,36 @@
 ---
-version: 3.0.0.6-1
+version: 25.0.2-3
 pkgbase:
   name: xlibre-video-intel
   pkgdesc: Libre fork of X.Org Intel i810/i830/i915/945G/G965+ video drivers
-  pkgver: 3.0.0.6
-  pkgrel: 1
-  url: https://github.com/X11Libre
+  pkgver: 25.0.2
+  pkgrel: 3
+  url: https://github.com/X11Libre/xf86-video-intel
   install: xlibre-video-intel.install
   arch:
     - x86_64
+    - aarch64
   groups:
     - xlibre-drivers
   license:
     - MIT
   makedepends:
-    - xlibre-xserver-devel
-    - X-ABI-VIDEODRV_VERSION=28.0
+    - xlibre-xserver-devel>=25.0
+    - xorgproto
     - libxv
+    - meson>=0.50
     - libxrandr
     - libxinerama
     - libxcursor
     - libxtst
     - libxss
   depends:
+    - xlibre-xserver>=25.0
+    - glibc
     - mesa
     - libxvmc
-    - pixman
+    - pixman>=0.27.1
     - xcb-util>=0.3.9
-    - libudev
     - libxcb
     - libxfixes
     - libxshmfence
@@ -36,8 +39,7 @@ pkgbase:
     - libx11
     - libxdamage
     - libxext
-    - libpciaccess
-    - glibc
+    - libpciaccess>=0.10
   optdepends:
     - 'libxrandr: for intel-virtual-output'
     - 'libxinerama: for intel-virtual-output'
@@ -48,14 +50,9 @@ pkgbase:
     - xlibre-xf86-video-intel
     - xf86-video-intel-uxa
     - xf86-video-intel-sna
-    - xf86-video-intel
   conflicts:
-    - xlibre-xf86-video-intel
-    - xorg-server<21.1.1
-    - X-ABI-VIDEODRV_VERSION<28
-    - X-ABI-VIDEODRV_VERSION>=29
+    - xf86-video-intel
   replaces:
-    - xlibre-xf86-video-intel
     - xf86-video-intel-sna
     - xf86-video-intel-uxa
     - xf86-video-i810
@@ -63,9 +60,9 @@ pkgbase:
   options:
     - '!lto'
   source:
-    - https://github.com/X11Libre/xf86-video-intel/archive/refs/tags/xlibre-xf86-video-intel-3.0.0.6.tar.gz
+    - https://github.com/X11Libre/xf86-video-intel/archive/refs/tags/xlibre-xf86-video-intel-25.0.2.tar.gz
   sha256sums:
-    - 5be44aa05eea12df5999f01ae3ccfc9ed969e89801a3af214cac23581e0721ea
+    - e4513cf871374cc5df4d0ae5dcd2787539c38801295ab5a9b3470cf0dd193a43
 pkgname:
   - name: xlibre-video-intel
-# generated with artixpkg 0.37.4-1-any
+# generated with artixpkg 0.38.5-1-any
