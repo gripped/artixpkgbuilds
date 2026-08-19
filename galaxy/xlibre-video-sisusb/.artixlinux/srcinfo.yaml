@@ -1,36 +1,32 @@
 ---
-version: 0.9.7.2-1.2
+version: 25.0.0-8
 pkgbase:
   name: xlibre-video-sisusb
   pkgdesc: XLibre fork of X.org SiS USB video driver
-  pkgver: 0.9.7.2
-  pkgrel: 1.2
-  url: https://github.com/X11Libre
+  pkgver: 25.0.0
+  pkgrel: 8
+  url: https://github.com/X11Libre/xf86-video-sisusb
   arch:
     - x86_64
+    - aarch64
   groups:
     - xlibre-drivers
   license:
     - BSD-3-Clause
   makedepends:
-    - xlibre-xserver-devel
-    - X-ABI-VIDEODRV_VERSION=28.0
+    - xlibre-xserver-devel>=25.0
+    - xorgproto
   depends:
+    - xlibre-xserver>=25.0
     - glibc
   provides:
     - xlibre-xf86-video-sisusb
-    - xf86-video-sisusb
   conflicts:
-    - xlibre-xf86-video-sisusb
-    - xorg-server<21.1.1
-    - X-ABI-VIDEODRV_VERSION<28
-    - X-ABI-VIDEODRV_VERSION>=29
-  replaces:
-    - xlibre-xf86-video-sisusb
+    - xf86-video-sisusb
   source:
-    - https://github.com/X11Libre/xf86-video-sisusb/archive/refs/tags/xlibre-xf86-video-sisusb-0.9.7.2.tar.gz
+    - https://github.com/X11Libre/xf86-video-sisusb/archive/refs/tags/xlibre-xf86-video-sisusb-25.0.0.tar.gz
   sha256sums:
-    - 19835f66f4684c6e08184a00d1bb563effe0bc934fa877842f1953971bcce998
+    - 470d8cb446797efb133e1a54bf1c1048804cd70843b3fce13700c0b01deeca4d
 pkgname:
   - name: xlibre-video-sisusb
-# generated with artixpkg 0.37.4-1-any
+# generated with artixpkg 0.38.5-1-any
