@@ -1,9 +1,9 @@
 ---
-version: 6.18.43.rt6.artix1-1
+version: 6.18.45.rt6.artix1-1
 pkgbase:
   name: linux-rt-lts
   pkgdesc: Linux RT LTS
-  pkgver: 6.18.43.rt6.artix1
+  pkgver: 6.18.45.rt6.artix1
   pkgrel: 1
   url: https://gitlab.archlinux.org/archlinux/packaging/upstream/linux-rt-lts
   arch:
@@ -37,31 +37,31 @@ pkgbase:
     - '!debug'
     - '!strip'
   source:
-    - https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.18.43.tar.xz
-    - https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.18.43.tar.sign
-    - https://gitlab.archlinux.org/archlinux/packaging/upstream/linux-rt-lts/-/releases/v6.18.43-rt6-arch1/downloads/linux-rt-lts-v6.18.43-rt6.patch.sig
-    - https://gitlab.archlinux.org/archlinux/packaging/upstream/linux-rt-lts/-/releases/v6.18.43-rt6-arch1/downloads/linux-rt-lts-v6.18.43-rt6.patch.zst
-    - https://gitlab.archlinux.org/archlinux/packaging/upstream/linux-rt-lts/-/releases/v6.18.43-rt6-arch1/downloads/linux-rt-lts-v6.18.43-rt6-arch1.patch.sig
-    - https://gitlab.archlinux.org/archlinux/packaging/upstream/linux-rt-lts/-/releases/v6.18.43-rt6-arch1/downloads/linux-rt-lts-v6.18.43-rt6-arch1.patch.zst
+    - https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.18.45.tar.xz
+    - https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.18.45.tar.sign
+    - https://gitlab.archlinux.org/archlinux/packaging/upstream/linux-rt-lts/-/releases/v6.18.45-rt6-arch1/downloads/linux-rt-lts-v6.18.45-rt6.patch.sig
+    - https://gitlab.archlinux.org/archlinux/packaging/upstream/linux-rt-lts/-/releases/v6.18.45-rt6-arch1/downloads/linux-rt-lts-v6.18.45-rt6.patch.zst
+    - https://gitlab.archlinux.org/archlinux/packaging/upstream/linux-rt-lts/-/releases/v6.18.45-rt6-arch1/downloads/linux-rt-lts-v6.18.45-rt6-arch1.patch.sig
+    - https://gitlab.archlinux.org/archlinux/packaging/upstream/linux-rt-lts/-/releases/v6.18.45-rt6-arch1/downloads/linux-rt-lts-v6.18.45-rt6-arch1.patch.zst
   validpgpkeys:
     - 647F28654894E3BD457199BE38DBBDC86092693E
     - D5653EA39C8675DA4BD5971C13B55DD07C53B851
     - 991F6E3F0765CF6295888586139B09DA5BF0D338
     - 05C7775A9E8B977407FE08E69D4C5AA15426DA0A
   sha512sums:
-    - 77393001f6635e04c41bf28b8b4305b0c17339d7e70c753f73f45ada6758b3dd461cd975b3ad18123aa9e391f100b3bf8995d0b296db7cba05f9548adf636532
+    - e39681c2df76a0e45b29cebca76ecaf01ea32a79842e4ecbf61e636278a15eab795fc34f6dd76f7a032cb1619e3f9950c18f06a9d54e22d4ecc42d31eacd9bb7
     - SKIP
     - SKIP
-    - 553c379b605f3cfc1dd5e0afd29287893ab058527cfbf9e157bfe16bcd5d835a57a257a9d4d5cc6c924b08ac54ca78f6854c902eb45b9e4d5dbd96ebbe876a71
+    - d7a6bfd0177ee3d19aacc6957f91c9d00391b9fc3d0c30b4d78104d17355178d46316ed2843ae4326b47368c5519e7cc9960788a222b35fec77f90a6c219f477
     - SKIP
-    - efba3f4f1d4546c45a5ec8f4567f375cfa00ed701edadec95d5d91c2f9ac0edf78d62e6a5d369850008dcafeda17c9fec56395877c94f8a0fcc1710314b42905
+    - 402c78a630b014834ed99ccdbf98a56fb4912230d16561436fbf3509a14d47b4ac90406b94ae64fd07908fc4eec2fbd2810d8f7abb0cc56aa99bcd995d01bf83
   b2sums:
-    - 434ba598863ac5ede162d7147a78884c2dc6090e8f0447f6368a681a0e7077143a0753c62f4ad6e1be8b971a46266bf00f3b3fe4218345483360bda86a3f855c
+    - 5c07157830470105e82686970b0fc69ccb4803977837fe996569dae717dc80682b58feccde06f0d44ef7392add1f0c0afd01d04794dfffecc0d3ae585c002479
     - SKIP
     - SKIP
-    - 9b777ef3a1aa6d548b056e6c330bf236a1974592081b8280c2cf512ab2c8d64fd767a2f211c9864b24b0d1ee69ecd29097d28a991b917daff5991e08c6337ed3
+    - 9c1ecb3a6ecd0c9b7e077978f45f2dcc318322db7605ffd5b967ed604a1d1669dfc1bacbbfa777f9326f90b30321e191a5887e4116b20803895a12e49f83ade6
     - SKIP
-    - 07e9b81cb7e3c47b88c72adcbfb5862ed172710ecbd3a7b473f6ca0307d8f5dc115161eea44bf255e41b1202883d849766301bc52f77115f96eebff3c6b0a939
+    - 286ed1ff447c882d89ae59712f602fcb07b38e1d83bbeb59625d481aabf921d78f99520542180e2d605c3b6bb23e2221000ea36cb00cce2788b93967e95cdae8
   source_x86_64:
     - config.x86_64
   sha512sums_x86_64:
