@@ -1,9 +1,9 @@
 ---
-version: 26.22.38646.4-1
+version: 26.31.39395.13-1
 pkgbase:
   name: intel-compute-runtime
   pkgdesc: Intel(R) Graphics Compute Runtime for oneAPI Level Zero and OpenCL(TM) Driver
-  pkgver: 26.22.38646.4
+  pkgver: 26.31.39395.13
   pkgrel: 1
   url: https://github.com/intel/compute-runtime/
   arch:
@@ -17,6 +17,7 @@ pkgbase:
     - libnl>=3.0.0
     - libnl<4.0.0
     - libva
+    - libudev
   depends:
     - glibc
     - intel-gmmlib
@@ -33,11 +34,11 @@ pkgbase:
     - level-zero-driver
     - opencl-driver
   source:
-    - https://github.com/intel/compute-runtime/archive/26.22.38646.4/intel-compute-runtime-26.22.38646.4.tar.gz
+    - https://github.com/intel/compute-runtime/archive/26.31.39395.13/intel-compute-runtime-26.31.39395.13.tar.gz
     - 010-intel-compute-runtime-disable-werror.patch
   sha256sums:
-    - 4fcea3df862ce964fefd848c111fc1d3f81a4a9a03e776a1e5849deb578ff68f
-    - 849e4103d3660eadd9c79a79ddaba7e9a5a228743e4991bb238d7abe908b545f
+    - c5dbcf3e4b88d64060cc85a368777fe24ea0b135463772d451e819ac48a4da14
+    - 9632812a91598c7e376795540bcc862b970f315e3f361218443525c997e1d70a
 pkgname:
   - name: intel-compute-runtime
 # generated with artixpkg 0.38.5-1-any
