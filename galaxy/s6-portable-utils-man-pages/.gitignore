@@ -1,0 +1,21 @@
+# ---> ArtixLinuxPackages
+*.tar
+*.tar.*
+*.jar
+*.exe
+*.msi
+*.zip
+*.tgz
+*.log
+*.log.*
+*.sig
+
+s6-portable-utils-man-pages/
+pkg/
+src/
+
+*.service
+*.timer
+*.socket
+
+
