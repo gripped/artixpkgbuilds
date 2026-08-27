@@ -1,0 +1,21 @@
+# ---> ArtixLinuxPackages
+*.tar
+*.tar.*
+*.jar
+*.exe
+*.msi
+*.zip
+*.tgz
+*.log
+*.log.*
+*.sig
+
+s6-frontend-man-pages/
+pkg/
+src/
+
+*.service
+*.timer
+*.socket
+
+
