@@ -1,0 +1,21 @@
+# ---> ArtixLinuxPackages
+*.tar
+*.tar.*
+*.jar
+*.exe
+*.msi
+*.zip
+*.tgz
+*.log
+*.log.*
+*.sig
+
+execline-man-pages/
+pkg/
+src/
+
+*.service
+*.timer
+*.socket
+
+
