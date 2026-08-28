@@ -1,9 +1,9 @@
 ---
-version: 1:140.13.0.102-1
+version: 1:140.14.0.100-1
 pkgbase:
   name: konform-browser
   pkgdesc: Firefox ESR fork with increased security, privacy, and customizability
-  pkgver: 140.13.0.102
+  pkgver: 140.14.0.100
   pkgrel: 1
   epoch: 1
   url: https://konform-browser.codeberg.page
@@ -88,6 +88,8 @@ pkgbase:
     - 'firefox-decentraleyes: Local emulation of Content Delivery Networks'
   provides:
     - konform-browser
+  noextract:
+    - security-state--intermediates-140.14.0.100.zip
   options:
     - '!debug'
     - '!emptydirs'
@@ -97,10 +99,11 @@ pkgbase:
     - usr/lib/konform/librewolf.cfg
     - usr/lib/konform/distribution/policies.json
   source:
-    - src::git+https://codeberg.org/konform-browser/source.git#tag=140.13.0.102
-    - firefox-140.13.0esr-1.source.tar.xz::https://archive.mozilla.org/pub/firefox/candidates/140.13.0esr-candidates/build1/source/firefox-140.13.0esr.source.tar.xz
-    - firefox-140.13.0esr-1.source.tar.xz.asc::https://archive.mozilla.org/pub/firefox/candidates/140.13.0esr-candidates/build1/source/firefox-140.13.0esr.source.tar.xz.asc
+    - src::git+https://codeberg.org/konform-browser/source.git#tag=140.14.0.100
+    - firefox-140.14.0esr-1.source.tar.xz::https://archive.mozilla.org/pub/firefox/candidates/140.14.0esr-candidates/build1/source/firefox-140.14.0esr.source.tar.xz
+    - firefox-140.14.0esr-1.source.tar.xz.asc::https://archive.mozilla.org/pub/firefox/candidates/140.14.0esr-candidates/build1/source/firefox-140.14.0esr.source.tar.xz.asc
     - firefox-l10n-5db0b9bd7b7bdb9a5671cc504da09caf65d5d3b1.tar.gz::https://github.com/mozilla-l10n/firefox-l10n/archive/5db0b9bd7b7bdb9a5671cc504da09caf65d5d3b1.tar.gz
+    - security-state--intermediates-140.14.0.100.zip::https://codeberg.org/konform-browser/source/releases/download/140.14.0.100/security-state--intermediates.zip
     - konform.desktop
     - konform-browser-testing.install
     - default192x192.png
@@ -111,17 +114,18 @@ pkgbase:
   validpgpkeys:
     - 14F26682D0916CDD81E37B6D61B7B526D98F0353
   sha256sums:
-    - 38e59c9106a54fc3967dd8dd062eee6953b691c78751e0deb7683ebbf5fdf95c
-    - f53b9dc6942abda1185aa7d79048f59fc075020da36b4dd6b31f668b88714d01
+    - a964d5bc5fcecb35701396493dcdaad6ddbc6dffe80d17051e82b15178e8d5a9
+    - 28006bd454e703932e1ea804918165774a1e21478b18e551cd1b38111d664239
     - SKIP
     - 50b9d366fb58a45ba7dd3949e08600f6bebf0ead86cc35e9c2f5c20b624de512
+    - 724db1742a08265e82bfbdffd7ee3ea2d323dae0c4ef55bc3497e5c6d663f2eb
     - 68fb47f178d5c3412162d3bb8f74abbfcf1977e0ea4dc69647580ff6f8a93fb4
     - 1242299c0a3e90a6b1f1c2bcc6bfa32e7c914a88a9c98fb879b016e6a1505c84
     - b86ddfc0cec482f7900f296857cdd0f1b736ff5037e0a86712b258ae0092924b
     - 157976ec4be8d723cd6240988b310bc8e1779b2272a258d886bc08389ceba852
     - baad79216200df4ea05a0e5ca26e0c56c4d4a3cd2149d32f15dc8b7c724376ba
     - 8f9b7458760b37766a73d4d2c0e93dc810e59d3844495b9d52b3b61dde59c05d
-    - e11aba9839824096f07ca5dc17c9fd5bfa09209f8261ab09f7e473f350a82760
+    - 01b8c0b1064f746ecd186e4b92767e92e4028519cfd3e0ea0637fb786cdec644
 pkgname:
   - name: konform-browser
 # generated with artixpkg 0.39.1-1-any
