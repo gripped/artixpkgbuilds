@@ -53,8 +53,8 @@ repos:
     packages: []
     debug: []
   galaxy:
-    version: 0.git35.19d51d3-3
+    version: 0.git35.19d51d3-4
     packages:
-      - libtg_owt-0.git35.19d51d3-3-x86_64.pkg.tar.zst
+      - libtg_owt-0.git35.19d51d3-4-x86_64.pkg.tar.zst
     debug: []
 team: galaxy
