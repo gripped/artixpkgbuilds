@@ -17,9 +17,9 @@ repos:
     packages: []
     debug: []
   system:
-    version: 0.3.113-4
+    version: 0.3.113-5
     packages:
-      - libaio-0.3.113-4-x86_64.pkg.tar.zst
+      - libaio-0.3.113-5-x86_64.pkg.tar.zst
     debug: []
   world-goblins:
     version: null
