@@ -53,8 +53,8 @@ repos:
     packages: []
     debug: []
   galaxy:
-    version: 6.2.108-1
+    version: 6.3.289-1
     packages:
-      - pdfjs-6.2.108-1-any.pkg.tar.zst
+      - pdfjs-6.3.289-1-any.pkg.tar.zst
     debug: []
 team: galaxy
