@@ -1,9 +1,9 @@
 ---
-version: 1.0.1-1
+version: 1.0.3-1
 pkgbase:
   name: rgbds
   pkgdesc: Rednex GameBoy Development System
-  pkgver: 1.0.1
+  pkgver: 1.0.3
   pkgrel: 1
   url: https://github.com/gbdev/rgbds
   arch:
@@ -17,10 +17,11 @@ pkgbase:
   depends:
     - glibc
     - libpng
+    - libstdc++
   source:
-    - git+https://github.com/gbdev/rgbds.git#tag=92bfe5d930c07dd4672b148f811305aa294d6e6f
+    - git+https://github.com/gbdev/rgbds.git#tag=v1.0.3
   b2sums:
-    - ac63915be2c2a82645de90c78926f7b587c92db5ccdb8766f0478c56e7ff169ba51c6ad37c856b556342b6f30b205a5a8a606d348079178388dbacb3f9286cbe
+    - 4d9bb4afed33e2c05e05fd0658ae05b4d1203061f53b7f9955b003600ac9ef14eef6cdf3df1e69ec44682dea3f3b3aa9c6af342a6e5077c73e859b66c3798bdf
 pkgname:
   - name: rgbds
-# generated with artixpkg 0.38.2-1-any
+# generated with artixpkg 0.39.1-1-any
