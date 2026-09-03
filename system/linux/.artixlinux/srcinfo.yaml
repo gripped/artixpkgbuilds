@@ -1,10 +1,10 @@
 ---
-version: 7.1.9.artix1-2
+version: 7.2.2.artix1-1.1
 pkgbase:
   name: linux
   pkgdesc: Linux
-  pkgver: 7.1.9.artix1
-  pkgrel: 2
+  pkgver: 7.2.2.artix1
+  pkgrel: 1.1
   url: https://github.com/archlinux/linux
   arch:
     - x86_64
@@ -39,30 +39,30 @@ pkgbase:
     - '!debug'
     - '!strip'
   source:
-    - https://cdn.kernel.org/pub/linux/kernel/v7.x/linux-7.1.9.tar.xz
-    - https://cdn.kernel.org/pub/linux/kernel/v7.x/linux-7.1.9.tar.sign
-    - https://github.com/archlinux/linux/releases/download/v7.1.9-arch1/linux-v7.1.9-arch1.patch.zst
-    - https://github.com/archlinux/linux/releases/download/v7.1.9-arch1/linux-v7.1.9-arch1.patch.zst.sig
+    - https://cdn.kernel.org/pub/linux/kernel/v7.x/linux-7.2.2.tar.xz
+    - https://cdn.kernel.org/pub/linux/kernel/v7.x/linux-7.2.2.tar.sign
+    - https://github.com/archlinux/linux/releases/download/v7.2.2-arch1/linux-v7.2.2-arch1.patch.zst
+    - https://github.com/archlinux/linux/releases/download/v7.2.2-arch1/linux-v7.2.2-arch1.patch.zst.sig
   validpgpkeys:
     - ABAF11C65A2970B130ABE3C479BE3E4300411886
     - 647F28654894E3BD457199BE38DBBDC86092693E
     - 83BC8889351B5DEBBB68416EB8AC08600F108CDF
   sha256sums:
-    - 3271a4ae3897b38352980f2b0975bae61bca81c644d186221c5ae928bcc072b0
+    - 7d0e7ce14f98c43efe880cffbf354a59be45928fdf7170d7333c374ae91c0d83
     - SKIP
-    - cbc02240c0790fd534de337d1ab04ccd035f4ce12355f5db103990080e4592c6
+    - e8f3e197bd64985922150873c4af09301088a7437217f519243ce74ba6a691f4
     - SKIP
   b2sums:
-    - 873b4d4426295e291118481d911dc2bc67588bb9b1025c19faf7c2a3971cad439efce1c4f244a40a2983d9e7fe405adfb880c0df92ff2e616d0880178129a551
+    - 7d3904933ddca054bc085d34c2941d0ed74280c3691716b55369197a0f40dad8d116abaca22fcea71476bd52e9396d80d066d3e859bc945dfdb9e305baff59ab
     - SKIP
-    - 6e7b73dbbdb66a414c634df2e7b2d248aa6071f04c4f2fe52346441ab490192894ee903ba72b8e47ab25c511e4dac14cf824f175f183687b1fd61bd087209afb
+    - 3953137079a786967230b6f5f2b4ccaa7cb5a2b09ef533ea5b9b8ca83fa4d8795a2fd8430bb5fc1dd280396571685e3fa06fe6aaa4fc64ad9484008457218713
     - SKIP
   source_x86_64:
     - config.x86_64
   sha256sums_x86_64:
-    - 7075087dfc0b2829b2b9cb542a041b31aa166784d966b81b2fc8a4bd491f42f8
+    - 096425ea585be1141dddafa40a52fc20dd1674dc8892fdfe1408cc584ed35374
   b2sums_x86_64:
-    - d972af55ada48b04067e0bba876075652d3540a54e4ae5300c9be854b3fe32a9aec28b600bc57ec8ec4f94aaf0199bc4788e1deea5aa7c7565ba6dd1870e9661
+    - dc43900d5d708f7923c80296709321f8cb68ed3d3acc97bd0e8c42ea0de62e9527e37e1e743231f806556bdab8bec4ab36c3a2ba3b030f7e20df06a0d31d8998
 pkgname:
   - name: linux
     pkgdesc: The Linux kernel and modules
@@ -99,4 +99,4 @@ pkgname:
       - LINUX-HEADERS
   - name: linux-docs
     pkgdesc: Documentation for the Linux kernel
-# generated with artixpkg 0.38.5-1-any
+# generated with artixpkg 0.39.1-1-any
