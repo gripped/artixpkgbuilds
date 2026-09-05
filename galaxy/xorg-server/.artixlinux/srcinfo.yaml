@@ -1,9 +1,9 @@
 ---
-version: 21.1.22-2
+version: 21.1.24-1.4
 pkgbase:
   name: xorg-server
-  pkgver: 21.1.22
-  pkgrel: 2
+  pkgver: 21.1.24
+  pkgrel: 1.4
   url: https://xorg.freedesktop.org
   arch:
     - x86_64
@@ -58,7 +58,7 @@ pkgbase:
     - meson
     - git
   source:
-    - xorg-server::git+https://gitlab.freedesktop.org/xorg/xserver.git?signed#tag=xorg-server-21.1.22
+    - xorg-server::git+https://gitlab.freedesktop.org/xorg/xserver.git?signed#tag=xorg-server-21.1.24
     - xvfb-run
     - xvfb-run.1
   validpgpkeys:
@@ -67,7 +67,7 @@ pkgbase:
     - FD0004A26EADFE43A4C3F249C6F7AE200374452D
     - 3BB639E56F861FA2E86505690FDD682D974CA72A
   sha512sums:
-    - 81644a6a95b387fdd8e5582100d63cf4efbe6353e6a6b9bdd6435555018f6bae9318fb3f67c5a2f574b9b4b997917c077027162f37fc26f94b0745d6f531fba6
+    - 7c3ffcd3c73e7f3efc18ad36807297d5ed84fb2d7aecbec877422e1619d03f8c27435ec42b9cea8a4b7699281ee10d54a1ada236f2ed15ae34978550eb40d4d1
     - 672375cb5028ba9cda286e317d17bd8c9a9039483e7f79c21f223fd08ba07655729e9f59a082f4b8f5d8de45a77a9e9affce1002fb8c6657e26ef1a490654e49
     - de5e2cb3c6825e6cf1f07ca0d52423e17f34d70ec7935e9dd24be5fb9883bf1e03b50ff584931bd3b41095c510ab2aa44d2573fd5feaebdcb59363b65607ff22
 pkgname:
@@ -104,9 +104,11 @@ pkgname:
       - nvidia-utils<=331.20
       - glamor-egl
       - xf86-video-modesetting
+      - xlibre-xserver
     replaces:
       - glamor-egl
       - xf86-video-modesetting
+      - xlibre-xserver
   - name: xorg-server-xephyr
     pkgdesc: A nested X server that runs as an X application
     depends:
@@ -129,6 +131,8 @@ pkgname:
       - libxau
       - libxshmfence
       - glibc
+    replaces:
+      - xlibre-xserver-xephyr
   - name: xorg-server-xvfb
     pkgdesc: Virtual framebuffer X server
     license:
@@ -148,6 +152,8 @@ pkgname:
       - sh
       - glibc
       - libxau
+    replaces:
+      - xlibre-xserver-xvfb
   - name: xorg-server-xnest
     pkgdesc: A nested X server that runs as an X application
     depends:
@@ -163,12 +169,16 @@ pkgname:
       - glibc
       - libx11
       - libxau
+    replaces:
+      - xlibre-xserver-xnest
   - name: xorg-server-common
     pkgdesc: Xorg server common files
     depends:
       - xkeyboard-config
       - xorg-xkbcomp
       - xorg-setxkbmap
+    replaces:
+      - xlibre-xserver-common
   - name: xorg-server-devel
     pkgdesc: Development files for the X.Org X server
     depends:
@@ -177,6 +187,10 @@ pkgname:
       - libpciaccess
       - pixman
       - xorg-util-macros
+    replaces:
+      - xlibre-xserver-devel
   - name: xorg-server-src
     pkgdesc: Source files of the X.Org X server
+    replaces:
+      - xlibre-xserver-src
 # generated with artixpkg 0.38.5-1-any
