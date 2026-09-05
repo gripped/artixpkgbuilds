@@ -3,7 +3,7 @@
 
 pkgname=xf86-video-vmware
 pkgver=13.4.0
-pkgrel=4
+pkgrel=4.3
 pkgdesc="X.org vmware video driver"
 arch=(x86_64)
 url="https://xorg.freedesktop.org/"
@@ -11,6 +11,7 @@ license=('MIT AND X11')
 depends=('mesa' 'libudev' 'libxext' 'libx11' 'libdrm' 'glibc')
 makedepends=('xorg-server-devel' 'X-ABI-VIDEODRV_VERSION=25.2') # 'git')
 conflicts=('xorg-server<21.1.1' 'X-ABI-VIDEODRV_VERSION<25' 'X-ABI-VIDEODRV_VERSION>=26')
+replaces=(${pkgname//xf86/xlibre})
 groups=('xorg-drivers')
 options=('!emptydirs')
 source=(${url}/releases/individual/driver/${pkgname}-${pkgver}.tar.xz{,.sig})
