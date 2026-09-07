@@ -54,7 +54,7 @@ repos:
     packages: []
     debug: []
   galaxy:
-    version: 0.20.0-4
+    version: 0.21.0-1
     packages:
-      - vdirsyncer-0.20.0-4-any.pkg.tar.zst
+      - vdirsyncer-0.21.0-1-any.pkg.tar.zst
     debug: []
