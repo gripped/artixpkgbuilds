@@ -50,11 +50,12 @@ repos:
     packages: []
     debug: []
   galaxy-gremlins:
-    version: null
-    packages: []
+    version: 20260313-41
+    packages:
+      - vhba-module-20260313-41-x86_64.pkg.tar.zst
     debug: []
   galaxy:
-    version: 20260313-40
+    version: 20260313-46
     packages:
-      - vhba-module-20260313-40-x86_64.pkg.tar.zst
+      - vhba-module-20260313-46-x86_64.pkg.tar.zst
     debug: []
