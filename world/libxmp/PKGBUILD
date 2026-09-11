@@ -4,7 +4,7 @@
 # Contributor: grimi
 
 pkgname=libxmp
-pkgver=4.7.1
+pkgver=4.7.3
 pkgrel=1
 pkgdesc="Library that supports over 90 module formats (Amiga, Atari, ..)"
 arch=('x86_64')
@@ -13,7 +13,7 @@ license=('MIT')
 depends=('glibc')
 options=(!emptydirs)
 source=("http://download.sourceforge.net/project/xmp/$pkgname/$pkgver/$pkgname-$pkgver.tar.gz")
-sha256sums=('398052ddff91472e9939240422d10b92149a1f5b80d2455ff5dde129f10c28e5')
+sha256sums=('b6a98797e4fb9c9a705f5d53112aa5214561857e929a644928b9e658930d9440')
 
 build() {
   cd $pkgname-$pkgver
