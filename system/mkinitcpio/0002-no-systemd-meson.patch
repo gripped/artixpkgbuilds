@@ -45,4 +45,34 @@ index 46ae333..21172bd 100644
  subdir('udev')
 -- 
 2.54.0
-
+diff --git a/meson.build b/meson.build
+index 21172bd..3e77554 100644
+--- a/meson.build
++++ b/meson.build
+@@ -34,11 +34,11 @@ want_alpm = get_option('alpm')
+ want_presets = get_option('presets')
+ want_docs = get_option('docs')
+ vconsole_conf = get_option('vconsole_conf')
+-want_systemd_hooks = get_option('systemd_hooks')
++want_udev_hooks = get_option('udev_hooks')
+ 
+ hooks = 'base udev autodetect microcode modconf kms keyboard keymap consolefont block filesystems fsck'
+-if want_systemd_hooks
+-    hooks = 'base systemd autodetect microcode modconf kms keyboard sd-vconsole block filesystems fsck'
++if want_udev_hooks
++    hooks = 'base udev autodetect microcode modconf kms keyboard consolefont block filesystems fsck'
+ endif
+ 
+ conf_data = configuration_data({
+diff --git a/meson.options b/meson.options
+index 0efc130..e9c8ef3 100644
+--- a/meson.options
++++ b/meson.options
+@@ -12,5 +12,5 @@ option('docs', type: 'boolean', value: true,
+        description: 'install manual pages')
+ option('vconsole_conf', type: 'string', value: 'vconsole.conf',
+        description: 'name of vconsole configuration file')
+-option('systemd_hooks', type: 'boolean', value: false,
+-       description: 'default to systemd hooks')
++option('udev_hooks', type: 'boolean', value: false,
++       description: 'default to udev hooks')
