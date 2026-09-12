@@ -1,9 +1,9 @@
 ---
-version: 50.4-1
+version: 50.5-1
 pkgbase:
   name: gnome-maps
   pkgdesc: Find places around the world
-  pkgver: 50.4
+  pkgver: 50.5
   pkgrel: 1
   url: https://apps.gnome.org/Maps
   arch:
@@ -39,11 +39,11 @@ pkgbase:
     - libxml2
     - pango
   source:
-    - git+https://gitlab.gnome.org/GNOME/gnome-maps.git?signed#tag=50.4
+    - git+https://gitlab.gnome.org/GNOME/gnome-maps.git?signed#tag=50.5
   validpgpkeys:
     - 7448F128A4B18AB2EF87F092FA6624580A420D5D
   b2sums:
-    - da0b00b3f31575a9af002738cc0ce2f21e46726da27ca28ee7f478018d6e1773ccb2ba5cd9970f899b4bb9776962d80c1f65dc17e4dcde0dad7155bf5fd6ad5f
+    - 87588809720b16c52c3361c6171915d6bfb0c1c6f68487d40ac5947cbfb6cf16e2855c72adbe24fbd34b40ff2c41dffebe6a28a63f724e50f5594d144790838c
 pkgname:
   - name: gnome-maps
-# generated with artixpkg 0.39.1-1-any
+# generated with artixpkg 0.40.0-1-any
