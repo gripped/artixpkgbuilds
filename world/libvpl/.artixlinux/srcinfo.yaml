@@ -1,10 +1,10 @@
 ---
-version: 2.16.0-2
+version: 2.17.0-1
 pkgbase:
   name: libvpl
   pkgdesc: Intel Video Processing Library
-  pkgver: 2.16.0
-  pkgrel: 2
+  pkgver: 2.17.0
+  pkgrel: 1
   url: https://intel.github.io/libvpl/
   arch:
     - x86_64
@@ -29,9 +29,9 @@ pkgbase:
   options:
     - '!emptydirs'
   source:
-    - https://github.com/intel/libvpl/archive/v2.16.0/libvpl-2.16.0.tar.gz
+    - https://github.com/intel/libvpl/archive/v2.17.0/libvpl-2.17.0.tar.gz
   sha256sums:
-    - d60931937426130ddad9f1975c010543f0da99e67edb1c6070656b7947f633b6
+    - 4de3e2faf1e8307fb282e4a43f443191810f6a6b0a484fffa7995ba1c814c6ec
 pkgname:
   - name: libvpl
-# generated with artixpkg 0.37.6-1-any
+# generated with artixpkg 0.38.5-1-any
