@@ -1,19 +1,19 @@
 ---
-version: 7.1-12
+version: 7.1-13
 pkgbase:
   name: dvd+rw-tools
   pkgdesc: Tools to master DVD media
   pkgver: 7.1
-  pkgrel: 12
-  url: https://fy.chalmers.se/~appro/linux/DVD+RW
+  pkgrel: 13
+  url: https://fy.chalmers.se/~appro/linux/DVD+RW/
   arch:
     - x86_64
   license:
     - GPL-2.0-or-later
   depends:
     - cdrtools
-    - gcc-libs
     - glibc
+    - libstdc++
   source:
     - https://ftp2.osuosl.org/pub/blfs/conglomeration/dvd+rw-tools/dvd+rw-tools-7.1.tar.gz
     - dvd+rw-tools-7.0-wexit.patch
@@ -44,4 +44,4 @@ pkgbase:
     - 8751f6c5572c37a292467a658ca5464d310e071bd66fe6f9a2f9aeece5aa0b7ef91fb93867e25990e3246911ede05918ef0c75e99bb23db49dbf74a55ff31b8d
 pkgname:
   - name: dvd+rw-tools
-# generated with artixpkg 0.37.2-1-any
+# generated with artixpkg 0.38.2.r6.ga4d1be2-1-any
