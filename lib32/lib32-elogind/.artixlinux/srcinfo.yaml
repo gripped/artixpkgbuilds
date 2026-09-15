@@ -1,9 +1,9 @@
 ---
-version: 257.14-1
+version: 257.16-1
 pkgbase:
   name: lib32-elogind
   pkgdesc: The systemd project's logind, extracted to a standalone package (32-bit)
-  pkgver: 257.14
+  pkgver: 257.16
   pkgrel: 1
   url: https://github.com/elogind/elogind
   arch:
@@ -42,9 +42,9 @@ pkgbase:
   provides:
     - libelogind.so
   source:
-    - git+https://github.com/elogind/elogind.git#tag=v257.14
+    - git+https://github.com/elogind/elogind.git#tag=v257.16
   sha256sums:
-    - 79c4d514403bbbf824b33f11d697b2f37b8fcc47484075baedca2d0faa9cb3b9
+    - 8053805755c892c62ff89e8f2ab05ad27ee7b5c303e66eaa5b28979f6b54ec82
 pkgname:
   - name: lib32-elogind
-# generated with artixpkg 0.38.5-1-any
+# generated with artixpkg 0.39.1-1-any
