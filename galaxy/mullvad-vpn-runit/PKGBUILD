@@ -1,0 +1,18 @@
+# Maintainer: arc-d3v <arc-d3v@artixlinux.org>
+
+pkgname=mullvad-vpn-runit
+pkgver=1.0
+pkgrel=1
+pkgdesc="runit service for Mullvad VPN"
+arch=("any")
+url="https://artixlinux.org"
+license=("GPL")
+provides=('init-mullvad')
+conflicts=('init-mullvad')
+depends=("runit" "mullvad-vpn-daemon")
+source=("mullvad-daemon.run")
+sha256sums=("5affc5eea611b4328e2a3859994ac43178c0d3a5e00ad8783fccae52de83e6db")
+
+package() {
+  install -Dm755 ${srcdir}/mullvad-daemon.run "$pkgdir/etc/runit/sv/mullvad-daemon/run"
+}

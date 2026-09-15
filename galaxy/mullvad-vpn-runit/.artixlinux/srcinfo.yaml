@@ -1,0 +1,26 @@
+---
+version: 1.0-1
+pkgbase:
+  name: mullvad-vpn-runit
+  pkgdesc: runit service for Mullvad VPN
+  pkgver: 1.0
+  pkgrel: 1
+  url: https://artixlinux.org
+  arch:
+    - any
+  license:
+    - GPL
+  depends:
+    - runit
+    - mullvad-vpn-daemon
+  provides:
+    - init-mullvad
+  conflicts:
+    - init-mullvad
+  source:
+    - mullvad-daemon.run
+  sha256sums:
+    - 5affc5eea611b4328e2a3859994ac43178c0d3a5e00ad8783fccae52de83e6db
+pkgname:
+  - name: mullvad-vpn-runit
+# generated with artixpkg 0.38.5-1-any
