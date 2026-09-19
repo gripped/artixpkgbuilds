@@ -18,3 +18,4 @@ The original patch got reverted upstream, but LaneCount and SupportedLaneCount n
 -  core::simd::LaneCount<N>: core::simd::SupportedLaneCount,
  {
  }
+ 
