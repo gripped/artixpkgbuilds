@@ -1,0 +1,30 @@
+---
+version: 20260924-1
+pkgbase:
+  name: ipp-usb-openrc
+  pkgdesc: OpenRC ipp-usb init script
+  pkgver: 20260924
+  pkgrel: 1
+  url: https://gitlab.alpinelinux.org/alpine/aports/-/blob/master/testing/ipp-usb/
+  arch:
+    - any
+  groups:
+    - openrc-galaxy
+  license:
+    - GPL-2.0-only
+  depends:
+    - openrc
+    - ipp-usb
+  provides:
+    - init-ipp-usb
+  conflicts:
+    - init-ipp-usb
+  backup:
+    - etc/conf.d/ipp-usb
+  source:
+    - ipp-usb.initd
+  sha256sums:
+    - 106e551e94686d32c9bfde468d1c3262d3b4715a011b932182c9ed26402bcff3
+pkgname:
+  - name: ipp-usb-openrc
+# generated with artixpkg 0.40.0-1-any
