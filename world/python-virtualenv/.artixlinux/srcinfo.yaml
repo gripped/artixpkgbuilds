@@ -1,9 +1,9 @@
 ---
-version: 21.12.1-1
+version: 21.14.1-1
 pkgbase:
   name: python-virtualenv
   pkgdesc: Virtual Python Environment builder
-  pkgver: 21.12.1
+  pkgver: 21.14.1
   pkgrel: 1
   url: https://virtualenv.pypa.io
   arch:
@@ -51,14 +51,14 @@ pkgbase:
   options:
     - '!makeflags'
   source:
-    - python-virtualenv::git+https://github.com/pypa/virtualenv#tag=21.12.1
+    - python-virtualenv::git+https://github.com/pypa/virtualenv#tag=21.14.1
     - no-llm-crap.patch
   sha512sums:
-    - 42b458218819f36e1a58487d0acc666552c8b3c5cafda35e5880b3ae107bc4d54c90a687ed088367b3a1d873d4de810bb8375560e120e650dfb478986fcd54ae
+    - 48af25fd5e9e347217eecb95adb261f202700e55a1156e4805e0f17484be8aaf07364b2f268d5836bcceea16085e7ae6de6db1ef721318d70edb6142c5cac15a
     - 243e7a6b08616b9bd30bd32295fe52b32ce3902f462dcd21f7f5ba3979577ad79fdf571965dbb6ff8d85ddd3ac8aa52f6937bfd2c995e518c6729c84033fe8e5
   b2sums:
-    - 6264aaa0c8522a51a3a7fedd0499e39093156e48a45fcd0c4f11de1886c401c09be97a15e3b99eb7168f095110698286ede98e809de91493098f99022fb2bd41
+    - 2245cf3c01c5ac465d4a0993a8c40ea27c0e829fcf6bf46f0d0125996ecaab5edf2b60afdba4900b50fdc682c5359bb2d68615c9f4b86690bf939198a48ead45
     - f8291a2cfce1adcd1ca4d4b861967d7c6d22b7a5828978d91bc26c4d0a53268bcebb93601b23e550339a8a05dbc3cc4943fab5e8d138e268a078fb691e92f895
 pkgname:
   - name: python-virtualenv
-# generated with artixpkg 0.39.1-1-any
+# generated with artixpkg 0.40.0-1-any
