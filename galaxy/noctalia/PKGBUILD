@@ -3,7 +3,7 @@
 
 _pkgname=noctalia
 pkgname=noctalia
-pkgver=5.1.0
+pkgver=5.2.1
 pkgrel=1
 pkgdesc='A sleek, customizable desktop shell crafted for Wayland'
 arch=('x86_64' 'aarch64')
@@ -59,7 +59,7 @@ makedepends=(
   'wayland-protocols'
 )
 source=("${_pkgname}-${pkgver}.tar.gz::${url}/archive/refs/tags/v${pkgver//_/-}.tar.gz")
-sha256sums=('fcf37d99ecb6093b38df8f0d6a18012f518895cd8d3934fd16164a7d0b7b3062')
+sha256sums=('5418f6b759de96e56a4bbca809c5a4c60a8a9594bdf67ecb8c5a341f97c221d1')
 
 build() {
   CXXFLAGS+=" -Wno-unused-result"
