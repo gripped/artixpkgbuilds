@@ -1,9 +1,9 @@
 ---
-version: 4.11.14-1
+version: 4.12.2-1
 pkgbase:
   name: python-platformdirs
   pkgdesc: A library to determine platform-specific system directories
-  pkgver: 4.11.14
+  pkgver: 4.12.2
   pkgrel: 1
   url: https://github.com/tox-dev/platformdirs
   arch:
@@ -23,11 +23,11 @@ pkgbase:
   depends:
     - python
   source:
-    - python-platformdirs::git+https://github.com/tox-dev/platformdirs#tag=4.11.14
+    - python-platformdirs::git+https://github.com/tox-dev/platformdirs#tag=4.12.2
   sha512sums:
-    - bd8a143f896761d9374b9249700c67389c32edbf5edafa3b47bc6c75c3ab10a6fdd031f879184a5d0a1fb62196490b6d886e450b6639a25b9aa1c4778b71edb0
+    - e203a44fbd5a23560e80d726cc821703d6f131bf965b71d592bded6c650c413645dbef9c0eafbdd030b3f9dfbb38ca449345f4e7449435ae16b515c268ccf6f3
   b2sums:
-    - af5d03c86746aaf13525b448f9b5e8ff12531e4210c7a948fec94c8b612aedb58c7db7befe0cc0bb7674f4a8e0f40a5bdd3d463c8e10b5732376fb5532b06707
+    - 2e05214a7d585d7ab7220ded51b902acd9720da4a116dec41caeaae138a34bfb69a23f584297cb2dcf4081125aad6f03c6fa136bd3e8265b4d6542e95abb521e
 pkgname:
   - name: python-platformdirs
-# generated with artixpkg 0.39.1-1-any
+# generated with artixpkg 0.40.0-1-any
