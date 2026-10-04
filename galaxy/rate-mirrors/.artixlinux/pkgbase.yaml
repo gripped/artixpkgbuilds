@@ -54,7 +54,7 @@ repos:
     packages: []
     debug: []
   galaxy:
-    version: 0.31.0-1
+    version: 0.33.0-1
     packages:
-      - rate-mirrors-0.31.0-1-x86_64.pkg.tar.zst
+      - rate-mirrors-0.33.0-1-x86_64.pkg.tar.zst
     debug: []
