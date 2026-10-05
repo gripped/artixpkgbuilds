@@ -1,0 +1,71 @@
+---
+team: galaxy
+actions:
+  addRepo: galaxy
+  removeRepo: null
+  triggersBuild: true
+  triggersRebuild: false
+  triggersRepoAdd: true
+  triggersRepoRemove: false
+  triggersNoCheck: false
+repos:
+  system-goblins:
+    version: null
+    packages: []
+    debug: []
+  system-gremlins:
+    version: null
+    packages: []
+    debug: []
+  system:
+    version: null
+    packages: []
+    debug: []
+  world-goblins:
+    version: null
+    packages: []
+    debug: []
+  world-gremlins:
+    version: null
+    packages: []
+    debug: []
+  world:
+    version: null
+    packages: []
+    debug: []
+  lib32-goblins:
+    version: null
+    packages: []
+    debug: []
+  lib32-gremlins:
+    version: null
+    packages: []
+    debug: []
+  lib32:
+    version: null
+    packages: []
+    debug: []
+  galaxy-goblins:
+    version: null
+    packages: []
+    debug: []
+  galaxy-gremlins:
+    version: null
+    packages: []
+    debug: []
+  galaxy:
+    version: 1.2.35-1
+    packages:
+      - lsp-plugins-1.2.35-1-x86_64.pkg.tar.zst
+      - lsp-plugins-clap-1.2.35-1-x86_64.pkg.tar.zst
+      - lsp-plugins-docs-1.2.35-1-x86_64.pkg.tar.zst
+      - lsp-plugins-gst-1.2.35-1-x86_64.pkg.tar.zst
+      - lsp-plugins-ladspa-1.2.35-1-x86_64.pkg.tar.zst
+      - lsp-plugins-lv2-1.2.35-1-x86_64.pkg.tar.zst
+      - lsp-plugins-standalone-1.2.35-1-x86_64.pkg.tar.zst
+      - lsp-plugins-vst-1.2.35-1-x86_64.pkg.tar.zst
+      - lsp-plugins-vst3-1.2.35-1-x86_64.pkg.tar.zst
+      - liblsp-audio-jack-lib-1.2.35-1-x86_64.pkg.tar.zst
+      - liblsp-audio-pipewire-lib-1.2.35-1-x86_64.pkg.tar.zst
+      - liblsp-r3d-glx-lib-1.2.35-1-x86_64.pkg.tar.zst
+    debug: []
