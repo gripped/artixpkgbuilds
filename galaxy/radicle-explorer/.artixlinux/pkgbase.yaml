@@ -54,9 +54,8 @@ repos:
     packages: []
     debug: []
   galaxy:
-    version: 0.25.0-1
+    version: 0.28.0-1
     packages:
-      - radicle-explorer-0.25.0-1-x86_64.pkg.tar.zst
-      - radicle-httpd-0.25.0-1-x86_64.pkg.tar.zst
-    debug:
-      - radicle-explorer-debug-0.25.0-1-x86_64.pkg.tar.zst
+      - radicle-explorer-0.28.0-1-x86_64.pkg.tar.zst
+      - radicle-httpd-0.28.0-1-x86_64.pkg.tar.zst
+    debug: []
