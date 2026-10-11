@@ -53,8 +53,8 @@ repos:
     packages: []
     debug: []
   galaxy:
-    version: 2.6.3-4
+    version: 2.6.5-1
     packages:
-      - onionshare-2.6.3-4-any.pkg.tar.zst
+      - onionshare-2.6.5-1-any.pkg.tar.zst
     debug: []
 team: galaxy
