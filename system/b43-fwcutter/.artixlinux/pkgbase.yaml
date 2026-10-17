@@ -17,9 +17,9 @@ repos:
     packages: []
     debug: []
   system:
-    version: 020-1
+    version: 021-1
     packages:
-      - b43-fwcutter-020-1-x86_64.pkg.tar.zst
+      - b43-fwcutter-021-1-x86_64.pkg.tar.zst
     debug: []
   world-goblins:
     version: null
