@@ -1,10 +1,10 @@
 ---
-version: 1.005-5.1
+version: 1.005-6
 pkgbase:
   name: perl-cairo-gobject
   pkgdesc: Integrate Cairo into the Glib type system
   pkgver: 1.005
-  pkgrel: 5.1
+  pkgrel: 6
   url: https://metacpan.org/dist/Cairo-GObject
   arch:
     - x86_64
@@ -24,4 +24,4 @@ pkgbase:
     - 8d896444d71e1d0bca3d24e31e5d82bd0d9542aaed91d1fb7eab367bce675c50
 pkgname:
   - name: perl-cairo-gobject
-# generated with artixpkg 0.36.4-1-any
+# generated with artixpkg 0.40.0-1-any
