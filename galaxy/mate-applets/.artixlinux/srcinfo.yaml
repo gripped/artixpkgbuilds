@@ -1,0 +1,49 @@
+---
+version: 1.28.1-3.1
+pkgbase:
+  name: mate-applets
+  pkgdesc: Applets for MATE panel
+  pkgver: 1.28.1
+  pkgrel: 3.1
+  url: https://github.com/mate-desktop/mate-applets
+  arch:
+    - x86_64
+  groups:
+    - mate-extra
+  license:
+    - GPL-2.0-or-later
+  makedepends:
+    - git
+    - glib2-devel
+    - mate-common
+    - yelp-tools
+  depends:
+    - at-spi2-core
+    - cairo
+    - cpupower
+    - dbus-glib
+    - dconf
+    - gdk-pixbuf2
+    - glib2
+    - glibc
+    - gtk3
+    - hicolor-icon-theme
+    - libgtop
+    - libmateweather
+    - libnl
+    - libnotify
+    - libwnck3
+    - libx11
+    - libxml2
+    - mate-desktop
+    - mate-panel
+    - pango
+    - polkit
+    - upower
+  source:
+    - git+https://github.com/mate-desktop/mate-applets.git#tag=v1.28.1
+  b2sums:
+    - d7a0e451f38d3112168789160622e941636d097be72f0ed5ee6544b0f238d1f15738ddeb3389e88b9b7f434675211222ebecbfd96f7a2012c7b8d063d5ae1c81
+pkgname:
+  - name: mate-applets
+# generated with artixpkg 0.40.0-1-any
