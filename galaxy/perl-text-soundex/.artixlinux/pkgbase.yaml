@@ -54,7 +54,7 @@ repos:
     packages: []
     debug: []
   galaxy:
-    version: 3.05-14
+    version: 3.05-15
     packages:
-      - perl-text-soundex-3.05-14-x86_64.pkg.tar.zst
+      - perl-text-soundex-3.05-15-x86_64.pkg.tar.zst
     debug: []
