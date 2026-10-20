@@ -54,7 +54,7 @@ repos:
     packages: []
     debug: []
   galaxy:
-    version: 1.7-26
+    version: 1.7-27
     packages:
-      - perl-text-iconv-1.7-26-x86_64.pkg.tar.zst
+      - perl-text-iconv-1.7-27-x86_64.pkg.tar.zst
     debug: []
