@@ -54,7 +54,7 @@ repos:
     packages: []
     debug: []
   galaxy:
-    version: 4.4.0-6
+    version: 4.4.0-7
     packages:
-      - claws-mail-4.4.0-6-x86_64.pkg.tar.zst
+      - claws-mail-4.4.0-7-x86_64.pkg.tar.zst
     debug: []
