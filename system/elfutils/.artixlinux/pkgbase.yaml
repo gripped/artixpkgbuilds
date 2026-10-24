@@ -17,11 +17,11 @@ repos:
     packages: []
     debug: []
   system:
-    version: 0.196-1
+    version: 0.197-1
     packages:
-      - elfutils-0.196-1-x86_64.pkg.tar.zst
-      - libelf-0.196-1-x86_64.pkg.tar.zst
-      - debuginfod-0.196-1-x86_64.pkg.tar.zst
+      - elfutils-0.197-1-x86_64.pkg.tar.zst
+      - libelf-0.197-1-x86_64.pkg.tar.zst
+      - debuginfod-0.197-1-x86_64.pkg.tar.zst
     debug: []
   world-goblins:
     version: null
