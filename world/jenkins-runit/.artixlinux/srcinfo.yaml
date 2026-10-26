@@ -1,0 +1,28 @@
+---
+version: 20200613-4
+pkgbase:
+  name: jenkins-runit
+  pkgdesc: Runit service script for jenkins
+  pkgver: 20200613
+  pkgrel: 4
+  url: https://artixlinux.org
+  arch:
+    - any
+  groups:
+    - runit-galaxy
+  license:
+    - BSD
+  depends:
+    - jenkins
+    - runit
+  provides:
+    - init-jenkins
+  conflicts:
+    - init-jenkins
+  source:
+    - jenkins.run
+  sha256sums:
+    - 29176d8e9d807cb4bae874055ced7598c0ea8f558f1bc4cdaeaaa2fc6583918d
+pkgname:
+  - name: jenkins-runit
+# generated with artixpkg 0.40.0-1-any
