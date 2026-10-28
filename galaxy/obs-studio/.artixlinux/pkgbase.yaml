@@ -1,7 +1,7 @@
 ---
 actions:
   addRepo: galaxy
-  removeRepo: world
+  removeRepo: galaxy-gremlins
   triggersBuild: false
   triggersRebuild: false
   triggersRepoAdd: true
@@ -53,9 +53,8 @@ repos:
     packages: []
     debug: []
   galaxy:
-    version: 32.2.2-1
+    version: 33.0.0-1
     packages:
-      - obs-studio-32.2.2-1-x86_64.pkg.tar.zst
-      - obs-studio-plugin-browser-32.2.2-1-x86_64.pkg.tar.zst
+      - obs-studio-33.0.0-1-x86_64.pkg.tar.zst
     debug: []
 team: galaxy
