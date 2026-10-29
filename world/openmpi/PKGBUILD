@@ -9,8 +9,8 @@ pkgname=(
   openmpi
   openmpi-docs
 )
-pkgver=5.0.10
-pkgrel=2
+pkgver=5.0.11
+pkgrel=1
 pkgdesc='High performance message passing library (MPI)'
 arch=(x86_64)
 url='https://www.open-mpi.org'
@@ -34,8 +34,8 @@ makedepends=(
 source=(
   https://www.open-mpi.org/software/ompi/v${pkgver%.*}/downloads/$pkgbase-$pkgver.tar.bz2
 )
-sha256sums=('0acecc4fc218e5debdbcb8a41d182c6b0f1d29393015ed763b2a91d5d7374cc6')
-b2sums=('1b2730a915dc6722e16094d3ebb84bda143c60704a4f47f6ae38c8eb3433c15196cee354790a69e73996665f48f3f0b8e58921f170f00b40c689cd337e8d28cd')
+sha256sums=('e668a3c4acd50c41dc204c8a6dd98a611e0f26af89cf677577fa9be8a2698003')
+b2sums=('0e25f4ba8a8c94b3370e80d060d1bf21d631311cfea5ef30b55fad4e3a708d21342687a49edcb8ddcd2d63244db2c6cf278fcb1dba38c47ce1fb46c1bcf370a1')
 
 _pick() {
   local p="$1" f d; shift
