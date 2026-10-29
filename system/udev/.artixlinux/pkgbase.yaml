@@ -17,10 +17,10 @@ repos:
     packages: []
     debug: []
   system:
-    version: 262.1-1
+    version: 262.1-2
     packages:
-      - udev-262.1-1-x86_64.pkg.tar.zst
-      - libudev-262.1-1-x86_64.pkg.tar.zst
+      - udev-262.1-2-x86_64.pkg.tar.zst
+      - libudev-262.1-2-x86_64.pkg.tar.zst
     debug: []
   world-goblins:
     version: null
