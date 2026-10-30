@@ -46,15 +46,16 @@ repos:
     packages: []
     debug: []
   galaxy-goblins:
-    version: null
-    packages: []
+    version: 2.65.0-2
+    packages:
+      - deltachat-rpc-server-2.65.0-2-x86_64.pkg.tar.zst
     debug: []
   galaxy-gremlins:
     version: null
     packages: []
     debug: []
   galaxy:
-    version: 2.62.0-1
+    version: 2.65.0-1
     packages:
-      - deltachat-rpc-server-2.62.0-1-x86_64.pkg.tar.zst
+      - deltachat-rpc-server-2.65.0-1-x86_64.pkg.tar.zst
     debug: []
