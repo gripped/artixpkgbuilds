@@ -54,7 +54,7 @@ repos:
     packages: []
     debug: []
   galaxy:
-    version: 2.62.0-1.1
+    version: 2.65.0-1
     packages:
-      - deltachat-desktop-2.62.0-1.1-any.pkg.tar.zst
+      - deltachat-desktop-2.65.0-1-any.pkg.tar.zst
     debug: []
