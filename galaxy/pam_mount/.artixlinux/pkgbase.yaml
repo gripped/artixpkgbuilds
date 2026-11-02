@@ -46,15 +46,16 @@ repos:
     packages: []
     debug: []
   galaxy-goblins:
-    version: null
-    packages: []
+    version: 2.22-2
+    packages:
+      - pam_mount-2.22-2-x86_64.pkg.tar.zst
     debug: []
   galaxy-gremlins:
     version: null
     packages: []
     debug: []
   galaxy:
-    version: 2.22-1
+    version: 2.23-1
     packages:
-      - pam_mount-2.22-1-x86_64.pkg.tar.zst
+      - pam_mount-2.23-1-x86_64.pkg.tar.zst
     debug: []
