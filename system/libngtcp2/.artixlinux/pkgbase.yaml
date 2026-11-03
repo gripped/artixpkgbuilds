@@ -9,17 +9,18 @@ actions:
   triggersNoCheck: false
 repos:
   system-goblins:
-    version: null
-    packages: []
+    version: 1.26.0-2
+    packages:
+      - libngtcp2-1.26.0-2-x86_64.pkg.tar.zst
     debug: []
   system-gremlins:
     version: null
     packages: []
     debug: []
   system:
-    version: 1.25.0-1
+    version: 1.26.0-1
     packages:
-      - libngtcp2-1.25.0-1-x86_64.pkg.tar.zst
+      - libngtcp2-1.26.0-1-x86_64.pkg.tar.zst
     debug: []
   world-goblins:
     version: null
