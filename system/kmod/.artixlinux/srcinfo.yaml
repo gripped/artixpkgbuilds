@@ -1,0 +1,45 @@
+---
+version: 34.3-2
+pkgbase:
+  name: kmod
+  pkgdesc: Linux kernel module management tools and library
+  pkgver: 34.3
+  pkgrel: 2
+  url: https://git.kernel.org/pub/scm/utils/kernel/kmod/kmod.git
+  arch:
+    - x86_64
+  license:
+    - LGPL-2.1-or-later
+    - GPL-2.0-or-later
+  checkdepends:
+    - linux-headers
+    - libelf
+  makedepends:
+    - git
+    - meson
+    - scdoc
+  depends:
+    - glibc
+    - zlib
+    - openssl
+    - xz
+    - zstd
+  provides:
+    - libkmod.so
+  options:
+    - strip
+  source:
+    - git+https://git.kernel.org/pub/scm/utils/kernel/kmod/kmod.git?signed#tag=v34.3
+    - depmod-search.conf
+    - depmod.hook
+    - depmod.script
+  validpgpkeys:
+    - EAB33C9690013C733916AC839BA2A5A630CBEA53
+  sha256sums:
+    - 29ec295f26790ba5d9298429a7c4f1ebf451730b098ea6ce52facd2fce418053
+    - 1a92bfeae870f61ce814577e69d2a147a9c0caf6aed1131243e4179241fcc4a8
+    - c11c2a0f66ea405493e8617689ca10818dc81dd1dddc19bdb220c8b2917119c1
+    - 18661aa40c25580f04d2ac3f32e54c2997c0994d1c829905537b413a9d291ac6
+pkgname:
+  - name: kmod
+# generated with artixpkg 0.40.0-1-any
