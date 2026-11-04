@@ -13,7 +13,6 @@ pkgbase:
   makedepends:
     - rdma-core
     - cuda
-    - rocm-language-runtime
   depends:
     - binutils
     - glibc
@@ -40,4 +39,4 @@ pkgbase:
     - 2b3b4575ce64b947ecc42c9055934bcd7e5feb30031c6504f8cc3057cfc138b28c2826a6cc55be56d186e09e20c6201dacfc308647d9b62a5d33688348d15a68
 pkgname:
   - name: openucx
-# generated with artixpkg 0.38.5-1-any
+# generated with artixpkg 0.40.0-1-any
