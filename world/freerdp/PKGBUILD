@@ -3,7 +3,7 @@
 # Contributor: Stijn Segers <francesco dot borromini at gmail dot com>
 
 pkgname=freerdp
-pkgver=3.32.2
+pkgver=3.33.1
 _libver=${pkgver/.*/}
 pkgrel=1
 epoch=2
@@ -32,6 +32,7 @@ depends=(
   libxtst
   sdl3
   sdl3_ttf
+  sndio
   wayland
 )
 makedepends=(
@@ -69,8 +70,8 @@ provides=(
 source=(
   "git+https://github.com/$pkgname/$pkgname#tag=$pkgver"
 )
-sha512sums=('8616eaa0ee00cb8ffe85eea90d4589b4e4c452c1461253abdab6030d01a517e47eb804dde222d2d4a7a7f8eda49562f923b8b924616b5e803ef3bdc01e22ac87')
-b2sums=('184d17010dab3cb6770daf4c0922a56854baf7e05b96795e25246b9d96cc0f961dc555c82b38bba9974f10aa5c1bdb8c574814990efe759cce55d1f0ef4636cb')
+sha512sums=('6b871f9ed565042a8b9b20ac658ae3131ab55618170d3f55e4bd5d25ad7f6fadc01b27aec6ee780eabcd5ae83a83a1b63f67b2176bc37c91610b6573fa32d5d3')
+b2sums=('4c4f77311824dc5f913544e7367b06918de49b4fcf5164216d3e665c716382b21b0e0ddec81a0442ad5e9cc88dbe8a5e2d1b4a0688d9062f58272100d18bf1cc')
 
 build() {
   # gcc14 buildfix
