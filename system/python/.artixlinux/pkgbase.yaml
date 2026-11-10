@@ -9,20 +9,18 @@ actions:
   triggersNoCheck: false
 repos:
   system-goblins:
-    version: 3.14.9-2
-    packages:
-      - python-3.14.9-2-x86_64.pkg.tar.zst
-      - python-tests-3.14.9-2-x86_64.pkg.tar.zst
+    version: null
+    packages: []
     debug: []
   system-gremlins:
     version: null
     packages: []
     debug: []
   system:
-    version: 3.14.9-1
+    version: 3.14.10-1
     packages:
-      - python-3.14.9-1-x86_64.pkg.tar.zst
-      - python-tests-3.14.9-1-x86_64.pkg.tar.zst
+      - python-3.14.10-1-x86_64.pkg.tar.zst
+      - python-tests-3.14.10-1-x86_64.pkg.tar.zst
     debug: []
   world-goblins:
     version: null
