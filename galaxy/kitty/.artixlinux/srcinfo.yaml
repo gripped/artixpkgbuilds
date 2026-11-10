@@ -1,0 +1,93 @@
+---
+version: 0.50.0-1
+pkgbase:
+  name: kitty
+  pkgdesc: A modern, hackable, featureful, OpenGL-based terminal emulator
+  pkgver: 0.50.0
+  pkgrel: 1
+  url: https://github.com/kovidgoyal/kitty
+  arch:
+    - x86_64
+  license:
+    - GPL-3.0-only
+  makedepends:
+    - go
+    - libxinerama
+    - libxrandr
+    - shader-slang
+    - simde
+    - ttf-nerd-fonts-symbols-mono
+    - wayland-protocols
+  depends:
+    - cairo
+    - dbus
+    - freetype2
+    - fontconfig
+    - harfbuzz
+    - hicolor-icon-theme
+    - lcms2
+    - libgl
+    - libpng
+    - librsync
+    - libx11
+    - libxcursor
+    - libxkbcommon
+    - libxkbcommon-x11
+    - libxi
+    - openssl
+    - python3
+    - wayland
+    - xxhash
+    - zlib
+  options:
+    - '!lto'
+  source:
+    - https://github.com/kovidgoyal/kitty/releases/download/v0.50.0/kitty-0.50.0.tar.xz
+    - https://github.com/kovidgoyal/kitty/releases/download/v0.50.0/kitty-0.50.0.tar.xz.sig
+  validpgpkeys:
+    - 3CE1780F78DD88DF45194FD706BC317B515ACE7C
+  b2sums:
+    - 291ee2eca3541811ad3adda8b7cca24fd0d46b82446551116613f078e55a8c36a5073dace05dcbd9a7e72f642130cf261ff733dcdeaa0c4852c6194b06712fb2
+    - SKIP
+pkgname:
+  - name: kitty
+    depends:
+      - cairo
+      - dbus
+      - freetype2
+      - fontconfig
+      - harfbuzz
+      - hicolor-icon-theme
+      - lcms2
+      - libgl
+      - libpng
+      - librsync
+      - libx11
+      - libxcursor
+      - libxkbcommon
+      - libxkbcommon-x11
+      - libxi
+      - openssl
+      - python3
+      - wayland
+      - xxhash
+      - zlib
+      - kitty-terminfo
+      - kitty-shell-integration
+    optdepends:
+      - 'imagemagick: viewing images with icat'
+      - 'python-pygments: syntax highlighting in kitty +kitten diff'
+      - 'libcanberra: playing "bell" sound on terminal bell'
+  - name: kitty-terminfo
+    pkgdesc: Terminfo for kitty, an OpenGL-based terminal emulator
+    depends:
+      - ncurses
+  - name: kitty-shell-integration
+    pkgdesc: Shell integration scripts for kitty, an OpenGL-based terminal emulator
+    depends:
+      - python3
+    optdepends:
+      - 'bash: Bash completions'
+      - 'zsh: ZSH completions'
+      - 'fish: Fish completions'
+# generated with artixpkg 0.38.5-1-any
