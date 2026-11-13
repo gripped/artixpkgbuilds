@@ -49,12 +49,13 @@ repos:
     packages: []
     debug: []
   galaxy-gremlins:
-    version: null
-    packages: []
+    version: 0.116.1-2
+    packages:
+      - nushell-0.116.1-2-x86_64.pkg.tar.zst
     debug: []
   galaxy:
-    version: 0.116.1-1
+    version: 0.117.0-2
     packages:
-      - nushell-0.116.1-1-x86_64.pkg.tar.zst
+      - nushell-0.117.0-2-x86_64.pkg.tar.zst
     debug: []
 team: galaxy
