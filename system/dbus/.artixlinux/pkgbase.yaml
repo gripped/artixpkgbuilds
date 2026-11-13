@@ -17,10 +17,10 @@ repos:
     packages: []
     debug: []
   system:
-    version: 1.16.2-2
+    version: 1.16.4-1
     packages:
-      - dbus-1.16.2-2-x86_64.pkg.tar.zst
-      - dbus-docs-1.16.2-2-x86_64.pkg.tar.zst
+      - dbus-1.16.4-1-x86_64.pkg.tar.zst
+      - dbus-docs-1.16.4-1-x86_64.pkg.tar.zst
     debug: []
   world-goblins:
     version: null
