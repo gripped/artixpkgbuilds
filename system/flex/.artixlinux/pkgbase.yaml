@@ -17,9 +17,9 @@ repos:
     packages: []
     debug: []
   system:
-    version: 2.6.4-6
+    version: 2.6.10-1
     packages:
-      - flex-2.6.4-6-x86_64.pkg.tar.zst
+      - flex-2.6.10-1-x86_64.pkg.tar.zst
     debug: []
   world-goblins:
     version: null
