@@ -1,9 +1,9 @@
 ---
-version: 7.2.4-1
+version: 10.1-1
 pkgbase:
   name: rocthrust
   pkgdesc: Port of the Thrust parallel algorithm library atop HIP/ROCm
-  pkgver: 7.2.4
+  pkgver: 10.1
   pkgrel: 1
   url: https://rocm.docs.amd.com/projects/rocThrust/en/latest/index.html
   arch:
@@ -20,9 +20,9 @@ pkgbase:
     - hip-runtime-amd
     - rocprim
   source:
-    - rocm-libraries-7.2.4.tar.gz::https://github.com/ROCm/rocm-libraries/archive/refs/tags/rocm-7.2.4.tar.gz
+    - rocthrust-10.1.tar.gz::https://github.com/ROCm/rocm-libraries/releases/download/therock-10.1/rocthrust.tar.gz
   sha256sums:
-    - 50a4090b4ad18b34c375f666e5f71816cf55f89bc2175dc3eba9a7b80f65a15d
+    - 1b29efe17e3ac506c492176bbedad5de2c245ac2cdbd4e45c891ef920b140196
 pkgname:
   - name: rocthrust
-# generated with artixpkg 0.38.5-1-any
+# generated with artixpkg 0.40.0-1-any
