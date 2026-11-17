@@ -1,9 +1,9 @@
 ---
-version: 7.2.4-1
+version: 10.1-1
 pkgbase:
   name: rccl
   pkgdesc: ROCm Communication Collectives Library
-  pkgver: 7.2.4
+  pkgver: 10.1
   pkgrel: 1
   url: https://rocm.docs.amd.com/projects/rccl/en/latest/index.html
   arch:
@@ -11,28 +11,27 @@ pkgbase:
   license:
     - BSD-3-Clause
   makedepends:
-    - git
     - cmake
+    - ninja
     - rocm-cmake
     - rocm-llvm
+    - rocm-llvm-static
     - hipify-clang
     - python
+    - fmt
   depends:
     - rocm-core
     - glibc
     - libgcc
     - hip-runtime-amd
-    - rocm-smi-lib
+    - amdsmi
+    - roctracer
   options:
     - '!lto'
   source:
-    - rccl::git+https://github.com/ROCm/rccl#tag=rocm-7.2.4
-    - rccl-json::git+https://github.com/nlohmann/json.git
-    - rccl-mscclpp::git+https://github.com/microsoft/mscclpp.git
+    - rccl-10.1.tar.gz::https://github.com/ROCm/rocm-systems/releases/download/therock-10.1/rccl.tar.gz
   sha256sums:
-    - c47a838050a0188258fc318a82013d400fcaba661a2a58300bff8e51f77e20ec
-    - SKIP
-    - SKIP
+    - 314d0a54e68217efb12eafd2aacd439d4928f443795c778711d846355d262355
 pkgname:
   - name: rccl
-# generated with artixpkg 0.38.5-1-any
+# generated with artixpkg 0.40.0-1-any
