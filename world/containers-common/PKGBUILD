@@ -4,7 +4,7 @@
 pkgname=containers-common
 _upstream=container-libs
 pkgver=0.70.0
-pkgrel=2
+pkgrel=2.1
 epoch=1
 _shortnames_pkgver=2025.03.19
 pkgdesc="Configuration files and manpages for containers"

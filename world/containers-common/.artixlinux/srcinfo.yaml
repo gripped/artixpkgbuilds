@@ -1,10 +1,10 @@
 ---
-version: 1:0.70.0-2
+version: 1:0.70.0-2.1
 pkgbase:
   name: containers-common
   pkgdesc: Configuration files and manpages for containers
   pkgver: 0.70.0
-  pkgrel: 2
+  pkgrel: 2.1
   epoch: 1
   url: https://github.com/podman-container-tools/container-libs
   arch:
@@ -60,4 +60,4 @@ pkgbase:
     - 89e95f468785f6ca1309b0de37921702bd4eb6fb191afc0d93454bec7b7096a1b84e19408b5a0abcdfd89ce2ebd228879cbc42a0d409425fb41caab6a8f049f5
 pkgname:
   - name: containers-common
-# generated with artixpkg 0.40.0-1-any
+# generated with artixpkg 0.40.1-1-any
