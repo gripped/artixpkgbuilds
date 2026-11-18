@@ -45,8 +45,9 @@ repos:
     packages: []
     debug: []
   galaxy-goblins:
-    version: null
-    packages: []
+    version: 7.4.4-2
+    packages:
+      - telegram-desktop-7.4.4-2-x86_64.pkg.tar.zst
     debug: []
   galaxy-gremlins:
     version: null
