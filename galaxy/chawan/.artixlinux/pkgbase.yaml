@@ -46,15 +46,16 @@ repos:
     packages: []
     debug: []
   galaxy-goblins:
-    version: null
-    packages: []
+    version: 0.5.0-2
+    packages:
+      - chawan-0.5.0-2-x86_64.pkg.tar.zst
     debug: []
   galaxy-gremlins:
     version: null
     packages: []
     debug: []
   galaxy:
-    version: 0.5.0-1
+    version: 0.5.2-1
     packages:
-      - chawan-0.5.0-1-x86_64.pkg.tar.zst
+      - chawan-0.5.2-1-x86_64.pkg.tar.zst
     debug: []
