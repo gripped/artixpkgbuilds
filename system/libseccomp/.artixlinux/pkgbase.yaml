@@ -17,10 +17,10 @@ repos:
     packages: []
     debug: []
   system:
-    version: 2.6.0-1
+    version: 2.6.2-1
     packages:
-      - libseccomp-2.6.0-1-x86_64.pkg.tar.zst
-      - python-libseccomp-2.6.0-1-x86_64.pkg.tar.zst
+      - libseccomp-2.6.2-1-x86_64.pkg.tar.zst
+      - python-libseccomp-2.6.2-1-x86_64.pkg.tar.zst
     debug: []
   world-goblins:
     version: null
