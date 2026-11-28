@@ -2,11 +2,11 @@
 team: galaxy
 actions:
   addRepo: galaxy
-  removeRepo: galaxy-gremlins
-  triggersBuild: false
+  removeRepo: null
+  triggersBuild: true
   triggersRebuild: false
   triggersRepoAdd: true
-  triggersRepoRemove: true
+  triggersRepoRemove: false
   triggersNoCheck: false
 repos:
   system-goblins:
@@ -46,15 +46,16 @@ repos:
     packages: []
     debug: []
   galaxy-goblins:
-    version: null
-    packages: []
+    version: 20260313-60
+    packages:
+      - vhba-module-20260313-60-x86_64.pkg.tar.zst
     debug: []
   galaxy-gremlins:
     version: null
     packages: []
     debug: []
   galaxy:
-    version: 20260313-59
+    version: 20260313-62
     packages:
-      - vhba-module-20260313-59-x86_64.pkg.tar.zst
+      - vhba-module-20260313-62-x86_64.pkg.tar.zst
     debug: []
